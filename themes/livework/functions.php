@@ -150,7 +150,7 @@ if ( ! function_exists( 'livework_auto_excerpt_more' ) ) :
 	 * @return string An ellipsis
 	 */
 	function livework_auto_excerpt_more( $more ) {
-		return ' &hellip;' . boilerplate_continue_reading_link();
+		return ' &hellip;' . livework_continue_reading_link();
 	}
 endif;
 add_filter( 'excerpt_more', 'livework_auto_excerpt_more' );
