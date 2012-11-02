@@ -27,6 +27,17 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		
+		<!-- Scripts: Jquery, Modernizr, Main (custom) -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="<?php bloginfo( 'template_directory' ); ?>/js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+		<script src="<?php echo bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="<?php bloginfo( 'template_directory' ); ?>/js/main.js"></script>
+
+		<!-- Symbolset social -->
+		<link href="<?php echo bloginfo('template_directory'); ?>/css/ss-social/ss-social.css" rel="stylesheet" />
+		
+		
 <?php
 		/* We add some JavaScript to pages with the comment form
 		 * to support sites with threaded comments (when in use).
