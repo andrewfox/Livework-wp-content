@@ -41,7 +41,6 @@ get_header(); ?>
 					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . '</span> %title' ); ?></div>
 					<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '</span>' ); ?></div>
 				</nav><!-- #nav-below -->
-				<?php comments_template( '', true ); ?>
 <?php endwhile; // end of the loop. ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

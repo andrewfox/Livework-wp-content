@@ -26,7 +26,6 @@ get_header(); ?>
 						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
-				<?php comments_template( '', true ); ?>
 <?php endwhile; ?>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
