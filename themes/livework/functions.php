@@ -295,7 +295,6 @@ add_action( 'init', 'clients_init' );
 
 
 /* Clients taxonomy (category) */
-
 function sector_init() {
 	// create a new taxonomy
 	register_taxonomy(

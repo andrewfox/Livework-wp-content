@@ -16,7 +16,7 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1><?php the_title(); ?></h1>
 					<div class="entry-meta">
-						<?php boilerplate_posted_on(); ?>
+						<?php livework_posted_on(); ?>
 					</div><!-- .entry-meta -->
 					<div class="entry-content">
 						<?php the_content(); ?>
@@ -33,7 +33,7 @@ get_header(); ?>
 					</footer><!-- #entry-author-info -->
 <?php endif; ?>
 					<footer class="entry-utility">
-						<?php boilerplate_posted_in(); ?>
+						<?php livework_posted_in(); ?>
 						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '<span class="edit-link">', '</span>' ); ?>
 					</footer><!-- .entry-utility -->
 				</article><!-- #post-## -->
