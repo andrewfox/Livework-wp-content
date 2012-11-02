@@ -230,6 +230,10 @@ if ( ! function_exists( 'boilerplate_posted_in' ) ) :
 endif;
 /*	End original TwentyTen functions (from Starkers Theme, renamed into this namespace) */
 
+
+
+
+
 /*	Begin Boilerplate (renamed for this namespace */
 // Add Admin
 // require_once(get_template_directory() . '/boilerplate-admin/admin-menu.php');
@@ -250,6 +254,66 @@ endif;
 /*	End Boilerplate */
 
 
+
+
+
+
+
+/* Start Livework specifics */
+
+/* Case study post type */
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'case_study',
+		array(
+			'labels' => array(
+			'name' => __( 'Case Studies' ),
+			'singular_name' => __( 'Case Study' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title' ),
+		)
+	);
+}
+
+/* Clients taxonomy (tag) */
+function clients_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'clients',
+		array('post','case_study'),
+		array(
+			'label' => __( 'Clients' ),
+			'query_var' => ('true'),
+			'rewrite' => array( 'slug' => 'Client' ),
+//			'capabilities' => array('assign_terms'=>'edit_guides', 'edit_terms'=>'publish_guides')
+		)
+	);
+}
+add_action( 'init', 'clients_init' );
+
+
+/* Clients taxonomy (category) */
+
+function sector_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'sectors',
+		array('post','case_study'),
+		array(
+			'hierarchical' => ('true'), 
+			'label' => __( 'Sectors' ),
+			'query_var' => ('true'),
+			'rewrite' => array( 'slug' => 'Sectors' ),
+//			'capabilities' => array('assign_terms'=>'edit_guides', 'edit_terms'=>'publish_guides')
+		)
+	);
+}
+add_action( 'init', 'sector_init' );
+
+
+/* End Livework specifics */
 
 
 
