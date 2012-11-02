@@ -14,7 +14,7 @@
  * <code>get_template_part( 'loop', 'index' );</code>
  *
  * @package WordPress
- * @subpackage Boilerplate
+ * @subpackage Livework
  * @since Boilerplate 1.0
  */
 ?>
@@ -112,7 +112,7 @@
 		<?php endif; ?>
 
 			<footer class="entry-utility">
-				<?php boilerplate_posted_on(); ?>
+				<?php livework_posted_on(); ?>
 				|
 				<?php comments_popup_link( __( 'Leave a comment', 'boilerplate' ), __( '1 Comment', 'boilerplate' ), __( '% Comments', 'boilerplate' ) ); ?>
 				<?php edit_post_link( __( 'Edit', 'boilerplate' ), '| ', '' ); ?>
