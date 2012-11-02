@@ -19,28 +19,33 @@ get_header(); ?>
 <?php endwhile; ?>
 
 
- 				<?php 
- 				 
- 				/*
- 				*  Loop through a Flexible Content field and display it's content with different views for different layouts
- 				*/
- 				 
- 				while(has_sub_field("add_section")): ?>
- 				 
- 					<?php if(get_row_layout() == "new_section"): // layout: Content ?>
- 				 
- 						<div>
- 							<h2><?php the_sub_field("section_title"); ?></h2>
- 						
- 							<p><?php the_sub_field("section_body_text"); ?></p>
- 							
- 							
- 							<img src="<?php the_sub_field("section_image"); ?>"/>
- 						</div>
- 				 
- 					<?php endif; ?>
- 				 
- 				<?php endwhile; ?>
+				<?php 
+				 
+				/*
+				*  Loop through a Flexible Content field and display it's content with different views for different layouts
+				*/
+				 
+				while(has_sub_field("add_section")): ?>
+				 
+					<?php if(get_row_layout() == "story_section"): // layout: Content ?>
+				 
+						<div class="story-section">
+							
+							<hr>
+						
+							<h2><?php the_sub_field("section_title"); ?></h2>
+						
+							<div class="story-section-content">
+								<?php the_sub_field("section_bodytext"); ?>
+							</div>
+
+							<img src="<?php the_sub_field("section_image"); ?>"/>
+
+						</div>
+				 
+					<?php endif; ?>
+				 
+				<?php endwhile; ?>
 
 
 <?php get_sidebar(); ?>
