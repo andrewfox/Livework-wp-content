@@ -56,7 +56,6 @@ get_header(); ?>
 							<p class="nav-next"><?php previous_posts_link(__( 'newer articles <span class="meta-nav">&raquo;</span>', 'blankslate' )) ?></p>
 						</div>
 					
-					<?php } ?>
 
 				</article><!-- /#bodytext -->
 
