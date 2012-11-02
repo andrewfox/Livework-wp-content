@@ -25,7 +25,7 @@ get_header(); ?>
 				*  Loop through a Flexible Content field and display it's content with different views for different layouts
 				*/
 				 
-				while(has_sub_field("add_section")): ?>
+				while(has_sub_field("story_sections")): ?>
 				 
 					<?php if(get_row_layout() == "story_section"): // layout: Content ?>
 				 
