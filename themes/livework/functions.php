@@ -77,7 +77,7 @@ if ( ! function_exists( 'livework_filter_wp_title' ) ) :
 			// Add a page number if we're on page 2 or more:
 			if ( $paged >= 2 )
 				$title .= " $separator " . sprintf( __( 'Page %s', 'boilerplate' ), $paged );
-			// Add the site name to the end:
+			// Add the site name to the end:livework_complete_version_removal
 			$title .= " $separator " . get_bloginfo( 'name', 'display' );
 			// We're done. Let's send the new title back to wp_title():
 			return $title;
@@ -236,7 +236,7 @@ endif;
 
 // remove version info from head and feeds (http://digwp.com/2009/07/remove-wordpress-version-number/)
 if ( ! function_exists( 'livework_complete_version_removal' ) ) :
-	function boilerplate_complete_version_removal() {
+	function livework_complete_version_removal() {
 		return '';
 	}
 endif;
