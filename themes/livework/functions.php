@@ -208,7 +208,7 @@ if ( ! function_exists( 'boilerplate_posted_in' ) ) :
 	 *
 	 * @since Twenty Ten 1.0
 	 */
-	function boilerplate_posted_in() {
+	function livework_posted_in() {
 		// Retrieves tag list of current post, separated by commas.
 		$tag_list = get_the_tag_list( '', ', ' );
 		if ( $tag_list ) {
