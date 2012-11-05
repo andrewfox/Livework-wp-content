@@ -1,8 +1,6 @@
 
 $(document).ready(function() {
 
-alert("I am an alert box!")
-
 var theLoc = $('ul').position().top;
 	$(window).scroll(function() {
 		if(theLoc >= $(window).scrollTop()) {
