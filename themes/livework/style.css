@@ -619,12 +619,7 @@ textarea {
    All screen sizes (small+)
    ========================================================================== */
 
-@import url(css/all.css);
-
-
-
-
-
+@import url("css/all.css");
 
 
 
@@ -737,13 +732,10 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    @import url(css/medium.css);
-}
 
-@media only screen and (min-width: 45em) {
-    @import url(css/large.css);
-}
+@import url("css/medium.css") only screen and (max-width:500px);
+
+@import url("css/large.css") only screen and (max-width:800px);
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
        only screen and (min-resolution: 144dpi) {
