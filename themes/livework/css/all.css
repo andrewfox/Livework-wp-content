@@ -1,10 +1,13 @@
+/* @override 
+	http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/css/all.css */
+
 /* ==========================================================================
    All screens (small+)
    ========================================================================== */
 
 
 body {
-	background: #eee;
+	background: #fff;
 	font-family:'Helvetica Neue Light', Helvetica;
 	line-height: 140%;
 }
@@ -14,3 +17,9 @@ h1, h2, h3 {
 
 p {
 }
+
+#menu-item-22 {
+	
+}
+
+
