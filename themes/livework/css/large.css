@@ -1,3 +1,6 @@
+/* @override 
+	http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/css/large.css */
+
 /* ==========================================================================
    Large screen +
    ========================================================================== */
@@ -266,8 +269,44 @@ div.menu-header {
 	position: absolute;
 }
 
-ul#menu-top-level-menu{
+ul#menu-primary.menu li{
+	display: inline;
+	padding: 0 7px;
+}
+
+h2.entry-title {
 	
+}
+
+section#content {
+	clear: both;
+}
+
+header h1 {
+	display: inline;
+	float: left;
+	margin-top: 10px;
+	margin-left: 50px;
+}
+
+header h1 a img{
+	height: 20px;
+}
+
+header {
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+}
+
+div.menu-header {
+	display: inline;
+	float: left;
+}
+
+#skip {
+	display: none;
 }
 
 #menu-top-level-menu li, #menu-sector-menu li {
