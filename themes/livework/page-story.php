@@ -30,7 +30,6 @@ get_header(); ?>
 				<p><?php the_content(); ?></p>
 			</div>
 			
-<!--			<div id="full-lower">Hi</div>		-->
 		</div> <!-- /top -->
 	
 		
@@ -66,6 +65,8 @@ get_header(); ?>
 			
 				<div id="more-info">
 					<h2><a id = "more-infolink" href="#">⬇ More on <?php wp_title("",true); ?></a></h2>
+					
+					<h1><?php the_field('page_title_suffix'); ?></h1>
 				</div>
 			
 			
