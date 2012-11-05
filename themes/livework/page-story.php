@@ -62,7 +62,7 @@ get_header(); ?>
 			<!-- ======================================== -->
 			
 				<div id="more-info">
-					<h2><a id = "contentlink" href="#">⬇ More on <?php wp_title("",true); ?></a></h2>
+					<h2><a id = "morelink" href="#">⬇ More on <?php wp_title("",true); ?></a></h2>
 				</div>
 			
 			
@@ -74,7 +74,7 @@ get_header(); ?>
 			
 			<div id="more">
 				
-					<div id="content">
+				<div id="content">
 								
 				<?php 
 				 
