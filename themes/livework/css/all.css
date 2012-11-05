@@ -30,6 +30,8 @@ h1, h2, h3 {
 p {
 }
 
+
+
 /*Symbolset specifics*/
 
 #menu-item-22 a {
@@ -68,4 +70,9 @@ p {
 header {
 	background-color: black;
 	width: 100%;
+}
+
+
+header h1 a img{
+	height: 20px;
 }
