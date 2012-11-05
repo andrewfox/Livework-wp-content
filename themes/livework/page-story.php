@@ -30,7 +30,7 @@ get_header(); ?>
 				<p><?php the_content(); ?></p>
 			</div>
 			
-			<div id="">Hi</div>		
+			<div id="full-lower">Hi</div>		
 		</div> <!-- /top -->
 	
 		
