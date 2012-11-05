@@ -16,6 +16,8 @@ body {
 #more-info {
 	background-color: black;
 	height: 200px;
+	position: relative;
+	top: -4px;
 }
 
 #more-info h1 {

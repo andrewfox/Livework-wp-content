@@ -292,9 +292,8 @@ header {
 
 #bkg img {
 	position: relative;
-	z-index: -1;
-	box-sizing: border-box;
-	border-bottom: 20px solid black;
+	z-index: 0;
+
 }
 
 ul#menu-primary.menu {
