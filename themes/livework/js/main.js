@@ -3,7 +3,7 @@ $(document).ready(function() {
 
 var theLoc = $('header').position().top;
 	$(window).scroll(function() {
-		if(theLoc + 1 >= $(window).scrollTop()) {
+		if(theLoc >= $(window).scrollTop()) {
 			if($('header').hasClass('fixed')) {
 				$('header').removeClass('fixed');
 			}
