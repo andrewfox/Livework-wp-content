@@ -12,6 +12,18 @@ body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	line-height: 140%;
 }
+
+#more-info {
+	background-color: black;
+	height: 200px;
+}
+
+#more-info h1 {
+	color: white;
+	float: left;
+	margin-left: 40px;
+}
+
 h1, h2, h3 {
 	font-family:'ChaparralPro-LightCapt', Georgia, Times, serif;
 }

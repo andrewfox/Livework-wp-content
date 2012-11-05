@@ -293,8 +293,8 @@ header {
 #bkg img {
 	position: relative;
 	z-index: -1;
-	border-bottom: 50px solid black;
 	box-sizing: border-box;
+	border-bottom: 20px solid black;
 }
 
 ul#menu-primary.menu {
@@ -357,3 +357,10 @@ top: 20px;
 position:fixed; 
 top:65px;
 }
+
+div#hello.arrows.fixed2 a img {
+	width: 20px;
+}
+
+
+
