@@ -1,3 +1,6 @@
+/* @override 
+	http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/style.css */
+
 /*
 	Theme Name: Livework
 	Theme URI: http://livework.co.uk/
@@ -619,10 +622,12 @@ textarea {
 
 
 
-* {
+p {
+	font-family:'Helvetica Neue Light', Helvetica;
+}
+h1, h2, h3 {
 	font-family:'ChaparralPro-LightCapt', Georgia, Times, serif;
 }
-
 
 
 

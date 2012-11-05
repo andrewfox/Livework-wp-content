@@ -46,11 +46,10 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<header role="banner">
-			<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<p><?php bloginfo( 'description' ); ?></p>
+			<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo( 'template_directory' ); ?>/img/livework-logox2.png" alt="<?php bloginfo( 'name' ); ?>"/></a></h1>
 			<nav id="access" role="navigation">
 				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
-				<a id="skip" href="#content" title="<?php esc_attr_e( 'Skip to content', 'boilerplate' ); ?>"><?php _e( 'Skip to content', 'boilerplate' ); ?></a>
+				<a id="skip" href="#content" title="<?php esc_attr_e( 'Skip to content', 'livework' ); ?>"><?php _e( 'Skip to content', 'livework' ); ?></a>
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #access -->

@@ -312,7 +312,11 @@ function sector_init() {
 add_action( 'init', 'sector_init' );
 
 
+/* Editor style tweaks */
 add_editor_style( 'editor-style.css' );
+
+
+
 
 /* End Livework specifics */
 
