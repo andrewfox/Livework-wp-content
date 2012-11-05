@@ -62,7 +62,7 @@ var theLoc = $('header').position().top;
 
 	/* HOMEPAGE */
 	// rescale the homepage's bkgd img
-if ($("body#home").length > 0) {
+if ($("body.page-template-page-story-php").length > 0) {
 	rescale();
 	$(window).resize(function(){
 		rescale();
