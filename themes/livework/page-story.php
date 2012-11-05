@@ -74,43 +74,6 @@ get_header(); ?>
 			<!-- ================================================================================= -->
 			
 			<div id="more">
-			
-			
-				<section class="more-header">
-					<header>
-						<h1>Our approach: How we do it</h1>
-					
-					
-					</header>
-				
-				
-				</section>
-				<p>
-				Hi there, how are you?
-				</p>
-				<p>
-				Hi there, how are you?
-				</p><p>
-				Hi there, how are you?
-				</p><p>
-				Hi there, how are you?
-				</p><p>
-				Hi there, how are you?
-				</p><p>
-				Hi there, how are you?
-				</p><p>
-				Hi there, how are you?
-				</p><p>
-				Hi there, how are you?
-				</p>
-			
-			</div>
-				
-				
-				
-				
-				
-				
 				
 				
 				

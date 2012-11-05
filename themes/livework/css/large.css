@@ -296,6 +296,11 @@ header {
 	float: left;
 }
 
+#bkg img {
+	position: relative;
+	top: -50px;
+}
+
 ul#menu-primary.menu {
 	float: left;
 }
