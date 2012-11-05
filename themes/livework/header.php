@@ -42,8 +42,8 @@
 		<script type="text/javascript" src="http://fast.fonts.com/jsapi/0fd39f14-ee12-405d-90c4-2bbbdae75f52.js"></script>
 
 		<!-- Symbolset social -->
-		<link href="<?php echo bloginfo('template_directory'); ?>/webfonts/ss-standard.css" rel="stylesheet" />
 		<link href="<?php echo bloginfo('template_directory'); ?>/webfonts/ss-social.css" rel="stylesheet" />
+		<link href="<?php echo bloginfo('template_directory'); ?>/webfonts/ss-standard.css" rel="stylesheet" />
 
 		<?php wp_head(); ?>
 

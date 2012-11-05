@@ -315,7 +315,8 @@ add_action( 'init', 'sector_init' );
 /* Editor style tweaks */
 add_editor_style( 'editor-style.css' );
 
-
+/* Menu support */
+add_theme_support( 'menus' );
 
 
 /* End Livework specifics */
