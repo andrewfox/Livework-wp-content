@@ -24,12 +24,14 @@ body {
 
 /* More info */
 #more-info h2 {
-	position: relative;
-	top: -65px;
+	position: absolute;
 	background-color: black;
 	display: inline-block;
 	margin-left: 40px;
 	padding: 0 10px 5px;
+	bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .more-header h1 {
@@ -193,17 +195,17 @@ nav.desktop, nav.location{
 	position: relative;
 	float: left;
 	display: block;
-	margin-top: -200px;
 	position: absolute;
 	bottom: 0;
+	z-index: 100;
 }
 
-.hat{
+/*.hat{
 	background: url(../img/more-top-bkg.png) no-repeat right -40px;
 	height: 56px;
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 
 .box{
@@ -256,13 +258,13 @@ nav.desktop, nav.location{
 	color: white;
 }
 
-div.menu-header {
+/*div.menu-header {
 	
 	
 	z-index: 100;
 	width: 100%;
 	position: absolute;
-}
+}*/
 
 
 
