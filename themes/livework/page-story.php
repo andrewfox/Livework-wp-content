@@ -28,10 +28,11 @@ get_header(); ?>
 				<p><?php the_content(); ?></p>
 			</div>
 		
+		</div> <!-- /top -->
 	
 		
 		<?php the_post_thumbnail('full'); ?>
-		</div> <!-- /top -->
+
 
 </div> <!-- /bkg -->
 
