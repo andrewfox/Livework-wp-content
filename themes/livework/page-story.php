@@ -14,6 +14,9 @@ get_header(); ?>
 
 				
 <div id="bkg">
+					<?php the_post_thumbnail('full'); ?>
+		
+		
 		<div id="top">
 		
 				
@@ -31,7 +34,6 @@ get_header(); ?>
 		</div> <!-- /top -->
 	
 		
-			<?php the_post_thumbnail('full'); ?>
 
 
 </div> <!-- /bkg -->
