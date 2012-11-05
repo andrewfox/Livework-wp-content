@@ -63,7 +63,7 @@ get_header(); ?>
 			<!-- ======================================== -->
 			
 				<div id="more-info">
-					<h2><a id = "story-sectionlink" href="#">⬇ More on <?php wp_title("",true); ?></a></h2>
+					<h2><a id = "story-section-contentlink" href="#">⬇ More on <?php wp_title("",true); ?></a></h2>
 				</div>
 			
 			
