@@ -14,7 +14,6 @@ get_header(); ?>
 
 				
 <div id="bkg">
-					<?php the_post_thumbnail('full'); ?>
 		
 		
 		<div id="top">
@@ -30,10 +29,12 @@ get_header(); ?>
 				<h2><?php the_field('page_headline'); ?></h2>
 				<p><?php the_content(); ?></p>
 			</div>
-		
+			
+			<div id="">Hi</div>		
 		</div> <!-- /top -->
 	
 		
+			<?php the_post_thumbnail('full'); ?>
 
 
 </div> <!-- /bkg -->
