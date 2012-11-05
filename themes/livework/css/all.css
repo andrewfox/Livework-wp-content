@@ -4,23 +4,12 @@
 /* ==========================================================================
    All screens (small+)
    ========================================================================== */
-ul{
-	list-style-type: none;
-}
 
-a{
-	text-decoration: none;
-	color: #838588;
-	font: bold 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-#skip {
-	display: none;
-}
+/*Basic HTML*/
 
 body {
 	background: #fff;
-	font-family:'Helvetica Neue Light', Helvetica;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	line-height: 140%;
 }
 h1, h2, h3 {
@@ -29,6 +18,47 @@ h1, h2, h3 {
 
 p {
 }
+ul{
+	list-style-type: none;
+}
+
+
+a{
+	text-decoration: none;
+	color: #838588;
+	font-weight: bold;
+}
+
+
+/*Header*/
+
+header {
+	background-color: black;
+	width: 100%;
+	z-index: 100;
+}
+
+
+header h1 a img{
+	height: 20px;
+}
+#skip {
+	display: none;
+}
+
+/*Content*/
+
+section#content {
+	padding: 20px;
+}
+
+h1.page-title {
+	border-bottom: 1px solid #ccc;
+	margin-top: 0;
+}
+
+
+
 
 
 
@@ -67,6 +97,7 @@ p {
 }
 
 
+<<<<<<< HEAD
 header {
 	background-color: black;
 	width: 100%;
@@ -92,3 +123,5 @@ ul#menu-primary.menu li, ul#menu-countries.menu li{
 	display: inline;
 	padding: 0 7px;
 }
+=======
+>>>>>>> Various CSS +

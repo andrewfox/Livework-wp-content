@@ -16,9 +16,9 @@ get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php if ( is_front_page() ) { ?>
-					<h2 class="entry-title"><?php the_title(); ?></h2>
+					<h2 class="page-title"><?php the_title(); ?></h2>
 				<?php } else { ?>	
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h1 class="page-title"><?php the_title(); ?></h1>
 				<?php } ?>
 					<div class="entry-content">
 						<?php the_content(); ?>
@@ -27,5 +27,7 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
 <?php endwhile; ?>
+
 <?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
