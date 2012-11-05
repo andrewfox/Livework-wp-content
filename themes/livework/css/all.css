@@ -4,7 +4,19 @@
 /* ==========================================================================
    All screens (small+)
    ========================================================================== */
+ul{
+	list-style-type: none;
+}
 
+a{
+	text-decoration: none;
+	color: #838588;
+	font: bold 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#skip {
+	display: none;
+}
 
 body {
 	background: #fff;
@@ -53,3 +65,7 @@ p {
 }
 
 
+header {
+	background-color: black;
+	width: 100%;
+}

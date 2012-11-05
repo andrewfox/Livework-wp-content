@@ -8,9 +8,7 @@
 body {
 }
 
-ul{
-	list-style-type: none;
-}
+
 
 
 
@@ -176,11 +174,7 @@ img.right-arrow {
 #home.js #bkg img { margin-top:0;}
 
 
-a{
-	text-decoration: none;
-	color: #838588;
-	font: bold 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
+
 
 
 nav.desktop, nav.location{
@@ -297,8 +291,7 @@ header h1 a img{
 }
 
 header {
-	background-color: black;
-	width: 100%;
+
 	height: 50px;
 	position: relative;
 	top: 20px;
@@ -314,9 +307,7 @@ div.menu-header {
 	float: left;
 }
 
-#skip {
-	display: none;
-}
+
 
 #menu-top-level-menu li, #menu-sector-menu li {
 	display: inline;
