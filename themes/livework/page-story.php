@@ -31,7 +31,7 @@ get_header(); ?>
 		</div> <!-- /top -->
 	
 		
-		<img src="<?php the_field('background_image'); ?>" alt="Main image" width="1400" height="900" />
+		<?php the_post_thumbnail('full'); ?>
 
 
 </div> <!-- /bkg -->
