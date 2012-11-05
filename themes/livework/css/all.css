@@ -77,3 +77,18 @@ header {
 header h1 a img{
 	height: 20px;
 }
+
+#menu-countries {
+	float: right;
+}
+
+#menu-primary {
+	float: left;
+}
+
+
+
+ul#menu-primary.menu li, ul#menu-countries.menu li{
+	display: inline;
+	padding: 0 7px;
+}

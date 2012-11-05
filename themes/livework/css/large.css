@@ -264,10 +264,7 @@ div.menu-header {
 	position: absolute;
 }
 
-ul#menu-primary.menu li{
-	display: inline;
-	padding: 0 7px;
-}
+
 
 h2.entry-title {
 	
@@ -284,7 +281,6 @@ header h1 {
 }
 
 nav#access {
-	float: left;
 }
 
 
@@ -306,6 +302,9 @@ header {
 ul#menu-primary.menu {
 	float: left;
 }
+
+
+
 
 div.menu-header {
 	display: inline;
