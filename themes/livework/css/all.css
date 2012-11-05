@@ -1,0 +1,16 @@
+/* ==========================================================================
+   All screens (small+)
+   ========================================================================== */
+
+
+body {
+	background: #ccc;
+	font-family:'Helvetica Neue Light', Helvetica;
+	line-height: 140%;
+}
+h1, h2, h3 {
+	font-family:'ChaparralPro-LightCapt', Georgia, Times, serif;
+}
+
+p {
+}

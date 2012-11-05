@@ -616,19 +616,10 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   All screen sizes (small+)
    ========================================================================== */
 
-
-
-
-p {
-	font-family:'Helvetica Neue Light', Helvetica;
-}
-h1, h2, h3 {
-	font-family:'ChaparralPro-LightCapt', Georgia, Times, serif;
-}
-
+@import url(css/all.css);
 
 
 
@@ -747,7 +738,11 @@ h1, h2, h3 {
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+    @import url(css/medium.css);
+}
+
+@media only screen and (min-width: 45em) {
+    @import url(css/large.css);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
