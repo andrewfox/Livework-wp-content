@@ -22,11 +22,11 @@ get_header(); ?>
 				</div>
 				
 				
-				<div class="no-bkg box" >
-					<h3>Value: <span><?php the_field('page_title_suffix'); ?></span></h3>
-					<h2><?php the_field('page_headline'); ?></h2>
-					<p><?php the_field('page_intro'); ?></p>
-				</div>
+			<div class="no-bkg box" >
+				<h3><?php wp_title(":",true, 'right'); ?> <span><?php the_field('page_title_suffix'); ?></span></h3>
+				<h2><?php the_field('page_headline'); ?></h2>
+				<p><?php the_content(); ?></p>
+			</div>
 		
 		</div> <!-- /top -->
 	
