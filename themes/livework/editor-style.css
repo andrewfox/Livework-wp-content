@@ -1,14 +1,14 @@
 /*
-Theme Name: Boilerplate
+Theme Name: Livework
 */
 /*
 Used to style the TinyMCE editor.
 */
 html .mceContentBody {
-	max-width:640px;
+	max-width: 640px;
 }
 * {
-	font-family: Georgia, "Bitstream Charter", serif;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Nimbus Sans L", sans-serif;
 	color: #444;
 	line-height: 1.5;
 }
