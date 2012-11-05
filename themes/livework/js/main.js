@@ -1,15 +1,15 @@
 
 $(document).ready(function() {
 
-var theLoc = $('ul').position().top;
+var theLoc = $('header').position().top;
 	$(window).scroll(function() {
 		if(theLoc >= $(window).scrollTop()) {
-			if($('ul').hasClass('fixed')) {
-				$('ul').removeClass('fixed');
+			if($('header').hasClass('fixed')) {
+				$('header').removeClass('fixed');
 			}
 		} else { 
-			if(!$('ul').hasClass('fixed')) {
-				$('ul').addClass('fixed');
+			if(!$('header').hasClass('fixed')) {
+				$('header').addClass('fixed');
 			}
 		}
 	});
