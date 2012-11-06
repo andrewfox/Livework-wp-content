@@ -25,11 +25,11 @@ get_header(); ?>
 							<p><?php the_content(); ?></p>
 						</div>
 
-					</div> <!-- /top -->
+					</div> <!-- /#top -->
 
 					<?php the_post_thumbnail('full'); ?>
 
-				</div> <!-- /#intro -->
+				</div> <!-- /#splash -->
 
 
 
@@ -94,34 +94,34 @@ get_header(); ?>
 								<div class="story-section-content">
 								
 									<?php the_sub_field("section_bodytext"); ?>
+									
 									<?php the_sub_field("section_layout"); ?>
 	
 								</div>
 	
-								<img src="<?php the_sub_field("section_image"); ?>"/>
+								<img src="<?php the_sub_field("section_image"); ?>" class="section-image"/>
 	
 								<?php
-								
-									
-									 				 
+
 					 				$posts = get_sub_field('add_mini_case_study');
 					 				 
 					 				if( $posts ): ?>
-					 					<ul>
+					 					<ul class="section-links">
 					 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 					 						<?php setup_postdata($post); ?>
-					 					    <li>
-					 					    	<h2><?php the_title(); ?></a>
-					 					    	 <?php the_post_thumbnail('small'); ?>
-					 					    	 
-					 					    </li>
+					 						<li>
+					 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+					 								<span><?php the_title(); ?></span>
+					 								<?php the_post_thumbnail('small'); ?>
+					 							</a>
+					 						</li>
 					 					<?php endforeach; ?>
 					 					</ul>
 					 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 					 				<?php endif; ?>
 	
 	
-							</div>
+							</div> <!-- /.story-section -->
 					 
 						<?php endif; ?>
 					 
