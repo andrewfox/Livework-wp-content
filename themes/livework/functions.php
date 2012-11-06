@@ -278,6 +278,24 @@ function create_post_type() {
 	);
 }
 
+/* People post type */
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+	register_post_type( 'people',
+		array(
+			'labels' => array(
+			'name' => __( 'People' ),
+			'singular_name' => __( 'Liveworker' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title' ),
+		'taxonomies' => array('category'),
+		)
+	);
+}
+
+
 /* Clients taxonomy (tag) */
 function clients_init() {
 	// create a new taxonomy
