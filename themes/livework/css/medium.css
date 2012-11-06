@@ -94,19 +94,7 @@ nav.sectors ul li a {
 	padding: 0;
 }
 
-.fixed {
-	position:fixed; 
-	top:0px;
-}
 
-.fixed2 {
-	position:fixed; 
-	top:65px;
-}
-
-div#hello.arrows.fixed2 a img {
-	width: 20px;
-}
 
 
 
@@ -147,6 +135,20 @@ div#hello.arrows.fixed2 a img {
 img.right-arrow {
 	right: 0;
 	position: absolute;
+}
+
+.fixed {
+	position:fixed; 
+	top:0px;
+}
+
+.fixed2 {
+	position:fixed; 
+	top:65px;
+}
+
+div#hello.arrows.fixed2 a img {
+	width: 20px;
 }
 
 /*Box*/
