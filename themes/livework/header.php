@@ -50,14 +50,30 @@
 	</head>
 	<body <?php body_class(); ?>>
 		<header role="banner">
-			<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo( 'template_directory' ); ?>/img/livework-logox2.png" alt="<?php bloginfo( 'name' ); ?>"/></a></h1>
+			
 			<nav id="access" role="navigation">
+
+				<h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php bloginfo( 'template_directory' ); ?>/img/livework-logox2.png" alt="<?php bloginfo( 'name' ); ?>"/></a></h1>
+
 				<?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
 				<a id="skip" href="#content" title="<?php esc_attr_e( 'Skip to content', 'livework' ); ?>"><?php _e( 'Skip to content', 'livework' ); ?></a>
+
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 				<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 				<?php wp_nav_menu( array('menu' => 'Countries' )); ?>
+
 			</nav><!-- #access -->
+			
+			<?php 
+			// Our Story menu
+			if (is_tree(7)) { 
+			?>
+			<nav id="main2" class="nav-our-story">
+				<?php wp_nav_menu( array('menu' => 'Our Story' )); ?>
+			</nav>
+			<?php } ?>
+
+
 		</header>
 
 		<section id="content" role="main">
