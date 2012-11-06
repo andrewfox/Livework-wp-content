@@ -92,13 +92,14 @@ get_header(); ?>
 					<?php if(get_row_layout() == "story_section"): // layout: Content ?>
 				 
 						<div class="story-section">
-							
-							<hr>
 						
 							<h2><?php the_sub_field("section_title"); ?></h2>
 						
 							<div class="story-section-content">
+							
 								<?php the_sub_field("section_bodytext"); ?>
+								<?php the_sub_field("section_layout"); ?>
+
 							</div>
 
 							<img src="<?php the_sub_field("section_image"); ?>"/>
