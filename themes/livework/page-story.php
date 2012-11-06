@@ -91,11 +91,9 @@ get_header(); ?>
 				 
 					<?php if(get_row_layout() == "story_section"): // layout: Content ?>
 				 
-				<?php $field = get_field_object($story_section); ?>	
 							 
 						<div class="story-section">
 						
-						<?php echo $field['key'] ?>
 												
 							<h2><?php the_sub_field("section_title"); ?></h2>
 						
