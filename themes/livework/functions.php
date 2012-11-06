@@ -273,6 +273,7 @@ function create_post_type() {
 		'public' => true,
 		'has_archive' => true,
 		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title' ),
+		'taxonomies' => array('category'),
 		)
 	);
 }
@@ -283,7 +284,6 @@ function clients_init() {
 	register_taxonomy(
 		'clients',
 		array('post','case_study'),
-		array('category'),
 		array(
 			'label' => __( 'Clients' ),
 			'query_var' => ('true'),
