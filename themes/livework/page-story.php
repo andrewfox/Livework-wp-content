@@ -105,24 +105,12 @@ get_header(); ?>
 				 
 					<?php endif; ?>
 				 
-<!--				<?php endwhile; ?>-->
+				<?php endwhile; ?>
 
 
 	<!-- 				START add case studies-->
 	 				
 	 				<?php
-	 				 
-	 				/*
-	 				*  View array data (for debugging)
-	 				*/
-	 				 
-	// 				var_dump( get_field('relationship') );
-	 				 
-	 				/*
-	 				*  Loop through post objects ( setup postdata )
-	 				*  Using this method, you can use all the normal WP functions as the $post object is temporarily initialized within the loop
-	 				*  Read more: http://codex.wordpress.org/Template_Tags/get_posts#Reset_after_Postlists_with_offset
-	 				*/
 	 				 
 	 				$posts = get_field('insert_case_study');
 	 				 
@@ -140,29 +128,7 @@ get_header(); ?>
 	 					<?php endforeach; ?>
 	 					</ul>
 	 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-	 				<?php endif;
-	 		
-	 		
-	 				 
-	 				?>
-	 				
-	 				
-	 				
-	 			<!--	<?php
-	 				$args=array(
-	 				  'orderby' => 'name',
-	 				  'order' => 'ASC'
-	 				  );
-	 				$categories=get_categories($args);
-	 				  foreach($categories as $category) { 
-	 				    echo '<p>Category: <a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a> </p> ';
-	 				    echo '<p> Description:'. $category->description . '</p>';
-	 				    echo '<p> Post Count: '. $category->count . '</p>';  } 
-	 				?>-->
-	 				
-	 				
-	 				
-	 				
+	 				<?php endif; ?>
 	 				
 	 				
 	 				
@@ -178,10 +144,6 @@ get_header(); ?>
 	 			
 	 			</div>
 	  
-	  <div id="maincontent">
-	
-	  
-	  </div>
 	 
 				
 	 
@@ -190,6 +152,3 @@ get_header(); ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	<?php get_footer(); ?>
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
