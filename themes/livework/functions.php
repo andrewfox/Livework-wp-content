@@ -283,6 +283,7 @@ function clients_init() {
 	register_taxonomy(
 		'clients',
 		array('post','case_study'),
+		array('category'),
 		array(
 			'label' => __( 'Clients' ),
 			'query_var' => ('true'),

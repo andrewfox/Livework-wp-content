@@ -123,7 +123,7 @@ get_header(); ?>
 	 					    	<p><?php the_excerpt(); ?></p>
 	 					    	 <?php the_post_thumbnail('small'); ?>
 	 					    	 
-	 					    	<span>Post Object Custom Field: <?php the_field('extra_field'); ?></span>
+	 					    	<!--<span>Post Object Custom Field: <?php the_field('extra_field'); ?></span>-->
 	 					    </li>
 	 					<?php endforeach; ?>
 	 					</ul>
