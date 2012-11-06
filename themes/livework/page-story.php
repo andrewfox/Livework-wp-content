@@ -79,7 +79,6 @@ get_header(); ?>
 				
 				<div id="content">
 				
-				<?php var_dump( get_field('relationship') ); ?>
 								
 				<?php 
 				 
