@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Page - Story Page
- * Description: Our Story: fullscreen area, plus extras
+ * Template Name: Page - Sector Page
+ * Description: Our Client's Stories Sector page: fullscreen area, list of case studies and themes
  *
  * @package WordPress
  * @subpackage Livework
