@@ -100,6 +100,8 @@ get_header(); ?>
 							<img src="<?php the_sub_field("section_image"); ?>"/>
 
 							<?php
+							
+								var_dump( get_field('relationship') );
 								 				 
 				 				$posts = the_sub_field('add_mini_case_study');
 				 				 
@@ -124,14 +126,6 @@ get_header(); ?>
 					<?php endif; ?>
 				 
 				<?php endwhile; ?>
-
-
-	<!-- 				START add case studies-->
-	 				
-	 				
-	 				
-
-	<!-- 				END add case studies-->
 
 	 			
 	 			</div>
