@@ -93,7 +93,7 @@ get_header(); ?>
 				 
 						<div class="story-section">
 						
-							<h2><?php the_sub_field("section_title"); ?></h2>
+							<h2>HI!!!<?php the_sub_field("section_title"); ?></h2>
 						
 							<div class="story-section-content">
 							
