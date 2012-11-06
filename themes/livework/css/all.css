@@ -37,7 +37,7 @@ a {
 	transition: color 0.3s linear;
 }
 a:hover {
-	color: #eee;
+	color: #292a2b;
 }
 
 
@@ -122,9 +122,30 @@ section#content {
 	padding: 0px;
 }
 
+article.main {
+	padding: 20px;
+}
+
 h1.page-title {
-	border-bottom: 1px solid #ccc;
 	margin-top: 0;
+	padding: 100px 0 0;
+}
+
+.section-links li {
+	display: block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	background: #333;
+}
+.section-links li span {
+	display: block;
+	position: absolute;
+	background: #333;
+	bottom: 10px;
+	padding: 5px 10px;
+	font-weight: normal;	
 }
 
 
@@ -160,7 +181,25 @@ h1.page-title {
 
 /*Footer*/
 
-
+footer {
+	padding: 20px;
+	border-top: 1px solid #ddd;
+}
+footer a {
+	font-weight: normal;
+}
+#social {
+	display: inline;
+}
+#social ul {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+#social li {
+	display: inline;
+	padding: 17px;
+}
 
 
 

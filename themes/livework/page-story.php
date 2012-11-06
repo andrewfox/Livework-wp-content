@@ -61,11 +61,6 @@ get_header(); ?>
 
 
 
-
-
-
-
-			
 				<div id="more-info">
 					<h2><a id = "more-infolink" href="#"><span class="ss-standard">arrow</span> More on <?php the_title(); ?></a></h2>
 					<h1><?php the_field('page_title_suffix'); ?></h1>
@@ -106,7 +101,7 @@ get_header(); ?>
 					 				$posts = get_sub_field('add_mini_case_study');
 					 				 
 					 				if( $posts ): ?>
-					 					<ul class="section-links">
+					 					<ul class="section-links clearfix">
 					 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 					 						<?php setup_postdata($post); ?>
 					 						<li>
