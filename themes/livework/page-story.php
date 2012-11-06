@@ -103,7 +103,7 @@ get_header(); ?>
 
 							<?php
 								 				 
-				 				$posts = get_field('add_mini_case_study');
+				 				$posts = the_sub_field('add_mini_case_study');
 				 				 
 				 				if( $posts ): ?>
 				 					<ul>
