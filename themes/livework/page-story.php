@@ -130,25 +130,12 @@ get_header(); ?>
 	 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 	 				<?php endif; ?>
 	 				
-	 				
-	 				
+
 	<!-- 				END add case studies-->
-	 				
-	 				
-	 				
-	
-	 				
-	 				
-	 				
-	 				
+
 	 			
 	 			</div>
-	  
-	 
-				
-	 
-<!--			<?php endwhile; // end of the loop. ?>-->
-	 
+
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	<?php get_footer(); ?>
