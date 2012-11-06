@@ -105,7 +105,7 @@ get_header(); ?>
 				 
 					<?php endif; ?>
 				 
-				<?php endwhile; ?>
+<!--				<?php endwhile; ?>-->
 
 
 	<!-- 				START add case studies-->
