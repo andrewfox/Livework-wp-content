@@ -25,7 +25,7 @@ get_header(); ?>
 				
 				
 			<div class="no-bkg box" >
-				<h3><?php the_title(); ?> <span><?php the_field('page_title_suffix'); ?></span></h3>
+				<h3><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h3>
 				<h2><?php the_field('page_headline'); ?></h2>
 				<p><?php the_content(); ?></p>
 			</div>
