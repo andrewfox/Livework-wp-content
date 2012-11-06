@@ -13,7 +13,7 @@
 		</section><!-- #main -->
 		<footer role="contentinfo">
 			<?php echo date("Y"); ?> <a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			<?php wp_nav_menu( array('menu' => 'Footer' )); ?>
+			<?php wp_nav_menu( array('container' => '', 'menu' => 'Footer' )); ?>
 		</footer><!-- footer -->
 <?php
 	/* Always have wp_footer() just before the closing </body>

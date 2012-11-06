@@ -39,17 +39,17 @@ a:hover {
 /*Header*/
 
 header {
-	background-color: black;
 	width: 100%;
 	z-index: 100;
 }
-
+#access {
+	background-color: #111;
+	display: block;
+}
 
 header h1 {
-	padding-top: 10px;
+	padding: 10px 28px 13px 28px;
 	margin: 0;
-	margin-left: 14px;
-	float: left;
 }
 
 
@@ -75,10 +75,14 @@ header h1 a img{
 	padding: 0;
 }
 
-ul#menu-primary.menu li, ul#menu-countries.menu li{
+ul#menu-primary.menu li, ul#menu-countries.menu li {
 	display: inline-block;
 	padding: 14px 7px;
 	font-size: 13px;
+}
+
+#main2 {
+	display: block;
 }
 
 
