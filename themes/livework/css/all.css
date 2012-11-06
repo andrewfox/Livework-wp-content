@@ -130,14 +130,18 @@ h1.page-title {
 	margin-top: 0;
 	padding: 100px 0 0;
 }
-
+.section-links {
+	padding: 0;
+}
 .section-links li {
 	display: block;
 	position: relative;
+	float: left;
 	width: 200px;
 	height: 200px;
 	overflow: hidden;
 	background: #333;
+	margin: 0 20px 20px 0;
 }
 .section-links li span {
 	display: block;
