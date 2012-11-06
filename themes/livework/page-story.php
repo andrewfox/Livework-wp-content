@@ -13,7 +13,7 @@ get_header(); ?>
 
 
 
-				<div id="intro">
+				<div id="splash">
 				
 					<div id="top">
 
