@@ -130,31 +130,31 @@ function rescale() {
 	
 if(min_height > set_height) {
 		
-		$("#bkg img").height(height);
-		$("#bkg img").width(width);
-		$("#bkg").height(max_height);
+		$("#splash .wp-post-image").height(height);
+		$("#splash .wp-post-image").width(width);
+		$("#splash").height(max_height);
 	
 		// set top/left
-		var top = $("#bkg img").offset().top;
-		var left = $("#bkg img").offset().left;
+		var top = $("#splash .wp-post-image").offset().top;
+		var left = $("#splash .wp-post-image").offset().left;
 		top = Math.round((max_height - height)/2);
 		left = Math.round((max_width - width)/2);
-		$("#bkg img").css("margin-top",top);
-		$("#bkg img").css("margin-left",left);
+		$("#splash .wp-post-image").css("margin-top",top);
+		$("#splash .wp-post-image").css("margin-left",left);
 		
 } 
 else {
-		$("#bkg img").height(height);
-		$("#bkg img").width(width);
+		$("#splash .wp-post-image").height(height);
+		$("#splash .wp-post-image").width(width);
 //		$("#bkg").height(max_height);
 	
 		// set top/left
-		var top = $("#bkg img").offset().top;
-		var left = $("#bkg img").offset().left;
+		var top = $("#splash .wp-post-image").offset().top;
+		var left = $("#splash .wp-post-image").offset().left;
 		top = Math.round((max_height - height)/2);
 		left = Math.round((max_width - width)/2);
-		$("#bkg img").css("margin-top",top);
-		$("#bkg img").css("margin-left",left);
+		$("#splash .wp-post-image").css("margin-top",top);
+		$("#splash .wp-post-image").css("margin-left",left);
 }
 
 };
