@@ -72,7 +72,7 @@ get_header(); ?>
 			
 			
 			<!-- ================================================================================= -->
-			<!-- ! Here starts the feed list (blog posts, twitter, etc.), but first, our Contact   -->
+			<!-- ! Here starts the feed list (blog posts, twitter, etc.), but first, our Contactsd   -->
 			<!-- ================================================================================= -->
 			
 			<div id="more">
@@ -118,7 +118,6 @@ get_header(); ?>
 				 					    	<h2><?php the_title(); ?></a>
 				 					    	 <?php the_post_thumbnail('small'); ?>
 				 					    	 
-				 					    	<!--<span>Post Object Custom Field: <?php the_field('extra_field'); ?></span>-->
 				 					    </li>
 				 					<?php endforeach; ?>
 				 					</ul>
