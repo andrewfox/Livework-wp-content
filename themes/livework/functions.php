@@ -279,8 +279,8 @@ function create_post_type() {
 }
 
 /* People post type */
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
+add_action( 'init', 'create_post_type_people' );
+function create_post_type_people() {
 	register_post_type( 'people',
 		array(
 			'labels' => array(
