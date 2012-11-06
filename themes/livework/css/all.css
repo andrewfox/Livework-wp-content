@@ -30,6 +30,11 @@ a {
 	text-decoration: none;
 	color: #838588;
 	font-weight: bold;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-ms-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	transition: color 0.3s linear;
 }
 a:hover {
 	color: #eee;
@@ -41,6 +46,11 @@ a:hover {
 header {
 	width: 100%;
 	z-index: 100;
+	font-size: 13px;
+}
+header ul {
+	margin: 0;
+	padding: 0;
 }
 #access {
 	background-color: #111;
@@ -48,8 +58,9 @@ header {
 }
 
 header h1 {
-	padding: 10px 28px 13px 28px;
+	padding: 10px 21px 13px 28px;
 	margin: 0;
+	display: inline-block;
 }
 
 
@@ -60,29 +71,46 @@ header h1 a img{
 	display: none;
 }
 
-header h1 a img{
+header h1 a img {
 	height: 20px;
 }
 
-#menu-countries {
-	float: right;
-	margin: 0 0 0 0;
-	padding: 0;}
+
 
 #menu-primary {
-	float: left;
-	margin: 0 0 0 14px;
-	padding: 0;
+	display: inline-block;
 }
 
-ul#menu-primary.menu li, ul#menu-countries.menu li {
+header li {
 	display: inline-block;
-	padding: 14px 7px;
-	font-size: 13px;
+}
+header li a {
+	display: inline-block;
+	padding: 10px 7px;
+}
+header li.current-page-ancestor a {
+	color: #eee;
 }
 
 #main2 {
 	display: block;
+	clear: both;
+	margin: 0;
+	text-align: center;
+	background: #555;
+	background: rgba(1,1,1,0.8);
+}
+
+#menu-countries {
+	float: right;
+	padding: 0 28px 0 0;
+}
+#menu-countries a {
+	font-weight: normal;
+	color: #555;
+}
+#menu-countries .menu-item-45 a {
+	color: #838588;
 }
 
 
