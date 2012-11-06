@@ -73,10 +73,10 @@ if ( ! function_exists( 'livework_filter_wp_title' ) ) :
 
 		if ( is_search() ) {
 			// If we're a search, let's start over:
-			$title = sprintf( __( 'Search results for %s', 'boilerplate' ), '"' . get_search_query() . '"' );
+			$title = sprintf( __( 'Search results for %s', 'livework' ), '"' . get_search_query() . '"' );
 			// Add a page number if we're on page 2 or more:
 			if ( $paged >= 2 )
-				$title .= " $separator " . sprintf( __( 'Page %s', 'boilerplate' ), $paged );
+				$title .= " $separator " . sprintf( __( 'Page %s', 'livework' ), $paged );
 			// Add the site name to the end:livework_complete_version_removal
 			$title .= " $separator " . get_bloginfo( 'name', 'display' );
 			// We're done. Let's send the new title back to wp_title():
@@ -93,7 +93,7 @@ if ( ! function_exists( 'livework_filter_wp_title' ) ) :
 
 		// Add a page number if necessary:
 		if ( $paged >= 2 || $page >= 2 )
-			$title .= " $separator " . sprintf( __( 'Page %s', 'boilerplate' ), max( $paged, $page ) );
+			$title .= " $separator " . sprintf( __( 'Page %s', 'livework' ), max( $paged, $page ) );
 
 		// Return the new title to wp_title():
 		return $title;
@@ -131,7 +131,7 @@ if ( ! function_exists( 'livework_continue_reading_link' ) ) :
 	 * @return string "Continue Reading" link
 	 */
 	function livework_continue_reading_link() {
-		return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'boilerplate' ) . '</a>';
+		return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'livework' ) . '</a>';
 	}
 endif;
 
@@ -170,7 +170,7 @@ if ( ! function_exists( 'livework_custom_excerpt_more' ) ) :
 	 */
 	function livework_custom_excerpt_more( $output ) {
 		if ( has_excerpt() && ! is_attachment() ) {
-			$output .= boilerplate_continue_reading_link();
+			$output .= livework_continue_reading_link();
 		}
 		return $output;
 	}
@@ -202,7 +202,7 @@ add_filter( 'gallery_style', 'livework_remove_gallery_css' );
 
 
 
-if ( ! function_exists( 'boilerplate_posted_in' ) ) :
+if ( ! function_exists( 'livework_posted_in' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post (category, tags and permalink).
 	 *
@@ -212,11 +212,11 @@ if ( ! function_exists( 'boilerplate_posted_in' ) ) :
 		// Retrieves tag list of current post, separated by commas.
 		$tag_list = get_the_tag_list( '', ', ' );
 		if ( $tag_list ) {
-			$posted_in = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'boilerplate' );
+			$posted_in = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'livework' );
 		} elseif ( is_object_in_taxonomy( get_post_type(), 'category' ) ) {
-			$posted_in = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'boilerplate' );
+			$posted_in = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'livework' );
 		} else {
-			$posted_in = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'boilerplate' );
+			$posted_in = __( 'Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'livework' );
 		}
 		// Prints the string, replacing the placeholders.
 		printf(
