@@ -111,8 +111,8 @@ function rescale() {
 	var set_height = 500;
 	//alert ($(window).width());
 
-	var height = $("#bkg img").height();
-	var width = $("#bkg img").width();
+	var height = $("#splash img").height();
+	var width = $("#splash img").width();
 	var ratio = height/width;
 
 	// If height or width are too large, they need to be scaled down
