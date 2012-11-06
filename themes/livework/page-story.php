@@ -101,6 +101,27 @@ get_header(); ?>
 
 							<img src="<?php the_sub_field("section_image"); ?>"/>
 
+							<?php
+								 				 
+				 				$posts = get_field('add_mini_case_study');
+				 				 
+				 				if( $posts ): ?>
+				 					<ul>
+				 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+				 						<?php setup_postdata($post); ?>
+				 					    <li>
+				 					    	<h2><?php the_title(); ?></a>
+			<!--	 					    	<p><?php the_excerpt(); ?></p>-->
+				 					    	 <?php the_post_thumbnail('small'); ?>
+				 					    	 
+				 					    	<!--<span>Post Object Custom Field: <?php the_field('extra_field'); ?></span>-->
+				 					    </li>
+				 					<?php endforeach; ?>
+				 					</ul>
+				 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				 				<?php endif; ?>
+
+
 						</div>
 				 
 					<?php endif; ?>
@@ -110,25 +131,7 @@ get_header(); ?>
 
 	<!-- 				START add case studies-->
 	 				
-	 				<?php
-	 				 
-	 				$posts = get_field('insert_case_study');
-	 				 
-	 				if( $posts ): ?>
-	 					<ul>
-	 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-	 						<?php setup_postdata($post); ?>
-	 					    <li>
-	 					    	<h2><?php the_title(); ?></a>
-	 					    	<p><?php the_excerpt(); ?></p>
-	 					    	 <?php the_post_thumbnail('small'); ?>
-	 					    	 
-	 					    	<!--<span>Post Object Custom Field: <?php the_field('extra_field'); ?></span>-->
-	 					    </li>
-	 					<?php endforeach; ?>
-	 					</ul>
-	 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-	 				<?php endif; ?>
+	 				
 	 				
 
 	<!-- 				END add case studies-->
