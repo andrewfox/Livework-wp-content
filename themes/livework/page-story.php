@@ -44,7 +44,7 @@ get_header(); ?>
 <a href="#"><img class="left-arrow" src="http://dominicburton.co.uk/lw-test/wp-content/uploads/2012/10/left-arrow.png" alt="go to previous page" /></a>
 <a href="index2.html"></a>
 <?php
-$posts2 = get_field('page_order');
+$posts2 = get_field('next_page');
  
 if( $posts2 ): ?>
 	<ul>
