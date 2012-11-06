@@ -15,7 +15,7 @@
 
 get_header(); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+				<article class="main">
 
 					<h1 class="page-title">News</h1>
 
