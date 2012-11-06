@@ -64,7 +64,7 @@ get_header(); ?>
 			<!-- ======================================== -->
 			
 				<div id="more-info">
-					<h2><a id = "more-infolink" href="#">⬇ More on <?php wp_title("",true); ?></a></h2>
+					<h2><a id = "more-infolink" href="#"><span class="ss-standard"></span> More on <?php the_title(); ?></a></h2>
 					
 					<h1><?php the_field('page_title_suffix'); ?></h1>
 				</div>

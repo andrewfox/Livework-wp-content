@@ -4,8 +4,360 @@
 
 
 body {
+}
+
+/* Background */
+#bkg { 
+	position:relative; 
+	z-index:0; 
+	width:100%; 
+	min-height:160px; 
+	overflow:hidden;
+	padding:0; 
+	margin: 0;
+} 
+
+#home #bkg { position: inline; left:0; top:0; z-index:0; width:100%; height:100%; overflow:hidden; margin:0;}
+
+
+/* More info */
+#more-info h2 {
+/*	position: absolute;*/
+	background-color: black;
+	display: inline-block;
+	margin-left: 40px;
+	padding: 10px 10px 5px;
+	bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	position: relative;
+	top: -40px;
+	height: 40px;
+	box-sizing: border-box;
+}
+
+.more-header h1 {
+	padding-top: 20px;
+	padding-left: 50px;
+	font-family:'ChaparralPro-LightCapt'; 
+}
+
+#more-info h2 a{
+	color: white;
+}
+
+section.more-header {
+	color: white;
+	background-color: black;
+	width: 100%;
+	height: 300px;
+	top: -105px;
+	position: relative;
+}
+
+
+/* Nav */
+
+.nav-bar {
+	background-color: #231F20;
+	width: 100%;
+	height: 60px;
+	padding-left: 0px;
+	top: 20px;
+	position: absolute;
+	z-index: 100;
+	box-sizing: border-box;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h1#title {
+	display: inline;
+	float: left;
+	margin: 0;
+	padding: 1px 0 0 50px;
+}
+
+nav.primary {
+	display: block;
+	float: left;
+}
+
+nav.location {
+	display: inline;
+	float: right;
+	height: 60px;
+	
+/*	margin-bottom: 60px;*/
+	margin-right: 50px;
+}
+
+nav.desktop {
+	display: inline;
+}
+
+nav.desktop ul li, nav.location ul li, nav.sectors ul li {
+	display: inline;
+	padding: 0 7px;
+}
+
+nav.sectors {
+	clear: both;
+	text-align: center;
+	height: 5px;
+	padding: 5px 0 0 0;
+	background: url(../img/repeated-bkg-white.png) repeat;
+/*	margin: -59px 0 0;
+	color: white;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	font-style: normal;
+	padding: 0 0 0 40px;
+	height: 100%;*/
+	color: #0B4D6F;
+	position: relative;
+	margin: 0;
+}
+
+nav.sectors ul{
+	padding: 0;
+		position: relative;
+		top: 0;
+		margin: 0;
+	}
+
+nav.sectors ul li a{
+
+	color: #0B4D6F;
+}
+
+.feet{
+	background: url(../img/sectors-bar.png) no-repeat center 0;
+	height: 100px;
+	margin: 0;
+	padding: 0;
+}
+
+
+nav.desktop ul, nav.location ul  {
+	display: inline;
+	float: left;
+	padding-top: 5px;
+	padding-left: 15px;
+}
+
+
+.arrows{
+	width: 100%;
+	z-index: 101;
+	top: 40%;
+	position: absolute;
+}
+
+.arrows img{
+	width: 5%;
+	max-width: 70px;
+}
+
+.smallarrows{
+	width: 20px;
+	margin: 0 10px;
+}
+
+
+
+/*#content {
+	top: -195px;
+	position: relative;
+	padding-top: 160px;
+}*/
+
+img.right-arrow {
+	right: 0;
+	position: absolute;
+}
+
+#home.js #bkg img { margin-top:0;}
+
+
+
+
+
+#top{
+	width: 100%;
+	height: 30%;
+	min-height: 150px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	z-index: 100;
+}
+
+/*.hat{
+	background: url(../img/more-top-bkg.png) no-repeat right -40px;
+	height: 56px;
+	margin: 0;
+	padding: 0;
+}*/
+
+
+.box{
+	background: url(../img/repeated-bkg.png) repeat;
+	margin: -300px 0 0 0px;
+	font-weight: normal;
+	font-style: normal;
+	width: 35%;
+	padding: 0 0 0 10%;
+/*	min-width: 380px;*/
+}
+
+.box span{
+	font-family: 'Chaparral W01 It Cap';
+	color: #007CB8;
+}
+
+.box h3{
+	color: #0B4D6F;
+	font-size: 18px;
+	margin: 0;
+	font-family: 'Chaparral Pro Capt 1167087';
+}
+
+.box h2 {
+	font: 42px 'Chaparral Pro Capt 1167087';
+	color: #0B4D6F;
+	margin: 0;
+}
+
+.box p {
+	font: 21px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin: 10px 0 5px;
+}
+
+#box h2{
+	padding-top: 40px;
+	margin-left: 40px;
+}
+
+
+
+
+
+#menu-top-level-menu li a:hover {
+	color: white;
+}
+
+#menu-top-level-menu li a:active {
+	color: white;
+}
+
+/*div.menu-header {
+	
+	
+	z-index: 100;
+	width: 100%;
+	position: absolute;
+}*/
+
+
+
+h2.entry-title {
+	
+}
+
+section#content {
+	clear: both;
+}
+
+header h1 {
+	padding-top: 10px;
+	margin: 0;
+	margin-left: 14px;
+	float: left;
+}
+
+nav#access {
+}
+
+
+
+header {
+
+	height: 50px;
+	position: absolute;
+	top: 20px;
+	float: left;
+}
+
+#bkg img {
+	position: relative;
+	z-index: 0;
 
 }
+
+ul#menu-primary.menu {
+	float: left;
+}
+
+
+
+
+div.menu-header {
+	display: inline;
+	float: left;
+}
+
+
+
+#menu-top-level-menu li, #menu-sector-menu li {
+	display: inline;
+	padding: 0 7px;
+}
+
+#menu-sector-menu {
+	z-index: 103;
+	background-color: red;
+	width: 100%;
+	margin: 12px 0 0;
+	position: relative;
+}
+
+.menustyle{
+	position: absolute;
+display: inline;
+padding-left: 15px;
+
+
+float: left;
+padding-top: 15px;
+background-color: #231F20;
+width: 100%;
+height: 55px;
+z-index: 100;
+box-sizing: border-box;
+top: 20px;	
+}
+
+
+.fixed {
+
+	position:fixed; 
+	top:0px;
+	
+
+
+}
+
+.fixed2 {
+
+position:fixed; 
+top:65px;
+}
+
+div#hello.arrows.fixed2 a img {
+	width: 20px;
+}
+
 
 
 

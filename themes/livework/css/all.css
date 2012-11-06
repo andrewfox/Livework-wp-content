@@ -13,18 +13,6 @@ body {
 	line-height: 140%;
 }
 
-#more-info {
-	background-color: black;
-	height: 200px;
-	position: relative;
-	top: -4px;
-}
-
-#more-info h1 {
-	color: white;
-	margin-left: 40px;
-}
-
 h1, h2, h3 {
 	font-family:'ChaparralPro-LightCapt', Georgia, Times, serif;
 }
@@ -33,15 +21,18 @@ p {
 }
 
 
-ul{
+ul {
 	list-style-type: none;
 }
 
 
-a{
+a {
 	text-decoration: none;
 	color: #838588;
 	font-weight: bold;
+}
+a:hover {
+	color: #eee;
 }
 
 
@@ -61,6 +52,28 @@ header h1 a img{
 	display: none;
 }
 
+header h1 a img{
+	height: 20px;
+}
+
+#menu-countries {
+	float: right;
+	margin: 0 0 0 0;
+	padding: 0;}
+
+#menu-primary {
+	float: left;
+	margin: 0 0 0 14px;
+	padding: 0;
+}
+
+ul#menu-primary.menu li, ul#menu-countries.menu li{
+	display: inline-block;
+	padding: 14px 7px;
+	font-size: 13px;
+}
+
+
 /*Content*/
 
 section#content {
@@ -70,6 +83,21 @@ section#content {
 h1.page-title {
 	border-bottom: 1px solid #ccc;
 	margin-top: 0;
+}
+
+
+/*More info*/
+
+#more-info {
+	background-color: black;
+	height: 200px;
+	position: relative;
+	top: -4px;
+}
+
+#more-info h1 {
+	color: white;
+	margin-left: 40px;
 }
 
 
@@ -112,28 +140,4 @@ h1.page-title {
 }
 
 
-header {
-	background-color: black;
-	width: 100%;
-	z-index: 100;
-}
 
-
-header h1 a img{
-	height: 20px;
-}
-
-#menu-countries {
-	float: right;
-}
-
-#menu-primary {
-	float: left;
-}
-
-
-
-ul#menu-primary.menu li, ul#menu-countries.menu li{
-	display: inline;
-	padding: 0 7px;
-}

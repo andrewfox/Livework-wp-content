@@ -14,10 +14,15 @@ body {
 
 
 /* Background */
-#bkg { position:relative; z-index:0; width:100%; min-height:160px; overflow:hidden; border: 2px solid blue; padding:0; margin: 0;
-	background: center center yellow;
+#bkg { 
+	position:relative; 
+	z-index:0; 
+	width:100%; 
+	min-height:160px; 
+	overflow:hidden;
+	padding:0; 
+	margin: 0;
 } 
-
 
 #home #bkg { position: inline; left:0; top:0; z-index:0; width:100%; height:100%; overflow:hidden; margin:0;}
 
@@ -272,8 +277,9 @@ section#content {
 }
 
 header h1 {
-	margin-top: 10px;
-	margin-left: 50px;
+	padding-top: 10px;
+	margin: 0;
+	margin-left: 14px;
 	float: left;
 }
 
@@ -315,9 +321,7 @@ div.menu-header {
 	padding: 0 7px;
 }
 
-#menu-sector-menu{
-/*	position: absolute;
-	top: 100px;*/
+#menu-sector-menu {
 	z-index: 103;
 	background-color: red;
 	width: 100%;

@@ -8,12 +8,13 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Boilerplate
+ * @subpackage Livework
  * @since Boilerplate 1.0
  */
 
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<?php if ( is_front_page() ) { ?>
 					<h2 class="page-title"><?php the_title(); ?></h2>
@@ -26,6 +27,7 @@ get_header(); ?>
 						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
+
 <?php endwhile; ?>
 
 <?php get_sidebar(); ?>
