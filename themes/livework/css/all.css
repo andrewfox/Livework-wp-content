@@ -45,6 +45,14 @@ header {
 }
 
 
+header h1 {
+	padding-top: 10px;
+	margin: 0;
+	margin-left: 14px;
+	float: left;
+}
+
+
 header h1 a img{
 	height: 20px;
 }
