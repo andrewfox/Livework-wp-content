@@ -78,6 +78,8 @@ get_header(); ?>
 			<div id="more">
 				
 				<div id="content">
+				
+				<?php var_dump( get_field('relationship') ); ?>
 								
 				<?php 
 				 
@@ -90,6 +92,8 @@ get_header(); ?>
 					<?php if(get_row_layout() == "story_section"): // layout: Content ?>
 				 
 						<div class="story-section">
+							
+							<hr>
 						
 							<h2><?php the_sub_field("section_title"); ?></h2>
 						
@@ -101,7 +105,7 @@ get_header(); ?>
 
 							<?php
 							
-								var_dump( get_field('relationship') );
+								
 								 				 
 				 				$posts = the_sub_field('add_mini_case_study');
 				 				 
