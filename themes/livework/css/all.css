@@ -88,6 +88,8 @@ header li a {
 	display: inline-block;
 	padding: 10px 7px;
 }
+
+header li.current_page_item a,
 header li.current-page-ancestor a {
 	color: #eee;
 }
@@ -139,6 +141,21 @@ h1.page-title {
 	color: white;
 	margin-left: 40px;
 }
+
+
+/*Story Section*/
+
+.story-section {
+	background: #eee;
+	margin: 0;
+	padding: 20px;
+}
+.story-section:nth-child(even) {
+	background: #ddd;
+}
+
+
+
 
 
 /*Footer*/
