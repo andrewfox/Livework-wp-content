@@ -64,7 +64,7 @@ header h1 a img{
 /*Content*/
 
 section#content {
-	padding: 20px;
+	padding: 0px;
 }
 
 h1.page-title {
@@ -112,8 +112,6 @@ h1.page-title {
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 header {
 	background-color: black;
 	width: 100%;
@@ -139,8 +137,3 @@ ul#menu-primary.menu li, ul#menu-countries.menu li{
 	display: inline;
 	padding: 0 7px;
 }
-=======
->>>>>>> Various CSS +
-=======
-  
->>>>>>> CSS Conflict
