@@ -10,10 +10,17 @@
  * @since Boilerplate 1.0
  */
 ?>
-		</section><!-- #main -->
+		</section><!-- #content -->
+
+
 		<footer role="contentinfo">
+
 			<?php echo date("Y"); ?> <a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-			<?php wp_nav_menu( array('container' => '', 'menu' => 'Footer' )); ?>
+			
+			<nav id="social">
+				<?php wp_nav_menu( array('container' => '', 'menu' => 'Footer' )); ?>
+			</nav>
+
 		</footer><!-- footer -->
 <?php
 	/* Always have wp_footer() just before the closing </body>
