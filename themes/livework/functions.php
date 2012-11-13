@@ -15,7 +15,7 @@
  * functions.php file. The child theme's functions.php file is included before the parent
  * theme's file, so the child theme functions would be used.
  *
- * Functions that are not pluggable (not wrapped in function_exists()) are instead attached
+ * Functions that are not pluggable (not wrapped in function_exists()) are instead attached 
  * to a filter or action hook. The hook can be removed by using remove_action() or
  * remove_filter() and you can attach your own function to the hook.
  *
