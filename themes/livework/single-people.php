@@ -25,6 +25,32 @@ get_header(); ?>
 					<footer class="entry-utility">
 						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '<span class="edit-link">', '</span>' ); ?>
 					</footer><!-- .entry-utility -->
+					
+					<ul id="people">
+					<?php query_posts(array('post_type' => 'people', 'posts_per_page' => 100 , 'order' => 'DSC', 'paged'=> $paged)); ?>
+		
+					<?php while(have_posts()) : the_post();  ?>
+
+						<li><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+							<?php the_title(); 
+						
+						
+						if(has_post_thumbnail()) :
+						the_post_thumbnail('original'); 
+						else :				
+
+						endif;
+						
+						?>
+						</a></li>
+						
+						<?php endwhile; ?>
+					
+					</ul>
+	
+					<?php wp_reset_query();?>
+
+					
 				</article><!-- #post-## -->
 				<nav id="nav-below" class="navigation">
 					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . '</span> %title' ); ?></div>
