@@ -73,7 +73,6 @@ get_header(); ?>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
 				
-					[LIST OF CASE STUDIES/THEMES]
 					<div id="case-studies">
 					<?php
 					
