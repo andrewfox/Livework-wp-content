@@ -1,7 +1,7 @@
 
 $(document).ready(function() {
 
-var theLoc = $('header').position().top;
+	var theLoc = $('header').position().top;
 	$(window).scroll(function() {
 		if(theLoc >= $(window).scrollTop()) {
 			if($('header').hasClass('fixed')) {
@@ -62,7 +62,7 @@ var theLoc = $('header').position().top;
 
 	/* HOMEPAGE */
 	// rescale the homepage's bkgd img
-if ($("body.page-template-page-story-php").length > 0) {
+if ($("body.page-template-page-story-php" || "body.page-template-page-sector-php").length > 0) {
 	rescale();
 	$(window).resize(function(){
 		rescale();
