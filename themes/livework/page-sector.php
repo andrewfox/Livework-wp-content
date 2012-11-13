@@ -31,7 +31,7 @@ get_header(); ?>
 
 					</div> <!-- /#top -->
 
-					<?php the_post_thumbnail('full'); ?>
+					<?php the_post_thumbnail('large'); ?>
 
 				</div> <!-- /#splash -->
 
