@@ -12,7 +12,7 @@ get_header(); ?>
 				<nav id="nav-above" class="navigation">
 					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . ' %title' ); ?>
 					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '' ); ?>
-				</nav><!-- #nav-above -->
+				</nav><!-- #nav-above --> 
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1 class="page-title"><?php the_title(); ?></h1>
 					<div class="entry-meta">
