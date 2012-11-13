@@ -32,7 +32,7 @@ get_header(); ?>
 							printf( __( 'Yearly Archives: %s', 'boilerplate' ), get_the_date('Y') );
 						else :
 							_e( 'Blog Archives', 'boilerplate' );
-						endif;
+						endif; 
 					?></h1>
 <?php
 	/* Since we called the_post() above, we need to
