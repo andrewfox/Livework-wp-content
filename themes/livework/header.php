@@ -73,6 +73,15 @@
 			</nav>
 			<?php } ?>
 
+			<?php 
+			// Our Client's Stories Sector menu
+			if (is_tree(9)) { 
+			?>
+			<nav id="main2" class="nav-sectors">
+				<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
+			</nav>
+			<?php } ?>
+
 
 		</header>
 
