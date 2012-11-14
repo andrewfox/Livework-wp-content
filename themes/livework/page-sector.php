@@ -76,7 +76,7 @@ get_header(); ?>
 					<div id="case-studies">
 					<?php
 					
-										 				$posts = get_sub_field('add_case_studies');
+										 				$posts = get_field('add_case_studies');
 										 				 
 										 				if( $posts ): ?>
 										 					<ul class="section-links clearfix">
@@ -94,6 +94,14 @@ get_header(); ?>
 										 				<?php endif; ?>
 	 			</div>
 	 			</article> <!-- /.main -->
+	 			
+	 			
+	 			
+	 		
+	 			
+	 			
+	 			
+	 			
 
 	 			
 	<?php get_footer(); ?>
