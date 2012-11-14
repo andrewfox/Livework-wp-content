@@ -90,6 +90,10 @@ get_header(); ?>
 					 		
 					 		$layoutvar = the_sub_field("section_layout");
 					 		
+					 		echo "$layoutvar"
+					 		echo "$layoutvar"
+					 		echo "$layoutvar"
+					 		echo "$layoutvar"
 					 		
 					 		if($layoutvar == "basic" )
 					 		
