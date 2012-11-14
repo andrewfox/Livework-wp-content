@@ -352,4 +352,245 @@ function is_tree($pid) {      // $pid = The ID of the page we're looking for pag
 
 
 
+
+
+
+/**
+ * Activate Add-ons
+ * Here you can enter your activation codes to unlock Add-ons to use in your theme. 
+ * Since all activation codes are multi-site licenses, you are allowed to include your key in premium themes. 
+ * Use the commented out code to update the database with your activation code. 
+ * You may place this code inside an IF statement that only runs on theme activation.
+ */ 
+ 
+// if(!get_option('acf_repeater_ac')) update_option('acf_repeater_ac', "xxxx-xxxx-xxxx-xxxx");
+// if(!get_option('acf_options_page_ac')) update_option('acf_options_page_ac', "xxxx-xxxx-xxxx-xxxx");
+// if(!get_option('acf_flexible_content_ac')) update_option('acf_flexible_content_ac', "xxxx-xxxx-xxxx-xxxx");
+// if(!get_option('acf_gallery_ac')) update_option('acf_gallery_ac', "xxxx-xxxx-xxxx-xxxx");
+
+
+/**
+ * Register field groups
+ * The register_field_group function accepts 1 array which holds the relevant data to register a field group
+ * You may edit the array as you see fit. However, this may result in errors if the array is not compatible with ACF
+ * This code must run every time the functions.php file is read
+ */
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => '50a3a3f73f330',
+		'title' => 'attach case study to sector page',
+		'fields' => 
+		array (
+			0 => 
+			array (
+				'key' => 'field_50a28503fab14',
+				'label' => 'Add Case Studies',
+				'name' => 'add_case_studies',
+				'type' => 'relationship',
+				'order_no' => '0',
+				'instructions' => '',
+				'required' => '0',
+				'conditional_logic' => 
+				array (
+					'status' => '0',
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'null',
+							'operator' => '==',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'post_type' => 
+				array (
+					0 => 'case_study',
+				),
+				'taxonomy' => 
+				array (
+					0 => 'all',
+				),
+				'max' => '',
+			),
+		),
+		'location' => 
+		array (
+			'rules' => 
+			array (
+				0 => 
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'page-sector.php',
+					'order_no' => '0',
+				),
+			),
+			'allorany' => 'all',
+		),
+		'options' => 
+		array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => 
+			array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => '50a3a3f7439b6',
+		'title' => 'Order',
+		'fields' => 
+		array (
+			0 => 
+			array (
+				'key' => 'field_5099279524d3e',
+				'label' => 'Choose Next Page',
+				'name' => 'next_page',
+				'type' => 'relationship',
+				'order_no' => '0',
+				'instructions' => '',
+				'required' => '0',
+				'conditional_logic' => 
+				array (
+					'status' => '0',
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'null',
+							'operator' => '==',
+							'value' => '',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'post_type' => 
+				array (
+					0 => 'page',
+				),
+				'taxonomy' => 
+				array (
+					0 => 'all',
+				),
+				'max' => '1',
+			),
+			1 => 
+			array (
+				'key' => 'field_50992b4c74d3f',
+				'label' => 'Choose Previous Page',
+				'name' => 'previous_page',
+				'type' => 'relationship',
+				'order_no' => '1',
+				'instructions' => '',
+				'required' => '0',
+				'conditional_logic' => 
+				array (
+					'status' => '0',
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'null',
+							'operator' => '==',
+							'value' => '',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'post_type' => 
+				array (
+					0 => 'page',
+				),
+				'taxonomy' => 
+				array (
+					0 => 'all',
+				),
+				'max' => '1',
+			),
+		),
+		'location' => 
+		array (
+			'rules' => 
+			array (
+				0 => 
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'page',
+					'order_no' => '0',
+				),
+			),
+			'allorany' => 'all',
+		),
+		'options' => 
+		array (
+			'position' => 'side',
+			'layout' => 'default',
+			'hide_on_screen' => 
+			array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => '50a3a3f7477fa',
+		'title' => 'People',
+		'fields' => 
+		array (
+			0 => 
+			array (
+				'key' => 'field_509b8cd37ec4d',
+				'label' => 'Job title',
+				'name' => 'job_title',
+				'type' => 'text',
+				'order_no' => '0',
+				'instructions' => '',
+				'required' => '1',
+				'conditional_logic' => 
+				array (
+					'status' => '0',
+					'rules' => 
+					array (
+						0 => 
+						array (
+							'field' => 'null',
+							'operator' => '==',
+						),
+					),
+					'allorany' => 'all',
+				),
+				'default_value' => '',
+				'formatting' => 'html',
+			),
+		),
+		'location' => 
+		array (
+			'rules' => 
+			array (
+				0 => 
+				array (
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'people',
+					'order_no' => '0',
+				),
+			),
+			'allorany' => 'all',
+		),
+		'options' => 
+		array (
+			'position' => 'normal',
+			'layout' => 'no_box',
+			'hide_on_screen' => 
+			array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
+
 ?>
