@@ -123,7 +123,6 @@ get_header(); ?>
 					 		
 					 		}
 					 		
-					 		endif;
 					 		
 					 		?>
 								 							
