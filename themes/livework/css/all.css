@@ -178,9 +178,8 @@ h1.page-title {
 	width: auto;
 }
 
-#case-studies.wp-post-image {
+#case-studies ul.section-links.clearfix li.sector-page a img.attachment-small.wp-post-image {
 	display: block;
-	vertical-align: auto;
 }
 
 
