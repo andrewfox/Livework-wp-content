@@ -87,7 +87,7 @@ get_header(); ?>
 					 <div class="story-section">
 					 		
 					 		
-					 		<?php echo ('<div class="', the_sub_field("section_layout")'">'); ?>					 							 		
+					 		<?php echo ('<div class="'the_sub_field("section_layout")'">'); ?>					 							 		
 					 		
 								 							
 													
