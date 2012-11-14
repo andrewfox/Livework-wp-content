@@ -84,7 +84,7 @@ get_header(); ?>
 					 
 						<?php if(get_row_layout() == "story_section"): // layout: Content ?>
 					 
-					 
+					 <div class="story-section">
 					 		<?php 
 					 		
 					 		
@@ -123,6 +123,10 @@ get_header(); ?>
 					 		
 					 		}
 					 		
+					 		else {
+					 			// do nothing
+					 		}
+					 		
 					 		
 					 		?>
 								 							
@@ -158,8 +162,10 @@ get_header(); ?>
 					 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 					 				<?php endif; ?>
 	
-	
+							
+							</div><!-- /.<layout class> -->
 							</div> <!-- /.story-section -->
+							
 					 
 						<?php endif; ?>
 					 
