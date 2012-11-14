@@ -84,9 +84,15 @@ get_header(); ?>
 					 
 						<?php if(get_row_layout() == "story_section"): // layout: Content ?>
 					 
-								 
-							<div class="story-section">
-							
+					 
+					 		<?php 
+					 		
+					 			$layoutvar = the_sub_field("section_layout");
+					 			
+					 			echo '<div class="'$layoutvar ' story-section">'
+					 											
+					 		?>
+								 							
 													
 								<h2><?php the_sub_field("section_title"); ?></h2>
 							
@@ -94,7 +100,7 @@ get_header(); ?>
 								
 									<?php the_sub_field("section_bodytext"); ?>
 									
-									<?php the_sub_field("section_layout"); ?>
+									
 	
 								</div>
 	
