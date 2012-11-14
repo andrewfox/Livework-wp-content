@@ -89,46 +89,7 @@ get_header(); ?>
 					 		
 					 		
 					 		$layoutvar = the_sub_field("section_layout");
-					 		
-					 		echo "$layoutvar"
-					 		
-					 		
-//					 		if($layoutvar == "basic" )
-//					 		
-//					 		{
-//					 		
-//					 			echo '<div class="basic"';
-//					 		
-//					 		}
-//					 		
-//					 		elseif($layoutvar == "bkgd" )
-//					 		
-//					 		{
-//					 		
-//					 			echo '<div class="bkgd"';
-//					 		
-//					 		}
-//					 		
-//					 		elseif($layoutvar == "text-left" )
-//					 		
-//					 		{
-//					 		
-//					 			echo '<div class="text-left"';
-//					 		
-//					 		}
-//					 		
-//					 		elseif($layoutvar == "text-right" )
-//					 		
-//					 		{
-//					 		
-//					 			echo '<div class="text-right"';
-//					 		
-//					 		}
-//					 		
-//					 		else {
-					 			// do nothing
-//					 		}
-					 		
+					 							 		
 					 		
 					 		?>
 								 							
