@@ -86,7 +86,7 @@ get_header(); ?>
 										 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 										 								<span><?php the_title(); ?></span>
 										 								<?php the_post_thumbnail('small'); ?>
-										 								<?php the_content(); ?>										 							</a>
+										 								</a><?php the_content(); ?>	
 										 						</li>
 										 					<?php endforeach; ?>
 										 					</ul>
