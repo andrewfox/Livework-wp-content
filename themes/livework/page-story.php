@@ -89,7 +89,9 @@ get_header(); ?>
 					 		
 					 			$layoutvar = the_sub_field("section_layout");
 					 			
-					 			echo '<div class="'$layoutvar ' story-section">'
+					 			echo '<div class="'
+					 			echo $layoutvar
+					 			echo ' story-section">'
 					 											
 					 		?>
 								 							
