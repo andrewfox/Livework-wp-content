@@ -85,13 +85,10 @@ get_header(); ?>
 						<?php if(get_row_layout() == "story_section"): // layout: Content ?>
 					 
 					 <div class="story-section">
-					 		<?php 
 					 		
 					 		
-					 		$layoutvar = the_sub_field("section_layout");
-					 							 		
+					 		<?php echo ('<div class="', the_sub_field("section_layout")'">'); ?>					 							 		
 					 		
-					 		?>
 								 							
 													
 								<h2><?php the_sub_field("section_title"); ?></h2>
