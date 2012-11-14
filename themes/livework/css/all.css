@@ -180,6 +180,7 @@ h1.page-title {
 
 #case-studies.wp-post-image {
 	display: block;
+	vertical-align: auto;
 }
 
 
