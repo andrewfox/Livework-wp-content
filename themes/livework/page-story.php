@@ -95,7 +95,7 @@ get_header(); ?>
 					 		
 					 		{
 					 		
-					 			echo '<div class="basic"'
+					 			echo '<div class="basic"';
 					 		
 					 		}
 					 		
@@ -103,7 +103,7 @@ get_header(); ?>
 					 		
 					 		{
 					 		
-					 			echo '<div class="bkgd"'
+					 			echo '<div class="bkgd"';
 					 		
 					 		}
 					 		
@@ -111,7 +111,7 @@ get_header(); ?>
 					 		
 					 		{
 					 		
-					 			echo '<div class="text-left"'
+					 			echo '<div class="text-left"';
 					 		
 					 		}
 					 		
@@ -119,11 +119,11 @@ get_header(); ?>
 					 		
 					 		{
 					 		
-					 			echo '<div class="text-right"'
+					 			echo '<div class="text-right"';
 					 		
 					 		}
 					 		
-					 		
+					 		endif;
 					 		
 					 		?>
 								 							
