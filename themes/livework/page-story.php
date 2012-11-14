@@ -87,11 +87,44 @@ get_header(); ?>
 					 
 					 		<?php 
 					 		
-					 			$layoutvar = the_sub_field("section_layout");
-					 			
-					 			
-					 			
-					 			echo "<div class='$layoutvar story-section'>"					 											
+					 		
+					 		$layoutvar = the_sub_field("section_layout");
+					 		
+					 		
+					 		if($layoutvar == "basic" )
+					 		
+					 		{
+					 		
+					 			echo '<div class="basic"'
+					 		
+					 		}
+					 		
+					 		elseif($layoutvar == "bkgd" )
+					 		
+					 		{
+					 		
+					 			echo '<div class="bkgd"'
+					 		
+					 		}
+					 		
+					 		elseif($layoutvar == "text-left" )
+					 		
+					 		{
+					 		
+					 			echo '<div class="text-left"'
+					 		
+					 		}
+					 		
+					 		elseif($layoutvar == "text-right" )
+					 		
+					 		{
+					 		
+					 			echo '<div class="text-right"'
+					 		
+					 		}
+					 		
+					 		
+					 		
 					 		?>
 								 							
 													
