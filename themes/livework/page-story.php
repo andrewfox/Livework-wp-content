@@ -87,7 +87,7 @@ get_header(); ?>
 					 <div class="story-section">
 					 		<?php 
 					 		
-					 		if(the_sub_field("section_layout") == "basic")
+					 		if(the_sub_field("section_layout") == "what")
 					 		{
 					 		
 					 		}					 		
