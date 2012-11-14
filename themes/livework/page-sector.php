@@ -82,11 +82,11 @@ get_header(); ?>
 										 					<ul class="section-links clearfix">
 										 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 										 						<?php setup_postdata($post); ?>
-										 						<li>
+										 						<li class="sector-page">
 										 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 										 								<span><?php the_title(); ?></span>
 										 								<?php the_post_thumbnail('small'); ?>
-										 							</a>
+										 								<?php the_content(); ?>										 							</a>
 										 						</li>
 										 					<?php endforeach; ?>
 										 					</ul>
