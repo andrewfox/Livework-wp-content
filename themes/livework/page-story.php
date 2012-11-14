@@ -89,7 +89,7 @@ get_header(); ?>
 					 		
 					 		if(the_sub_field("section_layout") == "basic")
 					 		{
-					 		    echo "hello"
+					 		
 					 		}					 		
 					 		
 					 		?>
