@@ -37,7 +37,7 @@ a {
 	transition: color 0.3s linear;
 }
 a:hover {
-	color: #292a2b;
+	color: #ccc;
 }
 
 
@@ -309,14 +309,27 @@ footer a {
 	padding-left: 0.222222222%;
 }
 
+ul#offices{
+	clear: both;
+	float: left;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #777;
+}
+
 ul#offices li{
 	cursor: pointer;
 	float: left;
-	clear: both;
+	padding: 6px 10px;
+	border-radius: 15px;
+	background-color: #999;
+	margin-right: 5px;
+	margin-left: 5px;
+	color: #fff;
 }
 
 ul#offices li:hover{
-	color: red;
+	background-color: #111;
 }
 
 .superclass{
