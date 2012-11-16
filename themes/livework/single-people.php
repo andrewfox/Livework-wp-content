@@ -30,14 +30,14 @@ get_header(); ?>
 					</footer><!-- .entry-utility -->
 					
 					
-					
+					<h2>More posts by <?php the_title(); ?></h2>
 					<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
 					<?php if (have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
 					<div class="about">
 					<h1><?php the_title(); ?></h1>
 					<?php the_excerpt() ?>
-					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>
+<!--					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>-->
 					</div>
 					<?php endwhile; ?>
 					<?php else : ?>
