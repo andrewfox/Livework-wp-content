@@ -1,6 +1,46 @@
 
 $(document).ready(function() {
 
+
+// Hide/show people on our team by location
+
+
+$("li.london").click(function () {
+	$('#people li')
+//		.toggle()
+		.addClass('superclass');
+	$('#people li.london')
+		.show();
+});
+
+
+
+
+$("li.oslo").click(function () {
+	$('ul#people li.oslo')
+		.toggle()
+});
+
+$("li.sao-paulo").click(function () {
+	$('ul#people li.sao-paulo')
+		.toggle()
+});
+
+$("li.rotterdam").click(function () {
+	$('ul#people li.rotterdam')
+		.toggle()
+});
+
+
+//$("ul#offices li").click(function () {
+//	$('ul#people li.oslo')
+//	$(this).prop('value', 'Existing activity');
+//		.toggle()
+//});
+//
+//(this).parent().children('.class2');
+
+
 	var theLoc = $('header').position().top;
 	$(window).scroll(function() {
 		if(theLoc >= $(window).scrollTop()) {
