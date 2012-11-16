@@ -43,6 +43,9 @@ get_header(); ?>
 
 						endif;
 						
+						echo '<img src="img/portrait.png" alt="placeholder image" height="200" width="200">'
+						
+						
 						?>
 						</a></li>
 						
