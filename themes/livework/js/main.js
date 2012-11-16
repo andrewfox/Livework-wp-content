@@ -8,10 +8,9 @@ $(document).ready(function() {
 $("li.london").click(function () {
 	$('#people li')
 //		.hide()
-		
-	$('#people li.category-london')
-		.show();
 		.addClass('superclass');
+	$('#people li div.category-london')
+		.show();
 });
 
 
