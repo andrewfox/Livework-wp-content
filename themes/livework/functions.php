@@ -272,7 +272,7 @@ function create_post_type() {
 			),
 		'public' => true,
 		'has_archive' => true,
-		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title' ),
+		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title', 'author' ),
 		'taxonomies' => array('category'),
 		)
 	);
