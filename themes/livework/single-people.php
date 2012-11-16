@@ -26,6 +26,9 @@ get_header(); ?>
 					<?php endforeach; ?>
 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 				<?php endif; ?>
+				
+				<?php query_posts('category_name=london&showposts=1&paged=' .get_query_var('paged')); ?>
+				
 				<?php
 				$current =  get_permalink();
 				$prevPost = get_previous_post(true);
