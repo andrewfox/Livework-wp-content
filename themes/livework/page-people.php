@@ -49,6 +49,7 @@ get_header(); ?>
 						
 						?>
 						</a>
+						<?php the_author_posts_link(); ?>
 						</div>
 						</li>
 						
