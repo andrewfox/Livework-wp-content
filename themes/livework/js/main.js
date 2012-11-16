@@ -10,7 +10,7 @@ $("li.london").click(function () {
 //		.hide()
 	$('#people li div.category-london')
 		.show();
-		.addClass('superclass');
+		.parent().addClass('superclass');
 });
 
 
