@@ -26,10 +26,9 @@ get_header(); ?>
 					<?php endforeach; ?>
 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 				<?php endif; ?>
-				
+				<?php $nextURL = get_permalink($nextPost->ID); ?>
 
-					    	<?php next_post_link('%link', 'http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/img/right-arrow.png'); ?> 
-<!--					    	<img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>-->
+					    	<a href="<?php echo $nextURL ?>"> <img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
 				
 				</div>
 				
