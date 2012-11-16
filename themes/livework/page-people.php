@@ -32,8 +32,11 @@ get_header(); ?>
 					<?php query_posts(array('post_type' => 'people', 'posts_per_page' => 100 , 'order' => 'DSC', 'paged'=> $paged)); ?>
 		
 					<?php while(have_posts()) : the_post();  ?>
-
-						<li><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+						
+						
+						<li>
+						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 							<?php the_title(); 
 						
 						
@@ -44,7 +47,9 @@ get_header(); ?>
 						endif;
 						
 						?>
-						</a></li>
+						</a>
+						</div>
+						</li>
 						
 						<?php endwhile; ?>
 					
