@@ -21,11 +21,18 @@ get_header(); ?>
 					<div class="entry-content">
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
+						
+						
+						
 					</div><!-- .entry-content -->
 					<footer class="entry-utility">
 						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '<span class="edit-link">', '</span>' ); ?>
 					</footer><!-- .entry-utility -->
 					
+					
+					
+					<p>Other posts by <?php the_author_posts_link(); ?></p>	
+									
 					<ul id="people">
 					<?php query_posts(array('post_type' => 'people', 'posts_per_page' => 100 , 'order' => 'DSC', 'paged'=> $paged)); ?>
 		
