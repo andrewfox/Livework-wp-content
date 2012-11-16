@@ -8,11 +8,52 @@
  */
 
 get_header(); ?>
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<nav id="nav-above" class="navigation">
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>				
+				
+				
+				
+				
+				
+				<div id="hello" class="arrows">
+				
+				<?php
+				$posts3 = get_field('previous_page');
+				 
+				if( $posts3 ): ?>
+					<?php foreach( $posts3 as $post): // variable must be called $post (IMPORTANT) ?>
+						<?php setup_postdata($post); ?>
+					    	<a href="<?php the_permalink(); ?>"><img class="left-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/left-arrow.png" alt="go to previous page" /></a>
+					<?php endforeach; ?>
+					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				<?php endif; ?>
+				
+				<?php ?>
+
+					    	<a href="<?php previous_post_link ?>"><img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
+								<?php endif; ?>
+				
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . ' %title' ); ?>
 					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '' ); ?>
-				</nav><!-- #nav-above --> 
+					
+					
+					
+					
+					
+					
+						
+				
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1 class="page-title"><?php the_title(); ?></h1>
 					<div class="entry-meta">
