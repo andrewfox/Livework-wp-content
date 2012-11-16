@@ -26,7 +26,13 @@ get_header(); ?>
 					<?php endforeach; ?>
 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 				<?php endif; ?>
-				<?php $nextURL = get_permalink($nextPost->ID); ?>
+				<?php
+				$current =  get_permalink();
+				$prevPost = get_previous_post(true);
+				$prevURL = get_permalink($prevPost->ID);
+				$nextPost = get_next_post(true);
+				$nextURL = get_permalink($nextPost->ID);
+				?>
 
 					    	<a href="<?php echo $nextURL ?>"> <img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
 				
