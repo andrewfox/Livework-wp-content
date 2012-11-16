@@ -7,9 +7,11 @@ $(document).ready(function() {
 
 $("li.london").click(function () {
 	$('#people li')
-		.hide()
+//		.hide()
+		
 	$('#people li.category-london')
 		.show();
+		.addClass('superclass');
 });
 
 
