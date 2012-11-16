@@ -31,7 +31,17 @@ get_header(); ?>
 					
 					
 					
-					<p>Other posts by <?php the_author_posts_link(); ?></p>	
+					<?php query_posts( 'posts_per_page=1' . '&author_name=' . $user_identity ); ?>
+					<?php if (have_posts()) : ?>
+					<?php while (have_posts()) : the_post(); ?>
+					<div class="about">
+					<h1><?php the_title(); ?></h1>
+					<?php the_excerpt() ?>
+					<h5>» " title="Permanent Link to <?php the_title(); ?>">Read More</h5>
+					</div>
+					<?php endwhile; ?>
+					<?php else : ?>
+					<?php endif; ?>	
 									
 					<ul id="people">
 					<?php query_posts(array('post_type' => 'people', 'posts_per_page' => 100 , 'order' => 'DSC', 'paged'=> $paged)); ?>
