@@ -5,11 +5,11 @@ $(document).ready(function() {
 // Hide/show people on our team by location
 
 
-$("li.london").click(function () {
+$("li.all").click(function () {
 	$('#people li')
 		.show();
-	$('#people li div')
-		.parent().show();
+//	$('#people li div')
+//		.parent().show();
 });
 
 $("li.london").click(function () {
