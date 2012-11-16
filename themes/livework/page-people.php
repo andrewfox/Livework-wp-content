@@ -38,17 +38,19 @@ get_header(); ?>
 						<li>
 						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-							<?php the_title(); 
+							<?php the_title(); ?>
 						
 						
-						if(has_post_thumbnail()) :
-						the_post_thumbnail('original'); 
-						else :				
-
-						endif;
-						
-						?>
 						</a>
+						
+						<?php
+												if(has_post_thumbnail()) :
+												the_post_thumbnail('original'); 
+												else :				
+						
+												endif;
+												
+												?>
 						</div>
 						</li>
 						
