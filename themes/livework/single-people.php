@@ -28,7 +28,7 @@ get_header(); ?>
 				<?php endif; ?>
 				
 
-					    	<?php next_post_link('%link', '',); ?><img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
+					    	<?php next_post_link('%link', '', 'false', 'None'); ?><img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
 				
 				</div>
 				
