@@ -7,9 +7,8 @@ $(document).ready(function() {
 
 $("li.london").click(function () {
 	$('#people li')
-//		.toggle()
-		.addClass('superclass');
-	$('#people li.london')
+		.hide()
+	$('#people li.category-london')
 		.show();
 });
 
