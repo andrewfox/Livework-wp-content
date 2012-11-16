@@ -41,6 +41,9 @@ a:hover {
 }
 
 
+
+
+
 /*Header*/
 
 header {
@@ -284,10 +287,15 @@ footer a {
 	font-weight: normal;
 }
 
-#people li a img.wp-post-image{
+#people li img.wp-post-image{
 	position: relative;
 	z-index: -1;
-	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+img.attachment-original.wp-post-image {
+	
 }
 
 #people li {
