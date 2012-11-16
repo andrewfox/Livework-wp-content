@@ -100,6 +100,10 @@ nav.sectors ul li a {
 
 /*Content*/
 
+article.main {
+	padding: 10px;
+}
+
 /* Full Screen Background & arrows */
 #splash { 
 	position:relative; 
@@ -242,6 +246,13 @@ section.more-header {
 	height: 300px;
 	top: -105px;
 	position: relative;
+}
+
+#people li {
+	width: 24.743589743%;
+	padding-right: 0.128205128%;
+	padding-left: 0.128205128%;
+/*	box-sizing: border-box;*/
 }
 
 /*Footer*/

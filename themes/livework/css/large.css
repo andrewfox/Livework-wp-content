@@ -20,5 +20,15 @@
 
 /*Content*/
 
+article.main {
+	padding: 20px;
+}
+
+#people li {
+	width: 19.782608695%;
+	padding-right: 0.108695652%;
+	padding-left: 0.104166666%%;
+	box-sizing: border-box;
+}
 
 /*Footer*/

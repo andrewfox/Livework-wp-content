@@ -123,7 +123,7 @@ section#content {
 }
 
 article.main {
-	padding: 20px;
+	padding: 5px;
 }
 
 h1.page-title {
@@ -222,6 +222,7 @@ h1.page-title {
 footer {
 	padding: 20px;
 	border-top: 1px solid #ddd;
+	clear: both;
 }
 footer a {
 	font-weight: normal;
@@ -269,5 +270,55 @@ footer a {
 	font-family: "SSSocial";
 }
 
+	ul#people {
+		float: left;
+		clear: both;
+	}
 
+#people li a {
+	position: relative;
+	display: block;
+/*	position: absolute;*/
+/*	background: #333;*/
+	padding: 1px 1px;
+	font-weight: normal;
+}
 
+#people li a img.wp-post-image{
+	position: relative;
+	z-index: -1;
+	width: 100%;
+}
+
+#people li {
+/*	display: inline;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	display: block;
+	position: relative;*/
+	float: left;
+	width: 200px;
+/*	height: 200px;*/
+	overflow: hidden;
+/*	background: #333;*/
+	margin: 0 1px 1px 0;
+	
+	width: 49.545454545%;
+	padding-right: 0.222222222%;
+	padding-left: 0.222222222%;
+}
+
+ul#offices li{
+	cursor: pointer;
+	float: left;
+	clear: both;
+}
+
+ul#offices li:hover{
+	color: red;
+}
+
+.superclass{
+	background-color: orange;
+}

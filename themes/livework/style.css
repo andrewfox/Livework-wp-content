@@ -300,7 +300,7 @@ dl,
 menu,
 ol,
 ul {
-    margin: 1em 0;
+/*    margin: 1em 0;*/
 }
 
 dd {
@@ -314,7 +314,7 @@ dd {
 menu,
 ol,
 ul {
-    padding: 0 0 0 40px;
+    padding: 0 0 0 0px;
 }
 
 /*
@@ -583,7 +583,7 @@ hr {
  */
 
 img {
-    vertical-align: middle;
+/*    vertical-align: middle;*/
 }
 
 /*
@@ -759,8 +759,8 @@ textarea {
     a:visited {
         text-decoration: underline;
     }
-
-    a[href]:after {
+	
+	a[href]:after {
         content: " (" attr(href) ")";
     }
 
