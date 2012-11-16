@@ -7,8 +7,39 @@ $(document).ready(function() {
 
 $("li.london").click(function () {
 	$('#people li')
+		.show();
+});
+
+$("li.london").click(function () {
+	$('#people li')
 		.hide()
 	$('#people li div.category-london')
+		.parent().show();
+//		.addClass('superclass');
+});
+
+$("li.oslo").click(function () {
+	$('#people li')
+		.hide()
+	$('#people li div.category-oslo')
+		.parent().show();
+//		.addClass('superclass');
+});
+
+
+$("li.sao-paulo").click(function () {
+	$('#people li')
+		.hide()
+	$('#people li div.category-sao-paulo')
+		.parent().show();
+//		.addClass('superclass');
+});
+
+
+$("li.rotterdam").click(function () {
+	$('#people li')
+		.hide()
+	$('#people li div.category-rotterdam')
 		.parent().show();
 //		.addClass('superclass');
 });
@@ -16,20 +47,6 @@ $("li.london").click(function () {
 
 
 
-$("li.oslo").click(function () {
-	$('ul#people li.oslo')
-		.toggle()
-});
-
-$("li.sao-paulo").click(function () {
-	$('ul#people li.sao-paulo')
-		.toggle()
-});
-
-$("li.rotterdam").click(function () {
-	$('ul#people li.rotterdam')
-		.toggle()
-});
 
 
 //$("ul#offices li").click(function () {

@@ -22,6 +22,7 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 						
 					<ul id="offices">
+						<li class="all">All</li>
 						<li class="london">London</li>
 						<li class="oslo">Oslo</li>
 						<li class="sao-paulo">Sao Paulo</li>
