@@ -8,6 +8,8 @@ $(document).ready(function() {
 $("li.london").click(function () {
 	$('#people li')
 		.show();
+	$('#people li div')
+		.parent().show();
 });
 
 $("li.london").click(function () {
