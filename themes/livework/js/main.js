@@ -46,7 +46,12 @@ $("li.rotterdam").click(function () {
 //		.addClass('superclass');
 });
 
-
+$(".morepeople").click(function () {
+	$('#more-info ul#people')
+		.toggle();
+//	$('#people li div')
+//		.parent().show();
+});
 
 
 

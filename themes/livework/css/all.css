@@ -210,6 +210,8 @@ li.sector-page {
 #more-info h1 {
 	color: white;
 	margin-left: 40px;
+	position: absolute;
+	bottom: 0;
 }
 
 
@@ -295,12 +297,44 @@ footer a {
 	font-weight: normal;
 }
 
+#more-info ul#people li a {
+	z-index: 1;
+	font-size: 12px;
+	margin-left: 25px;
+}
+
+#more-info ul#people{
+	z-index: 1;
+	font-size: 12px;
+	margin-left: 300px;
+	margin-top: 0;
+	margin-bottom: 0;
+	position: absolute;
+	top: 10px;
+}
+
+#more-info ul#people li a img{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -4px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	left: -25px;
+}
+
+#more-info ul#people li{
+	width: 24%;
+}
+
 #people li img.wp-post-image{
 	position: relative;
 	z-index: -1;
 	max-width: 100%;
 	height: auto;
 }
+
 
 img.attachment-original.wp-post-image {
 	
