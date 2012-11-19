@@ -67,14 +67,18 @@ get_header(); ?>
 											<?php while(have_posts()) : the_post();  ?>
 						
 												<li><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-													<?php the_title(); 
+													<?php 
+													if(has_post_thumbnail()) :
+																			the_post_thumbnail('original'); 
+																			else :				
+													
+																			endif;
+													
+													
+													the_title(); 
 												
 												
-												if(has_post_thumbnail()) :
-												the_post_thumbnail('original'); 
-												else :				
-						
-												endif;
+												
 												
 												?>
 												</a></li>
