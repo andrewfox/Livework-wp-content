@@ -10,8 +10,27 @@
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>				
 				
+				<div id="splash">
+								
+									<div id="top">
 				
+										<div class="no-bkg hat" ></div>
 				
+										<div class="no-bkg box" >
+											<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+											<h3><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h3>
+											<h2><?php the_field('page_headline'); ?></h2>
+											<div class="entry-content">
+												<?php the_content(); ?>
+											</div>
+											<?php endwhile; ?>
+										</div>
+				
+									</div> <!-- /#top -->
+				
+									<?php the_post_thumbnail('large'); ?>
+				
+								</div> <!-- /#splash -->				
 				
 				
 				<div id="hello" class="arrows">
