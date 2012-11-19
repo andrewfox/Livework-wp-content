@@ -37,9 +37,9 @@ get_header(); ?>
 				
 <?php
 	$current =  get_permalink();
-	$prevPost = get_previous_post(true);
+	$prevPost = get_previous_post(false);
 	$prevURL = get_permalink($prevPost->ID);
-	$nextPost = get_next_post(true);
+	$nextPost = get_next_post(false);
 	$nextURL = get_permalink($nextPost->ID);
 ?>
 
