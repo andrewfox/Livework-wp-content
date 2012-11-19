@@ -40,9 +40,7 @@ get_header(); ?>
 				
 <?php
 
-$sort  = apply_filters( "get_previous_post_sort", "ORDER BY title $order ASC" );
-$sort2  = apply_filters( "get_next_post_sort", "ORDER BY title $order ASC" );
-echo $sort
+
 	$current =  get_permalink();
 	$prevPost = get_previous_post(false);
 	$prevURL = get_permalink($prevPost->ID);
