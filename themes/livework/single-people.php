@@ -54,7 +54,7 @@ get_header(); ?>
 					
 					
 					<div id="more-info">
-						<h2><a id = "more-infolink" href="#"><span class="ss-icon">down</span> More posts by <?php the_title(); ?></a></h2><h2><a id = "more-infolink" class="morepeople" href="#">More people</a></h2>
+						<h2><a id = "more-infolink" href="#"><span class="ss-icon">down</span> More posts by <?php the_title(); ?></a></h2><h2><a class="morepeople" href="#">More people</a></h2>
 						<h1>
 						<?php the_title(); ?> <span>
 						<?php the_field('page_title_suffix'); ?>
