@@ -76,6 +76,10 @@ get_header(); ?>
 					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '' ); ?>
 					
 					
+					<div id="more-info">
+						<h2><a id = "more-infolink" href="#"><span class="ss-icon">down</span> More on <?php the_title(); ?></a></h2>
+						<h1><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h1>
+					</div>
 					
 					
 					
