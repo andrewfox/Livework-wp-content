@@ -9,7 +9,7 @@
 
 get_header(); ?>
 			
-<div id="splash">
+<div id="splash" class="single-people">
 
 	<div id="top">
 
