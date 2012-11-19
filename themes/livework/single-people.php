@@ -55,7 +55,11 @@ get_header(); ?>
 					
 					<div id="more-info">
 						<h2><a id = "more-infolink" href="#"><span class="ss-icon">down</span> More posts by <?php the_title(); ?></a></h2>
-						<h1><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h1>
+						<h1>
+						<?php the_title(); ?> <span>
+						<?php the_field('page_title_suffix'); ?>
+						</span>
+						</h1>
 						
 						<ul id="people">
 											<?php query_posts(array('post_type' => 'people', 'posts_per_page' => 100 , 'order' => 'DSC', 'paged'=> $paged)); ?>
