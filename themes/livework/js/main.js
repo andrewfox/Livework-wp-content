@@ -46,14 +46,16 @@ $("li.rotterdam").click(function () {
 //		.addClass('superclass');
 });
 
+	$('#more-info ul#people')
+		.hide();
+
+
 $(".morepeople").click(function () {
 	$('#more-info ul#people')
 		.toggle();
-//	$('#people li div')
-//		.parent().show();
+	$('#more-info h2')
+		.toggleClass('clicked')
 });
-
-
 
 
 //$("ul#offices li").click(function () {
