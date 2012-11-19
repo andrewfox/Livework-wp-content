@@ -8,7 +8,6 @@
  */
 
 get_header(); ?>
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>				
 				
 				<div id="splash">
 								
@@ -55,6 +54,9 @@ get_header(); ?>
 				$nextPost = get_next_post(true);
 				$nextURL = get_permalink($nextPost->ID);
 				?>
+ 
+
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>				
 
 					    	<a href="<?php echo $nextURL ?>"> <img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
 					    	
