@@ -121,7 +121,7 @@ $("li.rotterdam").click(function () {
 
 	/* HOMEPAGE */
 	// rescale the homepage's bkgd img
-if ($("body.page-template-page-story-php, body.page-template-page-sector-php, single-people").length > 0) {
+if ($("body.page-template-page-story-php, body.page-template-page-sector-php, body.single-people").length > 0) {
 	rescale();
 	$(window).resize(function(){
 		rescale();
