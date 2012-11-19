@@ -166,6 +166,27 @@ div#hello.arrows.fixed2 a img {
 /*	min-width: 380px;*/
 }
 
+#splash.single-people #top div.no-bkg.box{
+	font-weight: normal;
+	font-style: normal;
+	box-sizing: border-box;
+	width: 100%;
+		
+/*	min-width: 380px;*/
+	position: absolute;
+	bottom: 0;
+	background-color: silver;
+	padding: 20px 40px 50px;
+}
+
+#splash.single-people #top div.no-bkg.box p{
+
+/*	min-width: 380px;*/font-size: 14px;
+columns:100px 3;
+-webkit-columns:100px 3; /* Safari and Chrome */
+-moz-columns:100px 3; /* Firefox */
+}
+
 .box span{
 	font-family: 'Chaparral W01 It Cap';
 	color: #007CB8;
@@ -179,6 +200,16 @@ div#hello.arrows.fixed2 a img {
 }
 
 .box h2 {
+	font: 42px 'Chaparral Pro Capt 1167087';
+	color: #0B4D6F;
+	margin: 0;
+}
+
+#splash.single-people #top div.no-bkg.box div.entry-content h2 {
+	font-size: 24px;
+}
+
+body.single-peple .box h2 {
 	font: 42px 'Chaparral Pro Capt 1167087';
 	color: #0B4D6F;
 	margin: 0;
