@@ -183,6 +183,14 @@ h1.page-title {
 
 #case-studies ul.section-links.clearfix li.sector-page a img.attachment-small.wp-post-image {
 	display: block;
+	float: right;
+	width: 200px;
+	height: 200px;
+	margin-left: 15px;
+}
+
+li.sector-page {
+	background-color: #ccc;
 }
 
 
