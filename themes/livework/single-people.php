@@ -53,24 +53,6 @@ get_header(); ?>
 					
 					
 					
-					
-						
-				
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<h1 class="page-title"><?php the_title(); ?></h1>
-					<div class="entry-meta">
-						<?php // livework_posted_on(); ?>
-					</div><!-- .entry-meta -->
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
-												
-					</div><!-- .entry-content -->
-					<footer class="entry-utility">
-						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '<span class="edit-link">', '</span>' ); ?>
-					</footer><!-- .entry-utility -->
-					
-					
 					<div id="more-info">
 						<h2><a id = "more-infolink" href="#"><span class="ss-icon">down</span> More on <?php the_title(); ?></a></h2>
 						<h1><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h1>
