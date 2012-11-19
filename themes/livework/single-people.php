@@ -34,8 +34,15 @@ get_header(); ?>
 							
 											
 <div id="hello" class="arrows">
+
+
+<?php add_filter( $redordernext, $function_to_add, $priority, $accepted_args ); ?>
 				
 <?php
+
+$sort  = apply_filters( "get_previous_post_sort", "ORDER BY title $order ASC" );
+$sort2  = apply_filters( "get_next_post_sort", "ORDER BY title $order ASC" );
+
 	$current =  get_permalink();
 	$prevPost = get_previous_post(false);
 	$prevURL = get_permalink($prevPost->ID);
