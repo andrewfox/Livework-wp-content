@@ -43,10 +43,10 @@ get_header(); ?>
 	$nextPost = get_next_post(true);
 	$nextURL = get_permalink($nextPost->ID);
 ?>
-<?php endwhile; ?>
 	<a href="<?php echo $nextURL ?>"> <img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
 	
 	<a href="<?php echo $previousURL ?>"> <img class="left-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/left-arrow.png" alt="go to previous page" /></a>  	
+<?php endwhile; ?>
 				
 </div>
 					
