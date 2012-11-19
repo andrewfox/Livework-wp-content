@@ -53,6 +53,8 @@ $("li.rotterdam").click(function () {
 $(".morepeople").click(function () {
 	$('#more-info ul#people')
 		.toggle();
+	$('#more-info h2')
+		.toggleClass('clicked')
 });
 
 
