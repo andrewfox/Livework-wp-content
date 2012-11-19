@@ -62,7 +62,7 @@ get_header(); ?>
 						</h1>
 						
 						<ul id="people">
-											<?php query_posts(array('post_type' => 'people', 'posts_per_page' => 100 , 'order' => 'DSC', 'paged'=> $paged)); ?>
+											<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
 								
 											<?php while(have_posts()) : the_post();  ?>
 						

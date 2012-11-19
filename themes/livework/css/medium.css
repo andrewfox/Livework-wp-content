@@ -247,16 +247,16 @@ body.single-peple .box h2 {
 /* More info */
 #more-info h2 {
 /*	position: absolute;*/
-	background-color: black;
 	display: inline-block;
 	margin-left: 40px;
-	padding: 10px 10px 5px;
+/*	padding: 10px 10px 5px;*/
+/*	height: 40px;*/
+
 	bottom: 0;
 	margin-top: 0;
 	margin-bottom: 0;
 	position: relative;
-	top: -40px;
-	height: 40px;
+	top: -34px;
 	box-sizing: border-box;
 }
 

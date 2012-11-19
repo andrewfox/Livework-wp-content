@@ -335,9 +335,25 @@ footer a {
 	height: auto;
 }
 
-.clicked{
-	background-color: yellow;
+
+
+#more-info h2 a {
+		padding: 10px 10px 5px;
+		height: 40px;
+		background-color: black;
 }
+
+
+#more-info h2 a.morepeople {
+		background-color: #aaa;
+}
+
+#more-info h2 a.clicked{
+	background-color: #000 ;
+}
+
+
+
 img.attachment-original.wp-post-image {
 	
 }
