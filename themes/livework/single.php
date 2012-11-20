@@ -19,6 +19,13 @@ get_header(); ?>
 						<?php // livework_posted_on(); ?>
 					</div><!-- .entry-meta -->
 					<div class="entry-content">
+					
+					<?php 
+						if(has_post_thumbnail()) :
+						the_post_thumbnail('original'); 
+						else :				
+						endif; 
+					?>
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
 					</div><!-- .entry-content -->
