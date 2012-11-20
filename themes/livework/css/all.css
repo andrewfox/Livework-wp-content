@@ -306,11 +306,10 @@ footer a {
 #morepeople ul#people{
 	z-index: 1;
 	font-size: 12px;
-	margin-left: 300px;
+	margin-left: 0px;
 	margin-top: 0;
 	margin-bottom: 0;
-	position: absolute;
-	top: 10px;
+
 }
 
 #morepeople ul#people li a img{

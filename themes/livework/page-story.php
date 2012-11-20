@@ -21,8 +21,8 @@ get_header(); ?>
 
 						<div class="no-bkg box" >
 							<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-							<h3><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h3>
-							<h2><?php the_field('page_headline'); ?></h2>
+							<h3><?php the_title(); ?>: <span><?php the_field('story_page_title_suffix'); ?></span></h3>
+							<h2><?php the_field('story_page_headline'); ?></h2>
 							<div class="entry-content">
 								<?php the_content(); ?>
 							</div>
@@ -67,7 +67,7 @@ get_header(); ?>
 
 				<div id="more-info">
 					<h2><a id = "more-infolink" href="#"><span class="ss-icon">down</span> More on <?php the_title(); ?></a></h2>
-					<h1><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h1>
+					<h1><?php the_title(); ?>: <span><?php the_field('story_page_title_suffix'); ?></span></h1>
 				</div>
 
 
@@ -85,31 +85,24 @@ get_header(); ?>
 						<?php if(get_row_layout() == "story_section"): // layout: Content ?>
 					 
 					 <div class="story-section">
-					 		<?php 
-					 		
-					 		if(the_sub_field("section_layout") == "what")
-					 		{
-					 		
-					 		}					 		
-					 		
-					 		?>
+
 								 							
 													
-								<h2><?php the_sub_field("section_title"); ?></h2>
+								<h2><?php the_sub_field("story_section_title"); ?></h2>
 							
 								<div class="story-section-content">
 								
-									<?php the_sub_field("section_bodytext"); ?>
+									<?php the_sub_field("story_section_bodytext"); ?>
 									
 									
 	
 								</div>
 	
-								<img src="<?php the_sub_field("section_image"); ?>" class="section-image"/>
+								<img src="<?php the_sub_field("story_section_image"); ?>" class="section-image"/>
 	
 								<?php
 
-					 				$posts = get_sub_field('add_mini_case_study');
+					 				$posts = get_sub_field('story_section_casestudies');
 					 				 
 					 				if( $posts ): ?>
 					 					<ul class="section-links clearfix">
