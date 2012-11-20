@@ -92,30 +92,32 @@ get_header(); ?>
 				</article><!-- #post-## -->
 						<h2><a class="morepeople" href="#">More people</a></h2>
 				
-				<ul id="people">
-									<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
-						
-									<?php while(have_posts()) : the_post();  ?>
-				
-										<li><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-											<?php 
-											if(has_post_thumbnail()) :
-																	the_post_thumbnail('original'); 
-																	else :				
+				<div id="morepeople">
+					<ul id="people">
+										<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
+							
+										<?php while(have_posts()) : the_post();  ?>
+					
+											<li><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+												<?php 
+												if(has_post_thumbnail()) :
+																		the_post_thumbnail('original'); 
+																		else :				
+												
+																		endif;
+												
+												
+												the_title(); 
 											
-																	endif;
 											
 											
-											the_title(); 
+											
+											?>
+											</a></li>
+											
+											<?php endwhile; ?>
 										
-										
-										
-										
-										?>
-										</a></li>
-										
-										<?php endwhile; ?>
-									
-									</ul>
+					</ul>
+				</div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

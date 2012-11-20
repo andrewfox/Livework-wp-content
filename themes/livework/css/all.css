@@ -297,13 +297,13 @@ footer a {
 	font-weight: normal;
 }
 
-#more-info ul#people li a {
+#morepeople ul#people li a {
 	z-index: 1;
 	font-size: 12px;
 	margin-left: 25px;
 }
 
-#more-info ul#people{
+#morepeople ul#people{
 	z-index: 1;
 	font-size: 12px;
 	margin-left: 300px;
@@ -313,7 +313,7 @@ footer a {
 	top: 10px;
 }
 
-#more-info ul#people li a img{
+#morepeople ul#people li a img{
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -324,7 +324,7 @@ footer a {
 	left: -25px;
 }
 
-#more-info ul#people li{
+#morepeople ul#people li{
 	width: 24%;
 }
 
