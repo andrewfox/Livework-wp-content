@@ -21,11 +21,9 @@ get_header(); ?>
 				<h2><?php the_excerpt() ?></h2>
 			</div>
 		
-		<div id="person-profile">
 			
 			<div class="entry-content">
 				<?php the_content(); ?>
-			</div>
 		<?php endwhile; ?>
 		</div>
 			
