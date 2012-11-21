@@ -37,7 +37,7 @@ get_header(); ?>
 			<?php if (have_posts()) : ?>
 			<?php while (have_posts()) : the_post(); ?>
 			<div class="mini-post-content">
-			<h1><?php the_title(); ?><span><?php the_date('j/n/Y'); ?></span></h1>
+			<h1><?php the_title(); ?><span> <?php the_date('j/n/Y'); ?></span></h1>
 			
 <!--					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>-->
 			</div>
