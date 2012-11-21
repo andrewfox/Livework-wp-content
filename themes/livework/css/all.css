@@ -339,6 +339,8 @@ footer a {
 	font-size: 48px;
 	line-height: normal;
 	color: #6F0B61;
+	margin-top: 0;
+	margin-bottom: 6px;
 }
 
 #person-headline h3 span {
@@ -386,6 +388,15 @@ aside#sidebar-more-posts {
 	position: absolute;
 	bottom: 5px;
 	width: 100%;
+}
+
+#person-headline div.wrapper h4 a{
+	font: bold 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: black;
+}
+
+#person-headline div.wrapper h4{
+	margin-bottom: 0;
 }
 
 #sidebar-more-posts div.mini-post-content h1 {

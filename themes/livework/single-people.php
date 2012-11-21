@@ -75,7 +75,7 @@ get_header(); ?>
 					
 					
 				</article><!-- #post-## -->
-						
+		<div class="grey-container">		
 			<div class="wrapper">
 				<div id="morepeople" >
 					<h2>More people</h2>
@@ -106,6 +106,7 @@ get_header(); ?>
 					</ul>
 				</div>
 			</div>
+		</div>
 			
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
