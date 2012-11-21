@@ -14,8 +14,11 @@ get_header(); ?>
 
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				<?php the_post_thumbnail('full'); ?>
-				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
-				<h2><?php the_field('page_headline'); ?></h2>
+				
+				<div id="person-headline">
+					<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
+					<h2><?php the_field('page_headline'); ?></h2>
+				</div>
 			<?php endwhile; ?>
 			
 			<aside id="sidebar-more-posts">
