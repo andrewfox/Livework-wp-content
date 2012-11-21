@@ -58,7 +58,7 @@ get_header(); ?>
 					
 					
 					
-					<div id="more-info">
+					<div id="person">
 						<h2><a id = "more-infolink" href="#"><span class="ss-icon">down</span> More posts by <?php the_title(); ?></a></h2>
 						
 						
