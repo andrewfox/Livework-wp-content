@@ -123,6 +123,7 @@ header li.current-page-ancestor a {
 
 section#content {
 	padding: 0px;
+	display: block;
 }
 
 article.main {
@@ -299,8 +300,9 @@ footer a {
 
 #morepeople ul#people li a {
 	z-index: 1;
-	font-size: 12px;
 	margin-left: 25px;
+	color: #6F0B61;
+	font: bold 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 #morepeople ul#people{
@@ -324,7 +326,24 @@ footer a {
 }
 
 #morepeople ul#people li{
-	width: 24%;
+	width: 33%;
+}
+
+#person-headline h2 p {
+	font: 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 70%;
+	min-width: 400px;
+}
+
+#person-headline h3 {
+	font-size: 48px;
+	line-height: normal;
+	color: #6F0B61;
+}
+
+#person-headline h3 span {
+	color: black;
+	font: 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 #people li img.wp-post-image{
@@ -334,8 +353,7 @@ footer a {
 	height: auto;
 }
 
-img.attachment-full.wp-post-image {
-}
+
 
 #person-intro img{
 max-width: 100%;
@@ -343,28 +361,47 @@ height: auto;
 }
 
 div.left-col {
-	margin-right: 340px;
-	margin-left: 20px;
 	float: left;
+	width: 60%;
 }
 
 #main {
 	position: relative;
+	float: left;
 }
 
+#person-intro {
+	position: relative;
+}
+
+
+
 aside#sidebar-more-posts {
-	width: 300px;
 	float: right;
-	margin-right: 20px;
+	width: 30%;
 }
 
 #person-headline {
-	background: rgba(200, 54, 54, 0.5);
-	padding: 1px 20px;
+	background-color: rgba(181, 181, 181, 0.760784);
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
 }
 
 #sidebar-more-posts div.mini-post-content h1 {
-	font-size: 14px;
+	font: bold 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #2E3183;
+}
+
+#sidebar-more-posts div.mini-post-content h1 span {
+	font-weight: normal;
+	font-style: normal;
+	color: black;
+}
+
+#sidebar-more-posts h2 {
+	text-transform: uppercase;
+	font: normal normal 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 #sidebar-more-posts div.mini-post-content {
@@ -446,4 +483,9 @@ ul#offices li:hover{
 
 .superclass{
 	background-color: orange;
+}
+
+.wrapper{
+	max-width: 960px;
+	margin: 0 auto;
 }

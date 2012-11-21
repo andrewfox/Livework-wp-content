@@ -14,10 +14,7 @@ get_header(); ?>
 		<?php the_post_thumbnail('full'); ?>
 		<div id="person-headline" >
 			<div class="wrapper">
-				<h4><?php
-				$parent_title = get_the_title($post->post_parent);
-				echo $parent_title;
-				?></h4>
+				<h4><a href="../our-team">Our Team</a></h4>
 				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
 				<h2><?php the_excerpt() ?></h2>
 			</div>
