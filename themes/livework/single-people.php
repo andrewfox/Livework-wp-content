@@ -12,13 +12,15 @@ get_header(); ?>
 	<div id="person-intro">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<?php the_post_thumbnail('full'); ?>
-		<div id="person-headline" class="wrapper">
+		<div id="person-headline" >
+			<div class="wrapper">
 				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
 				<h2><?php the_excerpt() ?></h2>
 			</div>
+		</div>
 	</div>
-	
-	<div id="main" class="wrapper">
+<div class="wrapper">
+	<div id="main">
 				
 		
 		
@@ -48,12 +50,7 @@ get_header(); ?>
 		</aside>
 			
 	</div>
-
-	</div> <!-- /#top -->
-
-
-</div> <!-- /#splash -->
-							
+</div>							
 							
 											
 <div id="hello" class="arrows">
