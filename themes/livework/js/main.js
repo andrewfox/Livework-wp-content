@@ -111,6 +111,24 @@ $("li.rotterdam").click(function () {
 		});
 		
 		
+		
+		
+//		var theLoc3 = $('div.arrows-r').position().top;
+//			$(window).scroll(function() {
+//				if(theLoc2 - 130 >= $(window).scrollTop()) {
+//					if($('div#hello').hasClass('fixed2')) {
+//						$('div#hello').removeClass('fixed2');
+//						$('div#hello img').removeClass('smallarrows');
+//					}
+//				} else { 
+//					if(!$('div#hello').hasClass('fixed2')) {
+//						$('div#hello').addClass('fixed2');
+//						$('div#hello img').addClass('smallarrows');
+//					}
+//				}
+//			});
+		
+		
 
 //	var theLoc = $('ul').position().top;
 //	$(window).scroll(function() {
