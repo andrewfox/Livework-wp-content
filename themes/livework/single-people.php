@@ -78,7 +78,7 @@ get_header(); ?>
 		<div class="grey-container">		
 			<div class="wrapper">
 				<div id="morepeople" >
-					<h2>More people</h2>
+					<h2>Livework people</h2>
 					<ul id="people">
 										<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
 							
