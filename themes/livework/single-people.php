@@ -51,17 +51,11 @@ get_header(); ?>
 </div>
 
 					<div id="person">
-						
-						
-						
-						
 						<h1>
 						<?php the_title(); ?> <span>
-						<?php the_field('page_title_suffix'); ?>
+						<?php the_field('job-title'); ?>
 						</span>
 						</h1>
-						
-						
 					</div>
 					<aside id="sidebar-more-posts">
 						<h2>More posts by <?php the_title(); ?></h2>
