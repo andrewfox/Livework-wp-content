@@ -10,43 +10,43 @@
 get_header(); ?>
 			
 	<div id="person-intro">
-
-
-			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<?php the_post_thumbnail('full'); ?>
+		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+		<?php the_post_thumbnail('full'); ?>
+	</div>
+	
+	<div id="main">
 				
-				<div id="person-headline">
-					<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
-					<h2><?php the_excerpt() ?></h2>
-				</div>
-			<?php endwhile; ?>
-			
-			<aside id="sidebar-more-posts">
-				<h2>Posts by <?php the_title(); ?></h2>
-				
-				<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
-				<?php if (have_posts()) : ?>
-				<?php while (have_posts()) : the_post(); ?>
-				<div class="mini-post-content">
-				<h1><?php the_title(); ?></h1>
-				
-<!--					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>-->
-				</div>
-				<?php endwhile; ?>
-				<?php else : ?>
-				<?php endif; ?>	
-				<?php wp_reset_query();?>
-			</aside>
-			
-			<div id="person-profile">
-			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				
-				<div class="entry-content">
-					<?php the_content(); ?>
-				</div>
-			<?php endwhile; ?>
+		<div id="person-headline">
+				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
+				<h2><?php the_excerpt() ?></h2>
 			</div>
+		
+		<div id="person-profile">
 			
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+		<?php endwhile; ?>
+		</div>
+			
+			
+		<aside id="sidebar-more-posts">
+		
+			<h2>Posts by <?php the_title(); ?></h2>
+			
+			<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
+			<?php if (have_posts()) : ?>
+			<?php while (have_posts()) : the_post(); ?>
+			<div class="mini-post-content">
+			<h1><?php the_title(); ?></h1>
+			
+<!--					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>-->
+			</div>
+			<?php endwhile; ?>
+			<?php else : ?>
+			<?php endif; ?>	
+			<?php wp_reset_query();?>
+		</aside>
 			
 	</div>
 
