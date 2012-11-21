@@ -74,9 +74,10 @@ get_header(); ?>
 					
 					
 				</article><!-- #post-## -->
-						<h2><a class="morepeople" href="#">More people</a></h2>
+						
 				
 				<div id="morepeople">
+					<h2>More people</h2>
 					<ul id="people">
 										<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
 							
