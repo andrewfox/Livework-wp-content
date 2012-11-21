@@ -334,7 +334,52 @@ footer a {
 	height: auto;
 }
 
+img.attachment-full.wp-post-image {
+}
 
+#person-intro img{
+max-width: 100%;
+height: auto;
+}
+
+div.left-col {
+	margin-right: 340px;
+	margin-left: 20px;
+	float: left;
+}
+
+#main {
+	position: relative;
+}
+
+aside#sidebar-more-posts {
+	width: 300px;
+	float: right;
+	margin-right: 20px;
+}
+
+#person-headline {
+	background: rgba(200, 54, 54, 0.5);
+	padding: 1px 20px;
+}
+
+#sidebar-more-posts div.mini-post-content h1 {
+	font-size: 14px;
+}
+
+#sidebar-more-posts div.mini-post-content {
+	font-size: 12px;
+}
+
+#morepeople {
+	float: left;
+}
+
+
+
+#person-profile {
+	
+}
 
 #more-info h2 a {
 		padding: 10px 10px 5px;

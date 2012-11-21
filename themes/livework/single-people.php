@@ -12,14 +12,16 @@ get_header(); ?>
 	<div id="person-intro">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<?php the_post_thumbnail('full'); ?>
-	</div>
-	
-	<div id="main">
-				
 		<div id="person-headline">
 				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
 				<h2><?php the_excerpt() ?></h2>
 			</div>
+		<?php endwhile; ?>
+	</div>
+	
+	<div id="main">
+				
+		
 		
 			
 		<div class="entry-content left-col">

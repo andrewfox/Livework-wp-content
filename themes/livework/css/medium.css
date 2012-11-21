@@ -173,10 +173,9 @@ div#hello.arrows.fixed2 a img {
 	width: 100%;
 		
 /*	min-width: 380px;*/
-	position: absolute;
-	bottom: 0;
 	background-color: silver;
 	padding: 20px 40px 50px;
+	margin: 0;
 }
 
 #splash.single-people #top div.no-bkg.box p{
