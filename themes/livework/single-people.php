@@ -16,7 +16,6 @@ get_header(); ?>
 				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
 				<h2><?php the_excerpt() ?></h2>
 			</div>
-		<?php endwhile; ?>
 	</div>
 	
 	<div id="main">
