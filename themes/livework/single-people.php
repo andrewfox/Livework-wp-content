@@ -70,6 +70,24 @@ get_header(); ?>
 				
 </div>
 
+
+<div id="hello">
+<?php
+	$current =  get_permalink();
+	$prevPost = get_previous_post(false);
+	$prevURL = get_permalink($prevPost->ID);
+	$nextPost = get_next_post(false);
+	$nextURL = get_permalink($nextPost->ID);
+?>
+	<div class="arrows">
+		<a href="<?php echo $nextURL ?>"> <img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
+	</div>
+	
+	<div class="arrows">
+		<a href="<?php echo $prevURL ?>"> <img class="left-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/left-arrow.png" alt="go to previous page" /></a>  	
+	</div>
+</div>
+
 					
 
 					
