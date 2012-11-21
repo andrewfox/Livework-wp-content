@@ -9,13 +9,9 @@
 
 get_header(); ?>
 			
-<div id="splash" class="single-people">
+	<div id="img">
 
-	<div id="top">
 
-		<div class="no-bkg hat" ></div>
-
-		<div class="no-bkg box" >
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 			<h3><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h3>
 			<h2><?php the_field('page_headline'); ?></h2>
