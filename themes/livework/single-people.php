@@ -13,6 +13,7 @@ get_header(); ?>
 
 
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+			<?php the_post_thumbnail('full'); ?>
 			<h3><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h3>
 			<h2><?php the_field('page_headline'); ?></h2>
 			<div class="entry-content">
@@ -23,7 +24,6 @@ get_header(); ?>
 
 	</div> <!-- /#top -->
 
-	<?php the_post_thumbnail('full'); ?>
 
 </div> <!-- /#splash -->
 							
