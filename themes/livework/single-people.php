@@ -33,7 +33,7 @@ get_header(); ?>
 				<?php wp_reset_query();?>
 			</aside>
 			
-			
+			<div id="person-profile">
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				<h3><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h3>
 				<h2><?php the_field('page_headline'); ?></h2>
@@ -41,7 +41,7 @@ get_header(); ?>
 					<?php the_content(); ?>
 				</div>
 			<?php endwhile; ?>
-			
+			</div>
 			
 			
 	</div>
