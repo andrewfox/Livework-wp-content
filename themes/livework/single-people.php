@@ -22,7 +22,7 @@ get_header(); ?>
 			</div>
 		
 			
-			<div class="entry-content">
+		<div class="entry-content left-col">
 				<?php the_content(); ?>
 		<?php endwhile; ?>
 		</div>
