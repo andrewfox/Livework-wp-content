@@ -49,9 +49,13 @@ get_header(); ?>
 	<a href="<?php echo $prevURL ?>"> <img class="left-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/left-arrow.png" alt="go to previous page" /></a>  	
 				
 </div>
-
+					
+	
+					
+					
+					
 					<div id="person">
-						
+						<h2><a id = "more-infolink" href="#"><span class="ss-icon">down</span> More posts by <?php the_title(); ?></a></h2>
 						
 						
 						
@@ -63,22 +67,23 @@ get_header(); ?>
 						
 						
 					</div>
-					<aside id="sidebar-more-posts">
-						<h2>More posts by <?php the_title(); ?></h2>
-						
-						<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
-						<?php if (have_posts()) : ?>
-						<?php while (have_posts()) : the_post(); ?>
-						<div class="mini-post-content">
-						<h1><?php the_title(); ?></h1>
-						<?php the_excerpt() ?>
-	<!--					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>-->
-						</div>
-						<?php endwhile; ?>
-						<?php else : ?>
-						<?php endif; ?>	
-						<?php wp_reset_query();?>
-					</aside>
+					
+					<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
+					<?php if (have_posts()) : ?>
+					<?php while (have_posts()) : the_post(); ?>
+					<div class="about">
+					<h1><?php the_title(); ?></h1>
+					<?php the_excerpt() ?>
+<!--					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>-->
+					</div>
+					<?php endwhile; ?>
+					<?php else : ?>
+					<?php endif; ?>	
+									
+					
+	
+					<?php wp_reset_query();?>
+
 					
 				</article><!-- #post-## -->
 						<h2><a class="morepeople" href="#">More people</a></h2>
