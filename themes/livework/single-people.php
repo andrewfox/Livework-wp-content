@@ -78,8 +78,8 @@ get_header(); ?>
 					
 				</article><!-- #post-## -->
 						
-				
-				<div id="morepeople" class="wrapper">
+			<div class="wrapper">
+				<div id="morepeople" >
 					<h2>More people</h2>
 					<ul id="people">
 										<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
@@ -107,5 +107,7 @@ get_header(); ?>
 										
 					</ul>
 				</div>
+			</div>
+			
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
