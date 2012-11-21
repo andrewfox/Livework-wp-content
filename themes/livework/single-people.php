@@ -13,14 +13,38 @@ get_header(); ?>
 
 
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<?php the_post_thumbnail('full'); ?>
-			<h3><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h3>
-			<h2><?php the_field('page_headline'); ?></h2>
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div>
+				<?php the_post_thumbnail('full'); ?>
 			<?php endwhile; ?>
-		</div>
+			
+			<aside id="sidebar-more-posts">
+				<h2>More posts by <?php the_title(); ?></h2>
+				
+				<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
+				<?php if (have_posts()) : ?>
+				<?php while (have_posts()) : the_post(); ?>
+				<div class="mini-post-content">
+				<h1><?php the_title(); ?></h1>
+				<?php the_excerpt() ?>
+<!--					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>-->
+				</div>
+				<?php endwhile; ?>
+				<?php else : ?>
+				<?php endif; ?>	
+				<?php wp_reset_query();?>
+			</aside>
+			
+			
+			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+				<h3><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h3>
+				<h2><?php the_field('page_headline'); ?></h2>
+				<div class="entry-content">
+					<?php the_content(); ?>
+				</div>
+			<?php endwhile; ?>
+			
+			
+			
+	</div>
 
 	</div> <!-- /#top -->
 
@@ -30,13 +54,8 @@ get_header(); ?>
 							
 											
 <div id="hello" class="arrows">
-
-
-<?php add_filter( $redordernext, $function_to_add, $priority, $accepted_args ); ?>
 				
 <?php
-
-
 	$current =  get_permalink();
 	$prevPost = get_previous_post(false);
 	$prevURL = get_permalink($prevPost->ID);
@@ -50,29 +69,9 @@ get_header(); ?>
 				
 </div>
 
-					<div id="person">
-						<h1>
-						<?php the_title(); ?> <span>
-						<?php the_field('job-title'); ?>
-						</span>
-						</h1>
-					</div>
-					<aside id="sidebar-more-posts">
-						<h2>More posts by <?php the_title(); ?></h2>
-						
-						<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
-						<?php if (have_posts()) : ?>
-						<?php while (have_posts()) : the_post(); ?>
-						<div class="mini-post-content">
-						<h1><?php the_title(); ?></h1>
-						<?php the_excerpt() ?>
-	<!--					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>-->
-						</div>
-						<?php endwhile; ?>
-						<?php else : ?>
-						<?php endif; ?>	
-						<?php wp_reset_query();?>
-					</aside>
+					
+
+					
 					
 				</article><!-- #post-## -->
 						<h2><a class="morepeople" href="#">More people</a></h2>
