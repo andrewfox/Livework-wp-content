@@ -17,7 +17,7 @@ get_header(); ?>
 			<?php endwhile; ?>
 			
 			<aside id="sidebar-more-posts">
-				<h2>More posts by <?php the_title(); ?></h2>
+				<h2>Posts by <?php the_title(); ?></h2>
 				
 				<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
 				<?php if (have_posts()) : ?>
