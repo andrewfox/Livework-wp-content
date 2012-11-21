@@ -12,13 +12,13 @@ get_header(); ?>
 	<div id="person-intro">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<?php the_post_thumbnail('full'); ?>
-		<div id="person-headline">
+		<div id="person-headline" class="wrapper">
 				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
 				<h2><?php the_excerpt() ?></h2>
 			</div>
 	</div>
 	
-	<div id="main">
+	<div id="main" class="wrapper">
 				
 		
 		
@@ -79,7 +79,7 @@ get_header(); ?>
 				</article><!-- #post-## -->
 						
 				
-				<div id="morepeople">
+				<div id="morepeople" class="wrapper">
 					<h2>More people</h2>
 					<ul id="people">
 										<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
