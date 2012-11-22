@@ -71,7 +71,7 @@ get_header(); ?>
 			            <?php the_time('d M Y'); ?> in <?php the_category('&');?>
 			        </li>
 			
-			    <?php endwhile; else: ?>
+			    <?php endwhile; ?>
 			
 			    <?php endif; ?>
 			
