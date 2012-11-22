@@ -49,9 +49,10 @@ get_header(); ?>
 			<!-- The Loop -->
 			
 			    <?php $args = array( 
+			    					'author'=> $authorid,
 			    					'post_type' => 'people', 
 			    					'posts_per_page' => 1, 
-			    					'author'=> $authorid
+			    					
 			    					);
 			    $loop = new WP_Query( $args );
 			    while ( $loop->have_posts() ) : $loop->the_post(); ?>
