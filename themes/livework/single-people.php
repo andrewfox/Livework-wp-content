@@ -42,7 +42,7 @@ get_header(); ?>
 			<div class="mini-post-content">
 			<h1><a href='<?php the_permalink() ?>'
 			rel='bookmark' title='<?php the_title(); ?>'>
-			<?php the_title(); ?></a><span> <?php the_date('j/n/Y'); ?></span></h1>
+			<?php the_title(); ?><span> <?php the_date('j/n/Y'); ?></span></h1></a>
 			
 <!--					<h5 title="Permanent Link to <?php the_title(); ?>">Read More</h5>-->
 			</div>
