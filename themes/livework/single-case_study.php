@@ -19,7 +19,7 @@ get_header(); ?>
 				<h4><a href="../../our-team">Our Team</a></h4>
 				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
 				<h2><?php the_excerpt() ?></h2>
-						<?php get_the_author_meta($userID) ?> 
+						<?php get_the_author_meta('ID') ?> 
 				
 			</div>
 		</div>
