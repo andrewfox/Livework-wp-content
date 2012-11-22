@@ -158,24 +158,24 @@ add_filter( 'excerpt_more', 'livework_auto_excerpt_more' );
 
 
 
-if ( ! function_exists( 'livework_custom_excerpt_more' ) ) :
-	/**
-	 * Adds a pretty "Continue Reading" link to custom post excerpts.
-	 *
-	 * To override this link in a child theme, remove the filter and add your own
-	 * function tied to the get_the_excerpt filter hook.
-	 *
-	 * @since Twenty Ten 1.0
-	 * @return string Excerpt with a pretty "Continue Reading" link
-	 */
-	function livework_custom_excerpt_more( $output ) {
-		if ( has_excerpt() && ! is_attachment() ) {
-			$output .= livework_continue_reading_link();
-		}
-		return $output;
-	}
-endif;
-add_filter( 'get_the_excerpt', 'livework_custom_excerpt_more' );
+//if ( ! function_exists( 'livework_custom_excerpt_more' ) ) :
+//	/**
+//	 * Adds a pretty "Continue Reading" link to custom post excerpts.
+//	 *
+//	 * To override this link in a child theme, remove the filter and add your own
+//	 * function tied to the get_the_excerpt filter hook.
+//	 *
+//	 * @since Twenty Ten 1.0
+//	 * @return string Excerpt with a pretty "Continue Reading" link
+//	 */
+//	function livework_custom_excerpt_more( $output ) {
+//		if ( has_excerpt() && ! is_attachment() ) {
+//			$output .= livework_continue_reading_link();
+//		}
+//		return $output;
+//	}
+//endif;
+//add_filter( 'get_the_excerpt', 'livework_custom_excerpt_more' );
 
 
 
