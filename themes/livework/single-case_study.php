@@ -24,6 +24,14 @@ get_header(); ?>
 <div class="wrapper">
 	<div id="main">
 				
+				
+				
+				
+
+		
+		<?php the_author(); ?> 
+		
+		
 		
 		
 			
@@ -36,6 +44,40 @@ get_header(); ?>
 		<aside id="sidebar-more-posts">
 		
 			<h2>Posts by <?php the_title(); ?></h2>
+			
+			<?php
+			    $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
+			    ?>
+			
+			    <h2>About: <?php echo $curauth->nickname; ?></h2>
+			    <dl>
+			        <dt>Website</dt>
+			        <dd><a href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a></dd>
+			        <dt>Profile</dt>
+			        <dd><?php echo $curauth->user_description; ?></dd>
+			    </dl>
+			
+			    <h2>Posts by <?php echo $curauth->nickname; ?>:</h2>
+			
+			    <ul>
+			<!-- The Loop -->
+			
+			    <?php $args = array( 'post_type' => 'people', 'posts_per_page' => 1 );
+			    $loop = new WP_Query( $args );
+			    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			        <li>
+			            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+			            <?php the_title(); ?></a>,
+			            <?php the_time('d M Y'); ?> in <?php the_category('&');?>
+			        </li>
+			
+			    <?php endwhile; else: ?>
+			        <p><?php _e('No posts by this author.'); ?></p>
+			
+			    <?php endif; ?>
+			
+			<!-- End Loop -->
+			
 			
 			<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
 			<?php if (have_posts()) : ?>
