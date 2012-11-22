@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The Template for displaying all single People posts.
