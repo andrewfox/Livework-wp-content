@@ -50,7 +50,7 @@ get_header(); ?>
 			
 			    <?php $args = array( 
 			    					'author'=> $authorid,
-			    					'post_type' => 'case_study', 
+//			    					'post_type' => 'people', 
 			    					'posts_per_page' => 1, 
 			    					
 			    					);
