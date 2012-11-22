@@ -72,7 +72,6 @@ get_header(); ?>
 			        </li>
 			
 			    <?php endwhile; else: ?>
-			        <p><?php _e('No posts by this author.'); ?></p>
 			
 			    <?php endif; ?>
 			
