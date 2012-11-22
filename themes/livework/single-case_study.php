@@ -13,13 +13,13 @@ get_header(); ?>
 	<div id="person-intro">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<?php the_post_thumbnail('full'); ?>
-		<?php $authorid = get_the_author_meta($userID) ?> 
+		<?php $authorid = get_the_author_meta('ID') ?> 
 		<div id="person-headline" >
 			<div class="wrapper">
 				<h4><a href="../../our-team">Our Team</a></h4>
 				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
 				<h2><?php the_excerpt() ?></h2>
-						<?php get_the_author_meta('ID') ?> 
+						<?php the_author_meta('ID') ?> 
 				
 			</div>
 		</div>
