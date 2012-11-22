@@ -13,7 +13,10 @@
 
 
 /*Basic HTML*/
-
+.wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+}
 
 /*Header*/
 
@@ -29,6 +32,13 @@ article.main {
 	padding-right: 0.108695652%;
 	padding-left: 0.104166666%%;
 	box-sizing: border-box;
+}
+
+#person-headline {
+	background-color: rgba(181, 181, 181, 0.760784);
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
 }
 
 /*Footer*/

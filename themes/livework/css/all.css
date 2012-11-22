@@ -326,18 +326,16 @@ footer a {
 }
 
 #morepeople ul#people li{
-	width: 33%;
+
 }
 
 #person-headline h2 p {
-	font: 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	width: 70%;
-	min-width: 400px;
+	font: 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin-top: 0;
 }
 
 #person-headline h3 {
-	font-size: 48px;
+	font-size: 36px;
 	line-height: normal;
 	color: #6F0B61;
 	margin-top: 0;
@@ -376,15 +374,12 @@ height: auto;
 }
 
 div.left-col {
-	float: left;
-	width: 60%;
 }
 
 #main {
 	position: relative;
 	float: left;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 #person-intro {
@@ -394,16 +389,10 @@ div.left-col {
 
 
 aside#sidebar-more-posts {
-	float: right;
-	width: 30%;
+
 }
 
-#person-headline {
-	background-color: rgba(181, 181, 181, 0.760784);
-	position: absolute;
-	bottom: 5px;
-	width: 100%;
-}
+
 
 #person-headline div.wrapper h4 a{
 	font: bold 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -414,7 +403,7 @@ aside#sidebar-more-posts {
 	margin-bottom: 0;
 }
 
-#sidebar-more-posts div.mini-post-content h1 {
+#sidebar-more-posts div.mini-post-content h1 a{
 	font: bold 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #2E3183;
 }
@@ -440,10 +429,6 @@ aside#sidebar-more-posts {
 
 
 
-#person-profile {
-	
-}
-
 #more-info h2 a {
 		padding: 10px 10px 5px;
 		height: 40px;
@@ -461,24 +446,11 @@ aside#sidebar-more-posts {
 
 
 
-img.attachment-original.wp-post-image {
-	
-}
-
 #people li {
-/*	display: inline;
-	width: 200px;
-	height: 200px;
-	position: relative;
-	display: block;
-	position: relative;*/
 	float: left;
 	width: 200px;
-/*	height: 200px;*/
 	overflow: hidden;
-/*	background: #333;*/
 	margin: 0 1px 1px 0;
-	
 	width: 49.545454545%;
 	padding-right: 0.222222222%;
 	padding-left: 0.222222222%;
@@ -512,6 +484,6 @@ ul#offices li:hover{
 }
 
 .wrapper{
-	max-width: 960px;
-	margin: 0 auto;
+	margin-right: 20px;
+	margin-left: 20px;
 }
