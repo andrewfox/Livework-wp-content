@@ -13,6 +13,7 @@ get_header(); ?>
 	<div id="person-intro">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<?php the_post_thumbnail('full'); ?>
+		<?php $authorid = get_the_author_meta($userID) ?> 
 		<div id="person-headline" >
 			<div class="wrapper">
 				<h4><a href="../../our-team">Our Team</a></h4>
@@ -50,7 +51,7 @@ get_header(); ?>
 			    <?php $args = array( 
 			    					'post_type' => 'people', 
 			    					'posts_per_page' => 1, 
-			    					'author'=> get_the_author_meta($userID)
+			    					'author'=> $authorid
 			    					);
 			    $loop = new WP_Query( $args );
 			    while ( $loop->have_posts() ) : $loop->the_post(); ?>
