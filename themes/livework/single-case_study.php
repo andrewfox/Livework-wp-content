@@ -42,30 +42,23 @@ get_header(); ?>
 			
 			
 		<aside id="sidebar-more-posts">
-		
-			<h2>Written by <?php the_author(); ?></h2>
-	
-			
-			<!-- The Loop -->
-			
-			    <?php $args = array( 'post_type' => 'people', 'posts_per_page' => 1, '&author_name=' => $user_identity  );
-			    $loop = new WP_Query( $args );
-			    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-			        <li>
-			            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
-			            <?php the_title(); ?></a>,
-			            <?php the_time('d M Y'); ?> in <?php the_category('&');?>
-			            <?php the_post_thumbnail('small'); ?>
-			        </li>
-			
-			    <?php endwhile; ?>
-			
-			
-			<!-- End Loop -->
-			
-			
-<!---->
-		</aside>
+				
+					<h2>Posts by <?php the_title(); ?></h2>
+					
+					<?php query_posts( 'post_type=people' . 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
+					<?php if (have_posts()) : ?>
+					<?php while (have_posts()) : the_post(); ?>
+					<div class="mini-post-content">
+					<h1><a href='<?php the_permalink() ?>'
+					rel='bookmark' title='<?php the_title(); ?>'>
+					<?php the_title(); ?><span> <?php the_date('j/n/Y'); ?></span></h1></a>
+					
+					</div>
+					<?php endwhile; ?>
+					<?php else : ?>
+					<?php endif; ?>	
+					<?php wp_reset_query();?>
+				</aside>
 			
 	</div>
 </div>							
