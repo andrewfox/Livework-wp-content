@@ -73,7 +73,6 @@ get_header(); ?>
 			
 			    <?php endwhile; ?>
 			
-			    <?php endif; ?>
 			
 			<!-- End Loop -->
 			
