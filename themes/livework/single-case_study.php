@@ -48,7 +48,7 @@ get_header(); ?>
 			
 			<!-- The Loop -->
 			
-			    <?php $args = array( 'post_type' => 'people', 'posts_per_page' => 1 );
+			    <?php $args = array( 'post_type' => 'people', 'posts_per_page' => 1, '&author_name=' . $user_identity  );
 			    $loop = new WP_Query( $args );
 			    while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			        <li>
