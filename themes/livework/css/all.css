@@ -484,6 +484,31 @@ ul#offices li:hover{
 }
 
 .wrapper{
-	margin-right: 20px;
-	margin-left: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+h2.entry-title a {
+	font: 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h2.entry-title {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+div.entry-meta {
+	font-size: 12px;
+	border-bottom: 0 solid #aaa;
+}
+
+div.entry-content  {
+	font-size: 14px;
+}
+
+div.blog-image img {
+	width: 100%;
+	height: auto;
 }
