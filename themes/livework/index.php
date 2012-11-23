@@ -21,7 +21,7 @@ get_header(); ?>
 
 					<?php while ( have_posts() ) : the_post() ?>
 					
-						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+						<div class="post-wrapper" id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 							
 							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
