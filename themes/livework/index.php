@@ -31,7 +31,7 @@ get_header(); ?>
 							<div class="entry-content">
 								
 								<div class="entry-meta">
-									<span class="meta-prep meta-prep-author"><?php _e('By ', 'blankslate'); ?></span>
+									<span class="meta-prep meta-prep-author"><?php _e('From ', 'blankslate'); ?></span>
 									<span class="author vcard"><a class="url fn n" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" title="<?php printf( __( 'View all articles by %s', 'blankslate' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
 									<span class="meta-sep"> | </span>
 									<span class="meta-prep meta-prep-entry-date"><?php _e('Published ', 'blankslate'); ?></span>
