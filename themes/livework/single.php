@@ -32,18 +32,18 @@ get_header(); ?>
 				
 <?php
 $categories = get_the_category();
-$success = 'hello';
-$separator = 'not new';
+$success = '';
+$old = '<div id="old-post"> <!--old post-->';
 $output = '';
 if($categories){
 	foreach($categories as $category) {
 		$output = $category->cat_name;
 		if ($output == 'NEW') {
 			echo($success);
-			echo($output);
+			
 		}
 		else {
-			echo ($separator);
+		echo($old);
 		}
 	}
 
@@ -140,4 +140,6 @@ if($categories){
 		</div><?php get_sidebar(); ?>
 		
 	</div>	
+	
+</div> <!--old post end-->
 <?php get_footer(); ?>
