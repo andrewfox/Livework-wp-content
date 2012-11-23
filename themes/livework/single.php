@@ -10,7 +10,8 @@
 get_header(); ?>
 			
 <?php
-$standard = true;
+$standard = false;
+$feature = false;
 $categories = get_the_category();
 $highlight = '<div id="hightlight">';
 $basic = '<div id="basic">';
@@ -34,6 +35,7 @@ if ($feature == true) {
 	echo($highlight);
 }
 else {
+$standard = true;
 echo($basic);
 
 }
