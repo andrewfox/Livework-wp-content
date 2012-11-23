@@ -32,13 +32,20 @@ get_header(); ?>
 				
 <?php
 $categories = get_the_category();
-$separator = ' ';
+$success = 'hello';
+$separator = 'not new';
 $output = '';
 if($categories){
 	foreach($categories as $category) {
-		$output .='<p>'.$category->cat_name.'</p>'.$separator;
+		$output = $category->cat_name;
+		if ($output 'NEW') {
+			echo($success)
+		}
+		else {
+			echo ($separator);
+		}
 	}
-echo trim($output, $separator);
+
 }
 ?>		
 		 		
