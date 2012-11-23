@@ -39,7 +39,7 @@ if($categories){
 	foreach($categories as $category) {
 		$output = $category->cat_name;
 		if ($output = 'NEW') {
-			echo($success)
+			echo($success);
 		}
 		else {
 			echo ($separator);
