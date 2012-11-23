@@ -8,18 +8,7 @@
  */
 
 get_header(); ?>
-			<?php 
-				$cat = get_query_var('cat');
-				
-				echo $cat
-//				if($cat == 193) :
-//										echo '<div id="new-post">';
-//										echo '<p>hi</p>'; 
-//										else :				
-//				
-//										endif;
 			
-			?>
 		
 			
 	<div id="person-intro">
@@ -50,6 +39,19 @@ get_header(); ?>
 			
 		<div class="entry-content left-col">
 				<?php the_content(); ?>
+				
+				<?php 
+								$cat = get_query_var('cat');
+								
+								echo $cat
+				//				if($cat == 193) :
+				//										echo '<div id="new-post">';
+				//										echo '<p>hi</p>'; 
+				//										else :				
+				//				
+				//										endif;
+							
+							?>
 		<?php endwhile; ?>
 		</div>
 			
