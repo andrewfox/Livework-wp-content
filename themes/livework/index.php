@@ -45,7 +45,7 @@ get_header(); ?>
 									echo '</div>';
 								} ?>
 
-								<?php the_excerpt(); ?>
+								<?php the_content(); ?>
 							</div>
 
 						</div><!-- /.post -->
