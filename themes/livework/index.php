@@ -16,7 +16,7 @@
 get_header(); ?>
 
 				<article class="main">
-
+<div class="wrapper">
 					<h1 class="page-title">News</h1>
 
 					<?php while ( have_posts() ) : the_post() ?>
@@ -61,7 +61,7 @@ get_header(); ?>
 
 				</article><!-- /#bodytext -->
 
-
+</div> <!--end wrapper-->
 
 
 <?php get_footer(); ?>
