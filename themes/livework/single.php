@@ -43,7 +43,7 @@ get_header(); ?>
 				<?php 
 								$cat = get_the_category( $id );
 								
-								echo $cat
+								var_dump($cat);
 				//				if($cat == 193) :
 				//										echo '<div id="new-post">';
 				//										echo '<p>hi</p>'; 
