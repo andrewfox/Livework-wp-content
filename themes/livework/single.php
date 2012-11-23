@@ -36,7 +36,7 @@ $separator = ' ';
 $output = '';
 if($categories){
 	foreach($categories as $category) {
-		$output .= '<p>'.$category->cat_name.'</p>'.$separator;
+		$output .='<p>'.$category->cat_name.'</p>'.$separator;
 	}
 echo trim($output, $separator);
 }
