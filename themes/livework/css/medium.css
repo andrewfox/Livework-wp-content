@@ -24,7 +24,12 @@ header {
 	float: left;
 }
 
-
+#menu-primary {
+	display: inline-block;
+}
+.menu-reveal {
+	display: none;
+}
 /* Secoundary Nav */
 
 .nav-bar {
