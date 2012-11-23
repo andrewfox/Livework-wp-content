@@ -26,11 +26,7 @@ get_header(); ?>
 							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 
-							<?php if ( has_post_thumbnail() ) {
-								echo '<div class="post-image blog-image">';
-								the_post_thumbnail('full');
-								echo '</div>';
-							} ?>			
+										
 
 							<div class="entry-content">
 								
@@ -42,6 +38,12 @@ get_header(); ?>
 									<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
 									<?php edit_post_link( __( 'Edit', 'blankslate' ), "<span class=\"meta-sep\"> | </span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ) ?>
 								</div>
+								
+								<?php if ( has_post_thumbnail() ) {
+									echo '<div class="post-image blog-image">';
+									the_post_thumbnail('full');
+									echo '</div>';
+								} ?>
 
 								<?php the_excerpt(); ?>
 							</div>
