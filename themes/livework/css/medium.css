@@ -30,6 +30,23 @@ header {
 .menu-reveal {
 	display: none;
 }
+
+ #menu-primary.open {
+	display: inline-block;
+}
+ 
+ header li {
+	display: inline-block;
+	width: auto;
+	float: none;
+}
+ header li a {
+	display: inline-block;
+ 	padding: 10px 7px;
+	background-color: #000;
+
+}
+
 /* Secoundary Nav */
 
 .nav-bar {
