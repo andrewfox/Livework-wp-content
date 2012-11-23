@@ -31,11 +31,10 @@ if($categories){
 if ($feature == true) {
 	$standard = false;
 	echo($highlight);
-	
-	
 }
 else {
 echo($basic);
+
 }
 
 ?>
@@ -47,6 +46,7 @@ echo($basic);
 				echo'<div class="wrapper">';
 				the_post_thumbnail('full'); 
 				echo'</div>';
+				echo($output);
 			}
 			
 			else {
