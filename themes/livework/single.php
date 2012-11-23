@@ -38,7 +38,7 @@ $output = '';
 if($categories){
 	foreach($categories as $category) {
 		$output = $category->cat_name;
-		if ($output 'NEW') {
+		if ($output = 'NEW') {
 			echo($success)
 		}
 		else {
