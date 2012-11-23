@@ -502,6 +502,16 @@ max-width: 100%;
 height: auto;
 }
 
+#basic #person-intro img{
+height: auto;
+width: auto;
+}
+
+#basic {
+	position: relative;
+	top: 100px;
+}
+
 /* ===============================
    Main
    =============================== */
