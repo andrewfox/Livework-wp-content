@@ -45,7 +45,7 @@ echo($basic);
 			<?php 
 			if ($standard == true) {
 				echo'<div class="wrapper">';
-				the_post_thumbnail('medium'); 
+				the_post_thumbnail('full'); 
 				echo'</div>';
 			}
 			
