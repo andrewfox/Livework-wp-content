@@ -36,9 +36,9 @@ $separator = ' ';
 $output = '';
 if($categories){
 	foreach($categories as $category) {
-		$output .= .$category->cat_name;
+		$output .= .$category->cat_name.$separator;
 	}
-echo trim($output,);
+echo trim($output, $separator);
 }
 ?>		
 		 		
@@ -49,7 +49,18 @@ echo trim($output,);
 		<div class="entry-content left-col">
 				<?php the_content(); ?>
 				
-				
+				<?php 
+								$cat = get_the_category( $id );
+								
+								var_dump($cat);
+				//				if($cat == 193) :
+				//										echo '<div id="new-post">';
+				//										echo '<p>hi</p>'; 
+				//										else :				
+				//				
+				//										endif;
+							
+							?>
 		<?php endwhile; ?>
 		</div>
 			
