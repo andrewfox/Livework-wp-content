@@ -11,8 +11,8 @@ get_header(); ?>
 			
 <?php
 $categories = get_the_category();
-$highlight = '<div id="hightlight>"';
-$basic = '<div id="basic>"';
+$highlight = '<div id="hightlight">';
+$basic = '<div id="basic">';
 $output = '';
 if($categories){
 	foreach($categories as $category) {
