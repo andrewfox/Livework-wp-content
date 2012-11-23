@@ -97,24 +97,38 @@ header h1 a img {
 	height: 20px;
 }
 
+.menu-reveal {
+	background: none;
+	border: 1px solid #333;
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	padding: 5px 12px 3px;
+}
+.menu-reveal:hover {
+	color: #eee;
+}
+.menu-reveal span {
+}
 
 
 #menu-primary {
 	display: none;
 }
 #menu-primary.open {
-	display: inline-block;
-}
-.menu-reveal {
-	
+	display: block;
 }
 
 header li {
-	display: inline-block;
+	display: block;
+	width: 50%;
+	float: left;
 }
 header li a {
-	display: inline-block;
+	display: block;
 	padding: 10px 7px;
+	background-color: #333;
+	
 }
 
 header li.current_page_item a,
@@ -286,6 +300,7 @@ li.sector-page {
    =============================== */
 
 #world {
+	margin-top: 500px;
 	height: 490px;
 	background: url('../img/world.gif') no-repeat center top #2e2a2a;
 	background-size: 2249px 490px;
@@ -363,7 +378,7 @@ footer a {
 
 /*Symbolset specifics*/
 
-#menu-item-22 a,
+#menu-item-22 a, button.menu-reveal span,
 #menu-item-43 a, #menu-item-44 a {
 	font-style: normal;
 	font-weight: normal;
@@ -378,13 +393,15 @@ footer a {
 	font-feature-settings: "liga";
 	-webkit-font-smoothing: antialiased;
 }
-#menu-item-22 a {
+#menu-item-22 a,
+button.menu-reveal span {
 	font-family: "SSStandard";
 }
 
 #menu-item-43 a, #menu-item-44 a {
 	font-family: "SSSocial";
 }
+
 
 
 /* ===============================
