@@ -10,6 +10,7 @@
 get_header(); ?>
 			
 <?php
+$standard = true;
 $categories = get_the_category();
 $highlight = '<div id="hightlight">';
 $basic = '<div id="basic">';
@@ -22,7 +23,6 @@ if($categories){
 			
 		}
 		else {
-		$standard = true;
 		}
 	}
 
