@@ -47,9 +47,10 @@ a:hover {
 /*Header*/
 
 header {
+	display: block;
 	width: 100%;
 	z-index: 100;
-	font-size: 13px;
+	font-size: 12px;
 }
 header ul {
 	margin: 0;
@@ -289,6 +290,9 @@ footer a {
 		clear: both;
 	}
 
+
+/*Person*/
+
 #people li a {
 	position: relative;
 	display: block;
@@ -329,17 +333,39 @@ footer a {
 
 }
 
-#person-headline h2 p {
-	font: 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin-top: 0;
+
+/*Person Headline*/
+
+#person-headline {
+	border-bottom: 1px solid #666;
+	background: #eee;
 }
 
-#person-headline h3 {
+#person-headline h1 {
 	font-size: 36px;
 	line-height: normal;
 	color: #6F0B61;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+#person-headline h1 span {
+	font-family:'Chaparral W01 It Cap';
+	white-space: nowrap;
+}
+#person-headline div.wrapper h4{
+	margin: 0;
+}
+#person-headline h4 a {
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #222;
+}
+.excerpt {
+	font-family:'Chaparral Pro Capt 1167087';
+	font-size: 19px;
+}
+.excerpt p {
+	margin: 0.5em 0 1em;
 }
 
 
@@ -354,10 +380,6 @@ div.grey-container {
 }
 
 
-#person-headline h3 span {
-	color: black;
-	font: 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
 
 #people li img.wp-post-image{
 	position: relative;
@@ -371,9 +393,6 @@ div.grey-container {
 #person-intro img{
 max-width: 100%;
 height: auto;
-}
-
-div.left-col {
 }
 
 #main {
@@ -390,17 +409,6 @@ div.left-col {
 
 aside#sidebar-more-posts {
 
-}
-
-
-
-#person-headline div.wrapper h4 a{
-	font: bold 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: black;
-}
-
-#person-headline div.wrapper h4{
-	margin-bottom: 0;
 }
 
 #sidebar-more-posts div.mini-post-content h1 a{
