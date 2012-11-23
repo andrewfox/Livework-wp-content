@@ -24,7 +24,6 @@ if($categories){
 			
 		}
 		else {
-		$feature = false;
 		}
 	}
 
