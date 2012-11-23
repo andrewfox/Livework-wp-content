@@ -23,7 +23,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-	<article id="people-<?php the_ID(); ?>" class="main">
+	<article id="people-<?php the_ID(); ?>" class="main clearfix">
 		<div class="wrapper">
 			<div id="main" class="clearfix">
 
@@ -35,7 +35,7 @@ get_header(); ?>
 
 				<aside id="sidebar-more-posts">
 
-					<h2>Posts by <?php the_title(); ?></h2>
+					<h2 class="section-title">Posts by <?php the_title(); ?></h2>
 
 					<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
 					<?php if (have_posts()) : ?>
@@ -58,10 +58,10 @@ get_header(); ?>
 
 	</article><!-- #post-## -->
 
-	<div class="grey-container">		
+	<aside class="extra">		
 		<div class="wrapper">
 			<div id="morepeople" >
-				<h2>Livework people</h2>
+				<h2 class="section-title">Livework people</h2>
 				<ul id="people">
 					<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
 		
@@ -89,7 +89,7 @@ get_header(); ?>
 				</ul>
 			</div>
 		</div>
-	</div>
+	</aside>
 			
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

@@ -15,7 +15,7 @@
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-				<article id="page-<?php the_ID(); ?>" class="main">
+				<article id="page-<?php the_ID(); ?>" class="main clearfix">
 				
 					<h1 class="page-title"><?php the_title(); ?></h1>
 

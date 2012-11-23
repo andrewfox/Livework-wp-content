@@ -16,6 +16,7 @@
 
 
 body {
+	color: #222;
 	background: #fff;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	line-height: 140%;
@@ -49,6 +50,11 @@ a:hover {
 	color: #ccc;
 }
 
+.section-title {
+	margin-top: 0;
+	text-transform: uppercase;
+	font: normal normal 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 
 
 
@@ -153,6 +159,7 @@ div.entry-meta {
 
 div.entry-content  {
 	font-size: 14px;
+	padding: 20px 0;
 }
 
 div.blog-image img, .alignnone {
@@ -168,7 +175,6 @@ section#content {
 }
 
 article.main {
-	padding: 5px;
 }
 
 h1.page-title {
@@ -301,7 +307,9 @@ footer a {
 
 
 
-/*Specifics*/
+/* ===============================
+   Specifics
+   =============================== */
 
 /*Symbolset specifics*/
 
@@ -328,16 +336,16 @@ footer a {
 	font-family: "SSSocial";
 }
 
-	ul#people {
-		float: left;
-		clear: both;
-	}
-
 
 /* ===============================
-   Person
+   Our Team
    =============================== */
 
+
+ul#people {
+	float: left;
+	clear: both;
+}
 
 #people li a {
 	position: relative;
@@ -348,6 +356,10 @@ footer a {
 	font-weight: normal;
 }
 
+
+/* ===============================
+   Person
+   =============================== */
 
 /*Person Headline*/
 
@@ -419,7 +431,6 @@ div.grey-container {
 	background-color: #eee;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-bottom: 40px;
 }
 
 
@@ -438,42 +449,53 @@ max-width: 100%;
 height: auto;
 }
 
+/* ===============================
+   Main
+   =============================== */
+
+
 #main {
 	position: relative;
 	float: left;
 	margin: 0;
 	margin-bottom: 20px;
+	padding: 0;
 }
 
 #person-intro {
 	position: relative;
 }
 
-
+/* ===============================
+   Aside (more posts
+   =============================== */
 
 aside#sidebar-more-posts {
-
+	border-top: 1px solid #ccc;
+	padding: 20px;
+	margin: 0 -20px;
 }
 
-#sidebar-more-posts div.mini-post-content h1 a{
+#sidebar-more-posts ul a{
 	font: bold 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #2E3183;
 }
 
-#sidebar-more-posts div.mini-post-content h1 span {
+#sidebar-more-posts ul a span {
 	font-weight: normal;
 	font-style: normal;
-	color: black;
-}
-
-#morepeople h2, #sidebar-more-posts h2 {
-	text-transform: uppercase;
-	font: normal normal 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 14px;
+	color: #aaa;
 }
 
 #sidebar-more-posts div.mini-post-content {
 	font-size: 12px;
 }
+
+/* ===============================
+   More people
+   =============================== */
+
 
 #morepeople {
 	float: left;
@@ -495,6 +517,7 @@ aside#sidebar-more-posts {
 #more-info h2 a.clicked{
 	background-color: #000 ;
 }
+
 
 
 
