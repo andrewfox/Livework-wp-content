@@ -47,7 +47,6 @@ echo($basic);
 				echo'<div class="wrapper">';
 				the_post_thumbnail('full'); 
 				echo'</div>';
-				echo($output);
 			}
 			
 			else {
