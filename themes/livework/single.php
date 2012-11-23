@@ -24,11 +24,9 @@ if($categories){
 		}
 		else {
 		}
-		endif
 	}
 
 }
-endif
 
 if ($feature == true) {
 	$standard = false;
@@ -39,7 +37,6 @@ if ($feature == true) {
 else {
 echo($basic);
 }
-endif
 
 ?>
 <div id="person-intro">
@@ -48,15 +45,15 @@ endif
 			<?php 
 			if ($standard == true) {
 				echo'<div class="wrapper">';
-			}
-			endif
-			
-			the_post_thumbnail('full'); 
-			
-			if ($standard == true) {
+				the_post_thumbnail('full'); 
 				echo'</div>';
-			}		
-			endif	
+			}
+			
+			else {
+				the_post_thumbnail('full');
+			}
+			 
+			
 			?>
 			<div id="person-headline" >
 				<div class="wrapper">
