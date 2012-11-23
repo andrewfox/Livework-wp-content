@@ -19,7 +19,6 @@ get_header(); ?>
 				<h4><a href="../../our-team">Our Team</a></h4>
 				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
 				<h2><?php the_excerpt() ?></h2>
-						<?php the_author_meta('ID') ?> 
 				
 			</div>
 		</div>
@@ -61,7 +60,6 @@ get_header(); ?>
 			        <li>
 			            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
 			            <?php the_title(); ?></a>,
-			            <?php the_time('d M Y'); ?> in <?php the_category('&');?>
 			            <?php the_post_thumbnail('small'); ?>
 			        </li>
 			
