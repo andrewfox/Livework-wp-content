@@ -10,7 +10,13 @@
 get_header(); ?>
 			
 	<div id="person-intro">
-		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+	<?php $args = array( 
+						'category' => -193, 
+						'posts_per_page' => 1, 
+						
+						);
+	$loop = new WP_Query( $args );
+	while ( $loop->have_posts() ) : $loop->the_post(); ?>
 		<?php the_post_thumbnail('full'); ?>
 		<?php $authorid = get_the_author_meta('ID') ?> 
 		<div id="person-headline" >
@@ -22,6 +28,27 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+	
+	<div id="old-post">
+		<?php $args = array( 
+							'category' => 193, 
+							'posts_per_page' => 1, 
+							
+							);
+		$loop = new WP_Query( $args );
+		while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		<?php the_post_thumbnail('full'); ?>
+		<?php $authorid = get_the_author_meta('ID') ?> 
+		<div id="person-headline" >
+			<div class="wrapper">
+				<h4><a href="../../our-team">Our Team</a></h4>
+				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
+				<h2><?php the_excerpt() ?></h2>
+				
+			</div>
+		</div>
+	</div>
+	
 <div class="wrapper">
 	<div id="main">
 				
@@ -110,6 +137,8 @@ get_header(); ?>
 											</a></li>
 											
 											<?php endwhile; ?>
+											
+											
 										
 					</ul>
 				</div>
