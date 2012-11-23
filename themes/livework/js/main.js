@@ -2,6 +2,14 @@
 $(document).ready(function() {
 
 
+
+$(".button-reveal").click(function () {
+	$('#menu-primary').toggleClass('open');
+});
+
+
+
+
 // Hide/show people on our team by location
 
 
