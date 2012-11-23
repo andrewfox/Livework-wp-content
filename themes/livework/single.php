@@ -30,6 +30,7 @@ if($categories){
 
 if ($feature == true) {
 	echo($highlight);
+	$standard = false;
 	
 }
 else {
