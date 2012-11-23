@@ -27,8 +27,8 @@ get_header(); ?>
 
 
 							<?php if ( has_post_thumbnail() ) {
-								echo '<div class="post-image">';
-								the_post_thumbnail('medium');
+								echo '<div class="post-image blog-image">';
+								the_post_thumbnail('full');
 								echo '</div>';
 							} ?>			
 
