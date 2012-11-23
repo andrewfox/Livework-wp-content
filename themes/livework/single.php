@@ -8,10 +8,9 @@
  */
 
 get_header(); ?>
-			<?php get_the_category( $id ) ?>
 			<?php 
 				$cat = get_query_var('cat');
-				if($cat = 193) :
+				if($cat == 193) :
 										echo '<div id="new-post">';
 										echo '<p>hi</p>'; 
 										else :				
