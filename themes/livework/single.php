@@ -40,7 +40,15 @@ echo($basic);
 <div id="person-intro">
 		
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<?php the_post_thumbnail('full'); ?>
+			<?php 
+			if ($standard == true) {
+				echo'<div class="wrapper">';
+			}
+			the_post_thumbnail('full'); 
+			if ($standard == true) {
+				echo'</div>';
+			}			
+			?>
 			<div id="person-headline" >
 				<div class="wrapper">
 					<h4><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></h4>
