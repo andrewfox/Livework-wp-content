@@ -39,13 +39,15 @@ get_header(); ?>
 
 					<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
 					<?php if (have_posts()) : ?>
+					<ul>
 					<?php while (have_posts()) : the_post(); ?>
-					<div class="mini-post-content">
-						<h1><a href='<?php the_permalink() ?>'
-						rel='bookmark' title='<?php the_title(); ?>'>
-						<?php the_title(); ?><span> <?php the_date('j/n/Y'); ?></span></h1></a>
-					</div>
+					<li>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
+							<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
+						</a>
+					</li>
 					<?php endwhile; ?>
+					</ul>
 					<?php else : ?>
 					<?php endif; ?>	
 					<?php wp_reset_query();?>
