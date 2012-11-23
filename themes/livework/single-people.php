@@ -24,7 +24,7 @@ get_header(); ?>
 	</div>
 	<article id="people-<?php the_ID(); ?>" class="main">
 		<div class="wrapper">
-			<div id="main">
+			<div id="main" class="clearfix">
 
 				<div class="entry-content left-col">
 						<?php the_content(); ?>

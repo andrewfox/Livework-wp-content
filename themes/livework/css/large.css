@@ -32,10 +32,11 @@ article.main {
 }
 
 #person-headline {
-	background-color: rgba(181, 181, 181, 0.760784);
+	background-color: rgba(256, 256, 256, 0.8);
 	position: absolute;
 	bottom: 5px;
 	width: 100%;
+	border-bottom: none;
 }
 
 /*Footer*/
