@@ -41,7 +41,7 @@ get_header(); ?>
 				<?php the_content(); ?>
 				
 				<?php 
-								$cat = get_query_var('cat');
+								$cat = get_the_category( $id );
 								
 								echo $cat
 				//				if($cat == 193) :
