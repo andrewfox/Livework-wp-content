@@ -354,6 +354,7 @@ footer a {
 #person-headline {
 	border-bottom: 1px solid #666;
 	background: #eee;
+	padding-top: 0.5em;
 }
 
 #person-headline h1 {
@@ -376,6 +377,7 @@ footer a {
 	color: #222;
 }
 .excerpt {
+	margin-top: 0.25em;
 	font-family:'Chaparral Pro Capt 1167087';
 	font-size: 19px;
 }
