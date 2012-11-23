@@ -44,4 +44,12 @@ article.main {
 	border-bottom: none;
 }
 
+#basic #person-headline {
+	background-color: rgba(256, 256, 256, 0.8);
+	width: 100%;
+	border-bottom: none;
+	position: relative;
+	bottom: 0;
+}
+
 /*Footer*/
