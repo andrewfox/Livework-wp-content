@@ -8,46 +8,111 @@
  */
 
 get_header(); ?>
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<nav id="nav-above" class="navigation">
-					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . ' %title' ); ?>
-					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '' ); ?>
-				</nav><!-- #nav-above --> 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<h1 class="page-title"><?php the_title(); ?></h1>
-					<div class="entry-meta">
-						<?php // livework_posted_on(); ?>
-					</div><!-- .entry-meta -->
-					<div class="entry-content">
+			
+	<div id="person-intro">
+		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+		<?php the_post_thumbnail('full'); ?>
+		<?php $authorid = get_the_author_meta('ID') ?> 
+		<div id="person-headline" >
+			<div class="wrapper">
+				<h4><a href="../../our-team">Our Team</a></h4>
+				<h3><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h3>
+				<h2><?php the_excerpt() ?></h2>
+				
+			</div>
+		</div>
+	</div>
+<div class="wrapper">
+	<div id="main">
+				
+				
+				
+				
+
+		
+		 		
+		
+		
+		
+			
+		<div class="entry-content left-col">
+				<?php the_content(); ?>
+		<?php endwhile; ?>
+		</div>
+			
+			
+		<aside id="sidebar-more-posts">
+		
+			<h2>Written by <?php the_author(); ?></h2>
+	
+			
+			<!-- The Loop -->
+			
+			    <?php $args = array( 
+			    					'author'=> $authorid,
+			    					'post_type' => 'people', 
+			    					'posts_per_page' => 1, 
+			    					
+			    					);
+			    $loop = new WP_Query( $args );
+			    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+			        <li>
+			            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+			            <?php the_title(); ?></a>
+			            <?php the_post_thumbnail('small'); ?>
+			        </li>
+			
+			    <?php endwhile; ?>
+			
+			
+			<!-- End Loop -->
+			
+			
+<!---->
+		</aside>
+			
+	</div>
+</div>							
+							
+											
+
+
+
 					
-					<?php 
-						if(has_post_thumbnail()) :
-						the_post_thumbnail('original'); 
-						else :				
-						endif; 
-					?>
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
-					</div><!-- .entry-content -->
-<?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
-					<footer id="entry-author-info">
-						<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'boilerplate_author_bio_avatar_size', 60 ) ); ?>
-						<h2><?php printf( esc_attr__( 'About %s', 'boilerplate' ), get_the_author() ); ?></h2>
-						<?php the_author_meta( 'description' ); ?>
-						<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
-							<?php printf( __( 'View all posts by %s &rarr;', 'boilerplate' ), get_the_author() ); ?>
-						</a>
-					</footer><!-- #entry-author-info -->
-<?php endif; ?>
-					<footer class="entry-utility">
-						<?php livework_posted_in(); ?>
-						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '<span class="edit-link">', '</span>' ); ?>
-					</footer><!-- .entry-utility -->
+
+					
+					
 				</article><!-- #post-## -->
-				<nav id="nav-below" class="navigation">
-					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . '</span> %title' ); ?></div>
-					<div class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '</span>' ); ?></div>
-				</nav><!-- #nav-below -->
-<?php endwhile; // end of the loop. ?>
-<?php get_sidebar(); ?>
+		<div class="grey-container">		
+			<div class="wrapper">
+				<div id="morepeople" >
+					<h2>Livework people</h2>
+					<ul id="people">
+										<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
+							
+										<?php while(have_posts()) : the_post();  ?>
+					
+											<li><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+												<?php 
+												if(has_post_thumbnail()) :
+																		the_post_thumbnail('original'); 
+																		else :				
+												
+																		endif;
+												
+												
+												the_title(); 
+											
+											
+											
+											
+											?>
+											</a></li>
+											
+											<?php endwhile; ?>
+										
+					</ul>
+				</div>
+			</div>
+		</div><?php get_sidebar(); ?>
 <?php get_footer(); ?>
