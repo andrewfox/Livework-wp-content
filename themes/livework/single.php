@@ -18,7 +18,7 @@ $output = '';
 if($categories){
 	foreach($categories as $category) {
 		$output = $category->cat_name;
-		if ($output == 'hightlight') {
+		if ($output == 'Hightlight') {
 			$feature = true;
 			
 		}
