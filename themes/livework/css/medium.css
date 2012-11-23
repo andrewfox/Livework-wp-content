@@ -1,17 +1,29 @@
 /* @override 
 	http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/css/medium.css */
 	
-	div.post-wrapper {
-		width: 50%;
-		float: left;
-		box-sizing: border-box;
-		padding-right: 10px;
-		padding-left: 10px;
-	}
-	
-	/*div.post-wrapper:nth-child(2n+2) {
-/*		clear: both;*!/
-	}*/
+h2.entry-title a {
+	font: 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h2.entry-title {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-top: 10px;
+}
+
+div.entry-meta {
+	font-size: 12px;
+	border-bottom: 0 solid #aaa;
+}
+
+div.entry-content  {
+	font-size: 14px;
+}
+
+div.blog-image img {
+	width: 100%;
+	height: auto;
+}
 	
 	
 		
@@ -322,7 +334,15 @@ section.more-header {
 /*	box-sizing: border-box;*/
 }
 
+#person-headline h3 {
+	font-size: 48px;
+}
 
+#person-headline h2 p {
+	font: 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	width: 70%;
+	min-width: 400px;
+	}
 	
 	div.left-col {
 		float: left;
@@ -339,6 +359,8 @@ aside#sidebar-more-posts {
 }
 
 #main {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 /*Footer*/
