@@ -10,6 +10,7 @@
 get_header(); ?>
 			
 	<div id="person-intro">
+	
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<?php the_post_thumbnail('full'); ?>
 		<div id="person-headline" >
@@ -27,10 +28,10 @@ get_header(); ?>
 			<div id="main" class="clearfix">
 
 				<div class="entry-content left-col">
-						<?php the_content(); ?>
-				<?php endwhile; ?>
+					<?php the_content(); ?>
 				</div>
 
+				<?php endwhile; ?>
 
 				<aside id="sidebar-more-posts">
 
@@ -50,8 +51,8 @@ get_header(); ?>
 					<?php wp_reset_query();?>
 				</aside>
 					
-			</div>
-		</div>							
+			</div><!-- /#main -->
+		</div><!-- /.wrapper -->
 
 	</article><!-- #post-## -->
 
