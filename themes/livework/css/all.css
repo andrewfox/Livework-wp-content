@@ -423,9 +423,12 @@ ul#people {
 	left: -25px;
 }
 
+/* ===============================
+   Extra aside
+   =============================== */
 
 
-div.grey-container {
+.extra {
 	width: 100%;
 	float: left;
 	background-color: #eee;
@@ -435,7 +438,7 @@ div.grey-container {
 
 
 
-#people li img.wp-post-image{
+#people li img.wp-post-image {
 	position: relative;
 	z-index: -1;
 	max-width: 100%;
@@ -523,7 +526,6 @@ aside#sidebar-more-posts {
 
 #people li {
 	float: left;
-	width: 200px;
 	overflow: hidden;
 	margin: 0 1px 1px 0;
 	width: 49.545454545%;
