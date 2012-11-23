@@ -38,12 +38,12 @@ $output = '';
 if($categories){
 	foreach($categories as $category) {
 		$output = $category->cat_name;
-		if ($output == 'NEW') {
-			echo($success);
+		if ($output == 'OLD') {
+			echo($old);
 			
 		}
 		else {
-		echo($old);
+		echo($sucess);
 		}
 	}
 
