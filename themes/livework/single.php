@@ -11,8 +11,8 @@ get_header(); ?>
 			
 <?php
 $categories = get_the_category();
-$other = '';
-$old = '<div id="old-post"> <!--old post-->';
+$highlight = '<div id="hightlight>"';
+$basic = '<div id="basic>"';
 $output = '';
 if($categories){
 	foreach($categories as $category) {
@@ -28,10 +28,14 @@ if($categories){
 
 }
 
+if ($feature == true) {
+	echo($highlight)
+	
+}
+else {
+echo($basic)
+}
 
-if ($feature = true) {
-
-//----------------------------------
 ?>
 <div id="person-intro">
 		
@@ -134,88 +138,12 @@ if ($feature = true) {
 					</ul>
 				</div>
 			</div>
+</div>
 		</div><?php get_sidebar(); ?>
 		
 	</div>	
-<?php
-//----------------------------------
-	
-}
-
-else {
-//----------------------------------
-?>
-<div id="single-post-basic">
-		
-			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<?php the_post_thumbnail('full'); ?>
-				<div class="wrapper">
-					<h4><a href="<?php bloginfo('url'); ?>/blog">Blog</a></h4>
-					<h1><?php the_title(); ?>: <span></span></h1>
-				</div>
-		</div>
-		<article id="post-<?php the_ID(); ?>" class="main clearfix">
-			<div class="wrapper">
-				<div id="main" class="clearfix">
-	
-					<div class="entry-content">
-														
-							<div class="entry-meta">
-								<span class="meta-prep meta-prep-author"><?php _e('From ', 'blankslate'); ?></span>
-								<span class="author vcard"><a class="url fn n" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" title="<?php printf( __( 'View all articles by %s', 'blankslate' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
-								<span class="meta-sep"> | </span>
-								<span class="meta-prep meta-prep-entry-date"><?php _e('Published ', 'blankslate'); ?></span>
-								<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
-								<?php edit_post_link( __( 'Edit', 'blankslate' ), "<span class=\"meta-sep\"> | </span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ) ?>
-							</div>
-							
-							<?php if ( has_post_thumbnail() ) {
-								echo '<div class="post-image blog-image">';
-								the_post_thumbnail('full');
-								echo '</div>';
-							} ?>
-
-							<?php the_content(); ?>
-					</div>
-					
-				</div>
-	
-					<?php endwhile; ?>
-			</div>
-			
-			
-		<aside id="sidebar-more-posts">
-		
-			
-			
-<!---->
-		</aside>
-			
-	</div>
-</div>							
-							
-											
 
 
-
-					
-
-					
-					
-				</article><!-- #post-## -->
-		<div class="extra">		
-			<div class="wrapper">
-								</div>
-			</div>
-		</div><?php get_sidebar(); ?>
-		
-	</div>	
-<?php
-//----------------------------------	
-}
-
-
-?>			
 			
 		
 <?php get_footer(); ?>
