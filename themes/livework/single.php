@@ -29,11 +29,11 @@ if($categories){
 }
 
 if ($feature == true) {
-	echo($highlight)
+	echo($highlight);
 	
 }
 else {
-echo($basic)
+echo($basic);
 }
 
 ?>
