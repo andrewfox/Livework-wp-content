@@ -36,7 +36,7 @@ $separator = ' ';
 $output = '';
 if($categories){
 	foreach($categories as $category) {
-		$output .= .$category->cat_name.$separator;
+		$output .= '<a href="'.get_category_link($category->term_id ).'" title="' . esc_attr( sprintf( __( "View all posts in %s" ), $category->name ) ) . '">'.$category->cat_name.'</a>'.$separator;
 	}
 echo trim($output, $separator);
 }
@@ -49,18 +49,7 @@ echo trim($output, $separator);
 		<div class="entry-content left-col">
 				<?php the_content(); ?>
 				
-				<?php 
-								$cat = get_the_category( $id );
-								
-								var_dump($cat);
-				//				if($cat == 193) :
-				//										echo '<div id="new-post">';
-				//										echo '<p>hi</p>'; 
-				//										else :				
-				//				
-				//										endif;
-							
-							?>
+				
 		<?php endwhile; ?>
 		</div>
 			
