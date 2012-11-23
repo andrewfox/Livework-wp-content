@@ -59,7 +59,7 @@
 				<a id="skip" href="#content" title="<?php esc_attr_e( 'Skip to content', 'livework' ); ?>"><?php _e( 'Skip to content', 'livework' ); ?></a>
 
 				<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
-				<button class="menu-reveal">Navigation</button>
+				<button class="menu-reveal"><span>rows</span> Menu</button>
 				<?php wp_nav_menu( array( 'container' => '', 'theme_location' => 'primary' ) ); ?>
 				<?php wp_nav_menu( array('menu' => 'Countries', 'container' => '' )); ?>
 
