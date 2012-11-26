@@ -270,7 +270,7 @@ function create_post_type() {
 			'name' => __( 'Case Studies' ),
 			'singular_name' => __( 'Case Study' )
 			),
-		'public' => true,,
+		'public' => true,
 		'rewrite' => array( 'slug' => _x( 'case-study' ) ),
 		'has_archive' => true,
 		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title', 'author' ),
