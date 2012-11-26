@@ -528,7 +528,7 @@ ul#offices li:hover{
 
 }
 
-#morepeople ul#people li a img{
+#people li a img.attachment-thumbnail{
 	width: 20px;
 	height: 20px;
 	position: absolute;
