@@ -95,9 +95,7 @@ get_header(); ?>
 										'posts_per_page' => -1 ,
 										'orderby' => 'title', 
 										'order' => 'ASC', 
-										'taxonomy' => 'sectors',
-										'field' => 'slug',
-										'terms' => '$term_name',
+										'sectors' => '$term_name',
 										'paged'=> $paged)); ?>
 							
 										<?php while(have_posts()) : the_post();  ?>
