@@ -79,7 +79,7 @@ if ($feature == true) {
 	
 			
 			<!-- The Loop -->
-			
+				<?php $authorid = get_the_author_meta('ID') ?> 
 			    <?php $args = array( 
 			    					'author'=> $authorid,
 			    					'post_type' => 'people', 

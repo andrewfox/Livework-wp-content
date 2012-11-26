@@ -37,7 +37,7 @@ get_header(); ?>
 
 					<h2 class="section-title">Posts by <?php the_title(); ?></h2>
 					
-					
+					<?php $authorid = get_the_author_meta('ID') ?> 
 					<?php $args = array( 
 										'author'=> $authorid,
 //										'post_type' => 'people', 

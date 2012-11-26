@@ -13,7 +13,6 @@ get_header(); ?>
 	<div id="person-intro">
 		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 		<?php the_post_thumbnail('full'); ?>
-		<?php $authorid = get_the_author_meta('ID') ?> 
 		<div id="person-headline" >
 			<div class="wrapper">
 				<h4><a href="../../our-team">Our Team</a></h4>
@@ -48,7 +47,7 @@ get_header(); ?>
 	
 			
 			<!-- The Loop -->
-			
+				<?php $authorid = get_the_author_meta('ID') ?> 
 			    <?php $args = array( 
 			    					'author'=> $authorid,
 			    					'post_type' => 'people', 
