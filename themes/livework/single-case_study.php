@@ -122,7 +122,12 @@ get_header(); ?>
 //										)); 
 										
 										
-										$query = new WP_Query( array( 'sectors' => 'on_draught' ) );
+										$query = new WP_Query( array( 
+										'sectors' => 'on_draught',
+										'posts_per_page' => -1 ,
+										'orderby' => 'title', 
+										'order' => 'ASC', 
+										 ) );
 										
 										?>
 							
