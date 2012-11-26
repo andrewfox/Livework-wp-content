@@ -53,8 +53,7 @@ get_header(); ?>
 					</li>
 					<?php endwhile; ?>
 					</ul>
-					<?php else : ?>
-					<?php endif; ?>	
+
 					<?php wp_reset_query();?>
 				</aside>
 					
