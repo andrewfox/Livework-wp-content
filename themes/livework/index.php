@@ -17,7 +17,7 @@ get_header(); ?>
 
 				<article class="main">
 <div class="wrapper">
-					<h1 class="page-title">News</h1>
+					<h1 class="page-title post-wrapper">News</h1>
 
 					<?php while ( have_posts() ) : the_post() ?>
 					
