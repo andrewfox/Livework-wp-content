@@ -119,7 +119,7 @@ get_header(); ?>
 //										'orderby' => 'title', 
 //										'order' => 'ASC', 
 //										'paged'=> $paged
-										)); 
+//										)); 
 										
 										
 										$query = new WP_Query( array( 'sectors' => 'on_draught' ) );
