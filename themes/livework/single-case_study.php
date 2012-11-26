@@ -112,7 +112,7 @@ get_header(); ?>
 										array(
 													'taxonomy' => 'sectors',
 													'field' => 'slug',
-													'terms' => '$sectors_terms'
+													'terms' => '$on_draught'
 												),
 										'post_type' => 'case_study',
 										'posts_per_page' => -1 ,
