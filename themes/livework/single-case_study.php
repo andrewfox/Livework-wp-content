@@ -88,14 +88,14 @@ get_header(); ?>
 				<div id="morepeople" >
 					<h2>More Case Studies</h2>
 					<ul id="people">
-										<?php $term_name = get_the_terms( $post->ID, 'sector' ); ?>
+										<?php $term_name = get_the_terms( $post->ID, 'sectors' ); ?>
 										
 										<?php query_posts(array(
 										'post_type' => 'case_study',
 										'posts_per_page' => -1 ,
 										'orderby' => 'title', 
 										'order' => 'ASC', 
-										'taxonomy' => 'sector',
+										'taxonomy' => 'sectors',
 										'field' => 'slug',
 										'terms' => '$term_name',
 										'paged'=> $paged)); ?>
