@@ -374,9 +374,7 @@ aside#sidebar-more-posts {
 		box-sizing: border-box;
 		padding-right: 10px;
 		padding-left: 10px;
-		margin-left: 1%;
 		margin-bottom: 10px;
-		margin-right: 1%;
 	}
 	
 	div.post-wrapper:nth-child(2n+2) {
