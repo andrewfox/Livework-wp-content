@@ -31,22 +31,8 @@ get_header(); ?>
 							<div class="entry-content">
 								
 								<div class="entry-meta">
-									<?php $args = array( 
-									    					'author'=> $authorid,
-									    					'post_type' => 'people', 
-									    					'posts_per_page' => 1, 
-									    					
-									    					);
-									    $loop = new WP_Query( $args );
-									    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-									        <li>
-									            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
-									            <?php the_title(); ?></a>
-									            <?php the_post_thumbnail('small'); ?>
-									        </li>
-									
-									    <?php endwhile; ?>
-									    
+									<span class="meta-prep meta-prep-author"><?php _e('From ', 'blankslate'); ?></span>
+									<span class="author vcard"><a class="url fn n" href="<?php echo get_author_posts_url(get_the_author_meta('ID')); ?>" title="<?php printf( __( 'View all articles by %s', 'blankslate' ), $authordata->display_name ); ?>"><?php the_author(); ?></a></span>
 									<span class="meta-sep"> | </span>
 									<span class="meta-prep meta-prep-entry-date"><?php _e('Published ', 'blankslate'); ?></span>
 									<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
