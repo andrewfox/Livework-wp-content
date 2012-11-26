@@ -101,7 +101,7 @@ get_header(); ?>
 												$sectors_terms[] = $term->name;
 											}
 																
-//											$on_draught = join( ", ", $draught_links );
+											$on_draught = join( ", ", $sectors_terms );
 										?>
 										
 										<p class="beers draught">
