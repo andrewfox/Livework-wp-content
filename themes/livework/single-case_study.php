@@ -88,14 +88,34 @@ get_header(); ?>
 				<div id="morepeople" >
 					<h2>More Case Studies</h2>
 					<ul id="people">
-										<?php $term_name = get_the_terms( $post->ID, 'sectors' ); ?>
 										
-										<?php query_posts(array(
+										
+										<?php
+										$terms = get_the_terms( $post->ID, 'sectors' );
+																
+										if ( $terms && ! is_wp_error( $terms ) ) : 
+										
+											$sectors_terms = array();
+										
+											foreach ( $terms as $term ) {
+												$sectors_terms[] = $term->name;
+											}
+																
+//											$on_draught = join( ", ", $draught_links );
+										?>
+										
+										<p class="beers draught">
+											On draught: <span><?php echo $on_draught; ?></span>
+										</p>
+										
+										<?php endif; ?>
+										
+																				<?php query_posts(array(
 										'post_type' => 'case_study',
 										'posts_per_page' => -1 ,
 										'orderby' => 'title', 
 										'order' => 'ASC', 
-										'sectors' => '$term_name',
+										'sectors' => '$sectors_terms',
 										'paged'=> $paged)); ?>
 							
 										<?php while(have_posts()) : the_post();  ?>
