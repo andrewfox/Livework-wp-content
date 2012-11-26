@@ -41,10 +41,10 @@ get_header(); ?>
 									    while ( $loop->have_posts() ) : $loop->the_post(); ?>
 									        <li>
 									            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
-									            <?php the_title(); ?></a>
 									            <?php the_post_thumbnail('small'); ?>
+									            <?php the_title(); ?></a>
 									        </li>
-									
+										<?php wp_reset_query();?>
 									    <?php endwhile; ?>
 									    
 									<span class="meta-sep"> | </span>
