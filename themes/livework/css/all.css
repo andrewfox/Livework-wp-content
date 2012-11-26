@@ -75,6 +75,13 @@ a:hover {
 	margin: 0 auto;
 }
 
+.blog .wrapper{
+	padding-right: 20px;
+	padding-left: 20px;
+	max-width: 450px;
+	margin: 0 auto;
+}
+
 
 /* Capitalised headers (should always be used with H4, but can be used with any tags) */
 

@@ -369,12 +369,11 @@ aside#sidebar-more-posts {
 
 	
 	div.post-wrapper {
-		width: 48%;
+		width: 100%;
 		float: left;
 		box-sizing: border-box;
 		padding-right: 10px;
 		padding-left: 10px;
-		background-color: #eee;
 		margin-left: 1%;
 		margin-bottom: 10px;
 		margin-right: 1%;
