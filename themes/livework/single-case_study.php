@@ -86,9 +86,14 @@ get_header(); ?>
 		<div class="grey-container">		
 			<div class="wrapper">
 				<div id="morepeople" >
-					<h2>Livework people</h2>
+					<h2>More Case Studies</h2>
 					<ul id="people">
-										<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
+										<?php query_posts(array(
+										'post_type' => 'case_study',
+										'posts_per_page' => -1 ,
+										'orderby' => 'title', 
+										'order' => 'ASC', 
+										'paged'=> $paged)); ?>
 							
 										<?php while(have_posts()) : the_post();  ?>
 					
