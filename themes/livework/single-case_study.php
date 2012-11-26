@@ -111,7 +111,7 @@ get_header(); ?>
 										<?php endif; ?>
 										
 																				<?php query_posts(array(
-										'post_type' => 'case_study',
+//										'post_type' => 'case_study',
 										'posts_per_page' => -1 ,
 										'orderby' => 'title', 
 										'order' => 'ASC', 
