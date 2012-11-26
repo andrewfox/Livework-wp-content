@@ -59,7 +59,7 @@ if ($feature == true) {
 						<?php the_excerpt() ?>
 					</div>
 				</div>
-			</div>
+			</div><!-- /#introduction -->
 		</div>
 		<article id="people-<?php the_ID(); ?>" class="main clearfix">
 			<div class="wrapper">
@@ -102,9 +102,9 @@ if ($feature == true) {
 			
 <!---->
 		</aside>
-			
-	</div>
-</div>							
+
+
+</div> <!-- /#person-intro -->
 							
 											
 
