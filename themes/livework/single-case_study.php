@@ -91,7 +91,7 @@ get_header(); ?>
 										
 										
 										<?php
-										$terms = get_the_terms( $post->ID, 'category' );
+										$terms = get_the_terms( $post->ID, 'taxonomy sectors' );
 																
 										
 											$sectors_terms = array();
