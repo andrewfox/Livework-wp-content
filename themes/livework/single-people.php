@@ -35,26 +35,21 @@ get_header(); ?>
 
 				<aside id="sidebar-more-posts">
 
-					<h2>Written by <?php the_author(); ?></h2>
-					
-							
-							<!-- The Loop -->
-							
-							    <?php $args = array( 
-							    					'author'=> $authorid,
-							    					'post_type' => 'people', 
-							    					'posts_per_page' => 1, 
-							    					
-							    					);
-							    $loop = new WP_Query( $args );
-							    while ( $loop->have_posts() ) : $loop->the_post(); ?>
-							        <li>
-							            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
-							            <?php the_title(); ?></a>
-							            <?php the_post_thumbnail('small'); ?>
-							        </li>
-							
-							    <?php endwhile; ?>
+					<h2 class="section-title">Posts by <?php the_title(); ?></h2>
+
+					<?php query_posts( 'posts_per_page=5' . '&author_name=' . $user_identity ); ?>
+					<?php if (have_posts()) : ?>
+					<ul>
+					<?php while (have_posts()) : the_post(); ?>
+					<li>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
+							<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
+						</a>
+					</li>
+					<?php endwhile; ?>
+					</ul>
+					<?php else : ?>
+					<?php endif; ?>	
 					<?php wp_reset_query();?>
 				</aside>
 					
