@@ -106,19 +106,25 @@ get_header(); ?>
 										</h2></p>
 										
 										
-										<?php query_posts(array(
+										<?php 
+//										query_posts(array(
 //										array(
 //													'taxonomy' => 'sectors',
 //													'field' => 'slug',
 //													'terms' => '$on_draught'
 //												),
 //										'post_type' => 'case_study',
-										'sectors' => 'on_draught',
-										'posts_per_page' => -1 ,
-										'orderby' => 'title', 
-										'order' => 'ASC', 
+//										'sectors' => 'on_draught',
+//										'posts_per_page' => -1 ,
+//										'orderby' => 'title', 
+//										'order' => 'ASC', 
 //										'paged'=> $paged
-										)); ?>
+										)); 
+										
+										
+										$query = new WP_Query( array( 'sectors' => 'on_draught' ) );
+										
+										?>
 							
 										<?php while(have_posts()) : the_post();  ?>
 					
