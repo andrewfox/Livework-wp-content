@@ -127,6 +127,7 @@ get_header(); ?>
 										'posts_per_page' => -1 ,
 										'orderby' => 'title', 
 										'order' => 'ASC', 
+										'post_type' => 'case_study',
 										 ) );
 										
 										?>
