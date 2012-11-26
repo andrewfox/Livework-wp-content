@@ -110,12 +110,16 @@ get_header(); ?>
 										
 										<?php endif; ?>
 										
-																				<?php query_posts(array(
-//										'post_type' => 'case_study',
+										<?php query_posts(array(
+										array(
+													'taxonomy' => 'sectors',
+													'field' => 'slug',
+													'terms' => '$sectors_terms'
+												),
+										'post_type' => 'case_study',
 										'posts_per_page' => -1 ,
 										'orderby' => 'title', 
 										'order' => 'ASC', 
-										'sectors' => '$sectors_terms',
 										'paged'=> $paged)); ?>
 							
 										<?php while(have_posts()) : the_post();  ?>
