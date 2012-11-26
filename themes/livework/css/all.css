@@ -6,7 +6,18 @@
    =============================== */
 
 
+
+/* ===============================
+
+Structure
  
+ BODY
+ - HEADER
+ - SECTION#content
+ - FOOTER
+ 
+=============================== */
+
 
 
 
@@ -50,13 +61,35 @@ a:hover {
 	color: #ccc;
 }
 
+
+
+
+/* ===============================
+   General (used in multiple situations)
+   =============================== */
+
+.wrapper{
+	padding-right: 20px;
+	padding-left: 20px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+
+/* Capitalised headers (should always be used with H4, but can be used with any tags) */
+
 .section-title {
 	margin-top: 0;
 	text-transform: uppercase;
 	font: normal normal 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
+/* Image stuff */
 
+.alignnone {
+	width: 100%;
+	height: auto;
+}
 
 
 /* ===============================
@@ -99,16 +132,19 @@ header h1 a img {
 
 .menu-reveal {
 	background: none;
-	border: 1px solid #333;
+	border: none;
 	color: #999;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	padding: 5px 12px 3px;
+	float: right;
+	margin-top: 10px;
 }
 .menu-reveal:hover {
 	color: #eee;
 }
 .menu-reveal span {
+	font-size: 10px;
 }
 
 
@@ -159,35 +195,8 @@ header li.current-page-ancestor a {
 
 
 /* ===============================
-   Content
+   Content (everything between header and footer)
    =============================== */
-
-h2.entry-title a {
-	font: 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-h2.entry-title {
-	margin-bottom: 0;
-	padding-bottom: 0;
-	margin-top: 10px;
-}
-
-div.entry-meta {
-	font-size: 12px;
-	border-bottom: 0 solid #aaa;
-}
-
-div.entry-content  {
-	font-size: 14px;
-	padding: 20px 0;
-}
-
-div.blog-image img, .alignnone {
-	width: 100%;
-	height: auto;
-}
-
-
 
 section#content {
 	padding: 0px;
@@ -196,107 +205,24 @@ section#content {
 
 article.main {
 }
-
 h1.page-title {
 	margin-top: 0;
 	padding: 100px 0 0;
+	color: purple;
 }
-.section-links {
+
+#main {
+	position: relative;
+	float: left;
+	margin: 0;
+	margin-bottom: 20px;
 	padding: 0;
 }
-.section-links li {
-	display: block;
-	position: relative;
-	float: left;
-	width: 200px;
-	height: 200px;
-	overflow: hidden;
-	background: #333;
-	margin: 0 20px 20px 0;
-}
 
-.sector-page.section-links li {
-	
-}
-
-#case-studies ul.section-links.clearfix li.sector-page {
-	display: block;
-	position: relative;
-	float: left;
-	width: 100%;
-	height: auto;
-	overflow: visible;
-	background: #fff;
-	margin: 0 20px 20px 0;
-}
-
-.section-links li span {
-	display: block;
-	position: absolute;
-	background: #333;
-	bottom: 10px;
-	padding: 5px 10px;
-	font-weight: normal;	
-}
-
-#case-studies ul.section-links.clearfix li.sector-page a span {
-	display: inline;
-	position: relative;
-	background: #cc2;
-	bottom: 10px;
-	padding: 5px 10px;
-	font-weight: normal;
-	width: auto;
-}
-
-#case-studies ul.section-links.clearfix li.sector-page a img.attachment-small.wp-post-image {
-	display: block;
-	float: right;
-	width: 200px;
-	height: 200px;
-	margin-left: 15px;
-}
-
-li.sector-page {
-	background-color: #ccc;
-}
-
-
-/*More info*/
-
-#case-studies ul.section-links.clearfix li.sector-page div.cs-content p a span.meta-nav {
-	display: none;
-}
-
-#more-info {
-	background-color: black;
-	height: 200px;
-	position: relative;
-	top: -4px;
-}
-
-#more-info h1 {
-	color: white;
-	margin-left: 40px;
-	position: absolute;
-	bottom: 0;
-}
-
-
-/*Story Section*/
-
-.story-section {
-	background: #eee;
-	margin: 0;
-	padding: 20px;
-}
-.story-section:nth-child(even) {
-	background: #ddd;
-}
 
 
 /* ===============================
-   Home specifics
+   Homepage (specifics)
    =============================== */
 
 #world {
@@ -343,64 +269,156 @@ li.sector-page {
 
 
 
+
 /* ===============================
-   Footer
+   News (blog)
    =============================== */
 
 
-footer {
-	padding: 20px;
-	border-top: 1px solid #ddd;
-	clear: both;
+h2.entry-title a {
+	font: 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-footer a {
-	font-weight: normal;
+
+h2.entry-title {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	margin-top: 10px;
 }
-#social {
-	display: inline;
+
+div.entry-meta {
+	font-size: 12px;
+	border-bottom: 0 solid #aaa;
 }
-#social ul {
-	padding: 0;
+
+div.entry-content  {
+	font-size: 14px;
+	padding: 20px 0;
+}
+
+div.blog-image img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* ===============================
+   Sections (repeated blocks of content on Story and Sectors pages)
+   =============================== */
+
+/*Story Section*/
+
+.story-section {
+	background: #eee;
 	margin: 0;
-	display: inline;
+	padding: 20px;
 }
-#social li {
-	display: inline;
-	padding: 17px;
+.story-section:nth-child(even) {
+	background: #ddd;
 }
 
 
+/*Links within sections*/
+
+.section-links {
+	padding: 0;
+}
+.section-links li {
+	display: block;
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	background: #333;
+	margin: 0 20px 20px 0;
+}
+
+/*Sections: Case studies */
+
+#case-studies ul.section-links.clearfix li.sector-page {
+	display: block;
+	position: relative;
+	float: left;
+	width: 100%;
+	height: auto;
+	overflow: visible;
+	background: #fff;
+	margin: 0 20px 20px 0;
+}
+
+.section-links li span {
+	display: block;
+	position: absolute;
+	background: #333;
+	bottom: 10px;
+	padding: 5px 10px;
+	font-weight: normal;	
+}
+
+#case-studies ul.section-links.clearfix li.sector-page a span {
+	display: inline;
+	position: relative;
+	background: #cc2;
+	bottom: 10px;
+	padding: 5px 10px;
+	font-weight: normal;
+	width: auto;
+}
+
+#case-studies ul.section-links.clearfix li.sector-page a img.attachment-small.wp-post-image {
+	display: block;
+	float: right;
+	width: 200px;
+	height: 200px;
+	margin-left: 15px;
+}
+
+li.sector-page {
+	background-color: #ccc;
+}
+#case-studies ul.section-links.clearfix li.sector-page div.cs-content p a span.meta-nav {
+	display: none;
+}
 
 
 /* ===============================
-   Specifics
+   More info (black tab and box)
    =============================== */
 
-/*Symbolset specifics*/
 
-#menu-item-22 a, button.menu-reveal span,
-#menu-item-43 a, #menu-item-44 a {
-	font-style: normal;
-	font-weight: normal;
-	text-decoration: none;
-	text-rendering: optimizeLegibility;
-	white-space: nowrap;
-	/*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
-	-moz-font-feature-settings: "liga=1";
-	-moz-font-feature-settings: "liga";
-	-ms-font-feature-settings: "liga" 1;
-	-o-font-feature-settings: "liga";
-	font-feature-settings: "liga";
-	-webkit-font-smoothing: antialiased;
-}
-#menu-item-22 a,
-button.menu-reveal span {
-	font-family: "SSStandard";
+#more-info {
+	background-color: black;
+	height: 200px;
+	position: relative;
+	top: -4px;
 }
 
-#menu-item-43 a, #menu-item-44 a {
-	font-family: "SSSocial";
+#more-info h1 {
+	color: white;
+	margin-left: 40px;
+	position: absolute;
+	bottom: 0;
 }
+#more-info h2 a {
+		padding: 10px 10px 5px;
+		height: 40px;
+		background-color: black;
+}
+
+#more-info h2 a.morepeople {
+		background-color: #aaa;
+}
+
+#more-info h2 a.clicked{
+	background-color: #000 ;
+}
+
+
+
+
+
+
+
 
 
 
@@ -417,15 +435,38 @@ ul#people {
 #people li a {
 	position: relative;
 	display: block;
-/*	position: absolute;*/
-/*	background: #333;*/
 	padding: 1px 1px;
 	font-weight: normal;
 }
 
+/* Offices picker (used on Team page) */
+
+ul#offices{
+	clear: both;
+	float: left;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: #777;
+}
+
+ul#offices li{
+	cursor: pointer;
+	float: left;
+	padding: 6px 10px;
+	border-radius: 15px;
+	background-color: #999;
+	margin-right: 5px;
+	margin-left: 5px;
+	color: #fff;
+}
+
+ul#offices li:hover{
+	background-color: #111;
+}
+
 
 /* ===============================
-   Person
+   Person (single person page)
    =============================== */
 
 /*Person Headline*/
@@ -463,6 +504,7 @@ ul#people {
 
 /*More People*/
 
+
 #morepeople ul#people li a {
 	z-index: 1;
 	margin-left: 25px;
@@ -490,18 +532,7 @@ ul#people {
 	left: -25px;
 }
 
-/* ===============================
-   Extra aside
-   =============================== */
 
-
-.extra {
-	width: 100%;
-	float: left;
-	background-color: #eee;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
 
 
 
@@ -529,18 +560,20 @@ width: auto;
 	top: 100px;
 }
 
+
 /* ===============================
-   Main
+   Extra aside
    =============================== */
 
 
-#main {
-	position: relative;
+.extra {
+	width: 100%;
 	float: left;
-	margin: 0;
-	margin-bottom: 20px;
-	padding: 0;
+	background-color: #eee;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
+
 
 #person-intro {
 	position: relative;
@@ -572,33 +605,12 @@ aside#sidebar-more-posts {
 	font-size: 12px;
 }
 
-/* ===============================
-   More people
-   =============================== */
+/* More people (in aside at base of People single pages) */
 
 
 #morepeople {
 	float: left;
 }
-
-
-
-#more-info h2 a {
-		padding: 10px 10px 5px;
-		height: 40px;
-		background-color: black;
-}
-
-
-#more-info h2 a.morepeople {
-		background-color: #aaa;
-}
-
-#more-info h2 a.clicked{
-	background-color: #000 ;
-}
-
-
 
 
 #people li {
@@ -610,59 +622,69 @@ aside#sidebar-more-posts {
 	padding-left: 0.222222222%;
 }
 
-ul#offices{
+
+
+
+
+
+
+
+/* ===============================
+   Footer
+   =============================== */
+
+
+footer {
+	padding: 20px;
+	border-top: 1px solid #ddd;
 	clear: both;
-	float: left;
-	padding: 10px;
-	border-radius: 15px;
-	background-color: #777;
+}
+footer a {
+	font-weight: normal;
+}
+#social {
+	display: inline;
+}
+#social ul {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+#social li {
+	display: inline;
+	padding: 17px;
 }
 
-ul#offices li{
-	cursor: pointer;
-	float: left;
-	padding: 6px 10px;
-	border-radius: 15px;
-	background-color: #999;
-	margin-right: 5px;
-	margin-left: 5px;
-	color: #fff;
+
+
+
+
+
+/* ===============================
+   Symbolset
+   =============================== */
+
+#menu-item-22 a, button.menu-reveal span,
+#menu-item-43 a, #menu-item-44 a {
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-rendering: optimizeLegibility;
+	white-space: nowrap;
+	/*-webkit-font-feature-settings: "liga"; Currently broken in Chrome >= v22. Falls back to text-rendering. Safari is unaffected. */
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+	-webkit-font-smoothing: antialiased;
+}
+#menu-item-22 a,
+button.menu-reveal span {
+	font-family: "SSStandard";
 }
 
-ul#offices li:hover{
-	background-color: #111;
+#menu-item-43 a, #menu-item-44 a {
+	font-family: "SSSocial";
 }
 
-.superclass{
-	background-color: orange;
-}
-
-.wrapper{
-	padding-right: 20px;
-	padding-left: 20px;
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-h2.entry-title a {
-	font: 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-h2.entry-title {
-	margin-bottom: 0;
-	padding-bottom: 0;
-}
-
-div.entry-meta {
-	font-size: 12px;
-	border-bottom: 0 solid #aaa;
-}
-
-div.entry-content  {
-	font-size: 14px;
-}
-
-div.blog-image img {
-	width: 100%;
-	height: auto;
-}
