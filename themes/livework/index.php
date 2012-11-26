@@ -48,7 +48,7 @@ get_header(); ?>
 									        </li>
 									
 									    <?php endwhile; ?>
-									    
+										<?php wp_reset_query();?>
 									    
 									<span class="meta-sep"> | </span>
 									<span class="meta-prep meta-prep-entry-date"><?php _e('Published ', 'blankslate'); ?></span>
