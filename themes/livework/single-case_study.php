@@ -86,7 +86,7 @@ get_header(); ?>
 		<div class="grey-container">		
 			<div class="wrapper">
 				<div id="morepeople" >
-					<h2>More in <?php echo get_the_term_list( $post->ID, 'secotors', 'People: ', ', ', '' ); ?> </h2>
+					<h2>More Case Studies</h2>
 					<ul id="people">
 										<?php $term_name = get_the_terms( $post->ID, 'sectors' ); ?>
 										
