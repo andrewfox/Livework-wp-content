@@ -24,7 +24,9 @@ Structure
 /* ===============================
    Basic HTML
    =============================== */
-
+li{
+	list-style-type: none;
+}
 
 body {
 	color: #222;
@@ -528,7 +530,7 @@ ul#offices li:hover{
 
 }
 
-#people li a img.attachment-thumbnail{
+#people li a img.attachment-thumbnail {
 	width: 20px;
 	height: 20px;
 	position: absolute;
@@ -539,8 +541,10 @@ ul#offices li:hover{
 	left: -25px;
 }
 
-
-
+.attachment-thumbnail{
+width: 20px;
+height: 20px;
+}
 
 
 #people li img.wp-post-image {
