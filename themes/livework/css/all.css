@@ -546,13 +546,13 @@ ul#offices li:hover{
 
 
 #person-intro img{
-max-width: 100%;
-height: auto;
+	width: 100%;
+	height: auto;
 }
 
-#basic #person-intro img{
-height: auto;
-width: auto;
+#basic #person-intro img {
+	height: auto;
+	width: auto;
 }
 
 #basic {
@@ -585,7 +585,7 @@ width: auto;
 
 aside#sidebar-more-posts {
 	border-top: 1px solid #ccc;
-	padding: 20px;
+	padding: 20px 0;
 	margin: 0 -20px;
 }
 

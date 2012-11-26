@@ -13,15 +13,13 @@ get_header(); ?>
 $standard = false;
 $feature = false;
 $categories = get_the_category();
-$highlight = '<div id="hightlight">';
-$basic = '<div id="basic">';
+$catClass = '';
 $output = '';
 if($categories){
 	foreach($categories as $category) {
 		$output = $category->cat_name;
 		if ($output == 'Highlight') {
 			$feature = true;
-			
 		}
 		else {
 		}
@@ -30,17 +28,14 @@ if($categories){
 }
 
 if ($feature == true) {
-	$standard = false;
-	echo($highlight);
-}
-else {
-$standard = true;
-echo($basic);
-
+	$catClass = 'highlight';
+} else {
+	$standard = true;
+	$catClass = 'basic';
 }
 
 ?>
-<div id="person-intro">
+<div id="person-intro" class="main <?php echo $catClass ?>">
 		
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 			<?php 
@@ -56,7 +51,7 @@ echo($basic);
 			 
 			
 			?>
-			<div id="person-headline" >
+			<div id="introduction" >
 				<div class="wrapper">
 					<h4><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></h4>
 					<h1><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h1>
