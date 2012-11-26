@@ -107,12 +107,13 @@ get_header(); ?>
 										
 										
 										<?php query_posts(array(
-										array(
-													'taxonomy' => 'sectors',
-													'field' => 'slug',
-													'terms' => '$on_draught'
-												),
+//										array(
+//													'taxonomy' => 'sectors',
+//													'field' => 'slug',
+//													'terms' => '$on_draught'
+//												),
 										'post_type' => 'case_study',
+										'sectors' => 'on_draught',
 										'posts_per_page' => -1 ,
 										'orderby' => 'title', 
 										'order' => 'ASC', 
