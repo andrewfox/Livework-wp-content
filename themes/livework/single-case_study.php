@@ -105,7 +105,7 @@ get_header(); ?>
 										?>
 										
 										<p class="beers draught">
-											On draught: <span><?php echo $on_draught; ?></span>
+											On draught: <span><?php echo $sectors_terms; ?></span>
 										</p>
 										
 										<?php endif; ?>
