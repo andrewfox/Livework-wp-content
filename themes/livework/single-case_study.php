@@ -86,7 +86,6 @@ get_header(); ?>
 		<div class="grey-container">		
 			<div class="wrapper">
 				<div id="morepeople" >
-					<h2>More Case Studies</h2>
 					<ul id="people">
 										
 										
@@ -103,9 +102,8 @@ get_header(); ?>
 											$on_draught = join( ", ", $sectors_terms );
 										?>
 										
-										<p class="beers draught">
-											On draught: <span><?php echo $on_draught; ?></span>
-										</p>
+										<h2>More from <span><?php echo $on_draught; ?> </span>
+										</h2></p>
 										
 										
 										<?php query_posts(array(
