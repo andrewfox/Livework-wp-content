@@ -271,7 +271,6 @@ function create_post_type() {
 			'singular_name' => __( 'Case Study' )
 			),
 		'public' => true,
-		'rewrite' => array( 'slug' => _x( 'case-study' ) ),
 		'has_archive' => true,
 		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title', 'author' ),
 		'taxonomies' => array('category'),
