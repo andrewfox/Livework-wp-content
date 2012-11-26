@@ -90,7 +90,7 @@ if ($feature == true) {
 			    while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			        <li>
 			            <h2>Written by <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
-			            <?php the_post_thumbnail('small'); ?> <?php the_title(); ?>
+			            <?php the_post_thumbnail('thumbnail'); ?> <?php the_title(); ?>
 			            </a></h2>
 			        </li>
 			
