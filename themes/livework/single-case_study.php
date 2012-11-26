@@ -93,7 +93,6 @@ get_header(); ?>
 										<?php
 										$terms = get_the_terms( $post->ID, 'sectors' );
 																
-										if ( $terms && ! is_wp_error( $terms ) ) : 
 										
 											$sectors_terms = array();
 										
@@ -108,7 +107,6 @@ get_header(); ?>
 											On draught: <span><?php echo $on_draught; ?></span>
 										</p>
 										
-										<?php endif; ?>
 										
 										<?php query_posts(array(
 										array(
