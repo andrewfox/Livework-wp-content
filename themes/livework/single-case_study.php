@@ -85,8 +85,8 @@ get_header(); ?>
 				</article><!-- #post-## -->
 		<div class="grey-container">		
 			<div class="wrapper">
-				<div id="morepeople" >
-					<ul id="people">
+				<div id="2morepeople" >
+					<ul id="2people">
 										
 										
 										<?php
