@@ -75,7 +75,7 @@ if ($feature == true) {
 			
 		<aside id="sidebar-more-posts">
 		
-			<h2>Written by <?php the_author(); ?></h2>
+			
 	
 			
 			<!-- The Loop -->
@@ -89,9 +89,9 @@ if ($feature == true) {
 			    $loop = new WP_Query( $args );
 			    while ( $loop->have_posts() ) : $loop->the_post(); ?>
 			        <li>
-			            <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
-			            <?php the_title(); ?></a>
-			            <?php the_post_thumbnail('small'); ?>
+			            <h2>Written by <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+			            <?php the_post_thumbnail('small'); ?> <?php the_title(); ?>
+			            </a></h2>
 			        </li>
 			
 			    <?php endwhile; ?>
