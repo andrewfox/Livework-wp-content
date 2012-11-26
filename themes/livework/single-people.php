@@ -71,7 +71,7 @@ get_header(); ?>
 		
 					<?php while(have_posts()) : the_post();  ?>
 
-						<li><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+						<li class="lithumb"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 							<?php 
 							if(has_post_thumbnail()) :
 													the_post_thumbnail('thumbnail'); 
