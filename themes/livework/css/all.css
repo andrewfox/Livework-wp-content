@@ -552,19 +552,19 @@ ul#offices li:hover{
 
 
 
-#person-intro img{
+#person-intro.highlight img{
 	width: 100%;
 	height: auto;
 }
 
-#basic #person-intro img {
+#person-intro.basic img {
 	height: auto;
 	width: auto;
 }
 
-#basic {
+#person-intro.basic {
 	position: relative;
-	top: 100px;
+	padding-top: 100px;
 }
 
 
