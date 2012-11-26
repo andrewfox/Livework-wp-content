@@ -18,7 +18,7 @@
  * Functions that are not pluggable (not wrapped in function_exists()) are instead attached 
  * to a filter or action hook. The hook can be removed by using remove_action() or
  * remove_filter() and you can attach your own function to the hook.
- * 
+ *
  * We can remove the parent theme's hook only after it is attached, which means we need to
  * wait until setting up the child theme:
  *
