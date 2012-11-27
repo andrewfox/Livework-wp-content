@@ -291,15 +291,14 @@ h1.page-title {
    =============================== */
 
 
-h2.entry-title a {
-	font: 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
 h2.entry-title {
-	margin-bottom: 0;
-	padding-bottom: 0;
 	margin-top: 10px;
 }
+
+h2.entry-title a {
+}
+
+
 
 div.entry-meta {
 	font-size: 12px;

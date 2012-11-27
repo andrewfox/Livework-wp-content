@@ -51,7 +51,7 @@ get_header(); ?>
 								
 								<?php if ( has_post_thumbnail() ) {
 									echo '<div class="post-image blog-image">';
-									the_post_thumbnail('large');
+										the_post_thumbnail('medium');
 									echo '</div>';
 								} ?>
 									<div class="entry-content">
