@@ -305,19 +305,18 @@ h2.entry-title a {
 	border-bottom: 1px solid #ddd;
 }
 
-.blog .post:nth-child(odd) {
+.post:nth-child(odd) {
 	background-color: #ecebeb;
 }
 
 div.entry-meta {
 	font-size: 12px;
-	border-bottom: 0 solid #aaa;
 }
 .post .wrapper {
 	padding-right: 300px;
 	padding: 20px 300px 20px 20px;
 }
-.category-highlight {
+.post.category-highlight {
 	background-color: #ddd;
 	border-bottom-color: #ccc;
 }
