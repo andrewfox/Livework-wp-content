@@ -122,7 +122,7 @@ header ul {
 }
 
 header h1 {
-	padding: 10px 21px 13px 28px;
+	padding: 10px 21px 10px 20px;
 	margin: 0;
 	display: inline-block;
 }
@@ -163,41 +163,43 @@ header h1 a img {
 
 .menu {
 	display: none;
+	clear: left;
+	border-top: 2px solid #000;
 }
 .open .menu {
 	display: block;
 }
 
-header li {
-	display: block;
+.menu li {
+	display: inline-block;
 	width: 50%;
 	float: left;
+	border-bottom: 1px solid #111;
 }
-header li a {
+.menu li a {
+	display: block;
+	padding: 10px 7px 10px 20px;
+	background-color: #222;
+}
+.menu li a:hover {
 	display: block;
 	padding: 10px 7px;
-	background-color: #333;
-	
+	background-color: #222;
 }
 
-header li.current_page_item a,
-header li.current-page-ancestor a {
+.menu li.current_page_item a,
+.menu li.current-page-ancestor a {
 	color: #eee;
 }
 
-.nav-secondary {
+#menu-secondary {
 	display: block;
 	clear: both;
 	margin: 0;
-	text-align: center;
 	background: #555;
 	background: rgba(1,1,1,0.8);
 }
 
-.nav-secondary {
-	float: right;
-	padding: 0 28px 0 0;
-}
 #menu-countries a {
 	font-weight: normal;
 	color: #555;

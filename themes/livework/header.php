@@ -69,7 +69,7 @@
 			// Our Story menu
 			if (is_tree(7)) { 
 			?>
-			<nav id="menu-secondary" class="menu nav-our-story">
+			<nav id="menu-secondary" class="menu nav-our-story clearfix">
 				<?php wp_nav_menu( array('menu' => 'Our Story', 'container' => '' )); ?>
 			</nav>
 			<?php } ?>
@@ -78,7 +78,7 @@
 			// Our Client's Stories Sector menu
 			if (is_tree(9)) { 
 			?>
-			<nav id="menu-secondary" class="menu nav-sectors">
+			<nav id="menu-secondary" class="menu nav-sectors clearfix">
 				<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
 			</nav>
 			<?php } ?>
