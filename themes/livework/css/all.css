@@ -164,12 +164,13 @@ header h1 a img {
 .menu {
 	display: none;
 	clear: left;
-	border-top: 2px solid #000;
 }
 .open .menu {
 	display: block;
+	clear: left;
+	border-top: 1px solid #333;
+	background: red;
 }
-
 .menu li {
 	display: inline-block;
 	width: 50%;
@@ -179,11 +180,11 @@ header h1 a img {
 	display: block;
 	padding: 10px 7px 10px 20px;
 	background: #222;
-	border-bottom: 1px solid #000;
 }
 .menu li a:hover {
 	display: block;
-	background-color: #111;
+	color: #fff;
+	background: #111;
 }
 
 .menu li.current_page_item a,

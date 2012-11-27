@@ -41,12 +41,13 @@ header {
 	display: inline-block;
 	width: auto;
 	float: none;
-	background: none;
+	background-color: none;
 }
 .menu li a {
 	display: inline-block;
  	padding: 10px 7px;
-	background-color: none;
+	background: none;
+	border-bottom: none;
 }
 
 /* Secoundary Nav */
