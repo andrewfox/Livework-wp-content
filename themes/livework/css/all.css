@@ -33,11 +33,19 @@ body {
 }
 
 h1, h2, h3 {
-	font-family:'ChaparralPro-LightCapt', Georgia, Times, serif; 
+	font-family:'ChaparralPro-LightCapt', Georgia, Times, serif;
+	line-height: 130%;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
 }
 
 p {
 	margin: 0 0 1em 0;
+	line-height: 150%;
 }
 
 
@@ -70,18 +78,12 @@ a:hover {
    General (used in multiple situations)
    =============================== */
 
-.wrapper{
+.wrapper {
 	padding-right: 20px;
 	padding-left: 20px;
 	max-width: 900px;
 	margin: 0 auto;
-}
-
-.blog .wrapper{
-	padding-right: 20px;
-	padding-left: 20px;
-	max-width: 450px;
-	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 
@@ -118,6 +120,7 @@ header {
 }
 
 header h1 {
+	font-size: 0.5em;
 	padding: 10px 21px 9px 20px;
 	margin: 0;
 	display: inline-block;
@@ -292,25 +295,49 @@ h1.page-title {
 
 
 h2.entry-title {
-	margin-top: 10px;
+	margin: 0;
+	padding: 0 0 0.5em 0;
 }
 
 h2.entry-title a {
 }
+.blog .post {
+	border-bottom: 1px solid #ddd;
+}
 
-
+.blog .post:nth-child(odd) {
+	background-color: #ecebeb;
+}
 
 div.entry-meta {
 	font-size: 12px;
 	border-bottom: 0 solid #aaa;
+}
+.post .wrapper {
+	padding-right: 300px;
+	padding: 20px 300px 20px 20px;
+}
+.category-highlight {
+	background-color: #ddd;
+	border-bottom-color: #ccc;
+}
+.category-highlight .wrapper {
+	width: 100%;
+	padding-right: 20px;
+}
+.category-highlight .entry-content {
+	font-size: 130%;
 }
 
 div.entry-content  {
 	font-size: 14px;
 	padding: 20px 0;
 }
-
-div.blog-image img {
+.blog-image img {
+	max-width: 100%;
+	height: auto;
+}
+.category-highlight .blog-image img {
 	width: 100%;
 	height: auto;
 }
