@@ -119,7 +119,7 @@ get_header(); ?>
 										
 										$args = array(
 										    'post_type'=> 'case_study',
-										    'sectors'    => 'media',
+										    'sectors'    => '$on_draught',
 										    );              
 										
 										$the_query = new WP_Query( $args );
