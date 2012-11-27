@@ -69,7 +69,7 @@ get_header(); ?>
 					<div class="wrapper">
 						<div id="morepeople" >
 							<?php
-							$terms = get_the_terms( $post->ID, 'sectors' );
+								$terms = get_the_terms( $post->ID, 'sectors' );
 								$sectors_terms = array();
 								foreach ( $terms as $term ) {
 									$sectors_terms[] = $term->name;
