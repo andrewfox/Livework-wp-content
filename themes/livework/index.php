@@ -30,7 +30,7 @@ get_header(); ?>
 								
 								<div class="entry-meta">
 									<?php 
-									$authorid = get_the_author_meta('ID') 
+									$authorid = get_the_author_meta('ID');
 									$args = array( 
 										'author'=> $authorid,
 										'post_type' => 'people', 
