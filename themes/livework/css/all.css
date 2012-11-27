@@ -24,9 +24,6 @@ Structure
 /* ===============================
    Basic HTML
    =============================== */
-li{
-	list-style: none;
-}
 
 body {
 	color: #222;
@@ -45,7 +42,10 @@ p {
 
 
 ul {
-	list-style-type: none;
+	list-style: none;
+}
+li {
+	list-style: none;
 }
 
 
@@ -138,6 +138,8 @@ header h1 a img{
 header h1 a img {
 	height: 20px;
 }
+
+/*Primary nav*/
 
 .menu-reveal {
 	background: none;

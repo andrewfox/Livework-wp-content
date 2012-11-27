@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 
 $(".menu-reveal").click(function () {
-	$('#menu-primary').toggleClass('open');
+	$('header').toggleClass('open');
 });
 
 
