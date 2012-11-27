@@ -122,17 +122,28 @@ get_header(); ?>
 //										)); 
 										
 										
-										$query = new WP_Query( array( 
+//										$query = new WP_Query( array( 
 //										'sectors' => 'media',
 //										'posts_per_page' => 10 ,
 //										'orderby' => 'title', 
 //										'order' => 'ASC', 
 //										'post_type' => 'case_study',
-										 ) );
+//										 ) );
 										
 										?>
 							
-										<?php while(have_posts()) : the_post();  ?>
+										<?php 
+										
+										$args = array(
+										    'post_type'=> 'services',
+										    'sectors'    => 'media',
+										    'order'    => 'ASC'
+										    );              
+										
+										$the_query = new WP_Query( $args );
+										if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); 
+										
+										?>
 					
 											<li><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 												<?php 
