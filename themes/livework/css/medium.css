@@ -24,81 +24,27 @@ header {
 	float: left;
 }
 
-#menu-primary {
-	display: inline-block;
-}
+/*Menu reveal button*/
 .menu-reveal {
 	display: none;
 }
 
-.open .menu {
+.menu {
 	display: inline-block;
 }
  
- header li {
+header li {
 	display: inline-block;
 	width: auto;
 	float: none;
 }
- header li a {
+header li a {
 	display: inline-block;
  	padding: 10px 7px;
 	background-color: #000;
-
 }
 
 /* Secoundary Nav */
-
-.nav-bar {
-	background-color: #231F20;
-	width: 100%;
-	height: 60px;
-	padding-left: 0px;
-	top: 20px;
-	position: absolute;
-	z-index: 100;
-	box-sizing: border-box;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-nav.sectors {
-	clear: both;
-	text-align: center;
-	height: 5px;
-	padding: 5px 0 0 0;
-	background: url(../img/repeated-bkg-white.png) repeat;
-/*	margin: -59px 0 0;
-	color: white;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-weight: normal;
-	font-style: normal;
-	padding: 0 0 0 40px;
-	height: 100%;*/
-	color: #0B4D6F;
-	position: relative;
-	margin: 0;
-}
-
-nav.sectors ul{
-	padding: 0;
-	position: relative;
-	top: 0;
-	margin: 0;
-}
-
-nav.sectors ul li a {
-
-	color: #0B4D6F;
-}
-
-#menu-sector-menu {
-	z-index: 103;
-	background-color: red;
-	width: 100%;
-	margin: 12px 0 0;
-	position: relative;
-}
 
 .menustyle{
 	position: absolute;

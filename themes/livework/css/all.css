@@ -139,7 +139,8 @@ header h1 a img {
 	height: 20px;
 }
 
-/*Primary nav*/
+
+/*Menu reveal button*/
 
 .menu-reveal {
 	background: none;
@@ -158,11 +159,12 @@ header h1 a img {
 	font-size: 10px;
 }
 
+/*General menus*/
 
-#menu-primary {
+.menu {
 	display: none;
 }
-#menu-primary.open {
+.open .menu {
 	display: block;
 }
 
@@ -183,7 +185,7 @@ header li.current-page-ancestor a {
 	color: #eee;
 }
 
-#main2 {
+.nav-secondary {
 	display: block;
 	clear: both;
 	margin: 0;
@@ -192,7 +194,7 @@ header li.current-page-ancestor a {
 	background: rgba(1,1,1,0.8);
 }
 
-#menu-countries {
+.nav-secondary {
 	float: right;
 	padding: 0 28px 0 0;
 }
