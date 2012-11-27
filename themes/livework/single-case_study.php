@@ -104,7 +104,7 @@ get_header(); ?>
 										
 										<h2>More from <span><?php echo $on_draught; ?> </span>
 										</h2></p>
-										
+										<?php wp_reset_postdata() ?>
 										
 										<?php 
 //										query_posts(array(
@@ -152,6 +152,8 @@ get_header(); ?>
 											</a></li>
 											
 											<?php endwhile; ?>
+											<?php wp_reset_postdata() ?>
+											
 										
 					</ul>
 				</div>
