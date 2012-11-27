@@ -102,7 +102,7 @@ get_header(); ?>
 											$on_draught = join( ", ", $sectors_terms );
 										?>
 										
-										<h2>More from <span><?php echo $on_draught; ?> </span>
+										<h2>More from fhgk <span><?php echo $on_draught; ?> </span>
 										</h2></p>
 										<?php wp_reset_postdata() ?>
 										
@@ -124,9 +124,9 @@ get_header(); ?>
 										
 										$query = new WP_Query( array( 
 //										'sectors' => 'media',
-										'posts_per_page' => 10 ,
-										'orderby' => 'title', 
-										'order' => 'ASC', 
+//										'posts_per_page' => 10 ,
+//										'orderby' => 'title', 
+//										'order' => 'ASC', 
 //										'post_type' => 'case_study',
 										 ) );
 										
