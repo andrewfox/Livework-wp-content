@@ -53,11 +53,11 @@ a {
 	text-decoration: none;
 	color: #838588;
 	font-weight: bold;
-	-webkit-transition: color 0.3s linear;
-	-moz-transition: color 0.3s linear;
-	-ms-transition: color 0.3s linear;
-	-o-transition: color 0.3s linear;
-	transition: color 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 }
 a:hover {
 	color: #ccc;
@@ -174,17 +174,16 @@ header h1 a img {
 	display: inline-block;
 	width: 50%;
 	float: left;
-	border-bottom: 1px solid #111;
 }
 .menu li a {
 	display: block;
 	padding: 10px 7px 10px 20px;
-	background-color: #222;
+	background: #222;
+	border-bottom: 1px solid #000;
 }
 .menu li a:hover {
 	display: block;
-	padding: 10px 7px;
-	background-color: #222;
+	background-color: #111;
 }
 
 .menu li.current_page_item a,
@@ -200,6 +199,8 @@ header h1 a img {
 	background: rgba(1,1,1,0.8);
 }
 
+#menu-secondary {
+}
 #menu-countries a {
 	font-weight: normal;
 	color: #555;
