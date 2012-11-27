@@ -135,9 +135,8 @@ get_header(); ?>
 										<?php 
 										
 										$args = array(
-										    'post_type'=> 'services',
+										    'post_type'=> 'case_study',
 										    'sectors'    => 'media',
-										    'order'    => 'ASC'
 										    );              
 										
 										$the_query = new WP_Query( $args );
