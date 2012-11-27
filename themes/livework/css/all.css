@@ -118,9 +118,10 @@ header {
 }
 
 header h1 {
-	padding: 15px 21px 15px 20px;
+	padding: 10px 21px 9px 20px;
 	margin: 0;
 	display: inline-block;
+	vertical-align: top;
 }
 
 
@@ -164,7 +165,6 @@ header h1 a img {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background: #c00;
 }
 .open .menu {
 	display: block;
@@ -178,11 +178,10 @@ header h1 a img {
 }
 .menu li a {
 	display: block;
-	padding: 10px 7px 10px 20px;
+	padding: 10px 20px 10px 20px;
 	background: #222;
 }
 .menu li a:hover {
-	display: block;
 	color: #fff;
 	background: #111;
 }

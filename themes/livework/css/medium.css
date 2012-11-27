@@ -29,6 +29,7 @@ header {
 }
 
 .menu {
+	width: auto;
 	display: inline-block;
 	clear: none;
 	padding: 0;
@@ -45,10 +46,14 @@ header {
 }
 .menu li a {
 	display: inline-block;
- 	padding: 10px 7px;
-	background: none;
+ 	padding: 7px;
 	border-bottom: none;
+	background: none;
 }
+#menu-countries {
+	float: right;
+}
+
 
 /* Secoundary Nav */
 
