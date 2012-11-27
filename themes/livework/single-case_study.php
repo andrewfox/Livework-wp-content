@@ -102,7 +102,7 @@ get_header(); ?>
 											$on_draught = join( ", ", $sectors_terms );
 										?>
 										
-										<h2>More from fhgk <span><?php echo $on_draught; ?> </span>
+										<h2>More from <span><?php echo $on_draught; ?> </span>
 										</h2></p>
 										<?php wp_reset_postdata() ?>
 										
