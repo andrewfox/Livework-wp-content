@@ -112,17 +112,13 @@ header {
 	z-index: 100;
 	font-size: 12px;
 }
-header ul {
-	margin: 0;
-	padding: 0;
-}
 #access {
 	background-color: #111;
 	display: block;
 }
 
 header h1 {
-	padding: 10px 21px 10px 20px;
+	padding: 15px 21px 15px 20px;
 	margin: 0;
 	display: inline-block;
 }
@@ -164,17 +160,21 @@ header h1 a img {
 .menu {
 	display: none;
 	clear: left;
+	border-top: 1px solid #333;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: #c00;
 }
 .open .menu {
 	display: block;
-	clear: left;
-	border-top: 1px solid #333;
-	background: red;
 }
 .menu li {
 	display: inline-block;
-	width: 50%;
+	width: 40%;
 	float: left;
+	margin: 0;
+	padding: 0;
 }
 .menu li a {
 	display: block;
@@ -196,11 +196,8 @@ header h1 a img {
 	display: block;
 	clear: both;
 	margin: 0;
-	background: #555;
+	background: blue;
 	background: rgba(1,1,1,0.8);
-}
-
-#menu-secondary {
 }
 #menu-countries a {
 	font-weight: normal;

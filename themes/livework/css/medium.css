@@ -21,7 +21,6 @@
 header {
 	position: absolute;
 	top: 20px;
-	float: left;
 }
 
 /*Menu reveal button*/
@@ -31,11 +30,12 @@ header {
 
 .menu {
 	display: inline-block;
-}
-.menu ul {
+	clear: none;
 	padding: 0;
 	margin: 0;
+	border-top: none;
 }
+
  
 .menu li {
 	display: inline-block;
