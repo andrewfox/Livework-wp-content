@@ -123,7 +123,7 @@ get_header(); ?>
 										
 										
 										$query = new WP_Query( array( 
-										'sectors' => 'media',
+//										'sectors' => 'media',
 										'posts_per_page' => 10 ,
 										'orderby' => 'title', 
 										'order' => 'ASC', 
