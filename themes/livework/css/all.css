@@ -148,12 +148,16 @@ header h1 a img {
 	padding: 5px 12px 3px;
 	float: right;
 	margin-top: 10px;
+	font-size: 15px;
 }
 .menu-reveal:hover {
 	color: #eee;
 }
 .menu-reveal span {
-	font-size: 10px;
+	font-size: 12px;
+}
+.open .menu-reveal {
+	color: #ddd;
 }
 
 /*General menus*/
@@ -171,19 +175,15 @@ header h1 a img {
 }
 .menu li {
 	display: inline-block;
-	width: 40%;
-	float: left;
 	margin: 0;
 	padding: 0;
 }
 .menu li a {
-	display: block;
-	padding: 10px 20px 10px 20px;
-	background: #222;
+	display: inline-block;
+	padding: 10px 15px 10px 20px;
 }
 .menu li a:hover {
 	color: #fff;
-	background: #111;
 }
 
 .menu li.current_page_item a,
@@ -195,8 +195,11 @@ header h1 a img {
 	display: block;
 	clear: both;
 	margin: 0;
-	background: blue;
+	background: #333;
 	background: rgba(1,1,1,0.8);
+}
+#menu-countries {
+	background: #222;
 }
 #menu-countries a {
 	font-weight: normal;
@@ -655,20 +658,24 @@ footer {
 	border-top: 1px solid #ddd;
 	clear: both;
 }
-footer a {
+footer .menu {
 	font-weight: normal;
-}
-#social {
-	display: inline;
-}
-#social ul {
+	border: none;
 	padding: 0;
 	margin: 0;
 	display: inline;
 }
+footer .menu li {
+	font-weight: normal;
+	border: none;
+}
+footer .menu a {
+	font-weight: normal;
+	border: none;
+}
+
 #social li {
 	display: inline;
-	padding: 17px;
 }
 
 
