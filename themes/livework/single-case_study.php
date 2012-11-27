@@ -88,32 +88,7 @@ get_header(); ?>
 										<h2>More from <span><?php echo $thesector; ?> </span>
 										</h2></p>
 										<?php wp_reset_postdata() ?>
-										
-										<?php 
-//										query_posts(array(
-//										array(
-//													'taxonomy' => 'sectors',
-//													'field' => 'slug',
-//													'terms' => '$on_draught'
-//												),
-//										'post_type' => 'case_study',
-//										'sectors' => 'on_draught',
-//										'posts_per_page' => -1 ,
-//										'orderby' => 'title', 
-//										'order' => 'ASC', 
-//										'paged'=> $paged
-//										)); 
-										
-										
-//										$query = new WP_Query( array( 
-//										'sectors' => 'media',
-//										'posts_per_page' => 10 ,
-//										'orderby' => 'title', 
-//										'order' => 'ASC', 
-//										'post_type' => 'case_study',
-//										 ) );
-										
-										?>
+								
 							
 										<?php 
 										
