@@ -24,17 +24,7 @@ get_header(); ?>
 	</div>
 <div class="wrapper">
 	<div id="main">
-				
-				
-				
-				
-
-		
-		 		
-		
-		
-		
-			
+	
 		<div class="entry-content left-col">
 				<?php the_content(); ?>
 		<?php endwhile; ?>
@@ -73,16 +63,9 @@ get_header(); ?>
 			
 	</div>
 </div>							
-							
-											
-
-
-
-					
-
-					
-					
+								
 				</article><!-- #post-## -->
+				
 		<div class="grey-container">		
 			<div class="wrapper">
 				<div id="2morepeople" >
@@ -140,7 +123,7 @@ get_header(); ?>
 										    );              
 										
 										$the_query = new WP_Query( $args );
-										if($the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); 
+										while ( $the_query->have_posts() ) : $the_query->the_post(); 
 										
 										?>
 					
