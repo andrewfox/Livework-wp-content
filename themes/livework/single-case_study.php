@@ -82,10 +82,10 @@ get_header(); ?>
 												$sectors_terms[] = $term->name;
 											}
 																
-											$on_draught = join( ", ", $sectors_terms );
+											$thesector = join( ", ", $sectors_terms );
 										?>
 										
-										<h2>More from <span><?php echo $on_draught; ?> </span>
+										<h2>More from <span><?php echo $thesector; ?> </span>
 										</h2></p>
 										<?php wp_reset_postdata() ?>
 										
@@ -119,7 +119,7 @@ get_header(); ?>
 										
 										$args = array(
 										    'post_type'=> 'case_study',
-										    'sectors'    => '$on_draught',
+										    'sectors'    => '$thesector',
 										    );              
 										
 										$the_query = new WP_Query( $args );
