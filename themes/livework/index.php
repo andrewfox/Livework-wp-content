@@ -56,9 +56,8 @@ get_header(); ?>
 										the_post_thumbnail('large');
 									echo '</div>';
 								} ?>
-									<div class="entry-content">
-										<?php the_content(); ?>
-									</div>
+								<div class="entry-content">
+									<?php the_content(); ?>
 								</div>
 
 						</div><!-- /.post -->
