@@ -29,14 +29,16 @@ get_header(); ?>
 
 								
 								<div class="entry-meta">
-								<?php $authorid = get_the_author_meta('ID') ?> 
-									<?php $args = array( 
-											'author'=> $authorid,
-											'post_type' => 'people', 
-											'posts_per_page' => 1, 
-										);
-										$loop = new WP_Query( $args );
-										while ( $loop->have_posts() ) : $loop->the_post(); ?>
+									<?php 
+									$authorid = get_the_author_meta('ID') 
+									$args = array( 
+										'author'=> $authorid,
+										'post_type' => 'people', 
+										'posts_per_page' => 1, 
+									);
+									$loop = new WP_Query( $args );
+									while ( $loop->have_posts() ) : $loop->the_post(); 
+									?>
 									<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
 											<?php the_post_thumbnail('thumbnail'); ?>
 											<?php the_title(); ?>									
@@ -51,7 +53,7 @@ get_header(); ?>
 								
 								<?php if ( has_post_thumbnail() ) {
 									echo '<div class="post-image blog-image">';
-										the_post_thumbnail('medium');
+										the_post_thumbnail('large');
 									echo '</div>';
 								} ?>
 									<div class="entry-content">
@@ -64,12 +66,12 @@ get_header(); ?>
 					
 					<?php endwhile; ?>
 
-						<div class="nav-paged">
-							<p class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> older articles', 'blankslate' )) ?></p>
-							<p class="nav-next"><?php previous_posts_link(__( 'newer articles <span class="meta-nav">&raquo;</span>', 'blankslate' )) ?></p>
-						</div>
+						<ul class="nav-paged">
+							<li class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> older articles', 'blankslate' )) ?></li>
+							<li class="nav-next"><?php previous_posts_link(__( 'newer articles <span class="meta-nav">&raquo;</span>', 'blankslate' )) ?></li>
+						</ul>
 					
-
+					</div>
 				</article><!-- /#bodytext -->
 
 </div> <!--end wrapper-->
