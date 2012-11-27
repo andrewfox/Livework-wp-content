@@ -94,7 +94,7 @@ get_header(); ?>
 										
 										$args = array(
 										    'post_type'=> 'case_study',
-										    'sectors'    => 'media',
+										    'sector'    => 'media',
 										    );              
 										
 										$the_query = new WP_Query( $args );
