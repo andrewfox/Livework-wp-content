@@ -29,11 +29,19 @@ get_header(); ?>
 			$the_query = new WP_Query( 'posts_per_page=5' );
 			
 			// The Loop
-			while ( $the_query->have_posts() ) : $the_query->the_post();
-				echo '<li>';
-				the_title();
-				echo '</li>';
-			endwhile;
+			while ( $the_query->have_posts() ) : $the_query->the_post();?>
+				<li>
+					<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+					<?php 
+					if(has_post_thumbnail()) :
+						the_post_thumbnail('thumbnail'); 
+						else :				
+						endif;
+					the_title(); 
+					?>
+					</a>
+				</li>
+			<?php endwhile;
 			
 			// Reset Post Data
 			wp_reset_postdata(); ?>	
