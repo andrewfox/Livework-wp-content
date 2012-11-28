@@ -13,7 +13,7 @@ get_header(); ?>
 	
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_post_thumbnail('full'); ?>
-					<div id="person-headline" >
+					<div id="introduction" >
 						<div class="wrapper">
 							<h4><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></h4>
 							<h1><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h1>
