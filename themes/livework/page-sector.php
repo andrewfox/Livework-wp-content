@@ -73,6 +73,59 @@ get_header(); ?>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
 				
+				
+					
+					
+					<?php
+											$terms = get_the_terms( $post->ID, 'sectors' );
+											$sectors_terms = array();
+											foreach ( $terms as $term ) {
+												$sectors_terms[] = $term->name;
+											}
+											$thesector = join( ", ", $sectors_terms );
+										?>
+										<h2>To check correct sector<span><?php echo $thesector; ?> </span></h2>
+										
+										<ul class="logos">
+										<?php 
+										
+										$args = array(
+										    'post_type'=> 'case_study',
+										    'taxonomy' => 'sectors',
+										    'term' => $thesector,
+									
+										    );              
+										
+										$the_query = new WP_Query( $args );
+										while ( $the_query->have_posts() ) : $the_query->the_post(); 
+										
+										?>
+					
+											<li>
+											
+											
+											
+												<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+												<?php 
+												if( get_field('casestudies_logo') ):
+													?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
+												endif;
+												?>
+												</a>
+											
+											
+											
+												</a>
+											</li>
+											
+											<?php endwhile; ?>
+											<?php wp_reset_postdata() ?>
+			
+					
+										
+					</ul>
+					
+				
 					<div id="case-studies">
 					<?php
 					
