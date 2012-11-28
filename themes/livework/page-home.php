@@ -22,7 +22,7 @@ get_header(); ?>
 				</article><!-- #page-## -->
 		<?php endwhile; ?>
 		<?php wp_reset_postdata(); ?>
-		
+		<h4><a href="<?php bloginfo('url'); ?>/news">Livework latest</a></h4>
 		<ul>
 			<?php
 			// The Query
