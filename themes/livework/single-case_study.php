@@ -82,8 +82,9 @@ get_header(); ?>
 							<?php 
 							
 							$args = array(
+							    'post_type'=> 'case_study',
 							    'taxonomy' => '$thesector',
-							 
+						
 							    );              
 							
 							$the_query = new WP_Query( $args );
