@@ -72,7 +72,7 @@ get_header(); ?>
 
 
 				<article id="page-<?php the_ID(); ?>" class="main">
-				
+				<?php echo $post->post_name; ?>
 				
 					
 					
