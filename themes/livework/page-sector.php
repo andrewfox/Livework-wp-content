@@ -77,7 +77,7 @@ get_header(); ?>
 					
 					<?php
 											$pageslug = $post->post_name;
-											echo $pageslug
+											echo $pageslug;
 											$terms = get_the_terms( $pageslug, 'sectors' );
 											$sectors_terms = array();
 											foreach ( $terms as $term ) {
