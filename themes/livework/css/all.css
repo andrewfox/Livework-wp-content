@@ -95,7 +95,7 @@ a:hover {
 	font: normal normal 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
-/* Image stuff */
+/* User inputted image stuff */
 
 .alignnone {
 	width: 100%;
@@ -313,12 +313,14 @@ div.entry-meta {
 	font-size: 12px;
 }
 .post .wrapper {
-	padding-right: 300px;
-	padding: 20px 300px 20px 20px;
+	padding: 20px 25% 20px 20px;
 }
 .post.category-highlight {
-	background-color: #ddd;
-	border-bottom-color: #ccc;
+	background-color: #fff;
+	border: 5px solid #c36b28;
+}
+.post.category-highlight:nth-child(odd) {
+	border: 5px solid #686f2f;
 }
 .category-highlight .wrapper {
 	width: 100%;
