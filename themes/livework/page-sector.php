@@ -77,14 +77,14 @@ get_header(); ?>
 					
 					<?php
 											$thissector = $post->post_name
-											$terms = get_the_terms( $post->post_name, 'sectors' );
-											$sectors_terms = array();
-											foreach ( $terms as $term ) {
-												$sectors_terms[] = $term->name;
-											}
-											$thesector = join( ", ", $sectors_terms );
+//											$terms = get_the_terms( $post->post_name, 'sectors' );
+//											$sectors_terms = array();
+//											foreach ( $terms as $term ) {
+//												$sectors_terms[] = $term->name;
+//											}
+//											$thesector = join( ", ", $sectors_terms );
 										?>
-										<h2>To check correct sector<span><?php echo $thesector; ?> </span></h2>
+<!--										<h2>To check correct sector<span><?php echo $thesector; ?> </span></h2>-->
 										
 										<ul class="logos">
 										<?php 
