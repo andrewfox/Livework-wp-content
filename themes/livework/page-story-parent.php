@@ -32,8 +32,12 @@ get_header(); ?>
 							
 									$content = apply_filters( 'the_content', $content );
 								?>
-									<h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
-									<div class="entry"><?php echo $content; ?></div>
+									<ul>
+									<li>
+										<h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
+										<div class="entry"><?php echo $content; ?></div>
+										</li>
+									</ul>
 								<?php
 								}	
 							?>
