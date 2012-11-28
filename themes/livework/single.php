@@ -58,7 +58,7 @@ if ($feature == true) {
 					</div><!-- /#introduction -->
 				</div>
 
-				<article id="people-<?php the_ID(); ?>" class="main clearfix">
+				<article id="post-<?php the_ID(); ?>" class="main clearfix">
 					<div class="wrapper">
 
 						<div id="main" class="clearfix">
@@ -66,8 +66,11 @@ if ($feature == true) {
 							<div class="entry-content">
 								<?php the_content(); ?>
 							</div>
-	
+
 							<?php endwhile; ?>
+
+							<div class="socialmedia"><a href="http://twitter.com/?status=@liveworkstudio" class="link-pad">Comment on Twitter</a></div>
+
 						</div>
 						
 					</div><!-- /.wrapper -->
