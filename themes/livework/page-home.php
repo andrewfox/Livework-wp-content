@@ -24,19 +24,19 @@ get_header(); ?>
 		
 		
 		<ul>
-		<?php
-		// The Query
-		$query = new WP_Query( 'posts_per_page=3' );
-		
-		// The Loop
-		while ( $the_query->have_posts() ) : $the_query->the_post();
-			echo '<li>';
-			the_title();
-			echo '</li>';
-		endwhile;
-		
-		// Reset Post Data
-		wp_reset_postdata();	 ?>	
+			<?php
+			// The Query
+			$query = new WP_Query( 'posts_per_page=5' );
+			
+			// The Loop
+			while ( $the_query->have_posts() ) : $the_query->the_post();
+				echo '<li>';
+				the_title();
+				echo '</li>';
+			endwhile;
+			
+			// Reset Post Data
+			wp_reset_postdata(); ?>	
 		</ul>
 				
 				
