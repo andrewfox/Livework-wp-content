@@ -428,6 +428,11 @@ li.sector-page {
 	display: none;
 }
 
+#introduction h2 {
+	margin-top: 0;
+	font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
 
 /* ===============================
    More info (black tab and box)
@@ -507,6 +512,8 @@ ul#offices li{
 	margin-left: 5px;
 	color: #fff;
 }
+
+
 
 ul#offices li:hover{
 	background-color: #111;
