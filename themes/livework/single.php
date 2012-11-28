@@ -1,6 +1,6 @@
 <?php
 /**
- * The Template for displaying all single posts.
+ * The Template for displaying all single blog posts.
  *
  * @package WordPress
  * @subpackage Boilerplate
@@ -35,7 +35,7 @@ if ($feature == true) {
 }
 
 ?>
-				<div id="person-intro" class="main <?php echo $catClass ?>">
+				<div id="splash" class="main <?php echo $catClass ?>">
 		
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php 
