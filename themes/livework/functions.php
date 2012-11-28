@@ -281,41 +281,41 @@ function create_post_type() {
 
 
 /* Theme post type */
-add_action( 'init', 'create_post_type_theme' );
-function create_post_type_theme() {
-	register_post_type( 'theme',
-		array(
-			'labels' => array(
-			'name' => __( 'Themes' ),
-			'singular_name' => __( 'Theme' )
-			),
-		'public' => true,
-		'rewrite' => array('slug' => 'theme'),
-		'has_archive' => true,
-		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title', 'author' ),
-		'taxonomies' => array('category'),
-		)
-	);
-}
+//add_action( 'init', 'create_post_type_theme' );
+//function create_post_type_theme() {
+//	register_post_type( 'theme',
+//		array(
+//			'labels' => array(
+//			'name' => __( 'Themes' ),
+//			'singular_name' => __( 'Theme' )
+//			),
+//		'public' => true,
+//		'rewrite' => array('slug' => 'theme'),
+//		'has_archive' => true,
+//		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title', 'author' ),
+//		'taxonomies' => array('category'),
+//		)
+//	);
+//}
 
 
 /* Theme post type */
-add_action( 'init', 'create_post_type_storysection' );
-function create_post_type_storysection() {
-	register_post_type( 'story_section',
-		array(
-			'labels' => array(
-			'name' => __( 'Story Sections' ),
-			'singular_name' => __( 'Story Section' )
-			),
-		'public' => true,
-		'rewrite' => array('slug' => 'story-section'),
-		'has_archive' => true,
-		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title', 'author' ),
-		'taxonomies' => array('category'),
-		)
-	);
-}
+//add_action( 'init', 'create_post_type_storysection' );
+//function create_post_type_storysection() {
+//	register_post_type( 'story_section',
+//		array(
+//			'labels' => array(
+//			'name' => __( 'Story Sections' ),
+//			'singular_name' => __( 'Story Section' )
+//			),
+//		'public' => true,
+//		'rewrite' => array('slug' => 'story-section'),
+//		'has_archive' => true,
+//		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title', 'author' ),
+//		'taxonomies' => array('category'),
+//		)
+//	);
+//}
 
 
 /* People post type */
