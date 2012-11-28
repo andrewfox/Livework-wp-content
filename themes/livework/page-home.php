@@ -20,8 +20,8 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 
 				</article><!-- #page-## -->
-		
-		
+		<?php endwhile; ?>
+		<?php wp_reset_postdata(); ?>
 		
 		<ul>
 			<?php
@@ -52,6 +52,6 @@ get_header(); ?>
 					</ul>
 				</div>
 
-<?php endwhile; ?>
+
 
 <?php get_footer(); ?>
