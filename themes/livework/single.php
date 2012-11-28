@@ -69,7 +69,7 @@ if ($feature == true) {
 
 							<?php endwhile; ?>
 
-							<div class="socialmedia"><a href="http://twitter.com/?status=@liveworkstudio" class="link-pad">Comment on Twitter</a></div>
+							<div class="socialmedia"><a href="http://twitter.com/?status=@liveworkstudio" class="twitter"><span>twitter</span> Comment on Twitter</a></div>
 
 						</div>
 						
