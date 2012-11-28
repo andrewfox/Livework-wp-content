@@ -713,7 +713,8 @@ footer .menu a {
    =============================== */
 
 #menu-item-22 a, button.menu-reveal span,
-#menu-item-43 a, #menu-item-44 a {
+#menu-item-43 a, #menu-item-44 a,
+.socialmedia a span {
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -733,6 +734,9 @@ button.menu-reveal span {
 }
 
 #menu-item-43 a, #menu-item-44 a {
+	font-family: "SSSocial";
+}
+.socialmedia a span {
 	font-family: "SSSocial";
 }
 
