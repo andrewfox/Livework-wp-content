@@ -77,7 +77,6 @@ get_header(); ?>
 								$thesector = join( ", ", $sectors_terms );
 							?>
 							<h2>More from <span><?php echo $thesector; ?> </span></h2>
-							<?php wp_reset_postdata() ?>
 							
 							<ul>
 							<?php 
