@@ -150,7 +150,7 @@ $("li.rotterdam").click(function () {
 
 	/* HOMEPAGE */
 	// rescale the homepage's bkgd img
-if ($("body.page-template-page-story-php, body.page-template-page-sector-php").length > 0) {
+if ($("body.page-template-page-story-php, body.page-template-page-story-parent-php, body.page-template-page-sector-php").length > 0) {
 	rescale();
 	$(window).resize(function(){
 		rescale();

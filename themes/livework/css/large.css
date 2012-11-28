@@ -1,3 +1,5 @@
+
+
 /* @override 
 	http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/css/large.css */
 
@@ -6,9 +8,19 @@
    =============================== */
 
 
+#more-info {
+	display: none;
+}
+
+header {
+	display: none;
+}
 
 
 
+footer {
+	display: none;
+}
 
 
 

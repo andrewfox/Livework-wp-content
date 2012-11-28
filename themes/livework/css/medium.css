@@ -247,6 +247,8 @@ img.right-arrow {
 /*	min-width: 380px;*/
 }
 
+
+
 #splash.single-people #top div.no-bkg.box{
 	font-weight: normal;
 	font-style: normal;
@@ -409,6 +411,20 @@ aside#sidebar-more-posts {
 	
 /*		margin-right: 1%;*/
 }
+
+/*Our story parent*/
+
+ul.list-pages{
+	margin-top: 300px;
+}
+
+ul.list-pages li {
+	width: 20%;
+	float: left;
+	display: inline-block;
+}
+
+
 /*Footer*/
 
 
