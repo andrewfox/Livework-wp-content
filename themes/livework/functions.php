@@ -362,7 +362,7 @@ function sector_init() {
 		array(
 			'hierarchical' => ('true'), 
 			'label' => __( 'Sectors' ),
-			'query_var' => ('true'),
+			'query_var' => ('getcase'),
 			'rewrite' => array( 'slug' => 'Sectors' ),
 //			'capabilities' => array('assign_terms'=>'edit_guides', 'edit_terms'=>'publish_guides')
 		)
