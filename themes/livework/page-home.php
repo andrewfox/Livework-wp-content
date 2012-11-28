@@ -20,9 +20,29 @@ get_header(); ?>
 					</div><!-- .entry-content -->
 
 				</article><!-- #page-## -->
+		
+		
+		
+		<ul>
+		<?php
+		// The Query
+		$query = new WP_Query( 'posts_per_page=3' );
+		
+		// The Loop
+		while ( $the_query->have_posts() ) : $the_query->the_post();
+			echo '<li>';
+			the_title();
+			echo '</li>';
+		endwhile;
+		
+		// Reset Post Data
+		wp_reset_postdata();	 ?>	
+		</ul>
 				
 				
-				<div id="world">
+				
+				
+								<div id="world">
 					<h1><a href="<?php bloginfo('url'); ?>/contact">Found the world over</a></h1>
 					<ul>
 						<li class="london"><a href="<?php bloginfo('url'); ?>/contact">London</a></li>
