@@ -36,7 +36,7 @@ article.main {
 	box-sizing: border-box;
 }
 
-#person-headline {
+#introduction {
 	background-color: rgba(256, 256, 256, 0.8);
 	position: absolute;
 	bottom: 5px;
@@ -44,7 +44,7 @@ article.main {
 	border-bottom: none;
 }
 
-#basic #person-headline {
+#basic #introduction {
 	background-color: rgba(256, 256, 256, 0.8);
 	width: 100%;
 	border-bottom: none;

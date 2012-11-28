@@ -368,11 +368,11 @@ section.more-header {
 /*	box-sizing: border-box;*/
 }
 
-#person-headline h3 {
+#introduction h3 {
 	font-size: 48px;
 }
 
-#person-headline h2 p {
+#introduction h2 p {
 	font: 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	width: 70%;
 	min-width: 400px;
