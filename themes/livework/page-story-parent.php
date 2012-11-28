@@ -15,7 +15,11 @@ get_header(); ?>
 
 				<div id="splash">
 				
+					<div id="top">
+					
+						<div class="no-bkg hat" ></div>
 
+						<div class="no-bkg box" >
 
 							
 							
