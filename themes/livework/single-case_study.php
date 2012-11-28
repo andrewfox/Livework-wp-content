@@ -56,7 +56,7 @@ get_header(); ?>
 							</li>
 					
 						<?php endwhile; ?>
-		
+						<?php wp_reset_query();?>
 						<!-- End Loop -->
 		
 						</aside>
