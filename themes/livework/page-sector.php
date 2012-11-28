@@ -76,6 +76,7 @@ get_header(); ?>
 					
 					
 					<?php
+											$thissector = $post->post_name
 											$terms = get_the_terms( $post->post_name, 'sectors' );
 											$sectors_terms = array();
 											foreach ( $terms as $term ) {
@@ -91,7 +92,7 @@ get_header(); ?>
 										$args = array(
 										    'post_type'=> 'case_study',
 										    'taxonomy' => 'sectors',
-										    'term' => $thesector,
+										    'term' => $thissector,
 									
 										    );              
 										
