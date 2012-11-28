@@ -519,13 +519,13 @@ ul#offices li:hover{
 
 /*Person Headline*/
 
-#person-headline {
+#introduction {
 	border-bottom: 1px solid #666;
 	background: #eee;
 	padding-top: 0.5em;
 }
 
-#person-headline h1 {
+#introduction h1 {
 	font-size: 36px;
 	line-height: normal;
 	color: #6F0B61;
@@ -533,14 +533,14 @@ ul#offices li:hover{
 	margin-bottom: 0;
 }
 
-#person-headline h1 span {
+#introduction h1 span {
 	font-family:'Chaparral W01 It Cap';
 	white-space: nowrap;
 }
-#person-headline div.wrapper h4{
+#introduction div.wrapper h4{
 	margin: 0;
 }
-#person-headline h4 a {
+#introduction h4 a {
 	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #222;
 }
