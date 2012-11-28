@@ -43,13 +43,13 @@ get_header(); ?>
 								<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
 										<?php the_post_thumbnail('thumbnail'); ?>
 										<?php the_title(); ?>									
-										<?php endwhile; ?>
+										<?php endwhile; ?></a>
 								<?php wp_reset_query();?>
 									<span class="meta-sep"> | </span>
 									<span class="meta-prep meta-prep-entry-date"><?php _e('Published ', 'blankslate'); ?></span>
 									<span class="entry-date"><abbr class="published" title="<?php the_time('Y-m-d\TH:i:sO') ?>"><?php the_time( get_option( 'date_format' ) ); ?></abbr></span>
 								<?php edit_post_link( __( 'Edit', 'blankslate' ), "<span class=\"meta-sep\"> | </span>\n\t\t\t\t\t\t<span class=\"edit-link\">", "</span>\n\t\t\t\t\t" ) ?>
-								</a>
+								
 							</div>
 							
 							<?php if ( has_post_thumbnail() ) {
