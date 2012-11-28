@@ -84,7 +84,7 @@ get_header(); ?>
 							$args = array(
 							    'post_type'=> 'case_study',
 							    'taxonomy' => 'sectors',
-							    'term' => '$thesector',
+							    'term' => $thesector,
 						
 							    );              
 							
