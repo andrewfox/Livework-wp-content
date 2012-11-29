@@ -8,7 +8,32 @@
  */
 
 get_header(); ?>
-			
+		<?php
+		$standard = false;
+		$feature = false;
+		$categories = get_the_category();
+		$catClass = '';
+		$output = '';
+		if($categories){
+			foreach($categories as $category) {
+				$output = $category->cat_name;
+				if ($output == 'Highlight') {
+					$feature = true;
+				}
+				else {
+				}
+			}
+		
+		}
+		
+		if ($feature == true) {
+			$catClass = 'highlight';
+		} else {
+			$standard = true;
+			$catClass = 'basic';
+		}
+		
+		?>	
 				<div id="splash">
 	
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -25,7 +50,7 @@ get_header(); ?>
 				</div>
 
 
-				<article id="people-<?php the_ID(); ?>" class="main clearfix">
+				<article id="people-<?php the_ID(); ?>" class="main clearfix <?php echo $catClass ?>">
 					<div class="wrapper">
 						<div id="main" class="clearfix">
 			
