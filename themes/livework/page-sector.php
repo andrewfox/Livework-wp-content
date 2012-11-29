@@ -113,7 +113,7 @@ get_header(); ?>
 					
 					<!--INSERT SELECTED CASE STUDIES -->
 				
-					<div id="case-studies">
+					<div class="case-studies post">
 					<?php
 					
 		 				$posts = get_field('add_case_studies');
@@ -131,7 +131,7 @@ get_header(); ?>
 			 								
 			 							</div>
 			 								<?php the_post_thumbnail('medium'); ?>
-			 								</a><div class="post"><?php the_excerpt() ?></div>
+			 								</a><div><?php the_excerpt() ?></div>
 			 							</div>
 			 					<?php endforeach; ?>
 			 				</div>
