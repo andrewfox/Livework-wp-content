@@ -127,7 +127,7 @@ get_header(); ?>
 										<div class="post">
 											<div class="wrapper">
 				 							<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-				 								<?php the_field('casestudies_one_liner'); ?>with <span><?php the_title(); ?></span></h2>
+				 								<?php the_field('casestudies_one_liner'); ?> with <span><?php the_title(); ?></span></h2>
 				 							<div class="excerpt">
 				 								
 				 							</div>
