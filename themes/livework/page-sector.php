@@ -72,74 +72,69 @@ get_header(); ?>
 
 
 				<article id="page-<?php the_ID(); ?>" class="main">
+						
+						
+					<!--INSERT ALL LOGOS FOR SECTOR	-->	
+					<ul class="logos">
+					
+					<?php $thissector = $post->post_name ?>
+					
+					<?php 
+					
+					$args = array(
+					    'post_type'=> 'case_study',
+					    'taxonomy' => 'sectors',
+					    'term' => $thissector,
 				
+					    );              
 					
+					$the_query = new WP_Query( $args );
+					while ( $the_query->have_posts() ) : $the_query->the_post(); 
 					
-					
-										
-										<ul class="logos">
-										
-										<?php $thissector = $post->post_name ?>
-										
-										<?php 
-										
-										$args = array(
-										    'post_type'=> 'case_study',
-										    'taxonomy' => 'sectors',
-										    'term' => $thissector,
-									
-										    );              
-										
-										$the_query = new WP_Query( $args );
-										while ( $the_query->have_posts() ) : $the_query->the_post(); 
-										
-										?>
-					
-											<li>
-											
-											
-											
-												<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-												<?php 
-												if( get_field('casestudies_logo') ):
-													?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
-												endif;
-												?>
-												</a>
-											
-											
-											
-												</a>
-											</li>
-											
-											<?php endwhile; ?>
-											<?php wp_reset_postdata() ?>
-			
-					
+					?>
+
+						<li>
+						
+							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+							<?php 
+							if( get_field('casestudies_logo') ):
+								?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
+							endif;
+							?>
+							</a>
+
+						</li>
+						
+						<?php endwhile; ?>
+						<?php wp_reset_postdata() ?>
 										
 					</ul>
+					<!--END:INSERT ALL LOGOS FOR SECTOR:END	-->
 					
+					<!--INSERT SELECTED CASE STUDIES -->
 				
 					<div id="case-studies">
 					<?php
 					
-										 				$posts = get_field('add_case_studies');
-										 				 
-										 				if( $posts ): ?>
-										 					<ul class="section-links clearfix">
-										 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-										 						<?php setup_postdata($post); ?>
-										 						<li class="sector-page">
-										 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-										 								<span><?php the_title(); ?></span>
-										 								<?php the_post_thumbnail('small'); ?>
-										 								</a><div class="cs-content"><?php the_excerpt(); ?></div>
-										 						</li>
-										 					<?php endforeach; ?>
-										 					</ul>
-										 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-										 				<?php endif; ?>
-	 			</div>
+		 				$posts = get_field('add_case_studies');
+		 				 
+		 				if( $posts ): ?>
+		 					<div class="wrapper">
+<!--			 					<ul class="section-links clearfix">-->
+			 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+			 						<?php setup_postdata($post); ?>
+<!--			 						<li class="sector-page">-->
+			 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+			 								<span><?php the_title(); ?></span>
+			 								<?php the_post_thumbnail('medium'); ?>
+			 								</a><div class="cs-content"><?php the_excerpt(); ?></div>
+			 					<?php endforeach; ?>
+			 				</div>
+		 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+		 				<?php endif; ?>
+	 				</div>
+	 				
+	 				<!--END:INSERT SELECTED CASE STUDIES:END -->
 	 			</article> <!-- /.main -->
 	 			
 	 			
