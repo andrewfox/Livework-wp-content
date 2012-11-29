@@ -131,7 +131,7 @@ get_header(); ?>
 			 								
 			 							</div>
 			 								<?php the_post_thumbnail('medium'); ?>
-			 								</a><div><?php the_excerpt() ?></div>
+			 								</a><div class="post"><?php the_excerpt() ?></div>
 			 							</div>
 			 					<?php endforeach; ?>
 			 				</div>
