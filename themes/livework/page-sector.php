@@ -113,7 +113,7 @@ get_header(); ?>
 					
 					<!--INSERT SELECTED CASE STUDIES -->
 				
-					<div class="case-studies post">
+					<div class="case-studies">
 					<?php
 					
 		 				$posts = get_field('add_case_studies');
@@ -124,14 +124,20 @@ get_header(); ?>
 			 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 			 						<?php setup_postdata($post); ?>
 <!--			 						<li class="sector-page">-->
-										<div class="wrapper">
-			 							<h1><?php the_field('casestudies_one_liner'); ?></span></h1>
-			 							<h2>with <?php the_title(); ?></span></h2>
-			 							<div class="excerpt">
-			 								
-			 							</div>
-			 								<?php the_post_thumbnail('medium'); ?>
-			 								</a><div><?php the_excerpt() ?></div>
+										<div class="post">
+											<div class="wrapper">
+				 							<h1><?php the_field('casestudies_one_liner'); ?></h1>
+				 							<h2>with <a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+				 								<span><?php the_title(); ?></span></h2>
+				 							<div class="excerpt">
+				 								
+				 							</div>
+				 								<?php the_post_thumbnail('medium'); ?>
+				 								</a>
+				 								<div>
+				 									<?php the_excerpt() ?>
+				 								</div>
+				 							</div>
 			 							</div>
 			 					<?php endforeach; ?>
 			 				</div>
