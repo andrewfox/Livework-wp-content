@@ -314,6 +314,8 @@ h2.entry-title a {
 	background-color: #ecebeb;
 }
 
+
+
 div.entry-meta {
 	font-size: 12px;
 }
@@ -335,10 +337,16 @@ div.entry-meta {
 	font-size: 130%;
 }
 
-div.entry-content  {
+.entry-content  {
 	font-size: 14px;
 	padding: 20px 0;
 }
+
+.entry-content li{
+	list-style-type: circle;
+	margin-left: 18px;
+}
+
 .blog-image img {
 	max-width: 100%;
 	height: auto;
@@ -383,7 +391,11 @@ div.entry-content  {
 
 /*Sections: Case studies */
 
-#case-studies ul.section-links.clearfix li.sector-page {
+.case-studies span {
+	color: black;
+}
+
+/*#case-studies ul.section-links.clearfix li.sector-page {
 	display: block;
 	position: relative;
 	float: left;
@@ -426,7 +438,7 @@ li.sector-page {
 }
 #case-studies ul.section-links.clearfix li.sector-page div.cs-content p a span.meta-nav {
 	display: none;
-}
+}*/
 
 #introduction h2 {
 	margin-top: 0;
@@ -526,7 +538,7 @@ ul#offices li:hover{
 
 /*Person Headline*/
 
-#introduction {
+.highlight #introduction {
 	border-bottom: 1px solid #666;
 	background: #eee;
 	padding-top: 0.5em;
