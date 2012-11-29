@@ -10,12 +10,38 @@
 
 get_header(); ?>
 
+<?php
+$standard = false;
+$feature = false;
+$categories = get_the_category();
+$catClass = '';
+$output = '';
+if($categories){
+	foreach($categories as $category) {
+		$output = $category->cat_name;
+		if ($output == 'Highlight') {
+			$feature = true;
+		}
+		else {
+		}
+	}
+
+}
+
+if ($feature == true) {
+	$catClass = 'highlight';
+} else {
+	$standard = true;
+	$catClass = 'basic';
+}
+
+?>
 
 
 
 
 
-				<div id="splash" class="main">
+				<div id="splash" class="main <?php echo $catClass ?>">
 		
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_post_thumbnail('full'); ?>
