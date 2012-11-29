@@ -34,11 +34,11 @@ get_header(); ?>
 		}
 		
 		?>	
-				<div id="splash">
+				<div id="splash" class="<?php echo $catClass ?>">
 	
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_post_thumbnail('full'); ?>
-					<div id="introduction" class="<?php echo $catClass ?>" >
+					<div id="introduction" >
 						<div class="wrapper">
 							<h4><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></h4>
 							<h1><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h1>
