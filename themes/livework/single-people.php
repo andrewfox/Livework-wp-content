@@ -38,7 +38,7 @@ get_header(); ?>
 	
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_post_thumbnail('full'); ?>
-					<div id="introduction" >
+					<div id="introduction" class="<?php echo $catClass ?>" >
 						<div class="wrapper">
 							<h4><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></h4>
 							<h1><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h1>
@@ -50,7 +50,7 @@ get_header(); ?>
 				</div>
 
 
-				<article id="people-<?php the_ID(); ?>" class="main clearfix <?php echo $catClass ?>">
+				<article id="people-<?php the_ID(); ?>" class="main clearfix ">
 					<div class="wrapper">
 						<div id="main" class="clearfix">
 			
