@@ -125,10 +125,13 @@ get_header(); ?>
 			 						<?php setup_postdata($post); ?>
 <!--			 						<li class="sector-page">-->
 										<div class="wrapper">
-			 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-			 								<span><?php the_title(); ?></span>
+			 							<h1><?php the_field('casestudies_one_liner'); ?></span></h1>
+			 							<h2>with <?php the_title(); ?></span></h2>
+			 							<div class="excerpt">
+			 								
+			 							</div>
 			 								<?php the_post_thumbnail('medium'); ?>
-			 								</a><div class="cs-content"><?php the_excerpt(); ?></div>
+			 								</a><div><?php the_excerpt() ?></div>
 			 							</div>
 			 					<?php endforeach; ?>
 			 				</div>
