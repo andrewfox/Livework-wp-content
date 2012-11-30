@@ -238,7 +238,9 @@ h1.page-title {
 	padding: 0;
 }
 
-#splash img{
+/*Splash*/
+
+#splash img.wp-post-image {
 	width: 100%;
 	height: auto;
 }
@@ -395,51 +397,6 @@ div.entry-meta {
 	color: black;
 }
 
-/*#case-studies ul.section-links.clearfix li.sector-page {
-	display: block;
-	position: relative;
-	float: left;
-	width: 100%;
-	height: auto;
-	overflow: visible;
-	background: #fff;
-	margin: 0 20px 20px 0;
-}
-
-.section-links li span {
-	display: block;
-	position: absolute;
-	background: #333;
-	bottom: 10px;
-	padding: 5px 10px;
-	font-weight: normal;	
-}
-
-#case-studies ul.section-links.clearfix li.sector-page a span {
-	display: inline;
-	position: relative;
-	background: #cc2;
-	bottom: 10px;
-	padding: 5px 10px;
-	font-weight: normal;
-	width: auto;
-}
-
-#case-studies ul.section-links.clearfix li.sector-page a img.attachment-small.wp-post-image {
-	display: block;
-	float: right;
-	width: 200px;
-	height: 200px;
-	margin-left: 15px;
-}
-
-li.sector-page {
-	background-color: #ccc;
-}
-#case-studies ul.section-links.clearfix li.sector-page div.cs-content p a span.meta-nav {
-	display: none;
-}*/
-
 #introduction h2 {
 	margin-top: 0;
 	font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -452,10 +409,10 @@ li.sector-page {
 
 
 #more-info {
-	background-color: black;
+	background-color: #111;
 	height: 200px;
 	position: relative;
-	top: -4px;
+	top: -40px;
 }
 
 #more-info h1 {
@@ -465,13 +422,12 @@ li.sector-page {
 	bottom: 0;
 }
 #more-info h2 a {
-		padding: 10px 10px 5px;
-		height: 40px;
-		background-color: black;
+	padding: 10px 20px;
+	background-color: #111;
 }
 
 #more-info h2 a.morepeople {
-		background-color: #aaa;
+	background-color: #aaa;
 }
 
 #more-info h2 a.clicked{
@@ -556,6 +512,11 @@ ul#offices li:hover{
 	font-family:'Chaparral W01 It Cap';
 	white-space: nowrap;
 }
+
+.page-template.page-template-page-story-php #splash {
+	
+}
+
 #introduction div.wrapper h4{
 	margin: 0;
 }

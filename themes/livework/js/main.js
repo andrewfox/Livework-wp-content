@@ -149,12 +149,7 @@ $("li.rotterdam").click(function () {
 
 
 	/* HOMEPAGE */
-	// rescale the homepage's bkgd img
-if ($("body.page-template-page-story-php, body.page-template-page-story-parent-php, body.page-template-page-sector-php").length > 0) {
-	rescale();
-	$(window).resize(function(){
-		rescale();
-});
+
 
 
 
@@ -187,6 +182,17 @@ $("#more-info > h2 > a").click(function(e) {
 //    return false;
 //});
 
+	// rescale the homepage's bkgd img
+/*
+if ($("body.page-template-page-story-php, body.page-template-page-story-parent-php, body.page-template-page-sector-php").length > 0) {
+	rescale();
+	$(window).resize(function(){
+		rescale();
+});
+*/
+
+
+
 };
 
 function rescale() {
@@ -199,8 +205,8 @@ function rescale() {
 	var set_height = 500;
 	//alert ($(window).width());
 
-	var height = $("#splash img").height();
-	var width = $("#splash img").width();
+	var height = $("#splash .wp-post-image").height();
+	var width = $("#splash .wp-post-image").width();
 	var ratio = height/width;
 
 	// If height or width are too large, they need to be scaled down
