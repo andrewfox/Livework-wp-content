@@ -115,7 +115,9 @@ article.main {
 } 
 
 
-#home #splash { position: inline; left:0; top:0; z-index:0; width:100%; height:100%; overflow:hidden; margin:0;}
+#home #splash { 
+	position: inline; left:0; top:0; z-index:0; width:100%; height:100%; overflow:hidden; margin:0;
+}
 
 
 /* ===============================
@@ -235,71 +237,6 @@ img.right-arrow {
 .fixed2 a img {
 	width: 20px;
 }
-
-/*Box*/
-
-.box{
-	background: url(../img/repeated-bkg.png) repeat;
-	margin: -300px 0 0 0px;
-	font-weight: normal;
-	font-style: normal;
-	width: 35%;
-	padding: 0 0 0 10%;
-	/*	min-width: 380px;*/
-}
-
-
-
-
-
-.box span{
-	font-family: 'Chaparral W01 It Cap';
-	color: #007CB8;
-}
-
-.box h3{
-	color: #0B4D6F;
-	font-size: 18px;
-	margin: 0;
-	font-family: 'Chaparral Pro Capt 1167087';
-}
-
-.box h2 {
-	font: 42px 'Chaparral Pro Capt 1167087';
-	color: #0B4D6F;
-	margin: 0;
-}
-
-#splash.single-people #top div.no-bkg.box div.entry-content h2 {
-	font-size: 24px;
-}
-
-body.single-peple .box h2 {
-	font: 42px 'Chaparral Pro Capt 1167087';
-	color: #0B4D6F;
-	margin: 0;
-}
-
-.box p {
-	font: 21px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin: 10px 0 5px;
-}
-
-#box h2{
-	padding-top: 40px;
-	margin-left: 40px;
-}
-
-.page-template-page-story-php #splash {
-	width: 100%;
-	height: 30%;
-	min-height: 150px;
-	display: block;
-	position: absolute;
-	bottom: 0;
-	z-index: 100;
-}
-
 
 
 

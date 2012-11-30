@@ -412,7 +412,6 @@ div.entry-meta {
 	background-color: #111;
 	height: 200px;
 	position: relative;
-	top: -40px;
 }
 
 #more-info h1 {
@@ -492,10 +491,10 @@ ul#offices li:hover{
    Person (single person page)
    =============================== */
 
-/*Person Headline*/
+/* Introduction */
 
 .highlight #introduction {
-	border-bottom: 1px solid #666;
+	border-bottom: 1px solid #ccc;
 	background: #eee;
 	padding-top: 0.5em;
 }
@@ -511,10 +510,6 @@ ul#offices li:hover{
 #introduction h1 span {
 	font-family:'Chaparral W01 It Cap';
 	white-space: nowrap;
-}
-
-.page-template.page-template-page-story-php #splash {
-	
 }
 
 #introduction div.wrapper h4{
