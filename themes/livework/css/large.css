@@ -83,6 +83,12 @@ Structure
 	width: 20%;
 }
 
+.highlight #introduction {
+	background-color: rgba(256, 256, 256, 0.8);
+	position: absolute;
+	width: 100%;
+	border-bottom: none;
+}
 
 /* ===============================
    Introduction (segment that sits atop highlight blog posts, case studies, people)

@@ -637,6 +637,7 @@ img.right-arrow {
 	border-bottom: 1px solid #ccc;
 	background: #eee;
 	padding-top: 0.5em;
+	position: relative;
 }
 
 #introduction h1 {
