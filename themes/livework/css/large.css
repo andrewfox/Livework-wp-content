@@ -1,13 +1,19 @@
-
-
-/* @override 
-	http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/css/large.css */
-
 /* ===============================
-   Large screen +
+   All screens (small+)
    =============================== */
 
 
+
+/* ===============================
+
+Structure
+ 
+ BODY
+ - HEADER
+ - SECTION#content
+ - FOOTER
+ 
+=============================== */
 
 
 
@@ -17,39 +23,106 @@
    =============================== */
 
 
+
+
+
+/* ===============================
+   General (used in multiple situations)
+   =============================== */
+
+
+
 /* ===============================
    Header
    =============================== */
 
 
 /* ===============================
-   Content
+   Content (everything between header and footer)
    =============================== */
 
-article.main {
-}
 
-#people li {
-	width: 19.782608695%;
-	padding-right: 0.108695652%;
-	padding-left: 0.104166666%%;
-	box-sizing: border-box;
-}
 
-.highlight #introduction {
-	background-color: rgba(256, 256, 256, 0.8);
-	position: absolute;
-	bottom: 5px;
-	width: 100%;
-	border-bottom: none;
-}
+/* ===============================
+   Homepage (specifics)
+   =============================== */
 
-#basic #introduction {
-	background-color: rgba(256, 256, 256, 0.8);
-	width: 100%;
-	border-bottom: none;
-	position: relative;
-	bottom: 0;
-}
 
-/*Footer*/
+
+/* ===============================
+   News (blog)
+   =============================== */
+
+
+
+/* ===============================
+   Hello arrows
+   =============================== */
+
+
+
+
+
+/* ===============================
+   Sections (repeated blocks of content on Story and Sectors pages)
+   =============================== */
+
+
+/* ===============================
+   More info (black tab and box)
+   =============================== */
+
+
+
+
+/* ===============================
+   Our Team
+   =============================== */
+
+
+
+/* ===============================
+   Introduction (segment that sits atop highlight blog posts, case studies, people)
+   =============================== */
+
+
+/* ===============================
+   Person (single person page)
+   =============================== */
+
+
+
+
+/* ===============================
+   Extra aside
+   =============================== */
+
+
+
+/* ===============================
+   Aside (more posts
+   =============================== */
+
+
+
+
+
+
+
+
+/* ===============================
+   Footer
+   =============================== */
+
+
+
+
+
+
+
+
+/* ===============================
+   Symbolset
+   =============================== */
+
+

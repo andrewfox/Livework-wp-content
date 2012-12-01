@@ -104,19 +104,22 @@ article.main {
 }
 
 /* Full Screen Background & arrows */
-#splash { 
-	position:relative; 
-	z-index:0; 
-	width:100%; 
-	min-height:160px; 
-	overflow:hidden;
-	padding:0; 
+#splash {
+	position: relative; 
+	z-index: 0; 
+	width: 100%; 
+	min-height: 160px; 
+	overflow: hidden;
+	padding: 0; 
 	margin: 0;
 } 
 
 
 #home #splash { 
-	position: inline; left:0; top:0; z-index:0; width:100%; height:100%; overflow:hidden; margin:0;
+	position: inline; 
+	left:0;
+	top:0;
+	z-index:0; width:100%; height:100%; overflow:hidden; margin:0;
 }
 
 
@@ -175,7 +178,9 @@ div.entry-content  {
 }
 
 
-
+/* ===============================
+   Hello arrows
+   =============================== */
 
 #hello {
 	float: left;
@@ -224,6 +229,8 @@ img.right-arrow {
 }
 
 
+
+
 .fixed {
 	position:fixed; 
 	top:0px;
@@ -238,24 +245,10 @@ img.right-arrow {
 	width: 20px;
 }
 
-
-
-/*.hat{
-	background: url(../img/more-top-bkg.png) no-repeat right -40px;
-	height: 56px;
-	margin: 0;
-	padding: 0;
-}*/
-
-
 /* More info */
 #more-info h2 {
-/*	position: absolute;*/
 	display: inline-block;
 	margin-left: 40px;
-/*	padding: 10px 10px 5px;*/
-/*	height: 40px;*/
-
 	bottom: 0;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -298,12 +291,12 @@ section.more-header {
 	font: 24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	width: 70%;
 	min-width: 400px;
-	}
-	
-	div.left-col {
-		float: left;
-		width: 60%;
-	}
+}
+
+div.left-col {
+	float: left;
+	width: 60%;
+}
 	
 aside#sidebar-more-posts {
 	float: right;
@@ -344,6 +337,78 @@ ul.list-pages li {
 	float: left;
 	display: inline-block;
 }
+
+
+/* ===============================
+   Introduction (segment that sits atop highlight blog posts, case studies, people)
+   =============================== */
+
+
+#introduction {
+	border-bottom: none;
+	background: #eee;
+	padding-top: 0.5em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.highlight #introduction {
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+	padding-top: 0.5em;
+}
+
+#introduction h1 {
+	font-size: 36px;
+	line-height: normal;
+	color: #6F0B61;
+	margin-top: 0;
+	margin: 0 auto 0.3em;
+}
+
+#introduction h1 span {
+	white-space: nowrap;
+}
+#introduction h2 {
+	margin-top: 0;
+	font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+#introduction h4 {
+	padding: 0 0 0.5em 0;
+	margin: 0;
+	line-height: 1em;
+}
+#introduction h4 a {
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #222;
+}
+.excerpt {
+	margin-top: 0.25em;
+	font-size: 19px;
+}
+.excerpt p {
+	margin-bottom: 0.5em;
+}
+.page-template-page-story-php #introduction {
+	top: 0;
+	bottom: auto;
+	color: white;
+	background: none;
+	padding: 25% 47% 0 5%;
+	box-sizing: border-box;
+	/*background: rgba(0,0,0,0.3);*/
+	border: none;
+}
+.page-template-page-story-php #introduction h1 {
+	font-size: 32px;
+	color: white;
+}
+.page-template-page-story-php #introduction .excerpt {
+	color: white;
+	font-size: 16px;
+}
+
 
 
 /*Footer*/

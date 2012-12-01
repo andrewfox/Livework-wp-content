@@ -217,17 +217,17 @@ header h1 a img {
    Content (everything between header and footer)
    =============================== */
 
-section#content {
+#content {
 	padding: 0px;
 	display: block;
 }
 
-article.main {
+.main {
 }
 h1.page-title {
 	margin-top: 0;
 	padding: 100px 0 0;
-	color: purple;
+	color: #6d2061;
 }
 
 #main {
@@ -358,6 +358,59 @@ div.entry-meta {
 	height: auto;
 }
 
+/* ===============================
+   Hello arrows
+   =============================== */
+
+
+#hello {
+	float: left;
+	display: block;
+}
+
+
+#hello div.arrows-l {
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 400px;
+	top: 40%;
+	z-index: 101;
+}
+
+#hello div.arrows-r{
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 40%;
+	z-index: 101;
+}
+
+.arrows{
+	width: 100%;
+	z-index: 101;
+	top: 40%;
+	position: absolute;
+}
+
+.arrows img{
+	width: 5%;
+	max-width: 70px;
+}
+
+.smallarrows{
+	width: 20px;
+	margin: 0 0px;
+}
+
+
+img.right-arrow {
+	right: 0;
+	position: absolute;
+}
+
+
+
 
 /* ===============================
    Sections (repeated blocks of content on Story and Sectors pages)
@@ -397,10 +450,7 @@ div.entry-meta {
 	color: black;
 }
 
-#introduction h2 {
-	margin-top: 0;
-	font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
+
 
 
 /* ===============================
@@ -488,10 +538,15 @@ ul#offices li:hover{
 
 
 /* ===============================
-   Person (single person page)
+   Introduction (segment that sits atop highlight blog posts, case studies, people)
    =============================== */
 
-/* Introduction */
+
+#introduction {
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+	padding-top: 0.5em;
+}
 
 .highlight #introduction {
 	border-bottom: 1px solid #ccc;
@@ -504,16 +559,20 @@ ul#offices li:hover{
 	line-height: normal;
 	color: #6F0B61;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin: 0 auto 0.3em;
 }
 
 #introduction h1 span {
-	font-family:'Chaparral W01 It Cap';
 	white-space: nowrap;
 }
-
-#introduction div.wrapper h4{
+#introduction h2 {
+	margin-top: 0;
+	font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+#introduction h4 {
+	padding: 0 0 0.5em 0;
 	margin: 0;
+	line-height: 1em;
 }
 #introduction h4 a {
 	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -521,10 +580,18 @@ ul#offices li:hover{
 }
 .excerpt {
 	margin-top: 0.25em;
-	font-family:'Chaparral Pro Capt 1167087';
 	font-size: 19px;
 }
+.excerpt p {
+	margin-bottom: 0.5em;
+}
+.page-template-page-story-php #introduction {
+	border-bottom: 1px solid #c00;
+}
 
+/* ===============================
+   Person (single person page)
+   =============================== */
 /*More People*/
 
 
@@ -674,7 +741,7 @@ footer .menu {
 }
 footer .menu li {
 	font-weight: normal;
-	border: none;
+	border: none; 
 }
 footer .menu a {
 	font-weight: normal;
