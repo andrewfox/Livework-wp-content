@@ -92,7 +92,7 @@ a:hover {
 .section-title {
 	margin-top: 0;
 	text-transform: uppercase;
-	font: normal normal 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 /* User inputted image stuff */
@@ -223,6 +223,7 @@ header h1 a img {
 }
 
 .main {
+	line-height: 0;
 }
 h1.page-title {
 	margin-top: 0;
@@ -567,7 +568,7 @@ ul#offices li:hover{
 }
 #introduction h2 {
 	margin-top: 0;
-	font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 18px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 #introduction h4 {
 	padding: 0 0 0.5em 0;
@@ -575,7 +576,7 @@ ul#offices li:hover{
 	line-height: 1em;
 }
 #introduction h4 a {
-	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 14px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #222;
 }
 .excerpt {
@@ -599,7 +600,7 @@ ul#offices li:hover{
 	z-index: 1;
 	margin-left: 25px;
 	color: #6F0B61;
-	font: bold 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 16px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 
 #morepeople ul#people{
@@ -683,7 +684,7 @@ aside#sidebar-more-posts {
 }
 
 #sidebar-more-posts ul a{
-	font: bold 16px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: bold 16px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	color: #2E3183;
 }
 
