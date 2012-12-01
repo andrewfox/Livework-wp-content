@@ -148,7 +148,6 @@ $("li.rotterdam").click(function () {
 //	});
 
 
-	/* HOMEPAGE */
 
 
 
@@ -170,6 +169,7 @@ $("#more-info > h2 > a").click(function(e) {
     goToByScroll($(this).attr("id"));           
 });
 
+	/* HOMEPAGE */
 
 
 
@@ -193,7 +193,7 @@ if ($("body.page-template-page-story-php, body.page-template-page-story-parent-p
 
 
 
-};
+});
 
 function rescale() {
 	// alert("Blimey");
