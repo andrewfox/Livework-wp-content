@@ -3,52 +3,52 @@ $(document).ready(function() {
 
 
 
-$(".menu-reveal").click(function () {
-	$('header').toggleClass('open');
-});
+	$(".menu-reveal").click(function () {
+		$('header').toggleClass('open');
+	});
 
 
 
 
-// Hide/show people on our team by location
-
-
-$("li.all").click(function () {
-	$('#people li')
-		.show();
-//	$('#people li div')
-//		.parent().show();
-});
-
-$("li.london").click(function () {
-	$('#people li')
-		.hide()
-	$('#people li div.category-london')
-		.parent().show();
-});
-
-$("li.oslo").click(function () {
-	$('#people li')
-		.hide()
-	$('#people li div.category-oslo')
-		.parent().show();
-});
-
-
-$("li.sao-paulo").click(function () {
-	$('#people li')
-		.hide()
-	$('#people li div.category-sao-paulo')
-		.parent().show();
-});
-
-
-$("li.rotterdam").click(function () {
-	$('#people li')
-		.hide()
-	$('#people li div.category-rotterdam')
-		.parent().show();
-});
+	// Hide/show people on our team by location
+	
+	
+	$("li.all").click(function () {
+		$('#people li')
+			.show();
+	//	$('#people li div')
+	//		.parent().show();
+	});
+	
+	$("li.london").click(function () {
+		$('#people li')
+			.hide()
+		$('#people li div.category-london')
+			.parent().show();
+	});
+	
+	$("li.oslo").click(function () {
+		$('#people li')
+			.hide()
+		$('#people li div.category-oslo')
+			.parent().show();
+	});
+	
+	
+	$("li.sao-paulo").click(function () {
+		$('#people li')
+			.hide()
+		$('#people li div.category-sao-paulo')
+			.parent().show();
+	});
+	
+	
+	$("li.rotterdam").click(function () {
+		$('#people li')
+			.hide()
+		$('#people li div.category-rotterdam')
+			.parent().show();
+	});
 
 //	$('#more-info ul#people')
 //		.hide();
@@ -112,7 +112,7 @@ $("li.rotterdam").click(function () {
 					$('div#hello img').addClass('smallarrows');
 				}
 			}
-		});
+	});
 		
 		
 		
@@ -152,22 +152,22 @@ $("li.rotterdam").click(function () {
 
 
 
-// This is a functions that scrolls to #{blah}link
-function goToByScroll(id){
-      // Remove "link" from the ID
-    id = id.replace("link", "");
-      // Scroll
-    $('html,body').animate({
-        scrollTop: $("#"+id).offset().top},
-        'slow');
-}
-
-$("#more-info > h2 > a").click(function(e) { 
-      // Prevent a page reload when a link is pressed
-    e.preventDefault(); 
-      // Call the scroll function
-    goToByScroll($(this).attr("id"));           
-});
+	// This is a functions that scrolls to #{blah}link
+	function goToByScroll(id){
+	      // Remove "link" from the ID
+	    id = id.replace("link", "");
+	      // Scroll
+	    $('html,body').animate({
+	        scrollTop: $("#"+id).offset().top},
+	        'slow');
+	}
+	
+	$("#more-info > h2 > a").click(function(e) { 
+	      // Prevent a page reload when a link is pressed
+	    e.preventDefault(); 
+	      // Call the scroll function
+	    goToByScroll($(this).attr("id"));
+	});
 
 	/* HOMEPAGE */
 
@@ -194,6 +194,15 @@ if ($("body.page-template-page-story-php, body.page-template-page-story-parent-p
 
 
 });
+
+
+
+
+
+
+
+
+
 
 function rescale() {
 	// alert("Blimey");
@@ -222,36 +231,34 @@ function rescale() {
 		width = width * ratio;
 	}
 	
-if(min_height > set_height) {
+	if(min_height > set_height) {
+			
+			$("#splash .wp-post-image").height(height);
+			$("#splash .wp-post-image").width(width);
+			$("#splash").height(max_height);
 		
-		$("#splash .wp-post-image").height(height);
-		$("#splash .wp-post-image").width(width);
-		$("#splash").height(max_height);
-	
-		// set top/left
-		var top = $("#splash .wp-post-image").offset().top;
-		var left = $("#splash .wp-post-image").offset().left;
-		top = Math.round((max_height - height)/2);
-		left = Math.round((max_width - width)/2);
-		$("#splash .wp-post-image").css("margin-top",top);
-		$("#splash .wp-post-image").css("margin-left",left);
+			// set top/left
+			var top = $("#splash .wp-post-image").offset().top;
+			var left = $("#splash .wp-post-image").offset().left;
+			top = Math.round((max_height - height)/2);
+			left = Math.round((max_width - width)/2);
+			$("#splash .wp-post-image").css("margin-top",top);
+			$("#splash .wp-post-image").css("margin-left",left);
+			
+	} else {
+			$("#splash .wp-post-image").height(height);
+			$("#splash .wp-post-image").width(width);
+	//		$("#bkg").height(max_height);
 		
-} 
-else {
-		$("#splash .wp-post-image").height(height);
-		$("#splash .wp-post-image").width(width);
-//		$("#bkg").height(max_height);
+			// set top/left
+			var top = $("#splash .wp-post-image").offset().top;
+			var left = $("#splash .wp-post-image").offset().left;
+			top = Math.round((max_height - height)/2);
+			left = Math.round((max_width - width)/2);
+			$("#splash .wp-post-image").css("margin-top",top);
+			$("#splash .wp-post-image").css("margin-left",left);
+	}
 	
-		// set top/left
-		var top = $("#splash .wp-post-image").offset().top;
-		var left = $("#splash .wp-post-image").offset().left;
-		top = Math.round((max_height - height)/2);
-		left = Math.round((max_width - width)/2);
-		$("#splash .wp-post-image").css("margin-top",top);
-		$("#splash .wp-post-image").css("margin-left",left);
-}
-
 };
 
 
-});
