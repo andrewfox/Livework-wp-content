@@ -15,7 +15,10 @@
 <!--[if IE 9 ]><html <?php language_attributes(); ?> class="no-js ie ie9 lte9"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html <?php language_attributes(); ?> class="no-js"><!--<![endif]-->
 	<head>
+
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<title><?php
 			/*
 			 * Print the <title> tag based on what is being viewed.
@@ -24,6 +27,7 @@
 			 */
 			wp_title( '|', true, 'right' );
 		?></title>
+
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/all.css" />
@@ -48,6 +52,9 @@
 		<?php wp_head(); ?>
 
 	</head>
+
+
+
 	<body <?php body_class(); ?>>
 		<header role="banner">
 			
