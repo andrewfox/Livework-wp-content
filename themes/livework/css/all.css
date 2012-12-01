@@ -632,26 +632,8 @@ height: 20px;
 
 #people li img.wp-post-image {
 	position: relative;
-	z-index: -1;
 	max-width: 100%;
 	height: auto;
-}
-
-
-
-#person-intro.highlight img{
-	width: 100%;
-	height: auto;
-}
-
-#person-intro.basic img {
-	height: auto;
-	width: auto;
-}
-
-#person-intro.basic {
-	position: relative;
-	padding-top: 100px;
 }
 
 

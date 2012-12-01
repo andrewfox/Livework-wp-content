@@ -347,6 +347,7 @@ ul.list-pages li {
 #introduction {
 	border-bottom: none;
 	background: #eee;
+	background: rgba(256,256,256,0.6);
 	padding-top: 0.5em;
 	position: absolute;
 	bottom: 0;
@@ -354,9 +355,10 @@ ul.list-pages li {
 }
 
 .highlight #introduction {
-	border-bottom: 1px solid #ccc;
 	background: #eee;
+	background: rgba(256,256,256,0.6);
 	padding-top: 0.5em;
+	border-bottom: none;
 }
 
 #introduction h1 {
@@ -388,7 +390,8 @@ ul.list-pages li {
 	font-size: 19px;
 }
 .excerpt p {
-	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+	margin: 0;
 }
 .page-template-page-story-php #introduction {
 	top: 0;
