@@ -500,17 +500,16 @@ img.right-arrow {
 
 #people {
 	clear: both;
-	padding: 0;
+	padding: 10px;
 	box-sizing: border-box;
 }
 #people li {
 	float: left;
 	overflow: hidden;
 	margin: 0;
-	padding: 0;
+	padding: 10px;
 	width: 50%;
 	position: relative;
-	background: red;
 	box-sizing: border-box;
 }
 #people img {
@@ -540,29 +539,11 @@ img.right-arrow {
 
 /* Offices picker (used on Team page) */
 
-ul#offices{
-	clear: both;
-	float: left;
-	padding: 10px;
-	border-radius: 15px;
-	background-color: #777;
+#offices{
+	line-height: 1em;
 }
 
-ul#offices li{
-	cursor: pointer;
-	float: left;
-	padding: 6px 10px;
-	border-radius: 15px;
-	background-color: #999;
-	margin-right: 5px;
-	margin-left: 5px;
-	color: #fff;
-}
-
-
-
-ul#offices li:hover{
-	background-color: #111;
+#offices li{
 }
 
 

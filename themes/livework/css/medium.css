@@ -276,12 +276,7 @@ section.more-header {
 	position: relative;
 }
 
-#people li {
-	width: 24.743589743%;
-	padding-right: 0.128205128%;
-	padding-left: 0.128205128%;
-/*	box-sizing: border-box;*/
-}
+
 
 #introduction h3 {
 	font-size: 48px;
@@ -337,6 +332,38 @@ ul.list-pages li {
 	float: left;
 	display: inline-block;
 }
+
+
+/* ===============================
+   Our Team
+   =============================== */
+
+
+#people {
+}
+#people li {
+	width: 25%;
+}
+#people img {
+}
+#people li a {
+}
+#people span {
+}
+
+/* Offices picker (used on Team page) */
+
+ul#offices{
+}
+
+ul#offices li{
+}
+
+
+
+ul#offices li:hover{
+}
+
 
 
 /* ===============================
