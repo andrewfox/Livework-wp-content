@@ -112,6 +112,7 @@ article.main {
 	overflow: hidden;
 	padding: 0; 
 	margin: 0;
+	line-height: 0;
 } 
 
 
@@ -417,7 +418,7 @@ ul#offices li:hover{
 	font-size: 19px;
 }
 .excerpt p {
-	padding-bottom: 0.5em;
+	padding-bottom: 0.7em;
 	margin: 0;
 }
 .page-template-page-story-php #introduction {
