@@ -32,7 +32,7 @@
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/all.css" />
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/medium.css" media="only screen and (min-width:550px)">
-		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/large.css" media="only screen and (min-width:800px)">
+		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/large.css" media="only screen and (min-width:1100px)">
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		
