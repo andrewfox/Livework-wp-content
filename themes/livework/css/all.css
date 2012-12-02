@@ -226,7 +226,7 @@ header h1 a img {
 	line-height: 0;
 }
 h1.page-title {
-	margin: 0 0 0.5em 0;
+	margin: 0;
 	padding: 100px 0 0 0;
 	color: #6d2061;
 }
@@ -505,6 +505,12 @@ img.right-arrow {
 	margin: 0;
 	box-sizing: border-box;
 }
+.extra #people {
+	clear: both;
+	padding: 0 10px;
+	margin: 0;
+	box-sizing: border-box;
+}
 #people li {
 	float: left;
 	overflow: hidden;
@@ -602,7 +608,7 @@ img.right-arrow {
 }
 
 #introduction h1 span {
-	white-space: nowrap;
+	font-size: 80%;
 }
 #introduction h2 {
 	margin-top: 0;
@@ -654,8 +660,8 @@ img.right-arrow {
 	margin: 0 0 0.3em 0;
 }
 
-#person-intro {
-	position: relative;
+.single-people .extra {
+	padding-bottom: 10px;
 }
 
 /* ===============================
