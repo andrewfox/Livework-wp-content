@@ -37,7 +37,7 @@ get_header(); ?>
 				<div id="splash" class="<?php echo $catClass ?>">
 	
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					<?php the_post_thumbnail('full'); ?>
+					<?php the_post_thumbnail('large'); ?>
 					<div id="introduction" >
 						<div class="wrapper">
 							<h4><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></h4>
