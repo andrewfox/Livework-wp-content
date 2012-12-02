@@ -21,14 +21,14 @@ get_header(); ?>
 						<div class="wrapper">
 							<?php
 
-								$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
+								$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
 							
 								foreach( $mypages as $page ) {		
 									$content = $page->post_content;
 									if ( ! $content ) // Check for empty page
 										continue;
 							
-									$content = apply_filters( 'the_content', $content );
+									$content = apply_filters( 'the_excerpt', $content );
 								?>
 									<ul class="list-pages">
 										<li>
