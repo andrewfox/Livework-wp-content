@@ -39,7 +39,7 @@ get_header(); ?>
 
 				<ul id="people" class="clearfix">
 
-				<?php query_posts(array('post_type' => 'people', 'posts_per_page' => 100 , 'order' => 'title', 'paged'=> $paged)); ?>
+				<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged)); ?>
 	
 				<?php while(have_posts()) : the_post();  ?>
 
