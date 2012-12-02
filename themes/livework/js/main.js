@@ -14,40 +14,39 @@ $(document).ready(function() {
 	
 	
 	$("li.all").click(function () {
-		$('#people li')
-			.show();
-	//	$('#people li div')
-	//		.parent().show();
+		$('#people li').show();
+		$('#offices li').removeClass('on');
+		$(this).addClass('on');
 	});
 	
 	$("li.london").click(function () {
-		$('#people li')
-			.hide()
-		$('#people li div.category-london')
-			.parent().show();
+		$('#people li').hide()
+		$('#people .category-london').show();
+		$('#offices li').removeClass('on');
+		$(this).addClass('on');
 	});
 	
 	$("li.oslo").click(function () {
-		$('#people li')
-			.hide()
-		$('#people li div.category-oslo')
-			.parent().show();
+		$('#people li').hide()
+		$('#people .category-oslo').show();
+		$('#offices li').removeClass('on');
+		$(this).addClass('on');
 	});
 	
 	
 	$("li.sao-paulo").click(function () {
-		$('#people li')
-			.hide()
-		$('#people li div.category-sao-paulo')
-			.parent().show();
+		$('#people li').hide()
+		$('#people .category-sao-paulo').show();
+		$('#offices li').removeClass('on');
+		$(this).addClass('on');
 	});
 	
 	
 	$("li.rotterdam").click(function () {
-		$('#people li')
-			.hide()
-		$('#people li div.category-rotterdam')
-			.parent().show();
+		$('#people li').hide()
+		$('#people .category-rotterdam').show();
+		$('#offices li').removeClass('on');
+		$(this).addClass('on');
 	});
 
 //	$('#more-info ul#people')

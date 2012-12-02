@@ -497,6 +497,9 @@ img.right-arrow {
    Our Team
    =============================== */
 
+.page-template-page-people-php .page-title {
+	color: #686f2f;
+}
 
 #people {
 	clear: both;
@@ -546,11 +549,21 @@ img.right-arrow {
 
 /* Offices picker (used on Team page) */
 
-#offices{
+#offices {
 	line-height: 1em;
 }
 
-#offices li{
+#offices li {
+	background: #e9e8e8;
+	padding: 6px 10px;
+	display: inline;
+	text-transform: uppercase;
+	font-size: 12px;
+	cursor: pointer;
+}
+#offices li:hover {
+	color: #eee;
+	background: #686f2f;
 }
 
 

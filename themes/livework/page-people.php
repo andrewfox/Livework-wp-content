@@ -22,20 +22,19 @@ get_header(); ?>
 							<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
 							<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
 						</div><!-- .entry-content -->
-						
-						<ul id="offices">
-							<li class="all">All</li>
-							<li class="london">London</li>
-							<li class="oslo">Oslo</li>
-							<li class="sao-paulo">Sao Paulo</li>
-							<li class="rotterdam">Rotterdam</li>
-						</ul>
 
 					</div>
 
 				</article><!-- #page-## -->
 
 
+				<ul id="offices">
+					<li class="all">All</li>
+					<li class="london">London</li>
+					<li class="oslo">Oslo</li>
+					<li class="sao-paulo">Sao Paulo</li>
+					<li class="rotterdam">Rotterdam</li>
+				</ul>
 
 
 				<ul id="people" class="clearfix">
