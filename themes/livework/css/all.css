@@ -497,6 +497,8 @@ img.right-arrow {
    Our Team
    =============================== */
 
+.single-people #introduction h1,
+.single-people h2,
 .page-template-page-people-php .page-title {
 	color: #686f2f;
 }
@@ -523,9 +525,9 @@ img.right-arrow {
 	position: relative;
 	display: block;
 	font-weight: normal;
-	background: #fff;
+	background: transparent;
 	margin: 0;
-	padding: 10px;
+	padding: 4px;
 	box-sizing: border-box;
 }
 #people li a:hover {
@@ -540,7 +542,7 @@ img.right-arrow {
 #people span {
 	position: absolute;
 	bottom: 20px;
-	left: 0;
+	left: 10px;
 	display: block;
 	font-weight: normal;
 	padding: 4px 8px;
@@ -686,7 +688,11 @@ height: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-
+.extra h2 {
+	padding-left: 15px;
+	font-size: 24px;
+	margin: 0;
+}
 
 #person-intro {
 	position: relative;
