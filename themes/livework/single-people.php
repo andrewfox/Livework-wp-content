@@ -91,7 +91,15 @@ get_header(); ?>
 
 				<div class="extra">
 
-					<h2>Livework people</h2>
+					<h3><a href="<?php echo get_page_link(7); ?>">Our team</a></h3>
+
+					<ul id="offices">
+						<li class="all on">All</li>
+						<li class="london">London</li>
+						<li class="oslo">Oslo</li>
+						<li class="sao-paulo">Sao Paulo</li>
+						<li class="rotterdam">Rotterdam</li>
+					</ul>
 
 					<ul id="people" class="clearfix">
 	
