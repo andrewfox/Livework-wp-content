@@ -19,6 +19,7 @@ get_header(); ?>
 					<?php the_post_thumbnail('large'); ?>
 					<div id="introduction" >
 						<div class="wrapper">
+							<ul>
 							<?php
 
 								$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
@@ -30,15 +31,14 @@ get_header(); ?>
 							
 									$content = apply_filters( 'the_excerpt', $content );
 								?>
-									<ul class="list-pages">
 										<li>
 											<h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
 											<div class="entry"><?php echo $content; ?></div>
 										</li>
-									</ul>
 								<?php
 								}	
 							?>
+							</ul>
 						</div>
 					</div>
 					<?php endwhile; ?>
