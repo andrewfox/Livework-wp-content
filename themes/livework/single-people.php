@@ -89,28 +89,10 @@ get_header(); ?>
 			
 				</article><!-- #post-## -->
 
-				<div class="extra">		
-					<div class="wrapper">
-						<div id="morepeople" >
-							<h2>Livework people</h2>
-							<ul id="people">
-								<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
-								<?php while(have_posts()) : the_post();  ?>
-								<li>
-									<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-									<?php 
-									if(has_post_thumbnail()) :
-										the_post_thumbnail('thumbnail'); 
-									else :				
-									endif;
-									the_title(); 
-									?>
-									</a>
-								</li>
-								<?php endwhile; ?>
-							</ul>
-						</div>
-					</div><!-- /.wrapper -->
+				<div class="extra">
+
+					<h2>Livework people</h2>
+
 					<ul id="people" class="clearfix">
 	
 					<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 , 'order' => 'DSC', 'paged'=> $paged)); ?>
