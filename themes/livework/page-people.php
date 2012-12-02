@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Page - People Page
- * Description: Our Story: fullscreen area, plus extras
+ * Description: People page intro, plus list
  *
  * @package WordPress
  * @subpackage Livework
@@ -12,54 +12,51 @@ get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
-				
-					<h1 class="page-title"><?php the_title(); ?></h1>
 
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
-						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
-					</div><!-- .entry-content -->
-						
-					<ul id="offices">
-						<li class="all">All</li>
-						<li class="london">London</li>
-						<li class="oslo">Oslo</li>
-						<li class="sao-paulo">Sao Paulo</li>
-						<li class="rotterdam">Rotterdam</li>
-					</ul>
-					
-					<ul id="people">
-					<?php query_posts(array('post_type' => 'people', 'posts_per_page' => 100 , 'order' => 'DSC', 'paged'=> $paged)); ?>
+					<div class="wrapper">
+
+						<h1 class="page-title"><?php the_title(); ?></h1>
 		
-					<?php while(have_posts()) : the_post();  ?>
-						
-						
-						<li>
-						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-							<?php the_title(); 
-						
-						
-						if(has_post_thumbnail()) :
-						the_post_thumbnail('original'); 
-						else :				
+						<div class="entry-content">
+							<?php the_content(); ?>
+							<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
+							<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
+						</div><!-- .entry-content -->
 
-						endif;
-						
-						?>
-						</a>
-<!--						<?php the_author_posts_link(); ?>-->
-						</div>
-						</li>
-						
-						<?php endwhile; ?>
-					
-					</ul>
-	
-					<?php wp_reset_query();?>
+					</div>
 
 				</article><!-- #page-## -->
+
+				<ul id="offices">
+					<li class="all">All</li>
+					<li class="london">London</li>
+					<li class="oslo">Oslo</li>
+					<li class="sao-paulo">Sao Paulo</li>
+					<li class="rotterdam">Rotterdam</li>
+				</ul>
+
+
+
+				<ul id="people">
+				<?php query_posts(array('post_type' => 'people', 'posts_per_page' => 100 , 'order' => 'DSC', 'paged'=> $paged)); ?>
+	
+				<?php while(have_posts()) : the_post();  ?>
+
+					<li <?php post_class(); ?>>
+						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+							<span><?php the_title(); ?></span>
+							<?php if(has_post_thumbnail()) :
+							the_post_thumbnail('original'); 
+							endif;?>
+						</a>
+					</li>
+
+					<?php endwhile; ?>
+
+				</ul>
+
+				<?php wp_reset_query();?>
+
 
 <?php endwhile; ?>
 
