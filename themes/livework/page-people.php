@@ -46,7 +46,7 @@ get_header(); ?>
 						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 							<span><?php the_title(); ?></span>
 							<?php if(has_post_thumbnail()) :
-							the_post_thumbnail('original'); 
+							the_post_thumbnail('thumb-large'); 
 							endif;?>
 						</a>
 					</li>

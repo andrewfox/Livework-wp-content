@@ -386,6 +386,10 @@ function is_tree($pid) {      // $pid = The ID of the page we're looking for pag
 		return false;  // we're elsewhere
 };
 
+/* Additional image sizes */
+
+add_image_size( 'thumb-large', 250, 250, true ); // Hard cropped large thumbnail, used on pages like Our Team
+
 
 /* End Livework specifics */
 
