@@ -14,18 +14,13 @@ get_header(); ?>
 
 
 				<div id="splash">
-				
-					<div id="top">
-					
-						<div class="no-bkg hat" ></div>
-
-						<div class="no-bkg box" >
-
-							
-							
+	
+					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+					<?php the_post_thumbnail('large'); ?>
+					<div id="introduction" >
+						<div class="wrapper">
 							<?php
-							
-							
+
 								$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'desc' ) );
 							
 								foreach( $mypages as $page ) {		
@@ -36,28 +31,18 @@ get_header(); ?>
 									$content = apply_filters( 'the_content', $content );
 								?>
 									<ul class="list-pages">
-									<li>
-										<h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
-										<div class="entry"><?php echo $content; ?></div>
+										<li>
+											<h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
+											<div class="entry"><?php echo $content; ?></div>
 										</li>
 									</ul>
 								<?php
 								}	
 							?>
-							
-							
-							
-							
-							
-							
 						</div>
-
-					</div> <!-- /#top -->
-
-					<?php the_post_thumbnail('full'); ?>
-
-				</div> <!-- /#splash -->
-
+					</div>
+					<?php endwhile; ?>
+				</div>
 
 
 				<div id="hello" class="arrows">

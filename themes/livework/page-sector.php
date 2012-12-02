@@ -21,7 +21,7 @@ get_header(); ?>
 							<h4><a href="<?php echo get_page_link(9); ?>">Our Client's Stories</a></h4>
 							<h1><?php the_title(); ?></h1>
 							<div class="excerpt">
-								<?php the_excerpt() ?>
+								<?php the_content() ?>
 							</div>
 						</div>
 					</div>
