@@ -504,6 +504,7 @@ img.right-arrow {
 #people {
 	clear: both;
 	padding: 10px;
+	margin: 0;
 	box-sizing: border-box;
 }
 #people li {
@@ -551,17 +552,24 @@ img.right-arrow {
 
 #offices {
 	line-height: 1em;
+	padding-left: 20px;
+	margin: 0;
 }
 
 #offices li {
 	background: #e9e8e8;
-	padding: 6px 10px;
+	padding: 3px 10px;
+	margin-right: ;
 	display: inline;
 	text-transform: uppercase;
 	font-size: 12px;
 	cursor: pointer;
 }
 #offices li:hover {
+	color: #eee;
+	background: #686f2f;
+}
+#offices li.on {
 	color: #eee;
 	background: #686f2f;
 }

@@ -29,7 +29,7 @@ get_header(); ?>
 
 
 				<ul id="offices">
-					<li class="all">All</li>
+					<li class="all on">All</li>
 					<li class="london">London</li>
 					<li class="oslo">Oslo</li>
 					<li class="sao-paulo">Sao Paulo</li>
