@@ -476,10 +476,6 @@ img.right-arrow {
 	background-color: #111;
 }
 
-#more-info h2 a.morepeople {
-	background-color: #aaa;
-}
-
 #more-info h2 a.clicked{
 	background-color: #000 ;
 }
@@ -498,7 +494,7 @@ img.right-arrow {
    =============================== */
 
 .single-people #introduction h1,
-.single-people h2,
+.single-people h3 a,
 .page-template-page-people-php .page-title {
 	color: #686f2f;
 }
@@ -527,34 +523,37 @@ img.right-arrow {
 	font-weight: normal;
 	background: transparent;
 	margin: 0;
-	padding: 4px;
+	padding: 5px;
 	box-sizing: border-box;
+	color: #686f2f;
 }
 #people li a:hover {
 	background: #686f2f;
+	color: #222;
 }
 #people img {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	margin: 0;
 	padding: 0;
 }
-#people span {
+#people a span {
 	position: absolute;
-	bottom: 20px;
-	left: 10px;
+	bottom: 10px;
+	left: 5px;
 	display: block;
 	font-weight: normal;
 	padding: 4px 8px;
-	background: white;
+	background: rgba(256,256,256,0.9);
 	line-height: 120%;
 }
+
 
 /* Offices picker (used on Team page) */
 
 #offices {
 	line-height: 1em;
-	padding-left: 20px;
+	padding-left: 15px;
 	margin: 0;
 }
 
@@ -632,48 +631,8 @@ img.right-arrow {
 /* ===============================
    Person (single person page)
    =============================== */
-/*More People*/
 
 
-#morepeople ul#people li a {
-	z-index: 1;
-	margin-left: 25px;
-	color: #6F0B61;
-	font: bold 16px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-
-#morepeople ul#people{
-	z-index: 1;
-	font-size: 12px;
-	margin-left: 0px;
-	margin-top: 0;
-	margin-bottom: 0;
-
-}
-
-#people li a img.attachment-thumbnail{
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	top: -4px;
-	padding-top: 5px;
-	padding-right: 5px;
-	padding-bottom: 5px;
-	left: -25px;
-}
-
-
-.attachment-thumbnail{
-width: 20px;
-height: 20px;
-}
-
-
-#people li img.wp-post-image {
-	position: relative;
-	max-width: 100%;
-	height: auto;
-}
 
 
 /* ===============================
@@ -692,7 +651,7 @@ height: 20px;
 .extra h3 {
 	padding-left: 15px;
 	font-size: 24px;
-	margin: 0;
+	margin: 0 0 0.3em 0;
 }
 
 #person-intro {
@@ -725,12 +684,6 @@ aside#sidebar-more-posts {
 	font-size: 12px;
 }
 
-/* More people (in aside at base of People single pages) */
-
-
-#morepeople {
-	float: left;
-}
 
 
 
