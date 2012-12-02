@@ -97,7 +97,7 @@ get_header(); ?>
 						<li class="all on">All</li>
 						<li class="london">London</li>
 						<li class="oslo">Oslo</li>
-						<li class="sao-paulo">Sao Paulo</li>
+						<li class="sao-paulo">S&atilde;o Paulo</li>
 						<li class="rotterdam">Rotterdam</li>
 					</ul>
 
