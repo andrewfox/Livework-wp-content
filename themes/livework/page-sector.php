@@ -82,7 +82,38 @@ get_header(); ?>
 						<div class="wrapper">
 						
 							<h3 class="section-title">Some of our <?php the_title(); ?> clients</h3>
-						
+							
+							
+							<!--INSERT FEATURED POSTS	-->	
+							
+							<div class="featured-posts">
+												 
+							 	<div class="wrapper">
+		
+				
+									<?php $posts = the_field('featured_content');
+				 					if( $posts ): ?>
+				 					<div class="featured_post clearfix">
+				 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+				 						<?php setup_postdata($post); ?>
+				 						<li>
+				 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+				 								<span><?php the_title(); ?></span>
+				 								<?php the_post_thumbnail('thumb-large'); ?>
+				 							</a>
+				 						</li>
+				 						<?php endforeach; ?>
+				 					</ul>
+				 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				 				<?php endif; ?>
+		
+							 	</div>
+							
+							</div> <!-- /.feature-posts -->
+							
+							
+							<!--END:INSERT FEATURED POSTS:END	-->
+							
 							<!--INSERT ALL LOGOS FOR SECTOR	-->	
 							<ul class="logos">
 							
