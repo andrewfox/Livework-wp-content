@@ -65,6 +65,8 @@ get_header(); ?>
 					
 						<div class="wrapper">
 						
+							<h3>Some of our <?php the_title(); ?> clients</h3>
+						
 							<!--INSERT ALL LOGOS FOR SECTOR	-->	
 							<ul class="logos">
 							
