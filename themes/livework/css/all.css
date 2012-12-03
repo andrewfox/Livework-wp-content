@@ -541,7 +541,7 @@ img.right-arrow {
 	opacity: 1;
 }
 .logos-list a:hover img {
-	background-color: rgba(8, 76, 111, 0.2);
+	opacity: 0.7;
 }
 
 /* ===============================
@@ -569,11 +569,34 @@ img.right-arrow {
 	box-sizing: border-box;
 	width: 25%;
 	float: left;
-	padding-right: 10px;
+	padding-right: 20px;
 }
 .featured_post img {
 	width: 100%;
 	height: auto;
+}
+.featured blockquote {
+	margin: 0;
+	font-size: 22px;
+	line-height: 140%;
+	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
+}
+.feature-people {
+	position: relative;
+	display: block;
+	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
+	color: #eee;
+}
+.feature-people span {
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	text-align: center;
+	text-shadow: 0 0 5px #000000;
+}
+.feature-case_study:hover img {
+	opacity: 0.7;
+	
 }
 
 
