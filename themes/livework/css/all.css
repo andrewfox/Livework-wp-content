@@ -531,6 +531,16 @@ img.right-arrow {
 }
 
 /* ===============================
+   Case studies list
+   =============================== */
+
+.case_study:nth-child(even) {
+	background-color: #ecebeb;
+}
+
+
+
+/* ===============================
    Featured 
    =============================== */
 
