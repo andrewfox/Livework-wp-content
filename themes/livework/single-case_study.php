@@ -98,7 +98,17 @@ if ($feature == true) {
 
 				<div class="extra">		
 					<div class="wrapper">
-						<div id="morepeople" >
+						<div class="" >
+							
+							
+							<?php if ( in_category('logo-only-case-study') ) { ?>
+							
+							<?php } else { ?>
+
+							
+							
+							
+							
 							<?php
 								$terms = get_the_terms( $post->ID, 'sectors' );
 								$sectors_terms = array();
@@ -135,7 +145,7 @@ if ($feature == true) {
 									?>
 									</a>
 								</li>
-								
+								<?php } ?>
 								<?php endwhile; ?>
 								<?php wp_reset_postdata() ?>
 								
