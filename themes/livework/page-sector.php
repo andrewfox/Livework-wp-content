@@ -87,7 +87,7 @@ get_header(); ?>
 				 								echo 'LIVEWORKER';
 				 							}
 				 							
-				 							else ($theposttype = 'theme') {
+				 							else if ($theposttype = 'theme') {
 				 								echo 'THEME';
 				 							}
 				 							
