@@ -91,7 +91,7 @@ get_header(); ?>
 				 								echo 'THEME';
 				 							}
 				 							
-				 							
+				 							$theposttype="";
 				 							?>
 				 							</h3>
 				 								<span><?php the_title(); ?></span>
