@@ -61,7 +61,7 @@ get_header(); ?>
 							
 							<!--INSERT FEATURED POSTS	-->	
 							
-							<div class="featured">
+							<div class="featured clearfix">
 												 
 							 	<div class="wrapper">
 							 	

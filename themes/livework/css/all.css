@@ -546,9 +546,15 @@ img.right-arrow {
 
 .featured {
 	background: #333;
-	min-height: 100px;
+	min-height: 200px;
 	color: #eee;
 	line-height: 140%;
+	padding: 20px 0;
+}
+.featured_post {
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
 }
 
 
