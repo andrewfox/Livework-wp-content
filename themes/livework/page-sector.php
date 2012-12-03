@@ -67,7 +67,7 @@ get_header(); ?>
 							 	
 									<div class="featured_post">
 										<h3 class="section-title">Quote</h3>
-										<?php the_field('sector_page_quote');?>
+										<blockquote><?php the_field('sector_page_quote');?></blockquote>
 									</div>
 				
 									<?php $posts = get_field('featured_content');
@@ -90,10 +90,10 @@ get_header(); ?>
 			 							}
 			 							?>
 			 							</h3>
-			 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+			 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="<?php echo $theposttype ?>">
 
 		 								<?php if ($thumbnail == 'logo') { ?>
-		 									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner') ?>" />
+		 									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" />
 		 								<?php } else { 
 		 									the_post_thumbnail('thumb-large');
 		 								} ?>

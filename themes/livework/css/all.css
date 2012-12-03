@@ -519,15 +519,29 @@ img.right-arrow {
    
 .logos-list {
    	background: #007cb7;
-   	padding: 20px 0;
+   	padding: 20px 0 20px 0;
    	color: #eee;
 }
+.logos-list h3 {
+   	margin: 0;
+}
 .logos-list ul {
-	
+	margin: -10px 0 0 0;
 }
 
 .logos-list li {
 	display: inline;
+	width: 25%;
+	
+}
+.logos-list li img {
+	opacity: 0.5;
+}
+.logos-list a img {
+	opacity: 1;
+}
+.logos-list a:hover img {
+	background-color: rgba(8, 76, 111, 0.2);
 }
 
 /* ===============================
@@ -553,8 +567,13 @@ img.right-arrow {
 }
 .featured_post {
 	box-sizing: border-box;
-	width: 50%;
+	width: 25%;
 	float: left;
+	padding-right: 10px;
+}
+.featured_post img {
+	width: 100%;
+	height: auto;
 }
 
 
