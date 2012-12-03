@@ -73,11 +73,11 @@ get_header(); ?>
 				 						<?php setup_postdata($post); ?>
 				 						<div class="featured_post clearfix">
 				 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-				 							
+				 							<h3>
 				 							<?php
 				 							$theposttype = get_post_type( $post->ID );
 				 							
-				 							echo '<h3>'
+				 							
 				 							
 				 							if ($theposttype = 'case_study') {
 				 								echo '<h3>CASE STUDY';
@@ -91,9 +91,9 @@ get_header(); ?>
 				 								echo 'THEME';
 				 							}
 				 							
-				 							echo '</h3>'
 				 							
 				 							?>
+				 							</h3>
 				 								<span><?php the_title(); ?></span>
 				 								<?php the_post_thumbnail('thumb-large'); ?>
 				 								<?php the_excerpt(); ?>
