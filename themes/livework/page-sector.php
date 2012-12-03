@@ -77,13 +77,13 @@ get_header(); ?>
 				 							<?php
 				 							$theposttype = get_post_type( $post->ID );
 				 							
-				 							
+				 							echo '<h3>'
 				 							
 				 							if ($theposttype = 'case_study') {
-				 								echo 'CASE STUDY';
+				 								echo '<h3>CASE STUDY';
 				 							}
 				 							
-				 							elseif ($theposttype = 'person') {
+				 							elseif ($theposttype = 'people') {
 				 								echo 'LIVEWORKER';
 				 							}
 				 							
@@ -91,6 +91,7 @@ get_header(); ?>
 				 								echo 'THEME';
 				 							}
 				 							
+				 							echo '</h3>'
 				 							
 				 							?>
 				 								<span><?php the_title(); ?></span>
