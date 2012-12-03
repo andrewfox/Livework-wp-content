@@ -102,7 +102,7 @@ get_header(); ?>
 						
 							
 							?>
-								<li <?php post_class('clearfix'); ?>>
+								<li>
 									<?php if ( in_category('logo-only-case-study') ) { ?>
 									<?php 
 									if( get_field('casestudies_logo') ): ?>
@@ -148,7 +148,7 @@ get_header(); ?>
 		 					
 			 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 			 						<?php setup_postdata($post); ?>
-										<div class="post">
+										<div  <?php post_class('clearfix'); ?>>
 											<div class="wrapper">
 												<?php the_post_thumbnail('medium'); ?>
 												<div>
