@@ -104,7 +104,6 @@ article.main {
 }
 
 /* Full Screen Background & arrows */
-<<<<<<< HEAD
 #splash {
 	position: relative; 
 	z-index: 0; 
@@ -112,15 +111,6 @@ article.main {
 	min-height: 160px; 
 	overflow: hidden;
 	padding: 0; 
-=======
-#splash { 
-	position:relative; 
-	z-index:0; 
-	width:100%; 
-	min-height: 160px; 
-	overflow:hidden;
-	padding:0; 
->>>>>>> .
 	margin: 0;
 	line-height: 0;
 } 
@@ -315,24 +305,7 @@ aside#sidebar-more-posts {
 	width: 33%;
 }
 
-#introduction {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background: rgba(256,256,256,0.8);
-}
-.page-template-page-story-php #introduction {
-	position: absolute;
-	top: 200px;
-	left: 10%;
-	width: 40%;
-	background: none;
-	padding: 0 0 150px;
-	color: #fff;
-}
-.page-template-page-story-php #introduction h1 {
-	color: #fff;
-}
+
 
 	
 	div.post-wrapper {
