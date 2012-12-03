@@ -65,55 +65,41 @@ get_header(); ?>
 												 
 							 	<div class="wrapper">
 							 	
-									<div><?php the_field('sector_page_quote');?></div>
+									<div class="featured_post">
+										<?php the_field('sector_page_quote');?>
+									</div>
 				
 									<?php $posts = get_field('featured_content');
 				 					if( $posts ): ?>
-				 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-				 						<?php setup_postdata($post); ?>
-				 						<div class="featured_post clearfix">
-				 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-				 							<h3>
-				 							<?php
-				 							$theposttype = get_post_type( $post->ID );
-				 							
-				 							
-				 							
-				 							if ($theposttype == 'case_study') {
-				 								echo 'CASE STUDY';
-				 								$thumbnail = 'logo';
-				 							}
-				 							
-				 							else if ($theposttype = 'people') {
-				 								echo 'LIVEWORKER';
-				 								$thumbnail = 'featured';
-				 							}
-				 							
-				 							else if ($theposttype = 'theme') {
-				 								echo 'THEME';
-				 								$thumbnail = 'featured';
-				 							}
-				 							
-				 							$theposttype="";
-				 							?>
-				 							</h3>
-				 								<span><?php the_title(); ?></span>
-				 								
-				 								
-				 								<?php 
-				 								if ($thumbnail == 'logo') {?>
-				 									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner'); 
-				 								}
-				 								
-				 								else {
-				 									the_post_thumbnail('thumb-large');
-				 								}
-				 								 ?>
-				 								<?php the_excerpt(); ?>
-				 							</a>
-				 						</div>
-				 						<?php endforeach; ?>
-				 					</ul>
+			 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+			 						<?php setup_postdata($post); ?>
+			 						<div class="featured_post">
+			 							<h3 class="section-title">
+			 							<?php
+			 							$theposttype = get_post_type( $post->ID );
+			 							if ($theposttype == 'case_study') {
+			 								echo 'Case study';
+			 								$thumbnail = 'logo';
+			 							} else if ($theposttype = 'people') {
+			 								echo 'Liveworker';
+			 								$thumbnail = 'featured';
+			 							} else if ($theposttype = 'theme') {
+			 								echo 'Theme';
+			 								$thumbnail = 'featured';
+			 							}
+			 							$theposttype="";
+			 							?>
+			 							</h3>
+			 							<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		 								<?php 
+		 								if ($thumbnail == 'logo') { ?>
+		 									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner') ?>" />
+		 								<?php } else { ?>
+		 									the_post_thumbnail('thumb-large');
+		 								<?php } ?>
+		 								<div><?php the_excerpt(); ?></div>
+			 						</div>
+			 						<?php endforeach; ?>
 				 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 				 				<?php endif; ?>
 		
