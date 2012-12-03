@@ -102,9 +102,6 @@ get_header(); ?>
 		 									<span><?php the_title(); ?></span>
 		 								<?php } ?>
 
-			 								<span>
-			 									<?php the_excerpt(); ?>
-			 								</div>
 		 								</a>
 			 						</div>
 			 						<?php endforeach; ?>
