@@ -65,7 +65,7 @@ get_header(); ?>
 					
 						<div class="wrapper">
 						
-							<h3>Some of our <?php the_title(); ?> clients</h3>
+							<h3 class="section-title">Some of our <?php the_title(); ?> clients</h3>
 						
 							<!--INSERT ALL LOGOS FOR SECTOR	-->	
 							<ul class="logos">

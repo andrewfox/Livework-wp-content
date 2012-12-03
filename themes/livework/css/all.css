@@ -513,7 +513,13 @@ img.right-arrow {
 }
 
 
-
+/* ===============================
+   Logos list
+   =============================== */
+   
+.logos-list {
+   	background: #027cb8;
+}
 
 /* ===============================
    More info (black tab and box)
