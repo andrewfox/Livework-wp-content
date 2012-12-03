@@ -76,6 +76,30 @@ get_header(); ?>
 					$the_query = new WP_Query( $args );
 					while ( $the_query->have_posts() ) : $the_query->the_post(); 
 					
+					$logo = false;
+					$full = false;
+					$categories = get_the_category();
+					$logoClass = '';
+					$output = '';
+					if($categories){
+						foreach($categories as $category) {
+							$output = $category->cat_name;
+							if ($output == 'logo-only-case-study') {
+								$logo = true;
+							}
+							else {
+							}
+						}
+					
+					}
+					
+					if ($logo == true) {
+						$logoClass = 'logo-only';
+					} else {
+						$full = true;
+						$logoClass = 'full';
+					}
+					
 					?>
 
 						<li>
@@ -84,6 +108,7 @@ get_header(); ?>
 							<?php 
 							if( get_field('casestudies_logo') ):
 								?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
+								echo($logoClass)
 							endif;
 							?>
 							</a>
