@@ -57,8 +57,17 @@ get_header(); ?>
 				</div>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
-					<p><?php the_field('sector_page_quote');?></p>
+				
+					<div class="featured">
 					
+						<div class="wrapper">
+						
+							<div><?php the_field('sector_page_quote');?></div>
+							
+							<!-- other featured stuff to go here -->
+							
+						</div>
+					</div>
 					
 					
 					<div class="logos-list">

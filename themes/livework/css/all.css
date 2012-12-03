@@ -518,7 +518,16 @@ img.right-arrow {
    =============================== */
    
 .logos-list {
-   	background: #027cb8;
+   	background: #007cb7;
+   	padding: 20px 0;
+   	color: #eee;
+}
+.logos-list ul {
+	
+}
+
+.logos-list li {
+	display: inline;
 }
 
 /* ===============================
