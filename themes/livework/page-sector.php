@@ -68,9 +68,9 @@ get_header(); ?>
 									<div><?php the_field('sector_page_quote');?></div>
 				
 									<?php $posts = the_field('featured_content');
-				 					if( $posts ): ?>
-				 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-				 						<?php setup_postdata($post); ?>
+				 					if( $posts5 ): ?>
+				 						<?php foreach( $posts5 as $post5): // variable must be called $post (IMPORTANT) ?>
+				 						<?php setup_postdata($post5); ?>
 				 						<div class="featured_post clearfix">
 				 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 				 								<span><?php the_title(); ?></span>
