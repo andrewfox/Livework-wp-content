@@ -101,9 +101,7 @@ if ($feature == true) {
 						<div class="" >
 							
 							
-							<?php if ( in_category('logo-only-case-study') ) { ?>
 							
-							<?php } else { ?>
 
 							
 							
@@ -133,7 +131,11 @@ if ($feature == true) {
 							while ( $the_query->have_posts() ) : $the_query->the_post(); 
 							
 							?>
-		
+							
+							<?php if ( in_category('logo-only-case-study') ) { ?>
+							
+							<?php } else { ?>
+							
 								<li>
 									<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 									<?php 
