@@ -102,7 +102,7 @@ get_header(); ?>
 						
 							
 							?>
-								<li>
+								<li <?php post_class('clearfix'); ?>>
 									<?php if ( in_category('logo-only-case-study') ) { ?>
 									<?php 
 									if( get_field('casestudies_logo') ): ?>
