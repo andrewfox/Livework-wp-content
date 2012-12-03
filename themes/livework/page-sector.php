@@ -81,21 +81,36 @@ get_header(); ?>
 				 							
 				 							if ($theposttype == 'case_study') {
 				 								echo 'CASE STUDY';
+				 								$thumbnail = 'logo'
 				 							}
 				 							
 				 							else if ($theposttype = 'people') {
 				 								echo 'LIVEWORKER';
+				 								$thumbnail = 'featured'
 				 							}
 				 							
 				 							else if ($theposttype = 'theme') {
 				 								echo 'THEME';
+				 								$thumbnail = 'featured'
 				 							}
 				 							
 				 							$theposttype="";
 				 							?>
 				 							</h3>
 				 								<span><?php the_title(); ?></span>
-				 								<?php the_post_thumbnail('thumb-large'); ?>
+				 								
+				 								
+				 								<?php 
+				 								if ($thumbnail == 'logo') {
+				 									
+				 									echo '<img src="' the_field('casestudies_logo');
+				 									echo '" alt="' the_field('casestudies_one_liner');
+				 								}
+				 								
+				 								else {
+				 									the_post_thumbnail('thumb-large');
+				 								}
+				 								 ?>
 				 								<?php the_excerpt(); ?>
 				 							</a>
 				 						</div>
