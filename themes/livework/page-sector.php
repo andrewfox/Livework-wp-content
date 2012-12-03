@@ -73,6 +73,26 @@ get_header(); ?>
 				 						<?php setup_postdata($post); ?>
 				 						<div class="featured_post clearfix">
 				 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+				 							
+				 							<?php
+				 							$theposttype = get_post_type( $post->ID );
+				 							
+				 							
+				 							
+				 							if ($theposttype = 'case_study') {
+				 								echo 'CASE STUDY'
+				 							}
+				 							
+				 							elseif ($theposttype = 'person') {
+				 								echo 'LIVEWORKER'
+				 							}
+				 							
+				 							elseif ($theposttype = 'theme') {
+				 								echo 'THEME'
+				 							}
+				 							
+				 							
+				 							?>
 				 								<span><?php the_title(); ?></span>
 				 								<?php the_post_thumbnail('thumb-large'); ?>
 				 								<?php the_excerpt(); ?>
