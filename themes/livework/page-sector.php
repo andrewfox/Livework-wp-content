@@ -57,7 +57,9 @@ get_header(); ?>
 				</div>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
-				
+
+
+
 					<div class="featured">
 					
 						<div class="wrapper">
@@ -68,10 +70,13 @@ get_header(); ?>
 							
 							<!-- other featured stuff to go here -->
 							
-						</div>
-					</div>
-					
-					
+						</div> <!-- /.wrapper -->
+					</div> <!-- /.featured -->
+
+
+
+
+
 					<div class="logos-list">
 					
 						<div class="wrapper">
@@ -125,10 +130,13 @@ get_header(); ?>
 							</ul>
 							<!--END:INSERT ALL LOGOS FOR SECTOR:END	-->
 					
-						</div>
+						</div> <!-- /.wrapper -->
 					
-					</div>
-					
+					</div> <!-- /.logos-list -->
+
+
+
+
 					<!--INSERT SELECTED CASE STUDIES -->
 				
 					<div class="case-studies">
@@ -138,40 +146,38 @@ get_header(); ?>
 		 				 
 		 				if( $posts ): ?>
 		 					
-<!--			 					<ul class="section-links clearfix">-->
 			 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 			 						<?php setup_postdata($post); ?>
-<!--			 						<li class="sector-page">-->
 										<div class="post">
 											<div class="wrapper">
-				 							<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-				 								<?php the_field('casestudies_one_liner'); ?> with <span><?php the_title(); ?></span></h2>
-				 							<div class="excerpt">
-				 								
-				 							</div>
-				 								<?php the_post_thumbnail('medium'); ?>
-				 								</a>
-				 								<div>
+												<?php the_post_thumbnail('medium'); ?>
+												<div>
+													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span>with <?php the_title(); ?></span></a></h2>
+													<div>
 				 									<?php the_excerpt() ?>
+													</div>
 				 								</div>
+
 				 							</div>
 			 							</div>
 			 					<?php endforeach; ?>
-			 				</div>
 		 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 		 				<?php endif; ?>
-	 				</div>
-	 				
-	 				<!--END:INSERT SELECTED CASE STUDIES:END -->
-	 			</article> <!-- /.main -->
-	 			
-	 			
-	 			
-	 		
-	 			
-	 			
-	 			
-	 			
+	 				</div> <!-- /.case-studies -->
 
-	 			
+	 				<!--END:INSERT SELECTED CASE STUDIES:END -->
+
+
+
+	 			</article> <!-- /.main -->
+
+
+
+
+
+
+
+
+
+
 	<?php get_footer(); ?>
