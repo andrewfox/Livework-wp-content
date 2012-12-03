@@ -58,56 +58,32 @@ get_header(); ?>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
 
-
-
-					<div class="featured">
-					
-						<div class="wrapper">
-						
-							<div><?php the_field('sector_page_quote');?></div>
-							
-							
-							
-							<!-- other featured stuff to go here -->
-							
-						</div> <!-- /.wrapper -->
-					</div> <!-- /.featured -->
-
-
-
-
-
-					<div class="logos-list">
-					
-						<div class="wrapper">
-						
-							<h3 class="section-title">Some of our <?php the_title(); ?> clients</h3>
-							
 							
 							<!--INSERT FEATURED POSTS	-->	
 							
-							<div class="featured-posts">
+							<div class="featured">
 												 
 							 	<div class="wrapper">
-		
+							 	
+									<div><?php the_field('sector_page_quote');?></div>
 				
 									<?php $posts = the_field('featured_content');
 				 					if( $posts ): ?>
-				 					<div class="featured_post clearfix">
 				 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 				 						<?php setup_postdata($post); ?>
-				 						<li>
+				 						<div class="featured_post clearfix">
 				 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 				 								<span><?php the_title(); ?></span>
 				 								<?php the_post_thumbnail('thumb-large'); ?>
+				 								<?php the_excerpt(); ?>
 				 							</a>
-				 						</li>
+				 						</div>
 				 						<?php endforeach; ?>
 				 					</ul>
 				 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
 				 				<?php endif; ?>
 		
-							 	</div>
+							 	</div> <!-- /.wrapper -->
 							
 							</div> <!-- /.feature-posts -->
 							
@@ -115,6 +91,13 @@ get_header(); ?>
 							<!--END:INSERT FEATURED POSTS:END	-->
 							
 							<!--INSERT ALL LOGOS FOR SECTOR	-->	
+							
+							<div class="logos-list">
+							
+								<div class="wrapper">
+								
+									<h3 class="section-title">Some of our <?php the_title(); ?> clients</h3>
+									
 							<ul class="logos">
 							
 							<?php $thissector = $post->post_name ?>
