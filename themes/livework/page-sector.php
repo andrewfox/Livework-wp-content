@@ -75,45 +75,37 @@ get_header(); ?>
 					
 					$the_query = new WP_Query( $args );
 					while ( $the_query->have_posts() ) : $the_query->the_post(); 
-					
-					$logo = false;
-					$full = false;
-					$categories = get_the_category();
-					$logoClass = '';
-					$output = '';
-					if($categories){
-						foreach($categories as $category) {
-							$output = $category->cat_name;
-							if ($output == 'logo-only-case-study') {
-								$logo = true;
-							}
-							else {
-							}
-						}
-					
-					}
-					
-					if ($logo == true) {
-						$logoClass = 'logo-only';
-					} else {
-						$full = true;
-						$logoClass = 'full';
-					}
+				
 					
 					?>
+					
+					<?php if ( in_category('logo-only-case-study') ) { ?>
+					           <li>
+           							<?php 
+           							if( get_field('casestudies_logo') ):
+           								?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
+           							endif;
+           							?>
+           							</a>
+           
+           						</li>
+           						
+					 <?php } else { ?>
+					 
+					           <li>
+					           						
+           							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+           							<?php 
+           							if( get_field('casestudies_logo') ):
+           								?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
+           							endif;
+           							?>
+           							</a>
+           
+           						</li>
+					 <?php } ?>
 
-						<li>
 						
-							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-							<?php 
-							if( get_field('casestudies_logo') ):
-								?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
-								echo($logoClass);
-							endif;
-							?>
-							</a>
-
-						</li>
 						
 						<?php endwhile; ?>
 						<?php wp_reset_postdata() ?>
