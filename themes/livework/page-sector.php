@@ -83,11 +83,11 @@ get_header(); ?>
 				 								echo 'CASE STUDY';
 				 							}
 				 							
-				 							if ($theposttype = 'people') {
+				 							else if ($theposttype = 'people') {
 				 								echo 'LIVEWORKER';
 				 							}
 				 							
-				 							if ($theposttype = 'theme') {
+				 							else ($theposttype = 'theme') {
 				 								echo 'THEME';
 				 							}
 				 							
