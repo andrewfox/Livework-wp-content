@@ -101,10 +101,8 @@ get_header(); ?>
 				 								
 				 								
 				 								<?php 
-				 								if ($thumbnail == 'logo') {
-				 									
-				 									echo '<img src="' the_field('casestudies_logo');
-				 									echo '" alt="' the_field('casestudies_one_liner');
+				 								if ($thumbnail == 'logo') {?>
+				 									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner'); 
 				 								}
 				 								
 				 								else {
