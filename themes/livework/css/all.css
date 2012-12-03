@@ -553,8 +553,9 @@ img.right-arrow {
 	color: white;
 }
 .page-template-page-story-parent-php #introduction h2 {
-	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
+	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
 	font-size: 24px;
+	font-weight: normal;
 }
 .page-template-page-story-parent-php #introduction h2 a {
 	color: #fff;
