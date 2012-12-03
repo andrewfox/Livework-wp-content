@@ -65,7 +65,7 @@ get_header(); ?>
 
 
 				<article id="page-<?php the_ID(); ?>" class="main">
-						
+					<p><?php get_field('sector_page_quote');?></p>
 						
 					<!--INSERT ALL LOGOS FOR SECTOR	-->	
 					<ul class="logos">
