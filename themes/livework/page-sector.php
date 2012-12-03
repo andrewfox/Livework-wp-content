@@ -105,8 +105,8 @@ get_header(); ?>
 								<li>
 									<?php if ( in_category('logo-only-case-study') ) { ?>
 									<?php 
-									if( get_field('casestudies_logo') ):
-										?><img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /><?php
+									if( get_field('casestudies_logo') ): ?>
+										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /><?php
 									endif;
 									?>
 									</a>
@@ -114,8 +114,8 @@ get_header(); ?>
 									<?php } else { ?>
 									<a href="<?php the_permalink(); ?>" title="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" rel="bookmark">
 									<?php 
-									if( get_field('casestudies_logo') ):
-										?><img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" /><?php
+									if( get_field('casestudies_logo') ): ?>
+										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" /><?php
 									endif;
 									?>
 									</a>
@@ -152,7 +152,12 @@ get_header(); ?>
 											<div class="wrapper">
 												<?php the_post_thumbnail('medium'); ?>
 												<div>
-													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span>with <?php the_title(); ?></span></a></h2>
+													<?php if( get_field('casestudies_one_liner') ): ?>
+													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span>with <span><?php the_title(); ?></span></span></a></h2>
+													<?php else : ?>
+													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+													<?php endif; ?>
+
 													<div>
 				 									<?php the_excerpt() ?>
 													</div>
