@@ -108,7 +108,7 @@ get_header(); ?>
 							<?php 
 							if( get_field('casestudies_logo') ):
 								?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
-								echo($logoClass)
+								echo($logoClass);
 							endif;
 							?>
 							</a>
