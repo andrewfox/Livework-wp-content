@@ -56,14 +56,6 @@ get_header(); ?>
 				
 				</div>
 
-
-
-				<div id="more-info">
-					<h2><a id = "more-infolink" href="#"><span class="ss-icon">down</span> More on <?php the_title(); ?></a></h2>
-					<h1><?php the_title(); ?>: <span><?php the_field('page_title_suffix'); ?></span></h1>
-				</div>
-
-
 				<article id="page-<?php the_ID(); ?>" class="main">
 					<p><?php the_field('sector_page_quote');?></p>
 						
