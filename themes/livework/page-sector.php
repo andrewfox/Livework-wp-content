@@ -88,17 +88,24 @@ get_header(); ?>
 			 								echo 'Theme';
 			 								$thumbnail = 'featured';
 			 							}
-			 							$theposttype="";
 			 							?>
 			 							</h3>
-			 							<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-		 								<?php 
-		 								if ($thumbnail == 'logo') { ?>
+			 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+
+		 								<?php if ($thumbnail == 'logo') { ?>
 		 									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner') ?>" />
 		 								<?php } else { 
 		 									the_post_thumbnail('thumb-large');
 		 								} ?>
-		 								<div><?php the_excerpt(); ?></div>
+
+		 								<?php if ($theposttype == 'people') { ?>
+		 									<span><?php the_title(); ?></span>
+		 								<?php } ?>
+
+			 								<span>
+			 									<?php the_excerpt(); ?>
+			 								</div>
+		 								</a>
 			 						</div>
 			 						<?php endforeach; ?>
 				 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
