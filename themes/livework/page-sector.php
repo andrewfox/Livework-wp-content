@@ -64,6 +64,8 @@ get_header(); ?>
 						
 							<div><?php the_field('sector_page_quote');?></div>
 							
+							
+							
 							<!-- other featured stuff to go here -->
 							
 						</div>
@@ -99,16 +101,16 @@ get_header(); ?>
 									<?php if ( in_category('logo-only-case-study') ) { ?>
 									<?php 
 									if( get_field('casestudies_logo') ):
-										?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
+										?><img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /><?php
 									endif;
 									?>
 									</a>
 		
 									<?php } else { ?>
-									<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+									<a href="<?php the_permalink(); ?>" title="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" rel="bookmark">
 									<?php 
 									if( get_field('casestudies_logo') ):
-										?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
+										?><img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" /><?php
 									endif;
 									?>
 									</a>
