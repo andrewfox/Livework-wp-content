@@ -79,7 +79,7 @@ get_header(); ?>
 				 							
 				 							
 				 							
-				 							if ($theposttype = 'case_study') {
+				 							if ($theposttype == 'case_study') {
 				 								echo 'CASE STUDY';
 				 							}
 				 							
