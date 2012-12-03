@@ -67,7 +67,7 @@ get_header(); ?>
 							 	
 									<div><?php the_field('sector_page_quote');?></div>
 				
-									<?php $posts = the_field('featured_content');
+									<?php $posts = get_field('featured_content');
 				 					if( $posts5 ): ?>
 				 						<?php foreach( $posts5 as $post5): // variable must be called $post (IMPORTANT) ?>
 				 						<?php setup_postdata($post5); ?>
