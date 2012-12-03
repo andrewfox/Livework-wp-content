@@ -94,9 +94,9 @@ get_header(); ?>
 		 								<?php 
 		 								if ($thumbnail == 'logo') { ?>
 		 									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner') ?>" />
-		 								<?php } else { ?>
+		 								<?php } else { 
 		 									the_post_thumbnail('thumb-large');
-		 								<?php } ?>
+		 								} ?>
 		 								<div><?php the_excerpt(); ?></div>
 			 						</div>
 			 						<?php endforeach; ?>
