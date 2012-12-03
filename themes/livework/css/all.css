@@ -374,7 +374,7 @@ h2.entry-title a {
 	border-bottom: 1px solid #ddd;
 }
 
-.post:nth-child(odd) {
+.post:nth-child(even) {
 	background-color: #ecebeb;
 }
 
@@ -529,6 +529,18 @@ img.right-arrow {
 .logos-list li {
 	display: inline;
 }
+
+/* ===============================
+   Featured 
+   =============================== */
+
+.featured {
+	background: #333;
+	min-height: 100px;
+	color: #eee;
+	line-height: 140%;
+}
+
 
 /* ===============================
    More info (black tab and box)
