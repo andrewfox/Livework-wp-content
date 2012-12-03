@@ -66,6 +66,7 @@ get_header(); ?>
 							 	<div class="wrapper">
 							 	
 									<div class="featured_post">
+										<h3 class="section-title">Quote</h3>
 										<?php the_field('sector_page_quote');?>
 									</div>
 				
