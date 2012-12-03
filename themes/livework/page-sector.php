@@ -81,17 +81,17 @@ get_header(); ?>
 				 							
 				 							if ($theposttype == 'case_study') {
 				 								echo 'CASE STUDY';
-				 								$thumbnail = 'logo'
+				 								$thumbnail = 'logo';
 				 							}
 				 							
 				 							else if ($theposttype = 'people') {
 				 								echo 'LIVEWORKER';
-				 								$thumbnail = 'featured'
+				 								$thumbnail = 'featured';
 				 							}
 				 							
 				 							else if ($theposttype = 'theme') {
 				 								echo 'THEME';
-				 								$thumbnail = 'featured'
+				 								$thumbnail = 'featured';
 				 							}
 				 							
 				 							$theposttype="";
