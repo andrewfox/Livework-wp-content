@@ -80,15 +80,15 @@ get_header(); ?>
 				 							
 				 							
 				 							if ($theposttype = 'case_study') {
-				 								echo 'CASE STUDY'
+				 								echo 'CASE STUDY';
 				 							}
 				 							
 				 							elseif ($theposttype = 'person') {
-				 								echo 'LIVEWORKER'
+				 								echo 'LIVEWORKER';
 				 							}
 				 							
 				 							elseif ($theposttype = 'theme') {
-				 								echo 'THEME'
+				 								echo 'THEME';
 				 							}
 				 							
 				 							
