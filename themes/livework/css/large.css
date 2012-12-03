@@ -1,3 +1,6 @@
+/* @override 
+	http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/css/large.css */
+
 /* ===============================
    All screens (small+)
    =============================== */
@@ -80,14 +83,7 @@ Structure
    =============================== */
 
 #people li {
-	width: 20%;
-}
-
-.highlight #introduction {
-	background-color: rgba(256, 256, 256, 0.8);
-	position: absolute;
-	width: 100%;
-	border-bottom: none;
+	width: 16.66666666666667%;
 }
 
 /* ===============================

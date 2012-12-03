@@ -25,20 +25,58 @@ Black
 #231f20
 35,31,32
 
-White#ffffff255, 255, 255
-Grey#e9e8e8233, 233, 233
-Blue#027cb83, 124, 185
-Blue medium 
-#34abe152, 171, 226
-Blue light 
-#b1d7e6178, 215, 230
-Hard blue#094d6f10, 77, 111
-Purple#6d2061 
+White
+#ffffff
+255, 255, 255
+
+Grey
+#e9e8e8
+233, 233, 233
+
+Blue
+#027cb8
+3, 124, 185
+
+Blue medium 
+#34abe1
+52, 171, 226
+
+Blue light 
+#b1d7e6
+178, 215, 230
+
+Hard blue
+#094d6f
+10, 77, 111
+
+Purple
+#6d2061 
 109, 32, 97
-Orange#c36b28195, 107, 41
-Green#686f2f104, 112, 48
-Green light 
-#c1c3a0194, 196, 161
+
+Orange
+#c36b28
+195, 107, 41
+
+Green
+#686f2f
+104, 112, 48
+
+Green light 
+#c1c3a0
+194, 196, 161
+
+Yellow
+
+Red
+
+
+FONTS
+font-family:'Chaparral W01 It';
+font-family:'Chaparral W01 Lt';
+font-family:'Chaparral W01 Lt It';
+font-family:'Chaparral W01 Regular';
+font-family:'Chaparral W01 SmBd';
+font-family:'Chaparral W01 SmBd It';
  
 =============================== */
 
@@ -56,7 +94,7 @@ body {
 }
 
 h1, h2, h3 {
-	font-family:'ChaparralPro-LightCapt', Georgia, Times, serif;
+	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
 	line-height: 130%;
 }
 h1 {
@@ -515,7 +553,7 @@ img.right-arrow {
 	color: white;
 }
 .page-template-page-story-parent-php #introduction h2 {
-	font-family:'ChaparralPro-LightCapt', Georgia, Times, serif;
+	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
 	font-size: 24px;
 }
 .page-template-page-story-parent-php #introduction h2 a {
@@ -571,7 +609,7 @@ img.right-arrow {
 	margin: 0;
 	padding: 5px;
 	box-sizing: border-box;
-	color: #686f2f;
+	color: #eee;
 }
 #people li a:hover {
 	background: #686f2f;
@@ -586,12 +624,16 @@ img.right-arrow {
 #people a span {
 	position: absolute;
 	bottom: 10px;
-	left: 5px;
+	left: 0;
 	display: block;
 	font-weight: normal;
 	padding: 4px 8px;
-	background: rgba(256,256,256,0.9);
 	line-height: 120%;
+	width: 100%;
+	text-align: center;
+	box-sizing: border-box;
+	font-family: 'Chaparral W01 Regular', Georgia, Times, serif;
+	text-shadow: 0 0 2px #000000;
 }
 
 
