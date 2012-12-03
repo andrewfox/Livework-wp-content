@@ -67,7 +67,7 @@ get_header(); ?>
 							 	
 									<div><?php the_field('sector_page_quote');?></div>
 				
-									<?php $posts = get_field('featured_content');
+									<?php $posts5 = get_field('featured_content');
 				 					if( $posts5 ): ?>
 				 						<?php foreach( $posts5 as $post5): // variable must be called $post (IMPORTANT) ?>
 				 						<?php setup_postdata($post5); ?>
@@ -164,7 +164,7 @@ get_header(); ?>
 			 						<?php setup_postdata($post); ?>
 										<div  <?php post_class('clearfix'); ?>>
 											<div class="wrapper">
-												<?php the_post_thumbnail('medium'); ?>
+												<?php the_post_thumbnail('thumb-large'); ?>
 												<div>
 													<?php if( get_field('casestudies_one_liner') ): ?>
 													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span>with <span><?php the_title(); ?></span></span></a></h2>
