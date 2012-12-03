@@ -58,60 +58,63 @@ get_header(); ?>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
 					<p><?php the_field('sector_page_quote');?></p>
+					
+					
+					
+					<div class="logos-list">
+					
+						<div class="wrapper">
 						
-					<!--INSERT ALL LOGOS FOR SECTOR	-->	
-					<ul class="logos">
-					
-					<?php $thissector = $post->post_name ?>
-					
-					<?php 
-					
-					$args = array(
-					    'post_type'=> 'case_study',
-					    'taxonomy' => 'sectors',
-					    'term' => $thissector,
-				
-					    );              
-					
-					$the_query = new WP_Query( $args );
-					while ( $the_query->have_posts() ) : $the_query->the_post(); 
-				
-					
-					?>
-					
-					<?php if ( in_category('logo-only-case-study') ) { ?>
-					           <li>
-           							<?php 
-           							if( get_field('casestudies_logo') ):
-           								?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
-           							endif;
-           							?>
-           							</a>
-           
-           						</li>
-           						
-					 <?php } else { ?>
-					 
-					           <li>
-					           						
-           							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-           							<?php 
-           							if( get_field('casestudies_logo') ):
-           								?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
-           							endif;
-           							?>
-           							</a>
-           
-           						</li>
-					 <?php } ?>
-
+							<!--INSERT ALL LOGOS FOR SECTOR	-->	
+							<ul class="logos">
+							
+							<?php $thissector = $post->post_name ?>
+							
+							<?php 
+							
+							$args = array(
+							    'post_type'=> 'case_study',
+							    'taxonomy' => 'sectors',
+							    'term' => $thissector,
 						
+							    );              
+							
+							$the_query = new WP_Query( $args );
+							while ( $the_query->have_posts() ) : $the_query->the_post(); 
 						
-						<?php endwhile; ?>
-						<?php wp_reset_postdata() ?>
-										
-					</ul>
-					<!--END:INSERT ALL LOGOS FOR SECTOR:END	-->
+							
+							?>
+								<li>
+									<?php if ( in_category('logo-only-case-study') ) { ?>
+									<?php 
+									if( get_field('casestudies_logo') ):
+										?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
+									endif;
+									?>
+									</a>
+		
+									<?php } else { ?>
+									<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+									<?php 
+									if( get_field('casestudies_logo') ):
+										?><img src="<?php the_field('casestudies_logo'); ?>" alt="" /><?php
+									endif;
+									?>
+									</a>
+								
+									<?php } ?>
+								</li>
+								
+								
+								<?php endwhile; ?>
+								<?php wp_reset_postdata() ?>
+												
+							</ul>
+							<!--END:INSERT ALL LOGOS FOR SECTOR:END	-->
+					
+						</div>
+					
+					</div>
 					
 					<!--INSERT SELECTED CASE STUDIES -->
 				
