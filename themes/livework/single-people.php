@@ -63,6 +63,31 @@ get_header(); ?>
 						</div>
 					</div>
 				</article>
+				
+				<aside id="sidebar-more-posts">
+							
+					<h2 class="section-title">Posts by <?php the_title(); ?></h2>
+					
+					<?php $authorid = get_the_author_meta('ID') ?>
+					<?php $args = array( 
+										'author'=> $authorid,
+										'posts_per_page' => 5, 
+										
+										);
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<li>
+						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
+							<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
+						</a>
+					</li>
+					<?php endwhile; ?>
+					</ul>
+
+					<?php wp_reset_query();?>
+				
+				</aside>
+		
 			
 							<?php endwhile; ?>
 							
@@ -125,30 +150,7 @@ get_header(); ?>
 							
 							<!--END:INSERT FEATURED POSTS:END	-->
 			
-							<aside id="sidebar-more-posts">
-			
-								<h2 class="section-title">Posts by <?php the_title(); ?></h2>
-								
-								<?php $authorid = get_the_author_meta('ID') ?>
-								<?php $args = array( 
-													'author'=> $authorid,
-													'posts_per_page' => 5, 
-													
-													);
-								$loop = new WP_Query( $args );
-								while ( $loop->have_posts() ) : $loop->the_post(); ?>
-								<li>
-									<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
-										<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
-									</a>
-								</li>
-								<?php endwhile; ?>
-								</ul>
-			
-								<?php wp_reset_query();?>
-
-							</aside>
-								
+															
 						</div><!-- /#main -->
 					</div><!-- /.wrapper -->
 			
