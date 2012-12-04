@@ -21,8 +21,7 @@ get_header(); ?>
 					</div>
 					<?php
 					$the_query = new WP_Query( array( 'post_type' => array( 'post' ) ) );
-					while ( $the_query->have_posts() ) : $the_query->the_post();
-					?>
+					while ( $the_query->have_posts() ) : $the_query->the_post() ?>
 			
 					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> class="post">
 						
