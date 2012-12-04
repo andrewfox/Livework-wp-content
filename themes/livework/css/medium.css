@@ -241,11 +241,15 @@ ul#offices li:hover{
 aside#sidebar-more-posts {
 	width: 30%;
 	float: right;
+	border-top: 0px;
+	margin: 0 0px;
+	
 }
 
 article.people{
 	width: 60%;
 	float: left;
+	
 }
 .featured{
 	clear: left;
