@@ -20,7 +20,7 @@ get_header(); ?>
 						<h1 class="page-title">News</h1>
 					</div>
 					<?php
-					$the_query = new WP_Query( array( 'post_type' => array( 'post', 'page', 'movie', 'book' ) ) );
+					$the_query = new WP_Query( array( 'post_type' => array( 'post', 'case_study' ) ) );
 					while ( $the_query->have_posts() ) : $the_query->the_post();
 					?>
 			
