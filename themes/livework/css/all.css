@@ -780,7 +780,28 @@ img.right-arrow {
 
 /* === Person (single person page) =============================== */
 
+/* === Sector (single sector page, inc. lists of case studies) =============================== */
 
+.case_study {
+	padding: 20px 0;
+}
+.case_study .attachment-thumb-large {
+	float: left;
+	width: 25%;
+	height: auto;
+	padding-right: 20px;
+	box-sizing: border-box;
+}
+.case_study div.wrapper > div {
+	box-sizing: border-box;
+	float: left;
+	display: block;
+	width: 70%;
+}
+.case_study h2 {
+	padding: 0;
+	margin: 0;
+}
 
 
 /* === Extra aside =============================== */
