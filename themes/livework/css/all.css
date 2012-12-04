@@ -327,6 +327,7 @@ h1.page-title {
 #introduction h2 {
 	margin-top: 0;
 	font: bold 18px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-family:'Chaparral W01 Regular', Georgia, 'Times New Roman', serif;
 }
 #introduction h4 {
 	padding: 0 0 0.5em 0;
@@ -343,6 +344,22 @@ h1.page-title {
 }
 .excerpt p {
 	margin-bottom: 0.5em;
+}
+
+#introduction.alt {
+	background: none;
+}
+#introduction.alt h1 {
+	font: bold 14px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-bottom: 12px;
+	color: #222;
+}
+#introduction.alt h2 {
+	font-size: 26px;
+	margin-bottom: 12px;
+}
+#introduction.alt p {
+	font-size: 16px;
 }
 
 
@@ -483,12 +500,12 @@ div.entry-meta {
 .arrows{
 	width: 100%;
 	z-index: 101;
-	top: 40%;
+	top: 150px;
 	position: absolute;
 }
 
 .arrows img{
-	width: 5%;Se
+	width: 4%;
 	max-width: 70px;
 }
 
@@ -661,31 +678,11 @@ img.right-arrow {
 /* === Our Story main page =============================== */
 
 
-.page-template-page-story-parent-php #introduction {
-	background: none;
-	color: white;
-}
-.page-template-page-story-parent-php #introduction h2 {
-	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
-	font-size: 24px;
-	font-weight: normal;
-}
-.page-template-page-story-parent-php #introduction h2 a {
-	color: #fff;
-}
-.page-template-page-story-parent-php #introduction li {
-	width: 20%;
-	float: left;
-	box-sizing: border-box;
-	padding-right: 20px;
-}
-
 /* === Our Story single pages =============================== */
 
-.page-template-page-story-php #introduction {
-	border-bottom: 1px solid #c00;
+.page-template-page-story-php #introduction h2 {
+	color: #ed862e;
 }
-
 
 /* === Our Team =============================== */
 
@@ -795,15 +792,7 @@ img.right-arrow {
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
-.page-template-page-sector-php #introduction h1 {
-	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin-bottom: 12px;
-	color: #111;
-}
 .page-template-page-sector-php #introduction h2 {
-	font-size: 32px;
-	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
-	margin-bottom: 12px;
 	color: #9B1E20;
 }
 

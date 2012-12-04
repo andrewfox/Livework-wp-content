@@ -37,18 +37,13 @@ Structure
 /* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
 
 #introduction.alt {
-	top: 120px;
-	bottom: auto;
-	color: white;
-	background: none;
-	padding: 5% 47% 0 5%;
-	box-sizing: border-box;
-	/*background: rgba(0,0,0,0.3);*/
-	border: none;
-	vertical-align: middle;
+	padding-top: 9%;
 }
 #introduction.alt p {
 	font-size: 18px;
+}
+#introduction.alt h2 {
+	font-size: 32px;
 }
 
 /* === Homepage (specifics) =============================== */
@@ -84,17 +79,6 @@ Structure
 /* === Person (single person page) =============================== */
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
-
-.page-template-page-sector-php #introduction h1 {
-	color: #eee;
-}
-.page-template-page-sector-php #introduction h2 {
-	font-size: 38px;
-	color: #eee;
-	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
-	margin-bottom: 12px;
-}
-
 
 
 /* === Extra aside =============================== */

@@ -127,13 +127,8 @@ header {
 	margin-top: 0;
 	margin: 0 auto 0.3em;
 }
-
-#introduction h1 span {
-	white-space: nowrap;
-}
 #introduction h2 {
 	margin-top: 0;
-	font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 #introduction h4 {
 	padding: 0 0 0.5em 0;
@@ -153,19 +148,20 @@ header {
 	margin: 0;
 }
 #introduction.alt {
-	top: 120px;
+	top: 100px;
 	bottom: auto;
-	color: white;
-	background: none;
-	padding: 10px 47% 0 5%;
+	color: #eee;
+	padding: 3% 40% 0 5%;
 	box-sizing: border-box;
 	/*background: rgba(0,0,0,0.3);*/
 	border: none;
 	vertical-align: middle;
 }
-#introduction.alt p {
-	font-size: 16px;
+#introduction.alt h1,
+#introduction.alt h2 {
+	color: #eee;
 }
+
 
 /* === Homepage (specifics) =============================== */
 
@@ -181,52 +177,12 @@ header {
 
 /* === Hello arrows =============================== */
 
-#hello {
-	float: left;
-	display: block;
-}
-
-
-#hello div.arrows-l {
-	float: left;
-	position: absolute;
-	left: 0;
-	top: 400px;
-	top: 40%;
-	z-index: 101;
-}
-
-#hello div.arrows-r{
-	float: right;
-	position: absolute;
-	right: 0;
-	top: 40%;
-	z-index: 101;
-}
-
-.arrows{
-	width: 100%;
-	z-index: 101;
-	top: 40%;
-	position: absolute;
+.arrows {
+	top: 25%;
 }
 
 .arrows img{
-	width: 5%;
-	max-width: 70px;
 }
-
-.smallarrows{
-	width: 20px;
-	margin: 0 0px;
-}
-
-
-img.right-arrow {
-	right: 0;
-	position: absolute;
-}
-
 
 
 
@@ -323,16 +279,6 @@ article.people{
 /* === Person (single person page) =============================== */
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
-
-.page-template-page-sector-php #introduction h1 {
-	color: #eee;
-}
-.page-template-page-sector-php #introduction h2 {
-	font-size: 24px;
-	color: #eee;
-	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
-	margin-bottom: 12px;
-}
 
 
 /* === Extra aside =============================== */
