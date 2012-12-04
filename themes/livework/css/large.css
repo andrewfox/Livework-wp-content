@@ -30,8 +30,12 @@ Structure
 
 
 /* === Header =============================== */
-
-
+.menu li a {
+	display: inline-block;
+ 	padding: 10px 10px;
+	border-bottom: none;
+	background: none;
+}
 /* === Content (everything between header and footer) =============================== */
 
 /* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */

@@ -54,7 +54,7 @@ header {
 }
 .menu li a {
 	display: inline-block;
- 	padding: 10px 7px;
+ 	padding: 10px 5px;
 	border-bottom: none;
 	background: none;
 }
@@ -99,6 +99,11 @@ header {
 	padding: 0; 
 	margin: 0;
 	line-height: 0;
+}
+
+#splash img.wp-post-image {
+	width: 100%;
+	height: auto;
 }
 
 /* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
@@ -179,9 +184,6 @@ header {
 
 .arrows {
 	top: 25%;
-}
-
-.arrows img{
 }
 
 

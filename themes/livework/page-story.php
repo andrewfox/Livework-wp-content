@@ -16,7 +16,6 @@ get_header(); ?>
 				<div id="splash" class="main">
 		
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					
 					<?php the_post_thumbnail('full'); ?>
 					
 					<div id="introduction" class="alt">
