@@ -1,9 +1,7 @@
 /* @override 
 	http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/css/all.css */
 
-/* ===============================
-   All screens (small+)
-   =============================== */
+/* === All screens (small+) =============================== */
 
 
 
@@ -82,9 +80,7 @@ font-family:'Chaparral W01 SmBd It';
 
 
 
-/* ===============================
-   Basic HTML
-   =============================== */
+/* === Basic HTML =============================== */
 
 body {
 	color: #222;
@@ -135,9 +131,7 @@ a:hover {
 
 
 
-/* ===============================
-   General (used in multiple situations)
-   =============================== */
+/* === General (used in multiple situations) =============================== */
 
 .wrapper {
 	padding-right: 20px;
@@ -164,9 +158,7 @@ a:hover {
 }
 
 
-/* ===============================
-   Header
-   =============================== */
+/* === Header =============================== */
 
 
 header {
@@ -274,9 +266,7 @@ header h1 a img {
 }
 
 
-/* ===============================
-   Content (everything between header and footer)
-   =============================== */
+/* === Content (everything between header and footer) =============================== */
 
 #content {
 	padding: 0px;
@@ -308,9 +298,7 @@ h1.page-title {
 }
 
 
-/* ===============================
-   Homepage (specifics)
-   =============================== */
+/* === Homepage (specifics) =============================== */
 
 #world {
 	margin-top: 500px;
@@ -357,9 +345,7 @@ h1.page-title {
 
 
 
-/* ===============================
-   News (blog)
-   =============================== */
+/* === News (blog) =============================== */
 
 
 h2.entry-title {
@@ -420,9 +406,7 @@ div.entry-meta {
 	height: auto;
 }
 
-/* ===============================
-   Hello arrows
-   =============================== */
+/* === Hello arrows =============================== */
 
 
 #hello {
@@ -474,9 +458,7 @@ img.right-arrow {
 
 
 
-/* ===============================
-   Sections (repeated blocks of content on Story and Sectors pages)
-   =============================== */
+/* === Sections (repeated blocks of content on Story and Sectors pages) =============================== */
 
 /*Story Section*/
 
@@ -513,9 +495,7 @@ img.right-arrow {
 }
 
 
-/* ===============================
-   Logos list
-   =============================== */
+/* === Logos list =============================== */
    
 .logos-list {
    	background: #007cb7;
@@ -527,15 +507,18 @@ img.right-arrow {
 }
 .logos-list ul {
 	margin: -10px 0 0 0;
+	padding: 0;
 }
 
 .logos-list li {
-	display: inline;
-	width: 25%;
-	
+	display: block;
+	float: left;
+	width: 50%;
+	box-sizing: border-box;
 }
 .logos-list li img {
 	opacity: 0.5;
+	width: 100%;
 }
 .logos-list a img {
 	opacity: 1;
@@ -544,9 +527,7 @@ img.right-arrow {
 	opacity: 0.7;
 }
 
-/* ===============================
-   Case studies list
-   =============================== */
+/* === Case studies list =============================== */
 
 .case_study:nth-child(even) {
 	background-color: #ecebeb;
@@ -554,9 +535,7 @@ img.right-arrow {
 
 
 
-/* ===============================
-   Featured 
-   =============================== */
+/* === Featured =============================== */
 
 .featured {
 	background: #333;
@@ -567,7 +546,7 @@ img.right-arrow {
 }
 .featured_post {
 	box-sizing: border-box;
-	width: 25%;
+	width: 50%;
 	float: left;
 	padding-right: 20px;
 }
@@ -600,9 +579,7 @@ img.right-arrow {
 }
 
 
-/* ===============================
-   More info (black tab and box)
-   =============================== */
+/* === More info (black tab and box) =============================== */
 
 
 #more-info {
@@ -629,9 +606,7 @@ img.right-arrow {
 
 
 
-/* ===============================
-   Our Story
-   =============================== */
+/* === Our Story =============================== */
 
 .page-template-page-story-parent-php #introduction {
 	background: none;
@@ -653,9 +628,7 @@ img.right-arrow {
 }
 
 
-/* ===============================
-   Our Team
-   =============================== */
+/* === Our Team =============================== */
 
 .single-people #introduction h1,
 .single-people h3 a,
@@ -750,9 +723,7 @@ img.right-arrow {
 }
 
 
-/* ===============================
-   Introduction (segment that sits atop highlight blog posts, case studies, people)
-   =============================== */
+/* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
 
 
 #introduction {
@@ -803,16 +774,12 @@ img.right-arrow {
 	border-bottom: 1px solid #c00;
 }
 
-/* ===============================
-   Person (single person page)
-   =============================== */
+/* === Person (single person page) =============================== */
 
 
 
 
-/* ===============================
-   Extra aside
-   =============================== */
+/* === Extra aside =============================== */
 
 
 .extra {
@@ -833,9 +800,7 @@ img.right-arrow {
 	padding-bottom: 10px;
 }
 
-/* ===============================
-   Aside (more posts
-   =============================== */
+/* === Aside (more posts =============================== */
 
 aside#sidebar-more-posts {
 	border-top: 1px solid #ccc;
@@ -870,9 +835,7 @@ aside#sidebar-more-posts {
 
 
 
-/* ===============================
-   Footer
-   =============================== */
+/* === Footer =============================== */
 
 
 footer {
@@ -905,9 +868,7 @@ footer .menu a {
 
 
 
-/* ===============================
-   Symbolset
-   =============================== */
+/* === Symbolset =============================== */
 
 #menu-item-22 a, button.menu-reveal span,
 #menu-item-43 a, #menu-item-44 a,

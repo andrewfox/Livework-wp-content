@@ -117,7 +117,7 @@ get_header(); ?>
 							
 							<!--INSERT ALL LOGOS FOR SECTOR	-->	
 							
-							<div class="logos-list">
+							<div class="logos-list clearfix">
 							
 								<div class="wrapper">
 								
