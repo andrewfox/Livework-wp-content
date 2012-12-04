@@ -50,6 +50,19 @@ get_header(); ?>
 				</div>
 				
 				
+
+
+
+				<article id="people-<?php the_ID(); ?>" class="main clearfix ">
+					<div class="wrapper">
+						<div id="main" class="clearfix">
+			
+							<div class="entry-content left-col">
+								<?php the_content(); ?>
+							</div>
+			
+							<?php endwhile; ?>
+							
 <!--INSERT FEATURED POSTS	-->	
 							
 							<div class="featured clearfix">
@@ -106,17 +119,6 @@ get_header(); ?>
 							
 							
 							<!--END:INSERT FEATURED POSTS:END	-->
-
-
-				<article id="people-<?php the_ID(); ?>" class="main clearfix ">
-					<div class="wrapper">
-						<div id="main" class="clearfix">
-			
-							<div class="entry-content left-col">
-								<?php the_content(); ?>
-							</div>
-			
-							<?php endwhile; ?>
 			
 							<aside id="sidebar-more-posts">
 			
