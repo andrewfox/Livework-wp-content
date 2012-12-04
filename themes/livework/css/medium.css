@@ -152,38 +152,20 @@ header {
 	padding-bottom: 0.7em;
 	margin: 0;
 }
-.page-template-page-story-php #introduction,
-.page-template-page-sector-php #introduction {
+#introduction.alt {
 	top: 120px;
 	bottom: auto;
 	color: white;
 	background: none;
-	padding: 5% 47% 0 5%;
+	padding: 10px 47% 0 5%;
 	box-sizing: border-box;
 	/*background: rgba(0,0,0,0.3);*/
 	border: none;
 	vertical-align: middle;
 }
-.page-template-page-story-php #introduction h1 {
-	font-size: 32px;
-	color: #eee;
-}
-.page-template-page-story-php #introduction .excerpt {
-	color: white;
+#introduction.alt p {
 	font-size: 16px;
 }
-.page-template-page-sector-php #introduction h2 {
-	font-size: 32px;
-	color: #eee;
-	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
-	margin-bottom: 12px;
-}
-.page-template-page-sector-php #introduction h1 {
-	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #eee;
-	margin-bottom: 12px;
-}
-
 
 /* === Homepage (specifics) =============================== */
 
@@ -342,17 +324,6 @@ article.people{
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
-.page-template-page-sector-php #introduction {
-	top: 120px;
-	bottom: auto;
-	color: white;
-	background: none;
-	padding: 5% 47% 0 5%;
-	box-sizing: border-box;
-	/*background: rgba(0,0,0,0.3);*/
-	border: none;
-	vertical-align: middle;
-}
 .page-template-page-sector-php #introduction h1 {
 	color: #eee;
 }
@@ -361,9 +332,6 @@ article.people{
 	color: #eee;
 	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
 	margin-bottom: 12px;
-}
-.page-template-page-sector-php #introduction p {
-	font-size: 16px;
 }
 
 

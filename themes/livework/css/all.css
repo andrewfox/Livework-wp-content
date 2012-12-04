@@ -795,14 +795,6 @@ img.right-arrow {
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
-.page-template-page-sector-php #introduction {
-	background: none;
-	padding: 20px 0;
-	box-sizing: border-box;
-	/*background: rgba(0,0,0,0.3);*/
-	border: none;
-	vertical-align: middle;
-}
 .page-template-page-sector-php #introduction h1 {
 	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin-bottom: 12px;
