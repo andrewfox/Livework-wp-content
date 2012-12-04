@@ -21,8 +21,8 @@ get_header(); ?>
 					
 					<div id="introduction" class="alt">
 						<div class="wrapper">
-							<h4><?php the_title(); ?></h4>
-							<h1><?php the_field('story_page_headline'); ?></h1>
+							<h1><?php the_title(); ?></h1>
+							<h3><?php the_field('story_page_headline'); ?></h3>
 							<div class="excerpt">
 								<?php the_content(); ?>
 							</div>
