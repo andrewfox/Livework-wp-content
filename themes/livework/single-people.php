@@ -54,14 +54,12 @@ get_header(); ?>
 
 		<div class="wrapper">
 				<article id="people-<?php the_ID(); ?>" class="main clearfix people ">
-					<div class="wrapper">
 						<div id="main" class="clearfix">
 			
 							<div class="entry-content left-col">
 								<?php the_content(); ?>
 							</div>
 						</div>
-					</div>
 				</article>
 				
 				<aside id="sidebar-more-posts">
