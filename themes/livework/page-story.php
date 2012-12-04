@@ -22,7 +22,7 @@ get_header(); ?>
 					<div id="introduction" class="alt">
 						<div class="wrapper">
 							<h1><?php the_title(); ?></h1>
-							<h3><?php the_field('story_page_headline'); ?></h3>
+							<h2><?php the_field('story_page_headline'); ?></h2>
 							<div class="excerpt">
 								<?php the_content(); ?>
 							</div>
