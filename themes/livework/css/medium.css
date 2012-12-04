@@ -101,6 +101,89 @@ header {
 	line-height: 0;
 }
 
+/* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
+
+#introduction {
+	border-bottom: none;
+	background: #eee;
+	background: rgba(256,256,256,0.6);
+	padding-top: 0.5em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.highlight #introduction {
+	background: #eee;
+	background: rgba(256,256,256,0.6);
+	padding-top: 0.5em;
+	border-bottom: none;
+}
+
+#introduction h1 {
+	font-size: 36px;
+	line-height: normal;
+	color: #6F0B61;
+	margin-top: 0;
+	margin: 0 auto 0.3em;
+}
+
+#introduction h1 span {
+	white-space: nowrap;
+}
+#introduction h2 {
+	margin-top: 0;
+	font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+#introduction h4 {
+	padding: 0 0 0.5em 0;
+	margin: 0;
+	line-height: 1em;
+}
+#introduction h4 a {
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #222;
+}
+.excerpt {
+	margin-top: 0.25em;
+	font-size: 19px;
+}
+.excerpt p {
+	padding-bottom: 0.7em;
+	margin: 0;
+}
+.page-template-page-story-php #introduction,
+.page-template-page-sector-php #introduction {
+	top: 120px;
+	bottom: auto;
+	color: white;
+	background: none;
+	padding: 5% 47% 0 5%;
+	box-sizing: border-box;
+	/*background: rgba(0,0,0,0.3);*/
+	border: none;
+	vertical-align: middle;
+}
+.page-template-page-story-php #introduction h1 {
+	font-size: 32px;
+	color: #eee;
+}
+.page-template-page-story-php #introduction .excerpt {
+	color: white;
+	font-size: 16px;
+}
+.page-template-page-sector-php #introduction h2 {
+	font-size: 32px;
+	color: #eee;
+	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
+	margin-bottom: 12px;
+}
+.page-template-page-sector-php #introduction h1 {
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #eee;
+	margin-bottom: 12px;
+}
+
 
 /* === Homepage (specifics) =============================== */
 
@@ -199,7 +282,7 @@ img.right-arrow {
 
 
 
-/* === Our Story =============================== */
+/* === Our Story main page =============================== */
 
 ul.list-pages{
 }
@@ -209,6 +292,8 @@ ul.list-pages li {
 	float: left;
 	display: inline-block;
 }
+
+/* === Our Story single pages =============================== */
 
 
 /* === Our Team =============================== */
@@ -253,80 +338,33 @@ article.people{
 }
 
 
+/* === Person (single person page) =============================== */
 
-/* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
+/* === Sector (single sector page, inc. lists of case studies) =============================== */
 
-#introduction {
-	border-bottom: none;
-	background: #eee;
-	background: rgba(256,256,256,0.6);
-	padding-top: 0.5em;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-}
-
-.highlight #introduction {
-	background: #eee;
-	background: rgba(256,256,256,0.6);
-	padding-top: 0.5em;
-	border-bottom: none;
-}
-
-#introduction h1 {
-	font-size: 36px;
-	line-height: normal;
-	color: #6F0B61;
-	margin-top: 0;
-	margin: 0 auto 0.3em;
-}
-
-#introduction h1 span {
-	white-space: nowrap;
-}
-#introduction h2 {
-	margin-top: 0;
-	font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-#introduction h4 {
-	padding: 0 0 0.5em 0;
-	margin: 0;
-	line-height: 1em;
-}
-#introduction h4 a {
-	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #222;
-}
-.excerpt {
-	margin-top: 0.25em;
-	font-size: 19px;
-}
-.excerpt p {
-	padding-bottom: 0.7em;
-	margin: 0;
-}
-.page-template-page-story-php #introduction {
-	top: 0;
+.page-template-page-sector-php #introduction {
+	top: 120px;
 	bottom: auto;
 	color: white;
 	background: none;
-	padding: 25% 47% 0 5%;
+	padding: 5% 47% 0 5%;
 	box-sizing: border-box;
 	/*background: rgba(0,0,0,0.3);*/
 	border: none;
+	vertical-align: middle;
 }
-.page-template-page-story-php #introduction h1 {
-	font-size: 32px;
-	color: white;
+.page-template-page-sector-php #introduction h1 {
+	color: #eee;
 }
-.page-template-page-story-php #introduction .excerpt {
-	color: white;
+.page-template-page-sector-php #introduction h2 {
+	font-size: 24px;
+	color: #eee;
+	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
+	margin-bottom: 12px;
+}
+.page-template-page-sector-php #introduction p {
 	font-size: 16px;
 }
-
-/* === Person (single person page) =============================== */
-
-
 
 
 /* === Extra aside =============================== */

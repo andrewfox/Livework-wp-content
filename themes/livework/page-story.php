@@ -19,7 +19,7 @@ get_header(); ?>
 					
 					<?php the_post_thumbnail('full'); ?>
 					
-					<div id="introduction" >
+					<div id="introduction" class="alt">
 						<div class="wrapper">
 							<h4><?php the_title(); ?></h4>
 							<h1><?php the_field('story_page_headline'); ?></h1>

@@ -298,6 +298,53 @@ h1.page-title {
 	height: auto;
 }
 
+/* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
+
+
+#introduction {
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+	padding-top: 0.5em;
+}
+
+.highlight #introduction {
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+	padding-top: 0.5em;
+}
+
+#introduction h1 {
+	font-size: 36px;
+	line-height: normal;
+	color: #6F0B61;
+	margin-top: 0;
+	margin: 0 auto 0.3em;
+}
+
+#introduction h1 span {
+	font-size: 80%;
+}
+#introduction h2 {
+	margin-top: 0;
+	font: bold 18px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+#introduction h4 {
+	padding: 0 0 0.5em 0;
+	margin: 0;
+	line-height: 1em;
+}
+#introduction h4 a {
+	font: bold 14px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #222;
+}
+.excerpt {
+	margin-top: 0.25em;
+	font-size: 19px;
+}
+.excerpt p {
+	margin-bottom: 0.5em;
+}
+
 
 /* === Homepage (specifics) =============================== */
 
@@ -441,7 +488,7 @@ div.entry-meta {
 }
 
 .arrows img{
-	width: 5%;
+	width: 5%;Se
 	max-width: 70px;
 }
 
@@ -611,7 +658,8 @@ img.right-arrow {
 
 
 
-/* === Our Story =============================== */
+/* === Our Story main page =============================== */
+
 
 .page-template-page-story-parent-php #introduction {
 	background: none;
@@ -630,6 +678,12 @@ img.right-arrow {
 	float: left;
 	box-sizing: border-box;
 	padding-right: 20px;
+}
+
+/* === Our Story single pages =============================== */
+
+.page-template-page-story-php #introduction {
+	border-bottom: 1px solid #c00;
 }
 
 
@@ -735,59 +789,33 @@ img.right-arrow {
 }
 
 
-/* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
 
-
-#introduction {
-	border-bottom: 1px solid #ccc;
-	background: #eee;
-	padding-top: 0.5em;
-}
-
-.highlight #introduction {
-	border-bottom: 1px solid #ccc;
-	background: #eee;
-	padding-top: 0.5em;
-}
-
-#introduction h1 {
-	font-size: 36px;
-	line-height: normal;
-	color: #6F0B61;
-	margin-top: 0;
-	margin: 0 auto 0.3em;
-}
-
-#introduction h1 span {
-	font-size: 80%;
-}
-#introduction h2 {
-	margin-top: 0;
-	font: bold 18px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-}
-#introduction h4 {
-	padding: 0 0 0.5em 0;
-	margin: 0;
-	line-height: 1em;
-}
-#introduction h4 a {
-	font: bold 14px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #222;
-}
-.excerpt {
-	margin-top: 0.25em;
-	font-size: 19px;
-}
-.excerpt p {
-	margin-bottom: 0.5em;
-}
-.page-template-page-story-php #introduction {
-	border-bottom: 1px solid #c00;
-}
 
 /* === Person (single person page) =============================== */
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
+
+.page-template-page-sector-php #introduction {
+	background: none;
+	padding: 20px 0;
+	box-sizing: border-box;
+	/*background: rgba(0,0,0,0.3);*/
+	border: none;
+	vertical-align: middle;
+}
+.page-template-page-sector-php #introduction h1 {
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	margin-bottom: 12px;
+	color: #111;
+}
+.page-template-page-sector-php #introduction h2 {
+	font-size: 32px;
+	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
+	margin-bottom: 12px;
+	color: #9B1E20;
+}
+
+
 
 .case_study {
 	padding: 20px 0;
