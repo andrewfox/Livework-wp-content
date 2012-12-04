@@ -60,8 +60,13 @@ get_header(); ?>
 							<div class="entry-content left-col">
 								<?php the_content(); ?>
 							</div>
+						</div>
+					</div>
+				</article>
 			
 							<?php endwhile; ?>
+							
+							
 							
 <!--INSERT FEATURED POSTS	-->	
 							
