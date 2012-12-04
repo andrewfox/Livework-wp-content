@@ -238,6 +238,19 @@ ul#offices li{
 ul#offices li:hover{
 }
 
+aside#sidebar-more-posts {
+	width: 30%;
+	float: right;
+}
+
+article.people{
+	width: 60%;
+	float: left;
+}
+.featured{
+	clear: left;
+}
+
 
 /* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
 

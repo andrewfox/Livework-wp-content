@@ -52,7 +52,7 @@ get_header(); ?>
 				
 
 
-
+		<div class="wrapper">
 				<article id="people-<?php the_ID(); ?>" class="main clearfix people ">
 					<div class="wrapper">
 						<div id="main" class="clearfix">
@@ -87,6 +87,7 @@ get_header(); ?>
 					<?php wp_reset_query();?>
 				
 				</aside>
+			</div>
 		
 			
 							<?php endwhile; ?>
