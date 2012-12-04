@@ -67,7 +67,8 @@ get_header(); ?>
 							 	
 									<div class="featured_post">
 										<h3 class="section-title">Quote</h3>
-										<blockquote><?php the_field('sector_page_quote');?></blockquote>
+										<blockquote><?php the_field('featured_quote');?></blockquote>
+										<h4><?php the_field('featured_quote_attribution');?></h4>
 									</div>
 				
 									<?php $posts = get_field('featured_content');
