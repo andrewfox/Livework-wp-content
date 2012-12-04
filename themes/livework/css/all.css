@@ -699,6 +699,13 @@ img.right-arrow {
 	text-shadow: 0 0 2px #000000;
 }
 
+#sidebar-more-posts li {
+	display: block;
+	clear: both;
+	float: left;
+	margin: 10px 0;
+}
+
 
 /* Offices picker (used on Team page) */
 
