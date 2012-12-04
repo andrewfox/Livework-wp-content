@@ -544,6 +544,7 @@ img.right-arrow {
 	color: #eee;
 	line-height: 140%;
 	padding: 20px 0;
+	clear: left;
 }
 .featured_post {
 	box-sizing: border-box;
@@ -836,7 +837,7 @@ img.right-arrow {
 aside#sidebar-more-posts {
 	border-top: 1px solid #ccc;
 	padding: 20px 0;
-	margin: 0 -20px;
+	margin: 0;
 }
 
 #sidebar-more-posts ul a{
