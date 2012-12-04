@@ -175,7 +175,7 @@ header {
 
 header h1 {
 	font-size: 0.5em;
-	padding: 10px 21px 9px 20px;
+	padding: 10px 10px 9px 20px;
 	margin: 0;
 	display: inline-block;
 	vertical-align: top;
@@ -237,7 +237,7 @@ header h1 a img {
 }
 .menu li a {
 	display: inline-block;
-	padding: 10px 15px 10px 20px;
+	padding: 10px 10px 10px 10px;
 }
 .menu li a:hover {
 	color: #fff;
@@ -253,7 +253,16 @@ header h1 a img {
 	clear: both;
 	margin: 0;
 	background: #333;
-	background: rgba(1,1,1,0.8);
+	background: rgba(1,1,1,0.5);
+	text-align: center;
+}
+#menu-secondary:hover {
+	background: rgba(1,1,1,0.6);
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 }
 #menu-countries {
 	background: #222;
