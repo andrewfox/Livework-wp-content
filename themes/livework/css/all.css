@@ -148,6 +148,7 @@ a:hover {
 	margin-top: 0;
 	text-transform: uppercase;
 	font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: 0.1em;
 }
 
 /* User inputted image stuff */
@@ -549,6 +550,9 @@ img.right-arrow {
 	width: 50%;
 	float: left;
 	padding-right: 20px;
+}
+.featured_post:nth-child(3) {
+	clear: both;
 }
 .featured_post img {
 	width: 100%;
