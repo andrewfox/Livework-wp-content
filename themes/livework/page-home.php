@@ -90,7 +90,7 @@ get_header(); ?>
 							$posts = get_field('featured_content');
 							
 		 					if( $posts ): ?>
-	 						<?php foreach( $maxfeatures as $post): // variable must be called $post (IMPORTANT) ?>
+	 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 	 						<?php setup_postdata($post); ?>
 	 						<div class="featured_post">
 	 							<h3 class="section-title">
