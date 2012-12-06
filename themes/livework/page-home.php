@@ -100,8 +100,7 @@ get_header(); ?>
 	 								if (is_front_page()) {
 										$terms = wp_get_object_terms($post->ID, 'sectors');
 										echo '<a href="'.get_term_link($terms[0]->slug, $taxonomy).'">'.$terms[0]->name.'</a>';   
-										}
-	 								} else {
+									} else {
 		 								echo 'Case study';
 	 								}
 	 								$thumbnail = 'logo';
