@@ -98,10 +98,7 @@ get_header(); ?>
 	 							$theposttype = get_post_type( $post->ID );
 	 							if ($theposttype == 'case_study') {
 	 								if (is_front_page()) {
-										$taxonomies=get_taxonomies('','names'); 
-										foreach ($taxonomies as $taxonomy ) {
-										  echo '<p>'. $taxonomy. '</p>';
-										}
+										get_the_term_list( $post->ID, 'sectors' )
 	 								} else {
 		 								echo 'Case study';
 	 								}
