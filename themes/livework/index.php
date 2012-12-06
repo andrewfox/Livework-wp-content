@@ -28,7 +28,15 @@ get_header(); ?>
 						<div class="wrapper">
 						
 							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-	
+		
+							<?php if ( has_post_thumbnail() ) {
+								echo '<div class="post-image blog-image">';
+									the_post_thumbnail('large');
+								echo '</div>';
+							} ?>
+							<div class="entry-content">
+								<?php the_excerpt(); ?>
+							</div>
 							
 							<div class="entry-meta">
 								<?php 
@@ -53,14 +61,7 @@ get_header(); ?>
 								
 							</div>
 							
-							<?php if ( has_post_thumbnail() ) {
-								echo '<div class="post-image blog-image">';
-									the_post_thumbnail('large');
-								echo '</div>';
-							} ?>
-							<div class="entry-content">
-								<?php the_excerpt(); ?>
-							</div>
+							
 
 						</div><!-- /.wrapper -->
 
