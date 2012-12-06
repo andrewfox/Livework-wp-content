@@ -99,7 +99,7 @@ get_header(); ?>
 	 							if ($theposttype == 'case_study') {
 	 								if (is_front_page()) {
 										$terms = wp_get_object_terms($post->ID, 'sectors');
-										echo '<a href="'.get_term_link($terms[0]->slug, $taxonomy).'">'.$terms[0]->name.'</a>';   
+										echo '<a href="'.get_term_link($terms[0]->slug, 'sectors').'">'.$terms[0]->name.'</a>';   
 									} else {
 		 								echo 'Case study';
 	 								}
