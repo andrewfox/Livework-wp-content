@@ -48,8 +48,8 @@ if ($feature == true) {
 					<div id="introduction" >
 						<div class="wrapper">
 							<h4><a href="<?php bloginfo('url'); ?>/our-clients-stories">Our Clients Stories</a></h4>
-							<h1><?php the_field('casestudies_one_liner'); ?></span></h1>
-							<h2>with <?php the_title(); ?></span></h2>
+							<h1><?php the_field('casestudies_one_liner'); ?></h1>
+							<h2>with <?php the_title(); ?></h2>
 							<div class="excerpt">
 								<?php the_excerpt() ?>
 							</div>

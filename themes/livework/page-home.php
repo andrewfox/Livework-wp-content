@@ -77,9 +77,20 @@ get_header(); ?>
 								<p><?php the_field('featured_quote_attribution');?></p>
 							</div>
 							<?php endif; ?>
-							<?php $posts = get_field('featured_content');
+
+							<?php 
+							// works out how many features there are
+							if (the_field('featured_quote')) {
+								$maxfeatures = 3; // there is a feature quote
+							} elseif () {
+								$maxfeatures = 8; // homepage
+							} else {
+								$maxfeatures = 4; // no quote, not the homepage
+							}
+							$posts = get_field('featured_content');
+							
 		 					if( $posts ): ?>
-	 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+	 						<?php foreach( $maxfeatures as $post): // variable must be called $post (IMPORTANT) ?>
 	 						<?php setup_postdata($post); ?>
 	 						<div class="featured_post">
 	 							<h3 class="section-title">
@@ -105,11 +116,15 @@ get_header(); ?>
 										the_post_thumbnail('thumb-large');
 									} ?>
 	
+									<?php if ($theposttype == 'case_study') { ?>
+										<span><?php the_field('casestudies_one_liner'); ?></span>
+									<?php } ?>
+
 									<?php if ($theposttype == 'people') { ?>
 										<span><?php the_title(); ?></span>
 									<?php } ?>
 	
-									</a>
+								</a>
 	 						</div>
 	 						<?php endforeach; ?>
 		 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
