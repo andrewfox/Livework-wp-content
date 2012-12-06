@@ -20,7 +20,7 @@ get_header(); ?>
 						<h1 class="page-title">News</h1>
 					</div>
 					<?php
-					$the_query = new WP_Query( array( 'post_type' => array( 'post, case_study' ) ) );
+					$the_query = new WP_Query( array( 'post_type' => array( 'post, case_studys' ) ) );
 					while ( $the_query->have_posts() ) : $the_query->the_post() ?>
 			
 					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> class="post">
