@@ -23,11 +23,11 @@ get_header(); ?>
 					$the_query = new WP_Query( array( 'post_type' => array( 'post', 'case_study' ) ) );
 					while ( $the_query->have_posts() ) : $the_query->the_post() ?>
 			
-					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> class="post">
+					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 						
 						<div class="wrapper">
 						
-							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></a></h2>
 		
 							<?php if ( has_post_thumbnail() ) {
 								echo '<div class="post-image blog-image">';

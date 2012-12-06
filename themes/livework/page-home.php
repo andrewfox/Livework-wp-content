@@ -160,7 +160,7 @@ get_header(); ?>
 
 					<div class="latest-mini clearfix">
 
-						<h4><a href="<?php bloginfo('url'); ?>/news">Livework latest</a></h4>
+						<h2><a href="<?php bloginfo('url'); ?>/latest">Latest from Livework</a></h2>
 						<ul>
 							<?php
 							// The Query
@@ -168,17 +168,16 @@ get_header(); ?>
 							
 							// The Loop
 							while ( $the_query->have_posts() ) : $the_query->the_post();?>
-								<li>
-									<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-									<?php 
-									if(has_post_thumbnail()) :
-										the_post_thumbnail('thumbnail'); 
-										else :				
-										endif;
-									the_title(); 
-									?>
-									</a>
-								</li>
+							<li>
+								<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+								<?php 
+								if(has_post_thumbnail()) :
+									the_post_thumbnail('thumb-large'); 
+								endif;?>
+								<span><?php the_title();?><span class="entry-date"><?php the_time('j/m/Y') ?></span></span>
+								?>
+								</a>
+							</li>
 							<?php endwhile;
 							
 							// Reset Post Data
