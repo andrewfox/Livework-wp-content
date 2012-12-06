@@ -100,7 +100,9 @@ header {
 	margin: 0;
 	line-height: 0;
 }
-
+.big {
+	min-height: 400px;
+}
 #splash img.wp-post-image {
 	width: 100%;
 	height: auto;

@@ -27,7 +27,23 @@ Structure
 
 /* === General (used in multiple situations) =============================== */
 
-
+#splash {
+	position: relative; 
+	z-index: 0; 
+	width: 100%; 
+	min-height: 160px; 
+	overflow: hidden;
+	padding: 0; 
+	margin: 0;
+	line-height: 0;
+}
+.big {
+	max-height: 620px;
+}
+#splash img.wp-post-image {
+	width: 1102px;
+	height: 620px;
+}
 
 /* === Header =============================== */
 .menu li a {

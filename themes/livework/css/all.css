@@ -302,9 +302,19 @@ h1.page-title {
 
 /*Splash*/
 
+.big {
+	display: ;
+	box-sizing: border-box;
+	line-height: 0;
+	background-color: #ff3bf2;
+	text-align: center;
+	vertical-align: middle;
+}
+
 #splash img.wp-post-image {
 	width: 100%;
 	height: auto;
+	margin-top: ;
 }
 
 /* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
@@ -335,7 +345,6 @@ h1.page-title {
 }
 #introduction h2 {
 	margin-top: 0;
-	font: bold 18px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	font-family:'Chaparral W01 Regular', Georgia, 'Times New Roman', serif;
 }
 #introduction h4 {
@@ -368,7 +377,8 @@ h1.page-title {
 	margin-bottom: 12px;
 }
 #introduction.alt p {
-	font-size: 15px;
+	font-size: 16px;
+	font-family:'Chaparral W01 Regular', Georgia, 'Times New Roman', serif;
 }
 
 

@@ -11,9 +11,8 @@
 get_header(); ?>
 
 
-
-				<div id="splash">
-					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+				<div id="splash" <?php if (the_field('colour')) { echo 'style="background-color: #'.the_field('colour').'"'}; ?>>
 					<div class="big"><?php the_post_thumbnail('large'); ?></div>
 					<div id="introduction" class="alt">
 						<div class="wrapper">
@@ -23,9 +22,8 @@ get_header(); ?>
 							</div>
 						</div>
 					</div>
-					<?php endwhile; ?>
 				</div>
-
+				<?php endwhile; ?>
 
 
 				<div id="hello" class="arrows">
