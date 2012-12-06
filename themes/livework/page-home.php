@@ -82,7 +82,7 @@ get_header(); ?>
 							// works out how many features there are
 							if (the_field('featured_quote')) {
 								$maxfeatures = 3; // there is a feature quote
-							} elseif () {
+							} elseif (is_home()) {
 								$maxfeatures = 8; // homepage
 							} else {
 								$maxfeatures = 4; // no quote, not the homepage
