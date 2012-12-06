@@ -18,7 +18,6 @@ get_header(); ?>
 					<?php the_post_thumbnail('large'); ?>
 					<div id="introduction" class="alt">
 						<div class="wrapper">
-							<h1><?php the_title(); ?></h1>
 							<div class="excerpt">
 								<?php the_content() ?>
 							</div>
