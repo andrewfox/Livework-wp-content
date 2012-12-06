@@ -97,7 +97,14 @@ get_header(); ?>
 	 							<?php
 	 							$theposttype = get_post_type( $post->ID );
 	 							if ($theposttype == 'case_study') {
-	 								echo 'Case study';
+	 								if (is_home()) {
+										$taxonomies=get_taxonomies('','names'); 
+										foreach ($taxonomies as $taxonomy ) {
+										  echo '<p>'. $taxonomy. '</p>';
+										}
+	 								} else {
+		 								echo 'Case study';
+	 								}
 	 								$thumbnail = 'logo';
 	 							} else if ($theposttype = 'people') {
 	 								echo 'Liveworker';
