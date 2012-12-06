@@ -12,8 +12,7 @@ get_header(); ?>
 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<div id="splash" <?php if (the_field('colour')) { echo 'style="background-color: #'.the_field('colour').'"';}; ?>>
-					<?php echo the_field('colour'); ?>
+				<div id="splash" <?php if (the_field('colour')) : ?> style="background-color: #<?php echo the_field('colour'); ?>" <?php endif ?>>
 					<div class="big"><?php the_post_thumbnail('large'); ?></div>
 					<div id="introduction" class="alt">
 						<div class="wrapper">
