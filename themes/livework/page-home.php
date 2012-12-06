@@ -13,7 +13,7 @@ get_header(); ?>
 
 
 
-				<div id="splash" <?php if (the_field('colour')) { echo 'style="background-color: #'.the_field('colour').'"'}; ?>>
+				<div id="splash">
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_post_thumbnail('large'); ?>
 					<div id="introduction" class="alt">
