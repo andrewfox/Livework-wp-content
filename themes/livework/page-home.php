@@ -98,15 +98,17 @@ get_header(); ?>
 	 							$theposttype = get_post_type( $post->ID );
 	 							if ($theposttype == 'case_study') {
 	 								if (is_front_page()) {
-										$taxonomy = 'sectors';
-										$queried_term = get_query_var($taxonomy);
-										$terms = get_terms($taxonomy, 'slug='.$queried_term);
-										if ($terms) {
-										  echo '<ul>';
-										  foreach($terms as $term) {
-										  	echo '<li><a href="'.get_term_link($term->slug, $taxonomy).'">'.$term->name.'</a></li>';
-										  }
-										  echo '</ul>';
+										function get_single_term($post_id, $taxonomy) 
+{
+    $terms = wp_get_object_terms($post_id, $taxonomy);
+    if(!is_wp_error($terms))
+    {
+        return '<a href="'.get_term_link($terms[0]->slug, $taxonomy).'">'.$terms[0]->name.'</a>';   
+    }
+}
+
+//example
+echo get_single_term(5, 'sectors');
 										}
 	 								} else {
 		 								echo 'Case study';
