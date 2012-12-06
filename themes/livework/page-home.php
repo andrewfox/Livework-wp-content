@@ -97,7 +97,7 @@ get_header(); ?>
 	 							<?php
 	 							$theposttype = get_post_type( $post->ID );
 	 							if ($theposttype == 'case_study') {
-	 								if (is_front()) {
+	 								if (is_front_page()) {
 										$taxonomies=get_taxonomies('','names'); 
 										foreach ($taxonomies as $taxonomy ) {
 										  echo '<p>'. $taxonomy. '</p>';
