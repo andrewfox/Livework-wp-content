@@ -174,8 +174,7 @@ get_header(); ?>
 								if(has_post_thumbnail()) :
 									the_post_thumbnail('thumb-large'); 
 								endif;?>
-								<span><?php the_title();?><span class="entry-date"><?php the_time('j/m/Y') ?></span></span>
-								?>
+									<span><?php the_title();?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></span>
 								</a>
 							</li>
 							<?php endwhile;
