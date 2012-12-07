@@ -17,12 +17,12 @@ get_header(); ?>
 
 						<h1 class="page-title"><?php the_title(); ?></h1>
 						
-						<p><?php the_field('studio_address'); ?></p>
-						<p><?php the_field('studio_telephone'); ?></p>
-						<p><?php the_field('studio_fax'); ?></p>
-						<p><?php the_field('studio_email'); ?></p>
-						<p><?php the_field('studio_twitter'); ?></p>
-						<p><?php the_field('studio_facebook'); ?></p>
+						<p class="studio-address"><?php the_field('studio_address'); ?></p>
+						<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
+						<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
+						<p class="studio-email"><?php the_field('studio_email'); ?></p>
+						<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
+						<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
 						<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?></div>
 						
 						
