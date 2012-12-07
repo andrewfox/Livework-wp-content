@@ -34,7 +34,7 @@ get_header(); ?>
 		}
 		
 		?>	
-				<div id="splash" class="<?php echo $catClass ?>">
+				<div class="splash <?php echo $catClass ?>">
 	
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_post_thumbnail('large'); ?>

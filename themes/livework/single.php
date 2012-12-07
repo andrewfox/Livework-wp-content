@@ -35,7 +35,7 @@ if ($feature == true) {
 }
 
 ?>
-				<div id="splash" class="main <?php echo $catClass ?>">
+				<div class="splash <?php echo $catClass ?>">
 		
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php 
