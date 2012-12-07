@@ -19,27 +19,38 @@ get_header(); ?>
 					<?php the_post_thumbnail('large'); ?>
 					<div id="introduction" >
 						<div class="wrapper">
-							<ul>
-							<?php
-
-								$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
+							<ul id="people" class="clearfix">
 							
-								foreach( $mypages as $page ) {		
-									$content = $page->post_content;
-									if ( ! $content ) // Check for empty page
-										continue;
+											<?php query_posts(
+											array('post_type' => 'posts', 
+											'posts_per_page' => -1 , 
+											'cat' => 200 ,
+											'order' => 'ASC', 
+											'orderby' => 'title', 
+											'paged'=> $paged
+											)); ?>
+								
+											<?php while(have_posts()) : the_post();  ?>
 							
-									$content = apply_filters( 'the_excerpt', $content );
-								?>
-										<li>
-											<h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
-											<div class="entry"><?php echo $content; ?></div>
-										</li>
-										
-								<?php
-								}	
-							?>
-							</ul>
+												<div class="wrapper">
+												
+																		<h1 class="page-title"><?php the_title(); ?></h1>
+																		
+																		<p class="studio-address"><?php the_field('studio_address'); ?></p>
+																		<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
+																		<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
+																		<p class="studio-email"><?php the_field('studio_email'); ?></p>
+																		<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
+																		<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
+																		<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?>
+																	
+																	</div>
+							
+												<?php endwhile; ?>
+							
+											</ul>
+							
+											<?php wp_reset_query();?>
 						</div>
 					</div>
 					<?php endwhile; ?>
