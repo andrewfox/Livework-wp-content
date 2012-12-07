@@ -304,6 +304,8 @@ h1.page-title {
 }
 
 /*Splash*/
+#splash {
+}
 
 .topimage {
 	box-sizing: border-box;
@@ -315,7 +317,6 @@ h1.page-title {
 #splash img.wp-post-image {
 	width: 100%;
 	height: auto;
-	margin-top: ;
 }
 
 /* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
@@ -1017,7 +1018,7 @@ footer .menu a {
 .green-light  {
 	background-color: #c1c3a0;
 }
-.yellow {
+#splash.yellow {
 	background-color: #f1c407;
 }
 .red {
