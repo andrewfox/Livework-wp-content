@@ -13,11 +13,9 @@ get_header(); ?>
 
 
 
-				<div class="splash">
 	
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_post_thumbnail('large'); ?>
-					<div id="introduction" >
 						<div class="wrapper">
 							
 								<?php query_posts(
@@ -50,9 +48,7 @@ get_header(); ?>
 				
 								<?php wp_reset_query();?>
 						</div>
-					</div>
 					<?php endwhile; ?>
-				</div>
 
 
 				<div id="hello" class="arrows">
