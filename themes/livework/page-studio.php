@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Page - People Page
- * Description: People page intro, plus list
+ * Template Name: Page - Studio Page
+ * Description: Studio
  *
  * @package WordPress
  * @subpackage Livework
