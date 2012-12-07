@@ -35,6 +35,18 @@ get_header(); ?>
 											<h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
 											<div class="entry"><?php echo $content; ?></div>
 										</li>
+										
+										<div class="wrapper">
+										
+																<h1 class="page-title"><?php the_title(); ?></h1>
+																
+																<p class="studio-address"><?php the_field('studio_address'); ?></p>
+																<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
+																<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
+																<p class="studio-email"><?php the_field('studio_email'); ?></p>
+																<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
+																<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
+																<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?></div>
 								<?php
 								}	
 							?>
