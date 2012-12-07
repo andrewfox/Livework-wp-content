@@ -16,7 +16,16 @@ get_header(); ?>
 					<div class="wrapper">
 
 						<h1 class="page-title"><?php the_title(); ?></h1>
-		
+						
+						<p><?php the_field('studio_address'); ?></p>
+						<p><?php the_field('studio_telephone'); ?></p>
+						<p><?php the_field('studio_fax'); ?></p>
+						<p><?php the_field('studio_email'); ?></p>
+						<p><?php the_field('studio_twitter'); ?></p>
+						<p><?php the_field('studio_facebook'); ?></p>
+						<?php the_field('studio_how_to_find_us'); ?>
+						
+						
 						<div class="entry-content">
 							<?php the_content(); ?>
 							<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
