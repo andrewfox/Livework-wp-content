@@ -45,6 +45,9 @@ Structure
 	max-width: 100%;
 	max-height: 650px;
 }
+.topimage {
+	background: #ccc;
+}
 
 /* === Header =============================== */
 .menu li a {
