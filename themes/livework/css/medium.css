@@ -100,7 +100,7 @@ header {
 	margin: 0;
 	line-height: 0;
 }
-.big {
+.topimage {
 	min-height: 450px;
 }
 #splash img.wp-post-image {
@@ -157,10 +157,8 @@ header {
 #introduction.alt {
 	top: 100px;
 	bottom: auto;
-	color: #eee;
-	padding: 3% 40% 0 5%;
+	padding: 5% 40% 0 5%;
 	box-sizing: border-box;
-	/*background: rgba(0,0,0,0.3);*/
 	border: none;
 	vertical-align: middle;
 }
@@ -308,6 +306,7 @@ article.people{
 
 
 
+/* === Colours =============================== */
 
 
 

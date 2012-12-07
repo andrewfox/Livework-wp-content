@@ -116,7 +116,7 @@ li {
 
 a {
 	text-decoration: none;
-	color: #838588;
+	color: #ffd008;
 	font-weight: bold;
 	-webkit-transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
@@ -237,10 +237,13 @@ header h1 a img {
 }
 .menu li a {
 	display: inline-block;
-	padding: 10px 10px 10px 10px;
+	color: #888;
+	padding: 10px;
 }
-.menu li a:hover {
-	color: #fff;
+.menu li a:hover,
+.menu li.current_page_item a:hover,
+.menu li.current-page-ancestor a:hover {
+	color: #f1c407;
 }
 
 .menu li.current_page_item a,
@@ -253,16 +256,16 @@ header h1 a img {
 	clear: both;
 	margin: 0;
 	background: #333;
-	background: rgba(1,1,1,0.5);
-	text-align: center;
-}
-#menu-secondary:hover {
 	background: rgba(1,1,1,0.6);
+	text-align: center;
 	-webkit-transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
 	-ms-transition: all 0.3s linear;
 	-o-transition: all 0.3s linear;
 	transition: all 0.3s linear;
+}
+#menu-secondary:hover {
+	background: rgba(1,1,1,0.8);
 }
 #menu-countries {
 	background: #222;
@@ -302,8 +305,7 @@ h1.page-title {
 
 /*Splash*/
 
-.big {
-	display: ;
+.topimage {
 	box-sizing: border-box;
 	line-height: 0;
 	text-align: center;
@@ -365,11 +367,11 @@ h1.page-title {
 
 #introduction.alt {
 	background: none;
+	color: #eee;
 }
 #introduction.alt h1 {
 	font: bold 14px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin-bottom: 12px;
-	color: #222;
 }
 #introduction.alt h2 {
 	font-size: 24px;
@@ -383,8 +385,9 @@ h1.page-title {
 
 /* === Homepage (specifics) =============================== */
 
+/*World*/
+
 #world {
-	margin-top: 500px;
 	height: 490px;
 	background: url('../img/world.gif') no-repeat center top #2e2a2a;
 	background-size: 2249px 490px;
@@ -425,7 +428,50 @@ h1.page-title {
 }
 
 
+/*Latest*/
 
+.latest-mini {
+	background-color: #e9e9e6;
+}
+.latest-mini h2 {
+	text-align: center;
+	margin-bottom: 0;
+}
+.latest-mini .wrapper {
+	padding: 0 10px 20px 10px;
+}
+.latest-mini a {
+	color: #027cb8;
+}
+.latest-mini a .entry-date {
+	color: #34abe1;
+	font-size: 80%;
+}
+.latest-mini ul {
+	margin: 0;
+}
+.latest-mini li {
+	box-sizing: border-box;
+	width: 25%;
+	float: left;
+}
+.latest-mini li:nth-child(5) {
+	clear: left;
+}
+.latest-mini li a {
+	padding: 10px 10px 20px 10px;
+	display: block;
+	line-height: 120%;
+	font-family:'Chaparral W01 Regular', Georgia, 'Times New Roman', serif;
+}
+.latest-mini li a:hover {
+	background-color: #fff;
+	color: ;
+}
+.latest-mini li img {
+	max-width: 100%;
+	height: auto;
+}
 
 
 /* === News (blog) =============================== */
@@ -647,11 +693,20 @@ img.right-arrow {
 	line-height: 140%;
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
 }
-.feature-people {
+.featured {
 	position: relative;
 	display: block;
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
 	color: #eee;
+}
+.featured a {
+	position: relative;
+	display: block;
+}
+.feature-case_study span {
+	width: 100%;
+	text-align: center;
+	margin: 0 0 0 0;
 }
 .feature-people span {
 	position: absolute;
@@ -923,8 +978,51 @@ footer .menu a {
 }
 
 
+/* === Colours =============================== */
 
+.black {
+	background-color: #231f20;
+}
+.white {
+	background-color: #ffffff;
+}
+.grey {
+	background-color: #e9e8e8;
+}
+.grey-light {
+	background-color: #e9e9e6;
+}
 
+.blue {
+	background-color: #027cb8;
+}
+.blue-med {
+	background-color: #34abe1;
+} 
+.blue-light  {
+	background-color: #b1d7e6;
+}
+.blue-hard {
+	background-color: #094d6f;
+}
+.purple {
+	background-color: #6d2061;
+}
+.orange {
+	background-color: #ed862e;
+}
+.green {
+	background-color: #686f2f;
+}
+.green-light  {
+	background-color: #c1c3a0;
+}
+.yellow {
+	background-color: #f1c407;
+}
+.red {
+	background-color: #9b1e20;
+}
 
 
 /* === Symbolset =============================== */
