@@ -21,12 +21,11 @@ get_header(); ?>
 						<div class="wrapper">
 							
 								<?php query_posts(
-								array('post_type' => 'posts', 
+								array(
 								'posts_per_page' => -1 , 
 								'cat' => 200 ,
 								'order' => 'ASC', 
 								'orderby' => 'title', 
-								'paged'=> $paged
 								)); ?>
 					
 								<?php while(have_posts()) : the_post();  ?>
