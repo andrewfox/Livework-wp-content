@@ -82,7 +82,7 @@ get_header(); ?>
 	 							} else if ($theposttype = 'people') {
 	 								echo 'Liveworker';
 	 								$thumbnail = 'featured';
-	 							} else if ($theposttype = 'theme') {
+	 							} else if ($theposttype = 'post') {
 	 								echo 'Theme';
 	 								$thumbnail = 'featured';
 	 							}
