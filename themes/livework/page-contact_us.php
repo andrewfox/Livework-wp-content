@@ -19,38 +19,37 @@ get_header(); ?>
 					<?php the_post_thumbnail('large'); ?>
 					<div id="introduction" >
 						<div class="wrapper">
-							<ul id="people" class="clearfix">
 							
-											<?php query_posts(
-											array('post_type' => 'posts', 
-											'posts_per_page' => -1 , 
-											'cat' => 200 ,
-											'order' => 'ASC', 
-											'orderby' => 'title', 
-											'paged'=> $paged
-											)); ?>
-								
-											<?php while(have_posts()) : the_post();  ?>
-							
-												<div class="wrapper">
-												
-																		<h1 class="page-title"><?php the_title(); ?></h1>
-																		
-																		<p class="studio-address"><?php the_field('studio_address'); ?></p>
-																		<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
-																		<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
-																		<p class="studio-email"><?php the_field('studio_email'); ?></p>
-																		<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
-																		<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
-																		<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?>
-																	
-																	</div>
-							
-												<?php endwhile; ?>
-							
-											</ul>
-							
-											<?php wp_reset_query();?>
+								<?php query_posts(
+								array('post_type' => 'posts', 
+								'posts_per_page' => -1 , 
+								'cat' => 200 ,
+								'order' => 'ASC', 
+								'orderby' => 'title', 
+								'paged'=> $paged
+								)); ?>
+					
+								<?php while(have_posts()) : the_post();  ?>
+				
+									<div class="wrapper">
+										
+										<h1 class="page-title"><?php the_title(); ?></h1>
+										
+										<p class="studio-address"><?php the_field('studio_address'); ?></p>
+										<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
+										<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
+										<p class="studio-email"><?php the_field('studio_email'); ?></p>
+										<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
+										<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
+										<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?>
+									
+									</div>
+				
+									<?php endwhile; ?>
+				
+								</ul>
+				
+								<?php wp_reset_query();?>
 						</div>
 					</div>
 					<?php endwhile; ?>
