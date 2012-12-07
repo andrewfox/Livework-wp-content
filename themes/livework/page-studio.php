@@ -23,7 +23,7 @@ get_header(); ?>
 						<p><?php the_field('studio_email'); ?></p>
 						<p><?php the_field('studio_twitter'); ?></p>
 						<p><?php the_field('studio_facebook'); ?></p>
-						<div><?php the_field('studio_how_to_find_us'); ?></div>
+						<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?></div>
 						
 						
 						<div class="entry-content">
