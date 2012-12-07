@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Page - Story Page Parent
- * Description: Our Story Parent: fullscreen area, plus extras
+ * Template Name: Page - Contact us
+ * Description: Contact us
  *
  * @package WordPress
  * @subpackage Livework
