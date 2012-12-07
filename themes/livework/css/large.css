@@ -31,6 +31,7 @@ Structure
 }
 .topimage {
 	max-height: 650px;
+	text-align: right;
 }
 .splash img.wp-post-image {
 	width: auto;
