@@ -265,7 +265,7 @@ header h1 a img {
 	transition: all 0.3s linear;
 }
 #menu-secondary:hover {
-	background: rgba(1,1,1,0.8);
+	background: rgba(1,1,1,0.7);
 }
 #menu-countries {
 	background: #222;
