@@ -23,7 +23,7 @@ get_header(); ?>
 								'posts_per_page' => 5 , 
 								'cat' => 200 ,
 								'order' => 'ASC', 
-								'orderby' => 'title', 
+//								'orderby' => 'date', 
 								)); ?>
 					
 								<?php while(have_posts()) : the_post();  ?>
