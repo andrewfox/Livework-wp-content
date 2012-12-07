@@ -112,7 +112,49 @@ get_header(); ?>
 
 
 					<!--END:INSERT FEATURED POSTS:END	-->
-							
+
+
+
+
+
+					<!--INSERT SELECTED CASE STUDIES -->
+				
+					<div class="case-studies">
+					<?php
+					
+		 				$posts = get_field('add_case_studies');
+		 				 
+		 				if( $posts ): ?>
+		 					
+			 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+			 						<?php setup_postdata($post); ?>
+										<div  <?php post_class('clearfix'); ?>>
+											<div class="wrapper">
+												<?php the_post_thumbnail('thumb-large'); ?>
+												<div>
+													<?php if( get_field('casestudies_one_liner') ): ?>
+													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span>with <span><?php the_title(); ?></span></span></a></h2>
+													<?php else : ?>
+													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+													<?php endif; ?>
+
+													<div>
+				 									<?php the_excerpt() ?>
+													</div>
+				 								</div>
+
+				 							</div>
+			 							</div>
+			 					<?php endforeach; ?>
+		 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+		 				<?php endif; ?>
+	 				</div> <!-- /.case-studies -->
+
+	 				<!--END:INSERT SELECTED CASE STUDIES:END -->
+
+
+
+
 					<!--INSERT ALL LOGOS FOR SECTOR	-->	
 					
 					<div class="logos-list clearfix">
@@ -171,43 +213,6 @@ get_header(); ?>
 					
 					</div> <!-- /.logos-list -->
 
-
-
-
-					<!--INSERT SELECTED CASE STUDIES -->
-				
-					<div class="case-studies">
-					<?php
-					
-		 				$posts = get_field('add_case_studies');
-		 				 
-		 				if( $posts ): ?>
-		 					
-			 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-			 						<?php setup_postdata($post); ?>
-										<div  <?php post_class('clearfix'); ?>>
-											<div class="wrapper">
-												<?php the_post_thumbnail('thumb-large'); ?>
-												<div>
-													<?php if( get_field('casestudies_one_liner') ): ?>
-													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span>with <span><?php the_title(); ?></span></span></a></h2>
-													<?php else : ?>
-													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-													<?php endif; ?>
-
-													<div>
-				 									<?php the_excerpt() ?>
-													</div>
-				 								</div>
-
-				 							</div>
-			 							</div>
-			 					<?php endforeach; ?>
-		 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-		 				<?php endif; ?>
-	 				</div> <!-- /.case-studies -->
-
-	 				<!--END:INSERT SELECTED CASE STUDIES:END -->
 
 
 
