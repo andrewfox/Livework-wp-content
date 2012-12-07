@@ -79,10 +79,10 @@ get_header(); ?>
 	 							if ($theposttype == 'case_study') {
 	 								echo 'Case study';
 	 								$thumbnail = 'logo';
-	 							} else if ($theposttype = 'people') {
+	 							} else if ($theposttype == 'people') {
 	 								echo 'Liveworker';
 	 								$thumbnail = 'featured';
-	 							} else if ($theposttype = 'post') {
+	 							} else if ($theposttype == 'post') {
 	 								echo 'Theme';
 	 								$thumbnail = 'featured';
 	 							}
