@@ -20,7 +20,7 @@ get_header(); ?>
 							
 								<?php query_posts(
 								array(
-								'posts_per_page' => -1 , 
+								'posts_per_page' => 5 , 
 								'cat' => 200 ,
 								'order' => 'ASC', 
 								'orderby' => 'title', 
