@@ -304,7 +304,7 @@ h1.page-title {
 }
 
 /*Splash*/
-#splash {
+.splash {
 }
 
 .topimage {
@@ -314,7 +314,7 @@ h1.page-title {
 	vertical-align: middle;
 }
 
-#splash img.wp-post-image {
+.splash img.wp-post-image {
 	width: 100%;
 	height: auto;
 }
@@ -1018,7 +1018,7 @@ footer .menu a {
 .green-light  {
 	background-color: #c1c3a0;
 }
-#splash.yellow {
+.yellow {
 	background-color: #f1c407;
 }
 .red {
