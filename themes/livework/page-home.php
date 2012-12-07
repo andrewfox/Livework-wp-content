@@ -11,11 +11,9 @@
 get_header(); ?>
 
 
-
-
 				<div id="splash" class="<?php the_field('colour'); ?>">
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					<?php the_post_thumbnail('large'); ?>
+					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
 					<div id="introduction" class="alt">
 						<div class="wrapper">
 							<div class="excerpt">
