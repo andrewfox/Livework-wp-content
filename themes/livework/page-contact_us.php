@@ -12,9 +12,9 @@ get_header(); ?>
 
 
 
+<?php query_posts(array('showposts' => 20, 'post_parent' => 15, 'post_type' => 'page')); while (have_posts()) { the_post(); ?>
 
 	
-					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_post_thumbnail('large'); ?>
 						<div class="wrapper">
 							
