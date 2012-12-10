@@ -42,7 +42,7 @@
 		<script src="<?php echo bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' ); ?>/js/main.js"></script>
 
-		<!-- Fonts.com -->
+		<!-- Fontscom -->
 		<script type="text/javascript" src="http://fast.fonts.com/jsapi/0fd39f14-ee12-405d-90c4-2bbbdae75f52.js"></script>
 
 		<!-- Symbolset social -->
