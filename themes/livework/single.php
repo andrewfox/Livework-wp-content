@@ -99,29 +99,38 @@ if ($feature == true) {
 
 				</aside>
 
-				<div class="extra">		
-					<div class="wrapper">
-						<div id="morepeople" >
-							<h2>Livework people</h2>
-							<ul id="people">
-								<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 ,'orderby' => 'title', 'order' => 'ASC', 'paged'=> $paged)); ?>
-								<?php while(have_posts()) : the_post();  ?>
-								<li>
-									<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-									<?php 
-									if(has_post_thumbnail()) :
-										the_post_thumbnail('original'); 
-									else :				
-									endif;
-									the_title(); 
-									?>
-									</a>
-								</li>
-								<?php endwhile; ?>
-							</ul>
-						</div>
-					</div><!-- /.wrapper -->
-				</div><!-- /#extra -->
+				<div class="latest-mini clearfix">
+				
+			 	<div class="wrapper">
 
+					<h2><a href="<?php bloginfo('url'); ?>/latest"><strong>Latest</strong> from Livework</a></h2>
+
+					<ul>
+						<?php
+						// The Query
+						$the_query = new WP_Query( 'posts_per_page=8' );
+						
+						// The Loop
+						while ( $the_query->have_posts() ) : $the_query->the_post();?>
+						<li>
+							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+							<?php 
+							if(has_post_thumbnail()) :
+								the_post_thumbnail('thumb-large'); 
+							endif;?>
+								<span><?php the_title();?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></span>
+							</a>
+						</li>
+						<?php endwhile;
+						
+						// Reset Post Data
+						wp_reset_postdata(); ?>
+						
+					</ul>
+
+				</div> <!-- /.wrapper -->
+
+			</div> <!-- /.latest-mini -->
+				
 
 <?php get_footer(); ?>
