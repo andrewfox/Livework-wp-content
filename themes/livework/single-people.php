@@ -76,7 +76,7 @@ get_header(); ?>
 					while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<?php 
 					$anyposts = $anyposts + 1;
-					if ($anyposts == 1)) {
+					if ($anyposts == 1) {
 					echo'<h2 class="section-title">Posts by ';
 					the_title();
 					echo '</h2>';
