@@ -21,15 +21,7 @@ get_header(); ?>
 					</div>
 					
 					
-					<div class="archives">
-						<ul class="list-archive-date">
-							<?php wp_list_categories('orderby=name&show_count=1&title_li='); ?>
-						</ul>
-						<ul class="list-archive-cat">
-							<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
-						</ul>
-					</div>
-					
+					<?php get_sidebar( 'archives' ); ?>
 					
 					
 					<?php
