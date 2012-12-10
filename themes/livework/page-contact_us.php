@@ -15,7 +15,7 @@ get_header(); ?>
 <?php endwhile; ?>
 		<div class="wrapper">
 			
-				<?php query_posts(array('showposts' => 4, 'post_parent' => 15, 'post_type' => 'page')); while (have_posts())  the_post(); ?>
+				<?php query_posts(array('showposts' => 4, 'post_parent' => 15, 'post_type' => 'page')); while (have_posts()) { the_post(); ?>
 				
 					<div class="wrapper">
 						
@@ -32,8 +32,7 @@ get_header(); ?>
 
 
 				</ul>
-
-				<?php wp_reset_query();?>
+				<?php } ?>
 		</div>
 
 
