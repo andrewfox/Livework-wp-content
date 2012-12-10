@@ -10,7 +10,7 @@
 
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-
+<?php $studiocat = $post->post_name ?>
 				<article id="page-<?php the_ID(); ?>" class="main">
 					
 					<div class="wrapper">
@@ -52,7 +52,7 @@ get_header(); ?>
 								<ul>
 									<?php
 									// The Query
-									$studiocat = the_title();
+									
 									$args = array( 
 														'cat_name'=> $studiocat,
 														'posts_per_page' => 8, 
