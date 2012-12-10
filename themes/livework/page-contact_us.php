@@ -35,13 +35,15 @@ get_header(); ?>
 									
 									</div>
 				
+									<?php endwhile; ?>
 				
 								</ul>
 				
 								<?php wp_reset_query();?>
 						</div>
+					<?php endwhile; ?>
 
 
-	
+
 
 	<?php get_footer(); ?>
