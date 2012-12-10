@@ -38,17 +38,8 @@ if ($feature == true) {
 				<div class="splash <?php echo $catClass ?>">
 		
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					<?php 
-					if ($standard == true) {
-						echo'<div class="wrapper">';
-						the_post_thumbnail('medium'); 
-						echo'</div>';
-					} else {
-						the_post_thumbnail('full');
-					}
-					?>
-					<div id="introduction" <?php if ($feature == true) {
-						echo'class="highlight"';}?>>
+					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
+					<div id="introduction">
 						<div class="wrapper">
 							<h4><a href="<?php bloginfo('url'); ?>/news">News</a></h4>
 							<h1><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h1>
