@@ -163,6 +163,15 @@ header {
 .splash .alt h2 {
 }
 
+/*Basic splash*/
+
+.highlight #introduction {
+	border-bottom: 1px solid #ccc;
+	background: #eee;
+	padding-top: 0.5em;
+}
+
+
 
 /* === Homepage (specifics) =============================== */
 
