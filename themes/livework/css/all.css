@@ -157,6 +157,9 @@ a:hover {
 	font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 0.1em;
 }
+.section-title a {
+	font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 
 /* User inputted image stuff */
 
@@ -681,14 +684,21 @@ img.right-arrow {
 	line-height: 140%;
 	padding: 20px 0;
 	clear: left;
+	position: relative;
+	display: block;
+	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
+	color: #eee;
 }
 .featured_post {
 	box-sizing: border-box;
 	width: 50%;
 	float: left;
 	padding-right: 20px;
+	padding-bottom: 20px;
 }
-.featured_post:nth-child(3) {
+.featured_post:nth-child(3),
+.featured_post:nth-child(5),
+.featured_post:nth-child(7) {
 	clear: both;
 }
 .featured_post img {
@@ -702,9 +712,9 @@ img.right-arrow {
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
 }
 .featured {
-	position: relative;
-	display: block;
-	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
+
+}
+.featured_post .section-title a {
 	color: #eee;
 }
 .featured a {
