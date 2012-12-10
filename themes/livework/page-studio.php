@@ -14,7 +14,7 @@ get_header(); ?>
 				<article id="page-<?php the_ID(); ?>" class="main">
 					
 					<div class="wrapper">
-						<?php the_post_thumbnail('large'); ?>
+						<?php the_post_thumbnail('medium'); ?>
 						<h1 class="page-title"><?php the_title(); ?></h1>
 						
 						<p class="studio-address"><?php the_field('studio_address'); ?></p>
