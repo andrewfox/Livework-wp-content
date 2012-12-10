@@ -696,6 +696,7 @@ img.right-arrow {
 	padding-right: 20px;
 	padding-bottom: 20px;
 }
+
 .featured_post:nth-child(3),
 .featured_post:nth-child(5),
 .featured_post:nth-child(7) {
@@ -917,6 +918,23 @@ img.right-arrow {
 
 
 /* === Person (single person page) =============================== */
+
+/* === Contact =============================== */
+
+
+.office {
+	box-sizing: border-box;
+	width: 50%;
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+
+.office img{
+	width: 100%;
+	height: auto;
+}
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 

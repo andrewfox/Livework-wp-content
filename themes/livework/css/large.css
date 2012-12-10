@@ -96,6 +96,13 @@ Structure
 
 /* === Person (single person page) =============================== */
 
+/* === Contact =============================== */
+.office {
+	width: 25%;
+	float: left;
+}
+
+
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
 
