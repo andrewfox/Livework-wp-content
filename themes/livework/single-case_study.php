@@ -40,11 +40,9 @@ if ($feature == true) {
 
 
 
-				
+				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 				<div class="splash <?php echo $catClass ?>">
-		
-					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					<?php the_post_thumbnail('full'); ?>
+					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
 					<div id="introduction">
 						<div class="wrapper">
 							<h4><a href="<?php bloginfo('url'); ?>/our-clients-stories">Our Clients Stories</a></h4>
