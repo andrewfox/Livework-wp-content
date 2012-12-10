@@ -37,19 +37,20 @@ get_header(); ?>
 					
 					<div class="wrapper">
 
-
+						<ul>
 						<?php query_posts(array('post_parent' => 7, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
 						
+							<li <?php post_class(); ?>>
 								
 								<h1 class="page-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-								<?php the_post_thumbnail('thumb-large'); 
-								the_field('story_page_headline'); ?>
+								<h2><?php the_field('story_page_headline'); ?></h2>
 								
-							
+							</li>
 		
 		
 						<?php } ?>
-
+						
+						</ul>
 					</div><!-- /.wrapper -->
 
 				</div><!-- /.our-story-list  -->
