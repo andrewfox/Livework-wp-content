@@ -97,7 +97,7 @@ body {
 }
 
 h1, h2, h3 {
-	font-family:'Chaparral W01 Regular', Georgia, Times, serif;
+	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
 	line-height: 130%;
 }
 h1 {
@@ -470,7 +470,7 @@ h1.page-title {
 	padding: 10px 10px 20px 10px;
 	display: block;
 	line-height: 120%;
-	font-family:'Chaparral W01 Regular', Georgia, 'Times New Roman', serif;
+	font-family:'Chaparral W01 Lt', Georgia, 'Times New Roman', serif;
 }
 .latest-mini li a:hover {
 	background-color: #fff;
@@ -768,14 +768,33 @@ img.right-arrow {
 
 /* === Our Client's Stories main page =============================== */
 
+#page-9 {
+	min-height: 600px;
+}
+
 
 .sectors-clients-list {
+	border-top: 1px solid #ccc;
 	background-color: #e9e9e6;
+	font-size: 80%;
+}
+.sectors-clients-list .wrapper {
+	padding: 0 10px;
 }
 .sectors-clients-list ul {
-	font-weight: normal;
+	box-sizing: border-box;
 	float: left;
 	width: 200px;
+	padding: 0 10px;
+	
+}
+.sectors-clients-list ul ul {
+	float: none;
+	width: auto;
+	padding: 0;	
+}
+.sectors-clients-list a {
+	color: #444;	
 }
 .sectors-clients-list ul ul a {
 	font-weight: normal;	
@@ -846,7 +865,7 @@ img.right-arrow {
 	width: 100%;
 	text-align: center;
 	box-sizing: border-box;
-	font-family: 'Chaparral W01 Regular', Georgia, Times, serif;
+	font-family: 'Chaparral W01 Lt', Georgia, Times, serif;
 	text-shadow: 0 0 2px #000000;
 }
 

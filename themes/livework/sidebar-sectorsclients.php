@@ -24,7 +24,6 @@
 								$clients = get_terms( 'clients', 'orderby=count&hide_empty=0' );
 								foreach ($clients as $client) { ?>
 										<li><a href="<?php bloginfo('url'); ?>/case-study/<?php echo $client->slug ?>"><?php echo $client->name ?></a></li>
-								
 								<?php } ?>
 									</ul>
 								</li>
