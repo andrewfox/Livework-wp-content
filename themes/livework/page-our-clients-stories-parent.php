@@ -24,7 +24,9 @@ get_header(); ?>
 						</div><!-- .entry-content -->
 						
 						
-						<?php print_r(get_terms( 'sectors', 'orderby=count&hide_empty=0' )); ?>
+						<?php
+						wp_tag_cloud( array( 'taxonomy' => 'sectors' ) ); 
+						?>
 					
 					</div>
 
