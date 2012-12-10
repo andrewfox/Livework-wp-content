@@ -24,7 +24,7 @@ get_header(); ?>
 						</div><!-- .entry-content -->
 						
 						
-						<?php echo get_terms( 'sectors', 'orderby=count&hide_empty=0' ); ?>
+						<?php print_r(get_terms( 'sectors', 'orderby=count&hide_empty=0' )); ?>
 					
 					</div>
 
