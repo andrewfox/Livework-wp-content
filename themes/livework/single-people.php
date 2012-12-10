@@ -73,9 +73,17 @@ get_header(); ?>
 										
 										);
 					$loop = new WP_Query( $args );
-					if ( have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();?>
+					while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<?php 
 					
-					<h2 class="section-title">Posts by <?php the_title(); ?></h2>
+					$anyposts = $wp_query->found_posts;
+					if (!empty ($anyposts)) {
+					?>
+						<h2 class="section-title">Posts by <?php the_title(); ?></h2>
+					<?php
+					}
+					?>
+					
 					<li>
 						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
 							<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
