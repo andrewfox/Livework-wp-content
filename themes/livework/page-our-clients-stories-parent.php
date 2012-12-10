@@ -29,7 +29,7 @@ get_header(); ?>
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
 						foreach ($sectors as $sector) { 
 							if ($sector->count > 0) { ?>
-							<li><a href="<?php echo $sector->slug ?>"><?php echo $sector->name ?></a></li>
+							<li><a href="<?php echo $sector->slug ?>"><?php echo $sector->name ?> <?php echo $sector->count ?></a></li>
 							<?php } ?>
 						<?php } ?>
 						</ul>
