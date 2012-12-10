@@ -11,11 +11,12 @@
 get_header(); ?>
 	
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+	<div class="wrapper">
 	<?php the_title(); ?>
 	<?php the_post_thumbnail('large'); ?>
 	<?php the_content(); ?>
 <?php endwhile; ?>
-		<div class="wrapper">
+		
 			
 				<?php query_posts(array('showposts' => 4, 'post_parent' => 15, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
 				
