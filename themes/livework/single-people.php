@@ -79,7 +79,7 @@ get_header(); ?>
 					$anyposts = $anyposts + 1;
 					if ($anyposts == 1) {
 					echo'<h2 class="section-title">Posts by ';
-					echo ($titleofpage)
+					echo ($titleofpage);
 					echo '</h2>';
 					}
 					else {
