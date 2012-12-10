@@ -452,6 +452,7 @@ if(function_exists("register_field_group"))
 				'post_type' => 
 				array (
 					0 => 'case_study',
+					1 => 'post',
 				),
 				'taxonomy' => 
 				array (
