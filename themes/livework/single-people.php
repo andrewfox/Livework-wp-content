@@ -76,14 +76,14 @@ get_header(); ?>
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<?php 
-					$anyposts = $anyposts + 1;
-					if ($anyposts == 1) {
-					echo'<h2 class="section-title">Posts by ';
-					echo ($titleofpage);
-					echo '</h2>';
-					}
-					else {
-					}
+//					$anyposts = $anyposts + 1;
+//					if ($anyposts == 1) {
+//					echo'<h2 class="section-title">Posts by ';
+//					echo ($titleofpage);
+//					echo '</h2>';
+//					}
+//					else {
+//					}
 					?>
 					
 					<li>
