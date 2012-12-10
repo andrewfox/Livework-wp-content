@@ -19,6 +19,19 @@ get_header(); ?>
 					<div class="wrapper">
 						<h1 class="page-title">Latest</h1>
 					</div>
+					
+					
+					<div class="archives">
+						<ul class="list-archive-date">
+							<?php wp_list_categories('orderby=name&show_count=1&title_li='); ?>
+						</ul>
+						<ul class="list-archive-cat">
+							<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
+						</ul>
+					</div>
+					
+					
+					
 					<?php
 					$the_query = new WP_Query( array( 'post_type' => array( 'post', 'case_study' ) ) );
 					while ( $the_query->have_posts() ) : $the_query->the_post() ?>
