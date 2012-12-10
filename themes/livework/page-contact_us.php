@@ -23,10 +23,10 @@ get_header(); ?>
 		</div>
 <?php endwhile; ?>
 		
+								<div class="wrapper">
 			
 				<?php query_posts(array('showposts' => 4, 'post_parent' => 15, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
 				
-					<div class="wrapper">
 						
 						<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 						<?php the_post_thumbnail('thumb-large');  ?>
@@ -37,12 +37,12 @@ get_header(); ?>
 						<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
 						<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
 					
-					</div>
 
 
-				</ul>
 				<?php } ?>
 		</div>
+	</div>
+		
 </article><!-- #page-## -->
 <?php get_sidebar(); ?>
 
