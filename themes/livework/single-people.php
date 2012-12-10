@@ -78,9 +78,7 @@ get_header(); ?>
 					
 					$anyposts = $wp_query->found_posts;
 					if (!empty ($anyposts)) {
-					?>
-						<h2 class="section-title">Posts by <?php the_title(); ?></h2>
-					<?php
+					echo'<h2 class="section-title">Posts by <?php the_title(); ?></h2>'
 					}
 					?>
 					
