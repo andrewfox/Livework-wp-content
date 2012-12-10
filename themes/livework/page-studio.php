@@ -54,7 +54,7 @@ get_header(); ?>
 									// The Query
 									$studiocat = the_title();
 									$args = array( 
-														'category_nicename'=> $studiocat,
+														'cat_name'=> $studiocat,
 														'posts_per_page' => 8, 
 														
 														);
