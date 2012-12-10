@@ -12,6 +12,7 @@ get_header(); ?>
 	
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 	<?php the_post_thumbnail('large'); ?>
+<?php endwhile; ?>
 		<div class="wrapper">
 			
 				<?php query_posts(array('showposts' => 4, 'post_parent' => 15, 'post_type' => 'page')); while (have_posts()) { the_post(); ?>
@@ -35,6 +36,6 @@ get_header(); ?>
 
 				<?php wp_reset_query();?>
 		</div>
-<?php endwhile; ?>
+
 
 <?php get_footer(); ?>
