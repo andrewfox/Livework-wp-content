@@ -973,6 +973,12 @@ img.right-arrow {
 	margin: 0;
 }
 
+/* === Case study =============================== */
+
+.casestudy-title {
+	font: bold 18px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
 
 /* === Extra aside =============================== */
 
@@ -1020,8 +1026,7 @@ aside#sidebar-more-posts {
 }
 
 
-/* === Studio
-=============================== */
+/* === Studio =============================== */
 
 
 .studio-find-us  {

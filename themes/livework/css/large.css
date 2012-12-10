@@ -63,6 +63,16 @@ Structure
 	font-size: 32px;
 }
 
+/*Basic splash*/
+.splash img.wp-post-image {
+	width: auto;
+	height: auto;
+}
+.basic .topimage {
+	text-align: center;
+	
+}
+
 /* === Homepage (specifics) =============================== */
 
 
@@ -111,6 +121,12 @@ Structure
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
+
+/* === Case study =============================== */
+
+.casestudy-title {
+	font: bold 22px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 
 /* === Extra aside =============================== */
 

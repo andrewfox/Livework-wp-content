@@ -165,13 +165,38 @@ header {
 
 /*Basic splash*/
 
+.basic {
+	padding-top: 130px;
+}
+.splash.basic img.wp-post-image {
+	width: 100%;
+	height: auto;
+}
+#introduction {
+	border: none;	
+	background: #eee;
+	background: rgba(256,256,256,0.6);
+	padding-top: 0.5em;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
 .basic #introduction {
 	border-bottom: 1px solid #ccc;
-	background: #eee;
+	background: auto;
 	padding-top: 0.5em;
+	position: relative;
 }
-
-
+.basic .topimage {
+	min-height: 100px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+	max-width: 900px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: auto;
+}
 
 /* === Homepage (specifics) =============================== */
 
@@ -183,6 +208,12 @@ header {
 
 /* === News (blog) =============================== */
 
+.single-post #main {
+	width: 70%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
 
 
 /* === Hello arrows =============================== */
@@ -296,6 +327,16 @@ article.people{
 }
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
+
+
+/* === Case study =============================== */
+
+.single-case_study #main {
+	width: 70%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
 
 /* === Extra aside =============================== */
 
