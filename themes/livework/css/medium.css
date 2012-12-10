@@ -286,7 +286,9 @@ article.people{
 /* === Person (single person page) =============================== */
 
 /* === Contact =============================== */
-
+.office img{
+	width: 70%;
+}
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
 

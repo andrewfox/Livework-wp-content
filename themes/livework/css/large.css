@@ -1,3 +1,6 @@
+/* @override 
+	http://www.liveworkstudio.com/wordpress/wp-content/themes/livework/css/large.css */
+
 
 
 /* === All screens (small+) =============================== */
@@ -99,7 +102,10 @@ Structure
 /* === Contact =============================== */
 .office {
 	width: 25%;
-	float: left;
+}
+
+.office img{
+	width: 100%;
 }
 
 
