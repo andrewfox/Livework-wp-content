@@ -35,12 +35,13 @@ get_header(); ?>
 						</ul>
 
 
+
 						<ul class="sectors-clients-list">
 						<?php
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
 						foreach ($sectors as $sector) { 
 							if ($sector->count > 0) { ?>
-							<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a></li>
+							<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
 								<ul>
 							<?php 
 								$clients = get_terms( 'clients', 'orderby=count&hide_empty=0' );
