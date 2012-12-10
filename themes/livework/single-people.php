@@ -64,7 +64,7 @@ get_header(); ?>
 				
 				<aside id="sidebar-more-posts">
 							
-					<h2 class="section-title">Posts by <?php the_title(); ?></h2>
+					
 					
 					<?php $authorid = get_the_author_meta('ID') ?>
 					<?php $args = array( 
@@ -73,7 +73,9 @@ get_header(); ?>
 										
 										);
 					$loop = new WP_Query( $args );
-					while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					if ( have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();?>
+					
+					<h2 class="section-title">Posts by <?php the_title(); ?></h2>
 					<li>
 						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
 							<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
