@@ -37,7 +37,7 @@ get_header(); ?>
 				<div class="splash <?php echo $catClass ?>">
 	
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					<?php $titleofpage = the_title();  ?>
+					<?php $titleofpage = $post->post_name?>
 					<?php the_post_thumbnail('large'); ?>
 					<div id="introduction" >
 						<div class="wrapper">
