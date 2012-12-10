@@ -24,12 +24,15 @@ get_header(); ?>
 						</div><!-- .entry-content -->
 						
 						
+						<ul class="sectors-list">
 						<?php
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
-						foreach ($sectors as $sector) { ?>
-							<a href="<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
+						foreach ($sectors as $sector) { 
+							if ($sector->count > 0) { ?>
+							<li><a href="<?php echo $sector->slug ?>"><?php echo $sector->name ?></a></li>
+							<?php } ?>
 						<?php } ?>
-					
+						</ul>
 					</div>
 
 				</article><!-- #page-## -->
@@ -38,4 +41,4 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?>	
