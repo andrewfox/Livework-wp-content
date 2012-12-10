@@ -10,10 +10,14 @@
 
 get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-<?php $studiocat = $post->post_name ?>
+<?php $studiocat = $post->post_name?>
+
+
+
 				<article id="page-<?php the_ID(); ?>" class="main">
 					
 					<div class="wrapper">
+						<?php echo $studiocat ?>
 						<?php the_post_thumbnail('medium'); ?>
 						<h1 class="page-title"><?php the_title(); ?></h1>
 						
