@@ -36,34 +36,17 @@ get_header(); ?>
 
 
 
-						<ul class="sectors-clients-list">
-						<?php
-						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
-						foreach ($sectors as $sector) { 
-							if ($sector->count > 0) { ?>
-							<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
-								<ul>
-							<?php 
-								$clients = get_terms( 'clients', 'orderby=count&hide_empty=0' );
-								foreach ($clients as $client) { ?>
-									<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $client->slug ?>"><?php echo $client->name ?></a></li>
-								
-								<?php } ?>
-								</ul>
-							</li>
-							<?php } ?>
-						<?php } ?>
-						</ul>
-
-
-
-
 					</div><!-- /.wrapper -->
 
 				</article><!-- #page-## -->
 
 <?php endwhile; ?>
 
-<?php get_sidebar(); ?>
+
+
+<?php get_sidebar('sectorsclients'); ?>
+
+
+
 
 <?php get_footer(); ?>	
