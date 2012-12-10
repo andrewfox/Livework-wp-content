@@ -43,9 +43,35 @@ get_header(); ?>
 <?php endwhile; ?>
 
 
+				<div id="hello" class="arrows">
+				
+				<?php
+				$posts3 = get_field('previous_page');
+				 
+				if( $posts3 ): ?>
+					<?php foreach( $posts3 as $post): // variable must be called $post (IMPORTANT) ?>
+						<?php setup_postdata($post); ?>
+					    	<a href="<?php the_permalink(); ?>"><img class="left-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/left-arrow.png" alt="go to previous page" /></a>
+					<?php endforeach; ?>
+					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				<?php endif; ?>
+				
+				<?php
+				$posts2 = get_field('next_page');
+				 
+				if( $posts2 ): ?>
+					<?php foreach( $posts2 as $post): // variable must be called $post (IMPORTANT) ?>
+						<?php setup_postdata($post); ?>
+					    	<a href="<?php the_permalink(); ?>"><img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
+					<?php endforeach; ?>
+					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+				<?php endif; ?>
+				
+				</div>
+
+
 
 <?php get_sidebar('sectorsclients'); ?>
-
 
 
 
