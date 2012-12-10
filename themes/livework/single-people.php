@@ -83,7 +83,7 @@ get_header(); ?>
 					echo '</h2>';
 					}
 					else {
-					echo 'no posts'
+					echo 'no posts';
 					}
 					?>
 					
