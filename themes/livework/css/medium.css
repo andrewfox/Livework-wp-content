@@ -111,7 +111,7 @@ header {
 /* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
 
 #introduction {
-	border-bottom: none;
+	border: none;	
 	background: #eee;
 	background: rgba(256,256,256,0.6);
 	padding-top: 0.5em;
@@ -121,30 +121,27 @@ header {
 }
 
 .highlight #introduction {
-	background: #eee;
 	background: rgba(256,256,256,0.6);
 	padding-top: 0.5em;
 	border-bottom: none;
 }
 
-#introduction h1 {
+.splash h1 {
 	font-size: 36px;
 	line-height: normal;
-	color: #6F0B61;
 	margin-top: 0;
 	margin: 0 auto 0.3em;
 }
-#introduction h2 {
+.splash h2 {
 	margin-top: 0;
 }
-#introduction h4 {
+.splash h4 {
 	padding: 0 0 0.5em 0;
 	margin: 0;
 	line-height: 1em;
 }
-#introduction h4 a {
+.splash h4 a {
 	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	color: #222;
 }
 .excerpt {
 	margin-top: 0.25em;
@@ -154,7 +151,7 @@ header {
 	padding-bottom: 0.7em;
 	margin: 0;
 }
-#introduction.alt {
+.splash .alt {
 	top: 100px;
 	bottom: auto;
 	padding: 5% 40% 0 5%;
@@ -162,9 +159,8 @@ header {
 	border: none;
 	vertical-align: middle;
 }
-#introduction.alt h1,
-#introduction.alt h2 {
-	color: #eee;
+.splash .alt h1,
+.splash .alt h2 {
 }
 
 
