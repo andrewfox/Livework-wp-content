@@ -23,17 +23,6 @@ get_header(); ?>
 							<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
 						</div><!-- .entry-content -->
 
-				<?php query_posts(array('showposts' => 10, 'post_parent' => 7, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
-				
-						
-						<h1 class="page-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-						<?php the_post_thumbnail('thumb-large'); 
-						the_field('story_page_headline'); ?>
-						
-					
-
-
-				<?php } ?>
 
 
 
@@ -44,6 +33,26 @@ get_header(); ?>
 
 <?php endwhile; ?>
 
+				<div class="our-story-list clearfix">
+					
+					<div class="wrapper">
+
+
+						<?php query_posts(array('post_parent' => 7, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
+						
+								
+								<h1 class="page-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+								<?php the_post_thumbnail('thumb-large'); 
+								the_field('story_page_headline'); ?>
+								
+							
+		
+		
+						<?php } ?>
+
+					</div><!-- /.wrapper -->
+
+				</div><!-- /.our-story-list  -->
 
 
 
