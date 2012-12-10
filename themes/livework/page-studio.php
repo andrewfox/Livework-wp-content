@@ -54,7 +54,7 @@ get_header(); ?>
 									// The Query
 									
 									$args = array( 
-														'cat'=> $studiocat,
+														'category_name'=> $studiocat,
 														'posts_per_page' => 8, 
 														
 														);
