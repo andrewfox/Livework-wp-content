@@ -23,28 +23,20 @@ get_header(); ?>
 							<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
 						</div><!-- .entry-content -->
 
-						<ul>
-						<?php
-	
-							$mypages = get_pages( array( 'child_of' => $post->ID, 'sort_column' => 'post_date', 'sort_order' => 'asc' ) );
+				<?php query_posts(array('showposts' => 10, 'post_parent' => 7, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
+				
 						
-							foreach( $mypages as $page ) {		
-								$content = $page->post_content;
-								if ( ! $content ) // Check for empty page
-									continue;
-									$content = apply_filters( 'the_excerpt', $content );
-							?>
-									<li>
-										<h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
-										<div class="entry">
-											<?php the_field('story_page_headline'); ?>
-										</div>
-									</li>
-							<?php
-							}	
-						?>
+						<h1 class="page-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+						<?php the_post_thumbnail('thumb-large'); 
+						the_field('story_page_headline'); ?>
+						
+					
 
-						</ul>
+
+				<?php } ?>
+
+
+
 
 					</div><!-- /.wrapper -->
 
