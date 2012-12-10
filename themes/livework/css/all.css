@@ -1,5 +1,5 @@
 /* @override 
-	http://lw.kendal.webfactional.com/wordpress/wp-content/themes/livework/css/all.css */
+	http://www.liveworkstudio.com/wordpress/wp-content/themes/livework/css/all.css */
 
 /* === All screens (small+) =============================== */
 
@@ -764,6 +764,24 @@ img.right-arrow {
 .page-template-page-story-php #introduction h2 {
 	color: #ed862e;
 }
+
+
+/* === Our Client's Stories main page =============================== */
+
+
+.sectors-clients-list {
+	background-color: #e9e9e6;
+}
+.sectors-clients-list ul {
+	font-weight: normal;
+	float: left;
+	width: 200px;
+}
+.sectors-clients-list ul ul a {
+	font-weight: normal;	
+}
+
+
 
 /* === Our Team =============================== */
 
