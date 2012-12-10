@@ -19,7 +19,7 @@ get_header(); ?>
 				
 					<div class="wrapper">
 						
-						<h1 class="page-title"><?php the_title(); ?></h1>
+						<h1 class="page-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"></h1>
 						
 						<p class="studio-address"><?php the_field('studio_address'); ?></p>
 						<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
