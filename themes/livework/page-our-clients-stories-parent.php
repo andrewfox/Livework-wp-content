@@ -24,7 +24,7 @@ get_header(); ?>
 						</div><!-- .entry-content -->
 						
 						
-						<?php wp_list_categories( 'sectors' ); ?>
+						<?php echo get_the_term_list( $post->ID, 'sectors', 'Sectors: ', ', ', '' ); ?>
 					
 					</div>
 
