@@ -80,6 +80,9 @@ get_header(); ?>
 					if (!empty ($anyposts)) {
 					echo'<h2 class="section-title">Posts by <?php the_title(); ?></h2>'
 					}
+					else {
+						
+					}
 					?>
 					
 					<li>
