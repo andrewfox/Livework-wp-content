@@ -37,6 +37,7 @@ get_header(); ?>
 				<div class="splash <?php echo $catClass ?>">
 	
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+					<?php $titleofpage = the_title();  ?>
 					<?php the_post_thumbnail('large'); ?>
 					<div id="introduction" >
 						<div class="wrapper">
@@ -78,7 +79,7 @@ get_header(); ?>
 					$anyposts = $anyposts + 1;
 					if ($anyposts == 1) {
 					echo'<h2 class="section-title">Posts by ';
-					the_title();
+					echo $titleofpage;
 					echo '</h2>';
 					}
 					else {
