@@ -64,7 +64,7 @@ get_header(); ?>
 				
 				<aside id="sidebar-more-posts">
 							
-					
+					<?php $anyposts = 0; ?>
 					
 					<?php $authorid = get_the_author_meta('ID') ?>
 					<?php $args = array( 
@@ -75,15 +75,13 @@ get_header(); ?>
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post(); ?>
 					<?php 
-					
-					$anyposts = $wp_query->found_posts;
-					if (!empty ($anyposts)) {
+					$anyposts = $anyposts + 1;
+					if ($anyposts == 1)) {
 					echo'<h2 class="section-title">Posts by ';
 					the_title();
 					echo '</h2>';
 					}
 					else {
-					echo 'no posts';
 					}
 					?>
 					
