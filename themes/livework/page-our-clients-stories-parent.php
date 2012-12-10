@@ -25,8 +25,10 @@ get_header(); ?>
 						
 						
 						<?php
-						wp_tag_cloud( array( 'taxonomy' => 'sectors' ) ); 
-						?>
+						get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
+						foreach ($sectors as $sector) { ?>
+							<a href="<?php echo $sector[3] ?>"><?php echo $sector[1] ?></a>
+						<?php } ?>
 					
 					</div>
 
