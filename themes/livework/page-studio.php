@@ -47,15 +47,19 @@ get_header(); ?>
 	
 						 	<div class="wrapper">
 	
-								<h2><a href="<?php bloginfo('url'); ?>/latest"><strong>Latest</strong> from Livework</a></h2>
+								<h2><strong>Latest</strong> from <?php the_title(); ?></h2>
 	
 								<ul>
 									<?php
 									// The Query
-									$the_query = new WP_Query( 'posts_per_page=8' );
-									
-									// The Loop
-									while ( $the_query->have_posts() ) : $the_query->the_post();?>
+									$studiocat = the_title();
+									$args = array( 
+														'category_name'=> $studiocat,
+														'posts_per_page' => 8, 
+														
+														);
+									$loop = new WP_Query( $args );
+									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 									<li>
 										<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 										<?php 
