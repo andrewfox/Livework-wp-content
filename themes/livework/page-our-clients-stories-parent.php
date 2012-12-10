@@ -24,7 +24,7 @@ get_header(); ?>
 						</div><!-- .entry-content -->
 						
 						
-						<?php echo get_the_term_list( $post->ID, 'sectors', 'Sectors: ', ', ', '' ); ?>
+						<?php echo get_terms( 'sectors', 'orderby=count&hide_empty=0' ); ?>
 					
 					</div>
 
