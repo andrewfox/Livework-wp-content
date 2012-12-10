@@ -12,21 +12,15 @@ get_header(); ?>
 
 
 
-<?php query_posts(array('showposts' => 20, 'post_parent' => 15, 'post_type' => 'page')); while (have_posts()) { the_post(); ?>
 
 	
+					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<?php the_post_thumbnail('large'); ?>
 						<div class="wrapper">
 							
-								<?php query_posts(
-								array(
-								'posts_per_page' => 5 , 
-								'cat' => 200 ,
-								'order' => 'ASC', 
-//								'orderby' => 'date', 
-								)); ?>
+								<?php query_posts(array('showposts' => 20, 'post_parent' => 15, 'post_type' => 'page')); while (have_posts()) { the_post(); ?>
+								
 					
-								<?php while(have_posts()) : the_post();  ?>
 				
 									<div class="wrapper">
 										
