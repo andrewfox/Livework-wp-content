@@ -47,7 +47,8 @@ if ($feature == true) {
 						the_post_thumbnail('full');
 					}
 					?>
-					<div id="introduction" >
+					<div id="introduction" <?php if ($feature == true) {
+						echo'class="highlight"';?>>
 						<div class="wrapper">
 							<h4><a href="<?php bloginfo('url'); ?>/news">News</a></h4>
 							<h1><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h1>
