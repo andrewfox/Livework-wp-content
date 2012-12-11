@@ -34,7 +34,7 @@ $(document).ready(function() {
 	});
 	
 	
-	$("li.sao-paulo").click(function () {
+	$("li.saopaulo").click(function () {
 		$('#people li').hide()
 		$('#people .category-saopaulo').show();
 		$('#offices li').removeClass('on');
