@@ -26,7 +26,7 @@
 										query_posts(array('post_type' => 'case_study', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'tax_query' => array(
         array(
             'taxonomy' => 'sectors',
-            'terms' => $sector->slug
+            'terms' => 'health',
         )
     )));
 										while(have_posts()) : the_post();  ?>
