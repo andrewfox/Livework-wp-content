@@ -22,7 +22,8 @@
 									<ul>
 							<?php 
 																
-								<?php query_posts(array('post_type' => 'case_study', 'sectors' => $sector->slug, 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
+								<?php $sector_slug = $sector->slug;
+								query_posts(array('post_type' => 'case_study', 'sectors' => $sector_slug, 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
 				while(have_posts()) : the_post();  ?>
 
 					<li <?php post_class(); ?>>
