@@ -20,9 +20,9 @@
 							<ul>
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
 									<ul>
-							<?php 
 																
-								<?php $sector_slug = $sector->slug;
+								<?php 
+								$sector_slug = $sector->slug;
 								query_posts(array('post_type' => 'case_study', 'sectors' => $sector_slug, 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
 				while(have_posts()) : the_post();  ?>
 
