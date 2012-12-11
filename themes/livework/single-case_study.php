@@ -41,7 +41,7 @@ if ($feature == true) {
 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<div class="splash <?php echo $catClass ?>">
+				<div class="splash alt <?php echo $catClass ?>">
 					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
 					<div id="introduction">
 						<div class="wrapper">
