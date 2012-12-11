@@ -23,12 +23,7 @@
 																
 										<?php 
 										$sector_slug = $sector->slug;
-										query_posts(array('post_type' => 'case_study', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'tax_query' => array(
-        array(
-            'taxonomy' => 'sectors',
-            'terms' => 'health',
-        )
-    )));
+										query_posts(array('post_type' => 'case_study', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title'));
 										while(have_posts()) : the_post();  ?>
 
 										<li>
