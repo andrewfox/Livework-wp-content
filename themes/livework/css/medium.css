@@ -151,7 +151,10 @@ header {
 	padding-bottom: 0.7em;
 	margin: 0;
 }
-.splash .alt {
+
+/*alt*/
+
+.splash.alt #introduction {
 	top: 100px;
 	bottom: auto;
 	padding: 5% 40% 0 5%;
@@ -159,8 +162,8 @@ header {
 	border: none;
 	vertical-align: middle;
 }
-.splash .alt h1,
-.splash .alt h2 {
+.splash.alt h1,
+.splash.alt h2 {
 }
 
 /*Basic splash*/
@@ -171,15 +174,6 @@ header {
 .splash.basic img.wp-post-image {
 	width: 100%;
 	height: auto;
-}
-#introduction {
-	border: none;	
-	background: #eee;
-	background: rgba(256,256,256,0.6);
-	padding-top: 0.5em;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
 }
 .basic #introduction {
 	border-bottom: 1px solid #ccc;

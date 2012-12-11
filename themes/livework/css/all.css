@@ -376,19 +376,21 @@ h1.page-title {
 	margin-bottom: 0.5em;
 }
 
-#introduction.alt {
+/*alt splash*/
+
+.alt #introduction {
 	background: none;
 	color: #eee;
 }
-#introduction.alt h1 {
+.alt #introduction h1 {
 	font: bold 14px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	margin-bottom: 12px;
 }
-#introduction.alt h2 {
+.alt #introduction h2 {
 	font-size: 24px;
 	margin-bottom: 12px;
 }
-#introduction.alt p {
+.alt #introduction p {
 	font-size: 16px;
 	font-family:'Chaparral W01 Lt', Georgia, 'Times New Roman', serif;
 }

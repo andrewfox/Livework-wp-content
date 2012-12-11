@@ -57,13 +57,13 @@ Structure
 
 /* === Introduction (segment that sits atop highlight blog posts, case studies, people) =============================== */
 
-#introduction.alt {
-	padding-top: 9%;
+.alt #introduction {
+	padding-top: 10%;
 }
-#introduction.alt p {
+.alt #introduction p {
 	font-size: 24px;
 }
-#introduction.alt h2 {
+.alt #introduction h2 {
 	font-size: 32px;
 }
 
