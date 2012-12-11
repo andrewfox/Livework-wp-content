@@ -24,14 +24,13 @@
 		</footer><!-- footer -->
 
 
-		<div id="hello" class="arrows">
 		
 		<?php
 		$posts3 = get_field('previous_page');
 		if( get_field('previous_page') ): ?>
 		<?php foreach( $posts3 as $post): // variable must be called $post (IMPORTANT) 
 		setup_postdata($post); ?>
-		<a href="<?php the_permalink(); ?>"><img class="left-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/left-arrow.png" alt="go to previous page" /></a>
+		<a href="<?php the_permalink(); ?>" class="arrow-nav arrow-prev"><img src="<?php bloginfo( 'template_directory' ); ?>/img/left-arrow.png" alt="Go to previous page <?php the_title(); ?>" /></a>
 		<?php endforeach; 
 		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
 		endif; ?>
@@ -41,12 +40,10 @@
 		if( $posts2 ): 
 		foreach( $posts2 as $post): // variable must be called $post (IMPORTANT) ?>
 		<?php setup_postdata($post); ?>
-		<a href="<?php the_permalink(); ?>"><img class="right-arrow" src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="go to next page" /></a>
+		<a href="<?php the_permalink(); ?>" class="arrow-nav arrow-next"><img src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="Go to next page <?php the_title(); ?>" /></a>
 		<?php endforeach; 
 		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
 		endif; ?>
-		
-		</div>
 
 
 
