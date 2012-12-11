@@ -53,7 +53,7 @@ get_header(); ?>
 				
 
 
-		<div class="wrapper">
+			<div class="wrapper">
 				<article id="people-<?php the_ID(); ?>" class="main clearfix people ">
 						<div id="main" class="clearfix">
 			
