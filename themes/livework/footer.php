@@ -13,6 +13,32 @@
 		</section><!-- #content -->
 
 
+
+		<?php
+		// Previous arrow (left)
+		$posts3 = get_field('previous_page');
+		if( get_field('previous_page') ): ?>
+		<?php foreach( $posts3 as $post): // variable must be called $post (IMPORTANT) 
+		setup_postdata($post); ?>
+		<a href="<?php the_permalink(); ?>" class="arrow-nav arrow-prev"><img src="<?php bloginfo( 'template_directory' ); ?>/img/left-arrow.png" alt="Go to previous page <?php the_title(); ?>" /><span><?php the_title(); ?></span></a>
+		<?php endforeach; 
+		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
+		endif; ?>
+		
+		<?php
+		// Next arrow (right)
+		$posts2 = get_field('next_page');
+		if( $posts2 ): 
+		foreach( $posts2 as $post): // variable must be called $post (IMPORTANT) ?>
+		<?php setup_postdata($post); ?>
+		<a href="<?php the_permalink(); ?>" class="arrow-nav arrow-next"><img src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="Go to next page <?php the_title(); ?>" /><span><?php the_title(); ?></span></a>
+		<?php endforeach; 
+		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
+		endif; ?>
+
+
+
+
 		<footer role="contentinfo">
 
 			<?php echo date("Y"); ?> <a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
@@ -33,26 +59,7 @@
 		</footer><!-- footer -->
 
 
-		
-		<?php
-		$posts3 = get_field('previous_page');
-		if( get_field('previous_page') ): ?>
-		<?php foreach( $posts3 as $post): // variable must be called $post (IMPORTANT) 
-		setup_postdata($post); ?>
-		<a href="<?php the_permalink(); ?>" class="arrow-nav arrow-prev"><img src="<?php bloginfo( 'template_directory' ); ?>/img/left-arrow.png" alt="Go to previous page <?php the_title(); ?>" /><span><?php the_title(); ?></span></a>
-		<?php endforeach; 
-		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
-		endif; ?>
-		
-		<?php
-		$posts2 = get_field('next_page');
-		if( $posts2 ): 
-		foreach( $posts2 as $post): // variable must be called $post (IMPORTANT) ?>
-		<?php setup_postdata($post); ?>
-		<a href="<?php the_permalink(); ?>" class="arrow-nav arrow-next"><img src="<?php bloginfo( 'template_directory' ); ?>/img/right-arrow.png" alt="Go to next page <?php the_title(); ?>" /><span><?php the_title(); ?></span></a>
-		<?php endforeach; 
-		wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly 
-		endif; ?>
+
 
 
 
