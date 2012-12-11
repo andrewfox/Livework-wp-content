@@ -1078,6 +1078,18 @@ footer .menu a {
 	display: inline;
 }
 
+.footer-offices {
+	float: left;
+	margin-left: 30px;
+}
+
+.footer-offices p{
+	margin: 0;
+}
+
+.footer-offices h3{
+	margin-bottom: 2px;
+}
 
 /* === Colours =============================== */
 
@@ -1174,4 +1186,6 @@ button.menu-reveal span {
 .socialmedia a span {
 	font-family: "SSSocial";
 }
+
+
 
