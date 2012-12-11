@@ -70,30 +70,36 @@ if ($feature == true) {
 						</div>
 						
 					</div><!-- /.wrapper -->
+
+
+
+					<aside id="sidebar-more-posts">
+	
+					<!-- The Loop -->
+					<?php $authorid = get_the_author_meta('ID') ?> 
+					<?php $args = array( 
+										'author'=> $authorid,
+										'post_type' => 'people', 
+										'posts_per_page' => 1, 
+									);
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post(); ?>
+						<li>
+							<h2>Written by <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+							<?php the_post_thumbnail('thumbnail'); ?> <?php the_title(); ?>
+							</a></h2>
+						</li>
+				
+					<?php endwhile; ?>
+	
+					<!-- End Loop -->
+	
+					</aside>
+
+
+
 				</article>
 
-				<aside id="sidebar-more-posts">
-
-				<!-- The Loop -->
-				<?php $authorid = get_the_author_meta('ID') ?> 
-				<?php $args = array( 
-									'author'=> $authorid,
-									'post_type' => 'people', 
-									'posts_per_page' => 1, 
-								);
-				$loop = new WP_Query( $args );
-				while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<li>
-						<h2>Written by <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
-						<?php the_post_thumbnail('thumbnail'); ?> <?php the_title(); ?>
-						</a></h2>
-					</li>
-			
-				<?php endwhile; ?>
-
-				<!-- End Loop -->
-
-				</aside>
 
 				<div class="latest-mini clearfix">
 				
