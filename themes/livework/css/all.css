@@ -98,7 +98,6 @@ body {
 
 h1, h2, h3 {
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
-	line-height: 130%;
 }
 h1 {
 	font-size: 3em;
@@ -109,7 +108,6 @@ h2 {
 
 p {
 	margin: 0 0 1em 0;
-	line-height: 150%;
 }
 
 
@@ -297,7 +295,6 @@ header h1 a img {
 }
 
 .main {
-	line-height: 0;
 }
 h1.page-title {
 	margin: 0;
@@ -348,7 +345,6 @@ h1.page-title {
 
 .splash h1 {
 	font-size: 36px;
-	line-height: normal;
 	margin-top: 0;
 	margin: 0 auto 0.3em;
 }
@@ -362,7 +358,6 @@ h1.page-title {
 #introduction h4 {
 	padding: 0 0 0.5em 0;
 	margin: 0;
-	line-height: 1em;
 }
 #introduction h4 a {
 	font: bold 14px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -480,7 +475,6 @@ h1.page-title {
 .latest-mini li a {
 	padding: 10px 10px 20px 10px;
 	display: block;
-	line-height: 120%;
 	font-family:'Chaparral W01 Lt', Georgia, 'Times New Roman', serif;
 }
 .latest-mini li a:hover {
@@ -706,7 +700,6 @@ div.entry-meta {
 	background: #333;
 	min-height: 200px;
 	color: #eee;
-	line-height: 140%;
 	padding: 20px 0;
 	clear: left;
 	position: relative;
@@ -734,7 +727,6 @@ div.entry-meta {
 .featured blockquote {
 	margin: 0;
 	font-size: 22px;
-	line-height: 140%;
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
 }
 .featured {
@@ -864,7 +856,6 @@ div.entry-meta {
 	height: 50%;
 	position: relative;
 	box-sizing: border-box;
-	line-height: 0;
 }
 
 #people li a {
@@ -894,7 +885,6 @@ div.entry-meta {
 	display: block;
 	font-weight: normal;
 	padding: 4px 8px;
-	line-height: 120%;
 	width: 100%;
 	text-align: center;
 	box-sizing: border-box;
@@ -913,7 +903,6 @@ div.entry-meta {
 /* Offices picker (used on Team page) */
 
 #offices {
-	line-height: 1em;
 	padding-left: 15px;
 	margin: 0;
 }
@@ -962,7 +951,6 @@ div.entry-meta {
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
 .page-template-page-sector-php #introduction h2 {
-	color: #9B1E20;
 }
 
 
