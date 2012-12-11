@@ -123,20 +123,6 @@ add_filter( 'excerpt_length', 'livework_excerpt_length' );
 
 
 
-if ( ! function_exists( 'livework_continue_reading_link' ) ) :
-	/**
-	 * Returns a "Continue Reading" link for excerpts
-	 *
-	 * @since Twenty Ten 1.0
-	 * @return string "Continue Reading" link
-	 */
-	function livework_continue_reading_link() {
-		return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'livework' ) . '</a>';
-	}
-endif;
-
-
-
 
 
 if ( ! function_exists( 'livework_auto_excerpt_more' ) ) :
@@ -372,7 +358,7 @@ add_action( 'init', 'sector_init' );
 
 
 /* Editor style tweaks */
-add_editor_style( 'editor-style.css' );
+add_editor_style( 'css/editor-style.css' );
 
 /* Menu support */
 add_theme_support( 'menus' );
@@ -386,9 +372,31 @@ function is_tree($pid) {      // $pid = The ID of the page we're looking for pag
 		return false;  // we're elsewhere
 };
 
+
+
 /* Additional image sizes */
 
 add_image_size( 'thumb-large', 250, 250, true ); // Hard cropped large thumbnail, used on pages like Our Team
+
+
+
+
+/* Continue reading (remove link) */
+
+if ( ! function_exists( 'livework_continue_reading_link' ) ) :
+	/**
+	 * Returns a "Continue Reading" link for excerpts
+	 *
+	 * @since Twenty Ten 1.0
+	 * @return string "Continue Reading" link
+	 */
+	function livework_continue_reading_link() {
+		return '';
+	}
+endif;
+
+
+
 
 
 /* End Livework specifics */
