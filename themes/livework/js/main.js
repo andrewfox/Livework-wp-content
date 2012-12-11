@@ -49,25 +49,7 @@ $(document).ready(function() {
 		$(this).addClass('on');
 	});
 
-//	$('#more-info ul#people')
-//		.hide();
-//
-//
-//$(".morepeople").click(function () {
-//	$('#more-info ul#people')
-//		.toggle();
-//	$('#more-info h2 a.morepeople')
-//		.toggleClass('clicked')
-//});
 
-
-//$("ul#offices li").click(function () {
-//	$('ul#people li.oslo')
-//	$(this).prop('value', 'Existing activity');
-//		.toggle()
-//});
-//
-//(this).parent().children('.class2');
 
 
 	var theLoc = $('header').position().top;
@@ -83,71 +65,6 @@ $(document).ready(function() {
 		}
 	});
 	
-	
-//	var theLoc3 = $('ul').position().top;
-//		$(window).scroll(function() {
-//			if(theLoc3 >= $(window).scrollTop()) {
-//				if($('div.menu-header').hasClass('fixed')) {
-//					$('div.menu-header').removeClass('fixed');
-//				}
-//			} else { 
-//				if(!$('div.menu-header').hasClass('fixed')) {
-//					$('div.menu-header').addClass('fixed');
-//				}
-//			}
-//		});
-//	
-	
-	var theLoc2 = $('div#hello').position().top;
-		$(window).scroll(function() {
-			if(theLoc2 - 130 >= $(window).scrollTop()) {
-				if($('div#hello').hasClass('fixed2')) {
-					$('div#hello').removeClass('fixed2');
-					$('div#hello img').removeClass('smallarrows');
-				}
-			} else { 
-				if(!$('div#hello').hasClass('fixed2')) {
-					$('div#hello').addClass('fixed2');
-					$('div#hello img').addClass('smallarrows');
-				}
-			}
-	});
-		
-		
-		
-		
-//		var theLoc3 = $('div.arrows-r').position().top;
-//			$(window).scroll(function() {
-//				if(theLoc2 - 130 >= $(window).scrollTop()) {
-//					if($('div#hello').hasClass('fixed2')) {
-//						$('div#hello').removeClass('fixed2');
-//						$('div#hello img').removeClass('smallarrows');
-//					}
-//				} else { 
-//					if(!$('div#hello').hasClass('fixed2')) {
-//						$('div#hello').addClass('fixed2');
-//						$('div#hello img').addClass('smallarrows');
-//					}
-//				}
-//			});
-		
-		
-
-//	var theLoc = $('ul').position().top;
-//	$(window).scroll(function() {
-//		if(theLoc >= $(window).scrollTop()) {
-//			if($('p').hasClass('fixedT')) {
-//				$('p').removeClass('fixedT');
-//			}
-//		} else { 
-//			if(!$('p').hasClass('fixedT')) {
-//				$('p').addClass('fixedT');
-//			}
-//		}
-//	});
-
-
-
 
 
 
@@ -161,12 +78,7 @@ $(document).ready(function() {
 	        'slow');
 	}
 	
-	$("#more-info > h2 > a").click(function(e) { 
-	      // Prevent a page reload when a link is pressed
-	    e.preventDefault(); 
-	      // Call the scroll function
-	    goToByScroll($(this).attr("id"));
-	});
+
 
 	/* HOMEPAGE */
 
