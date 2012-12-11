@@ -48,7 +48,8 @@
 
 <?php query_posts(array('showposts' => 4, 'post_parent' => 15, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
 
-<div class="office">
+<div class="wrapper">
+	<div class="office">
 		
 		<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 		<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
@@ -57,8 +58,10 @@
 		<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
 		<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
 	
+	</div>
 </div>
 <?php } ?>
+
 <?php
 	/* Always have wp_footer() just before the closing </body>
 	 * tag of your theme, or you will break many plugins, which
