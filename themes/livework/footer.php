@@ -51,12 +51,9 @@
 <div class="wrapper">
 	<div class="office">
 		
-		<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+		<h3><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
 		<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
-		<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
 		<p class="studio-email"><?php the_field('studio_email'); ?></p>
-		<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
-		<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
 	
 	</div>
 </div>
