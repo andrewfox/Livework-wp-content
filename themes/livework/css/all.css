@@ -557,9 +557,9 @@ div.entry-meta {
 .arrow-nav {
 	display: block;
 	position: absolute;
-	top: 30%;
+	top: 130px;
 	width: 4%;
-	min-width: 15px;
+	min-width: 20px;
 	overflow: hidden;
 }
 .arrow-nav span {
@@ -587,10 +587,10 @@ div.entry-meta {
 	transition: all 0.3s linear;
 }
 .arrow-next:hover img {
-	margin-right: -5px;
+	margin-right: -4px;
 }
 .arrow-prev:hover img {
-	margin-left: -5px;
+	margin-left: -4px;
 }
 
 /* === Sections (repeated blocks of content on Story and Sectors pages) =============================== */

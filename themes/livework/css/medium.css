@@ -218,7 +218,11 @@ header {
 
 /* === Nav arrows =============================== */
 
-
+.arrow-nav {
+	position: fixed;
+	top: 30%;
+	min-width: 25px;
+}
 
 
 
