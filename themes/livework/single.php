@@ -42,10 +42,14 @@ if ($feature == true) {
 					<div id="introduction">
 						<div class="wrapper">
 							<h4><a href="<?php bloginfo('url'); ?>/news">News</a></h4>
-							<h1><?php the_title(); ?>: <span><?php the_field('job_title'); ?></span></h1>
+							<h1><?php the_title(); ?></h1>
+							<?php 
+							//only show excerpt if it exists
+							if ($post->post_excerpt): ?>
 							<div class="excerpt">
 								<?php the_excerpt() ?>
 							</div>
+							<?php endif; ?>
 						</div><!-- /.wrapper -->
 					</div><!-- /#introduction -->
 				</div>
