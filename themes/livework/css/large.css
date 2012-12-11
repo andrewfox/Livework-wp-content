@@ -33,6 +33,10 @@ Structure
 }
 .topimage {
 	max-height: 650px;
+	text-align: center;
+}
+.alt .topimage {
+	max-height: 650px;
 	text-align: right;
 }
 .splash img.wp-post-image {
