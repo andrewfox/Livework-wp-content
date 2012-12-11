@@ -51,12 +51,6 @@
 <div class="office">
 		
 		<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-		<?php 
-//		the_post_thumbnail('thumb-large');  
-		?>
-<!--		<p class="studio-address"><?php -->
-//		the_field('studio_address'); 
-<!--		?></p>-->
 		<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
 		<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
 		<p class="studio-email"><?php the_field('studio_email'); ?></p>
