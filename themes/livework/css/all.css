@@ -1081,6 +1081,8 @@ footer .menu a {
 .footer-offices {
 	float: left;
 	margin-left: 30px;
+	margin-bottom: 20px;
+	margin-top: 0;
 }
 
 .footer-offices p{

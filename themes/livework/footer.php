@@ -20,7 +20,16 @@
 			<nav id="social">
 				<?php wp_nav_menu( array('container' => '', 'menu' => 'Footer' )); ?>
 			</nav>
-
+			<?php query_posts(array('showposts' => 4, 'post_parent' => 15, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
+			
+				<div class="footer-offices">
+					
+					<h3><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
+					<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
+					<p class="studio-email"><?php the_field('studio_email'); ?></p>
+				
+				</div>
+			<?php } wp_reset_postdata();?>
 		</footer><!-- footer -->
 
 
@@ -46,16 +55,7 @@
 		endif; ?>
 
 
-<?php query_posts(array('showposts' => 4, 'post_parent' => 15, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
 
-	<div class="footer-offices">
-		
-		<h3><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h3>
-		<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
-		<p class="studio-email"><?php the_field('studio_email'); ?></p>
-	
-	</div>
-<?php } ?>
 
 <?php
 	/* Always have wp_footer() just before the closing </body>
