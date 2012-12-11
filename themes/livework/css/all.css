@@ -560,11 +560,34 @@ div.entry-meta {
 	top: 130px;
 	width: 4%;
 	min-width: 20px;
-	overflow: hidden;
+	max-width: 60px;
 }
 .arrow-nav span {
-	display: none;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -18px;
+	left: 120%;
+	padding: 5px 10px;
+	background: rgba(0,0,0,0.7);
+	white-space: nowrap;
+	opacity: 0;
+	font-size: 80%;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
 }
+.arrow-nav:hover span {
+	display: block;
+	opacity: 1;
+}
+.arrow-next span {
+	left: auto;
+	right: 120%;
+}
+
 
 
 .arrow-prev {
@@ -576,7 +599,6 @@ div.entry-meta {
 	z-index: 102;
 	text-align: right;
 }
-
 .arrow-nav img {
 	width: 100%;
 	height: auto;
@@ -586,11 +608,17 @@ div.entry-meta {
 	-o-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 }
-.arrow-next:hover img {
+.arrow-next img {
 	margin-right: -4px;
 }
-.arrow-prev:hover img {
+.arrow-prev img {
 	margin-left: -4px;
+}
+.arrow-next:hover img {
+	margin-right: 0;
+}
+.arrow-prev:hover img {
+	margin-left: 0;
 }
 
 /* === Sections (repeated blocks of content on Story and Sectors pages) =============================== */
