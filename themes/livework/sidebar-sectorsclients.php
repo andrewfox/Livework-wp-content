@@ -23,7 +23,7 @@
 																
 										<?php 
 										$sector_slug = $sector->slug;
-										query_posts(array('post_type' => 'case_study', 'sectors' => $sector->slug, 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
+										query_posts(array('post_type' => 'case_study', 'sectors' => $sector->slug, 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title'));
 										while(have_posts()) : the_post();  ?>
 
 										<li>
