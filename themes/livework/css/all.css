@@ -93,6 +93,7 @@ body {
 	color: #222;
 	background: #fff;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	line-height: 1.5em;
 }
 
 h1, h2, h3 {
@@ -100,9 +101,11 @@ h1, h2, h3 {
 }
 h1 {
 	font-size: 3em;
+	line-height: 1.25em;
 }
 h2 {
 	font-size: 2em;
+	line-height: 1.25em;
 }
 
 p {
