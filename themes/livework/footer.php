@@ -60,8 +60,7 @@
 		<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
 	
 </div>
-
-
+<?php } ?>
 <?php
 	/* Always have wp_footer() just before the closing </body>
 	 * tag of your theme, or you will break many plugins, which
