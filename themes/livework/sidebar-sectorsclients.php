@@ -21,10 +21,20 @@
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
 									<ul>
 							<?php 
-								$clients = get_terms( 'clients', 'orderby=count&hide_empty=0' );
-								foreach ($clients as $client) { ?>
-										<li><a href="<?php bloginfo('url'); ?>/case-study/<?php echo $client->slug ?>"><?php echo $client->name ?></a></li>
-								<?php } ?>
+																
+								<?php query_posts(array('post_type' => 'case_study', 'sectors' => $sector->slug, 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
+				while(have_posts()) : the_post();  ?>
+
+					<li <?php post_class(); ?>>
+						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+							<?php the_title(); ?>
+						</a>
+					</li>
+
+					<?php endwhile; ?>
+
+								
+								
 									</ul>
 								</li>
 							</ul>

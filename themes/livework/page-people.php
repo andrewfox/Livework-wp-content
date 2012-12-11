@@ -39,9 +39,8 @@ get_header(); ?>
 
 				<ul id="people" class="clearfix">
 
-				<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged)); ?>
-	
-				<?php while(have_posts()) : the_post();  ?>
+				<?php query_posts(array('post_type' => 'people', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'paged'=> $paged));
+				while(have_posts()) : the_post();  ?>
 
 					<li <?php post_class(); ?>>
 						<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
