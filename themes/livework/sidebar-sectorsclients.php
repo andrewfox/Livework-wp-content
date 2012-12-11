@@ -23,12 +23,17 @@
 																
 										<?php 
 										$sector_slug = $sector->slug;
-										query_posts(array('post_type' => 'case_study', 'sectors' => $sector->slug, 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title'));
+										query_posts(array('post_type' => 'case_study', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title', 'tax_query' => array(
+        array(
+            'taxonomy' => 'sectors',
+            'terms' => $sector->slug
+        )
+    )));
 										while(have_posts()) : the_post();  ?>
 
 										<li>
 											<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-												<?php the_title(); ?> <?php echo $sector->slug ?>
+												<?php the_title(); ?> (<?php echo $sector->slug ?>)
 											</a>
 										</li>
 
