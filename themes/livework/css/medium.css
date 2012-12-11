@@ -322,8 +322,13 @@ article.people{
 /* === Person (single person page) =============================== */
 
 /* === Contact =============================== */
+.office {
+	width: 50%;
+	height: 850px;
+	
+}
+
 .office img{
-	width: 70%;
 }
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
