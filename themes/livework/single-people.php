@@ -63,7 +63,11 @@ get_header(); ?>
 				</article>
 				
 				<aside id="sidebar-more-posts">
-							
+					
+					<h3><?php the_field('person_phone_number'); ?></h3>
+					<h3><?php the_field('person_email'); ?></h3>
+					
+					
 					<?php $anyposts = 0; ?>
 					
 					<?php $authorid = get_the_author_meta('ID') ?>
