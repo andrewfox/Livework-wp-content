@@ -12,7 +12,7 @@ get_header(); ?>
 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<div class="splash <?php the_field('colour'); ?>">
+				<div class="splash alt <?php the_field('colour'); ?>">
 					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
 					<div id="introduction" class="alt">
 						<div class="wrapper">
