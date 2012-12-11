@@ -63,9 +63,8 @@ get_header(); ?>
 				</article>
 				
 				<aside id="sidebar-more-posts">
-					
+					<p><a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
 					<h3><?php the_field('person_phone_number'); ?></h3>
-					<h3><?php the_field('person_email'); ?></h3>
 					
 					
 					<?php $anyposts = 0; ?>
