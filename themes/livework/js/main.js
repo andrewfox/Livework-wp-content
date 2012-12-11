@@ -85,22 +85,6 @@ $(document).ready(function() {
 
 
 
-//$('#more-info').click(function(){
-//
-//     alert("Handler for .click() called.");
-//    scrollToDiv(#more,40);
-//     
-//    return false;
-//});
-
-	// rescale the homepage's bkgd img
-/*
-if ($("body.page-template-page-story-php, body.page-template-page-story-parent-php, body.page-template-page-sector-php").length > 0) {
-	rescale();
-	$(window).resize(function(){
-		rescale();
-});
-*/
 
 
 
