@@ -577,6 +577,10 @@ div.entry-meta {
 	color: black;
 }
 
+span.casestudy-title {
+	display: block;
+}
+
 
 /* === Logos list =============================== */
    
@@ -599,6 +603,9 @@ div.entry-meta {
 	width: 50%;
 	box-sizing: border-box;
 }
+
+
+
 .logos-list li img {
 	opacity: 0.5;
 	width: 100%;
