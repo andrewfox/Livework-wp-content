@@ -12,6 +12,8 @@
 				<div class="sectors-clients-list clearfix">
 
 					<div class="wrapper">
+					
+						<h3 class="section-title">All our clients</h3>
 
 						<?php
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
@@ -21,10 +23,12 @@
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
 									<ul>
 										<?php $args = array(
-							    'post_type'=> 'case_study',
-							    'taxonomy' => 'sectors',
-							    'term' => $sector->slug,
-							    );
+											'post_type'=> 'case_study',
+											'taxonomy' => 'sectors',
+											'term' => $sector->slug,
+											'orderby' => 'title',
+											'order' => 'DESC'
+										);
 							
 							$the_query = new WP_Query( $args );
 							while ( $the_query->have_posts() ) : $the_query->the_post(); 

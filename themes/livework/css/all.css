@@ -726,27 +726,39 @@ div.entry-meta {
 	border-top: 1px solid #ccc;
 	background-color: #e9e9e6;
 	font-size: 80%;
+	color: #999;
 }
 .sectors-clients-list .wrapper {
 	padding: 0 10px;
 }
-.sectors-clients-list ul {
+.sectors-clients-list .wrapper > ul {
 	box-sizing: border-box;
 	float: left;
-	width: 200px;
+	width: 50%;
 	padding: 0 10px;
-	
+}
+.sectors-clients-list .wrapper > ul:nth-child(odd) {
+	background: #ccc;
+	clear: both;
 }
 .sectors-clients-list ul ul {
 	float: none;
 	width: auto;
 	padding: 0;	
 }
+.sectors-clients-list ul ul li {
+	margin: 0 0 0.5em;
+	padding: 0;
+	line-height: 1.2em
+	
+}
 .sectors-clients-list a {
 	color: #444;	
 }
+
 .sectors-clients-list ul ul a {
-	font-weight: normal;	
+	font-weight: normal;
+	
 }
 
 

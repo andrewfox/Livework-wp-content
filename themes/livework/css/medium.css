@@ -268,7 +268,17 @@ ul.list-pages li {
 
 /* === Our Client's Stories main page =============================== */
 
-
+.sectors-clients-list .wrapper > ul {
+	width: 25%;
+}
+.sectors-clients-list .wrapper > ul:nth-child(odd) {
+	background: none;
+	clear: none;
+}
+.sectors-clients-list .wrapper > ul:nth-child(4n-3) {
+	background: #ccc;
+	clear: both;
+}
 
 /* === Our Team =============================== */
 
