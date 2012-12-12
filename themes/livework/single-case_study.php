@@ -137,7 +137,7 @@ if ($feature == true) {
 									<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 									<?php 
 									if(has_post_thumbnail()) :
-										the_post_thumbnail('thumbnail'); 
+										the_post_thumbnail('medium'); 
 										else :				
 										endif;
 									the_title(); 
