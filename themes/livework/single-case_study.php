@@ -141,7 +141,7 @@ if ($feature == true) {
 										else :				
 										endif;
 									the_field('casestudies_one_liner');
-									echo ' with '
+									echo ' with ';
 									the_title(); 
 									?>
 									</a><h3>
