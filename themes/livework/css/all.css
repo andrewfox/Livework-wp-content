@@ -1,89 +1,11 @@
 /* @override 
 	http://www.liveworkstudio.com/wordpress/wp-content/themes/livework/css/all.css */
 
-/* === All screens (small+) =============================== */
+/* === ALL SCREENS (small+) =============================== */
 
 
 
-/* ===============================
 
-Structure
- 
- BODY
- - HEADER
- - SECTION#content
- - FOOTER
- 
-=============================== */
-/* ===============================
-
-Colours
- 
-Black
-#231f20
-35,31,32
-
-White
-#ffffff
-255, 255, 255
-
-Grey
-#e9e8e8
-233, 233, 233
-
-Blue
-#027cb8
-3, 124, 185
-
-Blue medium 
-#34abe1
-52, 171, 226
-
-Blue light 
-#b1d7e6
-178, 215, 230
-
-Hard blue
-#094d6f
-10, 77, 111
-
-Purple
-#6d2061 
-109, 32, 97
-
-Orange
-#c36b28
-195, 107, 41
-
-Green
-#686f2f
-104, 112, 48
-
-Green light 
-#c1c3a0
-194, 196, 161
-
-Yellow
-
-Red
-
-
-FONTS
-font-family:'Chaparral W01 It';
-font-family:'Chaparral W01 Lt';
-font-family:'Chaparral W01 Lt It';
-font-family:'Chaparral W01 Regular';
-font-family:'Chaparral W01 SmBd';
-font-family:'Chaparral W01 SmBd It';
-font-family:'Chaparral W01 It';
-font-family:'Chaparral W01 Lt';
-font-family:'Chaparral W01 Lt It';
-font-family:'Chaparral W01 Regular';
-font-family:'Chaparral W01 SmBd';
-font-family:'Chaparral W01 SmBd It';
-
- 
-=============================== */
 
 
 
@@ -1183,3 +1105,85 @@ button.menu-reveal span {
 
 
 
+/* === NOTES =============================== */
+
+
+/* ===============================
+
+Structure
+ 
+ BODY
+ - HEADER
+ - SECTION#content
+ - FOOTER
+ 
+=============================== */
+/* ===============================
+
+Colours
+ 
+Black
+#231f20
+35,31,32
+
+White
+#ffffff
+255, 255, 255
+
+Grey
+#e9e8e8
+233, 233, 233
+
+Blue
+#027cb8
+3, 124, 185
+
+Blue medium 
+#34abe1
+52, 171, 226
+
+Blue light 
+#b1d7e6
+178, 215, 230
+
+Hard blue
+#094d6f
+10, 77, 111
+
+Purple
+#6d2061 
+109, 32, 97
+
+Orange
+#c36b28
+195, 107, 41
+
+Green
+#686f2f
+104, 112, 48
+
+Green light 
+#c1c3a0
+194, 196, 161
+
+Yellow
+
+Red
+
+
+FONTS
+font-family:'Chaparral W01 It';
+font-family:'Chaparral W01 Lt';
+font-family:'Chaparral W01 Lt It';
+font-family:'Chaparral W01 Regular';
+font-family:'Chaparral W01 SmBd';
+font-family:'Chaparral W01 SmBd It';
+font-family:'Chaparral W01 It';
+font-family:'Chaparral W01 Lt';
+font-family:'Chaparral W01 Lt It';
+font-family:'Chaparral W01 Regular';
+font-family:'Chaparral W01 SmBd';
+font-family:'Chaparral W01 SmBd It';
+
+ 
+=============================== */

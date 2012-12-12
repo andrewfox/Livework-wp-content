@@ -145,7 +145,6 @@ get_header(); ?>
 							    'post_type'=> 'case_study',
 							    'taxonomy' => 'sectors',
 							    'term' => $thissector,
-						
 							    );              
 							
 							$the_query = new WP_Query( $args );

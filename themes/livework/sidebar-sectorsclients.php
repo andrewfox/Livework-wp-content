@@ -32,10 +32,12 @@
 							
 							?>
 								<li>
-									<p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+									<?php if (in_category('logo-only-case-study')) : ?>
+									<?php the_title(); ?>
+									<?php else: ?>
+									<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+									<?php endif; ?>
 								</li>
-								
-								
 								<?php endwhile; ?>
 								<?php wp_reset_postdata() ?>
 									</ul>
