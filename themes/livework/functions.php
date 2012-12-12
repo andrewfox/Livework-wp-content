@@ -293,7 +293,7 @@ function clients_init() {
 		'clients',
 		array('post','case_study'),
 		array(
-			'label' => __( 'Clients' ),
+			'label' => __( 'clients' ),
 			'query_var' => ('true'),
 			'rewrite' => array( 'slug' => 'client' ),
 //			'capabilities' => array('assign_terms'=>'edit_guides', 'edit_terms'=>'publish_guides')
@@ -311,7 +311,7 @@ function sector_init() {
 		array('post','case_study'),
 		array(
 			'hierarchical' => ('true'), 
-			'label' => __( 'Sectors' ),
+			'label' => __( 'sectors' ),
 			'query_var' => ('true'),
 			'rewrite' => array( 'slug' => 'sectors' ),
 //			'capabilities' => array('assign_terms'=>'edit_guides', 'edit_terms'=>'publish_guides')
@@ -349,10 +349,10 @@ add_image_size( 'thumb-large', 250, 250, true ); // Hard cropped large thumbnail
 
 if ( ! function_exists( 'livework_continue_reading_link' ) ) :
 	/**
-	 * Returns a "Continue Reading" link for excerpts
+	 * Returns a blank link where you'd expect a 'more' for excerpts
 	 *
 	 * @since Twenty Ten 1.0
-	 * @return string "Continue Reading" link
+	 * @return no string
 	 */
 	function livework_continue_reading_link() {
 		return '';
