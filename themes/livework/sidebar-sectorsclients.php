@@ -10,7 +10,7 @@
 
 
 				<div class="sectors-clients-list clearfix">
-					
+
 					<div class="wrapper">
 
 						<?php
@@ -43,31 +43,6 @@
 							</ul>
 							<?php } ?>
 						<?php } ?>
-						
-
-
-
-
-							<?php 
-							
-							$args = array(
-							    'post_type'=> 'case_study',
-							    'taxonomy' => 'sectors',
-							    'term' => 'health',
-							    );              
-							
-							$the_query = new WP_Query( $args );
-							while ( $the_query->have_posts() ) : $the_query->the_post(); 
-						
-							
-							?>
-								<li>
-									<p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
-								</li>
-								
-								
-								<?php endwhile; ?>
-								<?php wp_reset_postdata() ?>
 
 
 
