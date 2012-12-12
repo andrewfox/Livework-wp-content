@@ -79,9 +79,9 @@ if ($feature == true) {
 						$loop = new WP_Query( $args );
 						while ( $loop->have_posts() ) : $loop->the_post(); ?>
 							<li>
-								<h2>Written by <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+								<h3>Written by <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
 								<?php the_post_thumbnail('thumbnail'); ?> <?php the_title(); ?>
-								</a></h2>
+								</a></h3>
 							</li>
 					
 						<?php endwhile; ?>
