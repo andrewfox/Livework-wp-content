@@ -276,7 +276,6 @@ ul.list-pages li {
 	clear: none;
 }
 .sectors-clients-list .wrapper > ul:nth-child(4n-3) {
-	background: #ccc;
 	clear: both;
 }
 
