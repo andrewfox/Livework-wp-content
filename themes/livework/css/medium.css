@@ -369,6 +369,17 @@ article.people{
 	height: auto;
 }
 
+.below-more li h3 {
+	font-size: 16px;
+	padding-left: 0;
+}
+
+.below-more span {
+	clear: both;
+	display: block;
+	color: black;
+}
+
 /* === Extra aside =============================== */
 
 
