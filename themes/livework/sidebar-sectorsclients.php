@@ -13,7 +13,7 @@
 
 					<div class="wrapper">
 					
-						<h3 class="section-title">All our clients</h3>
+						
 
 						<?php
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
@@ -27,7 +27,7 @@
 											'taxonomy' => 'sectors',
 											'term' => $sector->slug,
 											'orderby' => 'title',
-											'order' => 'DESC'
+											'order' => 'ASC'
 										);
 							
 							$the_query = new WP_Query( $args );

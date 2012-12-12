@@ -730,12 +730,14 @@ div.entry-meta {
 }
 .sectors-clients-list .wrapper {
 	padding: 0 10px;
+	background: red;
 }
 .sectors-clients-list .wrapper > ul {
 	box-sizing: border-box;
 	float: left;
 	width: 50%;
 	padding: 0 10px;
+	border: 1px solid #fff;
 }
 .sectors-clients-list .wrapper > ul:nth-child(odd) {
 	background: #ccc;
