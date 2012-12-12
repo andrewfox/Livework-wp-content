@@ -29,17 +29,20 @@ Structure
 
 /* === General (used in multiple situations) =============================== */
 
-.splash {
-}
 .topimage {
 	max-height: 650px;
 	text-align: center;
+	overflow: hidden;
 }
 .alt .topimage {
 	max-height: 650px;
 	text-align: right;
 }
 .splash img.wp-post-image {
+	width: auto;
+	max-width: 100%;
+}
+.alt.splash img.wp-post-image {
 	width: auto;
 	max-width: 100%;
 	max-height: 650px;
@@ -101,17 +104,8 @@ Structure
 
 /* === Our Client's Stories main page =============================== */
 
-.sectors-clients-list .wrapper > ul {
-	width: 20%;
-}
 
-.sectors-clients-list .wrapper > ul:nth-child(4n-3) {
-	background: none;
-	clear: none;
-}
-.sectors-clients-list .wrapper > ul:nth-child(5n-4) {
-	clear: both;
-}
+
 /* === Our Team =============================== */
 
 #people li {
