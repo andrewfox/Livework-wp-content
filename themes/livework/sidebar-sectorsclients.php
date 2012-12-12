@@ -26,6 +26,17 @@
 										
 										
 										
+
+										
+
+									</ul>
+								</li>
+							</ul>
+							<?php } ?>
+						<?php } ?>
+						
+
+
 										<?php
 //for a given post type, return all
 $post_type = 'case_study';
@@ -54,14 +65,6 @@ if ($tax_terms) {
   }
 }
 ?>
-										
-
-									</ul>
-								</li>
-							</ul>
-							<?php } ?>
-						<?php } ?>
-						
 
 					</div><!-- /.wrapper -->
 
