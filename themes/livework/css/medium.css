@@ -288,6 +288,10 @@ ul.list-pages li {
 }
 #people img {
 }
+
+
+
+
 #people li a {
 }
 #people span {
@@ -312,6 +316,12 @@ aside#sidebar-more-posts {
 	border-top: 0px;
 	margin: 0 0px;
 	
+}
+
+#main div.entry-content h2 {
+	padding: 10px;
+	background-color: olive;
+	color: white;
 }
 
 article.people{
@@ -343,6 +353,20 @@ article.people{
 	float: left;
 	box-sizing: border-box;
 	padding-right: 20px;
+}
+
+.below-more li {
+	float: left;
+	width: 33%;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+
+.below-more li a img {
+	clear: both;
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 /* === Extra aside =============================== */

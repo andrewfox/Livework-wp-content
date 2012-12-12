@@ -134,7 +134,7 @@ if ($feature == true) {
 							<?php } else { ?>
 							
 								<li>
-									<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+									<h3><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 									<?php 
 									if(has_post_thumbnail()) :
 										the_post_thumbnail('medium'); 
@@ -142,7 +142,7 @@ if ($feature == true) {
 										endif;
 									the_title(); 
 									?>
-									</a>
+									</a><h3>
 								</li>
 								<?php } ?>
 								<?php endwhile; ?>
