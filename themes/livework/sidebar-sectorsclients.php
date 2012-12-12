@@ -20,14 +20,6 @@
 							<ul>
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
 									<ul>
-																
-										
-										
-										
-										
-										
-
-										
 
 									</ul>
 								</li>
@@ -57,7 +49,7 @@ if ($tax_terms) {
     if( $my_query->have_posts() ) {
       echo 'List of '.$post_type . ' where the taxonomy '. $tax . '  is '. $tax_term->name;
       while ($my_query->have_posts()) : $my_query->the_post(); ?>
-        <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+        <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
         <?php
       endwhile;
     }
