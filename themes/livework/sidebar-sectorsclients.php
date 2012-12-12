@@ -21,18 +21,6 @@
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
 									<ul>
 																
-										<?php 
-										$sector_slug = $sector->slug;
-										query_posts(array('post_type' => 'case_study', 'sectors' => 'financial', 'posts_per_page' => -1 , 'order' => 'ASC', 'orderby' => 'title'));
-										while(have_posts()) : the_post();  ?>
-
-										<li>
-											<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-												<?php the_title(); ?> (<?php echo $sector->slug ?>)
-											</a>
-										</li>
-
-										<?php endwhile; ?>
 										
 										
 										
@@ -58,7 +46,7 @@ if ($tax_terms) {
     if( $my_query->have_posts() ) {
       echo 'List of '.$post_type . ' where the taxonomy '. $tax . '  is '. $tax_term->name;
       while ($my_query->have_posts()) : $my_query->the_post(); ?>
-        <p><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></p>
+        <li><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
         <?php
       endwhile;
     }
