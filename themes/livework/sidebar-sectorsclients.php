@@ -23,7 +23,7 @@
 										<?php $args = array(
 							    'post_type'=> 'case_study',
 							    'taxonomy' => 'sectors',
-							    'term' => 'health',
+							    'term' => $sector->slug,
 							    );
 							
 							$the_query = new WP_Query( $args );
