@@ -114,7 +114,7 @@ if ($feature == true) {
 							?>
 							<h2>More from <span><?php echo $thesector; ?> </span></h2>
 							
-							<ul>
+							<ul class="below-more">
 							<?php 
 							
 							$args = array(
