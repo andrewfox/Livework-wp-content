@@ -140,6 +140,8 @@ if ($feature == true) {
 										the_post_thumbnail('medium'); 
 										else :				
 										endif;
+									the_field('casestudies_one_liner');
+									echo ' with '
 									the_title(); 
 									?>
 									</a><h3>
