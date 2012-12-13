@@ -235,7 +235,8 @@ h1.page-title {
 }
 
 /*Splash*/
-.splash {
+.highlight {
+	background-color: red;
 }
 
 .topimage {
@@ -551,10 +552,10 @@ div.entry-meta {
 	transition: all 0.3s linear;
 }
 .arrow-next img {
-	margin-right: -4px;
+	margin-right: -2px;
 }
 .arrow-prev img {
-	margin-left: -4px;
+	margin-left: -2px;
 }
 .arrow-next:hover img {
 	margin-right: 0;
