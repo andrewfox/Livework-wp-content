@@ -96,9 +96,4 @@
 
 					</div> <!-- /.feature-posts -->
 					
-					<?php
 					
-					else :
-						
-					
-					?>
