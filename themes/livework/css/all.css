@@ -206,6 +206,9 @@ header h1 a img {
 	font-weight: normal;
 	color: #555;
 }
+#menu-countries a:after {
+	content: ' →';
+}
 #menu-countries .menu-item-45 a {
 	color: #838588;
 }

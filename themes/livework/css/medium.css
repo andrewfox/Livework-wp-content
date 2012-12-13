@@ -100,7 +100,7 @@ header {
 	margin: 0;
 }
 .topimage {
-	min-height: 450px;
+	overflow: hidden;
 }
 .splash img.wp-post-image {
 	width: 100%;
