@@ -1210,3 +1210,25 @@ font-family:'Chaparral W01 SmBd It';
 
  
 =============================== */
+ul.cases-mosaic li{
+	width: 20%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+ul.cases-mosaic li a{
+	margin: 0;
+	padding: 0;
+}
+
+ul.cases-mosaic li img{
+	width: 100%;
+	height: auto;
+}
+
+
+ul.sectors-list {
+	float: left;
+	clear: both;
+}
