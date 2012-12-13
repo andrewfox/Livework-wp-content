@@ -112,17 +112,16 @@ if ($feature == true) {
 								}
 								$thesector = join( ", ", $sectors_terms );
 							?>
-							<h2>More from <span><?php echo $thesector; ?> </span></h2>
+							<h2 class="section-title">More from <span><?php echo $thesector; ?> </span></h2>
 							
 							<ul class="below-more">
 							<?php 
 							
 							$args = array(
-							    'post_type'=> 'case_study',
-							    'taxonomy' => 'sectors',
-							    'term' => $thesector,
-						
-							    );              
+									'post_type'=> 'case_study',
+									'taxonomy' => 'sectors',
+									'term' => $thesector,
+								);
 							
 							$the_query = new WP_Query( $args );
 							while ( $the_query->have_posts() ) : $the_query->the_post(); 

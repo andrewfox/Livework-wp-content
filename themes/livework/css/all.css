@@ -320,7 +320,20 @@ h1.page-title {
 /*Basic splash*/
 
 
+/* === Gallery =============================== */
 
+.gallery {
+}
+.gallery dl {
+	float: left;
+	width: 25%;
+	margin-bottom: 20px;
+	background: red;
+}
+.gallery img {
+	max-width: 100%;
+	height: auto;
+}
 
 
 
