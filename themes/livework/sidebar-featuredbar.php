@@ -9,17 +9,7 @@
 ?>
 
 
-					<div class="featured clearfix">
-										 
-					 	<div class="wrapper">
-					 		
-					 		<?php if (the_field('featured_quote')) :?>
-							<div class="featured_post">
-								<h3 class="section-title">Quote</h3>
-								<blockquote><?php the_field('featured_quote');?></blockquote>
-								<p><?php the_field('featured_quote_attribution');?></p>
-							</div>
-							<?php endif; ?>
+					
 
 							<?php 
 							// works out how many features there are
@@ -33,6 +23,19 @@
 							$posts = get_field('featured_content');
 							
 		 					if( $posts ): ?>
+		 					
+		 					<div class="featured clearfix">
+		 										 
+		 					 	<div class="wrapper">
+		 					 		
+		 					 		<?php if (the_field('featured_quote')) :?>
+		 							<div class="featured_post">
+		 								<h3 class="section-title">Quote</h3>
+		 								<blockquote><?php the_field('featured_quote');?></blockquote>
+		 								<p><?php the_field('featured_quote_attribution');?></p>
+		 							</div>
+		 							<?php endif; ?>
+		 					
 	 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 	 						<?php setup_postdata($post); ?>
 	 						<div class="featured_post">
