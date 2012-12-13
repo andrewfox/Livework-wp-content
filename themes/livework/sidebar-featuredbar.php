@@ -10,15 +10,15 @@
 
 				<?php 
 				if (the_field('featured_quote')) {
-					$featured = true
+					$featured = true;
 				}
 				
 				elseif (get_field('featured_content')) {
-					$featured = true
+					$featured = true;
 				}
-				
+			
 				else {
-					$featured = false
+					$featured = false;
 				}
 				
 				if ($featured = true) {
