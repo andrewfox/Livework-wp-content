@@ -23,6 +23,7 @@ get_header(); ?>
 							<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
 						</div><!-- .entry-content -->
 						
+					</div>
 						<ul class="cases-mosaic">
 							
 								<?php 
@@ -55,6 +56,8 @@ get_header(); ?>
 									<?php wp_reset_postdata() ?>
 						
 						</ul>
+						
+						<div class="wrapper">
 						
 						<ul class="sectors-list">
 						<?php
