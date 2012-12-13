@@ -264,6 +264,8 @@ h1.page-title {
 	border-bottom: 3px solid #eee;
 	background: #eee;
 	padding-top: 0.5em;
+	text-shadow: 0 1px 0 rgba(256,256,256,0.8);
+	font-family:'Chaparral W01 Lt', Georgia, 'Times New Roman', serif;
 }
 
 .highlight #introduction {
@@ -280,7 +282,7 @@ h1.page-title {
 }
 
 #introduction h1 span {
-	font-size: 80%;
+	font-size: 70%;
 }
 #introduction h2 {
 	margin-top: 0;
@@ -317,7 +319,6 @@ h1.page-title {
 }
 .alt #introduction p {
 	font-size: 16px;
-	font-family:'Chaparral W01 Lt', Georgia, 'Times New Roman', serif;
 }
 
 /*Basic splash*/
@@ -721,37 +722,16 @@ span.casestudy-title {
 }
 
 
-/* === More info (black tab and box) =============================== */
-
-
-#more-info {
-	background-color: #111;
-	height: 200px;
-	position: relative;
-}
-
-#more-info h1 {
-	color: white;
-	margin-left: 40px;
-	position: absolute;
-	bottom: 0;
-}
-#more-info h2 a {
-	padding: 10px 20px;
-	background-color: #111;
-}
-
-#more-info h2 a.clicked{
-	background-color: #000 ;
-}
-
-
 
 
 /* === Our Story main page =============================== */
 
 
 /* === Our Story single pages =============================== */
+
+.page-template-page-story-php #introduction h2 {
+	color: #ed862e;
+}
 
 
 
@@ -834,7 +814,7 @@ ul.sectors-list {
 .single-people #introduction h1,
 .single-people h3 a,
 .page-template-page-people-php .page-title {
-	color: #686f2f;
+	color: #9b1e20;
 }
 
 #people {
