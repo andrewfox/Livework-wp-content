@@ -272,6 +272,10 @@ ul.list-pages li {
 
 /* === Our Client's Stories main page =============================== */
 
+ul.cases-mosaic li{
+	width: 10%;
+}
+
 .sectors-clients-list .wrapper > ul {
 	width: 25%;
 }

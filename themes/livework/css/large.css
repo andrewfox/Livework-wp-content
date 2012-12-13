@@ -106,7 +106,9 @@ Structure
 /* === Our Story single pages =============================== */
 
 /* === Our Client's Stories main page =============================== */
-
+ul.cases-mosaic li{
+	width: 10%;
+}
 
 
 /* === Our Team =============================== */
