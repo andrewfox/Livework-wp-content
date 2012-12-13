@@ -131,7 +131,21 @@ get_header(); ?>
 								<?php wp_reset_postdata() ?>
 					
 					</ul>
+					<div class="wrapper">
+											
+											<ul class="sectors-list">
+											<?php
+											$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
+											foreach ($sectors as $sector) { 
+												if ($sector->count > 0) { ?>
+												<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a></li>
+												<?php } ?>
+											<?php } ?>
+											</ul>
 					
+					
+					
+										</div><!-- /.wrapper -->
 					<div class="wrapper">
 				
 						<h1 class="page-title"><?php the_title(); ?></h1>
@@ -144,21 +158,7 @@ get_header(); ?>
 						
 					</div>
 												
-						<div class="wrapper">
 						
-						<ul class="sectors-list">
-						<?php
-						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
-						foreach ($sectors as $sector) { 
-							if ($sector->count > 0) { ?>
-							<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a></li>
-							<?php } ?>
-						<?php } ?>
-						</ul>
-
-
-
-					</div><!-- /.wrapper -->
 
 				</article><!-- #page-## -->
 
