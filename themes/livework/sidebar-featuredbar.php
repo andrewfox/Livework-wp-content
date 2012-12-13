@@ -9,21 +9,12 @@
 ?>
 
 				<?php 
-				if (the_field('featured_quote')) {
-					$featured = true;
-				}
+				$testforfeature = get_field('featured_content')
 				
-				elseif (get_field('featured_content')) {
-					$featured = true;
+				if ($testforfeature = '') {
+					
 				}
-			
-				else {
-					$featured = false;
-				}
-				
-				if ($featured = false) {
-				}
-				
+								
 				else{
 				 ?>
 					<div class="featured clearfix">
