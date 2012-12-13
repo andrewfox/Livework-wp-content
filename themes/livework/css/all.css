@@ -368,6 +368,28 @@ h1.page-title {
 
 /*Latest*/
 
+ul.list-archive-date li, ul.list-archive-cat li {
+	float: left;
+	margin: 5px;
+	background: #e9e8e8;
+	padding: 3px 10px;
+	display: inline;
+	text-transform: uppercase;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+div.archives {
+	float: left;
+	margin-bottom: 40px;
+}
+
+ul.list-archive-date li, ul.list-archive-cat li a{
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+}
+
 .latest-mini {
 	background-color: #e9e9e6;
 }
@@ -572,6 +594,8 @@ div.entry-meta {
 }
 
 /*Sections: Case studies */
+
+
 
 .case-studies span {
 	color: black;
