@@ -44,7 +44,10 @@ get_header(); ?>
 
 
 
-<?php get_sidebar('sectorsclients'); ?>
+<?php 
+// Sectors + clients listings
+get_sidebar('sectorsclients'); 
+?>
 
 
 
