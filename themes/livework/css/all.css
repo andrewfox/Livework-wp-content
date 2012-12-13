@@ -323,12 +323,22 @@ h1.page-title {
 /* === Gallery =============================== */
 
 .gallery {
+	width: 100%;
 }
 .gallery dl {
 	float: left;
 	width: 25%;
-	margin-bottom: 20px;
-	background: red;
+	margin: 20px 0;
+}
+.gallery dd {
+	margin: 0;
+	text-align: center;
+	font-size: 85%;
+	padding: 0;
+}
+.gallery a {
+	display: block;
+	line-height: 0;
 }
 .gallery img {
 	max-width: 100%;
@@ -474,7 +484,7 @@ div.entry-meta {
 	padding: 20px 0;
 }
 
-.entry-content li{
+.entry-content li {
 	list-style-type: circle;
 	margin-left: 18px;
 }
@@ -486,6 +496,10 @@ div.entry-meta {
 .category-highlight .blog-image img {
 	width: 100%;
 	height: auto;
+}
+
+.entry-content img.alignnone {
+	width: 100%;
 }
 
 /* === Nav arrows =============================== */
@@ -966,6 +980,7 @@ ul.sectors-list {
 .casestudy-title {
 	font: bold 18px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
+
 
 
 /* === Extra aside =============================== */

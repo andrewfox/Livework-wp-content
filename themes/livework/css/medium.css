@@ -191,7 +191,9 @@ header {
 
 /* === Gallery =============================== */
 
-
+.gallery {
+	width: 130%;
+}
 
 /* === Homepage (specifics) =============================== */
 
@@ -208,6 +210,9 @@ header {
 	float: left;
 	box-sizing: border-box;
 	padding-right: 20px;
+}
+.entry-content img.alignnone {
+	width: 120%;
 }
 
 
