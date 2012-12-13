@@ -153,20 +153,6 @@ get_header(); ?>
 
 
 
-					<div id="world" class="clearfix">
-						<h1><a href="<?php bloginfo('url'); ?>/contact">Found the world over</a></h1>
-						<ul>
-							<li class="london"><a href="<?php bloginfo('url'); ?>/contact">London</a></li>
-							<li class="oslo"><a href="<?php bloginfo('url'); ?>/contact">Oslo</a></li>
-							<li class="sao-paulo"><a href="<?php bloginfo('url'); ?>/contact">Sao Paulo</a></li>
-							<li class="rotterdam"><a href="<?php bloginfo('url'); ?>/contact">Rotterdam</a></li>
-						</ul>
-					</div>
-
-
-
-
-
 
 
 				</article> <!-- /.main -->
