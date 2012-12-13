@@ -11,7 +11,7 @@
 				<?php 
 				$testforfeature = get_field('featured_content')
 				
-				if ($testforfeature = '') {
+				if ($testforfeature == "") {
 					
 				}
 								
