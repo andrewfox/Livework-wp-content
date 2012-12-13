@@ -9,7 +9,8 @@
 ?>
 
 				<?php 
-				$testforfeature = get_field('featured_content')
+				$testforfeature = get_field('featured_content');
+				
 				
 				if ($testforfeature == "") {
 					
