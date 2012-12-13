@@ -20,8 +20,9 @@ get_header(); ?>
 						<h1 class="page-title">Latest</h1>
 					</div>
 					
-					
+					<div class="latest-categories">
 					<?php get_sidebar( 'archives' ); ?>
+					</div>
 					
 					
 					<?php
