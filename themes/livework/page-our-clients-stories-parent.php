@@ -45,7 +45,94 @@ get_header(); ?>
 										<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 										<?php 
 										if(has_post_thumbnail()) :
-											the_post_thumbnail('medium'); 
+											the_post_thumbnail('thumbnail'); 
+											else :				
+											endif;
+										?>
+										</a>
+									</li>
+									<?php } ?>
+									<?php endwhile; ?>
+									<?php wp_reset_postdata() ?>
+									
+								<?php 
+								
+								$args = array(
+								    'post_type'=> 'case_study',
+								    );              
+								
+								$the_query = new WP_Query( $args );
+								while ( $the_query->have_posts() ) : $the_query->the_post(); 
+								
+								?>
+								
+								<?php if ( in_category('logo-only-case-study') ) { ?>
+								
+								<?php } else { ?>
+								
+									<li>
+										<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+										<?php 
+										if(has_post_thumbnail()) :
+											the_post_thumbnail('thumbnail'); 
+											else :				
+											endif;
+										?>
+										</a>
+									</li>
+									<?php } ?>
+									<?php endwhile; ?>
+									<?php wp_reset_postdata() ?>
+									
+								<?php 
+								
+								$args = array(
+								    'post_type'=> 'case_study',
+								    );              
+								
+								$the_query = new WP_Query( $args );
+								while ( $the_query->have_posts() ) : $the_query->the_post(); 
+								
+								?>
+								
+								<?php if ( in_category('logo-only-case-study') ) { ?>
+								
+								<?php } else { ?>
+								
+									<li>
+										<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+										<?php 
+										if(has_post_thumbnail()) :
+											the_post_thumbnail('thumbnail'); 
+											else :				
+											endif;
+										?>
+										</a>
+									</li>
+									<?php } ?>
+									<?php endwhile; ?>
+									<?php wp_reset_postdata() ?>
+									
+								<?php 
+								
+								$args = array(
+								    'post_type'=> 'case_study',
+								    );              
+								
+								$the_query = new WP_Query( $args );
+								while ( $the_query->have_posts() ) : $the_query->the_post(); 
+								
+								?>
+								
+								<?php if ( in_category('logo-only-case-study') ) { ?>
+								
+								<?php } else { ?>
+								
+									<li>
+										<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+										<?php 
+										if(has_post_thumbnail()) :
+											the_post_thumbnail('thumbnail'); 
 											else :				
 											endif;
 										?>
