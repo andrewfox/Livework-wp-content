@@ -21,8 +21,11 @@
 					$featured = false;
 				}
 				
-				if ($featured = true):
-				?>
+				if ($featured = false) {
+				}
+				
+				else{
+				 ?>
 					<div class="featured clearfix">
 										 
 					 	<div class="wrapper">
@@ -96,4 +99,6 @@
 
 					</div> <!-- /.feature-posts -->
 					
-					
+					<?php
+					}
+					?>
