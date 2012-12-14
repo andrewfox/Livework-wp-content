@@ -59,9 +59,10 @@ a:hover {
 
 blockquote {
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
-	font-size: 170%;
+	font-size: 200%;
 	line-height: 140%;
 	color: #027cb8;
+	margin-right: 0;
 }
 
 
@@ -337,9 +338,10 @@ h1.page-title {
 /* === Gallery =============================== */
 
 .gallery {
-	width: 100%;
+	max-width: 70%;
+	height: auto;
 	box-sizing: border-box;
-	margin-bottom: 1em;
+	margin: 0 0 1em 0;
 }
 .gallery dl {
 	float: left;
@@ -779,25 +781,6 @@ span.casestudy-title {
 }
 
 
-ul.cases-mosaic li{
-	width: 20%;
-	float: left;
-	margin: 0;
-	padding: 0;
-	line-height: 0;
-}
-
-ul.cases-mosaic li a{
-	margin: 0;
-	padding: 0;
-}
-
-ul.cases-mosaic li img{
-	width: 100%;
-	height: auto;
-}
-
-
 ul.sectors-list {
 	float: left;
 	clear: both;
@@ -999,9 +982,11 @@ ul.sectors-list {
 
 .casestudy-title {
 	font: bold 18px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #094d6f;
 }
-
-
+.single-case_study .splash h1 {
+	color: #094d6f;
+}
 
 /* === Extra aside =============================== */
 

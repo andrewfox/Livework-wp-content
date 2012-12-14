@@ -188,6 +188,7 @@ header {
 /* === Gallery =============================== */
 
 .gallery {
+	
 }
 
 /* === Homepage (specifics) =============================== */
@@ -349,9 +350,21 @@ article.people{
 /* === Case study =============================== */
 
 .single-case_study #main {
-	box-sizing: border-box;
-	padding-right: 20px;
 }
+
+.single-case_study .entry-content > p {
+	width: 70%;
+}
+.single-case_study .entry-content img.alignnone {
+	width: 130%;
+}
+.single-case_study .entry-content blockquote {
+	float: right;
+	width: 25%;
+	margin: 0 0 20px 20px;
+	display: block;
+}
+
 
 
 /*More from*/
