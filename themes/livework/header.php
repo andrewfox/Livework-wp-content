@@ -83,6 +83,7 @@
 
 			<?php 
 			// Our Client's Stories Sector menu
+			echo get_post_type( $post->ID );
 			if (is_tree(9)) { 
 			?>
 			<nav id="menu-secondary" class="nav-sectors clearfix">
