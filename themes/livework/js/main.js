@@ -80,11 +80,30 @@ $(document).ready(function() {
 	
 
 
-	/* HOMEPAGE */
+	/* Lightbox */
 
+	
 
-
-
+	$(".gallery-item a").click(function () {
+		e.preventDefault();
+		var image_href = $(this).attr("href");
+		    //create HTML markup for lightbox window
+		    var lightbox =
+		    '<div id="lightbox">' +
+		        '<p>Click to close</p>' +
+		        '<div id="content">' + //insert clicked link's href into img src
+		            '<img src="' + image_href +'" />' +
+		        '</div>' +
+		    '</div>';
+		    //insert lightbox HTML into page
+		    $('body').append(lightbox);
+		}
+	});
+	
+	$('#lightbox').live('click', function() {
+	    $('#lightbox').hide();
+	});
+	
 
 
 
