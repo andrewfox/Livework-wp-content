@@ -10,7 +10,7 @@
 
 				<?php 
 				$testforfeature = get_field('featured_content');
-				
+				$testforquote = get_field('featured_quote');
 				
 				if ($testforfeature == "") {
 					
@@ -22,17 +22,23 @@
 										 
 					 	<div class="wrapper">
 					 		
-					 		<?php if (the_field('featured_quote')) :?>
+					 		<?php if ($testforquote == "") {
+					 			$quote = false
+					 		}
+					 						
+					 		else{
+					 		 ?>
 							<div class="featured_post">
 								<h3 class="section-title">Quote</h3>
 								<blockquote><?php the_field('featured_quote');?></blockquote>
 								<p><?php the_field('featured_quote_attribution');?></p>
 							</div>
-							<?php endif; ?>
+							
+							<?php }?>
 
 							<?php 
 							// works out how many features there are
-							if (the_field('featured_quote')) {
+							if ($quote=true) {
 								$maxfeatures = 3; // there is a feature quote
 							} elseif (is_home()) {
 								$maxfeatures = 8; // homepage
