@@ -74,6 +74,7 @@ blockquote {
 	padding-left: 20px;
 	max-width: 1050px;
 	margin: 0 auto;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -267,6 +268,7 @@ h1.page-title {
 
 
 .topimage {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	line-height: 0;
 	text-align: center;
@@ -350,6 +352,7 @@ h1.page-title {
 .gallery {
 	max-width: 70%;
 	height: auto;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 0 0 1em 0;
 }
@@ -450,6 +453,7 @@ h1.page-title {
 	margin: 0;
 }
 .latest-mini li {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 25%;
 	float: left;
@@ -666,6 +670,7 @@ span.casestudy-title {
 	display: block;
 	float: left;
 	width: 50%;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -722,6 +727,7 @@ span.casestudy-title {
 }
 
 .featured_post {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 50%;
 	float: left;
@@ -809,6 +815,7 @@ ul.sectors-list {
 .sectors-clients-list .wrapper {
 }
 .sectors-clients-list .wrapper > ul {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
 	width: 50%;
@@ -851,12 +858,14 @@ ul.sectors-list {
 	clear: both;
 	padding: 10px;
 	margin: 0;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 .extra #people {
 	clear: both;
 	padding: 0 10px;
 	margin: 0;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 #people li {
@@ -867,6 +876,7 @@ ul.sectors-list {
 	width: 50%;
 	height: 50%;
 	position: relative;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -877,6 +887,7 @@ ul.sectors-list {
 	background: transparent;
 	margin: 0;
 	padding: 5px;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	color: #eee;
 }
@@ -904,6 +915,7 @@ ul.sectors-list {
 	padding: 4px 8px;
 	width: 100%;
 	text-align: center;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	font-family: 'Chaparral W01 Lt', Georgia, Times, serif;
 	text-shadow: 0 0 2px #000000;
@@ -952,6 +964,7 @@ ul.sectors-list {
 
 
 .office {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: 50%;
 	float: left;
@@ -981,9 +994,11 @@ ul.sectors-list {
 	width: 25%;
 	height: auto;
 	padding-right: 20px;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 .case_study div.wrapper > div {
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	float: left;
 	display: block;

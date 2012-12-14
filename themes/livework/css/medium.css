@@ -150,6 +150,7 @@ header {
 	top: 100px;
 	bottom: auto;
 	padding: 5% 40% 0 5%;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	border: none;
 	vertical-align: middle;
@@ -180,6 +181,7 @@ header {
 	padding-bottom: 20px;
 	max-width: 900px;
 	margin: 0 auto;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	width: auto;
 }
@@ -204,6 +206,7 @@ header {
 .single-post #main {
 	width: 70%;
 	float: left;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-right: 20px;
 }
@@ -372,6 +375,7 @@ article.people{
 .below-more li {
 	float: left;
 	width: 33%;
+	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-right: 20px;
 }
