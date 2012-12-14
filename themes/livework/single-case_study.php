@@ -68,37 +68,17 @@ if ($feature == true) {
 						</div>
 						
 						<aside id="sidebar-more-posts">
-		
-						<!-- The Loop -->
-						<?php $authorid = get_the_author_meta('ID') ?> 
-						<?php $args = array( 
-											'author'=> $authorid,
-											'post_type' => 'people', 
-											'posts_per_page' => 1, 
-										);
-						$loop = new WP_Query( $args );
-						while ( $loop->have_posts() ) : $loop->the_post(); ?>
-							<li>
-								<h3>Written by <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?>
-								</a></h3>
-							</li>
-					
-						<?php endwhile; ?>
-						<?php wp_reset_query();?>
-						<!-- End Loop -->
-		
+						<?php 
+						// Featured bar
+						get_sidebar('featuredbar-vert'); 
+						?>
 						</aside>
 		
 								
 					</div><!-- /.wrapper -->
 				</article>
 
-<div class="wrapper">
-<?php 
-// Featured bar
-get_sidebar('featuredbar-vert'); 
-?>
-</div>
+
 
 				<div class="extra">		
 					<div class="wrapper">

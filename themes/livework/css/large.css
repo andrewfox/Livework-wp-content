@@ -144,10 +144,13 @@ ul.cases-mosaic li{
 .single-case_study .featured {
 	background-color: maroon;
 	float: right;
+	width: 300px;
 }
 
 .single-case_study .featured_post {
 	clear: left;
+	width: 90%;
+	text-align: center;
 }
 
 .casestudy-title {
