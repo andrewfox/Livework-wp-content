@@ -57,6 +57,12 @@ a:hover {
 	color: #ccc;
 }
 
+blockquote {
+	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
+	font-size: 170%;
+	line-height: 140%;
+	color: #027cb8;
+}
 
 
 
@@ -263,7 +269,7 @@ h1.page-title {
 	border-top: 3px solid #eee;
 	border-bottom: 3px solid #eee;
 	background: #eee;
-	padding-top: 0.5em;
+	padding: 10px 0;
 	text-shadow: 0 1px 0 rgba(256,256,256,0.8);
 	font-family:'Chaparral W01 Lt', Georgia, 'Times New Roman', serif;
 }
@@ -271,24 +277,22 @@ h1.page-title {
 .highlight #introduction {
 	border-bottom: 1px solid #ccc;
 	background: #eee;
-	padding-top: 0.5em;
 }
 
 
 .splash h1 {
-	font-size: 36px;
-	margin-top: 0;
-	margin: 0 auto 0.3em;
+	font-size: 32px;
+	margin: 0 auto 5px;
 }
 
 #introduction h1 span {
 	font-size: 70%;
 }
-#introduction h2 {
-	margin-top: 0;
+.splash h2 {
+	margin: 0 0 10px 0;
 }
 #introduction h4 {
-	padding: 0 0 0.5em 0;
+	padding: 0;
 	margin: 0;
 }
 #introduction h4 a {
@@ -300,7 +304,12 @@ h1.page-title {
 	font-size: 19px;
 }
 .excerpt p {
-	margin-bottom: 0.5em;
+	margin-bottom: 8px;
+	padding-bottom: 0;
+}
+.excerpt p:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 /*alt splash*/
@@ -311,14 +320,10 @@ h1.page-title {
 }
 .alt #introduction h1 {
 	font: bold 14px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-	margin-bottom: 12px;
 }
 .alt #introduction h2 {
-	font-size: 24px;
-	margin-bottom: 12px;
 }
 .alt #introduction p {
-	font-size: 16px;
 }
 
 /*Basic splash*/
@@ -327,10 +332,9 @@ h1.page-title {
 /* === Gallery =============================== */
 
 .gallery {
-	width: 110%;
-	background: #027cb8;
-	padding: 10px;
+	width: 100%;
 	box-sizing: border-box;
+	margin-bottom: 1em;
 }
 .gallery dl {
 	float: left;

@@ -112,22 +112,20 @@ header {
 #introduction {
 	border: none;	
 	background: none;
-	padding-top: 0.5em;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 }
 
 .highlight #introduction {
-	background: rgba(256,256,256,0.6);
-	padding-top: 0.5em;
+	background: rgba(256,256,256,0.8);
 	border-bottom: none;
 }
 
 .splash h1 {
-	font-size: 36px;
+	font-size: 34px;
 	margin-top: 0;
-	margin: 0 auto 0.3em;
+	margin: 0 auto 3px;
 }
 .splash h2 {
 	margin-top: 0;
@@ -143,10 +141,7 @@ header {
 	margin-top: 0.25em;
 	font-size: 19px;
 }
-.excerpt p {
-	padding-bottom: 0.7em;
-	margin: 0;
-}
+
 
 /*alt*/
 
