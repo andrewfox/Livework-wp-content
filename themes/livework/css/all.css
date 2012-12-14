@@ -210,14 +210,19 @@ header h1 a img {
 }
 #menu-countries a {
 	font-weight: normal;
-	color: #555;
+	color: #838588;
+}
+#menu-countries a:hover {
+	color: #f1c407;
+	padding-right: 7px;
+}
+#menu-countries:hover a:before {
+	content: 'Livework ';
 }
 #menu-countries a:after {
 	content: ' →';
 }
-#menu-countries .menu-item-45 a {
-	color: #838588;
-}
+
 
 
 /* === Content (everything between header and footer) =============================== */
