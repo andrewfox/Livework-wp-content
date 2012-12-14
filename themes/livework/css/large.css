@@ -140,6 +140,16 @@ ul.cases-mosaic li{
 
 /* === Case study =============================== */
 
+
+.single-case_study .featured {
+	background-color: maroon;
+	float: right;
+}
+
+.single-case_study .featured_post {
+	clear: left;
+}
+
 .casestudy-title {
 	font: bold 22px "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }

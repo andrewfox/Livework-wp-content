@@ -96,7 +96,7 @@ if ($feature == true) {
 <div class="wrapper">
 <?php 
 // Featured bar
-get_sidebar('featuredbar'); 
+get_sidebar('featuredbar-vert'); 
 ?>
 </div>
 
