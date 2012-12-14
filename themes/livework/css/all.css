@@ -876,9 +876,14 @@ ul.sectors-list {
 	box-sizing: border-box;
 	color: #eee;
 }
+
+#people li{
+	line-height: 0;
+}
+
 #people li a:hover {
 	background: #686f2f;
-	color: #222;
+	color: #ed862e;
 }
 #people img {
 	width: 100%;
@@ -898,6 +903,7 @@ ul.sectors-list {
 	box-sizing: border-box;
 	font-family: 'Chaparral W01 Lt', Georgia, Times, serif;
 	text-shadow: 0 0 2px #000000;
+	line-height: normal;
 }
 
 #sidebar-more-posts li {

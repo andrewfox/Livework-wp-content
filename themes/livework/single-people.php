@@ -105,63 +105,10 @@ get_header(); ?>
 							<?php endwhile; ?>
 							
 							
-							
-<!--INSERT FEATURED POSTS	-->	
-							
-							<div class="featured clearfix">
-												 
-							 	<div class="wrapper">
-							 	
-									<div class="featured_post">
-										<h3 class="section-title">Quote</h3>
-										<blockquote><?php the_field('featured_quote');?></blockquote>
-										<p><?php the_field('featured_quote_attribution');?></p>
-									</div>
-				
-									<?php $posts = get_field('featured_content');
-				 					if( $posts ): ?>
-			 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
-			 						<?php setup_postdata($post); ?>
-			 						<div class="featured_post">
-			 							<h3 class="section-title">
-			 							<?php
-			 							$theposttype = get_post_type( $post->ID );
-			 							if ($theposttype == 'case_study') {
-			 								echo 'Case study';
-			 								$thumbnail = 'logo';
-			 							} else if ($theposttype = 'people') {
-			 								echo 'Liveworker';
-			 								$thumbnail = 'featured';
-			 							} else if ($theposttype = 'theme') {
-			 								echo 'Theme';
-			 								$thumbnail = 'featured';
-			 							}
-			 							?>
-			 							</h3>
-			 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="feature-<?php echo $theposttype ?>">
-
-		 								<?php if ($thumbnail == 'logo') { ?>
-		 									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" />
-		 								<?php } else { 
-		 									the_post_thumbnail('thumb-large');
-		 								} ?>
-
-		 								<?php if ($theposttype == 'people') { ?>
-		 									<span><?php the_title(); ?></span>
-		 								<?php } ?>
-
-		 								</a>
-			 						</div>
-			 						<?php endforeach; ?>
-				 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
-				 				<?php endif; ?>
-		
-							 	</div> <!-- /.wrapper -->
-							
-							</div> <!-- /.feature-posts -->
-							
-							
-							<!--END:INSERT FEATURED POSTS:END	-->
+							<?php 
+							// Featured bar
+							get_sidebar('featuredbar'); 
+							?>
 			
 															
 						</div><!-- /#main -->
