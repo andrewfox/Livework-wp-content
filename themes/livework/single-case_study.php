@@ -93,12 +93,12 @@ if ($feature == true) {
 					</div><!-- /.wrapper -->
 				</article>
 
-
+<div class="wrapper">
 <?php 
 // Featured bar
 get_sidebar('featuredbar'); 
 ?>
-
+</div>
 
 				<div class="extra">		
 					<div class="wrapper">
