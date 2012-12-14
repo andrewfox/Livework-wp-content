@@ -327,18 +327,28 @@ h1.page-title {
 /* === Gallery =============================== */
 
 .gallery {
-	width: 100%;
+	width: 110%;
+	background: #027cb8;
+	padding: 10px;
+	box-sizing: border-box;
 }
 .gallery dl {
 	float: left;
 	width: 25%;
-	margin: 20px 0;
+	margin: 0;
+	position: relative;
 }
 .gallery dd {
 	margin: 0;
 	text-align: center;
 	font-size: 85%;
 	padding: 0;
+	color: #eee;
+	text-shadow: 1px 1px 0 rgba(0,0,0,1);
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	font: bold 1em/1.5em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
 .gallery a {
 	display: block;
