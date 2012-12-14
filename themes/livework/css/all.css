@@ -59,7 +59,7 @@ a:hover {
 
 blockquote {
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
-	font-size: 200%;
+	font-size: 150%;
 	line-height: 140%;
 	color: #027cb8;
 	margin-right: 0;
@@ -97,6 +97,12 @@ blockquote {
 	height: auto;
 }
 
+.alignright {
+	padding: 0 0 1em 1em;
+}
+.alignleft {
+	padding: 0 1em 1em 0;
+}
 
 /* === Header =============================== */
 

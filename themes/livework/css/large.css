@@ -24,7 +24,9 @@ Structure
 /* === Basic HTML =============================== */
 
 
-
+blockquote {
+	font-size: 200%;
+}
 
 
 /* === General (used in multiple situations) =============================== */
@@ -47,6 +49,8 @@ Structure
 	max-width: 100%;
 	max-height: 650px;
 }
+
+
 
 
 /* === Header =============================== */
