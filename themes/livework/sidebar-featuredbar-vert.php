@@ -7,6 +7,8 @@
  * @since Boilerplate 1.0
  */
 ?>
+						<aside id="sidebar-more-posts">
+
 					<div class="featured clearfix">
 				<?php 
 				$testforfeature = get_field('featured_content');
@@ -122,3 +124,4 @@
 					<?php
 					}
 					?>
+						</aside>

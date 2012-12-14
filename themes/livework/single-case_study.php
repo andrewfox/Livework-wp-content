@@ -59,20 +59,19 @@ if ($feature == true) {
 					<div class="wrapper">
 
 						<div id="main" class="clearfix">
-
+							
 							<div class="entry-content">
+								<?php 
+								// Featured bar
+								get_sidebar('featuredbar-vert'); 
+								?>
 								<?php the_content(); ?>
 							</div>
 	
 							<?php endwhile; ?>
 						</div>
 						
-						<aside id="sidebar-more-posts">
-						<?php 
-						// Featured bar
-						get_sidebar('featuredbar-vert'); 
-						?>
-						</aside>
+						
 		
 								
 					</div><!-- /.wrapper -->
