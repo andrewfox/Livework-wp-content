@@ -4,33 +4,28 @@ $(document).ready(function() {
 	
 	/* Lightbox */
 	
-//		
-//	
-//	$(".gallery-item a").click(function () {
-//		e.preventDefault();
-//		alert("hello")
-//		var image_href = $(this).attr("href");
-		    //create HTML markup for lightbox window
-//		    var lightbox =
-//		    '<div id="lightbox">' +
-//		        '<p>Click to close</p>' +
-//		        '<div id="content">' + //insert clicked link's href into img src
-//		            '<img src="' + image_href +'" />' +
-//		        '</div>' +
-//		    '</div>';
-		    //insert lightbox HTML into page
-//		    $('body').append(lightbox);
-//		}
-//	});
-//	
-//	$('#lightbox').live('click', function() {
-//	    $('#lightbox').hide();
-//	});
-
-
-
-
-
+		
+	
+		$(".gallery-item a").click(function () {
+	//		e.preventDefault();
+			alert("hello")
+			var image_href = $(this).attr("href");
+			    //create HTML markup for lightbox window
+			    var lightbox =
+			    '<div id="lightbox">' +
+			        '<p>Click to close</p>' +
+			        '<div id="content">' + //insert clicked link's href into img src
+			            '<img src="' + image_href +'" />' +
+			        '</div>' +
+			    '</div>';
+			    //insert lightbox HTML into page
+			    $('body').append(lightbox);
+			}
+		});
+		
+		$('#lightbox').live('click', function() {
+		    $('#lightbox').hide();
+		});
 
 
 	$(".menu-reveal").click(function () {
