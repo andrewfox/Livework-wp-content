@@ -682,9 +682,9 @@ span.casestudy-title {
 
 .featured {
 	background: #333;
-	min-height: 200px;
+	min-height: 180px;
 	color: #eee;
-	padding: 20px 0;
+	padding: 10px 0;
 	clear: left;
 	position: relative;
 	display: block;
