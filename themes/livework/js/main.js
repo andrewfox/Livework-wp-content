@@ -29,7 +29,7 @@ $(document).ready(function() {
 
 
 $(function() {
-	$('#gallery a').lightBox(); // Select all links in object with gallery ID
+	$('.gallery-item a').lightBox(); // Select all links in object with gallery ID
 });
 
 	$(".menu-reveal").click(function () {
