@@ -239,6 +239,7 @@ tr td {
 img {
 	margin: 0;
 	max-width: 640px;
+	height: auto;
 }
 .alignleft,
 img.alignleft {
