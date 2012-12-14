@@ -7,7 +7,7 @@
  * @since Boilerplate 1.0
  */
 ?>
-
+					<div class="featured clearfix">
 				<?php 
 				$testforfeature = get_field('featured_content');
 				$testforquote = get_field('featured_quote');
@@ -44,7 +44,6 @@
 				 	
 <!--				 	End Author-->
 				 
-					<div class="featured clearfix">
 										 					 		
 					 		<?php if ($testforquote == "") {
 					 			$quote = false;
