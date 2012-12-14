@@ -63,7 +63,7 @@ $(function() {
 	});
 	
 	
-	$("li.saopaulo").click(function () {
+	$("li.sao-paulo").click(function () {
 		$('#people li').hide()
 		$('#people .category-saopaulo').show();
 		$('#offices li').removeClass('on');
