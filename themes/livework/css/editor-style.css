@@ -241,6 +241,11 @@ img {
 	max-width: 640px;
 	height: auto;
 }
+img.alignnone {
+	margin: 0;
+	max-width: 640px;
+	height: auto;
+}
 .alignleft,
 img.alignleft {
 	display: inline;
