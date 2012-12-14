@@ -33,6 +33,7 @@
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/all.css" />
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/medium.css" media="only screen and (min-width:600px)">
 		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/large.css" media="only screen and (min-width:1100px)">
+		<link rel="stylesheet" href="<?php bloginfo( 'template_directory' ); ?>/css/jquery.lightbox-0.5.css" />
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		
@@ -40,6 +41,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="<?php bloginfo( 'template_directory' ); ?>/js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
 		<script src="<?php echo bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="<?php echo bloginfo('template_directory'); ?>/js/vendor/jquery.lightbox-0.5.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' ); ?>/js/main.js"></script>
 
 		<!-- Fontscom -->
