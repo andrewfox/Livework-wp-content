@@ -355,7 +355,13 @@ article.people{
 .single-case_study #main {
 }
 
-.single-case_study .entry-content > p {
+.single-case_study .entry-content > p,
+.single-case_study .entry-content > ol,
+.single-case_study .entry-content > ul {
+	width: 70%;
+} {
+	width: 70%;
+} {
 	width: 70%;
 }
 .single-case_study .entry-content img.alignnone {
