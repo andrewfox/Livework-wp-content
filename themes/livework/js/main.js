@@ -86,6 +86,7 @@ $(document).ready(function() {
 
 	$(".gallery-item a").click(function () {
 		e.preventDefault();
+		alert("hello")
 		var image_href = $(this).attr("href");
 		    //create HTML markup for lightbox window
 		    var lightbox =
