@@ -23,7 +23,7 @@
 					 	<div class="wrapper">
 					 		
 					 		<?php if ($testforquote == "") {
-					 			$quote = false
+					 			$quote = false;
 					 		}
 					 						
 					 		else{
