@@ -83,7 +83,8 @@
 
 			<?php 
 			// Our Client's Stories Sector menu
-			if (is_tree(9)) || get_post_type( $post->ID ) == 'case_study' ) { 
+			$posttype = get_post_type( $post->ID );
+			if (is_tree(9)) || $posttype == 'case_study' ) { 
 			?>
 			<nav id="menu-secondary" class="nav-sectors clearfix">
 				<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
