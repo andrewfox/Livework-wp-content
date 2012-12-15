@@ -500,8 +500,14 @@ span.entry-date {
 
 
 
-div.entry-meta {
+.entry-meta {
 	font-size: 12px;
+}
+.entry-meta img {
+	width: 27px;
+	height: auto;
+	vertical-align: middle;
+	padding-right: 5px;
 }
 .post .wrapper {
 	padding: 20px 25% 20px 20px;

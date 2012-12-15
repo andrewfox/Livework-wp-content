@@ -18,7 +18,7 @@ get_header(); ?>
 				<article class="main">
 					<div class="wrapper">
 						<h1 class="page-title">Latest</h1>
-						<p>News, articles, case studies and blog posts.</p>
+						<p>News, articles, client stories and blog posts.</p>
 					</div>
 
 
@@ -34,7 +34,7 @@ get_header(); ?>
 						<div class="wrapper">
 
 							<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
-							<h4 class="section-title">Case study</h4>
+							<h4 class="section-title">Client stories</h4>
 							<?php elseif (in_category(191)) : ?>
 							<h4 class="section-title">Theme</h4>
 							<?php else : ?>
