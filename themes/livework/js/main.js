@@ -36,7 +36,10 @@ $(function() {
 		$('header').toggleClass('open');
 	});
 
-
+	// Archive expander
+	$(".expander").click(function () {
+		$(this).parent().addClass('open');
+	});
 
 
 	// Hide/show people on our team by location
