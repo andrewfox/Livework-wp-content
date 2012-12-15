@@ -594,7 +594,9 @@ div.entry-meta {
 	color: #eee;
 	background: #027cb8;
 }
-
+.open .expander {
+	display: none;
+}
 
 /* === Nav arrows =============================== */
 
