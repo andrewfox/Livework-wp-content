@@ -448,10 +448,6 @@ h1.page-title {
 .latest-mini a {
 	color: #027cb8;
 }
-.latest-mini a .entry-date {
-	color: #34abe1;
-	font-size: 80%;
-}
 .latest-mini ul {
 	margin: 0;
 }
@@ -488,6 +484,10 @@ h2.entry-title {
 }
 
 h2.entry-title a {
+}
+span.entry-date {
+	color: #34abe1;
+	font-size: 75%;
 }
 
 .blog .post {

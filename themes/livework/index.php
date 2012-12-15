@@ -18,7 +18,7 @@ get_header(); ?>
 				<article class="main">
 					<div class="wrapper">
 						<h1 class="page-title">Latest</h1>
-						<p>All the latest case studies, articles, blog posts</p>
+						<p>News, articles, case studies and blog posts.</p>
 					</div>
 
 
@@ -28,11 +28,19 @@ get_header(); ?>
 					<?php
 					$the_query = new WP_Query( array( 'post_type' => array( 'post', 'case_study' ) ) );
 					while ( $the_query->have_posts() ) : $the_query->the_post() ?>
-			
+
 					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-						
+
 						<div class="wrapper">
-						
+
+							<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
+							<h4 class="section-title">Case study</h4>
+							<?php elseif (in_category(191)) : ?>
+							<h4 class="section-title">Theme</h4>
+							<?php else : ?>
+							<h4 class="section-title">News</h4>
+							<?php endif; ?>
+
 							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></a></h2>
 		
 							<?php if ( has_post_thumbnail() ) {
@@ -70,14 +78,19 @@ get_header(); ?>
 					<?php endwhile; ?>
 
 
-					<?php get_sidebar( 'archives-date' ); ?>
 
 
 					<ul class="nav-paged">
 						<li class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> older articles', 'blankslate' )) ?></li>
 						<li class="nav-next"><?php previous_posts_link(__( 'newer articles <span class="meta-nav">&raquo;</span>', 'blankslate' )) ?></li>
 					</ul>
-					
+
+
+
+					<?php get_sidebar( 'archives-date' ); ?>
+
+
+
 				</article><!-- /#bodytext -->
 
 </div> <!--end wrapper-->
