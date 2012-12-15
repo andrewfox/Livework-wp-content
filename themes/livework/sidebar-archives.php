@@ -14,5 +14,5 @@
 							<li>Categories</li>
 							<?php wp_list_categories('order=DESC&orderby=count&show_count=0&title_li='); ?>
 						</ul>
-						<div class="expander">See all &rarro;</div>
+						<div class="expander">See all &rarr;</div>
 					</div>
