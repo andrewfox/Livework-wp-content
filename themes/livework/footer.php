@@ -53,7 +53,7 @@
 				
 				<h4><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
 				<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
-				<p class="studio-email"><?php the_field('studio_email'); ?></p>
+				<p class="studio-email"><a href="<?php the_field('studio_email'); ?>"><?php the_field('studio_email'); ?></a></p>
 			
 			</div>
 			
