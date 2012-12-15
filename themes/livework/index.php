@@ -74,11 +74,11 @@ get_header(); ?>
 
 					</div><!-- /.post -->
 
+					<?php endwhile; ?>
+
 
 					<?php get_sidebar( 'archives-date' ); ?>
 
-
-			<?php endwhile; ?>
 
 					<ul class="nav-paged">
 						<li class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> older articles', 'blankslate' )) ?></li>
