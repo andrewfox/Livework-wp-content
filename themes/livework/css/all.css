@@ -1152,6 +1152,7 @@ footer {
 	padding: 20px;
 	border-top: 1px solid #ddd;
 	clear: both;
+	font-size: 85%;
 }
 footer .menu {
 	font-weight: normal;
