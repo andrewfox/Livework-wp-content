@@ -252,8 +252,7 @@ header h1 a img {
 }
 h1.page-title {
 	margin: 0;
-	padding: 130px 0 0 0;
-	color: #6d2061;
+	padding: 20px 0 0 0;
 }
 
 #main {
@@ -549,11 +548,13 @@ div.entry-meta {
 	display: block;
 	background-color: rgba(177, 215, 230, 0.27);
 	padding: 10px 10px;
-	font-size: 85%;
+	font-size: 80%;
 	overflow: hidden;
 	box-sizing: border-box;
 	width: 100%;
 	position: relative;
+	border-top: 1px solid #b1d7e6;
+	border-bottom: 1px solid #b1d7e6;
 }
 .archives ul {
 	width: 20000px;
@@ -593,6 +594,7 @@ div.entry-meta {
 	cursor: pointer;
 	color: #eee;
 	background: #027cb8;
+	padding: 12px 25px;
 }
 .open .expander {
 	display: none;

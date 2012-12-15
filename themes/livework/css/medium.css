@@ -90,7 +90,10 @@ header {
 
 
 /* === Content (everything between header and footer) =============================== */
-
+h1.page-title {
+	margin: 0;
+	padding: 130px 0 0 0;
+}
 .splash {
 	position: relative; 
 	z-index: 0; 
