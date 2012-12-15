@@ -560,8 +560,8 @@ div.entry-meta {
 	margin: 0;
 }
 .archives.open ul {
-	position: absolute;
 	margin: 0;
+	width: 100%;
 }
 .archives li {
 	display: block;
