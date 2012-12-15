@@ -18,6 +18,7 @@ get_header(); ?>
 				<article class="main">
 					<div class="wrapper">
 						<h1 class="page-title">Latest</h1>
+						<p>All the latest case studies, articles, blog posts</p>
 					</div>
 
 
