@@ -549,12 +549,23 @@ div.entry-meta {
 	display: block;
 	background: #b1d7e6;
 }
+.archives ul {
+	padding: 0 10px;
+	margin: 0;
+}
 .archives li {
 	display: block;
 	float: left;
+	margin: 0;
+	padding: 5px 0;
+}
+.archives li:first-child {
+	padding: 2px 10px;
 }
 .archives li a {
-	padding: 5px 10px;
+	padding: 2px 10px;
+	font-weight: normal;
+	white-space: nowrap;
 }
 
 
