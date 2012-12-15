@@ -544,6 +544,20 @@ div.entry-meta {
 	width: 100%;
 }
 
+/*Archive*/
+.archives {
+	display: block;
+	background: #b1d7e6;
+}
+.archives li {
+	display: block;
+	float: left;
+}
+.archives li a {
+	padding: 5px 10px;
+}
+
+
 /* === Nav arrows =============================== */
 
 .arrow-nav {

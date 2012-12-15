@@ -9,7 +9,7 @@
 ?>
 
 
-					<div class="archives">
+					<div class="archives clearfix">
 						<ul class="list-archive-date">
 							<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 						</ul>

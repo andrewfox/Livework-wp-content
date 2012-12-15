@@ -9,7 +9,7 @@
 ?>
 
 
-					<div class="archives">
+					<div class="archives clearfix">
 						<ul class="list-archive-cat">
 							<li>Categories</li>
 							<?php wp_list_categories('order=DESC&orderby=count&show_count=0&title_li='); ?>
