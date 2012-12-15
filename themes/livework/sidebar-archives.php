@@ -11,6 +11,6 @@
 
 					<div class="archives">
 						<ul class="list-archive-cat">
-							<?php wp_list_categories('order=ASC&orderby=count&show_count=0&title_li='); ?>
+							<?php wp_list_categories('order=DESC&orderby=count&show_count=0&title_li='); ?>
 						</ul>
 					</div>
