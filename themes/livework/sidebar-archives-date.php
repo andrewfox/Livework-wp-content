@@ -10,7 +10,7 @@
 
 
 					<div class="archives">
-						<ul class="list-archive-cat">
-							<?php wp_list_categories('orderby=count&show_count=0&title_li='); ?>
+						<ul class="list-archive-date">
+							<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 						</ul>
 					</div>
