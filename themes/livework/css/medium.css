@@ -213,7 +213,22 @@ h1.page-title {
 	box-sizing: border-box;
 	padding-right: 20px;
 }
+.entry-content {
+	width: 70%;
+	float: left;
+}
 
+.entry-data {
+	padding-top: 20px;
+	float: right;
+	width: 15%;
+	height: auto;
+	text-align: center;
+}
+.entry-data img {
+	width: 100%;
+	height: auto;
+}
 
 /* === Nav arrows =============================== */
 

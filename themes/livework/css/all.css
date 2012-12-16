@@ -543,7 +543,8 @@ span.entry-date {
 	width: 100%;
 }
 
-/*Archive*/
+/* === Archives list =============================== */
+
 .archives {
 	display: block;
 	background-color: rgba(177, 215, 230, 0.27);
@@ -578,6 +579,8 @@ span.entry-date {
 	font-weight: normal;
 	white-space: nowrap;
 }
+
+
 .expander {
 	position: absolute;
 	right: 0;

@@ -73,7 +73,7 @@ get_header(); ?>
 							<?php if ( has_post_thumbnail()) : ?>
 								<?php if ( in_category(10) ) : // don't show if highlight cat ?>
 								<?php else : ?>
-							<div class="post-image blog-image"><?php the_post_thumbnail('medium');?></div>
+							<div class="post-image blog-image"><?php the_post_thumbnail('large');?></div>
 								<?php endif; ?>
 							<?php endif; ?>
 
