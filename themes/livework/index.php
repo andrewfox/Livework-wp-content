@@ -68,7 +68,7 @@ get_header(); ?>
 
 							<div class="entry-content">
 								<?php the_excerpt(); ?>
-								<p><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more&ellip;</a></p>
+								<p><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more&#8230;</a></p>
 							</div>
 
 
