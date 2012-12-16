@@ -86,7 +86,7 @@ get_header(); ?>
 
 
 
-							<div class="entry-author">
+							<div class="entry-data">
 								<?php
 								$authorid = get_the_author_meta('ID');
 								$args = array( 

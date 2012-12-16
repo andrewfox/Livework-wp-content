@@ -475,7 +475,7 @@ h1.page-title {
 }
 
 
-/* === News (blog) =============================== */
+/* === Latest (blog) =============================== */
 
 
 h2.entry-title {
@@ -519,11 +519,10 @@ span.entry-date {
 	padding: 0 !important;
 }
 .category-highlight .wrapper {
-	width: 100%;
-	margin: 200px auto 50px ;
+	margin: 20px;
 	padding: 20px;
 	background-color: #eee;
-	background-color: rgba(256,256,256,0.8);
+	background-color: rgba(256,256,256,0.7);
 }
 .category-highlight .entry-content {
 	font-size: 130%;
@@ -540,10 +539,6 @@ span.entry-date {
 
 .blog-image img {
 	max-width: 100%;
-	height: auto;
-}
-.category-highlight .blog-image img {
-	width: 100%;
 	height: auto;
 }
 
