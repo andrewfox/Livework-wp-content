@@ -1,0 +1,46 @@
+.black {
+	background-color: #231f20;
+}
+.white {
+	background-color: #ffffff;
+}
+.grey-med {
+	background-color: #c8c9ce;
+}
+.grey-light {
+	background-color: #e9e9e6;
+}
+
+/*article/theme*/
+.blue {
+	background-color: #027cb8;
+}
+.blue-med {
+	background-color: #34abe1;
+} 
+.blue-light  {
+	background-color: #b1d7e6;
+}
+.blue-hard {
+	background-color: #094d6f;
+}
+.purple {
+	background-color: #6d2061;
+}
+.orange {
+	background-color: #ed862e;
+}
+.green {
+	background-color: #686f2f;
+}
+.green-light  {
+	background-color: #c1c3a0;
+}
+.yellow {
+	background-color: #f1c407;
+}
+
+/* our clients' stories / case studies colour*/
+.red {
+	background-color: #9b1e20;
+}

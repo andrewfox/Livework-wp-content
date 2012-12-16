@@ -46,7 +46,7 @@ get_header(); ?>
 							<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
 							<h4 class="section-title">Client story</h4>
 							<?php elseif (in_category(191)) : ?>
-							<h4 class="section-title">Theme</h4>
+							<h4 class="section-title">Theme/Article</h4>
 							<?php else : ?>
 							<h4 class="section-title">News</h4>
 							<?php endif; ?>
@@ -99,13 +99,13 @@ get_header(); ?>
 								?>
 								<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
 									<?php the_post_thumbnail('thumbnail'); ?>
-									<span><?php the_title(); ?></span>
+									<span>By <?php the_title(); ?></span>
 								</a>
 								<?php endwhile; ?>
 								<?php wp_reset_query();?>
-								
-								
-								
+
+
+
 							</div>
 
 

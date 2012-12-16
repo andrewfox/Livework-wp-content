@@ -477,6 +477,19 @@ h1.page-title {
 
 /* === Latest (blog) =============================== */
 
+.blog .section-title {
+	display: table;
+	background: #231f20;
+	padding: 5px 8px;
+	margin-top: -20px;
+	color: #eee;
+}
+.blog .case_study .section-title {
+	background: #9b1e20;
+}
+.blog .category-article .section-title {
+	background: #027cb8;
+}
 
 h2.entry-title {
 	margin: 0;
@@ -534,6 +547,9 @@ span.entry-date {
 	margin-left: 3em;
 }
 
+.blog-image {
+	padding-top: 20px;
+}
 .blog-image img {
 	max-width: 100%;
 	height: auto;
