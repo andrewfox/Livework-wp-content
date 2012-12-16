@@ -500,17 +500,17 @@ span.entry-date {
 
 
 
-.entry-meta {
+.entry-data {
 	font-size: 12px;
 }
-.entry-meta img {
-	width: 27px;
+.entry-data img {
+	width: 20px;
 	height: auto;
 	vertical-align: middle;
 	padding-right: 5px;
 }
 .post .wrapper {
-	padding: 20px 25% 20px 20px;
+	padding: 20px;
 }
 .category-highlight {
 	background-position: center center;
@@ -523,9 +523,6 @@ span.entry-date {
 	padding: 20px;
 	background-color: #eee;
 	background-color: rgba(256,256,256,0.7);
-}
-.category-highlight .entry-content {
-	font-size: 130%;
 }
 
 .entry-content  {
@@ -1062,9 +1059,7 @@ ul.sectors-list {
 .case_study div.wrapper > div {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	float: left;
 	display: block;
-	width: 70%;
 }
 .case_study h2 {
 	padding: 0;

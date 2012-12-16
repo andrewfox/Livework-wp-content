@@ -73,7 +73,7 @@ get_header(); ?>
 							<?php if ( has_post_thumbnail()) : ?>
 								<?php if ( in_category(10) ) : // don't show if highlight cat ?>
 								<?php else : ?>
-							<div class="post-image blog-image"><?php the_post_thumbnail('large');?></div>
+							<div class="post-image blog-image"><?php the_post_thumbnail('medium');?></div>
 								<?php endif; ?>
 							<?php endif; ?>
 
@@ -81,7 +81,7 @@ get_header(); ?>
 
 							<div class="entry-content">
 								<?php the_excerpt(); ?>
-								<p class="read-more"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more&#8230;</a></p>
+								<p class="read-more"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more&rarr;</a></p>
 							</div>
 
 
@@ -103,6 +103,9 @@ get_header(); ?>
 								</a>
 								<?php endwhile; ?>
 								<?php wp_reset_query();?>
+								
+								
+								
 							</div>
 
 
