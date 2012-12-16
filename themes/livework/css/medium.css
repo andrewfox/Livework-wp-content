@@ -213,10 +213,18 @@ h1.page-title {
 	box-sizing: border-box;
 	padding-right: 20px;
 }
-.entry-content {
+.blog .entry-content {
 	width: 83%;
 	float: right;
 }
+
+
+.blog-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*Entry data*/
 
 .entry-data {
 	padding-top: 20px;
@@ -228,10 +236,6 @@ h1.page-title {
 }
 .entry-data img {
 	width: 100%;
-	height: auto;
-}
-.blog-image img {
-	max-width: 100%;
 	height: auto;
 }
 

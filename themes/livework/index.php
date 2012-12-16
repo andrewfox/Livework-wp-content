@@ -103,9 +103,6 @@ get_header(); ?>
 								</a>
 								<?php endwhile; ?>
 								<?php wp_reset_query();?>
-
-
-
 							</div>
 
 
