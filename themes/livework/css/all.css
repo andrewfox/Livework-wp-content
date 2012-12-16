@@ -293,7 +293,7 @@ h1.page-title {
 }
 
 .splash img.wp-post-image {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -304,7 +304,7 @@ h1.page-title {
 	border-top: 3px solid #eee;
 	border-bottom: 3px solid #eee;
 	background: #eee;
-	padding: 10px 0;
+	padding: 20px 0;
 	text-shadow: 0 1px 0 rgba(256,256,256,0.8);
 	font-family:'Chaparral W01 Lt', Georgia, 'Times New Roman', serif;
 }

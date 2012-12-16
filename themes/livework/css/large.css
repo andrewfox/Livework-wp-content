@@ -41,8 +41,8 @@ blockquote {
 	text-align: right;
 }
 .splash img.wp-post-image {
-	width: auto;
 	max-width: 100%;
+	height: auto;
 }
 .alt.splash img.wp-post-image {
 	width: auto;
@@ -79,10 +79,7 @@ blockquote {
 }
 
 /*Basic splash*/
-.splash img.wp-post-image {
-	width: auto;
-	height: auto;
-}
+
 .basic .topimage {
 	text-align: center;
 }
