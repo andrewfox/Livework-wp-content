@@ -536,6 +536,7 @@ span.entry-date {
 
 .entry-content li {
 	margin-left: 3em;
+	list-style: disc;
 }
 
 .blog .case_study .blog-image {
