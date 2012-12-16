@@ -41,7 +41,7 @@ get_header(); ?>
 
 
 
-						<div class="wrapper">
+						<div class="wrapper clearfix">
 
 							<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
 							<h4 class="section-title">Client story</h4>
