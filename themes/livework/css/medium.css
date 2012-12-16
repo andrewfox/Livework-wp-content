@@ -107,7 +107,7 @@ h1.page-title {
 	overflow: hidden;
 }
 .splash img.wp-post-image {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -169,6 +169,7 @@ h1.page-title {
 	padding-top: 130px;
 }
 .splash.basic img.wp-post-image {
+	padding-top: 20px;
 	max-width: 100%;
 	height: auto;
 }
@@ -217,7 +218,7 @@ h1.page-title {
 .blog .entry-content {
 }
 .category-highlight .wrapper {
-	margin: 80px 20px 20px;
+	margin: 120px 20px 20px;
 }
 
 
