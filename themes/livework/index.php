@@ -34,31 +34,41 @@ get_header(); ?>
 						<div class="wrapper">
 
 							<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
-							<h4 class="section-title">Client stories</h4>
+							<h4 class="section-title">Client story</h4>
 							<?php elseif (in_category(191)) : ?>
 							<h4 class="section-title">Theme</h4>
 							<?php else : ?>
 							<h4 class="section-title">News</h4>
 							<?php endif; ?>
 							
-							<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
-								<?php if( get_field('casestudies_one_liner') ): ?>
-								<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span></a></h2>
-								<?php else : ?>
-								<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+							<?php if ((get_post_type( $post->ID ) == "case_study")) : // if case study ?>
+
+								<?php if( get_field('casestudies_one_liner') ): // with one liner intro ?>
+
+							<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span></a></h2>
+
+								<?php else : // with no one liner ?>
+
+							<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+
 								<?php endif; ?>
-							<?php else : ?>
-								<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></a></h2>
+
+							<?php else : // regular blog/article ?>
+
+							<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></a></h2>
+
 							<?php endif; ?>
 
-							<?php if ( has_post_thumbnail() ) {
-								echo '<div class="post-image blog-image">';
-									the_post_thumbnail('large');
-								echo '</div>';
-							} ?>
-							
+
+							<?php if ( has_post_thumbnail() ) : ?>
+							<div class="post-image blog-image"><?php the_post_thumbnail('large');?></div>';
+							<?php endif; ?>
+
+
+
 							<div class="entry-content">
 								<?php the_excerpt(); ?>
+								<p><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more&ellip;</a></p>
 							</div>
 
 
