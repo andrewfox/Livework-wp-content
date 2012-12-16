@@ -39,16 +39,18 @@ if ($feature == true) {
 		
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
+					<?php if (in_category(10)) : ?>
+					<div class="topimage"><?php the_post_thumbnail('full'); ?></div>
+					<?php endif; ?>
+
+					<div id="introduction">
+						<div class="wrapper">
 
 							<?php if (in_category(10)) : ?>
-							<div class="topimage"><?php the_post_thumbnail('full'); ?></div>
 							<?php else : ?>
 							<?php the_post_thumbnail('large'); ?> 
 							<?php endif; ?>
 
-
-					<div id="introduction">
-						<div class="wrapper">
 							<h4 class="section-title">News</h4>
 							<h1><?php the_title(); ?></h1>
 							<?php 
@@ -58,6 +60,7 @@ if ($feature == true) {
 								<?php the_excerpt() ?>
 							</div>
 							<?php endif; ?>
+
 						</div><!-- /.wrapper -->
 					</div><!-- /#introduction -->
 				</div>
