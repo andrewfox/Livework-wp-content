@@ -38,10 +38,16 @@ if ($feature == true) {
 				<div class="splash <?php echo $catClass ?>">
 		
 					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
+
+					<?php if (in_category(10)) : ?>
+					<div class="topimage"><?php the_post_thumbnail('full'); ?></div>
+					<?php else : ?>
+					<?php the_post_thumbnail('full'); ?> 
+					<?php endif; ?>
+
 					<div id="introduction">
 						<div class="wrapper">
-							<h4><a href="<?php bloginfo('url'); ?>/news">News</a></h4>
+							<h4 class="section-title">News</h4>
 							<h1><?php the_title(); ?></h1>
 							<?php 
 							//only show excerpt if it exists

@@ -58,7 +58,7 @@ a {
 	transition: all 0.3s linear;
 }
 a:hover {
-	color: #ccc;
+	color: #094d6f;
 }
 
 blockquote {
@@ -88,7 +88,7 @@ blockquote {
 .section-title {
 	margin-top: 0;
 	text-transform: uppercase;
-	font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: normal normal 11px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 0.1em;
 	display: table;
 	background: #231f20;
@@ -504,9 +504,7 @@ span.entry-date {
 	font-size: 75%;
 }
 
-.blog .post {
-	border-bottom: 1px solid #ddd;
-}
+.blog .post {}
 
 .post:nth-child(even) {
 	background-color: #ecebeb;
@@ -540,11 +538,16 @@ span.entry-date {
 	margin-left: 3em;
 }
 
-.blog-image {
+.blog .case_study .blog-image {
+	padding-top: 20px;
 }
 .blog-image img {
 	max-width: 100%;
 	height: auto;
+}
+
+.read-more a {
+	font-weight: normal;
 }
 
 .entry-content img.alignnone {
@@ -1078,11 +1081,7 @@ ul.sectors-list {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-.case_study div.wrapper > div {
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display: block;
-}
+
 .case_study h2 {
 	padding: 0;
 	margin: 0;
