@@ -41,8 +41,6 @@ if ($feature == true) {
 
 					<?php if (in_category(10)) : ?>
 					<div class="topimage"><?php the_post_thumbnail('full'); ?></div>
-					<?php else : ?>
-					<?php the_post_thumbnail('full'); ?> 
 					<?php endif; ?>
 
 					<div id="introduction">
@@ -56,6 +54,12 @@ if ($feature == true) {
 								<?php the_excerpt() ?>
 							</div>
 							<?php endif; ?>
+							
+							<?php if (in_category(10)) : ?>
+							<?php else : ?>
+							<?php the_post_thumbnail('large'); ?> 
+							<?php endif; ?>
+
 						</div><!-- /.wrapper -->
 					</div><!-- /#introduction -->
 				</div>
