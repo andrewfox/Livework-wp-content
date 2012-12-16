@@ -60,8 +60,11 @@ get_header(); ?>
 							<div class="entry-content">
 								<?php the_excerpt(); ?>
 							</div>
-							<div class="entry-meta">
-								<?php 
+
+
+
+							<div class="entry-author">
+								<?php
 								$authorid = get_the_author_meta('ID');
 								$args = array( 
 									'author'=> $authorid,
@@ -72,13 +75,14 @@ get_header(); ?>
 								while ( $loop->have_posts() ) : $loop->the_post(); 
 								?>
 								<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
-										<?php the_post_thumbnail('thumbnail'); ?>
-										<?php the_title(); ?>									
-										<?php endwhile; ?></a>
+									<?php the_post_thumbnail('thumbnail'); ?>
+									<span><?php the_title(); ?></span>
+								</a>
+								<?php endwhile; ?>
 								<?php wp_reset_query();?>
 							</div>
-							
-							
+
+
 
 						</div><!-- /.wrapper -->
 
