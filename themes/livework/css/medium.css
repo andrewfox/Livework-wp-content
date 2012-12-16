@@ -228,8 +228,7 @@ h1.page-title {
 
 .entry-data {
 	padding-top: 20px;
-	float: left;
-	width: 15%;
+	width: 5%;
 	height: auto;
 	text-align: center;
 	margin-right: -20px;
@@ -237,6 +236,7 @@ h1.page-title {
 .entry-data img {
 	width: 100%;
 	height: auto;
+	border-radius: 50%;
 }
 
 /* === Archives list =============================== */
