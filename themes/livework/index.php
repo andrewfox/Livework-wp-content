@@ -29,6 +29,14 @@ get_header(); ?>
 					$the_query = new WP_Query( array( 'post_type' => array( 'post', 'case_study' ) ) );
 					while ( $the_query->have_posts() ) : $the_query->the_post() ?>
 
+					<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has post thumbnail ?>
+					<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 720,405 ), false, '' ); ?>
+					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> style="<?php $src[0] ?>">	
+					<?php else : ?>
+					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+					<?php endif; ?
+
+
 					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 
 						<div class="wrapper">
@@ -60,8 +68,11 @@ get_header(); ?>
 							<?php endif; ?>
 
 
-							<?php if ( has_post_thumbnail() ) : ?>
-							<div class="post-image blog-image"><?php the_post_thumbnail('large');?></div>';
+							<?php if ( has_post_thumbnail()) : ?>
+								<?php if ( in_category(10) ) : // don't show if highlight cat ?>
+								<?php else : ?>
+							<div class="post-image blog-image"><?php the_post_thumbnail('large');?></div>
+								<?php endif; ?
 							<?php endif; ?>
 
 
