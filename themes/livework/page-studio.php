@@ -31,13 +31,12 @@ get_header(); ?>
 					</div>
 						
 						
-						<div class="entry-content">
-							<?php the_content(); ?>
-							<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
-							<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
-						</div><!-- .entry-content -->
+					<div class="entry-content">
+						<?php the_content(); ?>
+						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
+						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
+					</div><!-- .entry-content -->
 
-					</div>
 
 				</article><!-- #page-## -->
 
@@ -46,42 +45,42 @@ get_header(); ?>
 <?php wp_reset_postdata(); ?>
 
 
-	<div class="latest-mini clearfix">
-	
-						 	<div class="wrapper">
-	
-								<h2><strong>Latest</strong> from <?php the_title(); ?></h2>
-	
-								<ul>
-									<?php
-									// The Query
-									
-									$args = array( 
-														'category_name'=> $studiocat,
-														'posts_per_page' => 8, 
-														
-														);
-									$loop = new WP_Query( $args );
-									while ( $loop->have_posts() ) : $loop->the_post(); ?>
-									<li>
-										<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-										<?php 
-										if(has_post_thumbnail()) :
-											the_post_thumbnail('thumb-large'); 
-										endif;?>
-											<span><?php the_title();?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></span>
-										</a>
-									</li>
-									<?php endwhile;
-									
-									// Reset Post Data
-									wp_reset_postdata(); ?>
-									
-								</ul>
-	
-							</div> <!-- /.wrapper -->
-	
-						</div> <!-- /.latest-mini -->
+				<div class="latest-mini clearfix">
+
+				 	<div class="wrapper">
+
+						<h2><strong>Latest</strong> from <?php the_title(); ?></h2>
+
+						<ul>
+							<?php
+							// The Query
+							
+							$args = array( 
+												'category_name'=> $studiocat,
+												'posts_per_page' => 8, 
+												
+												);
+							$loop = new WP_Query( $args );
+							while ( $loop->have_posts() ) : $loop->the_post(); ?>
+							<li>
+								<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+								<?php 
+								if(has_post_thumbnail()) :
+									the_post_thumbnail('thumb-large'); 
+								endif;?>
+									<span><?php the_title();?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></span>
+								</a>
+							</li>
+							<?php endwhile;
+							
+							// Reset Post Data
+							wp_reset_postdata(); ?>
+							
+						</ul>
+
+					</div> <!-- /.wrapper -->
+
+				</div> <!-- /.latest-mini -->
 	
 
 <?php get_sidebar(); ?>
