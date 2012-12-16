@@ -34,7 +34,7 @@ get_header(); ?>
 					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> style="<?php $src[0] ?>">	
 					<?php else : ?>
 					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-					<?php endif; ?
+					<?php endif; ?>
 
 
 					<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
