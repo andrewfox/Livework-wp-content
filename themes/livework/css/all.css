@@ -90,9 +90,23 @@ blockquote {
 	text-transform: uppercase;
 	font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 0.1em;
+	display: table;
+	background: #231f20;
+	padding: 3px 5px !important;
+	color: #eee;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.4);
 }
 .section-title a {
 	font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.blog .section-title {
+}
+.case_study .section-title {
+	background: #9b1e20;
+}
+.category-article .section-title {
+	background: #027cb8;
 }
 
 /* User inputted image stuff */
@@ -477,19 +491,6 @@ h1.page-title {
 
 /* === Latest (blog) =============================== */
 
-.blog .section-title {
-	display: table;
-	background: #231f20;
-	padding: 5px 8px;
-	margin-top: -20px;
-	color: #eee;
-}
-.blog .case_study .section-title {
-	background: #9b1e20;
-}
-.blog .category-article .section-title {
-	background: #027cb8;
-}
 
 h2.entry-title {
 	margin: 0;
@@ -540,7 +541,6 @@ span.entry-date {
 }
 
 .blog-image {
-	padding-top: 20px;
 }
 .blog-image img {
 	max-width: 100%;
@@ -1069,7 +1069,6 @@ ul.sectors-list {
 
 .blog .case_study {
 	padding: 20px 0;
-	border-top: 2px solid #9b1d1f;
 }
 .case_study .attachment-thumb-large {
 	float: left;
