@@ -151,8 +151,7 @@ get_header(); ?>
 							</a>
 						</li>
 	
-						<?php endwhile; else: ?>
-						Nothing
+						<?php endwhile; ?>
 	
 					</ul>
 				</div><!-- /#extra -->
