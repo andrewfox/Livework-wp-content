@@ -569,7 +569,7 @@ function ucc_pre_get_posts_filter( $query ) {
 				// Get all custom post types automatically.
 				$post_types = get_post_types( $args, $output, $operator );
 				// Or uncomment and edit to explicitly state which post types you want. */
-				 $post_types = array( 'case_study' );
+				 $post_types = array( 'case_study', 'post' );
  
 				// Add 'link' and/or 'page' to array() if you want these included.
 				// array( 'post' , 'link' , 'page' ), etc.
