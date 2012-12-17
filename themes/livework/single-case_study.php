@@ -78,25 +78,36 @@ if ($feature == true) {
 						<div id="main" class="clearfix">
 							
 							<div class="entry-content">
-							
-								<aside id="sidebar-more-posts">
-							<!-- The Loop -->
-								<?php $authorid = get_the_author_meta('ID') ?> 
-								<?php $args = array( 
-													'author'=> $authorid,
-													'post_type' => 'people', 
-													'posts_per_page' => 1, 
-												);
-								$loop = new WP_Query( $args );
-								while ( $loop->have_posts() ) : $loop->the_post(); ?>
-								<h3>By <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>"><?php the_title(); ?></a></h3>
-								<?php endwhile; ?>
-								<?php wp_reset_query();?>
-								<!-- End Loop -->
-							
+
+								<aside class="meta-data">
+
+									<?php $authorid = get_the_author_meta('ID') ?> 
+									<?php $args = array( 
+										'author'=> $authorid,
+										'post_type' => 'people', 
+										'posts_per_page' => 1, 
+									);
+									$loop = new WP_Query( $args );
+									while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+									<a href="<?php the_permalink() ?>" rel="bookmark" title="Find out more about <?php the_title(); ?>">
+										<?php the_post_thumbnail('thumbnail'); ?>
+										<span>By <?php the_title(); ?></span>
+									</a>
+
+									<?php endwhile; ?>
+									<?php wp_reset_query();?>
+									<!-- End Loop -->
+
+									<ul class="socialmedia">
+										<li><a href="http://twitter.com/?status=@liveworkstudio" class="twitter"><span>twitter</span> Comment on Twitter</a></li>
+									</ul>
+
 								</aside>
+
 								<?php the_content(); ?>
-							</div>
+
+							</div> <!-- /.entry-content -->
 	
 							<?php endwhile; ?>
 						</div>

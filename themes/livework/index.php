@@ -97,7 +97,7 @@ get_header(); ?>
 								$loop = new WP_Query( $args );
 								while ( $loop->have_posts() ) : $loop->the_post(); 
 								?>
-								<a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link: <?php the_title(); ?>">
+								<a href="<?php the_permalink() ?>" rel="bookmark" title="Find out more about <?php the_title(); ?>">
 									<?php the_post_thumbnail('thumbnail'); ?>
 									<span>By <?php the_title(); ?></span>
 								</a>
