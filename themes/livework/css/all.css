@@ -658,6 +658,9 @@ span.entry-date {
 	-o-transition: all 0.3s linear;
 	transition: all 0.3s linear;
 }
+.home .arrow-nav span {
+	opacity: 1;
+}
 .arrow-nav:hover span {
 	display: block;
 	opacity: 1;
