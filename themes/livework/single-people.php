@@ -95,7 +95,7 @@ get_header(); ?>
 
 											<li>
 												<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
-													<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
+													<?php the_title(); ?><span class="entry-date"> <?php the_date('j/n/Y'); ?></span>
 												</a>
 											</li>
 

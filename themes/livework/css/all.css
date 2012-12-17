@@ -574,6 +574,10 @@ span.entry-date {
 	padding-right: 5px;
 }
 
+.vcard span {
+	color: #c8c9ce;
+}
+
 
 /* === Social media (list on single) =============================== */
 
