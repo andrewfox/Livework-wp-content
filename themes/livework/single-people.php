@@ -95,9 +95,9 @@ get_header(); ?>
 										if (get_the_title() == "") {
 										}
 										else {
-											echo "<h4>Posts by "
+											echo "<h4>Posts by ";
 											the_author();
-											echo "</h4>"
+											echo "</h4>";
 										}
 										?>
 										
