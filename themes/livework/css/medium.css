@@ -212,6 +212,7 @@ h1.page-title {
 	min-height: 300px;
 }
 .blog .entry-content {
+	width: 70%;
 }
 .category-highlight .wrapper {
 	margin: 120px 20px 20px;
