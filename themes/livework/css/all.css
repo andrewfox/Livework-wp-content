@@ -568,7 +568,7 @@ span.entry-date {
 	line-height: 120%;
 }
 .entry-data img {
-	width: 20px;
+	width: 15px;
 	height: auto;
 	vertical-align: middle;
 	padding-right: 5px;
@@ -591,6 +591,7 @@ span.entry-date {
 
 ul.socialmedia {
 	clear: left;
+	padding: 20px 0;
 }
 ul.socialmedia li {
 	list-style: none;
