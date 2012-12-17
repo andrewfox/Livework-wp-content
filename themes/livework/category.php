@@ -31,7 +31,7 @@ get_header(); ?>
 				 * If you want to overload this in a child theme then include a file
 				 * called loop-category.php and that will be used instead.
 				 */
-				get_template_part( 'index', 'category' );
+				get_template_part( 'loop', 'category' );
 				?>
 
 <?php get_sidebar( 'archives-date' ); ?>
