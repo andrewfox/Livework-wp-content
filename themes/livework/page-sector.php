@@ -50,7 +50,6 @@ get_sidebar('featuredbar');
 			 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 			 						<?php setup_postdata($post); ?>
 										<div  <?php post_class('clearfix'); ?>>
-											<div class="wrapper">
 													<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
 																		<?php $domsxe = simplexml_load_string(get_the_post_thumbnail());
 																			$thumbnailsrc = $domsxe->attributes()->src; ?>
@@ -132,7 +131,6 @@ get_sidebar('featuredbar');
 																		</div><!-- /.post -->
 				 								</div>
 
-				 							</div>
 			 							</div>
 			 					<?php endforeach; ?>
 		 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
