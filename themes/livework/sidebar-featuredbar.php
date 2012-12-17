@@ -73,7 +73,7 @@
 	 							</h3>
 	 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark" class="feature-<?php echo $theposttype ?>">
 	
-									<?php if ($thumbnail == 'logo') { ?>
+									<?php if ($thumbnail == 'logo' && get_field('casestudies_logo') ) { ?>
 										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" />
 									<?php } else { 
 										the_post_thumbnail('thumb-large');
