@@ -232,9 +232,7 @@ h1.page-title {
 .entry-data img {
 	width: 40px;
 	height: auto;
-}
-.single .entry-data {
-	float: right;
+	float: left;
 }
 .single .entry-data {
 	float: right;
@@ -242,6 +240,16 @@ h1.page-title {
 	margin: 0 0 20px 20px;
 	display: block;
 }
+.author-details {
+}
+.author-details span {
+	padding: 5px 0;
+}
+
+/* === Social media (list on single) =============================== */
+
+
+
 /* === Archives list =============================== */
 
 

@@ -575,6 +575,17 @@ span.entry-date {
 }
 
 
+/* === Social media (list on single) =============================== */
+
+
+ul.socialmedia {
+	clear: left;
+}
+ul.socialmedia li {
+	list-style: none;
+	margin: 0;
+}
+
 
 /* === Archives list =============================== */
 
