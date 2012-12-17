@@ -535,7 +535,7 @@ function my_gallery_shortcode($attr) {
 function livework_add_custom_types( $query ) {
   if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
     $query->set( 'post_type', array(
-     'post', 'case_study', 
+     'post', 'case_study', 'nav_menu_item'
 		));
 	  return $query;
 	}
