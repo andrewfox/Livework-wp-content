@@ -87,7 +87,7 @@ get_header(); ?>
 									?>
 									
 									<div class="author-articles">
-
+										<h4>Posts by <?php the_author() ?></h4>
 
 										<ul>
 										
