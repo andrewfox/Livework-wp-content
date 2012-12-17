@@ -243,6 +243,7 @@ h1.page-title {
 }
 .author-details span {
 	padding: 5px 0;
+	vertical-align: middle;
 }
 
 /* === Social media (list on single) =============================== */
