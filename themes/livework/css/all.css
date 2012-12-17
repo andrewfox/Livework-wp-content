@@ -767,16 +767,10 @@ ul.socialmedia li {
 	max-width: 100%;
 	height: auto;
 	background: #fff;
-	padding: 5px;
 }
-.section-links li img {
-	max-width: 100%;
-	height: auto;
-	background: #fff;
-	padding: 5px;
-}
+
 .section-links span {
-	padding-bottom: 5px;
+	padding-bottom: 3px;
 	display: block;
 }
 /*Sections: Case studies */
@@ -887,6 +881,7 @@ span.casestudy-title {
 	margin: 0;
 	font-size: 22px;
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
+	color: #eee;
 }
 .featured {
 
@@ -897,6 +892,10 @@ span.casestudy-title {
 .featured a {
 	position: relative;
 	display: block;
+	color: #eee;
+}
+.featured a:hover {
+	color: #f1c407;
 }
 .feature-case_study span {
 	width: 100%;
