@@ -19,7 +19,7 @@ get_header(); ?>
 					</div>
 
 
-										<?php get_sidebar( 'archives' ); ?>
+					<?php get_sidebar( 'archives' ); ?>
 					
 				
 				<?php

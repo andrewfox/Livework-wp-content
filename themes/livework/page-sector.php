@@ -53,15 +53,85 @@ get_sidebar('featuredbar');
 											<div class="wrapper">
 												<?php the_post_thumbnail('thumb-large'); ?>
 												<div>
-													<?php if( get_field('casestudies_one_liner') ): ?>
-													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span></a></h2>
-													<?php else : ?>
-													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-													<?php endif; ?>
-
-													<div>
-				 									<?php the_excerpt() ?>
-													</div>
+													<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
+																		<?php $domsxe = simplexml_load_string(get_the_post_thumbnail());
+																			$thumbnailsrc = $domsxe->attributes()->src; ?>
+																		<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> style="background-image: url('<?php echo $thumbnailsrc ?>')">	
+																		<?php else : ?>
+																		<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+																		<?php endif; ?>
+													
+													
+													
+																			<div class="wrapper clearfix">
+													
+																				<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
+																				<h4 class="section-title">Client story</h4>
+																				<?php elseif (in_category(191)) : ?>
+																				<h4 class="section-title">Theme/Article</h4>
+																				<?php else : ?>
+																				<h4 class="section-title">News</h4>
+																				<?php endif; ?>
+																				
+																				<?php if ((get_post_type( $post->ID ) == "case_study")) : // if case study ?>
+													
+																					<?php if( get_field('casestudies_one_liner') ): // with one liner intro ?>
+													
+																				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span></a></h2>
+													
+																					<?php else : // with no one liner ?>
+													
+																				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+													
+																					<?php endif; ?>
+													
+																				<?php else : // regular blog/article ?>
+													
+																				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></a></h2>
+													
+																				<?php endif; ?>
+													
+													
+																				<?php if ( has_post_thumbnail()) : ?>
+																					<?php if ( in_category(10) ) : // don't show if highlight cat ?>
+																					<?php else : ?>
+																				<div class="post-image blog-image"><?php the_post_thumbnail('large');?></div>
+																					<?php endif; ?>
+																				<?php endif; ?>
+													
+													
+													
+																				<div class="entry-content">
+																					<?php the_excerpt(); ?>
+																					<p class="read-more"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more &rarr;</a></p>
+																				</div>
+													
+													
+													
+																				<div class="entry-data">
+																					<?php
+																					$authorid = get_the_author_meta('ID');
+																					$args = array( 
+																						'author'=> $authorid,
+																						'post_type' => 'people', 
+																						'posts_per_page' => 1, 
+																					);
+																					$loop = new WP_Query( $args );
+																					while ( $loop->have_posts() ) : $loop->the_post(); 
+																					?>
+																					<a href="<?php the_permalink() ?>" rel="bookmark" title="Find out more about <?php the_title(); ?>">
+																						<?php the_post_thumbnail('thumbnail'); ?>
+																						<span>By <?php the_title(); ?></span>
+																					</a>
+																					<?php endwhile; ?>
+																					<?php wp_reset_query();?>
+																				</div>
+													
+													
+													
+																			</div><!-- /.wrapper -->
+													
+																		</div><!-- /.post -->
 				 								</div>
 
 				 							</div>
