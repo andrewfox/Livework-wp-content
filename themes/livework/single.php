@@ -95,6 +95,19 @@ if ($feature == true) {
 									<?php endwhile; ?>
 									<?php wp_reset_query();?>
 									<!-- End Loop -->
+									
+								<!--List categories-->
+								<?php 
+								
+								$post_categories = wp_get_post_categories( $post_id );
+								$cats = array();
+									
+								foreach($post_categories as $c){
+									$cat = get_category( $c );
+									$cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
+								}
+								
+								?>
 
 									<ul class="socialmedia">
 										<li><a href="https://twitter.com/share" class="twitter-share-button" data-via="liveworkstudio" data-count="none" data-dnt="true">Tweet</a>
