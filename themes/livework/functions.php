@@ -532,46 +532,42 @@ function my_gallery_shortcode($attr) {
 	return $output;
 }
 
-//function livework_add_custom_types( $query ) {
-//  if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
-//    $query->set( 'post_type', array(
-//     'post', 'case_study', 'nav_menu_item'
-//		));
-//	  return $query;
-//	}
-//}
-//add_filter( 'pre_get_posts', 'livework_add_custom_types' );
-//
-//
-//add_filter( 'getarchives_where' , 'ucc_getarchives_where_filter' , 10 , 2 ); function ucc_getarchives_where_filter( $where , $r ) { $args = array( 'public' => true , '_builtin' => false ); $output = 'names'; $operator = 'and';
-//
-//$post_types = get_post_types( $args , $output , $operator ); $post_types = array_merge( $post_types , array( 'post' ) ); $post_types = "'" . implode( "' , '" , $post_types ) . "'";
-//
-//return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where ); }
-//
-// 
-//if ( ! function_exists( 'ucc_request_filter' ) ) {
-//function ucc_request_filter( $query ) {
+function livework_add_custom_types( $query ) {
+  if( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $query->set( 'post_type', array(
+     'post', 'case_study', 'nav_menu_item'
+		));
+	  return $query;
+	}
+}
+add_filter( 'pre_get_posts', 'livework_add_custom_types' );
+
+
+add_filter( 'getarchives_where' , 'ucc_getarchives_where_filter' , 10 , 2 ); function ucc_getarchives_where_filter( $where , $r ) { $args = array( 'public' => true , '_builtin' => false ); $output = 'names'; $operator = 'and';
+
+$post_types = get_post_types( $args , $output , $operator ); $post_types = array_merge( $post_types , array( 'post' ) ); $post_types = "'" . implode( "' , '" , $post_types ) . "'";
+
+return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where ); }
+
+ 
+if ( ! function_exists( 'ucc_request_filter' ) ) {
+function ucc_request_filter( $query ) {
 	// Preview does not like having post_type set; feed is my personal preference.
-//	if ( empty( $query['preview'] ) && empty( $query['feed'] ) ) {
-//		$my_post_type = $query['post_type'];
-//		if ( empty( $my_post_type ) ) {
-//			$query['post_type'] = 'any';
-//		}
-//	}
-//	return $query;
-//} }
-//add_filter( 'request' , 'ucc_request_filter' );
+	if ( empty( $query['preview'] ) && empty( $query['feed'] ) ) {
+		$my_post_type = $query['post_type'];
+		if ( empty( $my_post_type ) ) {
+			$query['post_type'] = 'any';
+		}
+	}
+	return $query;
+} }
+add_filter( 'request' , 'ucc_request_filter' );
  
 /*
 	Copyright 2012 Jennifer M. Dodd <jmdodd@gmail.com>
 	Released under the GPLv2 (or later).
 */
  
-
-
-
-
 
 /* End Livework specifics */
 
