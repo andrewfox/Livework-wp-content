@@ -568,62 +568,10 @@ function my_gallery_shortcode($attr) {
 	Released under the GPLv2 (or later).
 */
  
-add_filter( 'getarchives_where' , 'ucc_getarchives_where_filter' , 10 , 2 );
-function ucc_getarchives_where_filter( $where , $r ) {
-  $args = array(
-    'public' => true ,
-    '_builtin' => false
-  );
-  $output = 'names';
-  $operator = 'and';
-
-  $post_types = get_post_types( $args , $output , $operator );
-  $post_types = array_merge( $post_types , array( 'post' ) );
-  $post_types = "'" . implode( "' , '" , $post_types ) . "'";
-  //if page is somewhere in the middle then remove it 
-  $post_types = str_replace("'page',","",  $post_types);
-    //if page is somewhere the last type then remove it 
-  $post_types = str_replace("'page'","",  $post_types);
-  return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where );
-}
 
 
-add_filter( 'pre_get_posts' , 'ucc_include_custom_post_types' );
-function ucc_include_custom_post_types( $query ) {
-  global $wp_query;
 
-  /* Don't break admin or preview pages. This is also a good place to exclude feed with !is_feed() if desired. */
-  if ( !is_preview() && !is_admin() && !is_singular() ) {
-    $args = array(
-      'public' => true ,
-      '_builtin' => false
-    );
-    $output = 'names';
-    $operator = 'and';
 
-    $post_types = get_post_types( $args , $output , $operator );
-    $post_types = array_merge( $post_types , array( 'post' ) );
-
-    //remove page form array:
-    foreach($post_types as $key => $val){
-        if ($val =='page'){
-            unset($post_types[$key]);
-        }
-    }
-
-    if ($query->is_feed) {
-      /* Do feed processing here if you did not exclude it previously. This if/else
-       * is not necessary if you want custom post types included in your feed.
-       */
-    } else {
-      $my_post_type = get_query_var( 'post_type' );
-      if ( empty( $my_post_type ) )
-        $query->set( 'post_type' , $post_types );
-    }
-  }
-
-  return $query;
-}
 
 /* End Livework specifics */
 
