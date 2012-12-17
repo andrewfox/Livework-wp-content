@@ -639,7 +639,6 @@ span.entry-date {
 	width: 4%;
 	min-width: 20px;
 	max-width: 60px;
-	overflow: hidden;
 }
 .arrow-nav span {
 	display: block;
@@ -652,6 +651,7 @@ span.entry-date {
 	white-space: nowrap;
 	opacity: 0;
 	font-size: 80%;
+	color: #f1c407;
 	-webkit-transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
 	-ms-transition: all 0.3s linear;
@@ -660,6 +660,11 @@ span.entry-date {
 }
 .home .arrow-nav span {
 	opacity: 1;
+}
+.home .arrow-nav span::before {
+	content: 'Continue with ';
+	font-weight: normal;
+	color: #c8c9ce;
 }
 .arrow-nav:hover span {
 	display: block;
@@ -691,16 +696,12 @@ span.entry-date {
 	transition: all 0.3s linear;
 }
 .arrow-next img {
-	margin-right: -2px;
 }
 .arrow-prev img {
-	margin-left: -2px;
 }
 .arrow-next:hover img {
-	margin-right: 0;
 }
 .arrow-prev:hover img {
-	margin-left: 0;
 }
 
 /* === Sections (repeated blocks of content on Story and Sectors pages) =============================== */
