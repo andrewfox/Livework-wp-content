@@ -13,7 +13,7 @@
 
 body {
 	color: #222;
-	background: #c00;
+	background: #fff;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	line-height: 1.5em;
 }
@@ -102,7 +102,8 @@ blockquote {
 
 .blog .section-title {
 }
-.case_study .section-title {
+.case_study .section-title,
+.single-case_study .splash .section-title  {
 	background: #9b1e20;
 }
 .category-article .section-title {
@@ -316,8 +317,9 @@ h1.page-title {
 
 
 .splash h1 {
-	font-size: 32px;
-	margin: 0 auto 5px;
+	font-size: 30px;
+	margin: 10px auto 5px;
+	
 }
 
 #introduction h1 span {
@@ -1099,6 +1101,37 @@ ul.sectors-list {
 }
 .single-case_study .splash h1 {
 	color: #094d6f;
+}
+
+/*More from*/
+
+.below-more li {
+	float: left;
+	width: 50%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+.below-more li:nth-child(odd) {
+	clear: left;
+}
+
+.below-more li a img {
+	clear: both;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.below-more li h3 {
+	font-size: 16px;
+	padding-left: 0;
+}
+
+.below-more span {
+	clear: both;
+	display: block;
+	color: black;
 }
 
 /* === Extra aside =============================== */

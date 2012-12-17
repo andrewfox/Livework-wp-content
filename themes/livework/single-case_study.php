@@ -41,16 +41,33 @@ if ($feature == true) {
 
 
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
 				<div class="splash <?php echo $catClass ?>">
-					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
+
+					<?php if (in_category(10)) : // show topimage if highlight ?>
+					<div class="topimage"><?php the_post_thumbnail('full'); ?></div>
+					<?php endif; ?>
+
 					<div id="introduction">
 						<div class="wrapper">
+
+							<?php if (in_category(10)) : // show regular large image if NOT highlight ?>
+							<?php else : ?>
+							<?php the_post_thumbnail('large'); ?> 
+							<?php endif; ?>
+
 							<h4 class="section-title">Client Story</h4>
 							<h1><?php the_field('casestudies_one_liner'); ?></h1>
 							<h2 class="casestudy-title">with <?php the_title(); ?></h2>
+
+							<?php 
+							//only show excerpt if it exists
+							if ($post->post_excerpt): ?>
 							<div class="excerpt">
 								<?php the_excerpt() ?>
 							</div>
+							<?php endif; ?>
+
 						</div><!-- /.wrapper -->
 					</div><!-- /#introduction -->
 				</div>

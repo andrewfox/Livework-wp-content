@@ -35,18 +35,20 @@ if ($feature == true) {
 }
 
 ?>
-				<div class="splash <?php echo $catClass ?>">
-		
-					<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-					<?php if (in_category(10)) : ?>
+
+				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+				<div class="splash <?php echo $catClass ?>">
+
+					<?php if (in_category(10)) :  // show topimage if highlight ?>
 					<div class="topimage"><?php the_post_thumbnail('full'); ?></div>
 					<?php endif; ?>
 
 					<div id="introduction">
 						<div class="wrapper">
 
-							<?php if (in_category(10)) : ?>
+							<?php if (in_category(10)) :  // show regular large image if NOT highlight?>
 							<?php else : ?>
 							<?php the_post_thumbnail('large'); ?> 
 							<?php endif; ?>

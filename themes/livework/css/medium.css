@@ -129,8 +129,6 @@ h1.page-title {
 
 .splash h1 {
 	font-size: 34px;
-	margin-top: 0;
-	margin: 0 auto 3px;
 }
 .splash h2 {
 	margin-top: 0;
@@ -408,11 +406,16 @@ article.people{
 	box-sizing: border-box;
 	padding-right: 20px;
 }
-
+.below-more li:nth-child(odd) {
+	clear: none;
+}
+.below-more li:nth-child(3n-2) {
+	clear: left;
+}
 .below-more li a img {
 	clear: both;
 	display: block;
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
