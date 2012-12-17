@@ -99,17 +99,7 @@ if ($feature == true) {
 								<!--List categories-->
 								
 								<h4>Cats</h4>
-								<?php 
-								
-								$post_categories = wp_get_post_categories( $post_id );
-								$cats = array();
-									
-								foreach($post_categories as $c){
-									$cat = get_category( $c );
-									$cats[] = array( 'name' => $cat->name, 'slug' => $cat->slug );
-								}
-								
-								?>
+								<p><?php the_category(' '); ?></p>
 
 									<ul class="socialmedia">
 										<li><a href="https://twitter.com/share" class="twitter-share-button" data-via="liveworkstudio" data-count="none" data-dnt="true">Tweet</a>
