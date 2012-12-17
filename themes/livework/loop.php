@@ -57,116 +57,96 @@
 
 <?php /* How to display posts in the Gallery category. */ ?>
 
-	<?php if ( in_category( _x('gallery', 'gallery category slug', 'livework') ) ) : ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'livework' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-
-			<div class="entry-meta">
-				<?php livework_posted_on(); ?>
-			</div><!-- .entry-meta -->
-
-			<div class="entry-content">
-<?php if ( post_password_required() ) : ?>
-				<?php the_content(); ?>
-<?php else : ?>
-				<?php
-					$images = get_children( array( 'post_parent' => $post->ID, 'post_type' => 'attachment', 'post_mime_type' => 'image', 'orderby' => 'menu_order', 'order' => 'ASC', 'numberposts' => 999 ) );
-					if ( $images ) :
-						$total_images = count( $images );
-						$image = array_shift( $images );
-						$image_img_tag = wp_get_attachment_image( $image->ID, 'thumbnail' );
-				?>
-						<div class="gallery-thumb">
-							<a class="size-thumbnail" href="<?php the_permalink(); ?>"><?php echo $image_img_tag; ?></a>
-						</div><!-- .gallery-thumb -->
-						<p><em><?php printf( __( 'This gallery contains <a %1$s>%2$s photos</a>.', 'livework' ),
-								'href="' . get_permalink() . '" title="' . sprintf( esc_attr__( 'Permalink to %s', 'livework' ), the_title_attribute( 'echo=0' ) ) . '" rel="bookmark"',
-								$total_images
-							); ?></em></p>
-				<?php endif; ?>
-						<?php the_excerpt(); ?>
-<?php endif; ?>
-			</div><!-- .entry-content -->
-
-			<footer class="entry-utility">
-				<a href="<?php echo get_term_link( _x('gallery', 'gallery category slug', 'livework'), 'category' ); ?>" title="<?php esc_attr_e( 'View posts in the Gallery category', 'livework' ); ?>"><?php _e( 'More Galleries', 'livework' ); ?></a>
-				|
-				<?php comments_popup_link( __( 'Leave a comment', 'livework' ), __( '1 Comment', 'livework' ), __( '% Comments', 'livework' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'livework' ), '|', '' ); ?>
-			</footer><!-- .entry-utility -->
-		</article><!-- #post-## -->
-
-<?php /* How to display posts in the asides category */ ?>
-
-	<?php elseif ( in_category( _x('asides', 'asides category slug', 'livework') ) ) : ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-		<?php if ( is_archive() || is_search() ) : // Display excerpts for archives and search. ?>
-			<div class="entry-summary">
-				<?php the_excerpt(); ?>
-			</div><!-- .entry-summary -->
-		<?php else : ?>
-			<div class="entry-content">
-				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'livework' ) ); ?>
-			</div><!-- .entry-content -->
-		<?php endif; ?>
-
-			<footer class="entry-utility">
-				<?php livework_posted_on(); ?>
-				|
-				<?php comments_popup_link( __( 'Leave a comment', 'livework' ), __( '1 Comment', 'livework' ), __( '% Comments', 'livework' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'livework' ), '| ', '' ); ?>
-			</footer><!-- .entry-utility -->
-		</article><!-- #post-## -->
-
-<?php /* How to display all other posts. */ ?>
-
-	<?php else : ?>
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'livework' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-
-			<div class="entry-meta">
-				<?php livework_posted_on(); ?>
-			</div><!-- .entry-meta -->
-
-	<?php if ( is_archive() || is_search() ) : // Only display excerpts for archives and search. ?>
-			<div class="entry-summary">
-				<?php the_excerpt(); ?>
-			</div><!-- .entry-summary -->
-	<?php else : ?>
-			<div class="entry-content">
-				<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'livework' ) ); ?>
-				<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'livework' ), 'after' => '</div>' ) ); ?>
-			</div><!-- .entry-content -->
-	<?php endif; ?>
-
-			<footer class="entry-utility">
-				<?php if ( count( get_the_category() ) ) : ?>
-					<?php printf( __( 'Posted in %2$s', 'livework' ), 'entry-utility-prep entry-utility-prep-cat-links', get_the_category_list( ', ' ) ); ?>
-					|
-				<?php endif; ?>
-				<?php
-					$tags_list = get_the_tag_list( '', ', ' );
-					if ( $tags_list ):
-				?>
-					<?php printf( __( 'Tagged %2$s', 'livework' ), 'entry-utility-prep entry-utility-prep-tag-links', $tags_list ); ?>
-					|
-				<?php endif; ?>
-				<?php comments_popup_link( __( 'Leave a comment', 'livework' ), __( '1 Comment', 'livework' ), __( '% Comments', 'livework' ) ); ?>
-				<?php edit_post_link( __( 'Edit', 'livework' ), '| ', '' ); ?>
-			</footer><!-- .entry-utility -->
-		</article><!-- #post-## -->
-
-		<?php comments_template( '', true ); ?>
-
-	<?php endif; // This was the if statement that broke the loop into three parts based on categories. ?>
-
-<?php endwhile; // End the loop. Whew. ?>
-
-<?php /* Display navigation to next/previous pages when applicable */ ?>
-<?php if (  $wp_query->max_num_pages > 1 ) : ?>
-	<nav id="nav-below" class="navigation">
-		<?php next_posts_link( __( '&larr; Older posts', 'livework' ) ); ?>
-		<?php previous_posts_link( __( 'Newer posts &rarr;', 'livework' ) ); ?>
-	</nav><!-- #nav-below -->
-<?php endif; ?>
+	<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
+						<?php $domsxe = simplexml_load_string(get_the_post_thumbnail());
+							$thumbnailsrc = $domsxe->attributes()->src; ?>
+						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> style="background-image: url('<?php echo $thumbnailsrc ?>')">	
+						<?php else : ?>
+						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+						<?php endif; ?>
+	
+	
+	
+							<div class="wrapper clearfix">
+	
+								<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
+								<h4 class="section-title">Client story</h4>
+								<?php elseif (in_category(191)) : ?>
+								<h4 class="section-title">Theme/Article</h4>
+								<?php else : ?>
+								<h4 class="section-title">News</h4>
+								<?php endif; ?>
+								
+								<?php if ((get_post_type( $post->ID ) == "case_study")) : // if case study ?>
+	
+									<?php if( get_field('casestudies_one_liner') ): // with one liner intro ?>
+	
+								<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span></a></h2>
+	
+									<?php else : // with no one liner ?>
+	
+								<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+	
+									<?php endif; ?>
+	
+								<?php else : // regular blog/article ?>
+	
+								<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></a></h2>
+	
+								<?php endif; ?>
+	
+	
+								<?php if ( has_post_thumbnail()) : ?>
+									<?php if ( in_category(10) ) : // don't show if highlight cat ?>
+									<?php else : ?>
+								<div class="post-image blog-image"><?php the_post_thumbnail('large');?></div>
+									<?php endif; ?>
+								<?php endif; ?>
+	
+	
+	
+								<div class="entry-content">
+									<?php the_excerpt(); ?>
+									<p class="read-more"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more &rarr;</a></p>
+								</div>
+	
+	
+	
+								<div class="entry-data">
+									<?php
+									$authorid = get_the_author_meta('ID');
+									$args = array( 
+										'author'=> $authorid,
+										'post_type' => 'people', 
+										'posts_per_page' => 1, 
+									);
+									$loop = new WP_Query( $args );
+									while ( $loop->have_posts() ) : $loop->the_post(); 
+									?>
+									<a href="<?php the_permalink() ?>" rel="bookmark" title="Find out more about <?php the_title(); ?>">
+										<?php the_post_thumbnail('thumbnail'); ?>
+										<span>By <?php the_title(); ?></span>
+									</a>
+									<?php endwhile; ?>
+									<?php wp_reset_query();?>
+								</div>
+	
+	
+	
+							</div><!-- /.wrapper -->
+	
+						</div><!-- /.post -->
+	
+						<?php endwhile; ?>
+	
+	
+	
+	
+						<ul class="nav-paged">
+							<li class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> older articles', 'blankslate' )) ?></li>
+							<li class="nav-next"><?php previous_posts_link(__( 'newer articles <span class="meta-nav">&raquo;</span>', 'blankslate' )) ?></li>
+						</ul>
+	
+	
+	
+						<?php get_sidebar( 'archives-date' ); ?>
