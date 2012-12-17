@@ -52,8 +52,9 @@ get_header(); ?>
 				
 
 
-			<div class="wrapper">
+			
 				<article id="people-<?php the_ID(); ?>" class="main clearfix">
+				
 					<div class="wrapper">
 
 						<div id="main" class="clearfix">
@@ -88,8 +89,7 @@ get_header(); ?>
 									
 									<div class"author-articles">
 
-										<h4>Articles, client stories and more from <?php the_title(); ?></h4>
-										
+
 										<ul>
 										
 										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -117,7 +117,7 @@ get_header(); ?>
 							</div> <!-- /.entry-content -->
 	
 							<?php endwhile; ?>
-						</div>
+						</div> <!-- /#main -->
 						
 						
 		
@@ -128,6 +128,8 @@ get_header(); ?>
 
 
 				</article><!-- #people-## -->
+
+
 
 				<div class="extra">
 
