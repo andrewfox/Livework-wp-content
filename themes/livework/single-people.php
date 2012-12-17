@@ -62,9 +62,17 @@ get_header(); ?>
 
 								<aside class="entry-data"> 
 
-									<p>e: <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
-									<p>t: <?php the_field('person_phone_number'); ?></p>
-									
+									<div class="vcard">
+
+										<?php if (the_field('person_email')) : ?>
+										<p class="email">email <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
+										<?php endif; ?>
+
+										<?php if ( the_field('person_phone_number') ) : ?>
+										<p class="tel">t: <?php the_field('person_phone_number'); ?></p>
+										<?php endif; ?>
+
+									</div> <!-- /.vcard -->
 									
 									<?php $anyposts = 0; ?>
 									
@@ -74,16 +82,27 @@ get_header(); ?>
 														'posts_per_page' => 5, 
 														
 														);
-									$loop = new WP_Query( $args );
-									while ( $loop->have_posts() ) : $loop->the_post(); ?>
+									$loop = new WP_Query( $args );?>
+									
+									<div class"author-articles">
 
-									<li>
-										<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
-											<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
-										</a>
-									</li>
-									<?php endwhile; ?>
-									</ul>
+										<h3>Articles, client stories and more from <?php the_title(); ?></h3>
+										
+										<ul>
+										
+										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+	
+											<li>
+												<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
+													<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
+												</a>
+											</li>
+	
+										<?php endwhile; ?>
+	
+										</ul>
+									
+									</div>
 				
 									<?php wp_reset_query();?>
 	
