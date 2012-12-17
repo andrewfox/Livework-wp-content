@@ -86,7 +86,7 @@ get_header(); ?>
 									$loop = new WP_Query( $args );
 									?>
 									
-									<div class"author-articles">
+									<div class="author-articles">
 
 
 										<ul>
