@@ -549,10 +549,6 @@ $post_types = get_post_types( $args , $output , $operator ); $post_types = array
 
 return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where ); }
 
-?>
-
-
-<?php
  
 if ( ! function_exists( 'ucc_request_filter' ) ) {
 function ucc_request_filter( $query ) {
@@ -572,7 +568,6 @@ add_filter( 'request' , 'ucc_request_filter' );
 	Released under the GPLv2 (or later).
 */
  
-?>
 
 /* End Livework specifics */
 
