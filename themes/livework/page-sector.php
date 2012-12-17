@@ -51,8 +51,6 @@ get_sidebar('featuredbar');
 			 						<?php setup_postdata($post); ?>
 										<div  <?php post_class('clearfix'); ?>>
 											<div class="wrapper">
-												<?php the_post_thumbnail('thumb-large'); ?>
-												<div>
 													<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
 																		<?php $domsxe = simplexml_load_string(get_the_post_thumbnail());
 																			$thumbnailsrc = $domsxe->attributes()->src; ?>
