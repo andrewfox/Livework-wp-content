@@ -92,7 +92,7 @@ get_header(); ?>
 										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 												
 										<?php
-										if (get_the_permalink() == "") {
+										if (get_the_title() == "") {
 										}
 										else {
 											
