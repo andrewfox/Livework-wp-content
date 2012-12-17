@@ -53,9 +53,7 @@
 	 *
 	 * Without further ado, the loop:
 	 */ ?>
-<?php
-$the_query = new WP_Query( array( 'post_type' => array( 'post', 'case_study' ) ) );
-while ( $the_query->have_posts() ) : $the_query->the_post() ?>
+<?php while ( have_posts() ) : the_post(); ?>
 
 <?php /* How to display posts in the Gallery category. */ ?>
 
