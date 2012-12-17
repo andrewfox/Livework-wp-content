@@ -97,6 +97,8 @@ if ($feature == true) {
 									<!-- End Loop -->
 									
 								<!--List categories-->
+								
+								<h4>Cats</h4>
 								<?php 
 								
 								$post_categories = wp_get_post_categories( $post_id );
