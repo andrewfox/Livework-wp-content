@@ -86,15 +86,15 @@ blockquote {
 /* Capitalised headers (should always be used with H4, but can be used with any tags) */
 
 .section-title {
-	margin-top: 0;
+	margin: 0 0 5px !important;
 	text-transform: uppercase;
-	font: normal normal 11px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: normal normal 11px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
 	letter-spacing: 0.1em;
 	display: table;
 	background: #231f20;
 	padding: 3px 5px !important;
-	color: #eee;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.4);
+	color: #eee !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.4) !important;
 }
 .section-title a {
 	font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
@@ -109,11 +109,14 @@ blockquote {
 .category-article .section-title {
 	background: #027cb8;
 }
+.page-template-page-story-php .splash .section-title {
+	background: #6d2061;
+}
 
 /* User inputted image stuff */
 
 .alignnone {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
 }
 
