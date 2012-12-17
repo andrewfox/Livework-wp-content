@@ -549,7 +549,30 @@ $post_types = get_post_types( $args , $output , $operator ); $post_types = array
 
 return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where ); }
 
+?>
 
+
+<?php
+ 
+if ( ! function_exists( 'ucc_request_filter' ) ) {
+function ucc_request_filter( $query ) {
+	// Preview does not like having post_type set; feed is my personal preference.
+	if ( empty( $query['preview'] ) && empty( $query['feed'] ) ) {
+		$my_post_type = $query['post_type'];
+		if ( empty( $my_post_type ) ) {
+			$query['post_type'] = 'any';
+		}
+	}
+	return $query;
+} }
+add_filter( 'request' , 'ucc_request_filter' );
+ 
+/*
+	Copyright 2012 Jennifer M. Dodd <jmdodd@gmail.com>
+	Released under the GPLv2 (or later).
+*/
+ 
+?>
 
 /* End Livework specifics */
 
