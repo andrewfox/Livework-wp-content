@@ -263,7 +263,27 @@ h1.page-title {
 
 
 
-/* === Sections (repeated blocks of content on Story and Sectors pages)  =============================== */
+/* === Sections (repeated blocks of content on Story pages)  =============================== */
+
+.story-section-content > p {
+	width: 70%;
+}
+
+
+.story-section-content > p,
+.story-section-content > ol,
+.story-section-content > ul {
+	width: 70%;
+}
+.story-section-content img.alignnone {
+/*	width: 130%;*/
+}
+.story-section-content blockquote {
+	float: right;
+	width: 25%;
+	margin: 0 0 20px 20px;
+	display: block;
+}
 
 
 
@@ -394,7 +414,7 @@ article.people{
 	width: 70%;
 }
 .single-case_study .entry-content img.alignnone {
-	width: 130%;
+/*	width: 130%;*/
 }
 .single-case_study .entry-content blockquote {
 	float: right;

@@ -738,12 +738,12 @@ ul.socialmedia li {
 /*Story Section*/
 
 .story-section {
-	background: #eee;
+	background: #fff;
 	margin: 0;
 	padding: 20px;
 }
-.story-section:nth-child(even) {
-	background: #ddd;
+.story-section:nth-child(odd) {
+	background: #e9e9e6;
 }
 
 
@@ -751,18 +751,34 @@ ul.socialmedia li {
 
 .section-links {
 	padding: 0;
+	margin: 0;
 }
 .section-links li {
 	display: block;
 	position: relative;
 	float: left;
-	width: 200px;
-	height: 200px;
 	overflow: hidden;
-	background: #333;
-	margin: 0 20px 20px 0;
+	padding: 0 20px 20px 0;
+	width: 25%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
-
+.section-links li img {
+	max-width: 100%;
+	height: auto;
+	background: #fff;
+	padding: 5px;
+}
+.section-links li img {
+	max-width: 100%;
+	height: auto;
+	background: #fff;
+	padding: 5px;
+}
+.section-links span {
+	padding-bottom: 5px;
+	display: block;
+}
 /*Sections: Case studies */
 
 .case-studies span {
@@ -1237,6 +1253,7 @@ footer {
 	clear: both;
 	font-size: 80%;
 	color: #888;
+	min-height: 400px;
 }
 footer > p {
 	float: right;
