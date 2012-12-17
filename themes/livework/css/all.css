@@ -759,7 +759,7 @@ ul.socialmedia li {
 	float: left;
 	overflow: hidden;
 	padding: 0 20px 20px 0;
-	width: 25%;
+	width: 50%;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -848,21 +848,21 @@ span.casestudy-title {
 }
 
 .single-case_study .featured, .page-template-page-sector-php .featured {
-/*	background-color: #9b1e20;*/
+	background-color: #9b1e20;
 }
 
 .single-post .featured {
-/*	background-color: #6d2061;*/
+	background-color: #6d2061;
 }
 
 .single-people .featured {
 	
-/*	background-color: #686f2f;*/
+	background-color: #686f2f;
 	
 }
 
 .home .featured {
-/*	background-color: #094d6f;*/
+	background-color: #094d6f;
 }
 
 .featured_post {
