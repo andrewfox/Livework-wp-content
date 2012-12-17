@@ -95,10 +95,13 @@ get_header(); ?>
 										if (get_the_title() == "") {
 										}
 										else {
-											
-										
+											echo "<h4>Posts by "
+											<?php the_author() 
+											echo "</h4>"
+										}
 										?>
-										<h4>Posts by <?php the_author() ?></h4>
+										
+										
 										
 										<ul>
 											<li>
@@ -106,7 +109,6 @@ get_header(); ?>
 													<?php the_title(); ?><span class="entry-date"> <?php the_date('j/n/Y'); ?></span>
 												</a>
 											</li>
-										<?php } ?>
 
 										<?php endwhile; ?>
 
