@@ -72,7 +72,7 @@ if ($feature == true) {
 					</div><!-- /#introduction -->
 				</div>
 
-				<article id="people-<?php the_ID(); ?>" class="main clearfix">
+				<article id="case_study-<?php the_ID(); ?>" class="main clearfix">
 					<div class="wrapper">
 
 						<div id="main" class="clearfix">

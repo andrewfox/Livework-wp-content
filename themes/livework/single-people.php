@@ -53,68 +53,58 @@ get_header(); ?>
 
 
 			<div class="wrapper">
-				<article id="people-<?php the_ID(); ?>" class="main clearfix people ">
-						<div id="main" class="clearfix">
-			
-							<div class="entry-content left-col">
-								<?php the_content(); ?>
-							</div>
-						</div>
-				</article>
-				
-				<aside id="sidebar-more-posts">
-					<p><a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
-					<h3><?php the_field('person_phone_number'); ?></h3>
-					
-					
-					<?php $anyposts = 0; ?>
-					
-					<?php $authorid = get_the_author_meta('ID') ?>
-					<?php $args = array( 
-										'author'=> $authorid,
-										'posts_per_page' => 5, 
-										
-										);
-					$loop = new WP_Query( $args );
-					while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<?php 
-//					$anyposts = $anyposts + 1;
-//					if ($anyposts == 1) {
-//					echo'<h2 class="section-title">Posts by ';
-//					echo ($titleofpage);
-//					echo '</h2>';
-//					}
-//					else {
-//					}
-					?>
-					
-					<li>
-						<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
-							<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
-						</a>
-					</li>
-					<?php endwhile; ?>
-					</ul>
+				<article id="people-<?php the_ID(); ?>" class="main clearfix">
+					<div class="wrapper">
 
-					<?php wp_reset_query();?>
+						<div id="main" class="clearfix">
+							
+							<div class="entry-content">
+
+								<aside class="entry-data"> 
+
+									<p>e: <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
+									<p>t: <?php the_field('person_phone_number'); ?></p>
+									
+									
+									<?php $anyposts = 0; ?>
+									
+									<?php $authorid = get_the_author_meta('ID') ?>
+									<?php $args = array( 
+														'author'=> $authorid,
+														'posts_per_page' => 5, 
+														
+														);
+									$loop = new WP_Query( $args );
+									while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+									<li>
+										<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
+											<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
+										</a>
+									</li>
+									<?php endwhile; ?>
+									</ul>
 				
-				</aside>
-			</div>
-		
-			
+									<?php wp_reset_query();?>
+	
+								</aside>
+
+								<?php the_content(); ?>
+
+							</div> <!-- /.entry-content -->
+	
 							<?php endwhile; ?>
-							
-							
-							<?php 
-							// Featured bar
-							get_sidebar('featuredbar'); 
-							?>
-			
-															
-						</div><!-- /#main -->
+						</div>
+						
+						
+		
+								
 					</div><!-- /.wrapper -->
-			
-				</article><!-- #post-## -->
+
+
+
+
+				</article><!-- #people-## -->
 
 				<div class="extra">
 
