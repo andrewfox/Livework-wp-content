@@ -16,7 +16,7 @@ get_header(); ?>
 					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
 					<div id="introduction">
 						<div class="wrapper">
-							<h1><?php the_title(); ?></h1>
+							<h1 class="section-title"><?php the_title(); ?></h1>
 							<h2><?php the_field('story_page_headline'); ?></h2>
 							<div class="excerpt">
 								<?php the_content(); ?>
