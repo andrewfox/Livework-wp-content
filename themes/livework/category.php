@@ -8,10 +8,10 @@
  */
 
 get_header(); ?>
-
+<?php get_sidebar( 'archives' ); ?>
 <article class="main">
 					
-					<?php get_sidebar( 'archives' ); ?>
+					
 					
 					<div class="wrapper">
 						<h1><?php
@@ -21,7 +21,6 @@ get_header(); ?>
 
 
 					
-<div class="wrapper clearfix">
 				
 				<?php
 					$category_description = category_description();
@@ -41,6 +40,5 @@ get_header(); ?>
 
 				</article><!-- /#bodytext -->
 
-</div> <!--end wrapper-->
 
 <?php get_footer(); ?>
