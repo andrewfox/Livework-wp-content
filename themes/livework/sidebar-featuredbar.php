@@ -76,7 +76,7 @@
 									<?php if ($thumbnail == 'logo') { ?>
 										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" />
 									<?php } else { 
-										the_post_thumbnail('medium');
+										the_post_thumbnail('thumb-large');
 									} ?>
 	
 									<?php if ($theposttype == 'case_study') { ?>
