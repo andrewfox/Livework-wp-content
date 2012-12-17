@@ -8,10 +8,9 @@
  */
 
 get_header(); ?>
-<?php get_sidebar( 'archives' ); ?>
-<article class="main">
-					
-					
+				
+				
+				<article class="main">
 					
 					<div class="wrapper">
 						<h1><?php
@@ -20,6 +19,7 @@ get_header(); ?>
 					</div>
 
 
+										<?php get_sidebar( 'archives' ); ?>
 					
 				
 				<?php
