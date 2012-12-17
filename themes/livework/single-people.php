@@ -64,11 +64,11 @@ get_header(); ?>
 
 									<div class="vcard">
 
-										<?php if (the_field('person_email')) : ?>
+										<?php if ( get_field('person_email') ) : ?>
 										<p class="email"><span>e</span> <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
 										<?php endif; ?>
 
-										<?php if ( the_field('person_phone_number') ) : ?>
+										<?php if ( get_field('person_phone_number') ) : ?>
 										<p class="tel"><span>t</span> <?php the_field('person_phone_number'); ?></p>
 										<?php endif; ?>
 

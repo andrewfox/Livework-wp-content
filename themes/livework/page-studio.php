@@ -64,10 +64,10 @@ get_header(); ?>
 							while ( $loop->have_posts() ) : $loop->the_post(); ?>
 							<li>
 								<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-								<?php 
-								if(has_post_thumbnail()) :
-									the_post_thumbnail('thumb-large'); 
-								endif;?>
+									<?php 
+									if(has_post_thumbnail()) :
+										the_post_thumbnail('thumb-large'); 
+									endif;?>
 									<span><?php the_title();?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></span>
 								</a>
 							</li>
