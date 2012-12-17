@@ -91,18 +91,6 @@ get_header(); ?>
 										
 										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 												
-										<?php
-										if (get_the_title() == "") {
-										}
-										else {
-											echo "<h4>Posts by ";
-											the_author();
-											echo "</h4>";
-										}
-										?>
-										
-										
-										
 										<ul>
 											<li>
 												<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
