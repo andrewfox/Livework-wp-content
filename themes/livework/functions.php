@@ -543,6 +543,14 @@ function livework_add_custom_types( $query ) {
 add_filter( 'pre_get_posts', 'livework_add_custom_types' );
 
 
+add_filter( 'getarchives_where' , 'ucc_getarchives_where_filter' , 10 , 2 ); function ucc_getarchives_where_filter( $where , $r ) { $args = array( 'public' => true , '_builtin' => false ); $output = 'names'; $operator = 'and';
+
+$post_types = get_post_types( $args , $output , $operator ); $post_types = array_merge( $post_types , array( 'post' ) ); $post_types = "'" . implode( "' , '" , $post_types ) . "'";
+
+return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where ); }
+
+
+
 /* End Livework specifics */
 
 
