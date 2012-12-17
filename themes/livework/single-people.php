@@ -96,7 +96,7 @@ get_header(); ?>
 										}
 										else {
 											echo "<h4>Posts by "
-											the_author() 
+											the_author();
 											echo "</h4>"
 										}
 										?>
