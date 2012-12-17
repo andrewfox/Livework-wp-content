@@ -90,10 +90,12 @@ if ($feature == true) {
 									$loop = new WP_Query( $args );
 									while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-									<a href="<?php the_permalink() ?>" rel="bookmark" title="Find out more about <?php the_title(); ?>">
-										<?php the_post_thumbnail('thumbnail'); ?>
-										<span>By <?php the_title(); ?></span>
-									</a>
+									<div class="author-details">
+										<a href="<?php the_permalink() ?>" rel="bookmark" title="Find out more about <?php the_title(); ?>">
+											<?php the_post_thumbnail('thumbnail'); ?>
+											<span>By <?php the_title(); ?></span>
+										</a>
+									</div>
 
 									<?php endwhile; ?>
 									<?php wp_reset_query();?>

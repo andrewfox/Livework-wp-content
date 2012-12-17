@@ -560,6 +560,7 @@ span.entry-date {
 
 .entry-content img.alignnone {
 	width: 100%;
+	clear: both;
 }
 
 .entry-data {
@@ -572,6 +573,8 @@ span.entry-date {
 	vertical-align: middle;
 	padding-right: 5px;
 }
+
+
 
 /* === Archives list =============================== */
 
