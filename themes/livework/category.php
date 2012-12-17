@@ -9,9 +9,20 @@
 
 get_header(); ?>
 
-				<h1><?php
-					printf( __( 'Category Archives: %s', 'livework' ), '' . single_cat_title( '', false ) . '' );
-				?></h1>
+<article class="main">
+					
+					<?php get_sidebar( 'archives' ); ?>
+					
+					<div class="wrapper">
+						<h1><?php
+							printf( __( 'Category Archives: %s', 'livework' ), '' . single_cat_title( '', false ) . '' );
+						?></h1>
+					</div>
+
+
+					
+<div class="wrapper clearfix">
+				
 				<?php
 					$category_description = category_description();
 					if ( ! empty( $category_description ) )
@@ -21,9 +32,15 @@ get_header(); ?>
 				 * If you want to overload this in a child theme then include a file
 				 * called loop-category.php and that will be used instead.
 				 */
-				get_template_part( 'loop', 'category' );
+				get_template_part( 'index', 'category' );
 				?>
-				<p>Hello there!</p>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'archives-date' ); ?>
+
+
+
+				</article><!-- /#bodytext -->
+
+</div> <!--end wrapper-->
+
 <?php get_footer(); ?>
