@@ -84,7 +84,6 @@ get_header(); ?>
 														
 														);
 									$loop = new WP_Query( $args );
-									if ($loop) :
 									?>
 									
 									<div class"author-articles">
@@ -93,38 +92,32 @@ get_header(); ?>
 										<ul>
 										
 										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	
+
 											<li>
 												<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
 													<?php the_title(); ?><span class="pub-date"> <?php the_date('j/n/Y'); ?></span>
 												</a>
 											</li>
-	
+
 										<?php endwhile; ?>
-	
+
 										</ul>
 									
 									</div>
-				
-									<?php 
-									endif;
-									wp_reset_query();?>
-	
+
+									<?php wp_reset_query();?>
+
 								</aside>
 
 								<?php the_content(); ?>
 
 							</div> <!-- /.entry-content -->
-	
+
 							<?php endwhile; ?>
 						</div> <!-- /#main -->
-						
-						
-		
-								
+
+
 					</div><!-- /.wrapper -->
-
-
 
 
 				</article><!-- #people-## -->
@@ -158,7 +151,8 @@ get_header(); ?>
 							</a>
 						</li>
 	
-						<?php endwhile; ?>
+						<?php endwhile; else: ?>
+						Nothing
 	
 					</ul>
 				</div><!-- /#extra -->
