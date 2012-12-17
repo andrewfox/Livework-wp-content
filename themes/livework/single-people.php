@@ -93,7 +93,7 @@ get_header(); ?>
 												
 										<?php
 										if () {
-											get_the_permalink() == ""
+											get_the_permalink() == "";
 										}
 										else {
 											
