@@ -13,7 +13,7 @@
 
 body {
 	color: #222;
-	background: #fff;
+	background: #c00;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	line-height: 1.5em;
 }
@@ -637,6 +637,7 @@ span.entry-date {
 	width: 4%;
 	min-width: 20px;
 	max-width: 60px;
+	overflow: hidden;
 }
 .arrow-nav span {
 	display: block;
@@ -671,7 +672,7 @@ span.entry-date {
 }
 
 .arrow-next {
-	right: 0;
+	right: 0px;
 	z-index: 102;
 	text-align: right;
 }
