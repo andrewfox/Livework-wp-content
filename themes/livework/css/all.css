@@ -546,7 +546,9 @@ span.entry-date {
 	max-width: 100%;
 	height: auto;
 }
-
+.read-more {
+	margin-bottom: 0;
+}
 .read-more a {
 	font-weight: normal;
 }
@@ -1167,6 +1169,7 @@ footer {
 	border-top: 1px solid #ddd;
 	clear: both;
 	font-size: 80%;
+	color: #888;
 }
 footer > p {
 	float: right;
@@ -1183,9 +1186,13 @@ footer .menu li {
 	font-weight: normal;
 	border: none; 
 }
-footer a {
+footer a,
+footer .menu li a {
+	color: #888;
 	font-weight: normal;
-	border: none;
+}
+footer a:hover {
+	color: #094d6f;
 }
 
 #social li {
@@ -1194,17 +1201,23 @@ footer a {
 
 .footer-offices {
 	box-sizing: border-box;
-	float: left;
+	float: none;
 	margin: 0;
 	padding: 0 0 0 10px;
 	line-height: 1.5em;
-	width: 50%;
 }
 .footer-offices h4 {
-	margin: 0 0 2px;
+	margin: 0;
+	font-weight: bold;
+}
+.footer-offices h4 a {
+	font-weight: bold;
 }
 .footer-offices p a {
-	color: #333;
+	font-weight: normal;
+}
+.footer-offices p {
+	margin: 0;
 }
 
 
