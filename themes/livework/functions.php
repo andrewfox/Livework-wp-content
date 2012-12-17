@@ -556,7 +556,7 @@ function ucc_request_filter( $query ) {
 	if ( empty( $query['preview'] ) && empty( $query['feed'] ) ) {
 		$my_post_type = $query['post_type'];
 		if ( empty( $my_post_type ) ) {
-			$query['post_type'] = 'any';
+			$query['post_type'] = 'post', 'case_study';
 		}
 	}
 	return $query;
