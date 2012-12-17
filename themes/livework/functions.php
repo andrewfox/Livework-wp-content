@@ -550,23 +550,42 @@ $post_types = get_post_types( $args , $output , $operator ); $post_types = array
 return str_replace( "post_type = 'post'" , "post_type IN ( $post_types )" , $where ); }
 
  
-if ( ! function_exists( 'ucc_request_filter' ) ) {
-function ucc_request_filter( $query ) {
-	// Preview does not like having post_type set; feed is my personal preference.
-	if ( empty( $query['preview'] ) && empty( $query['feed'] ) ) {
-		$my_post_type = $query['post_type'];
-		if ( empty( $my_post_type ) ) {
-			$query['post_type'] = 'any';
+ 
+if ( ! function_exists( 'ucc_pre_get_posts_filter' ) ) {
+function ucc_pre_get_posts_filter( $query ) {
+	if ( ! is_preview() && ! is_admin() && ! is_singular() && ! is_404() ) {
+		if ( $query->is_feed ) {
+			// As always, handle your feed post types here.
+		} else {
+			$my_post_type = get_query_var( 'post_type' );
+			if ( empty( $my_post_type ) ) {
+				$args = array(
+					'public' => true ,
+					'_builtin' => false
+				);
+				$output = 'names';
+				$operator = 'and';
+ 
+				// Get all custom post types automatically.
+				$post_types = get_post_types( $args, $output, $operator );
+				// Or uncomment and edit to explicitly state which post types you want. */
+				// $post_types = array( 'event', 'location' );
+ 
+				// Add 'link' and/or 'page' to array() if you want these included.
+				// array( 'post' , 'link' , 'page' ), etc.
+				$post_types = array_merge( $post_types, array( 'post' ) );
+				$query->set( 'post_type', $post_types );
+			}
 		}
 	}
-	return $query;
 } }
-add_filter( 'request' , 'ucc_request_filter' );
+add_action( 'pre_get_posts' , 'ucc_pre_get_posts_filter' );
  
 /*
 	Copyright 2012 Jennifer M. Dodd <jmdodd@gmail.com>
 	Released under the GPLv2 (or later).
 */
+ 
  
 
 /* End Livework specifics */
