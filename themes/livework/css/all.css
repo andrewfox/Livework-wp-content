@@ -578,6 +578,13 @@ span.entry-date {
 	color: #c8c9ce;
 }
 
+.author-articles li {
+	list-style: none;
+	margin: 0 0 0.5em 0;
+	font-size: 120%;
+	line-height: 130%;
+}
+
 
 /* === Social media (list on single) =============================== */
 
@@ -975,6 +982,7 @@ ul.sectors-list {
 	margin: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	font-size: 130%;
 }
 .extra #people {
 	clear: both;
@@ -1012,8 +1020,7 @@ ul.sectors-list {
 }
 
 #people li a:hover {
-	background: #686f2f;
-	color: #ed862e;
+	color: #f1c407;
 }
 #people img {
 	width: 100%;
@@ -1027,7 +1034,7 @@ ul.sectors-list {
 	left: 0;
 	display: block;
 	font-weight: normal;
-	padding: 4px 8px;
+	padding: 4px 16px;
 	width: 100%;
 	text-align: center;
 	-moz-box-sizing: border-box;
