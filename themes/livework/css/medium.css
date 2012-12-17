@@ -285,8 +285,15 @@ h1.page-title {
 	display: block;
 }
 
+/*Links within sections*/
 
-
+.section-links {
+	padding: 0;
+	margin: 0;
+}
+.section-links li {
+	width: 25%;
+}
 
 /* === Logos list =============================== */
    
