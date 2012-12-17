@@ -79,7 +79,7 @@ if ($feature == true) {
 							
 							<div class="entry-content">
 
-								<aside class="entry-data">
+								<aside class="entry-data"> 
 
 									<?php $authorid = get_the_author_meta('ID') ?> 
 									<?php $args = array( 

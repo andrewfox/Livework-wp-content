@@ -378,8 +378,11 @@ h1.page-title {
 .gallery dl {
 	float: left;
 	width: 25%;
+	padding: 0 10px 0 0;
 	margin: 0;
 	position: relative;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .gallery dd {
 	margin: 0;
