@@ -87,17 +87,27 @@ get_header(); ?>
 									?>
 									
 									<div class="author-articles">
-										<h4>Posts by <?php the_author() ?></h4>
-
-										<ul>
+										
 										
 										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
+												
+										<?php
+										if () {
+											get_the_permalink() == ""
+										}
+										else {
+											
+										
+										?>
+										<h4>Posts by <?php the_author() ?></h4>
+										
+										<ul>
 											<li>
 												<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
 													<?php the_title(); ?><span class="entry-date"> <?php the_date('j/n/Y'); ?></span>
 												</a>
 											</li>
+										<?php } ?>
 
 										<?php endwhile; ?>
 
