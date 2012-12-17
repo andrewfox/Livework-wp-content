@@ -50,7 +50,7 @@ get_sidebar('featuredbar');
 			 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 			 						<?php setup_postdata($post); ?>
 										<div  <?php post_class('clearfix'); ?>>
-													<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
+													<?php if ( in_category(1000) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
 																		<?php $domsxe = simplexml_load_string(get_the_post_thumbnail());
 																			$thumbnailsrc = $domsxe->attributes()->src; ?>
 																		<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> style="background-image: url('<?php echo $thumbnailsrc ?>')">	
@@ -90,7 +90,7 @@ get_sidebar('featuredbar');
 													
 													
 																				<?php if ( has_post_thumbnail()) : ?>
-																					<?php if ( in_category(10) ) : // don't show if highlight cat ?>
+																					<?php if ( in_category(1000) ) : // don't show if highlight cat ?>
 																					<?php else : ?>
 																				<div class="post-image blog-image"><?php the_post_thumbnail('large');?></div>
 																					<?php endif; ?>
