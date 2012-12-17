@@ -82,11 +82,13 @@ get_header(); ?>
 														'posts_per_page' => 5, 
 														
 														);
-									$loop = new WP_Query( $args );?>
+									$loop = new WP_Query( $args );
+									if ($loop) :
+									?>
 									
 									<div class"author-articles">
 
-										<h3>Articles, client stories and more from <?php the_title(); ?></h3>
+										<h4>Articles, client stories and more from <?php the_title(); ?></h4>
 										
 										<ul>
 										
@@ -104,7 +106,9 @@ get_header(); ?>
 									
 									</div>
 				
-									<?php wp_reset_query();?>
+									<?php 
+									endif;
+									wp_reset_query();?>
 	
 								</aside>
 
