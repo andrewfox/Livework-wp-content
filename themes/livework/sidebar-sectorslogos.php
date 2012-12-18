@@ -9,7 +9,7 @@
 ?>
 
 
-				<div class="sectors-clients-list clearfix">
+				<div class="logos-list clearfix">
 
 					<div class="wrapper">
 					
@@ -20,7 +20,7 @@
 						foreach ($sectors as $sector) 
 						//get each sector
 						{ 
-							
+							 
 							if ($sector->count > 0) 
 							//if it has case studies
 							{ ?>
