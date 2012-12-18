@@ -42,39 +42,51 @@
 											while ( $the_query->have_posts() ) : $the_query->the_post(); 
 											?>
 											
-											<li>
+											
 											
 											<?php 
 											
-											if (in_category('logo-only-case-study')) { 
-												echo '<img src="';
-												the_field('casestudies_logo');
-												echo '" alt="';
-												the_title();
-												echo '" />';
-											}
-											else { 
-												echo '<a href="';
-												echo the_permalink();
-												'" title="';
-												echo the_field('casestudies_one_liner');
-												' with ';
-												echo the_title();
-												echo '" rel="bookmark">';
-													if( get_field('casestudies_logo') ){ 
-														echo'<img src="';
-														the_field('casestudies_logo');
-														echo '" alt="';
-														the_field('casestudies_one_liner');
-														echo' with ';
-														the_title();
-														echo'" />';
-											}
+											if( get_field('casestudies_logo') ){
+												echo '<li>';
 												
-												echo '</a>';
+												
+												if (in_category('logo-only-case-study')) { 
+													echo '<img src="';
+													the_field('casestudies_logo');
+													echo '" alt="';
+													the_title();
+													echo '" />';
+												}
+												else { 
+													echo '<a href="';
+													echo the_permalink();
+													'" title="';
+													echo the_field('casestudies_one_liner');
+													' with ';
+													echo the_title();
+													echo '" rel="bookmark">';
+														if( get_field('casestudies_logo') ){ 
+															echo'<img src="';
+															the_field('casestudies_logo');
+															echo '" alt="';
+															the_field('casestudies_one_liner');
+															echo' with ';
+															the_title();
+															echo'" />';
+												}
+													
+													echo '</a>';
+													
+												echo '</li>';
+												}
+												
+											else {
+												
+											}
+											
 											?>
 											
-											</li>
+										
 											
 											<?php 
 												

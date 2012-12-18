@@ -3,12 +3,6 @@
 
 /* === ALL SCREENS (small+) =============================== */
 
-
-
-
-
-
-
 /* === Basic HTML =============================== */
 
 body {
@@ -950,8 +944,35 @@ ul.sectors-list {
 	color: #999;
 }
 
+.all-logos-list {
+	background-color: lime;
+}
 
+.all-sectors{
+	margin-right: 20px;
+	margin-left: 20px;
+}
 
+.all-sectors li a{
+	float: left;
+	clear: both;
+}
+
+.all-logos{
+	width: 100%;
+	clear: both;
+}
+
+.all-logos li {
+	float: left;
+	width: 10%;
+}
+
+.all-logos li img{
+	float: left;
+	width: 100%;
+	height: auto;
+}
 
 .sectors-clients-list .wrapper {
 }
