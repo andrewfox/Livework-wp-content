@@ -42,7 +42,7 @@
 										echo '" alt="';
 										the_title();
 										echo '" />';
-									};
+									}
 									else { 
 										echo '<a href="';
 										echo the_permalink();
@@ -59,7 +59,7 @@
 											echo' with ';
 											the_title();
 											echo'" />';
-										};
+										}
 										?>
 										</a>
 									
