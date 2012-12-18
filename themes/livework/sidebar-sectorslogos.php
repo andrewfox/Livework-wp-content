@@ -73,10 +73,10 @@
 									wp_reset_postdata();
 							echo '</ul>';
 							
-							} 
-							
-							
-							?>
+							}
+						}
+						
+						?>
 
 
 
