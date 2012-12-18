@@ -65,8 +65,8 @@
 	 							} else if ($theposttype = 'people') {
 	 								echo 'Liveworker';
 	 								$thumbnail = 'featured';
-	 							} else if ($theposttype = 'theme') {
-	 								echo 'Theme';
+	 							} else if ($theposttype = 'post') {
+	 								echo 'Point of view';
 	 								$thumbnail = 'featured';
 	 							}
 	 							?>
