@@ -9,7 +9,7 @@
 ?>
 
 
-				<div class="sectors-clients-list clearfix">
+				<div class="logos-list clearfix">
 
 					<div class="wrapper">
 					
