@@ -712,7 +712,7 @@ if(function_exists("register_field_group"))
 				),
 				'post_type' => 
 				array (
-					0 => 'page',
+					0 => 'page', 'post','case_study','people',
 				),
 				'taxonomy' => 
 				array (
@@ -745,7 +745,7 @@ if(function_exists("register_field_group"))
 				),
 				'post_type' => 
 				array (
-					0 => 'page',
+					0 => 'page', 'post','case_study','people',
 				),
 				'taxonomy' => 
 				array (
