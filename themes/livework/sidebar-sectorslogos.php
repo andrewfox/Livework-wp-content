@@ -9,7 +9,7 @@
 ?>
 
 
-				<div class="logos-list clearfix">
+				<div class="all-logos-list clearfix">
 
 					<div class="wrapper">
 					
