@@ -18,6 +18,7 @@
 						<?php
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
 						foreach ($sectors as $sector) { 
+							
 							if ($sector->count > 0) { ?>
 							<ul>
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
@@ -36,7 +37,10 @@
 							
 							?>
 								<li>
-									<?php if (in_category('logo-only-case-study')) { 
+									
+									<?php 
+									
+									if (in_category('logo-only-case-study')) { 
 										echo '<img src="';
 										the_field('casestudies_logo');
 										echo '" alt="';
@@ -59,17 +63,20 @@
 												echo' with ';
 												the_title();
 												echo'" />';
-											}
+									}
 										
 										echo '</a>';
 										
 										
 									} 
 									endwhile;
-									wp_reset_postdata()
-									?>
-							</ul>
-							<?php } ?>
+									wp_reset_postdata();
+							echo '</ul>';
+							
+							} 
+							
+							
+							?>
 
 
 
