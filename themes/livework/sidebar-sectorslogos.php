@@ -11,7 +11,6 @@
 
 				<div class="all-logos-list clearfix">
 
-					<div class="wrapper">
 					
 						
 						<ul>
@@ -98,6 +97,5 @@
 							</ul>
 							
 							
-					</div><!-- /.wrapper -->
 
 				</div><!-- /.sectors-clients-list -->
