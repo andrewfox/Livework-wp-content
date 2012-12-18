@@ -46,7 +46,11 @@
 											
 											<?php 
 											
-											if( get_field('casestudies_logo') ){
+											if( get_field('casestudies_logo') == '' ){
+												
+												}
+												
+											else {
 												echo '<li>';
 												
 												
@@ -78,10 +82,6 @@
 													echo '</a>';
 													
 												echo '</li>';
-												}
-												
-											else {
-												
 											}
 											
 											?>
