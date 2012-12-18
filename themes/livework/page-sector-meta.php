@@ -93,6 +93,11 @@ get_sidebar('featuredbar');
 
 				<?php 
 				// Sectors + clients listings
+				get_sidebar('sectorslogos'); 
+				?>
+				
+				<?php 
+				// Sectors + clients listings
 				get_sidebar('sectorsclients'); 
 				?>
 
