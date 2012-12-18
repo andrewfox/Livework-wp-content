@@ -40,7 +40,7 @@
 										echo '<img src="';
 										the_field('casestudies_logo');
 										echo '" alt="';
-										<?php the_title();
+										the_title();
 										echo '" />';
 									};
 									else { 
