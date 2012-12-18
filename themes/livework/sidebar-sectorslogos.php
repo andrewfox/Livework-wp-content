@@ -17,11 +17,17 @@
 						<ul>
 						<?php
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
-						foreach ($sectors as $sector) { 
+						foreach ($sectors as $sector) 
+						//get each sector
+						{ 
 							
-							if ($sector->count > 0) { ?>
+							if ($sector->count > 0) 
+							//if it has case studies
+							{ ?>
 							
-								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
+								<li>
+									<a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?>
+									</a>
 								
 								
 									<ul>
@@ -33,12 +39,11 @@
 												'order' => 'ASC'
 											);
 								
-								$the_query = new WP_Query( $args );
-								while ( $the_query->have_posts() ) : $the_query->the_post(); 
-							
-								
-								?>
-										<li>
+											$the_query = new WP_Query( $args );
+											while ( $the_query->have_posts() ) : $the_query->the_post(); 
+											?>
+											
+											<li>
 											
 											<?php 
 											
@@ -70,24 +75,22 @@
 												echo '</a>';
 											?>
 											
-										</li>
+											</li>
 											
 											<?php 
 												
 											} 
 											endwhile;
 											wp_reset_postdata();
-											
-								
-								
-											}
+							
 											
 											?>
-								</ul>		
+									</ul>		
 								</li>
 										
 										<?php 
-									}
+							}
+						}
 									?>
 									
 
