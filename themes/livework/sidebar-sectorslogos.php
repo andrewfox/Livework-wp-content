@@ -62,9 +62,10 @@
 										}
 										
 										echo '</a>';
-										endwhile;
+										
 										wp_reset_postdata()
-									} ?>
+									} 
+									endwhile;?>
 							</ul>
 							<?php } ?>
 
