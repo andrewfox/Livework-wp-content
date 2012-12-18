@@ -94,6 +94,7 @@ if ($feature == true) {
 										<a href="<?php the_permalink() ?>" rel="bookmark" title="Find out more about <?php the_title(); ?>">
 											<?php the_post_thumbnail('thumbnail'); ?>
 											<span>By <?php the_title(); ?></span>
+											<?php the_field('job_title'); ?>
 										</a>
 									</div>
 
