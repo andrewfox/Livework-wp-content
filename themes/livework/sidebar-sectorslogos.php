@@ -51,21 +51,23 @@
 										' with ';
 										echo the_title();
 										echo '" rel="bookmark">';
-										if( get_field('casestudies_logo') ){ 
-											echo'<img src="';
-											the_field('casestudies_logo');
-											echo '" alt="';
-											the_field('casestudies_one_liner');
-											echo' with ';
-											the_title();
-											echo'" />';
-										}
+											if( get_field('casestudies_logo') ){ 
+												echo'<img src="';
+												the_field('casestudies_logo');
+												echo '" alt="';
+												the_field('casestudies_one_liner');
+												echo' with ';
+												the_title();
+												echo'" />';
+											}
 										
 										echo '</a>';
 										
-										wp_reset_postdata()
+										
 									} 
-									endwhile;?>
+									endwhile;
+									wp_reset_postdata()
+									?>
 							</ul>
 							<?php } ?>
 
