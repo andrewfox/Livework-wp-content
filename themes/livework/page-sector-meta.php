@@ -35,6 +35,62 @@ get_header(); ?>
 get_sidebar('featuredbar'); 
 ?>
 
+<!--INSERT ALL LOGOS FOR SECTOR	-->	
+			
+			<div class="logos-list clearfix">
+			
+				<div class="wrapper">
+				
+					<h3 class="section-title">All of our lovely logos</h3>
+							
+					<ul class="logos">
+					
+					<?php $thissector = $post->post_name ?>
+					
+					<?php 
+					
+					$args = array(
+					    'post_type'=> 'case_study',
+					    'taxonomy' => 'sectors',
+					    'term' => $thissector,
+					    );              
+					
+					$the_query = new WP_Query( $args );
+					while ( $the_query->have_posts() ) : $the_query->the_post(); 
+				
+					
+					?>
+						<li>
+							<?php if ( in_category('logo-only-case-study') ) { ?>
+							<?php 
+							if( get_field('casestudies_logo') ): ?>
+								<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /><?php
+							endif;
+							?>
+							</a>
+
+							<?php } else { ?>
+							<a href="<?php the_permalink(); ?>" title="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" rel="bookmark">
+							<?php 
+							if( get_field('casestudies_logo') ): ?>
+								<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" /><?php
+							endif;
+							?>
+							</a>
+						
+							<?php } ?>
+						</li>
+						
+						
+						<?php endwhile; ?>
+						<?php wp_reset_postdata() ?>
+										
+					</ul>
+					<!--END:INSERT ALL LOGOS FOR SECTOR:END	-->
+			
+				</div> <!-- /.wrapper -->
+			
+			</div> <!-- /.logos-list -->
 
 
 
@@ -45,63 +101,7 @@ get_sidebar('featuredbar');
 
 
 
-					<!--INSERT ALL LOGOS FOR SECTOR	-->	
 					
-					<div class="logos-list clearfix">
-					
-						<div class="wrapper">
-						
-							<h3 class="section-title">Some of our <?php the_title(); ?> clients</h3>
-									
-							<ul class="logos">
-							
-							<?php $thissector = $post->post_name ?>
-							
-							<?php 
-							
-							$args = array(
-							    'post_type'=> 'case_study',
-							    'taxonomy' => 'sectors',
-							    'term' => $thissector,
-							    );              
-							
-							$the_query = new WP_Query( $args );
-							while ( $the_query->have_posts() ) : $the_query->the_post(); 
-						
-							
-							?>
-								<li>
-									<?php if ( in_category('logo-only-case-study') ) { ?>
-									<?php 
-									if( get_field('casestudies_logo') ): ?>
-										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /><?php
-									endif;
-									?>
-									</a>
-		
-									<?php } else { ?>
-									<a href="<?php the_permalink(); ?>" title="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" rel="bookmark">
-									<?php 
-									if( get_field('casestudies_logo') ): ?>
-										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" /><?php
-									endif;
-									?>
-									</a>
-								
-									<?php } ?>
-								</li>
-								
-								
-								<?php endwhile; ?>
-								<?php wp_reset_postdata() ?>
-												
-							</ul>
-							<!--END:INSERT ALL LOGOS FOR SECTOR:END	-->
-					
-						</div> <!-- /.wrapper -->
-					
-					</div> <!-- /.logos-list -->
-
 
 
 
