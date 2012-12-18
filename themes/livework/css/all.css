@@ -203,7 +203,7 @@ header h1 a img {
 }
 .menu li a {
 	display: inline-block;
-	color: #888;
+	color: #aaa;
 	padding: 10px;
 }
 .menu li a:hover,
