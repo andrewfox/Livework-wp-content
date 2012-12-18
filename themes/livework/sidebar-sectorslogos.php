@@ -63,11 +63,11 @@
 												}
 												else { 
 													echo '<a href="';
-													echo the_permalink();
-													'" title="';
-													echo the_field('casestudies_one_liner');
-													' with ';
-													echo the_title();
+													the_permalink();
+													echo '" title="';
+													the_field('casestudies_one_liner');
+													echo ' with ';
+													the_title();
 													echo '" rel="bookmark">';
 														if( get_field('casestudies_logo') ){ 
 															echo'<img src="';
