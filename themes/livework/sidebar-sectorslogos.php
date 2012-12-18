@@ -72,9 +72,10 @@
 									endwhile;
 									wp_reset_postdata();
 									echo '</li>';
-							echo '</ul>';
+							
 							
 							}
+							echo '</ul>';
 						}
 						
 						?>
