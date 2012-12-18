@@ -75,7 +75,25 @@ blockquote {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+/*Pagination links*/
 
+#nav-above {
+	display: block;
+	float: left;
+	width: 100%;
+	margin: 20px 0;
+	box-sizing: border-box;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.nav-next {
+	float: right;
+}
+
+.nav-previous {
+	float: left;
+}
 
 /* Capitalised headers (should always be used with H4, but can be used with any tags) */
 
@@ -193,6 +211,9 @@ header h1 a img {
 	padding: 0;
 	width: 100%;
 }
+
+
+
 .open .menu {
 	display: block;
 }
