@@ -36,21 +36,36 @@
 							
 							?>
 								<li>
-									<?php if (in_category('logo-only-case-study')) { ?>
-									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" />
-									<?php } ?>
-									<?php else { ?>
-									<a href="<?php the_permalink(); ?>" title="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" rel="bookmark">
-										<?php 
-										if( get_field('casestudies_logo') ): ?>
-											<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" /><?php
-										endif;
+									<?php if (in_category('logo-only-case-study')) { 
+										echo '<img src="';
+										the_field('casestudies_logo');
+										echo '" alt="';
+										<?php the_title();
+										echo '" />';
+									};
+									else { 
+										echo '<a href="';
+										echo the_permalink();
+										'" title="';
+										echo the_field('casestudies_one_liner');
+										' with ';
+										echo the_title();
+										echo '" rel="bookmark">';
+										if( get_field('casestudies_logo') ){ 
+											echo'<img src="';
+											the_field('casestudies_logo');
+											echo '" alt="';
+											the_field('casestudies_one_liner');
+											echo' with ';
+											the_title();
+											echo'" />';
+										};
 										?>
 										</a>
 									
-									<?php } ?>
+									<?php }; ?>
 							</ul>
-							<?php } ?>
+							<?php }; ?>
 
 
 
