@@ -13,7 +13,7 @@
 
 					
 						
-						<ul>
+						<ul class="all-sectors">
 						<?php
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
 						foreach ($sectors as $sector) 
@@ -29,7 +29,7 @@
 									</a>
 								
 								
-									<ul>
+									<ul class="all-logos">
 											<?php $args = array(
 												'post_type'=> 'case_study',
 												'taxonomy' => 'sectors',
@@ -42,7 +42,7 @@
 											while ( $the_query->have_posts() ) : $the_query->the_post(); 
 											?>
 											
-											<li class="client-logo">
+											<li>
 											
 											<?php 
 											
