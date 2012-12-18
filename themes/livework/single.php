@@ -88,7 +88,7 @@ if ($feature == true) {
 									<div class="author-details">
 										<a href="<?php the_permalink() ?>" rel="bookmark" title="Find out more about <?php the_title(); ?>">
 											<?php the_post_thumbnail('thumbnail'); ?>
-											<span>By <?php the_title(); ?></span>
+											<span>By <?php the_title(); ?>, <?php the_field('job_title'); ?></span>
 										</a>
 									</div>
 
