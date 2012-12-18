@@ -66,8 +66,16 @@
 	 								echo 'Liveworker';
 	 								$thumbnail = 'featured';
 	 							} else if ($theposttype == 'post') {
-	 								echo 'Point of view';
+	 							
+	 							
+		 							if (in_category(199)) {
+	 									echo 'Point of view';
+		 							}
+		 							else {
+		 								echo 'News';
+		 							}
 	 								$thumbnail = 'featured';
+	 								
 	 							}
 	 							?>
 	 							</h3>
