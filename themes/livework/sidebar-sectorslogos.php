@@ -42,7 +42,7 @@
 											while ( $the_query->have_posts() ) : $the_query->the_post(); 
 											?>
 											
-											<li>
+											<li class="client-logo">
 											
 											<?php 
 											
