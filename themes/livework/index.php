@@ -116,11 +116,13 @@ get_header(); ?>
 
 
 
-					<ul class="nav-paged">
-						<li class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> older articles', 'blankslate' )) ?></li>
-						<li class="nav-next"><?php previous_posts_link(__( 'newer articles <span class="meta-nav">&raquo;</span>', 'blankslate' )) ?></li>
-					</ul>
-
+					<?php /* Display navigation to next/previous pages when applicable */ ?>
+					<?php if ( $wp_query->max_num_pages > 1 ) : ?>
+						<nav id="nav-above" class="navigation">
+							<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older', 'livework' ) ); ?></div>
+							<div class="nav-next"><?php previous_posts_link( __( 'Newer<span class="meta-nav">&rarr;</span>', 'livework' ) ); ?></div>
+						</nav><!-- #nav-above -->
+					<?php endif; ?>
 
 
 					<?php get_sidebar( 'archives-date' ); ?>
