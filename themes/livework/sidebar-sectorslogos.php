@@ -24,63 +24,66 @@
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
 								
 								
-								<ul>
-										<?php $args = array(
-											'post_type'=> 'case_study',
-											'taxonomy' => 'sectors',
-											'term' => $sector->slug,
-											'orderby' => 'title',
-											'order' => 'ASC'
-										);
+									<ul>
+											<?php $args = array(
+												'post_type'=> 'case_study',
+												'taxonomy' => 'sectors',
+												'term' => $sector->slug,
+												'orderby' => 'title',
+												'order' => 'ASC'
+											);
+								
+								$the_query = new WP_Query( $args );
+								while ( $the_query->have_posts() ) : $the_query->the_post(); 
 							
-							$the_query = new WP_Query( $args );
-							while ( $the_query->have_posts() ) : $the_query->the_post(); 
-						
-							
-							?>
-									<li>
-										
-										<?php 
-										
-										if (in_category('logo-only-case-study')) { 
-											echo '<img src="';
-											the_field('casestudies_logo');
-											echo '" alt="';
-											the_title();
-											echo '" />';
-										}
-										else { 
-											echo '<a href="';
-											echo the_permalink();
-											'" title="';
-											echo the_field('casestudies_one_liner');
-											' with ';
-											echo the_title();
-											echo '" rel="bookmark">';
-												if( get_field('casestudies_logo') ){ 
-													echo'<img src="';
-													the_field('casestudies_logo');
-													echo '" alt="';
-													the_field('casestudies_one_liner');
-													echo' with ';
-													the_title();
-													echo'" />';
-										}
+								
+								?>
+										<li>
 											
-											echo '</a>';
-										echo '</li>';
+											<?php 
 											
-										} 
-										endwhile;
-										wp_reset_postdata();
-										
-							
-							
-							}
-								echo '</ul>';
-						}
-							echo '</ul>';
-						?>
+											if (in_category('logo-only-case-study')) { 
+												echo '<img src="';
+												the_field('casestudies_logo');
+												echo '" alt="';
+												the_title();
+												echo '" />';
+											}
+											else { 
+												echo '<a href="';
+												echo the_permalink();
+												'" title="';
+												echo the_field('casestudies_one_liner');
+												' with ';
+												echo the_title();
+												echo '" rel="bookmark">';
+													if( get_field('casestudies_logo') ){ 
+														echo'<img src="';
+														the_field('casestudies_logo');
+														echo '" alt="';
+														the_field('casestudies_one_liner');
+														echo' with ';
+														the_title();
+														echo'" />';
+											}
+												
+												echo '</a>';
+											?>
+											
+										</li>
+											
+											<?php 
+												
+											} 
+											endwhile;
+											wp_reset_postdata();
+											
+								
+								
+											}
+									echo '</ul>';
+									}
+									?>
 
 
 
