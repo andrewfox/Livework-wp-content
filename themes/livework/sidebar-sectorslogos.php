@@ -18,7 +18,7 @@
 						<?php
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
 						foreach ($sectors as $sector) { 
-							if ($sector->count > 0) { ?>
+							if ($sector->count > 0) : ?>
 							<ul>
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
 									<ul>
@@ -65,7 +65,7 @@
 									
 									} ?>
 							</ul>
-							<?php } ?>
+							<?php endif; ?>
 
 
 
