@@ -76,10 +76,10 @@
 															the_field('casestudies_one_liner');
 															echo' with ';
 															the_title();
-															echo'" />';
+															echo'" a/>';
 												}
 													
-													echo '</a>';
+//													echo '</a>';
 													
 												echo '</li>';
 											}

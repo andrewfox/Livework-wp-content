@@ -974,6 +974,11 @@ ul.sectors-list {
 	height: auto;
 }
 
+.all-logos li a img{
+	width: 100%;
+	height: auto;
+}
+
 .sectors-clients-list .wrapper {
 }
 .sectors-clients-list .wrapper > ul {
