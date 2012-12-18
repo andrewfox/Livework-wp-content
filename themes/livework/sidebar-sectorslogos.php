@@ -22,6 +22,7 @@
 							if ($sector->count > 0) { ?>
 							
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
+								</li>
 								
 								<ul>
 										<?php $args = array(
