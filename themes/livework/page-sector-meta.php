@@ -45,14 +45,11 @@ get_sidebar('featuredbar');
 							
 					<ul class="logos">
 					
-					<?php $thissector = $post->post_name ?>
 					
 					<?php 
 					
 					$args = array(
 					    'post_type'=> 'case_study',
-					    'taxonomy' => 'sectors',
-					    'term' => $thissector,
 					    );              
 					
 					$the_query = new WP_Query( $args );
