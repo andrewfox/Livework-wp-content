@@ -356,6 +356,10 @@ ul.cases-mosaic li{
 	clear: both;
 }
 
+.all-logos li {
+	width: 12.5%;
+}
+
 /* === Our Team =============================== */
 
 #people {

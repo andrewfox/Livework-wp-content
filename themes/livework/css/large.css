@@ -117,10 +117,11 @@ blockquote {
 /* === Our Story single pages =============================== */
 
 /* === Our Client's Stories main page =============================== */
-ul.cases-mosaic li{
+
+
+.all-logos li {
 	width: 10%;
 }
-
 
 /* === Our Team =============================== */
 
