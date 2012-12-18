@@ -22,7 +22,8 @@
 							if ($sector->count > 0) { ?>
 							<ul>
 								<li><a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
-									<ul>
+								
+								<ul>
 										<?php $args = array(
 											'post_type'=> 'case_study',
 											'taxonomy' => 'sectors',
@@ -36,48 +37,48 @@
 						
 							
 							?>
-								<li>
-									
-									<?php 
-									
-									if (in_category('logo-only-case-study')) { 
-										echo '<img src="';
-										the_field('casestudies_logo');
-										echo '" alt="';
-										the_title();
-										echo '" />';
-									}
-									else { 
-										echo '<a href="';
-										echo the_permalink();
-										'" title="';
-										echo the_field('casestudies_one_liner');
-										' with ';
-										echo the_title();
-										echo '" rel="bookmark">';
-											if( get_field('casestudies_logo') ){ 
-												echo'<img src="';
-												the_field('casestudies_logo');
-												echo '" alt="';
-												the_field('casestudies_one_liner');
-												echo' with ';
-												the_title();
-												echo'" />';
-									}
+									<li>
 										
-										echo '</a>';
+										<?php 
 										
-										
-									} 
-									endwhile;
-									wp_reset_postdata();
-									echo '</li>';
+										if (in_category('logo-only-case-study')) { 
+											echo '<img src="';
+											the_field('casestudies_logo');
+											echo '" alt="';
+											the_title();
+											echo '" />';
+										}
+										else { 
+											echo '<a href="';
+											echo the_permalink();
+											'" title="';
+											echo the_field('casestudies_one_liner');
+											' with ';
+											echo the_title();
+											echo '" rel="bookmark">';
+												if( get_field('casestudies_logo') ){ 
+													echo'<img src="';
+													the_field('casestudies_logo');
+													echo '" alt="';
+													the_field('casestudies_one_liner');
+													echo' with ';
+													the_title();
+													echo'" />';
+										}
+											
+											echo '</a>';
+											
+											
+										} 
+										endwhile;
+										wp_reset_postdata();
+										echo '</li>';
 							
 							
 							}
-							echo '</ul>';
+								echo '</ul>';
 						}
-						
+							echo '</ul>';
 						?>
 
 
