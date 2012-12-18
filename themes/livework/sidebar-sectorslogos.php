@@ -1,6 +1,6 @@
 <?php
 /**
- * The Sidebar containing list of sectors + clients
+ * The Sidebar containing list of sectors + logos
  *
  * @package WordPress
  * @subpackage Livework
