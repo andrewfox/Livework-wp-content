@@ -36,10 +36,10 @@
 							
 							?>
 								<li>
-									<?php if (in_category('logo-only-case-study')) : ?>
+									<?php if (in_category('logo-only-case-study')) { ?>
 									<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" />
-									
-									<?php else: ?>
+									<?php } ?>
+									<?php else { ?>
 									<a href="<?php the_permalink(); ?>" title="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" rel="bookmark">
 										<?php 
 										if( get_field('casestudies_logo') ): ?>
@@ -48,10 +48,9 @@
 										?>
 										</a>
 									
-										<?php } ?>
+									<?php } ?>
 							</ul>
 							<?php } ?>
-						<?php } ?>
 
 
 
