@@ -123,6 +123,16 @@ blockquote {
 	width: 10%;
 }
 
+.all-logos li img{
+	width: 100%;
+	height: auto;
+}
+
+.all-logos li a img{
+	width: 100%;
+	height: auto;
+}
+
 /* === Our Team =============================== */
 
 #people li {

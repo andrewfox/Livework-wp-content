@@ -360,6 +360,16 @@ ul.cases-mosaic li{
 	width: 12.5%;
 }
 
+.all-logos li img{
+	width: 100%;
+	height: auto;
+}
+
+.all-logos li a img{
+	width: 100%;
+	height: auto;
+}
+
 /* === Our Team =============================== */
 
 #people {
@@ -493,6 +503,14 @@ article.people{
 .footer-offices {
 	width: 20%;
 	float: left;
+}
+
+a.livework-man img {
+	height: 80px;
+}
+
+.footer-offices {
+	clear: none;
 }
 
 
