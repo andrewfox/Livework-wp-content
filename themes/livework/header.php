@@ -91,6 +91,7 @@
 				<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
 			</nav>
 			<?php } 
+			
 			if (get_post_type( $post->ID ) == "case_study") {
 				if (is_page('latest')) {
 					
@@ -102,6 +103,7 @@
 				</nav>
 				<?php 
 				}
+			}
 				?>
 			
 			
