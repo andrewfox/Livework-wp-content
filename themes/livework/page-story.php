@@ -61,6 +61,10 @@ get_sidebar('featuredbar');
 					 <div class="story-section">
 					 
 					 	<div class="wrapper">
+					 		
+					 		<?php if (the_sub_field("story_section_image")) : ?>
+					 		<img src="<?php the_sub_field("story_section_image"); ?>" class="section-image"/>
+					 		<?php endif; ?>
 
 							<h2><?php the_sub_field("story_section_title"); ?></h2>
 								
@@ -68,7 +72,7 @@ get_sidebar('featuredbar');
 								<?php the_sub_field("story_section_bodytext"); ?>
 							</div>
 		
-							<img src="<?php the_sub_field("story_section_image"); ?>" class="section-image"/>
+							
 		
 							<?php $posts = get_sub_field('story_section_casestudies');
 		 					if( $posts ): ?>
@@ -77,8 +81,7 @@ get_sidebar('featuredbar');
 		 						<?php setup_postdata($post); ?>
 		 						<li>
 		 							<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-		 								<span><?php the_title(); ?></span>
-		 								<?php the_post_thumbnail('thumb-large'); ?>
+		 								<?php the_title(); ?>
 		 							</a>
 		 						</li>
 		 						<?php endforeach; ?>
