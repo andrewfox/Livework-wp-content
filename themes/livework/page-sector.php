@@ -101,26 +101,26 @@ get_sidebar('featuredbar');
 						
 							
 							?>
-								<li>
+								
 									<?php if ( in_category('logo-only-case-study') ) { ?>
 									<?php 
 									if( get_field('casestudies_logo') ): ?>
-										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /><?php
+										<li><img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /></li><?php
 									endif;
 									?>
 									</a>
 		
 									<?php } else { ?>
-									<a href="<?php the_permalink(); ?>" title="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" rel="bookmark">
+									<li><a href="<?php the_permalink(); ?>" title="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" rel="bookmark">
 									<?php 
 									if( get_field('casestudies_logo') ): ?>
 										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" /><?php
 									endif;
 									?>
-									</a>
+									</a></li>
 								
 									<?php } ?>
-								</li>
+								
 								
 								
 								<?php endwhile; ?>
