@@ -559,9 +559,11 @@ span.entry-date {
 .blog .post,
 .blog .case_study,
 .archive .post,
-.archive .case_study {
+.archive .case_study,
+.page-template-page-sector-php .post,
+.page-template-page-sector-php .case_study {
 	padding: 30px 0 30px;
-	border-bottom: 2px solid #f2f2f1;
+	border-bottom: 2px solid #f6f6f5;
 }
 
 
@@ -1248,10 +1250,17 @@ div.case-studies-image {
 	width: 100%;
 }
 
-.case_study h2 {
+.case_study h2,
+.post h2 {
 	padding: 0;
 	margin: 10px 0;
 }
+
+.case-studies {
+	padding: 20px 0;
+}
+
+
 
 /* === Case study =============================== */
 
