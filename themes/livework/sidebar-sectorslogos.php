@@ -13,7 +13,7 @@
 
 					
 						
-						<ul class="all-sectors">
+						<ul class="all-sectors clearfix">
 						<?php
 						$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
 						foreach ($sectors as $sector) 
