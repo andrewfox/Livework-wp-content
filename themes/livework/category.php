@@ -15,7 +15,7 @@ get_header(); ?>
 					<div class="wrapper">
 						<h1 class="page-title">
 							<?php
-								printf( __( '<span class="catarchives">Category Archives</span> %s', 'livework' ), '' . single_cat_title( '', false ) . '' );
+								printf( __( '%s <span class="catarchives">Category Archives</span>', 'livework' ), '' . single_cat_title( '', false ) . '' );
 							?>
 						</h1>
 					</div>

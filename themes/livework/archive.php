@@ -23,17 +23,26 @@ get_header(); ?>
 	if ( have_posts() )
 		the_post();
 ?>
-					<h1 class="page-title"><?php
-						if ( is_day() ) :
-							printf( __( 'Daily Archives: %s', 'boilerplate' ), get_the_date() );
-						elseif ( is_month() ) :
-							printf( __( 'Monthly Archives: %s', 'boilerplate' ), get_the_date('F Y') );
-						elseif ( is_year() ) :
-							printf( __( 'Yearly Archives: %s', 'boilerplate' ), get_the_date('Y') );
-						else :
-							_e( 'Blog Archives', 'boilerplate' );
-						endif; 
-					?></h1>
+
+				<article class="main">
+					<div class="wrapper">
+						<h1 class="page-title"><?php
+							if ( is_day() ) :
+								printf( __( '%s', 'livework' ), get_the_date() );
+							elseif ( is_month() ) :
+								printf( __( '%s', 'livework' ), get_the_date('F Y') );
+							elseif ( is_year() ) :
+								printf( __( '%s', 'livework' ), get_the_date('Y') );
+							else :
+								_e( 'Archives', 'livework' );
+							endif; 
+						?>
+						</h1>
+					</div>
+
+
+					<?php get_sidebar( 'archives' ); ?>
+
 <?php
 	/* Since we called the_post() above, we need to
 	 * rewind the loop back to the beginning that way
@@ -46,5 +55,13 @@ get_header(); ?>
 	 */
 	 get_template_part( 'loop', 'archive' );
 ?>
-<?php get_sidebar(); ?>
+
+<?php get_sidebar( 'archives-date' ); ?>
+
+
+
+				</article><!-- /#bodytext -->
+
+
 <?php get_footer(); ?>
+
