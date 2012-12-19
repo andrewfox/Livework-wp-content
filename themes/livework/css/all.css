@@ -87,6 +87,8 @@ blockquote {
 	padding-left: 20px;
 }
 
+
+
 .nav-next {
 	float: right;
 }
@@ -1351,6 +1353,16 @@ footer a:hover {
 }
 .footer-offices p {
 	margin: 0;
+}
+
+
+a.livework-man {
+	float: left;
+	padding-top: 15px;
+}
+
+a.livework-man img {
+	height: 100px;
 }
 
 
