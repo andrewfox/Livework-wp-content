@@ -114,10 +114,10 @@ blockquote {
 .section-title {
 	margin: 0 0 5px !important;
 	text-transform: uppercase;
-	font: normal normal 11px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
+	font: normal normal 11px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	letter-spacing: 0.1em;
-	color: #eee;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.3) !important;
+	color: #333;
+/*	text-shadow: 0 1px 0 rgba(0,0,0,0.3) !important;*/
 }
 .section-title a,
 .tab a {
@@ -829,6 +829,10 @@ span.casestudy-title {
 	display: block;
 }
 
+.case_study .wrapper, .category-theme .wrapper{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 /* === Logos list =============================== */
    
