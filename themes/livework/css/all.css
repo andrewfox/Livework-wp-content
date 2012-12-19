@@ -75,6 +75,8 @@ blockquote {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+
+
 /*Pagination links*/
 
 #nav-above {
@@ -92,7 +94,6 @@ blockquote {
 .nav-next {
 	float: right;
 }
-
 .nav-previous {
 	float: left;
 }
@@ -102,13 +103,13 @@ blockquote {
 .tab {
 	margin: 0 0 5px !important;
 	text-transform: uppercase;
-	font: normal normal 11px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
+	font: normal normal 11px "HelveticaNeue-B", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
 	letter-spacing: 0.1em;
 	display: table;
 	background: #231f20;
 	padding: 3px 5px !important;
 	color: #eee !important;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.4) !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3) !important;
 }
 .section-title {
 	margin: 0 0 5px !important;
@@ -116,25 +117,33 @@ blockquote {
 	font: normal normal 11px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif !important;
 	letter-spacing: 0.1em;
 	color: #eee;
-	text-shadow: 0 1px 0 rgba(0,0,0,0.4) !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.3) !important;
 }
-.section-title a {
+.section-title a,
+.tab a {
 	font: normal normal 12px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	opacity: 1;
+}
+.section-title a:hover,
+.tab a:hover {
+	opacity: 0.7;
 }
 
 .blog .section-title {
 }
-.case_study .section-title,
-.single-case_study .splash .section-title  {
+.case_study .tab,
+.single-case_study .splash .tab  {
 	background: #9b1e20;
 }
-.category-article .section-title {
+.category-article .tab {
 	background: #027cb8;
 }
-.page-template-page-story-php .splash .section-title {
+.page-template-page-story-php .splash .tab {
 	background: #6d2061;
 }
-
+.page-template-page-sector-php .splash .tab {
+	background: #686f2f;
+}
 /* User inputted image stuff */
 
 .alignnone {
