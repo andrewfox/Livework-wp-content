@@ -39,11 +39,11 @@
 							<?php 
 							// works out how many features there are
 							if ($quote=true) {
-								$maxfeatures = 3; // there is a feature quote
+								$maxfeatures = 30; // there is a feature quote
 							} elseif (is_home()) {
 								$maxfeatures = 8; // homepage
 							} else {
-								$maxfeatures = 4; // no quote, not the homepage
+								$maxfeatures = 40; // no quote, not the homepage
 							}
 							$posts = get_field('featured_content');
 							

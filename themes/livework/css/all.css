@@ -877,7 +877,7 @@ span.casestudy-title {
 
 .featured {
 	background: #333;
-	min-height: 180px;
+	min-height: 100px;
 	color: #eee;
 	padding: 10px 0;
 	clear: left;
@@ -914,7 +914,6 @@ span.casestudy-title {
 	width: 50%;
 	float: left;
 	padding-right: 20px;
-	padding-bottom: 20px;
 }
 
 .featured_post:nth-child(3),
@@ -923,12 +922,28 @@ span.casestudy-title {
 	clear: both;
 }
 .featured_post img {
-	width: 100%;
+	width: 50%;
 	height: auto;
 }
+
+.featured_post a.feature-case_study{
+	text-align: left;
+}
+
+.featured_post a.feature-case_study img {
+	width: 50%;
+	height: auto;
+}
+
+.featured_post a.feature-case_study span {
+	clear: both;
+	float: left;
+	text-align: left;
+}
+
 .featured blockquote {
 	margin: 0;
-	font-size: 22px;
+	font-size: 18px;
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
 	color: #eee;
 }
