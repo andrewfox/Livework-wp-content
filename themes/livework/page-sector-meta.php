@@ -47,9 +47,6 @@ get_header(); ?>
 
 
 
-					
-
-
 
 	 			</article> <!-- /.main -->
 
