@@ -42,7 +42,7 @@ get_sidebar('featuredbar');
 				
 					<div class="case-studies">
 						<div class="wrapper">
-							<h2 class="case-studies-leader"><span class="catarchives">What we've been up to in </span><span><?php the_title() ?></span></h2>
+							<h2 class="case-studies-leader">What we've been up to in <span><?php the_title() ?></span></h2>
 						</div>
 					<?php
 					
