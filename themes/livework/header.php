@@ -93,7 +93,7 @@
 			<?php } 
 			
 			if (get_post_type( $post->ID ) == "case_study") {
-				if (is_page('latest')) {
+				if (is_home()) {
 					
 				}
 				else {
