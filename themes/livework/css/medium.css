@@ -422,12 +422,17 @@ article.people{
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
 .case_study .attachment-thumb-large, .category-theme .attachment-thumb-large {
-	float: right;
-	width: 25%;
+	float: left;
+	width: 100%;
 	height: auto;
 	padding-right: 20px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+div.case-studies-image {
+	width: 25%;
+	float: left;
 }
 
 

@@ -54,7 +54,7 @@ get_sidebar('featuredbar');
 													<div class="case-studies-image">
 														<?php the_post_thumbnail('thumb-large'); ?>
 													</div>
-												<div>
+												<div class="case-studies-content">
 													
 													<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
 													<h4 class="tab">Client story</h4>

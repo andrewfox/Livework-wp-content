@@ -1233,12 +1233,18 @@ ul.sectors-list {
 
 
 .case_study .attachment-thumb-large, .category-theme .attachment-thumb-large {
-	float: right;
+	float: left;
 	width: 50%;
 	height: auto;
 	padding-right: 0px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	text-align: center;
+}
+
+div.case-studies-image {
+	float: left;
+	width: 100%;
 }
 
 .case_study h2 {
