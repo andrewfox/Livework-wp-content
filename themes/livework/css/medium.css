@@ -218,6 +218,9 @@ h1.page-title {
 	margin: 100px 20px 20px;
 }
 
+.case-studies .category-highlight .wrapper {
+	margin: 0 auto;
+}
 
 .blog-image img {
 	max-width: 90%;
@@ -418,6 +421,14 @@ article.people{
 }
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
+.case_study .attachment-thumb-large, .category-theme .attachment-thumb-large {
+	float: right;
+	width: 25%;
+	height: auto;
+	padding-right: 20px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 
 /* === Case study =============================== */

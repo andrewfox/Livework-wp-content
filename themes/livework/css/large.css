@@ -96,6 +96,10 @@ blockquote {
 	margin: 100px auto 100px;
 }
 
+.case-studies .category-highlight .wrapper {
+	margin: 0px auto;
+}
+
 /* === Social media (list on single) =============================== */
 
 

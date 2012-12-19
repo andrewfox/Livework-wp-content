@@ -51,7 +51,9 @@ get_sidebar('featuredbar');
 			 						<?php setup_postdata($post); ?>
 										<div  <?php post_class('clearfix'); ?>>
 											<div class="wrapper">
-												<?php the_post_thumbnail('thumb-large'); ?>
+													<div class="case-studies-image">
+														<?php the_post_thumbnail('thumb-large'); ?>
+													</div>
 												<div>
 													
 													<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>

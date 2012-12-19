@@ -580,6 +580,10 @@ span.entry-date {
 	background-color: rgba(256,256,256,0.8);
 }
 
+.case-studies .category-highlight .wrapper {
+	margin: 0px auto;
+}
+
 .entry-content  {
 	font-size: 14px;
 	padding: 20px 0;
@@ -1229,10 +1233,10 @@ ul.sectors-list {
 
 
 .case_study .attachment-thumb-large, .category-theme .attachment-thumb-large {
-	float: left;
-	width: 25%;
+	float: right;
+	width: 50%;
 	height: auto;
-	padding-right: 20px;
+	padding-right: 0px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
