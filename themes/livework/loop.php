@@ -64,11 +64,11 @@
 							<div class="wrapper clearfix">
 	
 								<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
-								<h4 class="section-title">Client story</h4>
+								<h4 class="tab">Client story</h4>
 								<?php elseif (in_category(191)) : ?>
-								<h4 class="section-title">Theme/Article</h4>
+								<h4 class="tab">Point of view</h4>
 								<?php else : ?>
-								<h4 class="section-title">News</h4>
+								<h4 class="tab">News</h4>
 								<?php endif; ?>
 								
 								<?php if ((get_post_type( $post->ID ) == "case_study")) : // if case study ?>
