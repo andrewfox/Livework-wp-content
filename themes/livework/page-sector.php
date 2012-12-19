@@ -42,7 +42,7 @@ get_sidebar('featuredbar');
 				
 					<div class="case-studies">
 						<div class="wrapper">
-							<h2 class="case-studies-leader">What we've been up to in <span><?php the_title() ?></span></h2>
+							<h2 class="section-title">What we've been up to in <span><?php the_title() ?></span></h2>
 						</div>
 					<?php
 					
@@ -54,37 +54,38 @@ get_sidebar('featuredbar');
 			 						<?php setup_postdata($post); ?>
 										<div  <?php post_class('clearfix'); ?>>
 											<div class="wrapper">
-													<div class="case-studies-image">
-														<?php the_post_thumbnail('thumb-large'); ?>
-													</div>
+												<div class="case-studies-image">
+													<?php the_post_thumbnail('thumb-large'); ?>
+												</div>
 												<div class="case-studies-content">
 													
 													<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
 													<h4 class="tab">Client story</h4>
 													<?php elseif (in_category(199)) : ?>
-													<h4 class="tab">Theme/Article</h4>
+													<h4 class="tab">Point of view</h4>
 													<?php else : ?>
 													<h4 class="tab">News</h4>
 													<?php endif; ?>
 													
 													<?php if( get_field('casestudies_one_liner') ): ?>
-														<h2>
-															<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span>
-															</a>
-														</h2>
+													<h2>
+														<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+															<?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span>
+														</a>
+													</h2>
 													<?php else : ?>
-														<h2>
-															<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?>
-															</a>
-														</h2>
+													<h2>
+														<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a>
+													</h2>
 													<?php endif; ?>
 	
 													<div>
 				 									<?php the_excerpt() ?>
 													</div>
+
 				 								</div>
 	
-				 							</div>
+				 							</div> <!-- /.wrapper -->
 			 							</div>
 			 					<?php endforeach; ?>
 		 					<?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
