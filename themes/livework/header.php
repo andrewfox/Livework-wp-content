@@ -85,12 +85,28 @@
 
 			<?php 
 			// Our Client's Stories Sector menu
-			if ((is_tree(9)) || (get_post_type( $post->ID ) == "case_study" && !is_page('blog'))) { 
+			if ((is_tree(9)) 
+			{ 
 			?>
 			<nav id="menu-secondary" class="nav-sectors clearfix">
 				<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
 			</nav>
-			<?php } ?>
+			<?php } 
+			( && !))
+			if (get_post_type( $post->ID ) == "case_study") {
+				if (is_page('latest')) {
+					
+				}
+				else {
+				?>
+				<nav id="menu-secondary" class="nav-sectors clearfix">
+					<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
+				</nav>
+				<?php 
+				}
+				?>
+			
+			
 
 
 		</header>
