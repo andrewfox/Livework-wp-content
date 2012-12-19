@@ -829,10 +829,7 @@ span.casestudy-title {
 	display: block;
 }
 
-.case_study .wrapper, .category-theme .wrapper{
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
+
 
 /* === Logos list =============================== */
    
@@ -887,9 +884,10 @@ span.casestudy-title {
 	position: relative;
 	display: block;
 	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
-/*	background-color: rgba(177, 215, 230, 0.7);
+	background-color: rgba(177, 215, 230, 0.7);
+	background-color: #aaa;
 	border-top: 1px solid #b1d7e6;
-	border-bottom: 1px solid #b1d7e6;*/
+	border-bottom: 1px solid #b1d7e6;
 }
 
 .single-case_study .featured, .page-template-page-sector-php .featured {
@@ -1208,10 +1206,13 @@ ul.sectors-list {
 .page-template-page-sector-php #introduction h2 {
 }
 
+.case_study .wrapper, .category-theme .wrapper{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
 
-
-.case_study .attachment-thumb-large {
+.case_study .attachment-thumb-large, .category-theme .attachment-thumb-large {
 	float: left;
 	width: 25%;
 	height: auto;

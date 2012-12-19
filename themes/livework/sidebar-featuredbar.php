@@ -83,9 +83,11 @@
 	
 									<?php if ($thumbnail == 'logo' && get_field('casestudies_logo') ) { ?>
 										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" />
+										<span><?php the_title(); ?></span>
 									<?php } else { 
-										the_post_thumbnail('thumb-large');
-									} ?>
+										the_post_thumbnail('thumb-large');?>
+										<span><?php the_title(); ?></span>
+									<?php} ?>
 	
 									<?php if ($theposttype == 'case_study') { ?>
 										<span><?php the_field('casestudies_one_liner'); ?></span>
