@@ -54,9 +54,9 @@
 	<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
 						<?php $domsxe = simplexml_load_string(get_the_post_thumbnail());
 							$thumbnailsrc = $domsxe->attributes()->src; ?>
-						<div id="post-<?php the_ID(); ?>" <?php post_class('post','clearfix'); ?> style="background-image: url('<?php echo $thumbnailsrc ?>')">	
+						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> style="background-image: url('<?php echo $thumbnailsrc ?>')">	
 						<?php else : ?>
-						<div id="post-<?php the_ID(); ?>" <?php post_class('post','clearfix'); ?>>
+						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 						<?php endif; ?>
 	
 	
