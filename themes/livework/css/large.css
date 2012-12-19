@@ -92,13 +92,7 @@ blockquote {
 
 /* === Latest (blog) =============================== */
 
-.category-highlight .wrapper {
-	margin: 100px auto 100px;
-}
 
-.case-studies .category-highlight .wrapper {
-	margin: 0px auto;
-}
 
 /* === Social media (list on single) =============================== */
 
@@ -149,6 +143,21 @@ blockquote {
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
+.category-highlight .wrapper {
+	margin: 100px auto 100px;
+}
+
+.case-studies .category-highlight .wrapper {
+	margin: 0px auto;
+}
+
+.case-studies-content {
+	width: 60%;
+}
+
+div.case-studies-image {
+	width: 18%;
+}
 
 /* === Case study =============================== */
 

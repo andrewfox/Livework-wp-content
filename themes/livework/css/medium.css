@@ -401,6 +401,7 @@ ul#offices li:hover{
 }
 
 
+
 article.people{
 	width: 60%;
 	float: left;
@@ -431,8 +432,13 @@ article.people{
 }
 
 div.case-studies-image {
-	width: 25%;
+	width: 20%;
 	float: left;
+}
+
+.case-studies-content {
+	float: left;
+	width: 75%;
 }
 
 
