@@ -1005,10 +1005,14 @@ ul.sectors-list {
 	width: 20%;
 	min-height: 20px;
 }
-.all-logos-list ul ul li img{
+.all-logos-list img{
 	display: block;
 	max-width: 100%;
 	height: auto;
+	opacity: 0.5;
+}
+.all-logos-list a img{
+	opacity: 1;
 }
 
 .sectors-clients-list .wrapper {
