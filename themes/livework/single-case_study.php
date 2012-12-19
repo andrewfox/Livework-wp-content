@@ -56,7 +56,7 @@ if ($feature == true) {
 							<?php the_post_thumbnail('medium'); ?> 
 							<?php endif; ?>
 
-							<h4 class="section-title">Client Story</h4>
+							<h4 class="tab">Client Story</h4>
 							<h1><?php the_field('casestudies_one_liner'); ?></h1>
 							<h2 class="casestudy-title">with <?php the_title(); ?></h2>
 

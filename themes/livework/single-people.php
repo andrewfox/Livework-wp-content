@@ -40,7 +40,7 @@ get_header(); ?>
 					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
 					<div id="introduction" >
 						<div class="wrapper">
-							<h4><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></h4>
+							<h4 class="tab"><a href="<?php bloginfo('url'); ?>/our-team">Our Team</a></h4>
 							<h1><?php the_title(); ?> <span><?php the_field('job_title'); ?></span></h1>
 							<div class="excerpt">
 								<?php the_excerpt() ?>
