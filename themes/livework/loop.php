@@ -37,12 +37,20 @@
 	 */ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
+						<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
+						<?php $domsxe = simplexml_load_string(get_the_post_thumbnail());
+							$thumbnailsrc = $domsxe->attributes()->src; ?>
+						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> style="background-image: url('<?php echo $thumbnailsrc ?>')">	
+						<?php else : ?>
+						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+						<?php endif; ?>
+
+							<div class="wrapper clearfix">
+
 <?php /* If case study ------------------------------------------ */ 
 if ((get_post_type( $post->ID ) == "case_study")) : ?>
 
 
-						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-							<div class="wrapper clearfix">
 								<div class="case-studies-image">
 									<?php the_post_thumbnail('thumb-large'); ?>
 								</div>
@@ -68,26 +76,13 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 									</div>
 	
 								</div>
-						
-							</div><!-- /.wrapper -->
-	
-						</div><!-- /.post -->
+
 
 <?php /* Else is a news post (blog, article, point of view) ------------------------------------------ */
 
 else : ?>
 
 
-						<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
-						<?php $domsxe = simplexml_load_string(get_the_post_thumbnail());
-							$thumbnailsrc = $domsxe->attributes()->src; ?>
-						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> style="background-image: url('<?php echo $thumbnailsrc ?>')">	
-						<?php else : ?>
-						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
-						<?php endif; ?>
-
-							<div class="wrapper clearfix">
-	
 								<?php if ( in_category(191) ) : ?>
 								<h4 class="tab">Point of view</h4>
 								<?php else : ?>
@@ -129,15 +124,15 @@ else : ?>
 									<?php endwhile; ?>
 									<?php wp_reset_query();?>
 								</div>
-	
-	
-	
+
+
+<?php /* End of main if statement case study or post ------------------------------------------ */
+endif; ?>
+
 							</div><!-- /.wrapper -->
 	
 						</div><!-- /.post -->
 						
-<?php /* End of main if statement case study or post ------------------------------------------ */
-endif; ?>
 	
 						<?php endwhile; ?>
 	
