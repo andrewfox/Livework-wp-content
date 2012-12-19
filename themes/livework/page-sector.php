@@ -53,10 +53,25 @@ get_sidebar('featuredbar');
 											<div class="wrapper">
 												<?php the_post_thumbnail('thumb-large'); ?>
 												<div>
-													<?php if( get_field('casestudies_one_liner') ): ?>
-													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span></a></h2>
+													
+													<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
+													<h4 class="tab">Client story</h4>
+													<?php elseif (in_category(191)) : ?>
+													<h4 class="tab">Theme/Article</h4>
 													<?php else : ?>
-													<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+													<h4 class="tab">News</h4>
+													<?php endif; ?>
+													
+													<?php if( get_field('casestudies_one_liner') ): ?>
+														<h2>
+															<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span>
+															</a>
+														</h2>
+													<?php else : ?>
+														<h2>
+															<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?>
+															</a>
+														</h2>
 													<?php endif; ?>
 	
 													<div>
