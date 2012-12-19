@@ -32,23 +32,49 @@ get_header(); ?>
 				<article id="page-<?php the_ID(); ?>" class="main">
 					
 					<div class="wrapper">
-						
-						<p class="studio-address"><?php the_field('studio_address'); ?></p>
-						<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
-						<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
-						<p class="studio-email"><?php the_field('studio_email'); ?></p>
-						<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
-						<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
-						<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?>
 					
-					</div>
+						<div id="main" class="clearfix">
+							
+							<div class="entry-content">
+					
+								<aside class="entry-data"> 
+					
+									<div class="vcard">
+										
+										<p class="studio-address"><?php the_field('studio_address'); ?></p>
+										<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
+										<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
+										<p class="studio-email"><?php the_field('studio_email'); ?></p>
+										<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
+										<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
+										
+									</div>
+					
+					
+								</aside>
+								
+								<div class="entry-content">
+									<?php the_content(); ?>
+									<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
+									<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
+								</div><!-- .entry-content -->
+								
+								<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?>
+					
+							</div> <!-- /.entry-content -->
+					
+						</div> <!-- /#main -->
+					
+					
+					</div><!-- /.wrapper -->
+					
 						
 						
-					<div class="entry-content">
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
-						<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
-					</div><!-- .entry-content -->
+						
+					
+						
+						
+					
 
 
 				</article><!-- #page-## -->
