@@ -17,10 +17,10 @@
 					$sectors = get_terms( 'sectors', 'orderby=count&hide_empty=0' ); 
 					foreach ($sectors as $sector) { 
 						if ($sector->count > 0) { ?>
-						<ul>
+						<ul class="clearfix">
 							<li>
 								<a href="<?php bloginfo('url'); ?>/our-clients-stories/<?php echo $sector->slug ?>"><?php echo $sector->name ?></a>
-								<ul>
+								<ul class="clearfix">
 									<?php $args = array(
 										'post_type'=> 'case_study',
 										'taxonomy' => 'sectors',
