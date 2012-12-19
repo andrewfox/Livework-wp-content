@@ -63,7 +63,7 @@ get_sidebar('featuredbar');
 					 	<div class="wrapper">
 					 		
 					 		<?php if (get_sub_field("story_section_image")) : ?>
-					 		<img src="<?php the_sub_field("story_section_image"); ?>" class="section-image"/>
+					 		<img src="<?php $img = the_sub_field("story_section_image"); echo $img[5];?>" class="section-image"/>
 					 		<?php endif; ?>
 
 							<h2><?php the_sub_field("story_section_title"); ?></h2>
