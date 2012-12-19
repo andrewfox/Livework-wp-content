@@ -362,18 +362,8 @@ ul.cases-mosaic li{
 	clear: both;
 }
 
-.all-logos li {
-	width: 12.5%;
-}
-
-.all-logos li img{
-	width: 100%;
-	height: auto;
-}
-
-.all-logos li a img{
-	width: 100%;
-	height: auto;
+.all-logos-list ul ul li {
+	width: 15%;
 }
 
 /* === Our Team =============================== */

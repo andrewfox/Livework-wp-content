@@ -119,18 +119,8 @@ blockquote {
 /* === Our Client's Stories main page =============================== */
 
 
-.all-logos li {
+.all-logos-list ul ul li {
 	width: 10%;
-}
-
-.all-logos li img{
-	width: 100%;
-	height: auto;
-}
-
-.all-logos li a img{
-	width: 100%;
-	height: auto;
 }
 
 /* === Our Team =============================== */
