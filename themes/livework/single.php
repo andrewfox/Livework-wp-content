@@ -53,7 +53,7 @@ if ($feature == true) {
 							<?php the_post_thumbnail('medium'); ?> 
 							<?php endif; ?>
 
-							<h4 class="section-title">News</h4>
+							<h4 class="tab">News</h4>
 							<h1><?php the_title(); ?></h1>
 							<?php 
 							//only show excerpt if it exists
