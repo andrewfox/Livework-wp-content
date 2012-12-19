@@ -877,7 +877,7 @@ span.casestudy-title {
 
 .featured {
 	background: #333;
-	min-height: 100px;
+	max-height: 130px;
 	color: #eee;
 	padding: 10px 0;
 	clear: left;
@@ -888,6 +888,7 @@ span.casestudy-title {
 	background-color: #aaa;
 	border-top: 1px solid #b1d7e6;
 	border-bottom: 1px solid #b1d7e6;
+	overflow: hidden;
 }
 
 .single-case_study .featured, .page-template-page-sector-php .featured {
@@ -919,10 +920,10 @@ span.casestudy-title {
 .featured_post:nth-child(3),
 .featured_post:nth-child(5),
 .featured_post:nth-child(7) {
-	clear: both;
+/*	clear: both;*/
 }
 .featured_post img {
-	width: 50%;
+	width: 80%;
 	height: auto;
 }
 
@@ -931,7 +932,7 @@ span.casestudy-title {
 }
 
 .featured_post a.feature-case_study img {
-	width: 50%;
+	width: 80%;
 	height: auto;
 }
 
