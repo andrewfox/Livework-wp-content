@@ -67,6 +67,7 @@ get_sidebar('featuredbar');
 						 		$size = "medium"; // (thumbnail, medium, large, full or custom size)
 						 		wp_get_attachment_image( $attachment_id, $size );
 						 		the_sub_field("story_section_image");
+						 		echo ' '.$attachment_id;
 					 		endif; ?>
 
 							<h2><?php the_sub_field("story_section_title"); ?></h2>
