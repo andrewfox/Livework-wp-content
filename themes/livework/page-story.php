@@ -63,7 +63,7 @@ get_sidebar('featuredbar');
 					 	<div class="wrapper">
 					 		
 					 		<?php if (get_sub_field("story_section_image")) : 
-						 		$attachment_id = get_field('story_section_image');
+						 		$attachment_id = get_sub_field('story_section_image');
 						 		$size = "medium"; // (thumbnail, medium, large, full or custom size)
 						 		wp_get_attachment_image( $attachment_id, $size );
 						 		echo 'sdas';
