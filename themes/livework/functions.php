@@ -337,7 +337,7 @@ function clients_init() {
 		'clients',
 		array('post','case_study'),
 		array(
-			'label' => __( 'clients' ),
+			'label' => __( 'Clients' ),
 			'query_var' => ('true'),
 			'rewrite' => array( 'slug' => 'client' ),
 //			'capabilities' => array('assign_terms'=>'edit_guides', 'edit_terms'=>'publish_guides')
@@ -355,7 +355,7 @@ function sector_init() {
 		array('post','case_study'),
 		array(
 			'hierarchical' => ('true'), 
-			'label' => __( 'sectors' ),
+			'label' => __( 'Sectors' ),
 			'query_var' => ('true'),
 			'rewrite' => array( 'slug' => 'sectors' ),
 //			'capabilities' => array('assign_terms'=>'edit_guides', 'edit_terms'=>'publish_guides')

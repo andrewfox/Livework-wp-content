@@ -50,7 +50,7 @@ if ($feature == true) {
 
 							<?php if (in_category(10)) :  // show regular large image if NOT highlight?>
 							<?php else : ?>
-							<?php the_post_thumbnail('large'); ?> 
+							<?php the_post_thumbnail('medium'); ?> 
 							<?php endif; ?>
 
 							<h4 class="section-title">News</h4>
