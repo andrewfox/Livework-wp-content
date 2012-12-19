@@ -13,9 +13,11 @@ get_header(); ?>
 				<article class="main">
 					
 					<div class="wrapper">
-						<h1><?php
-							printf( __( 'Category Archives: %s', 'livework' ), '' . single_cat_title( '', false ) . '' );
-						?></h1>
+						<h1 class="page-title">
+							<?php
+								printf( __( 'Category Archives: %s', 'livework' ), '' . single_cat_title( '', false ) . '' );
+							?>
+						</h1>
 					</div>
 
 
