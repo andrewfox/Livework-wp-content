@@ -556,18 +556,17 @@ span.entry-date {
 	font-size: 75%;
 }
 
-.blog .post {}
-
-.post:nth-child(even) {
-	background-color: #ecebeb;
+.blog .post,
+.blog .case_study {
+	padding: 20px 0 100px;
 }
 
 
 
 
-.post .wrapper {
-	padding: 20px;
-}
+
+
+.post .wrapper {}
 .category-highlight {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -869,9 +868,7 @@ span.casestudy-title {
 
 /* === Case studies list =============================== */
 
-.case_study:nth-child(even) {
-	background-color: #ecebeb;
-}
+
 
 
 
@@ -1209,9 +1206,7 @@ ul.sectors-list {
 
 
 
-.blog .case_study {
-	padding: 20px 0;
-}
+
 .case_study .attachment-thumb-large {
 	float: left;
 	width: 25%;
