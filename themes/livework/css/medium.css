@@ -234,12 +234,18 @@ h1.page-title {
 	float: left;
 	vertical-align: middle;
 }
-.single .entry-data {
+.single .entry-data, .page-template-page-studio-php .entry-data {
 	float: right;
 	width: 25%;
 	margin: 0 0 20px 20px;
 	display: block;
 }
+
+
+
+
+
+
 .author-details {
 }
 .author-details span {
