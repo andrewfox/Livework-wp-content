@@ -58,7 +58,15 @@ get_sidebar('featuredbar');
 					 
 					<?php if(get_row_layout() == "story_section"): // layout: Content ?>
 					 
-					 <div class="story-section">
+					<?php if (get_sub_field("story_section_image")) : ?>
+
+					<div class="story-section" style="background-image url('<?php the_sub_field("story_section_image"); ?>')">
+					
+					<?php else : ?>
+					
+					<div class="story-section">
+					
+					<?php endif; ?>
 					 
 					 	<div class="wrapper">
 					 		
