@@ -29,7 +29,7 @@ get_header(); ?>
 
 
 
-				<article id="page-<?php the_ID(); ?>" class="main">
+				<article id="page-<?php the_ID(); ?>" class="main clearfix">
 					
 					<div class="wrapper">
 					
