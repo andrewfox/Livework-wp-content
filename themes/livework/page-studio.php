@@ -17,7 +17,7 @@ get_header(); ?>
 			<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
 			<div id="introduction" >
 				<div class="wrapper">
-					<h4><a href="<?php bloginfo('url'); ?>/contact-us">Contact us</a></h4>
+					<h4><a href="<?php bloginfo('url'); ?>/contact-us">Studio</a></h4>
 					<h1><?php the_title(); ?> </h1>
 				</div>
 			</div>
