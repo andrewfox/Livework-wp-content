@@ -9,8 +9,23 @@
  */
 
 get_header(); ?>
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-<?php $studiocat = $post->post_name?>
+
+
+		<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+		<?php $studiocat = $post->post_name?>
+		<div class="splash highlight">
+			<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
+			<div id="introduction" >
+				<div class="wrapper">
+					<h4><a href="<?php bloginfo('url'); ?>/contact-us">Contact us</a></h4>
+					<h1><?php the_title(); ?> </h1>
+				</div>
+			</div>
+		</div>
+		
+
+		
+
 
 
 

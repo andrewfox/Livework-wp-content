@@ -519,8 +519,13 @@ ul.post-categories li{
 }
 
 
+
+
 /* === Latest (blog) =============================== */
 
+span.catarchives {
+	color: #aaa;
+}
 
 h2.entry-title {
 	margin: 0;
