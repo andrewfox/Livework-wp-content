@@ -60,7 +60,7 @@ get_sidebar('featuredbar');
 					 
 					<?php if (get_sub_field("story_section_image")) : ?>
 
-					<div class="story-section" style="background-image url('<?php the_sub_field("story_section_image"); ?>')">
+					<div class="story-section" style="background-image: url('<?php the_sub_field("story_section_image"); ?>')">
 					
 					<?php else : ?>
 					
