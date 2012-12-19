@@ -41,8 +41,9 @@ get_sidebar('featuredbar');
 					<!--INSERT SELECTED CASE STUDIES -->
 				
 					<div class="case-studies">
-						
-						<h2 class="case-studies-leader">What we've been up to in <span><?php the_title() ?></span></h2>
+						<div class="wrapper">
+							<h2 class="case-studies-leader"><span class="catarchives">What we've been up to in </span><span><?php the_title() ?></span></h2>
+						</div>
 					<?php
 					
 		 				$posts = get_field('add_case_studies');
