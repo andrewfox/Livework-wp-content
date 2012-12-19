@@ -45,7 +45,7 @@ if ($feature == true) {
 				<div class="splash <?php echo $catClass ?>">
 
 					<?php if (in_category(10)) : // show topimage if highlight ?>
-					<div class="topimage"><?php the_post_thumbnail('full'); ?></div>
+					<div class="topimage"><?php the_post_thumbnail('medium'); ?></div>
 					<?php endif; ?>
 
 					<div id="introduction">
