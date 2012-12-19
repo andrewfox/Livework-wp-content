@@ -795,10 +795,10 @@ ul.socialmedia li {
 	background: #fff;
 	margin: 0;
 	padding: 20px;
+	background-position: center center;
+	background-position: cover;
 }
-.story-section:nth-child(odd) {
-	background: #e9e9e6;
-}
+
 
 
 /*Links within sections*/

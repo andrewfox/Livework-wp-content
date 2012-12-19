@@ -68,15 +68,17 @@ get_sidebar('featuredbar');
 					
 					<?php endif; ?>
 					 
-					 	<div class="wrapper">
+					 	<div class="wrapper clearfix">
 					 		
-					 		<?php if (get_sub_field("story_section_image")) : 
+					 		<?php /*
+if (get_sub_field("story_section_image")) : 
 						 		$attachment_id = get_sub_field("story_section_image");
 						 		$size = "medium"; // (thumbnail, medium, large, full or custom size)
 						 		wp_get_attachment_image( $attachment_id, $size );
 						 		the_sub_field("story_section_image");
 						 		echo ' '.$attachment_id;
-					 		endif; ?>
+					 		endif; 
+*/?>
 
 							<h2><?php the_sub_field("story_section_title"); ?></h2>
 								
