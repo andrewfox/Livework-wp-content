@@ -61,7 +61,7 @@ get_sidebar('featuredbar');
 													
 													<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
 													<h4 class="tab">Client story</h4>
-													<?php elseif (in_category(191)) : ?>
+													<?php elseif (in_category(199)) : ?>
 													<h4 class="tab">Theme/Article</h4>
 													<?php else : ?>
 													<h4 class="tab">News</h4>
