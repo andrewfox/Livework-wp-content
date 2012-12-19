@@ -34,9 +34,9 @@
 									?>
 									<li>
 										<?php if ( in_category('logo-only-case-study') && get_field('casestudies_logo') ) : ?>
-										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" />
+										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /><?php the_title(); ?>
 										<?php elseif ( get_field('casestudies_logo')) : ?>
-										<a href="<?php the_permalink() ?>" rel="bookmark" title="Client story <?php the_title_attribute(); ?>"><img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /></a>
+										<a href="<?php the_permalink() ?>" rel="bookmark" title="Client story <?php the_title_attribute(); ?>"><img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /></a><?php the_title(); ?>
 										<?php endif; ?>
 									</li>
 									<?php endwhile; ?>

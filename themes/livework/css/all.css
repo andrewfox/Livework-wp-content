@@ -978,41 +978,34 @@ ul.sectors-list {
 }
 
 .all-logos-list {
-	background-color: lime;
+	background-color: #027cb8;
+	background-color: #ccc;
 }
-
-.all-sectors{
-	margin-right: 20px;
-	margin-left: 20px;
+.all-logos-list ul {
+	margin: 0;
 }
-
-.all-sectors li a{
-	float: left;
+.all-logos-list > ul {
+	border-bottom: 2px solid #0388c9;
+	padding: 20px;
 	clear: both;
 }
-
-.all-logos{
-	width: 100%;
-	clear: both;
+.all-logos-list a {
+	color: #eee;
 }
-
-.all-logos li {
+.all-logos-list ul ul  {
+	padding-top: 5px;
+}
+.all-logos-list ul ul li {
 	float: left;
-	width: 25%;
+	width: 15%;
+	min-height: 20px;
+	background: blue;
 }
-
-.all-logos li img{
-	width: 100%;
+.all-logos-list ul ul li img{
+	background: red;
+	display: block;
+	max-width: 100%;
 	height: auto;
-}
-
-.all-logos li a img{
-	width: 100%;
-	height: auto;
-}
-
-.all-logos li a{
-	
 }
 
 .sectors-clients-list .wrapper {
