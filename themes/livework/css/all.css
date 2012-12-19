@@ -979,24 +979,30 @@ ul.sectors-list {
 
 .all-logos-list {
 	background-color: #027cb8;
+	
+	font-size: 80%;
 }
 .all-logos-list ul {
 	margin: 0;
 }
 .all-logos-list > ul {
 	border-bottom: 2px solid #0388c9;
-	padding: 20px;
+	padding: 10px 20px;
 	clear: both;
 }
 .all-logos-list a {
 	color: #eee;
+}
+.all-logos-list li  {
+	margin: 0;
+	padding: 0;
 }
 .all-logos-list ul ul  {
 	padding-top: 5px;
 }
 .all-logos-list ul ul li {
 	float: left;
-	width: 15%;
+	width: 10%;
 	min-height: 20px;
 }
 .all-logos-list ul ul li img{
