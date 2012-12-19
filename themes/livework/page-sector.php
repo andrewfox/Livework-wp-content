@@ -80,7 +80,9 @@ get_sidebar('featuredbar');
 													<?php endif; ?>
 	
 													<div>
-				 									<?php the_excerpt() ?>
+				 										<?php the_excerpt() ?>
+														<p class="read-more"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'livework'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more &rarr;</a></p>
+
 													</div>
 
 				 								</div>
