@@ -93,15 +93,15 @@
 			<?php } 
 			
 			if (get_post_type( $post->ID ) == "case_study") {
-				if (is_home()) {
-					
+				if (is_page_template('single-case_study.php')) {
+					?>
+					<nav id="menu-secondary" class="nav-sectors clearfix">
+						<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
+					</nav>
+					<?php 
 				}
 				else {
-				?>
-				<nav id="menu-secondary" class="nav-sectors clearfix">
-					<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
-				</nav>
-				<?php 
+				
 				}
 			}
 				?>
