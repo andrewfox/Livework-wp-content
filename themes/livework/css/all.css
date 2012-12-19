@@ -979,7 +979,6 @@ ul.sectors-list {
 
 .all-logos-list {
 	background-color: #027cb8;
-	background-color: #ccc;
 }
 .all-logos-list ul {
 	margin: 0;
@@ -999,10 +998,8 @@ ul.sectors-list {
 	float: left;
 	width: 15%;
 	min-height: 20px;
-	background: blue;
 }
 .all-logos-list ul ul li img{
-	background: red;
 	display: block;
 	max-width: 100%;
 	height: auto;
