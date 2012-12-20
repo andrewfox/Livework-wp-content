@@ -20,7 +20,7 @@
 				else{
 				 ?>
 					<div class="wrapper">
-					
+					<div class="clipper">
 					<div class="featured clearfix">
 										 
 					 		
@@ -107,7 +107,7 @@
 		 				<?php endif; ?>
 	
 					 	</div> <!-- /.wrapper -->
-
+						</div>
 					</div> <!-- /.feature-posts -->
 					
 					<?php
