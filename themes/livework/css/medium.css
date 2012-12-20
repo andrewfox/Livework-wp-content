@@ -422,7 +422,7 @@ article.people{
 }
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
-.case_study .attachment-thumb-large, .category-theme .attachment-thumb-large {
+.case_study .attachment-thumb-large, .category-theme .attachment-thumb-large, .post .attachment-thumb-large {
 	float: left;
 	width: 100%;
 	height: auto;
