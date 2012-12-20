@@ -117,11 +117,14 @@ get_header(); ?>
 
 
 					</div><!-- /.wrapper -->
-
+				
 
 				</article><!-- #people-## -->
 
-
+				<?php 
+				// Featured bar
+				get_sidebar('featuredbar'); 
+				?>
 
 				<div class="extra">
 
