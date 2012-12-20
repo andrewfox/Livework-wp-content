@@ -39,10 +39,23 @@ get_sidebar('featuredbar');
 
 
 					<!--INSERT SELECTED CASE STUDIES -->
-				
 					<div class="case-studies">
 						<div class="wrapper">
-							<h2 class="section-title">What we've been up to in <span><?php the_title() ?></span></h2>
+						
+					<?php
+					
+					if ( is_page( 'our-story' ) || '7' == $post->post_parent ) {    
+						?><h2 class="section-title">Articles about <span><?php the_title() ?></span></h2><?php
+					}
+					
+					else {
+						?><h2 class="section-title">What we've been up to in <span><?php the_title() ?></span></h2><?php
+					
+					}
+					?>
+					
+					
+							
 						</div>
 					<?php
 					
