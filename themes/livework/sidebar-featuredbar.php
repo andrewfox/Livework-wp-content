@@ -65,7 +65,7 @@
 	 								}
 	 								$thumbnail = 'logo';
 	 							} else if ($theposttype == 'people') {
-	 								echo 'Liveworker';
+	 								echo 'Expert';
 	 								$thumbnail = 'featured';
 	 							} else if ($theposttype == 'post') {
 	 							

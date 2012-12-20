@@ -896,11 +896,11 @@ span.casestudy-title {
 	/*border-top: 1px solid #b1d7e6;
 	border-bottom: 1px solid #b1d7e6;*/
 	overflow: hidden;
-	width: 1500px;
+	width: 100%;
 }
 
 div.clipper {
-	
+	overflow: hidden;
 }
 
 .single-case_study .featured, .page-template-page-sector-php .featured {
@@ -929,8 +929,9 @@ div.clipper {
 	margin-right: 20px;
 }
 
-.featured_post .quote{
-	
+.featured_post.quote{
+	width: 220px;
+	margin-left: 15px;
 }
 
 .featured_post:nth-child(3),
