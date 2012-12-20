@@ -885,17 +885,22 @@ span.casestudy-title {
 
 .featured {
 	background: #333;
-	max-height: 130px;
+	height: 130px;
 	color: #eee;
 	padding: 10px 0;
 	clear: left;
 	position: relative;
 	display: block;
-	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
+	font-family: 'Chaparral W01 Lt', Georgia, Times, serif;
 	background-color: rgba(177, 215, 230, 0.8);
 	/*border-top: 1px solid #b1d7e6;
 	border-bottom: 1px solid #b1d7e6;*/
 	overflow: hidden;
+	width: 1500px;
+}
+
+div.clipper {
+	
 }
 
 .single-case_study .featured, .page-template-page-sector-php .featured {
@@ -919,9 +924,9 @@ span.casestudy-title {
 .featured_post {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 50%;
 	float: left;
-	padding-right: 20px;
+	width: 110px;
+	margin-right: 20px;
 }
 
 .featured_post .quote{
@@ -934,7 +939,7 @@ span.casestudy-title {
 /*	clear: both;*/
 }
 .featured_post img {
-	width: 80%;
+	width: 110px;
 	height: auto;
 }
 
@@ -984,6 +989,7 @@ span.casestudy-title {
 	bottom: 20px;
 	text-align: center;
 	text-shadow: 0 0 5px #000000;
+	left: 0;
 }
 .feature-case_study:hover img {
 	opacity: 0.7;

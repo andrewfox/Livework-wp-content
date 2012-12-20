@@ -19,9 +19,8 @@
 								
 				else{
 				 ?>
+				 	<div class="featured clearfix">
 					<div class="wrapper">
-					<div class="clipper">
-					<div class="featured clearfix">
 										 
 					 		
 					 		<?php if ($testforquote == "") {
@@ -107,7 +106,6 @@
 		 				<?php endif; ?>
 	
 					 	</div> <!-- /.wrapper -->
-						</div>
 					</div> <!-- /.feature-posts -->
 					
 					<?php
