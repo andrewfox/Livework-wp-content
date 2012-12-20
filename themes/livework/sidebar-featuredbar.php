@@ -28,7 +28,7 @@
 					 						
 					 		else{
 					 		 ?>
-							<div class="featured_post">
+							<div class="featured_post quote">
 								<h3 class="section-title">Quote</h3>
 								<blockquote><?php the_field('featured_quote');?></blockquote>
 								<p><?php the_field('featured_quote_attribution');?></p>
