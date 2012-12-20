@@ -319,7 +319,7 @@ h1.page-title {
 /* === Featured  =============================== */
 
 .featured_post {
-	width: 15%;
+	width: 23%;
 	padding-bottom: 1em;
 }
 .featured_post:nth-child(2n+1) {
@@ -333,6 +333,9 @@ h1.page-title {
 	width: 30%;
 }
 
+.feature3, .feature4, .feature5, .feature6, .feature7, .feature8, .feature9, .feature10, .feature11, .feature12{
+	display: none;
+}
 
 
 

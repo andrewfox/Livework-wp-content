@@ -19,9 +19,10 @@
 								
 				else{
 				 ?>
+					<div class="wrapper">
+					
 					<div class="featured clearfix">
 										 
-					 	<div class="wrapper">
 					 		
 					 		<?php if ($testforquote == "") {
 					 			$quote = false;
