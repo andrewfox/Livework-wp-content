@@ -329,7 +329,9 @@ h1.page-title {
 /*	clear: both;*/
 }
 
-
+.featured_post.quote{
+	width: 30%;
+}
 
 
 

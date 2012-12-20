@@ -924,6 +924,10 @@ span.casestudy-title {
 	padding-right: 20px;
 }
 
+.featured_post .quote{
+	
+}
+
 .featured_post:nth-child(3),
 .featured_post:nth-child(5),
 .featured_post:nth-child(7) {

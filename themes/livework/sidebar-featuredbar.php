@@ -88,7 +88,9 @@
 									} ?>
 	
 									<?php if ($theposttype == 'case_study') { ?>
-										<span><?php the_field('casestudies_one_liner'); ?></span>
+										<span><?php 
+//										the_field('casestudies_one_liner'); 
+										?></span>
 									<?php } ?>
 
 									<?php if ($theposttype == 'people') { ?>
