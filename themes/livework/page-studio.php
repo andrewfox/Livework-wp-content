@@ -42,9 +42,9 @@ get_header(); ?>
 									<div class="vcard">
 										
 										<p class="studio-address"><?php the_field('studio_address'); ?></p>
-										<p class="studio-telephone"><?php the_field('studio_telephone'); ?></p>
-										<p class="studio-fax"><?php the_field('studio_fax'); ?></p>
-										<p class="studio-email"><?php the_field('studio_email'); ?></p>
+										<p class="tel"><span>t</span><?php the_field('studio_telephone'); ?></p>
+										<p class="fax"><span>f</span><?php the_field('studio_fax'); ?></p>
+										<p class="email"><span>e</span><?php the_field('studio_email'); ?></p>
 										<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
 										<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
 										
