@@ -98,7 +98,8 @@ get_sidebar('featuredbar');
 
 
 
-
+					<?php if (is_page_template('page-sector.php')) {?>
+					
 					<!--INSERT ALL LOGOS FOR SECTOR	-->	
 					
 					<div class="logos-list clearfix">
@@ -156,8 +157,12 @@ get_sidebar('featuredbar');
 					
 					</div> <!-- /.logos-list -->
 
-
-
+				<?php }
+				else {
+					
+				}
+				 ?>
+					
 
 	 			</article> <!-- /.main -->
 
