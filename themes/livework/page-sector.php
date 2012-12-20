@@ -98,7 +98,16 @@ get_sidebar('featuredbar');
 
 
 
-					<?php if (is_page_template('page-sector.php')) {?>
+					<?php
+					
+					if ( is_page( 'our-story' ) || '7' == $post->post_parent ) {    
+					
+					}
+					
+					else {
+						
+					
+					?>
 					
 					<!--INSERT ALL LOGOS FOR SECTOR	-->	
 					
@@ -157,8 +166,7 @@ get_sidebar('featuredbar');
 					
 					</div> <!-- /.logos-list -->
 
-				<?php }
-				else {
+				<?php
 					
 				}
 				 ?>
