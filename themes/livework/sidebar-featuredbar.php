@@ -85,7 +85,13 @@
 	
 									<?php if ($thumbnail == 'logo' && get_field('casestudies_logo') ) { ?>
 										<img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" />
-									<?php } else { 
+									<?php } 
+									
+									elseif (in_category(199)) {
+										
+									}
+									
+									else { 
 										the_post_thumbnail('thumb-large');
 									} ?>
 	
@@ -97,8 +103,12 @@
 
 									<?php if ($theposttype == 'people') { ?>
 										<span><?php the_title(); ?></span>
-									<?php } ?>
-	
+									<?php } 
+									
+									if (in_category(199)) {
+										?><span><?php the_title(); ?></span><?php
+									}
+									?>
 								</a>
 	 						</div>
 	 						<?php endforeach; ?>
