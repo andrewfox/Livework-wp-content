@@ -11,6 +11,7 @@
 				<?php 
 				$testforfeature = get_field('featured_content');
 				$testforquote = get_field('featured_quote');
+				$featurenum = 0;
 				
 				if ($testforfeature == "") {
 					
@@ -50,7 +51,8 @@
 		 					if( $posts ): ?>
 	 						<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 	 						<?php setup_postdata($post); ?>
-	 						<div class="featured_post">
+	 						<?php $featurenum = $featurenum + 1 ?>
+	 						<div class="featured_post <?php echo 'feature'.$featurenum ?>">
 	 							<h3 class="section-title">
 	 							<?php
 	 							$theposttype = get_post_type( $post->ID );

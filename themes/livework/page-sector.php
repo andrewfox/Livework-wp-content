@@ -64,6 +64,7 @@ get_sidebar('featuredbar');
 		 				if( $posts ): ?>
 		 						 					
 			 					<?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+			 					
 			 						<?php setup_postdata($post); ?>
 										<div  <?php post_class('clearfix'); ?>>
 											<div class="wrapper">
