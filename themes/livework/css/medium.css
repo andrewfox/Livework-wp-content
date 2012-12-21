@@ -246,7 +246,17 @@ h1.page-title {
 	margin: 0 0 20px 20px;
 	display: block;
 }
-
+.page-template-page-studio-php .entry-data {
+	width: 33%;
+	border-bottom: none;
+}
+.page-template-page-studio-php .vcard span {
+	background: red;
+	position: absolute;
+	margin-left: -30px;
+	text-align: right;
+	width: 25px;
+}
 
 
 
@@ -421,13 +431,9 @@ article.people{
 
 /* === Contact =============================== */
 .office {
-	width: 50%;
-	height: 850px;
-	
+	width: 25%;
 }
 
-.office img{
-}
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 
 .case_study .attachment-thumb-large, .category-theme .attachment-thumb-large, .post .attachment-thumb-large {
