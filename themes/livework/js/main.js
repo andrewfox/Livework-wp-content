@@ -74,7 +74,7 @@ $(function() {
 		
 		if ($hellothere == 6) {
 			alert("Hello there!")
-			$('#access h1 a').attr('src','http://www.liveworkstudio.com/wordpress/wp-content/themes/livework/img/hellologo.png');
+			$('nav#access h1 a img').attr('src','http://www.liveworkstudio.com/wordpress/wp-content/themes/livework/img/hellologo.png');
 		}
 	});
 	
