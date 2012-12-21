@@ -57,28 +57,28 @@ $(function() {
 		$('#people .category-london').show();
 		$('#offices li').removeClass('on');
 		$(this).addClass('on');
-		if ($hellothere == 0) {
+		if ($hellothere = 0) {
 			$hellothere = 1;
 		}
 		else {
 			$hellothere = 0;
 		}
 		
-		if ($hellothere == 2) {
+		if ($hellothere = 2) {
 			$hellothere = 3;
 		}
 		else {
 			$hellothere = 0;
 		}
 		
-		if ($hellothere == 4) {
+		if ($hellothere = 4) {
 			$hellothere = 5;
 		}
 		else {
 			$hellothere = 1;
 		}
 		
-		if ($hellothere == 6) {
+		if ($hellothere = 6) {
 			alert("Hello there!")
 		}
 		else {
@@ -91,7 +91,7 @@ $(function() {
 		$('#people .category-oslo').show();
 		$('#offices li').removeClass('on');
 		$(this).addClass('on');
-		if ($hellothere == 1) {
+		if ($hellothere = 1) {
 			$hellothere = 2;
 		}
 		else {
@@ -105,7 +105,7 @@ $(function() {
 		$('#people .category-saopaulo').show();
 		$('#offices li').removeClass('on');
 		$(this).addClass('on');
-		if ($hellothere == 3) {
+		if ($hellothere = 3) {
 			$hellothere = 4;
 		}
 		else {
@@ -119,7 +119,7 @@ $(function() {
 		$('#people .category-rotterdam').show();
 		$('#offices li').removeClass('on');
 		$(this).addClass('on');
-		if ($hellothere == 5) {
+		if ($hellothere = 5) {
 			$hellothere = 6;
 		}
 		else {
