@@ -43,7 +43,7 @@ $(function() {
 
 
 	// Hide/show people on our team by location
-	
+	$hellothere = 0;
 	
 	$("li.all").click(function () {
 		$('#people li').show();
