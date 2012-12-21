@@ -71,9 +71,15 @@ $(function() {
 			$hellothere = 5;
 		}
 		
-		
 		if ($hellothere == 6) {
-			alert("Invert")
+			$hellothere = 7;
+		}
+		if ($hellothere == 7) {
+			$hellothere = 8;
+		}
+		
+		if ($hellothere == 9) {
+			alert("Invert?")
 			$('nav#access h1 a img').attr('src','http://www.liveworkstudio.com/wordpress/wp-content/themes/livework/img/hellologo.png');
 		}
 	});
