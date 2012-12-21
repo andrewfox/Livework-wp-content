@@ -72,11 +72,12 @@ $(function() {
 		}
 		
 		if ($hellothere == 4) {
-			$hellothere = 1;
-		}
-		else {
 			$hellothere = 5;
 		}
+		else {
+			$hellothere = 1;
+		}
+		
 		if ($hellothere == 6) {
 			alert("Hello there!")
 		}
