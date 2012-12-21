@@ -72,21 +72,9 @@ $(function() {
 		}
 		
 		if ($hellothere == 6) {
-			$hellothere = 7;
-		}
-		
-		if ($hellothere == 7) {
-			$hellothere = 8;
-		}
-		
-		if ($hellothere == 8) {
-			$hellothere = 9;
-		}
-		
-		if ($hellothere == 9) {
-			alert("Invert?")
 			$('nav#access h1 a img').attr('src','http://www.liveworkstudio.com/wordpress/wp-content/themes/livework/img/hellologo.png');
 		}
+
 	});
 	
 	$("li.oslo").click(function () {
