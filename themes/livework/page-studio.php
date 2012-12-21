@@ -30,34 +30,36 @@ get_header(); ?>
 
 
 		<article id="page-<?php the_ID(); ?>" class="main clearfix">
-			
+
 			<div class="wrapper">
-			
+
 				<div id="main" class="clearfix">
-					
+
 					<div class="entry-content">
-			
+
 						<aside class="entry-data"> 
-			
+
 							<div class="vcard">
-								
-								<p class="studio-address"><span>location </span><?php the_field('studio_address'); ?></p>
-								<p class="tel"><span>call </span><?php the_field('studio_telephone'); ?></p>
-								<p class="fax"><span>fax </span><?php the_field('studio_fax'); ?></p>
-								<p class="email"><span>email </span><?php the_field('studio_email'); ?></p>
-								<p class="studio-twitter"><span>twitter </span> <?php the_field('studio_twitter'); ?></p>
-								<p class="studio-facebook"><span>facebook </span><?php the_field('studio_facebook'); ?></p>
-								
+
+								<?php if ( get_field('studio_address') ) : ?><p class="studio-address"><span class="ssstandard">location</span> <?php the_field('studio_address'); ?></p><?php endif; ?>
+								<?php if ( get_field('studio_telephone') ) : ?><p class="tel"><span class="ssstandard">call</span> <?php the_field('studio_telephone'); ?></p><?php endif; ?>
+								<?php if ( get_field('studio_fax') ) : ?><p class="fax"><span class="ssstandard">fax</span> <?php the_field('studio_fax'); ?></p><?php endif; ?>
+								<?php if ( get_field('studio_email') ) : ?><p class="email"><span class="ssstandard">email</span> <a href="mailto:<?php the_field('studio_email'); ?>"><?php the_field('studio_email'); ?></a></p><?php endif; ?>
+								<?php if ( get_field('studio_twitter') ) : ?><p class="studio-twitter"><span class="sssocial">twitter</span> <?php the_field('studio_twitter'); ?></p><?php endif; ?>
+								<?php if ( get_field('studio_facebook') ) : ?><p class="studio-facebook"><span class="sssocial">facebook</span> <?php the_field('studio_facebook'); ?></p><?php endif; ?>
+
 							</div>
-			
-			
+
 						</aside>
 						
-							<?php the_content(); ?>
-							<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
-							<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
+						<?php the_content(); ?>
+						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
 						
-						<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?>
+						<div class="studio-find-us">
+
+							<?php the_field('studio_how_to_find_us'); ?>
+
+						</div> <!-- /.studio-find-us -->
 			
 					</div> <!-- /.entry-content -->
 			

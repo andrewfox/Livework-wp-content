@@ -1527,7 +1527,9 @@ a.livework-man img {
 
 #menu-item-22 a, button.menu-reveal span,
 #menu-item-43 a, #menu-item-44 a,
-.socialmedia a span {
+.socialmedia a span,
+.ssstandard,
+.sssocial {
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none;
@@ -1542,16 +1544,17 @@ a.livework-man img {
 	-webkit-font-smoothing: antialiased;
 }
 #menu-item-22 a,
-button.menu-reveal span {
+button.menu-reveal span,
+.ssstandard {
 	font-family: "SSStandard";
 }
 
-#menu-item-43 a, #menu-item-44 a {
+#menu-item-43 a, 
+#menu-item-44 a,
+.sssocial {
 	font-family: "SSSocial";
 }
-.socialmedia a span {
-	font-family: "SSSocial";
-}
+
 
 
 
