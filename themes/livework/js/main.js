@@ -74,8 +74,13 @@ $(function() {
 		if ($hellothere == 6) {
 			$hellothere = 7;
 		}
+		
 		if ($hellothere == 7) {
 			$hellothere = 8;
+		}
+		
+		if ($hellothere == 8) {
+			$hellothere = 9;
 		}
 		
 		if ($hellothere == 9) {
