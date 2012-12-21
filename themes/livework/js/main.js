@@ -60,30 +60,22 @@ $(function() {
 		if ($hellothere == 0) {
 			$hellothere = 1;
 		}
-		else {
-			$hellothere = 0;
-		}
+		
 		
 		if ($hellothere == 2) {
 			$hellothere = 3;
 		}
-		else {
-			$hellothere = 0;
-		}
+		
 		
 		if ($hellothere == 4) {
 			$hellothere = 5;
 		}
-		else {
-			$hellothere = 1;
-		}
+		
 		
 		if ($hellothere == 6) {
 			alert("Hello there!")
 		}
-		else {
-			$hellothere = 0;
-		}
+	
 	});
 	
 	$("li.oslo").click(function () {
