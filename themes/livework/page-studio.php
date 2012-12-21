@@ -17,8 +17,8 @@ get_header(); ?>
 			<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
 			<div id="introduction" >
 				<div class="wrapper">
-					<h4><a href="<?php bloginfo('url'); ?>/contact-us">Studio</a></h4>
-					<h1><?php the_title(); ?> </h1>
+					<h4 class="tab"><a href="<?php bloginfo('url'); ?>/contact-us">Studio</a></h4>
+					<h1><?php the_title(); ?></h1>
 				</div>
 			</div>
 		</div>
@@ -45,8 +45,8 @@ get_header(); ?>
 								<?php if ( get_field('studio_telephone') ) : ?><p class="tel"><span class="ssstandard">call</span> <?php the_field('studio_telephone'); ?></p><?php endif; ?>
 								<?php if ( get_field('studio_fax') ) : ?><p class="fax"><span class="ssstandard">fax</span> <?php the_field('studio_fax'); ?></p><?php endif; ?>
 								<?php if ( get_field('studio_email') ) : ?><p class="email"><span class="ssstandard">email</span> <a href="mailto:<?php the_field('studio_email'); ?>"><?php the_field('studio_email'); ?></a></p><?php endif; ?>
-								<?php if ( get_field('studio_twitter') ) : ?><p class="studio-twitter"><span class="sssocial">twitter</span> <?php the_field('studio_twitter'); ?></p><?php endif; ?>
-								<?php if ( get_field('studio_facebook') ) : ?><p class="studio-facebook"><span class="sssocial">facebook</span> <?php the_field('studio_facebook'); ?></p><?php endif; ?>
+								<?php if ( get_field('studio_twitter') ) : ?><p class="studio-twitter"><span class="sssocial">twitter</span> <a href="http://twitter.com/<?php the_field('studio_twitter'); ?>">@<?php the_field('studio_twitter'); ?></a></p><?php endif; ?>
+								<?php if ( get_field('studio_facebook') ) : ?><p class="studio-facebook"><span class="sssocial">facebook</span> <a href="http://facebook.com/<?php the_field('studio_facebook'); ?>">Facebook</a></p><?php endif; ?>
 
 							</div>
 
