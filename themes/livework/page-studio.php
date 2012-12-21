@@ -29,42 +29,42 @@ get_header(); ?>
 
 
 
-				<article id="page-<?php the_ID(); ?>" class="main clearfix">
+		<article id="page-<?php the_ID(); ?>" class="main clearfix">
+			
+			<div class="wrapper">
+			
+				<div id="main" class="clearfix">
 					
-					<div class="wrapper">
-					
-						<div id="main" class="clearfix">
-							
-							<div class="entry-content">
-					
-								<aside class="entry-data"> 
-					
-									<div class="vcard">
-										
-										<p class="studio-address"><?php the_field('studio_address'); ?></p>
-										<p class="tel"><span>t </span><?php the_field('studio_telephone'); ?></p>
-										<p class="fax"><span>f </span><?php the_field('studio_fax'); ?></p>
-										<p class="email"><span>e </span><?php the_field('studio_email'); ?></p>
-										<p class="studio-twitter"><?php the_field('studio_twitter'); ?></p>
-										<p class="studio-facebook"><?php the_field('studio_facebook'); ?></p>
-										
-									</div>
-					
-					
-								</aside>
+					<div class="entry-content">
+			
+						<aside class="entry-data"> 
+			
+							<div class="vcard">
 								
-									<?php the_content(); ?>
-									<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
-									<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
+								<p class="studio-address"><span>location </span><?php the_field('studio_address'); ?></p>
+								<p class="tel"><span>call </span><?php the_field('studio_telephone'); ?></p>
+								<p class="fax"><span>fax </span><?php the_field('studio_fax'); ?></p>
+								<p class="email"><span>email </span><?php the_field('studio_email'); ?></p>
+								<p class="studio-twitter"><span>twitter </span> <?php the_field('studio_twitter'); ?></p>
+								<p class="studio-facebook"><span>facebook </span><?php the_field('studio_facebook'); ?></p>
 								
-								<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?>
-					
-							</div> <!-- /.entry-content -->
-					
-						</div> <!-- /#main -->
-					
-					
-					</div><!-- /.wrapper -->
+							</div>
+			
+			
+						</aside>
+						
+							<?php the_content(); ?>
+							<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
+							<?php edit_post_link( __( 'Edit', 'boilerplate' ), '', '' ); ?>
+						
+						<div class="studio-find-us"><?php the_field('studio_how_to_find_us'); ?>
+			
+					</div> <!-- /.entry-content -->
+			
+				</div> <!-- /#main -->
+			
+			
+			</div><!-- /.wrapper -->
 					
 						
 						
