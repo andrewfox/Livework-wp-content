@@ -24,7 +24,6 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				<?php endwhile; ?>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
 				
