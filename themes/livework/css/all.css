@@ -23,9 +23,9 @@ h2 {
 	font-size: 2em;
 	line-height: 1.25em;
 }
-h2 {
+h3 {
 	font-size: 1.4em;
-	line-height: 1.25em;
+	line-height: 1.5em;
 }
 
 p {
@@ -622,12 +622,8 @@ span.entry-date {
 }
 
 .entry-data {
-	font-size: 12px;
+	font-size: 13px;
 	line-height: 120%;
-}
-.page-template-page-studio-php .entry-data {
-	border-bottom: 1px solid #e9e9e6;
-	margin-bottom: 20px;
 }
 
 .entry-data img {
@@ -637,9 +633,6 @@ span.entry-date {
 	padding-right: 5px;
 }
 
-.vcard span {
-	color: #b1d7e6;
-}
 
 .author-articles li {
 	list-style: none;
@@ -648,6 +641,30 @@ span.entry-date {
 	line-height: 130%;
 }
 
+/* === Office details (on Contact page, Office page) =============================== */
+
+.office h2 {
+	margin: 0 0 10px 0;
+}
+
+.page-template-page-studio-php .entry-data {
+	border-bottom: 1px solid #e9e9e6;
+	margin-bottom: 20px;
+}
+
+
+.vcard {
+	margin-left: 20px;
+	font-size: 13px;
+	line-height: 1.6em;
+}
+.vcard span {
+	color: #ed862e;
+	margin-left: -20px;
+}
+.vcard p {
+	margin-bottom: 0.7em;
+}
 
 /* === Social media (list on single) =============================== */
 
@@ -1249,10 +1266,20 @@ ul.sectors-list {
 }
 
 
-.office img{
+.office img {
 	max-width: 100%;
 	height: auto;
 }
+
+	white-space: pre;           /* CSS 2.0 */
+	white-space: pre-wrap;      /* CSS 2.1 */
+	white-space: pre-line;      /* CSS 3.0 */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap;  /* HP Printers */
+	word-wrap: break-word;      /* IE 5+ */
+
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
 

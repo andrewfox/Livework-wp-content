@@ -123,7 +123,6 @@ h1.page-title {
 
 .highlight #introduction {
 	background: rgba(256,256,256,0.8);
-	border-bottom: none !;
 }
 
 .splash h1 {
@@ -239,26 +238,12 @@ h1.page-title {
 	float: left;
 	vertical-align: middle;
 }
-.single .entry-data, .page-template-page-studio-php .entry-data {
+.single .entry-data {
 	float: right;
 	width: 25%;
 	margin: 0 0 20px 20px;
 	display: block;
 }
-.page-template-page-studio-php .entry-data {
-	width: 33%;
-	border-bottom: none;
-}
-.page-template-page-studio-php .vcard span {
-	position: absolute;
-	margin-left: -30px;
-	text-align: right;
-	width: 25px;
-}
-
-
-
-
 
 .author-details {
 }
@@ -266,6 +251,18 @@ h1.page-title {
 	padding: 5px 0;
 	vertical-align: middle;
 }
+
+/* === Office details (on Contact page, Office page) =============================== */
+
+
+.page-template-page-studio-php .entry-data {
+	float: right;
+	width: 33%;
+	margin: 0 0 20px 20px;
+	display: block;
+	border-bottom: none;
+}
+
 
 /* === Social media (list on single) =============================== */
 
