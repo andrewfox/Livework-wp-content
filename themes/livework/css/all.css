@@ -48,7 +48,6 @@ ol li {
 a {
 	text-decoration: none;
 	color: #027cb8;
-	font-weight: bold;
 	-webkit-transition: all 0.3s linear;
 	-moz-transition: all 0.3s linear;
 	-ms-transition: all 0.3s linear;
@@ -659,7 +658,7 @@ span.entry-date {
 	line-height: 1.6em;
 }
 .vcard span {
-	color: #ed862e;
+	color: #027cb8;
 	margin-left: -20px;
 }
 .vcard p {
@@ -1270,15 +1269,6 @@ ul.sectors-list {
 	max-width: 100%;
 	height: auto;
 }
-
-	white-space: pre;           /* CSS 2.0 */
-	white-space: pre-wrap;      /* CSS 2.1 */
-	white-space: pre-line;      /* CSS 3.0 */
-	white-space: -pre-wrap;     /* Opera 4-6 */
-	white-space: -o-pre-wrap;   /* Opera 7 */
-	white-space: -moz-pre-wrap; /* Mozilla */
-	white-space: -hp-pre-wrap;  /* HP Printers */
-	word-wrap: break-word;      /* IE 5+ */
 
 
 /* === Sector (single sector page, inc. lists of case studies) =============================== */
