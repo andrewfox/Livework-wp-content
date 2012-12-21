@@ -43,7 +43,10 @@ li {
 ol li {
 	list-style: upper-roman;
 }
-
+strong {
+	font-weight: bold;
+	font-family: "Helvetica Neue Bold", "HelveticaNeue-Bold", Arial, Helvetica, Geneva, sans-serif;
+}
 
 a {
 	text-decoration: none;
@@ -232,6 +235,8 @@ header h1 a img {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	font-weight: bold;
+	font-family: "Helvetica Neue Bold", "HelveticaNeue-Bold", Arial, Helvetica, Geneva, sans-serif;
 }
 
 
@@ -1073,10 +1078,14 @@ ul.sectors-list {
 .all-logos-list ul {
 	margin: 0;
 }
+
 .all-logos-list > ul {
 	border-bottom: 2px solid #0388c9;
 	padding: 10px 20px;
 	clear: both;
+}
+.all-logos-list > ul:last-child {
+	border-bottom: none;
 }
 .all-logos-list a {
 	color: #eee;
@@ -1126,13 +1135,18 @@ ul.sectors-list {
 	line-height: 1.2em
 	
 }
-.sectors-clients-list a {
-	color: #444;	
+.sectors-clients-list ul li a {
+	font-weight: bold;
+	font-family: "Helvetica Neue Bold", "HelveticaNeue-Bold", Arial, Helvetica, Geneva, sans-serif;
 }
 
 .sectors-clients-list ul ul a {
+	color: #444;
 	font-weight: normal;
-	
+	font-family: "Helvetica Neue Light", "HelveticaNeue-Light", Arial, Helvetica, Geneva, sans-serif;
+}
+.sectors-clients-list ul ul a:hover {
+	color: #094d6f;
 }
 
 
