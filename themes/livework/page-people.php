@@ -9,9 +9,27 @@
  */
 
 get_header(); ?>
+				
+				
+				
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+				<div class="splash alt <?php the_field('colour'); ?>">
+					<div class="topimage"><?php the_post_thumbnail('large'); ?></div>
+					<div id="introduction" class="alt">
+						<div class="wrapper">
+							<h1 class="tab"><?php the_title(); ?></h1>
+							<div class="excerpt">
+								<?php the_content() ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php endwhile; ?>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
+				
+				
+				
 
 					<div class="wrapper">
 
