@@ -386,7 +386,9 @@ ul.cases-mosaic li{
 }
 
 
-
+.single-people .entry-content p {
+	width: 70%;
+}
 
 #people li a {
 }
@@ -447,6 +449,12 @@ div.case-studies-image {
 	width: 75%;
 }
 
+.studio-find-us {
+	width: 70%;
+}
+
+
+
 
 /* === Case study =============================== */
 
@@ -485,6 +493,9 @@ div.case-studies-image {
 .below-more li:nth-child(3n-2) {
 	clear: left;
 }
+
+
+
 .below-more li a img {
 	clear: both;
 	display: block;
