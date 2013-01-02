@@ -122,7 +122,7 @@ get_header(); ?>
 											
 											else {
 												echo "<h3>Posts from "; 
-												echo($name); 
+												echo $name; 
 												echo "</h3>";
 											}
 										
