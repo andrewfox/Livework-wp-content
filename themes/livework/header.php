@@ -92,6 +92,7 @@
 			</nav>
 			<?php } 
 			
+			// Our Client's Stories Sector menu on single case study pages
 			if (get_post_type( $post->ID ) == "case_study") {
 				if (is_single($post)) {
 					?>
