@@ -72,7 +72,7 @@ get_header(); ?>
 										}
 										
 										else {
-											echo "<h3>Contact Ben</h3>"
+											echo "<h3>Contact Ben</h3>";
 										}
 										
 										?>
