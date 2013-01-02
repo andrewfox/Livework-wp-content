@@ -115,6 +115,7 @@ get_header(); ?>
 												echo "<h3>Posts from "; 
 												the_title();
 												echo "</h3>";
+												echo($testposts);
 											}
 											
 											else {
