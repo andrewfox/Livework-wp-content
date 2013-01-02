@@ -106,26 +106,27 @@ get_header(); ?>
 									<div class="author-articles">
 										
 										
+										
+										
+									
+										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+										
+										
 										<?php 
 										
 											
-											if ( $testposts > 1 ) {
+											if ( the_title() == "" ) {
+												
+											}
+											
+											else {
 												echo "<h3>Posts from "; 
 												the_title();
 												echo "</h3>";
 												echo($testposts); 
 											}
-											
-											else {
-												
-											}
 										
 										?>
-										
-										<?php if ( have_posts() ) while ( $loop->have_posts() ) : $loop->the_post(); ?>
-										
-										
-										
 										
 										<ul>
 											<li>
