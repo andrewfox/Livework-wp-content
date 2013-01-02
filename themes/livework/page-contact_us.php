@@ -29,9 +29,9 @@ get_header(); ?>
 
 			<div class="office">
 
-				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?><?php the_post_thumbnail('thumb-large');  ?></a></h2>
 
-				<?php the_post_thumbnail('thumb-large');  ?>
+				
 
 				<div class="vcard">
 
