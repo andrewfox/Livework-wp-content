@@ -77,7 +77,7 @@ get_header(); ?>
 										else {
 											echo "<h4>Contact "; 
 											echo $name; 
-											echo "</h5>";
+											echo "</h4>";
 										}
 										
 										?>
