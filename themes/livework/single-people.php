@@ -9,7 +9,7 @@
 
 get_header(); ?>
 		<?php
-		$name = the_title();
+		$name = get_the_title();
 		$standard = false;
 		$feature = false;
 		$categories = get_the_category();
