@@ -106,7 +106,7 @@ get_header(); ?>
 									<div class="author-articles">
 										
 										<?php $testposts = count_user_posts( $curauth->ID ); ?>	
-										
+										<?php echo $curauth->display_name; ?>
 										
 										<?php 
 										
