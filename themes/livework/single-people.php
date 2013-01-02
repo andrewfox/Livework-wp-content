@@ -116,12 +116,14 @@ get_header(); ?>
 										
 											$test = get_field('person_email');
 											
-											if ( $post_count == "1" ) {
+											if ( $post_count == 1 ) {
 												
 											}
 											
 											else {
-												echo "<h3>Posts from Ben</h3>";
+												echo "<h3>Posts from"; 
+												the_title();
+												echo "</h3>";
 											}
 										
 										?>
