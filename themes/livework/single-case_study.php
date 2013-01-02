@@ -151,7 +151,7 @@ if ($feature == true) {
 								}
 								$thesector = join( ", ", $sectors_terms );
 								
-								if ($sectors_terms == "") {
+								if ($terms == "") {
 									
 								}
 								
@@ -159,21 +159,21 @@ if ($feature == true) {
 									
 								
 							?>
-							<h2 class="section-title">More from <span><?php echo $thesector; ?> </span></h2>
+									<h2 class="section-title">More from <span><?php echo $thesector; ?> </span></h2>
+									
+									<ul class="below-more">
+									<?php 
+									
+									$args = array(
+											'post_type'=> 'case_study',
+											'taxonomy' => 'sectors',
+											'term' => $thesector,
+										);
+									
+									$the_query = new WP_Query( $args );
+									while ( $the_query->have_posts() ) : $the_query->the_post(); 
 							
-							<ul class="below-more">
-							<?php 
-							
-							$args = array(
-									'post_type'=> 'case_study',
-									'taxonomy' => 'sectors',
-									'term' => $thesector,
-								);
-							
-							$the_query = new WP_Query( $args );
-							while ( $the_query->have_posts() ) : $the_query->the_post(); 
-							
-							}
+								}
 							?>
 							
 							<?php if ( in_category('logo-only-case-study') ) { ?>
