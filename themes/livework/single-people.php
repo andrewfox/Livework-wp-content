@@ -128,6 +128,8 @@ get_header(); ?>
 										
 										?>
 										
+										<h2>Post Count: <?php echo $post_count; ?></h2>
+										
 										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										
 										
