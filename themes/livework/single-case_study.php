@@ -150,6 +150,14 @@ if ($feature == true) {
 									$sectors_terms[] = $term->name;
 								}
 								$thesector = join( ", ", $sectors_terms );
+								
+								if ($sectors_terms == "") {
+									
+								}
+								
+								else {
+									
+								
 							?>
 							<h2 class="section-title">More from <span><?php echo $thesector; ?> </span></h2>
 							
@@ -165,6 +173,7 @@ if ($feature == true) {
 							$the_query = new WP_Query( $args );
 							while ( $the_query->have_posts() ) : $the_query->the_post(); 
 							
+							}
 							?>
 							
 							<?php if ( in_category('logo-only-case-study') ) { ?>
