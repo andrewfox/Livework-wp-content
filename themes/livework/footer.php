@@ -60,7 +60,7 @@
 					<?php if ( get_field('studio_email') ) : ?>
 					<p class="email"><span class="ssstandard">email</span> 
 						<a href="mailto:<?php the_field('studio_email'); ?>">
-						contact <?php the_title(); ?></a>
+						Email <?php the_title(); ?></a>
 					</p>
 					
 					<?php endif;?>
