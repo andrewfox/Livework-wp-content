@@ -101,11 +101,36 @@ get_header(); ?>
 									$loop = new WP_Query( $args );
 									?>
 									
+									
+									
 									<div class="author-articles">
 										
+										<?php
+										global $wp_query;
+										$curauth = $wp_query->get_queried_object();
+										$post_count = $wpdb->get_var("SELECT COUNT(*) FROM $wpdb->posts WHERE post_author = '" . $curauth->ID . "' AND post_type = 'post' AND post_status = 'publish'");
+										?>
+										
+										
+										<?php 
+										
+											$test = get_field('person_email');
+											
+											if ( $post_count == "" ) {
+												
+											}
+											
+											else {
+												echo "<h3>Contact Ben</h3>";
+											}
+										
+										?>
 										
 										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-												
+										
+										
+										
+										
 										<ul>
 											<li>
 												<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">
