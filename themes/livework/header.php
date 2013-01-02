@@ -92,8 +92,8 @@
 			</nav>
 			<?php } 
 			
-//			if (get_post_type( $post->ID ) == "case_study") {
-				if (is_page_template('single-case_study.php')) {
+			if (get_post_type( $post->ID ) == "case_study") {
+				if (is_single($post)) {
 					?>
 					<nav id="menu-secondary" class="nav-sectors clearfix">
 						<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
@@ -103,7 +103,7 @@
 				else {
 				
 				}
-//			}
+			}
 				?>
 			
 			
