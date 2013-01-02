@@ -56,7 +56,14 @@
 				<h4><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a></h4>
 				<div class="vcard">
 					<?php if ( get_field('studio_telephone') ) : ?><p class="tel"><span class="ssstandard">call</span> <?php the_field('studio_telephone'); ?></p><?php endif; ?>
-					<?php if ( get_field('studio_email') ) : ?><p class="email"><span class="ssstandard">email</span> <a href="mailto:<?php the_field('studio_email'); ?>"><?php the_field('studio_email'); ?></a></p><?php endif; ?>
+					
+					<?php if ( get_field('studio_email') ) : ?>
+					<p class="email"><span class="ssstandard">email</span> 
+						<a href="mailto:<?php the_field('studio_email'); ?>">
+						contact <?php the_title(); ?></a>
+					</p>
+					
+					<?php endif;?>
 				</div>
 			
 			</div>
