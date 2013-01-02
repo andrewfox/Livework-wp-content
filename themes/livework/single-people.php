@@ -67,7 +67,7 @@ get_header(); ?>
 									
 										<?php 
 										
-										if ( get_field('person_email') = "" ) {
+										if ( get_field('person_email') == "" ) {
 											
 										}
 										
