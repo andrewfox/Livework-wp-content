@@ -31,7 +31,9 @@
 		</div><!-- .entry-content -->
 	</article><!-- #post-0 -->
 <?php endif; ?>
-
+<?php 
+$curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
+?>
 <?php
 	/* Start the Loop.
 	 */ ?>

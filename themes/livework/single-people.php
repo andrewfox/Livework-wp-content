@@ -105,18 +105,13 @@ get_header(); ?>
 									
 									<div class="author-articles">
 										
-										<?php
-										global $wp_query;
-										$curauth = $wp_query->get_queried_object();
-										$post_count = $wpdb->get_var("SELECT COUNT(*) FROM $wpdb->posts WHERE post_author = '" . $curauth->ID . "' AND post_type = 'post' AND post_status = 'publish'");
-										?>
+										<?php $testposts = count_user_posts( $curauth->ID ); ?>	
 										
 										
 										<?php 
 										
-											$test = get_field('person_email');
 											
-											if ( $post_count > 1 ) {
+											if ( $testposts > 1 ) {
 												echo "<h3>Posts from "; 
 												the_title();
 												echo "</h3>";
@@ -128,8 +123,7 @@ get_header(); ?>
 										
 										?>
 										
-										<h2>Post Count: <?php echo $post_count; ?></h2>
-										
+									
 										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										
 										
