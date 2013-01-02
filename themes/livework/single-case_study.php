@@ -173,7 +173,7 @@ if ($feature == true) {
 									$the_query = new WP_Query( $args );
 									while ( $the_query->have_posts() ) : $the_query->the_post(); 
 							
-								}
+								
 							?>
 							
 							<?php if ( in_category('logo-only-case-study') ) { ?>
@@ -193,11 +193,12 @@ if ($feature == true) {
 								</li>
 								<?php } ?>
 								<?php endwhile; ?>
+								
 								<?php wp_reset_postdata() ?>
 								
 							
 							</ul>
-
+								<?php } ?>
 						</div>
 					</div><!-- /.wrapper -->
 				</div><!-- /#extra -->
