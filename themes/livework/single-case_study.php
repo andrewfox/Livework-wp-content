@@ -145,17 +145,18 @@ if ($feature == true) {
 							
 							<?php
 								$terms = get_the_terms( $post->ID, 'sectors' );
+								if ($terms == "") {
+									
+								}
+								
+								else {
 								$sectors_terms = array();
 								foreach ( $terms as $term ) {
 									$sectors_terms[] = $term->name;
 								}
 								$thesector = join( ", ", $sectors_terms );
 								
-								if ($terms == "") {
-									
-								}
 								
-								else {
 									
 								
 							?>
