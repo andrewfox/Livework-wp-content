@@ -122,8 +122,7 @@ get_header(); ?>
 										
 										?>
 										
-									
-										<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+										<?php if ( have_posts() ) while ( $loop->have_posts() ) : $loop->the_post(); ?>
 										
 										
 										
