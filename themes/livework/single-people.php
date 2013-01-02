@@ -75,7 +75,9 @@ get_header(); ?>
 										}
 										
 										else {
-											echo "<h3>Contact Ben</h3>";
+											echo "<h4>Contact "; 
+											echo $name; 
+											echo "</h5>";
 										}
 										
 										?>
@@ -124,9 +126,9 @@ get_header(); ?>
 												}
 												
 												else {
-													echo "<h3>Posts from "; 
+													echo "<h4>Posts from "; 
 													echo $name; 
-													echo "</h3>";
+													echo "</h4>";
 													$hello = true;
 												}
 												
