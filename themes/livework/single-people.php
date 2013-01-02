@@ -127,9 +127,11 @@ get_header(); ?>
 													echo "<h3>Posts from "; 
 													echo $name; 
 													echo "</h3>";
+													$hello = true;
 												}
 												
-												$hello = true;
+												
+												
 											}
 										
 										?>
