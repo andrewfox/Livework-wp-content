@@ -115,7 +115,7 @@ get_header(); ?>
 										<?php 
 										
 											
-											if ( the_title() == "" ) {
+											if ( get_the_title() == "" ) {
 												
 											}
 											
