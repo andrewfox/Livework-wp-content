@@ -92,7 +92,7 @@
 			</nav>
 			<?php } 
 			
-			if (get_post_type( $post->ID ) == "case_study") {
+//			if (get_post_type( $post->ID ) == "case_study") {
 				if (is_page_template('single-case_study.php')) {
 					?>
 					<nav id="menu-secondary" class="nav-sectors clearfix">
@@ -103,7 +103,7 @@
 				else {
 				
 				}
-			}
+//			}
 				?>
 			
 			
