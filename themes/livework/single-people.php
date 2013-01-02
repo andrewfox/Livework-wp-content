@@ -9,6 +9,7 @@
 
 get_header(); ?>
 		<?php
+		$name = the_title();
 		$standard = false;
 		$feature = false;
 		$categories = get_the_category();
@@ -121,9 +122,8 @@ get_header(); ?>
 											
 											else {
 												echo "<h3>Posts from "; 
-												the_title();
+												echo($name); 
 												echo "</h3>";
-												echo($testposts); 
 											}
 										
 										?>
