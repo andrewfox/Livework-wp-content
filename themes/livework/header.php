@@ -91,7 +91,7 @@
 				<?php wp_nav_menu( array('menu' => 'Sectors', 'container' => '' )); ?>
 			</nav>
 			<?php } 
-			wp_reset_query() 
+			wp_reset_query();
 			
 //			if (get_post_type( $post->ID ) == "case_study") {
 				if (is_page_template('single-case_study.php')) {
@@ -105,7 +105,7 @@
 				
 				}
 //			}
-			wp_reset_query() 
+			wp_reset_query();
 				?>
 			
 			
