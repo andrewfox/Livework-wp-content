@@ -64,6 +64,19 @@ get_header(); ?>
 								<aside class="entry-data"> 
 
 									<div class="vcard">
+									
+										<?php 
+										
+										if ( get_field('person_email') == "" ) {
+											
+										}
+										
+										else {
+											?><h3>Contact Ben</h3><?php
+										}
+										
+										?>
+										
 
 										<?php if ( get_field('person_email') ) : ?>
 										<p class="email"><span>e</span> <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
