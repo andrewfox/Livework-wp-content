@@ -35,7 +35,9 @@
 <?php
 	/* Start the Loop.
 	 */ ?>
-<?php while ( have_posts() ) : the_post(); ?>
+	 
+<?php query_posts($query_string . '&cat=-196'); ?>
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 						<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
 						<?php $domsxe = simplexml_load_string(get_the_post_thumbnail());
