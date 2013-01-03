@@ -440,6 +440,19 @@ article.people{
 	box-sizing: border-box;
 }
 
+/*Css for skinny logo case studies*/
+.category-logo-only-case-study img {
+	float: left;
+	width: 100%;
+	height: auto;
+	padding-right: 20px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: silver;
+}
+
+
+
 div.case-studies-image {
 	width: 20%;
 	float: left;
