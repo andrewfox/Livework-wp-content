@@ -82,7 +82,16 @@
 				<?php wp_nav_menu( array('menu' => 'Our Story', 'container' => '' )); ?>
 			</nav>
 			<?php } ?>
-
+			
+			<?php 
+			// Our Client's Stories Themes menu
+			if (is_tree(2500)) { 
+			?>
+			<nav id="menu-secondary" class="nav-sectors clearfix">
+				<?php wp_nav_menu( array('menu' => 'Themes', 'container' => '' )); ?>
+			</nav>
+			<?php } ?> 
+			
 			<?php 
 			// Our Client's Stories Sector menu
 			if (is_tree(9)) { 
