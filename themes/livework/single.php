@@ -8,6 +8,17 @@
  */
 
 get_header(); ?>
+
+<!--facebook like button jssdk-->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 			
 <?php
 $standard = false;
@@ -106,6 +117,7 @@ if ($feature == true) {
 									<ul class="socialmedia">
 										<li><a href="https://twitter.com/share" class="twitter-share-button" data-via="liveworkstudio" data-count="none" data-dnt="true">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+										<li><div class="fb-like" data-href="<?php the_permalink(); ?>" data-send="true" data-width="300" data-show-faces="true" data-font="arial"></div></li>
 									</ul>
 
 								</aside>
