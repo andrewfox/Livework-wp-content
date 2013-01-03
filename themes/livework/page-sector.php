@@ -69,7 +69,15 @@ get_sidebar('featuredbar');
 										<div  <?php post_class('clearfix'); ?>>
 											<div class="wrapper">
 												<div class="case-studies-image">
+													<?php if ( in_category(196) ) : ?>
+													<?php 
+													if( get_field('casestudies_logo') ): ?>
+														<li><img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /></li><?php
+													endif;
+													?>
+													<?php else : ?>
 													<?php the_post_thumbnail('thumb-large'); ?>
+													<?php endif; ?>
 												</div>
 												<div class="case-studies-content">
 													
