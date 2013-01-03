@@ -82,11 +82,17 @@ get_sidebar('featuredbar');
 													<?php endif; ?>
 													
 													<?php if( get_field('casestudies_one_liner') ): ?>
-													<h2>
-														<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
-															<?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span>
-														</a>
-													</h2>
+														<h2>
+															<a href="
+														<?php if ( in_category(196) ) : ?>
+														<?php echo '#'; ?>
+														<?php else : ?>
+														<?php the_permalink(); ?>
+														<?php endif; ?>
+														" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
+																<?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span>
+															</a>
+														</h2>
 													<?php else : ?>
 													<h2>
 														<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></a>
