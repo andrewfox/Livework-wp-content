@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page - Sector Meta
+ * Template Name: Page - Themes Meta
  * Description: Our Client's Stories Sector page: fullscreen area, list of case studies and themes
  *
  * @package WordPress
