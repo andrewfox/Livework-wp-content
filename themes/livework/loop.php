@@ -136,7 +136,10 @@ endif; ?>
 						</div><!-- /.post -->
 						
 	
-						<?php endwhile; ?>
+						<?php 
+						endwhile; 
+						endif;
+						?>
 	
 	
 	<?php /* Display navigation to next/previous pages when applicable */ ?>
