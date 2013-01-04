@@ -66,14 +66,16 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 										<?php endif; ?>
 										
 										</h2>
+										<div>
+											<?php the_excerpt() ?>
+											<p class="read-more"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'livework'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more &rarr;</a></p>
+										</div>
+	
+									</div>
+									
 									<?php endif; ?>
 	
-									<div>
-										<?php the_excerpt() ?>
-										<p class="read-more"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'livework'), the_title_attribute('echo=0') ); ?>" rel="bookmark">Read more &rarr;</a></p>
-									</div>
-	
-								</div>
+									
 
 
 <?php /* Else is a news post (blog, article, point of view) ------------------------------------------ */
