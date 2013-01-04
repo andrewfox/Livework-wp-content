@@ -35,7 +35,7 @@
 							$thumbnailsrc = $domsxe->attributes()->src; ?>
 						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> style="background-image: url('<?php echo $thumbnailsrc ?>')">	
 						<?php else : ?>
-						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
+						
 						<?php endif; ?>
 
 							
@@ -49,7 +49,7 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 									
 									
 									<?php if( get_field('casestudies_one_liner') ): ?>
-									
+									<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 									<div class="wrapper clearfix">
 									
 									<div class="case-studies-image">
@@ -84,6 +84,7 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 <?php /* Else is a news post (blog, article, point of view) ------------------------------------------ */
 
 else : ?>
+	<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 	<div class="wrapper clearfix">
 
 								<?php if ( in_category(199) ) : ?>
