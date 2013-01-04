@@ -140,9 +140,10 @@ get_header(); ?>
 												}
 												
 												else {
-													echo "<h4>Posts from "; 													
+													echo "<h4>Posts from "; 
 													
-													$name = substr($string, 0, stripos($string, " ") );
+													
+													$result = substr($name, 0, stripos($string, "*") );
 													
 													echo $result;
 													
