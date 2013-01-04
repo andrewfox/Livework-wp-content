@@ -40,8 +40,7 @@ get_header(); ?>
 						<aside class="entry-data"> 
 
 							<div class="vcard">
-								<iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=E16NF&amp;aq=&amp;sll=51.520974,-0.074415&amp;sspn=0.008852,0.01708&amp;gl=uk&amp;ie=UTF8&amp;hq=&amp;hnear=London+E1+6NF,+United+Kingdom&amp;t=m&amp;ll=51.521028,-0.074415&amp;spn=0.010681,0.025835&amp;z=14&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.uk/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=E16NF&amp;aq=&amp;sll=51.520974,-0.074415&amp;sspn=0.008852,0.01708&amp;gl=uk&amp;ie=UTF8&amp;hq=&amp;hnear=London+E1+6NF,+United+Kingdom&amp;t=m&amp;ll=51.521028,-0.074415&amp;spn=0.010681,0.025835&amp;z=14" style="color:#0000FF;text-align:right">View Larger Map</a></small>
-								
+								<iframe width="300" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=E16NF&amp;aq=&amp;sll=51.520974,-0.074415&amp;sspn=0.008852,0.01708&amp;gl=uk&amp;ie=UTF8&amp;hq=&amp;hnear=London+E1+6NF,+United+Kingdom&amp;t=m&amp;ll=51.521028,-0.074415&amp;spn=0.010681,0.025835&amp;z=14&amp;output=embed"></iframe>							
 								<?php if ( get_field('studio_address') ) : ?><p class="studio-address"><span class="ssstandard">location</span> <?php the_field('studio_address'); ?></p><?php endif; ?>
 								<?php if ( get_field('studio_telephone') ) : ?><p class="tel"><span class="ssstandard">call</span> <?php the_field('studio_telephone'); ?></p><?php endif; ?>
 								<?php if ( get_field('studio_fax') ) : ?><p class="fax"><span class="ssstandard">fax</span> <?php the_field('studio_fax'); ?></p><?php endif; ?>
