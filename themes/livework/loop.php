@@ -44,14 +44,15 @@
 if ((get_post_type( $post->ID ) == "case_study")) : ?>
 
 
-								<div class="case-studies-image">
-									<?php the_post_thumbnail('thumb-large'); ?>
-								</div>
-								<div class="case-studies-content">
+								
 									
 									
 									
 									<?php if( get_field('casestudies_one_liner') ): ?>
+									<div class="case-studies-image">
+										<?php the_post_thumbnail('thumb-large'); ?>
+									</div>
+									<div class="case-studies-content">
 										<h2>
 											
 										<?php if ( in_category(196) ) : ?>
