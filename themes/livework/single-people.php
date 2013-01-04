@@ -143,8 +143,8 @@ get_header(); ?>
 													echo "<h4>"; 
 													
 													
-													$result = substr($name, 0, stripos($name, " ") );
-													echo $result;
+													$forename = substr($name, 0, stripos($name, " ") );
+													echo $forename;
 													
 													
 													echo "'s Posts</h4>";
