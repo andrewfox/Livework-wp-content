@@ -40,17 +40,17 @@
 		<!-- Scripts: Jquery, Modernizr, Main (custom) -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="<?php bloginfo( 'template_directory' ); ?>/js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-		<script src="<?php echo bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
-		<script src="<?php echo bloginfo('template_directory'); ?>/js/vendor/respond.min.js"></script>
-		<script src="<?php echo bloginfo('template_directory'); ?>/js/vendor/jquery.lightbox-0.5.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/modernizr-2.6.2.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/respond.min.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/js/vendor/jquery.lightbox-0.5.min.js"></script>
 		<script src="<?php bloginfo( 'template_directory' ); ?>/js/main.js"></script>
 
 		<!-- Fontscom -->
 		<script type="text/javascript" src="http://fast.fonts.com/jsapi/0fd39f14-ee12-405d-90c4-2bbbdae75f52.js"></script>
 
 		<!-- Symbolset social -->
-		<link href="<?php echo bloginfo('template_directory'); ?>/webfonts/ss-social.css" rel="stylesheet" />
-		<link href="<?php echo bloginfo('template_directory'); ?>/webfonts/ss-standard.css" rel="stylesheet" />
+		<link href="<?php bloginfo('template_directory'); ?>/webfonts/ss-social.css" rel="stylesheet" />
+		<link href="<?php bloginfo('template_directory'); ?>/webfonts/ss-standard.css" rel="stylesheet" />
 
 		<?php wp_head(); ?>
 
