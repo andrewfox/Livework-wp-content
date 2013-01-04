@@ -175,7 +175,6 @@ if ($feature == true) {
 							?>
 									<h2 class="section-title">More from <span><?php echo $thesector; ?> </span></h2>
 									
-									<ul class="below-more">
 									<?php 
 									
 									$args = array(
@@ -254,7 +253,6 @@ if ($feature == true) {
 								<?php wp_reset_postdata() ?>
 								
 							
-							</ul>
 								<?php } ?>
 						</div>
 					</div><!-- /.wrapper -->
