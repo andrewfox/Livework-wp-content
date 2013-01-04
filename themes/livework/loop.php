@@ -59,7 +59,7 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 										<h2>
 											
 										<?php if ( in_category(196) ) : ?>
-												<h4 class="tab">Short story</h4>
+												<h4 class="tab">Client story</h4>
 												<?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span>
 										<?php else : ?>
 											<h4 class="tab">Client story</h4>
