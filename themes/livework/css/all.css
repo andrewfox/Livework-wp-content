@@ -654,19 +654,19 @@ span.entry-date {
 	position: relative;
 }
 
-.category-logo-only-case-study .case-studies-content h2 a {
+.category-logo-only-case-study .case-studies-content h2 {
 	display: inline;
-	margin-left: 20px;
+	margin-left: 0px;
 	font-size: 22px;
-	float: left;
+	float: none;
 	bottom: 2px;
 	position: relative;
 }
 
 .category-logo-only-case-study .tab {
-	float: left;
+	float: none;
 	position: relative;
-	top: 16px;
+	top: 0px;
 }
 
 .category-logo-only-case-study .case_study h2,
