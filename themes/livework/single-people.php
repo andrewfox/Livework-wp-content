@@ -143,8 +143,7 @@ get_header(); ?>
 													echo "<h4>Posts from "; 
 													
 													
-													$result = substr($name, 0, stripos($string, " ") );
-													
+													$result = substr($name, 0, stripos($name, " ") );
 													echo $result;
 													
 													
