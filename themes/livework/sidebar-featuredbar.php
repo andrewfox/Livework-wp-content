@@ -73,6 +73,11 @@
 		 							if (in_category(199)) {
 	 									echo 'Point of view';
 		 							}
+		 							
+		 							elseif (in_category(191)) {
+		 								echo 'Article';
+		 							}
+		 							
 		 							else {
 		 								echo 'News';
 		 							}
