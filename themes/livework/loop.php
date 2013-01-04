@@ -57,12 +57,12 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 									</div>
 									<div class="case-studies-content">
 										<h2>
-											
+											<?php get_sidebar( 'name-tab' ); ?>
 										<?php if ( in_category(196) ) : ?>
-												<h4 class="tab">Client story</h4>
+												
 												<?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span>
 										<?php else : ?>
-											<h4 class="tab">Client story</h4>
+											
 										<a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark">
 												<?php the_field('casestudies_one_liner'); ?> <span class="casestudy-title">with <span><?php the_title(); ?></span></span>
 											</a>
