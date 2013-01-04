@@ -150,12 +150,6 @@ if ($feature == true) {
 						<div class="case-studies more-cs">
 							
 							
-							
-
-							
-							
-							
-							
 							<?php
 								$terms = get_the_terms( $post->ID, 'sectors' );
 								if ($terms == "") {
@@ -168,10 +162,10 @@ if ($feature == true) {
 									$sectors_terms[] = $term->name;
 								}
 								$thesector = join( ", ", $sectors_terms );
-								
-								
-									
-								
+
+
+
+
 							?>
 									<h2 class="section-title">More from <span><?php echo $thesector; ?> </span></h2>
 									

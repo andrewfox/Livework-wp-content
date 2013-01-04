@@ -142,7 +142,7 @@ if ($feature == true) {
 				
 			 	<div class="wrapper">
 
-					<h2><a href="<?php bloginfo('url'); ?>/latest"><strong>Latest</strong> from Livework</a></h2>
+					<h2><a href="<?php bloginfo('url'); ?>/latest">Latest from Livework</a></h2>
 
 					<ul>
 						<?php
