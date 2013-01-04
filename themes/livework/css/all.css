@@ -661,6 +661,7 @@ span.entry-date {
 	float: none;
 	bottom: 2px;
 	position: relative;
+	color: #888;
 }
 
 .category-logo-only-case-study .tab {
