@@ -90,7 +90,7 @@ get_header(); ?>
 
 				 	<div class="wrapper">
 
-						<h2><strong>Latest</strong> from <?php the_title(); ?></h2>
+						<h2>Latest from <?php the_title(); ?></h2>
 
 						<ul>
 							<?php
