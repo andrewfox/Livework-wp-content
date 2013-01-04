@@ -75,7 +75,7 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 										</div>
 	
 									</div>
-									
+									<?php else : ?>
 									<?php endif; ?>
 	
 									
