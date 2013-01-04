@@ -52,7 +52,7 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 									
 									
 									
-									<?php if( get_field('casestudies_one_liner' == "") ): ?>
+									<?php if( get_field('casestudies_one_liner' == null) ): ?>
 									<?php else : ?>
 									<div class="wrapper clearfix">
 									
