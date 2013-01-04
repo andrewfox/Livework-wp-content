@@ -168,10 +168,7 @@ get_header(); ?>
 
 				</article><!-- #people-## -->
 
-				<?php 
-				// Featured bar
-				get_sidebar('featuredbar'); 
-				?>
+				
 
 				<div class="extra">
 
