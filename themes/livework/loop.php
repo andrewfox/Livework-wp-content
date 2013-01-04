@@ -87,7 +87,13 @@ else : ?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 	<div class="wrapper clearfix">
 
-								<?php get_sidebar( 'name-tab' ); ?>
+								<?php if ( in_category(199) ) : ?>
+								<h4 class="tab">Point of view</h4>
+								<?php elseif ( in_category(191) ) : ?>
+								<h4 class="tab">Article</h4>
+								<?php else : ?>
+								<h4 class="tab">News</h4>
+								<?php endif; ?>
 
 								<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?> <span class="entry-date"><?php the_time('j/m/Y') ?></span></a></h2>
 
