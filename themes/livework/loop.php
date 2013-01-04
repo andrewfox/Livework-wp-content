@@ -27,7 +27,11 @@
 	/* Start the Loop.
 	 */ ?>
 	 
-<?php query_posts($query_string . '&cat=-196'); ?>
+<?php 
+
+//query_posts($query_string . '&cat=-196'); 
+
+?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 						<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
