@@ -27,11 +27,7 @@
 	/* Start the Loop.
 	 */ ?>
 	 
-<?php 
-
-//query_posts($query_string . '&cat=-196'); 
-
-?>
+<?php query_posts($query_string . '&cat=-196'); ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 						<?php if ( in_category(10) && has_post_thumbnail() ) : // if is highlight and has featured image (post thumbnail) ?>
@@ -52,8 +48,8 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 									
 									
 									
-									<?php if( get_field('casestudies_one_liner' == null) ): ?>
-									<?php else : ?>
+									<?php if( get_field('casestudies_one_liner') ): ?>
+									
 									<div class="wrapper clearfix">
 									
 									<div class="case-studies-image">
@@ -79,7 +75,7 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 										</div>
 	
 									</div>
-									
+									<?php else : ?>
 									<?php endif; ?>
 	
 									
