@@ -1341,6 +1341,8 @@ h2.case-studies-leader {
 	text-align: center;
 }
 
+
+
 div.case-studies-image {
 	float: left;
 	width: 100%;
@@ -1355,6 +1357,7 @@ div.case-studies-image {
 .case-studies {
 	padding: 20px 0;
 }
+
 
 
 
@@ -1397,6 +1400,12 @@ div.case-studies-image {
 	clear: both;
 	display: block;
 	color: black;
+}
+
+.more-cs .case_study{
+	margin-bottom: 40px;
+	margin-top: 20px;
+	margin-left: -20px;
 }
 
 /* === Extra aside =============================== */
