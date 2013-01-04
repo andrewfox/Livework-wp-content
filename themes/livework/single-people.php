@@ -82,8 +82,19 @@ get_header(); ?>
 									<div class="vcard">
 									
 										
+										<p><span class="ssstandard">location</span> 
+										<?php if (in_category(11)) : 
+										echo "London";
+										elseif (in_category(13)) : 
+										echo "Oslo";
+										elseif (in_category(14)) : 
+										echo "São Paulo";
+										elseif (in_category(12)) : 
+										echo "Rotterdam";
+										?>
+										</p>
+										<?php endif; ?>
 										
-
 										<?php if ( get_field('person_email') ) : ?>
 										<p class="email"><span class="ssstandard">email</span> <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
 										<?php endif; ?>
