@@ -76,7 +76,7 @@
 
 
 		<!-- Symbolset JS support -->
-		<script src="<?php bloginfo( 'template_directory' ); ?>webfonts/ss-standard.js"></script>
+		<script src="<?php bloginfo( 'template_directory' ); ?>/webfonts/ss-standard.js"></script>
 
 
 
