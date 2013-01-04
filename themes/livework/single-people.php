@@ -82,6 +82,16 @@ get_header(); ?>
 									<div class="vcard">
 									
 										
+										
+										
+										<?php if ( get_field('person_email') ) : ?>
+										<p class="email"><span class="ssstandard">email</span> <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
+										<?php endif; ?>
+
+										<?php if ( get_field('person_phone_number') ) : ?>
+										<p class="tel"><span class="ssstandard">call</span> <?php the_field('person_phone_number'); ?></p>
+										<?php endif; ?>
+										
 										<p><span class="ssstandard">location</span> 
 										<?php if (in_category(11)) : 
 										echo "London";
@@ -93,14 +103,6 @@ get_header(); ?>
 										echo "Rotterdam";
 										?>
 										</p>
-										<?php endif; ?>
-										
-										<?php if ( get_field('person_email') ) : ?>
-										<p class="email"><span class="ssstandard">email</span> <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
-										<?php endif; ?>
-
-										<?php if ( get_field('person_phone_number') ) : ?>
-										<p class="tel"><span class="ssstandard">call</span> <?php the_field('person_phone_number'); ?></p>
 										<?php endif; ?>
 
 									</div> <!-- /.vcard -->
