@@ -64,31 +64,32 @@ get_header(); ?>
 
 								<aside class="entry-data"> 
 
+									<?php 
+									
+									$test = get_field('person_email');
+									
+									if ( $test == "" ) {
+										
+									}
+									
+									else {
+										echo "<h4>Contact "; 
+										echo $name; 
+										echo "</h4>";
+									}
+									
+									?>
 									<div class="vcard">
 									
-										<?php 
 										
-										$test = get_field('person_email');
-										
-										if ( $test == "" ) {
-											
-										}
-										
-										else {
-											echo "<h4>Contact "; 
-											echo $name; 
-											echo "</h4>";
-										}
-										
-										?>
 										
 
 										<?php if ( get_field('person_email') ) : ?>
-										<p class="email"><span>e</span> <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
+										<p class="email"><span class="ssstandard">email</span> <a href="mailto:<?php the_field('person_email'); ?>"><?php the_field('person_email'); ?></a></p>
 										<?php endif; ?>
 
 										<?php if ( get_field('person_phone_number') ) : ?>
-										<p class="tel"><span>t</span> <?php the_field('person_phone_number'); ?></p>
+										<p class="tel"><span class="ssstandard">call</span> <?php the_field('person_phone_number'); ?></p>
 										<?php endif; ?>
 
 									</div> <!-- /.vcard -->
