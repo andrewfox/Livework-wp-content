@@ -70,17 +70,8 @@
 	 							} else if ($theposttype == 'post') {
 	 							
 	 							
-		 							if (in_category(199)) {
-	 									echo 'Point of view';
-		 							}
+		 							get_sidebar( 'name-tab' );
 		 							
-		 							elseif (in_category(191)) {
-		 								echo 'Article';
-		 							}
-		 							
-		 							else {
-		 								echo 'News';
-		 							}
 	 								$thumbnail = 'featured';
 	 								
 	 							}
