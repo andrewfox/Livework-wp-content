@@ -142,6 +142,13 @@ get_header(); ?>
 												else {
 													echo "<h4>Posts from "; 
 													echo $name; 
+													
+													
+													$name = substr($string, 0, stripos($string, "&#032;") );
+													
+													echo $result;
+													
+													
 													echo "</h4>";
 													$hello = true;
 												}
