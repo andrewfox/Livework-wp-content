@@ -48,7 +48,7 @@ get_header(); ?>
 								<?php if ( get_field('studio_twitter') ) : ?><p class="studio-twitter"><span class="sssocial">twitter</span> <a href="http://twitter.com/<?php the_field('studio_twitter'); ?>">@<?php the_field('studio_twitter'); ?></a></p><?php endif; ?>
 								<?php if ( get_field('studio_facebook') ) : ?><p class="studio-facebook"><span class="sssocial">facebook</span> <a href="http://facebook.com/<?php the_field('studio_facebook'); ?>">Facebook</a></p><?php endif; ?>
 								
-								<?php if ( get_field('studio_google_maps') ) : ?><div class="studio-map"> <?php the_field('studio_google_maps'); ?><?php endif; ?>
+								<?php if ( get_field('studio_google_maps') ) : ?><div id="studio-map"> <?php the_field('studio_google_maps'); ?><?php endif; ?>
 
 							</div>
 
