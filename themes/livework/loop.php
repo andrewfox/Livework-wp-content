@@ -38,7 +38,7 @@
 						<div id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?>>
 						<?php endif; ?>
 
-							<div class="wrapper clearfix">
+							
 
 <?php /* If case study ------------------------------------------ */ 
 if ((get_post_type( $post->ID ) == "case_study")) : ?>
@@ -49,6 +49,9 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 									
 									
 									<?php if( get_field('casestudies_one_liner') ): ?>
+									
+									<div class="wrapper clearfix">
+									
 									<div class="case-studies-image">
 										<?php the_post_thumbnail('thumb-large'); ?>
 									</div>
@@ -81,7 +84,7 @@ if ((get_post_type( $post->ID ) == "case_study")) : ?>
 <?php /* Else is a news post (blog, article, point of view) ------------------------------------------ */
 
 else : ?>
-
+	<div class="wrapper clearfix">
 
 								<?php if ( in_category(199) ) : ?>
 								<h4 class="tab">Point of view</h4>
