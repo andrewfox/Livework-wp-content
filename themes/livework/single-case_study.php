@@ -195,7 +195,7 @@ if ($feature == true) {
 							
 							
 							<!--Case studies-->
-							<div  <?php post_class('clearfix'); ?>>	
+							<div  <?php post_class('clearfix, more-case-studies'); ?>>	
 								<div class="wrapper">
 									<div class="case-studies-image">
 										<?php if ( in_category(196) ) : ?>
