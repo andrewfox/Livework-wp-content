@@ -147,7 +147,7 @@ if ($feature == true) {
 
 				<div class="extra">		
 					<div class="wrapper">
-						<div class="" >
+						<div class="case-studies">
 							
 							
 							
