@@ -71,8 +71,8 @@ if( $posts ): ?>
 					<div class="case-studies-image">
 						<?php if ( in_category(196) ) : ?>
 						<?php 
-						if( get_field('casestudies_logo') ): ?>
-							<li><img src="<?php the_field('casestudies_logo'); ?>" alt="<?php the_title(); ?>" /></li><?php
+						if( get_field('black_casestudies_logo') ): ?>
+							<li><img src="<?php the_field('black_casestudies_logo'); ?>" alt="<?php the_title(); ?>" /></li><?php
 						endif;
 						?>
 						<?php else : ?>
