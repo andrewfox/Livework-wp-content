@@ -133,7 +133,7 @@ else : ?>
 
 
 <?php /* End of main if statement case study or post ------------------------------------------ */
-//endif;
+endif;
  ?>
 
 							</div><!-- /.wrapper -->
