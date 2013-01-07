@@ -13,7 +13,8 @@ body {
 }
 
 h1, h2, h3 {
-	font-family:'Chaparral W01 Lt', Georgia, Times, serif;
+	font-family: 'Chaparral W01 Lt', Georgia, Times, serif;
+	text-shadow: 0 1px 0 #ffffff;
 }
 h1 {
 	font-size: 3em;
