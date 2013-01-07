@@ -8,8 +8,9 @@
  */
 ?>
 
-
-					<?php if ( in_category(199) ) : ?>
+					<?php if ((get_post_type( $post->ID ) == "case_study")) : ?>
+					<h4 class="tab">Client story</h4>
+					<?php elseif ( in_category(199) ) : ?>
 					<h4 class="tab">Point of view</h4>
 					<?php elseif ( in_category(191) ) : ?>
 					<h4 class="tab">Article</h4>
