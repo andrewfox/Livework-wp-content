@@ -356,6 +356,7 @@ function sector_init() {
 		array(
 			'hierarchical' => ('true'), 
 			'label' => __( 'Sectors' ),
+			'show_admin_column' => true,
 			'query_var' => ('true'),
 			'rewrite' => array( 'slug' => 'sectors' ),
 //			'capabilities' => array('assign_terms'=>'edit_guides', 'edit_terms'=>'publish_guides')
