@@ -172,7 +172,7 @@ if ($feature == true) {
 									<?php 
 									
 									$args = array(
-											'post_type'=> 'case_study',
+											'post_type'=> 'case_study, post',
 											'taxonomy' => 'sectors',
 											'term' => $thesector,
 										);
