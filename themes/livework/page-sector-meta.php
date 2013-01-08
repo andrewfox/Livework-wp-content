@@ -31,25 +31,28 @@ get_header(); ?>
 
 
 	<h2>Sectors</h2>
-	
-		<?php 
-		// Sidebar
-		 get_sidebar('list-sectors'); 
-		?>
+		<div class="list-of-pages">
+			<?php 
+			// Sidebar
+			 get_sidebar('list-sectors'); 
+			?>
+		</div>
 	
 	<h2>Themes</h2>
-	
-		<?php 
-		// Sidebar
-		 get_sidebar('list-themes'); 
-		?>
+		<div class="list-of-pages">
+			<?php 
+			// Sidebar
+			 get_sidebar('list-themes'); 
+			?>
+		</div>
 
 	<h2>Case Studies</h2>
-	
-		<?php 
-		// Sidebar
-		 get_sidebar('list-clients'); 
-		?>
+		<div class="list-of-pages">
+			<?php 
+			// Sidebar
+			 get_sidebar('list-clients'); 
+			?>
+		</div>
 
 
 

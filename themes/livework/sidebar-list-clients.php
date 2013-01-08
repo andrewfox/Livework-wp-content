@@ -12,7 +12,7 @@
 
 					
 						
-				<div class="list-of-pages">
+				
 
 								<ul>
 									<?php $args = array(
@@ -44,4 +44,3 @@
 
 
 
-				</div><!-- /.sectors-clients-list -->
