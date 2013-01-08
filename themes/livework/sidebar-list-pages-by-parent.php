@@ -8,7 +8,7 @@
  */
 ?>
 
-				<div class="wrapper">
+				
 				
 							<?php query_posts(array('showposts' => -1, 'post_parent' => $parentid, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
 				
@@ -22,4 +22,3 @@
 				
 							<?php } ?>
 				
-						</div> <!-- /.wrapper -->

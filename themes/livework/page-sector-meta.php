@@ -27,7 +27,7 @@ get_header(); ?>
 
 				<article id="page-<?php the_ID(); ?>" class="main">
 
-
+<div class="wrapper">
 
 
 	<h2>Sectors</h2>
@@ -48,6 +48,9 @@ get_header(); ?>
 
 	<h2>Case Studies</h2>
 
+
+
+</div>
 <?php 
 				// Featured bar
 //				get_sidebar('featuredbar'); 
