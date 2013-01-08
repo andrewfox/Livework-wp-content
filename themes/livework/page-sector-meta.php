@@ -31,22 +31,26 @@ get_header(); ?>
 
 
 
-<div class="wrapper">
+	<?php $parentid = 9 ?>
 
-			<?php query_posts(array('showposts' => -1, 'post_parent' => 9, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
+	<?php 
+	// Sidebar
+	 get_sidebar('list-pages-by-parent'); 
+	?>
+	
+	<?php $parentid = 2500 ?>
+	
+		<?php 
+		// Sidebar
+		 get_sidebar('list-pages-by-parent'); 
+		?>
 
-			<div class="">
 
-				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></h2>
 
-				
-
-			</div> <!-- /.office -->
-
-			<?php } ?>
-
-		</div> <!-- /.wrapper -->
-
+<?php 
+				// Featured bar
+//				get_sidebar('featuredbar'); 
+				?>
 
 
 
