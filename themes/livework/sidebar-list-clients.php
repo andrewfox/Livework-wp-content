@@ -19,6 +19,7 @@
 										'post_type'=> 'case_study',
 										'taxonomy' => 'sectors',
 										'showposts' => 10,
+										'cat' => -196
 //										'term' => $sector->slug,
 //										'orderby' => 'title',
 //										'order' => 'ASC'
