@@ -30,14 +30,15 @@ get_header(); ?>
 
 
 
-
+	<h2>Sectors</h2>
 	<?php $parentid = 9 ?>
-
+	
 	<?php 
 	// Sidebar
 	 get_sidebar('list-pages-by-parent'); 
 	?>
 	
+	<h2>Themes</h2>
 	<?php $parentid = 2500 ?>
 	
 		<?php 
@@ -45,7 +46,7 @@ get_header(); ?>
 		 get_sidebar('list-pages-by-parent'); 
 		?>
 
-
+	<h2>Case Studies</h2>
 
 <?php 
 				// Featured bar
