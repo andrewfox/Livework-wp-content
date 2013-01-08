@@ -28,7 +28,7 @@
 										<?php if (in_category('logo-only-case-study')) : ?>
 										<?php the_title(); ?>
 										<?php else: ?>
-										<a href="<?php the_permalink() ?>" rel="bookmark" title="Client story <?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+										<a href="<?php the_permalink(); ?>" title="<?php the_field('casestudies_one_liner'); ?> with <?php the_title(); ?>" rel="bookmark"></a>
 										<?php endif; ?>
 									</h4>
 									</li>
