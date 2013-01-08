@@ -28,7 +28,7 @@ get_header(); ?>
 				<article id="page-<?php the_ID(); ?>" class="main">
 
 <div class="wrapper">
-
+	<div class="clearfix">
 		<div class="list-of-pages">
 			<h2>Sectors</h2>
 			<?php 
@@ -52,7 +52,7 @@ get_header(); ?>
 			 get_sidebar('list-clients'); 
 			?>
 		</div>
-
+	</div>
 </div>
 <?php 
 				// Featured bar
