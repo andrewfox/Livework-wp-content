@@ -10,7 +10,7 @@
 
 				
 				
-							<?php query_posts(array('showposts' => -1, 'post_parent' => $parentid, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
+							<?php query_posts(array('showposts' => -1, 'post_parent' => 9, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
 				
 							<div class="">
 				
@@ -21,6 +21,5 @@
 							</div> 
 					
 							<?php } ?>
-							<?php endwhile; ?>
 							<?php wp_reset_query();?>
 				
