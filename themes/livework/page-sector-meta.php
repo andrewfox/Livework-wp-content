@@ -53,8 +53,6 @@ get_header(); ?>
 			?>
 		</div>
 
-
-
 </div>
 <?php 
 				// Featured bar
@@ -72,7 +70,7 @@ get_header(); ?>
 
 				<?php 
 				// Sectors + clients listings
-//				get_sidebar('sectorslogos'); 
+				get_sidebar('sectorslogos'); 
 				?>
 				
 				<?php 
