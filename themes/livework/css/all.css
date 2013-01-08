@@ -1186,7 +1186,9 @@ ul.sectors-list {
 	color: #094d6f;
 }
 
-
+.list-of-pages a span {
+	color: black;
+}
 
 /* === Our Team =============================== */
 
