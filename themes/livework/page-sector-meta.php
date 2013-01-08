@@ -32,10 +32,10 @@ get_header(); ?>
 
 	<h2>Sectors</h2>
 	
-	<?php 
-	// Sidebar
-	 get_sidebar('list-sectors'); 
-	?>
+		<?php 
+		// Sidebar
+		 get_sidebar('list-sectors'); 
+		?>
 	
 	<h2>Themes</h2>
 	

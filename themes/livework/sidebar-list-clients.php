@@ -39,10 +39,6 @@
 									<?php endwhile; ?>
 									<?php wp_reset_postdata() ?>
 								</ul>
-							</li>
-						</ul>
-						<?php } ?>
-					<?php } ?>
 
 
 
