@@ -29,25 +29,24 @@ get_header(); ?>
 
 <div class="wrapper">
 
-
-	<h2>Sectors</h2>
 		<div class="list-of-pages">
+			<h2>Sectors</h2>
 			<?php 
 			// Sidebar
 			 get_sidebar('list-sectors'); 
 			?>
 		</div>
-	
-	<h2>Themes</h2>
+		
 		<div class="list-of-pages">
+			<h2>Themes</h2>
 			<?php 
 			// Sidebar
 			 get_sidebar('list-themes'); 
 			?>
 		</div>
-
-	<h2>Case Studies</h2>
+		
 		<div class="list-of-pages">
+			<h2>Case Studies</h2>
 			<?php 
 			// Sidebar
 			 get_sidebar('list-clients'); 
