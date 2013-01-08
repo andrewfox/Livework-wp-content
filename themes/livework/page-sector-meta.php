@@ -31,19 +31,17 @@ get_header(); ?>
 
 
 	<h2>Sectors</h2>
-	<?php $parentid = 9 ?>
 	
 	<?php 
 	// Sidebar
-	 get_sidebar('list-pages-by-parent'); 
+	 get_sidebar('list-sectors'); 
 	?>
 	
 	<h2>Themes</h2>
-	<?php $parentid = 2500 ?>
 	
 		<?php 
 		// Sidebar
-		 get_sidebar('list-pages-by-parent'); 
+		 get_sidebar('list-themes'); 
 		?>
 
 	<h2>Case Studies</h2>
