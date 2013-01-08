@@ -46,7 +46,7 @@ get_header(); ?>
 		</div>
 		
 		<div class="list-of-pages">
-			<h2>Case Studies</h2>
+			<h2>Latest Case Studies</h2>
 			<?php 
 			// Sidebar
 			 get_sidebar('list-clients'); 
