@@ -45,6 +45,11 @@ get_header(); ?>
 		?>
 
 	<h2>Case Studies</h2>
+	
+		<?php 
+		// Sidebar
+		 get_sidebar('list-clients'); 
+		?>
 
 
 
