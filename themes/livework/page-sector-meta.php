@@ -35,22 +35,11 @@ get_header(); ?>
 
 			<?php query_posts(array('showposts' => -1, 'post_parent' => 9, 'post_type' => 'page', 'order' => 'asc', )); while (have_posts()) { the_post(); ?>
 
-			<div class="office">
+			<div class="">
 
-				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?><?php the_post_thumbnail('thumb-large');  ?></a></h2>
+				<h2><a href="<?php the_permalink(); ?>" title="<?php printf( __('Read', 'blankslate'), the_title_attribute('echo=0') ); ?>" rel="bookmark"><?php the_title(); ?></h2>
 
 				
-
-				<div class="vcard">
-
-					<?php if ( get_field('studio_address') ) : ?><p class="studio-address"><span class="ssstandard">location</span> <?php the_field('studio_address'); ?></p><?php endif; ?>
-					<?php if ( get_field('studio_telephone') ) : ?><p class="tel"><span class="ssstandard">call</span> <?php the_field('studio_telephone'); ?></p><?php endif; ?>
-					<?php if ( get_field('studio_fax') ) : ?><p class="fax"><span class="ssstandard">fax</span> <?php the_field('studio_fax'); ?></p><?php endif; ?>
-					<?php if ( get_field('studio_email') ) : ?><p class="email"><span class="ssstandard">email</span> <a href="mailto:<?php the_field('studio_email'); ?>"><?php the_field('studio_email'); ?></a></p><?php endif; ?>
-					<?php if ( get_field('studio_twitter') ) : ?><p class="studio-twitter"><span class="sssocial">twitter</span> <a href="http://twitter.com/<?php the_field('studio_twitter'); ?>">@<?php the_field('studio_twitter'); ?></a></p><?php endif; ?>
-					<?php if ( get_field('studio_facebook') ) : ?><p class="studio-facebook"><span class="sssocial">facebook</span> <a href="http://facebook.com/<?php the_field('studio_facebook'); ?>">Facebook</a></p><?php endif; ?>
-
-				</div> <!-- /.vcard -->
 
 			</div> <!-- /.office -->
 
