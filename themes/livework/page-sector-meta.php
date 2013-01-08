@@ -72,7 +72,7 @@ get_header(); ?>
 
 				<?php 
 				// Sectors + clients listings
-				get_sidebar('sectorslogos'); 
+//				get_sidebar('sectorslogos'); 
 				?>
 				
 				<?php 
