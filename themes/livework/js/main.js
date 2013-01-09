@@ -1,4 +1,4 @@
-
+$hellothere = 0
 $(document).ready(function() {
 	
 //	
@@ -76,7 +76,7 @@ $(function() {
 		}
 
 	});
-	$hellothere = 0
+	
 	$("li.oslo").click(function () {
 		$('#people li').hide()
 		$('#people .category-oslo').show();
