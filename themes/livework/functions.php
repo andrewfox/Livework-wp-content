@@ -342,7 +342,7 @@ function create_post_type_topic() {
 		'public' => true,
 		'has_archive' => true,
 		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title', 'author' ),
-		'taxonomies' => array('category'),
+		'taxonomies' => array('category', 'tag'),
 		)
 	);
 }
