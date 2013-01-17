@@ -385,6 +385,27 @@ function sector_init() {
 add_action( 'init', 'sector_init' );
 
 
+
+/* Themes taxonomy (category) */
+function theme_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'themes',
+		array('post','case_study', 'topic'),
+		array(
+			'hierarchical' => ('true'), 
+			'label' => __( 'Themes' ),
+			'show_admin_column' => true,
+			'query_var' => ('true'),
+			'rewrite' => array( 'slug' => 'themes' ),
+//			'capabilities' => array('assign_terms'=>'edit_guides', 'edit_terms'=>'publish_guides')
+		)
+	);
+}
+add_action( 'init', 'theme_init' );
+
+
+
 /* Editor style tweaks */
 add_editor_style( 'css/editor-style.css' );
 
