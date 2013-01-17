@@ -332,7 +332,7 @@ function create_post_type_people() {
 
 /* Topics post type */
 add_action( 'init', 'create_post_type_topic' );
-function create_post_type_people() {
+function create_post_type_topic() {
 	register_post_type( 'topic',
 		array(
 			'labels' => array(
