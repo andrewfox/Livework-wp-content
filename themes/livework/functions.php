@@ -330,6 +330,25 @@ function create_post_type_people() {
 }
 
 
+/* Topics post type */
+add_action( 'init', 'create_post_type_topic' );
+function create_post_type_people() {
+	register_post_type( 'topic',
+		array(
+			'labels' => array(
+			'name' => __( 'Topics' ),
+			'singular_name' => __( 'Topic' )
+			),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array( 'thumbnail', 'excerpt', 'editor', 'title', 'author' ),
+		'taxonomies' => array('category'),
+		)
+	);
+}
+
+
+
 /* Clients taxonomy (tag) */
 function clients_init() {
 	// create a new taxonomy
@@ -352,7 +371,7 @@ function sector_init() {
 	// create a new taxonomy
 	register_taxonomy(
 		'sectors',
-		array('post','case_study'),
+		array('post','case_study', 'topic'),
 		array(
 			'hierarchical' => ('true'), 
 			'label' => __( 'Sectors' ),
